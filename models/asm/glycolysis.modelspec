@@ -1,0 +1,106 @@
+[Specification]
+type: 1
+
+[Identifiers]
+name: glycolysis
+author: Maurice Ling
+
+[Objects]
+glucose: D-glucose
+atp: adenosine-triphosphate
+adp: adenosine-diphosphate
+proton: proton
+nad: NAD
+pi: phosphate
+nadh: NADH
+water: water
+g6p: a-D-Glucose-6-phosphate
+f6p: b-D-Fructose-6-phosphate
+f16p: b-D-Fructose-1,6-phosphate
+gadp: D-glyceraldehyde 3-phosphate
+dhap: Dihydroxyacetone phosphate
+bpg13: D-1,3-bisphosphoglycerate
+pg3: 3-phosphoglycerate
+pg2: 2-phosphoglycerate
+pep: phosphoenolpyruvate
+pyr: pyruvate
+hk.rna = hexokinase
+hk: hexokinase
+pgi: Phosphoglucose isomerase
+pfk: phosphofructokinase
+aldo: fructose-bisphosphate aldolase
+tpi: triosephosphate isomerase
+gapdh: glyceraldehyde phosphate dehydrogenase
+pkg: phosphoglycerate kinase
+pgm: phosphoglycerate mutase
+eno: enolase
+pk: pyruvate kinase
+
+[Initials]
+glucose: 1e-5
+atp: 1e-5
+adp: 1e-5
+proton: 1e-5
+nad: 1e-5
+pi: 1e-5
+nadh: 1e-5
+water: 1e-5
+g6p: 1e-9
+f6p: 1e-9
+f16p: 1e-9
+gadp: 1e-9
+dhap: 1e-9
+bpg13: 1e-9
+pg3: 1e-9
+pg2: 1e-9
+pep: 1e-9
+pyr: 1e-9
+hk.rna: 0
+hk: 0
+pgi: 1e-6
+pfk: 1e-6
+aldo: 1e-6
+tpi: 1e-6
+gapdh: 1e-6
+pkg: 1e-6
+pgm: 1e-6
+eno: 1e-6
+pk: 1e-6
+
+[Variables]
+hk.promoter: 1e-7
+hk.rbs: 1e-5
+hk.kcat: 1e-6
+hk.km: 1e-6
+pgi.kcat: 1e-6
+pgi.km: 1e-6
+pfk.kcat: 1e-6
+pfk.km: 1e-6
+aldo.kcat: 1e-6
+aldo.km: 1e-6
+tpi.kcat: 1e-6
+tpi.km: 1e-6
+gapdh.kcat: 1e-6
+gapdh.km: 1e-6
+pkg.kcat: 1e-6
+pkg.km: 1e-6
+pgm.kcat: 1e-6
+pgm.km: 1e-6
+eno.kcat: 1e-6
+eno.km: 1e-6
+pk.kcat: 1e-6
+pk.km: 1e-6
+
+[Reactions]
+e1.rna: -> hk.rna | ${Variables:hk.promoter}
+e1: -> hk | ${Variables:hk.rbs} * hk.rna
+r1: glucose + atp -> g6p + adp + proton | (${Variables:hk.kcat} * hk * glucose)/(${Variables:hk.km} + (hk * glucose))
+r2: g6p -> f6p | (${Variables:pgi.kcat} * pgi * g6p)/(${Variables:pgi.km} + (pgi * g6p))
+r3: f6p + atp -> f16p + adp + proton | (${Variables:pfk.kcat} * pfk * f6p)/(${Variables:pfk.km} + (pfk * f6p))
+r4: f16p -> gadp + dhap | (${Variables:aldo.kcat} * aldo * f16p)/(${Variables:aldo.km} + (aldo * f16p))
+r5: dhap -> gadp | (${Variables:tpi.kcat} * tpi * dhap)/(${Variables:tpi.km} + (tpi * dhap))
+r6: gadp + nad + pi -> bpg13 + nadh + proton | (${Variables:gapdh.kcat} * gapdh * gadp)/(${Variables:gapdh.km} + (gapdh * gadp))
+r7: bpg13 + adp -> pg3 + atp | (${Variables:pkg.kcat} * pkg * bpg13)/(${Variables:pkg.km} + (pkg * bpg13))
+r8: pg3 -> pg2 | (${Variables:pgm.kcat} * pgm * pg3)/(${Variables:pgm.km} + (pgm * pg3))
+r9: pg2 -> pep + water | (${Variables:eno.kcat} * eno * pg2)/(${Variables:eno.km} + (eno * pg2))
+r10: pep + adp + proton -> pyr + atp | (${Variables:pk.kcat} * pk * pep)/(${Variables:pk.km} + (pk * pep))
