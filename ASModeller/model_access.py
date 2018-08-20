@@ -59,6 +59,7 @@ def modelspec_reader(modelfile, mode='extended'):
                             inline_comment_prefixes=('#', ';'),
                             empty_lines_in_values=True,
                             strict=False)
+    spec.optionxform = str
     modelspec = open(modelfile).read()
     spec.read_string(modelspec)
     return spec
@@ -91,6 +92,7 @@ def specobj_reader(specobj, mode='extended'):
                             inline_comment_prefixes=('#', ';'),
                             empty_lines_in_values=True,
                             strict=False)
+    spec.optionxform = str
     spec.read_dict(specobj)
     return spec
 
