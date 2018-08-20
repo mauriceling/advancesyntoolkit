@@ -39,7 +39,7 @@ def printASM(modelfile, readertype):
 
     Usage:
 
-        python astools.py printASM --modelfile=models/asm/glycolysis.modelspec --readertype='extended'
+        python astools.py printASM --modelfile=models/asm/glycolysis.modelspec --readertype=extended
 
     @param modelfile String: Relative path to the model specification 
     file.
@@ -68,7 +68,7 @@ def readASModelSpecification(modelfile):
         python astools.py readASM --modelfile=models/asm/glycolysis.modelspec
 
     @param modelfile String: Relative path to the model specification 
-    file.
+    file. This does not assume that the model file is in models folder.
     '''
     (spec, modelobj) = ASModeller.process_asm_model(modelfile)
     print('-------- Model Identifiers --------')
@@ -140,7 +140,8 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
         python astools.py genODE --modelfile=asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --odefile=glycolysis.py
 
     @param modelfile String: Name of model specification file in 
-    models folder.
+    models folder. This assumes that the model file is in models 
+    folder.
     @param mtype String: Type of model specification file. Allowable 
     types are 'ASM' (AdvanceSyn Model Specification). Default = 'ASM'.
     @param solver String: Type of solver to use. Allowable types 
@@ -216,7 +217,8 @@ def sensitivityGenerator(modelfile, multiple=100,
         python astools.py senGen --modelfile=asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100
 
     @param modelfile String: Name of model specification file in 
-    models folder.
+    models folder. This assumes that the model file is in models 
+    folder.
     @param multiple Integer: Multiples to change each variable value. 
     Default = 100 (which will multiple the original parameter value 
     by 100).
@@ -304,7 +306,8 @@ def localSensitivity(modelfile, multiple=100, prefix='',
         python astools.py LSA --modelfile=asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --resultfile=sensitivity_analysis.csv
 
     @param modelfile String: Name of model specification file in 
-    models folder.
+    models folder. This assumes that the model file is in models 
+    folder.
     @param multiple Integer: Multiples to change each variable value. 
     Default = 100 (which will multiple the original parameter value 
     by 100).
