@@ -364,11 +364,18 @@ def localSensitivity(modelfile, multiple=100, prefix='',
             os.remove(ASMfile)
             os.remove(ODEfile)
 
+def systemData():
+    print('Welcome to AdvanceSyn Toolkit')
+    print('')
+    print('Current directory: %s' % os.cwd())
+    print('')
+    
 if __name__ == '__main__':
     exposed_functions = {'printASM': printASM,
                          'readASM': readASModelSpecification,
                          'genODE': generateODEScript,
                          'LSA': localSensitivity,
                          'runODE': runODEScript,
-                         'senGen': sensitivityGenerator}
+                         'senGen': sensitivityGenerator,
+                         'systemdata': systemData}
     fire.Fire(exposed_functions)
