@@ -367,7 +367,7 @@ def localSensitivity(modelfile, multiple=100, prefix='',
 def systemData():
     print('Welcome to AdvanceSyn Toolkit')
     print('')
-    print('Current directory: %s' % os.cwd())
+    print('Current directory: %s' % os.getcwd())
     print('')
     
 if __name__ == '__main__':
