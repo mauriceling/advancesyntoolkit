@@ -122,7 +122,7 @@ def fileWriter(datalist, relativefolder, filepath):
     into.
     @param filepath String: Name of the file to be written into.
     '''
-    filepath = relativefolder + '\\' + filepath
+    filepath = relativefolder + os.sep + filepath
     filepath = os.path.abspath(filepath)
     odefile = open(filepath, 'w')
     for line in datalist:
@@ -162,10 +162,10 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
 
     Usage:
 
-        python astools.py genODE --modelfile=asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --odefile=glycolysis.py
+        python astools.py genODE --modelfile=models/asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --odefile=glycolysis.py
 
     @param modelfile String: Name of model specification file in 
-    models folder. This assumes that the model file is in models 
+    models folder. This assumes that the model file is not in  models 
     folder.
     @param mtype String: Type of model specification file. Allowable 
     types are 'ASM' (AdvanceSyn Model Specification). Default = 'ASM'.
@@ -186,7 +186,6 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
     @return: A list containing the Python ODE script (one element = 
     one line).
     '''
-    modelfile = 'models\\' + modelfile
     (spec, modelobj) = modelReader(modelfile, mtype, 'extended')
     datalist = ASModeller.generate_ODE(spec, modelobj, solver, 
                                        timestep, endtime)
@@ -239,10 +238,10 @@ def sensitivityGenerator(modelfile, multiple=100,
 
     Usage:
 
-        python astools.py senGen --modelfile=asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100
+        python astools.py senGen --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100
 
     @param modelfile String: Name of model specification file in 
-    models folder. This assumes that the model file is in models 
+    models folder. This assumes that the model file is not in models 
     folder.
     @param multiple Integer: Multiples to change each variable value. 
     Default = 100 (which will multiple the original parameter value 
@@ -256,8 +255,7 @@ def sensitivityGenerator(modelfile, multiple=100,
     gModelSpecFiles = {}
     # Step 1: Process baseline model
     # Step 1.1: Process original model file 
-    (bspec, modelobj) = modelReader('models\\' + modelfile, 
-                                    mtype, 'basic')
+    (bspec, modelobj) = modelReader(modelfile, mtype, 'basic')
     spec = ASModeller.specobj_reader(bspec, 'extended')
     # Step 1.2: Process file path for original model
     if len(modelfile.split(os.sep)) == 1:
@@ -328,10 +326,10 @@ def localSensitivity(modelfile, multiple=100, prefix='',
 
     Usage:
 
-        python astools.py LSA --modelfile=asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --resultfile=sensitivity_analysis.csv
+        python astools.py LSA --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --resultfile=sensitivity_analysis.csv
 
     @param modelfile String: Name of model specification file in 
-    models folder. This assumes that the model file is in models 
+    models folder. This assumes that the model file is not in models 
     folder.
     @param multiple Integer: Multiples to change each variable value. 
     Default = 100 (which will multiple the original parameter value 
