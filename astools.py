@@ -87,6 +87,31 @@ def readASModelSpecification(modelfile):
         pprint(obj.outflux)
         print('')
 
+def readASMFluxes(modelfile):
+    '''!
+    Function to read the AdvanceSyn model specification file and 
+    print out fluxes (productions and usages) of model objects.
+
+    Usage:
+
+        python astools.py readASMFlux --modelfile=models/asm/glycolysis.modelspec
+
+    @param modelfile String: Relative path to the model specification 
+    file. This does not assume that the model file is in models folder.
+    '''
+    (spec, modelobj) = ASModeller.process_asm_model(modelfile)
+    results = []
+    for key in modelobj:
+        obj = modelobj[key]
+        productions = '; '.join([str(k) for k in obj.influx])
+        usages = '; '.join([str(k) for k in obj.outflux])
+        if len(productions) == 0: productions = "NIL"
+        if len(usages) == 0: usages = "NIL"
+        results.append([str(obj.name), productions, usages])
+    print('|'.join(['Name', 'Productions', 'Usages']))
+    for obj in results:
+        print('|'.join(obj))
+
 def fileWriter(datalist, relativefolder, filepath):
     '''!
     Function to write data from a list into a file.
@@ -373,6 +398,7 @@ def systemData():
 if __name__ == '__main__':
     exposed_functions = {'printASM': printASM,
                          'readASM': readASModelSpecification,
+                         'readASMFlux': readASMFluxes,
                          'genODE': generateODEScript,
                          'LSA': localSensitivity,
                          'runODE': runODEScript,
