@@ -154,6 +154,7 @@ def process_reactions_1(spec):
     for ID in rlist:
         rdata = spec['Reactions'][ID]
         rdata = rdata.split('|')
+        # print("%s %s" % (ID, rdata))
         movement = rdata[0].strip()
         rateEq = rdata[1].strip()
         movement = movement.split('->')
