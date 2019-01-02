@@ -137,6 +137,32 @@ def load_initials_1(spec, objlist):
             objlist[name].value['initial'] = 0
     return objlist
 
+def _backup_object_loader_1(names, objlist):
+    '''!
+    Private function called by load_reactions_1() function to act 
+    as backup loader of objects - it does similar job to 
+    generate_object_list_1() and load_initials_1() but as a 
+    second layer to ensure that all sources and destinations in 
+    reactions have a corresponding object, just in case the user 
+    missed out in Objects stanza. Only sources and destinations 
+    not found in objects table are loaded with 'Inserted by Backup 
+    Object Loader' as description and zero initial value.
+
+    @param names List: List of object names to check
+    @param objlist Dictionary: Table of objects representing the 
+    entities / nodes of the model - from generate_object_list_X() 
+    function.
+    @return: Dictionary of objects where key is the object name 
+    and value is the object numbering.
+    '''
+    for i in range(len(names)):
+        if names[i] not in objlist:
+            obj = ModelObject(names[i], 
+                              'Inserted by Backup Object Loader')
+            obj.value['initial'] = 0
+            objlist[names[i]] = obj
+    return objlist
+
 def process_reactions_1(spec):
     '''!
     Function to generate a table (dictionary) of reactions. This 
@@ -184,7 +210,9 @@ def load_reactions_1(reactions, objlist):
     '''
     for ID in reactions:
         sources = reactions[ID]['sources']
+        objlist = _backup_object_loader_1(sources, objlist)
         destinations = reactions[ID]['destinations']
+        objlist = _backup_object_loader_1(destinations, objlist)
         rateEq = reactions[ID]['rateEq']
         for s in sources:
             if s != '':
