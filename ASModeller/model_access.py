@@ -190,6 +190,7 @@ def process_reactions_1(spec):
         destinations = movement[1].strip()
         destinations = destinations.split('+')
         destinations = [d.strip() for d in destinations]
+
         reactions[ID] = {'sources': sources,
                          'destinations': destinations,
                          'rateEq': rateEq}
@@ -217,17 +218,21 @@ def load_reactions_1(reactions, objlist):
         for s in sources:
             if s != '':
                 try:
-                    obj = objlist[s]
-                    obj.outflux[ID] = rateEq
-                except KeyError: 
-                    print('%s is not found in Objects' % str(s))
+                    objlist[s].outflux[ID] = rateEq
+                except KeyError:
+                    stmt = 'Reaction ID: %s | ' % str(ID) 
+                    stmt = stmt + \
+                        'Source: %s is not found in Objects' % str(s)
+                    print(stmt)
         for d in destinations:
             if d != '':
                 try:
-                    obj = objlist[d]
-                    obj.influx[ID] = rateEq
+                    objlist[d].influx[ID] = rateEq
                 except KeyError: 
-                    print('%s is not found in Objects' % str(s))
+                    stmt = 'Reaction ID: %s | ' % str(ID) 
+                    stmt = stmt + \
+                        'Source: %s is not found in Objects' % str(s)
+                    print(stmt)
     return objlist
 
 def load_asm_objects(spec):
