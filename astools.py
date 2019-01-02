@@ -70,7 +70,7 @@ def readASModelSpecification(modelfile):
     @param modelfile String: Relative path to the model specification 
     file. This does not assume that the model file is in models folder.
     '''
-    (spec, modelobj) = ASModeller.process_asm_model(modelfile)
+    (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
     print('-------- Model Identifiers --------')
     for key in spec['Identifiers']:
         print('%s: %s' % (str(key), str(spec['Identifiers'][key])))
@@ -99,7 +99,7 @@ def readASMFluxes(modelfile):
     @param modelfile String: Relative path to the model specification 
     file. This does not assume that the model file is in models folder.
     '''
-    (spec, modelobj) = ASModeller.process_asm_model(modelfile)
+    (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
     results = []
     for key in modelobj:
         obj = modelobj[key]
