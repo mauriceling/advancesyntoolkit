@@ -206,9 +206,9 @@ def print_Setup(objlist, objTable, solver='RK4',
     printList.append(pTerm)
     for name in objTable:
         obj = objlist[name]
-        pTerm = 'y[%s] = %s    # %s' % \
+        pTerm = 'y[%s] = %s    # %s : %s' % \
             (str(objTable[name]), str(obj.value['initial']),
-             str(name))
+             str(name), str(obj.description))
         printList.append(pTerm)
     printList.append(' ')
     # 4. Print labels
