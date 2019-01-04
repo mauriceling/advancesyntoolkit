@@ -178,22 +178,27 @@ def process_reactions_1(spec):
     rlist = [x for x in spec['Reactions']]
     reactions = {}
     for ID in rlist:
-        rdata = spec['Reactions'][ID]
-        rdata = rdata.split('|')
-        # print("%s %s" % (ID, rdata))
-        movement = rdata[0].strip()
-        rateEq = rdata[1].strip()
-        movement = movement.split('->')
-        sources = movement[0].strip()
-        sources = sources.split('+')
-        sources = [s.strip() for s in sources]
-        destinations = movement[1].strip()
-        destinations = destinations.split('+')
-        destinations = [d.strip() for d in destinations]
-
-        reactions[ID] = {'sources': sources,
-                         'destinations': destinations,
-                         'rateEq': rateEq}
+        try: 
+            rdata = spec['Reactions'][ID]
+            rdata = rdata.split('|')
+            # print("%s %s" % (ID, rdata))
+            movement = rdata[0].strip()
+            rateEq = rdata[1].strip()
+            movement = movement.split('->')
+            sources = movement[0].strip()
+            sources = sources.split('+')
+            sources = [s.strip() for s in sources]
+            destinations = movement[1].strip()
+            destinations = destinations.split('+')
+            destinations = [d.strip() for d in destinations]
+            reactions[ID] = {'sources': sources,
+                             'destinations': destinations,
+                             'rateEq': rateEq}
+        except:
+            print("Error in %s" % str(ID))
+            print("    sources: %s" % str(sources))
+            print("    destinations: %s" % str(destinations))
+            print("    rate equation: %s" % str(rateEq))
     return reactions
 
 def load_reactions_1(reactions, objlist):
