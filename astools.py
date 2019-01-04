@@ -154,7 +154,9 @@ def modelReader(modelfile, mtype, readertype='extended'):
     return (spec, modelobj)
 
 def generateODEScript(modelfile, mtype='ASM', solver='RK4', 
-                      timestep=1, endtime=21600,
+                      timestep=1, endtime=21600, 
+                      lowerbound='0;0', 
+                      upperbound='1e-3;1e-3',
                       odefile='odescript.py'):
     '''!
     Function to generate Python ODE script from a given model 
@@ -162,7 +164,7 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
 
     Usage:
 
-        python astools.py genODE --modelfile=models/asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --odefile=glycolysis.py
+        python astools.py genODE --modelfile=models/asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --lowerbound=0;0 --upperbound=1e-3;1e-3 --odefile=glycolysis.py
 
     @param modelfile String: Name of model specification file in 
     models folder. This assumes that the model file is not in  models 
@@ -181,6 +183,16 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
     Default = 1.0.
     @param endtime Float: Time to end simulation - the simulation 
     will run from 0 to end time. Default = 21600.
+    @param lowerbound String: Define lower boundary of objects. For 
+    example, "1;2" means that when the value of the object hits 1, 
+    it will be bounced back to 2. Default = 0;0; that is, when the 
+    value of the object goes to negative, it will be bounced back 
+    to zero. 
+    @param upperbound String: Define upper boundary of objects. For 
+    example, "10;9" means that when the value of the object hits 1, 
+    it will be pushed down to 9. Default = 1e-3;1e-3; that is, when 
+    the value of the object above 1e-3, it will be pushed back to 
+    1e-3. 
     @param odefile String: Python ODE script file to write out. This 
     file will be written into odescript folder. Default = odescript.py.
     @return: A list containing the Python ODE script (one element = 
@@ -188,7 +200,8 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
     '''
     (spec, modelobj) = modelReader(modelfile, mtype, 'extended')
     datalist = ASModeller.generate_ODE(spec, modelobj, solver, 
-                                       timestep, endtime)
+                                       timestep, endtime,
+                                       lowerbound, upperbound)
     filepath = fileWriter(datalist, 'odescript', odefile)
     return datalist
 

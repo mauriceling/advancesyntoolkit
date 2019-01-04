@@ -142,7 +142,8 @@ def print_header(spec):
     return printList
 
 def print_Setup(objlist, objTable, solver='RK4', 
-                timestep=1, endtime=21600):
+                timestep=1, endtime=21600,
+                lowerbound=[0.0, 0.0], upperbound=[1e-3, 1e-3]):
     '''!
     Function to generate / print ODE simulation setup codes.
 
@@ -162,6 +163,16 @@ def print_Setup(objlist, objTable, solver='RK4',
     Default = 1.0.
     @param endtime Float: Time to end simulation - the simulation 
     will run from 0 to end time. Default = 21600.
+    @param lowerbound String: Define lower boundary of objects. For 
+    example, "[1, 2]" means that when the value of the object hits 1, 
+    it will be bounced back to 2. Default = [0.0, 0.0]; that is, 
+    when the value of the object goes to negative, it will be 
+    bounced back to zero. 
+    @param upperbound String: Define upper boundary of objects. For 
+    example, "[10, 9]" means that when the value of the object hits 
+    1, it will be pushed down to 9. Default = [1e-3, 1e-3]; that is, 
+    when the value of the object above 1e-3, it will be pushed back 
+    to 1e-3. 
     @return: List containing the Python ODE setup codes (one 
     element = one line).
     '''
@@ -215,14 +226,36 @@ def print_Setup(objlist, objTable, solver='RK4',
     pTerm = 'labels = %s' % str(labels)
     printList.append(pTerm)
     printList.append(' ')
-    # 5. Generate ODE execution
-    pTerm = 'model = %s(ODE, 0.0, y, %s, %s)' % \
+    # 5. Boundary conditions
+    pTerm = 'lowerbound = {'
+    for name in objTable:
+        pTerm = pTerm + "'%s': [%s, %s], " % \
+                        (str(objTable[name]), 
+                         str(lowerbound[0]), 
+                         str(lowerbound[1]))
+    pTerm = pTerm + "}"
+    printList.append(pTerm)
+    printList.append(' ')
+    pTerm = 'upperbound = {'
+    for name in objTable:
+        pTerm = pTerm + "'%s': [%s, %s], " % \
+                        (str(objTable[name]), 
+                         str(upperbound[0]), 
+                         str(upperbound[1]))
+    pTerm = pTerm + "}"
+    printList.append(pTerm)
+    printList.append(' ')
+    # 6. Generate ODE execution
+    pTerm = \
+    'model = %s(ODE, 0.0, y, %s, %s, \
+None, lowerbound, upperbound)' % \
         (str(solver), str(timestep), str(endtime))
     printList.append(pTerm)
     return printList
 
-def generate_ODE(spec, modelobj, solver, 
-                 timestep, endtime):
+def generate_ODE(spec, modelobj, solver='RK4', 
+                 timestep=1, endtime=21600, 
+                 lowerbound='0;0', upperbound='1e-3;1e-3'):
     '''!
     Function to generate Python ODE codes by wrapping up other 
     generation functions.
@@ -244,6 +277,16 @@ def generate_ODE(spec, modelobj, solver,
     Default = 1.0.
     @param endtime Float: Time to end simulation - the simulation 
     will run from 0 to end time. Default = 21600.
+    @param lowerbound String: Define lower boundary of objects. For 
+    example, "1,2" means that when the value of the object hits 1, 
+    it will be bounced back to 2. Default = 0,0; that is, when the 
+    value of the object goes to negative, it will be bounced back 
+    to zero. 
+    @param upperbound String: Define upper boundary of objects. For 
+    example, "10,9" means that when the value of the object hits 1, 
+    it will be pushed down to 9. Default = 1e-3,1e-3; that is, when 
+    the value of the object above 1e-3, it will be pushed back to 
+    1e-3. 
     @return: List containing the Python ODE codes (one element = 
     one line).
     '''
@@ -251,7 +294,10 @@ def generate_ODE(spec, modelobj, solver,
     modelobj = substitute_rateEq(modelobj, objTable)
     ODEHeader = print_header(spec)
     ODEList = print_rateEq(modelobj)
+    lowerbound = [float(x) for x in lowerbound.strip().split(';')]
+    upperbound = [float(x) for x in upperbound.strip().split(';')]
     ODESetup = print_Setup(modelobj, objTable, solver, 
-                           timestep, endtime)
+                           timestep, endtime, 
+                           lowerbound, upperbound)
     datalist = ODEHeader + ODEList + ODESetup
     return datalist
