@@ -111,8 +111,10 @@ def _readModelObject(modelfile):
     '''
     modelfile = os.path.abspath(modelfile)
     with open(modelfile, 'rb') as f:
-        modelobj = pickle.load(f)
-    return modelobj
+        loaded_data = pickle.load(f)
+    spec = loaded_data[0]
+    modelobj = loaded_data[1]
+    return (spec, modelobj)
 
 def readModelObject(modelfile):
     '''!
@@ -123,12 +125,12 @@ def readModelObject(modelfile):
 
         python astools.py readMO --modelfile=models/mo/glycolysis.mo
 
-    @param modelfile String: Relative path to the model object 
+    @param modelfile String: Relative path to the model objects 
     file. 
     '''
     modelfile = os.path.abspath(modelfile)
-    modelobj = _readModelObject(modelfile)
-    _printASModelSpecification(None, modelobj)
+    (spec, modelobj) = _readModelObject(modelfile)
+    _printASModelSpecification(spec, modelobj)
 
 def _printFluxes(modelobj):
     '''!
@@ -179,7 +181,7 @@ def readMOFluxes(modelfile):
     file. 
     '''
     modelfile = os.path.abspath(modelfile)
-    modelobj = _readModelObject(modelfile)
+    (spec, modelobj) = _readModelObject(modelfile)
     _printFluxes(modelobj)
 
 def generateModelObject(modelfile, outputfile):
@@ -200,17 +202,22 @@ def generateModelObject(modelfile, outputfile):
     modelobjList = []
     modelfile = [x.strip() for x in modelfile.split(';')]
     print('Input Model File(s) ...')
+    count = 1
     for mf in modelfile:
         mf = os.path.abspath(mf)
-        print('ASM Model File: ' + mf)
+        print('ASM Model File %s: %s' % (count, mf))
         (spec, modelobj) = modelReader(mf, 'ASM', 'extended')
         specList.append(spec)
         modelobjList.append(modelobj)
+        count = count + 1
     print('')
+    (merged_spec, merged_modelobj) = \
+        ASModeller.modelMerge(specList, modelobjList)
     filepath = os.path.abspath(outputfile)
     print('Output Model Objects File: ' + filepath)
     with open(filepath, 'wb') as f:
-        pickle.dump(modelobj, f, pickle.HIGHEST_PROTOCOL)
+        dumpdata = (merged_spec, merged_modelobj)
+        pickle.dump(dumpdata, f, pickle.HIGHEST_PROTOCOL)
 
 def fileWriter(datalist, relativefolder, filepath):
     '''!
