@@ -23,6 +23,7 @@ limitations under the License.
 '''
 
 import importlib
+import pickle
 import os
 import re
 import sys
@@ -46,6 +47,7 @@ def printASM(modelfile, readertype):
     @param readertype String: Reader type for AdvanceSyn Model 
     spectification. Allowable types are 'basic' and 'extended'. 
     '''
+    modelfile = os.path.abspath(modelfile)
     if readertype == 'basic':
         (spec, modelobj) = modelReader(modelfile, 'ASM', 'basic')
     elif readertype == 'extended':
@@ -58,23 +60,12 @@ def printASM(modelfile, readertype):
         for item in spec[section]:
             print('%s/%s = %s' % (section, item, spec[section][item]))
 
-def readASModelSpecification(modelfile):
-    '''!
-    Function to read the AdvanceSyn model specification file and 
-    print out its details after processing into model objects.
-
-    Usage:
-
-        python astools.py readASM --modelfile=models/asm/glycolysis.modelspec
-
-    @param modelfile String: Relative path to the model specification 
-    file. This does not assume that the model file is in models folder.
-    '''
-    (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
-    print('-------- Model Identifiers --------')
-    for key in spec['Identifiers']:
-        print('%s: %s' % (str(key), str(spec['Identifiers'][key])))
-        print('')
+def _printASModelSpecification(spec, modelobj):
+    if spec != None:
+        print('-------- Model Identifiers --------')
+        for key in spec['Identifiers']:
+            print('%s: %s' % (str(key), str(spec['Identifiers'][key])))
+            print('')
     print('-------- Model Objects --------')
     for key in modelobj:
         obj = modelobj[key]
@@ -87,19 +78,45 @@ def readASModelSpecification(modelfile):
         pprint(obj.outflux)
         print('')
 
-def readASMFluxes(modelfile):
+def readASModelSpecification(modelfile):
     '''!
     Function to read the AdvanceSyn model specification file and 
-    print out fluxes (productions and usages) of model objects.
+    print out its details after processing into model objects.
 
     Usage:
 
-        python astools.py readASMFlux --modelfile=models/asm/glycolysis.modelspec
+        python astools.py readASM --modelfile=models/asm/glycolysis.modelspec
 
     @param modelfile String: Relative path to the model specification 
-    file. This does not assume that the model file is in models folder.
+    file. 
     '''
+    modelfile = os.path.abspath(modelfile)
     (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
+    _printASModelSpecification(spec, modelobj)
+
+def _readModelObject(modelfile):
+    modelfile = os.path.abspath(modelfile)
+    with open(modelfile, 'rb') as f:
+        modelobj = pickle.load(f)
+    return modelobj
+
+def readModelObject(modelfile):
+    '''!
+    Function to read the AdvanceSyn model objects file and print out 
+    its details.
+
+    Usage:
+
+        python astools.py readMO --modelfile=models/mo/glycolysis.mo
+
+    @param modelfile String: Relative path to the model object 
+    file. 
+    '''
+    modelfile = os.path.abspath(modelfile)
+    modelobj = _readModelObject(modelfile)
+    _printASModelSpecification(None, modelobj)
+
+def _printFluxes(modelobj):
     results = []
     for key in modelobj:
         obj = modelobj[key]
@@ -111,6 +128,68 @@ def readASMFluxes(modelfile):
     print('|'.join(['Name', 'Productions', 'Usages']))
     for obj in results:
         print('|'.join(obj))
+
+def readASMFluxes(modelfile):
+    '''!
+    Function to read the AdvanceSyn model specification file and 
+    print out fluxes (productions and usages) of model objects.
+
+    Usage:
+
+        python astools.py readASMFlux --modelfile=models/asm/glycolysis.modelspec
+
+    @param modelfile String: Relative path to the model specification 
+    file. 
+    '''
+    modelfile = os.path.abspath(modelfile)
+    (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
+    _printFluxes(modelobj)
+
+def readMOFluxes(modelfile):
+    '''!
+    Function to read the AdvanceSyn model objects file and print out 
+    fluxes (productions and usages) of model objects.
+
+    Usage:
+
+        python astools.py readMOFlux --modelfile=models/mo/glycolysis.mo
+
+    @param modelfile String: Relative path to the model object 
+    file. 
+    '''
+    modelfile = os.path.abspath(modelfile)
+    modelobj = _readModelObject(modelfile)
+    _printFluxes(modelobj)
+
+def generateModelObject(modelfile, outputfile):
+    '''!
+    Function to read the AdvanceSyn model specification file(s) 
+    and generate a file consisting of the internal model objects.
+
+    Usage:
+
+        python astools.py genMO --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/mo/glycolysis.mo
+
+    @param modelfile String: Relative path to the model specification 
+    file. 
+    @param outputfule String: Relative path to the output model 
+    objects file.
+    '''
+    specList = []
+    modelobjList = []
+    modelfile = [x.strip() for x in modelfile.split(';')]
+    print('Input Model File(s) ...')
+    for mf in modelfile:
+        mf = os.path.abspath(mf)
+        print('ASM Model File: ' + mf)
+        (spec, modelobj) = modelReader(mf, 'ASM', 'extended')
+        specList.append(spec)
+        modelobjList.append(modelobj)
+    print('')
+    filepath = os.path.abspath(outputfile)
+    print('Output Model Objects File: ' + filepath)
+    with open(filepath, 'wb') as f:
+        pickle.dump(modelobj, f, pickle.HIGHEST_PROTOCOL)
 
 def fileWriter(datalist, relativefolder, filepath):
     '''!
@@ -198,6 +277,7 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
     @return: A list containing the Python ODE script (one element = 
     one line).
     '''
+    modelfile = os.path.abspath(modelfile)
     (spec, modelobj) = modelReader(modelfile, mtype, 'extended')
     datalist = ASModeller.generate_ODE(spec, modelobj, solver, 
                                        timestep, endtime,
@@ -407,11 +487,14 @@ def systemData():
     print('')
     
 if __name__ == '__main__':
-    exposed_functions = {'printASM': printASM,
-                         'readASM': readASModelSpecification,
-                         'readASMFlux': readASMFluxes,
+    exposed_functions = {'genMO': generateModelObject,
                          'genODE': generateODEScript,
                          'LSA': localSensitivity,
+                         'printASM': printASM,
+                         'readASM': readASModelSpecification,
+                         'readASMFlux': readASMFluxes,
+                         'readMO': readModelObject,
+                         'readMOFlux': readMOFluxes,
                          'runODE': runODEScript,
                          'senGen': sensitivityGenerator,
                          'systemdata': systemData}
