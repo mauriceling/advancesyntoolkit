@@ -156,7 +156,7 @@ def _backup_object_loader_1(names, objlist):
     and value is the object numbering.
     '''
     for i in range(len(names)):
-        if names[i] not in objlist:
+        if names[i] not in objlist and names[i] != '':
             obj = ModelObject(names[i], 
                               'Inserted by Backup Object Loader')
             obj.value['initial'] = 0
@@ -188,9 +188,11 @@ def process_reactions_1(spec):
             sources = movement[0].strip()
             sources = sources.split('+')
             sources = [s.strip() for s in sources]
+            sources = [s for s in sources if s != '']
             destinations = movement[1].strip()
             destinations = destinations.split('+')
             destinations = [d.strip() for d in destinations]
+            destinations = [d for d in destinations if d != '']
             reactions[ID] = {'sources': sources,
                              'destinations': destinations,
                              'rateEq': rateEq}
