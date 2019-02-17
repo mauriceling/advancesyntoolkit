@@ -26,6 +26,7 @@ limitations under the License.
 from . import generator_ode
 from . import model_object
 from . import model_access
+from . import model_merge
 
 from .generator_ode import generate_ODE
 from .generator_ode import generate_object_table
@@ -44,3 +45,5 @@ from .model_access import modelspec_reader
 from .model_access import specobj_reader
 from .model_access import process_asm_model
 from .model_access import process_reactions_1
+
+from .model_merge import modelMerge
