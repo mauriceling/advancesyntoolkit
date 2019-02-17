@@ -61,6 +61,14 @@ def printASM(modelfile, readertype):
             print('%s/%s = %s' % (section, item, spec[section][item]))
 
 def _printASModelSpecification(spec, modelobj):
+    '''!
+    Private method - To print out ASM model details.
+
+    @param spec Object: ConfigParser object containing the 
+    processed model
+    @param modelobj Dictionary: Dictionary of objects where key 
+    is the object name and value is the object numbering.
+    '''
     if spec != None:
         print('-------- Model Identifiers --------')
         for key in spec['Identifiers']:
@@ -95,6 +103,12 @@ def readASModelSpecification(modelfile):
     _printASModelSpecification(spec, modelobj)
 
 def _readModelObject(modelfile):
+    '''!
+    Private method - To read model objects file.
+
+    @param modelfile String: Relative path to the model objects 
+    file. 
+    '''
     modelfile = os.path.abspath(modelfile)
     with open(modelfile, 'rb') as f:
         modelobj = pickle.load(f)
@@ -117,6 +131,13 @@ def readModelObject(modelfile):
     _printASModelSpecification(None, modelobj)
 
 def _printFluxes(modelobj):
+    '''!
+    Private method - To print out fluxes (productions and usages) 
+    of model objects.
+
+    @param modelobj Dictionary: Dictionary of objects where key 
+    is the object name and value is the object numbering.
+    '''
     results = []
     for key in modelobj:
         obj = modelobj[key]
@@ -170,8 +191,8 @@ def generateModelObject(modelfile, outputfile):
 
         python astools.py genMO --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/mo/glycolysis.mo
 
-    @param modelfile String: Relative path to the model specification 
-    file. 
+    @param modelfile String: Relative path(s) to the model specification 
+    file(s), separated by semi-colon. 
     @param outputfule String: Relative path to the output model 
     objects file.
     '''
