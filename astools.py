@@ -167,7 +167,7 @@ def generateModelObject(modelfile, outputfile, prefix='exp'):
 
     @param modelfile String: Relative path(s) to the model specification 
     file(s), separated by semi-colon. 
-    @param outputfule String: Relative path to the output model 
+    @param outputfile String: Relative path to the output model 
     objects file.
     @param prefix String: Prefix for new reaction IDs. This prefix 
     cannot be any existing prefixes in any of the model specifications 
@@ -207,7 +207,7 @@ def mergeASM(modelfile, outputfile, prefix='exp'):
 
     @param modelfile String: Relative path(s) to the model specification 
     file(s), separated by semi-colon. 
-    @param outputfule String: Relative path to the output model 
+    @param outputfile String: Relative path to the output model 
     objects file.
     @param prefix String: Prefix for new reaction IDs. This prefix 
     cannot be any existing prefixes in any of the model specifications 
