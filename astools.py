@@ -156,19 +156,22 @@ def readFluxes(modelfile, mtype='ASM'):
         modelobj = loaded_data[1]
     _printFluxes(modelobj)
 
-def generateModelObject(modelfile, outputfile):
+def generateModelObject(modelfile, outputfile, prefix='exp'):
     '''!
     Function to read the AdvanceSyn model specification file(s) 
     and generate a file consisting of the internal model objects.
 
     Usage:
 
-        python astools.py genMO --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/mo/glycolysis.mo
+        python astools.py genMO --prefix=exp --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/mo/glycolysis.mo
 
     @param modelfile String: Relative path(s) to the model specification 
     file(s), separated by semi-colon. 
     @param outputfule String: Relative path to the output model 
     objects file.
+    @param prefix String: Prefix for new reaction IDs. This prefix 
+    cannot be any existing prefixes in any of the model specifications 
+    to be merged. Default = 'exp'.
     '''
     specList = []
     modelobjList = []
@@ -184,7 +187,7 @@ def generateModelObject(modelfile, outputfile):
         count = count + 1
     print('')
     (merged_spec, merged_modelobj) = \
-        ASModeller.modelMerge(specList, modelobjList, 
+        ASModeller.modelMerge(specList, modelobjList, prefix, 
                               True, True)
     filepath = os.path.abspath(outputfile)
     print('Output Model Objects File: ' + filepath)
@@ -192,7 +195,7 @@ def generateModelObject(modelfile, outputfile):
         dumpdata = (merged_spec, merged_modelobj)
         pickle.dump(dumpdata, f, pickle.HIGHEST_PROTOCOL)
 
-def mergeASM(modelfile, outputfile):
+def mergeASM(modelfile, outputfile, prefix='exp'):
     '''!
     Function to read the AdvanceSyn model specification file(s) 
     and merge them into a single AdvanceSyn model specification 
@@ -200,12 +203,15 @@ def mergeASM(modelfile, outputfile):
 
     Usage:
 
-        python astools.py mergeASM --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/asm/glycolysis_RFP.modelspec
+        python astools.py mergeASM --prefix=exp --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/asm/glycolysis_RFP.modelspec
 
     @param modelfile String: Relative path(s) to the model specification 
     file(s), separated by semi-colon. 
     @param outputfule String: Relative path to the output model 
     objects file.
+    @param prefix String: Prefix for new reaction IDs. This prefix 
+    cannot be any existing prefixes in any of the model specifications 
+    to be merged. Default = 'exp'.
     '''
     specList = []
     modelobjList = []
@@ -221,7 +227,7 @@ def mergeASM(modelfile, outputfile):
         count = count + 1
     print('')
     (merged_spec, merged_modelobj) = \
-        ASModeller.modelMerge(specList, modelobjList, 
+        ASModeller.modelMerge(specList, modelobjList, prefix, 
                               True, False)
     filepath = os.path.abspath(outputfile)
     print('Output AdvanceSyn Model Specification File: ' + filepath)

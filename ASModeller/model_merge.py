@@ -25,7 +25,7 @@ limitations under the License.
 '''
 
 def _renumberReactions(modelnumber, count, 
-                       spec, modelobj,
+                       spec, modelobj, prefix='exp',
                        p_spec=True, p_modelobj=True):
     if p_spec:
         print('Renaming / Renumbering Reactions in Specification ' + \
@@ -33,7 +33,7 @@ def _renumberReactions(modelnumber, count,
         table = {}
         # Step 1: Generate reaction renumbering table
         for rxn_ID in spec['Reactions']:
-            table[rxn_ID] = 'exp' + str(count)
+            table[rxn_ID] = str(prefix) + str(count)
             count = count + 1
         # Step 2: Renumber specification
         for rxn_ID in spec['Reactions']:
@@ -72,7 +72,7 @@ def _renumberReactions(modelnumber, count,
     '''
     return (spec, modelobj, count)
 
-def renameReactions(specList, modelobjList,
+def renameReactions(specList, modelobjList, prefix='exp',
                     p_specList=True, p_modelobjList=True):
     count = 1
     for index in range(len(specList)):
@@ -212,10 +212,11 @@ def mergeModelObjects(modelobj, modelobjList):
     print('')
     return modelobj
 
-def modelMerge(specList, modelobjList,
+def modelMerge(specList, modelobjList, prefix='exp',
                p_specList=True, p_modelobjList=True):
     (specList, modelobjList) = renameReactions(specList, 
                                                modelobjList,
+                                               prefix,
                                                p_specList, 
                                                p_modelobjList)
     if p_specList and \
