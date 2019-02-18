@@ -192,6 +192,43 @@ def generateModelObject(modelfile, outputfile):
         dumpdata = (merged_spec, merged_modelobj)
         pickle.dump(dumpdata, f, pickle.HIGHEST_PROTOCOL)
 
+def mergeASM(modelfile, outputfile):
+    '''!
+    Function to read the AdvanceSyn model specification file(s) 
+    and merge them into a single AdvanceSyn model specification 
+    file.
+
+    Usage:
+
+        python astools.py mergeASM --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/asm/glycolysis_RFP.modelspec
+
+    @param modelfile String: Relative path(s) to the model specification 
+    file(s), separated by semi-colon. 
+    @param outputfule String: Relative path to the output model 
+    objects file.
+    '''
+    specList = []
+    modelobjList = []
+    modelfile = [x.strip() for x in modelfile.split(';')]
+    print('Input Model File(s) ...')
+    count = 1
+    for mf in modelfile:
+        mf = os.path.abspath(mf)
+        print('ASM Model File %s: %s' % (count, mf))
+        (spec, modelobj) = modelReader(mf, 'ASM', 'basic')
+        specList.append(spec)
+        modelobjList.append(modelobj)
+        count = count + 1
+    print('')
+    (merged_spec, merged_modelobj) = \
+        ASModeller.modelMerge(specList, modelobjList, 
+                              True, False)
+    filepath = os.path.abspath(outputfile)
+    print('Output AdvanceSyn Model Specification File: ' + filepath)
+    outfile = open(filepath, 'w')
+    merged_spec.write(outfile)
+    outfile.close()
+
 def fileWriter(datalist, relativefolder, filepath):
     '''!
     Function to write data from a list into a file.
@@ -491,6 +528,7 @@ if __name__ == '__main__':
     exposed_functions = {'genMO': generateModelObject,
                          'genODE': generateODEScript,
                          'LSA': localSensitivity,
+                         'mergeASM': mergeASM,
                          'printASM': printASM,
                          'readmodel': readModel,
                          'readflux': readFluxes,
