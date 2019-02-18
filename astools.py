@@ -102,13 +102,7 @@ def readModel(modelfile, mtype='ASM'):
     (AdvanceSyn Model Objects). Default = 'ASM'.
     '''
     modelfile = os.path.abspath(modelfile)
-    if mtype == 'ASM':
-        (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
-    elif mtype =='MO':
-        with open(modelfile, 'rb') as f:
-            loaded_data = pickle.load(f)
-        spec = loaded_data[0]
-        modelobj = loaded_data[1]
+    (spec, modelobj) = modelReader(modelfile, mtype, 'extended')
     _printASModelSpecification(spec, modelobj)
 
 def _printFluxes(modelobj):
@@ -147,13 +141,7 @@ def readFluxes(modelfile, mtype='ASM'):
     (AdvanceSyn Model Objects). Default = 'ASM'.
     '''
     modelfile = os.path.abspath(modelfile)
-    if mtype == 'ASM':
-        (spec, modelobj) = modelReader(modelfile, 'ASM', 'extended')
-    elif mtype =='MO':
-        with open(modelfile, 'rb') as f:
-            loaded_data = pickle.load(f)
-        spec = loaded_data[0]
-        modelobj = loaded_data[1]
+    (spec, modelobj) = modelReader(modelfile, mtype, 'extended')
     _printFluxes(modelobj)
 
 def generateModelObject(modelfile, outputfile, prefix='exp'):
@@ -312,6 +300,11 @@ def modelReader(modelfile, mtype, readertype='extended'):
         if readertype == 'basic':
             spec = ASModeller.modelspec_reader(modelfile, 'basic')
             modelobj = None
+    if mtype == 'MO':
+        with open(modelfile, 'rb') as f:
+            loaded_data = pickle.load(f)
+        spec = loaded_data[0]
+        modelobj = loaded_data[1]
     return (spec, modelobj)
 
 def generateODEScript(modelfile, mtype='ASM', solver='RK4', 
