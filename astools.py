@@ -184,7 +184,8 @@ def generateModelObject(modelfile, outputfile):
         count = count + 1
     print('')
     (merged_spec, merged_modelobj) = \
-        ASModeller.modelMerge(specList, modelobjList)
+        ASModeller.modelMerge(specList, modelobjList, 
+                              True, True)
     filepath = os.path.abspath(outputfile)
     print('Output Model Objects File: ' + filepath)
     with open(filepath, 'wb') as f:

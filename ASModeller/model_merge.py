@@ -212,14 +212,25 @@ def mergeModelObjects(modelobj, modelobjList):
     print('')
     return modelobj
 
-def modelMerge(specList, modelobjList):
+def modelMerge(specList, modelobjList,
+               p_specList=True, p_modelobjList=True):
     (specList, modelobjList) = renameReactions(specList, 
-                                               modelobjList)
-    merged_spec = specList[0]
-    merged_modelobj = modelobjList[0]
-    specList = specList[1:]
-    modelobjList = modelobjList[1:]
-    merged_spec = mergeSpecification(merged_spec, specList)
-    merged_modelobj = mergeModelObjects(merged_modelobj, 
-                                        modelobjList)
+                                               modelobjList,
+                                               p_specList, 
+                                               p_modelobjList)
+    if p_specList and \
+        specList != None and len(specList) > 0:
+        merged_spec = specList[0]
+        specList = specList[1:]
+        merged_spec = mergeSpecification(merged_spec, specList)
+    else:
+        merged_spec = None
+    if p_modelobjList and \
+        modelobjList != None and len(modelobjList) > 0:
+        merged_modelobj = modelobjList[0]
+        modelobjList = modelobjList[1:]
+        merged_modelobj = mergeModelObjects(merged_modelobj, 
+                                            modelobjList)
+    else:
+        merged_modelobj = None
     return (merged_spec, merged_modelobj)
