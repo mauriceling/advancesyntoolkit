@@ -24,6 +24,69 @@ See the License for the specific language governing permissions and
 limitations under the License.
 '''
 
+def _renumberReactions(modelnumber, count, 
+                       spec, modelobj,
+                       p_spec=True, p_modelobj=True):
+    if p_spec:
+        print('Renaming / Renumbering Reactions in Specification ' + \
+            str(modelnumber))
+        table = {}
+        # Step 1: Generate reaction renumbering table
+        for rxn_ID in spec['Reactions']:
+            table[rxn_ID] = 'exp' + str(count)
+            count = count + 1
+        # Step 2: Renumber specification
+        for rxn_ID in spec['Reactions']:
+            newID = table[rxn_ID]
+            spec['Reactions'][newID] = spec['Reactions'][rxn_ID]
+            del spec['Reactions'][rxn_ID]
+            print('  Specification %s: %s --> %s' % \
+                (modelnumber, rxn_ID, newID))
+        print('')
+    if p_modelobj:
+    # Step 3: Renumbering model objects
+        print('  Number of Model Objects in Specification %s: %s' \
+            % (modelnumber, len(modelobj)))
+        print('')
+        index = 1
+        for name in modelobj:
+            mobj = modelobj[name]
+            print('  Object Name / Description %s: %s | %s' % \
+                (index, mobj.name, mobj.description))
+            print('')
+            index = index + 1
+            for key in list(mobj.influx.keys()):
+                newID = table[key]
+                mobj.influx[newID] = mobj.influx[key]
+                del mobj.influx[key]
+                print('    Influx %s --> %s' % (key, newID))
+            for key in list(mobj.outflux.keys()):
+                newID = table[key]
+                mobj.outflux[newID] = mobj.outflux[key]
+                del mobj.outflux[key]
+                print('    Outflux %s --> %s' % (key, newID))
+            print('')
+    '''
+    for key in spec['Reactions']:
+        print('%s / %s' % (key, spec['Reactions'][key]))
+    '''
+    return (spec, modelobj, count)
+
+def renameReactions(specList, modelobjList,
+                    p_specList=True, p_modelobjList=True):
+    count = 1
+    for index in range(len(specList)):
+        (spec, 
+         modelobj,
+         count) = _renumberReactions(index+1, count,
+                                     specList[index], 
+                                     modelobjList[index],
+                                     p_specList, 
+                                     p_modelobjList)
+        specList[index] = spec
+        modelobjList[index] = modelobj
+    return (specList, modelobjList)
+
 def mergeSpecification(spec, specList):
     print('Merge Specifications ...')
     statistics = {'Identifiers': [len(spec['Identifiers'])],
@@ -88,62 +151,6 @@ def mergeSpecification(spec, specList):
         str(sum(statistics['Reactions'])))
     print('')
     return spec
-    
-def _renumberReactions(modelnumber, count, spec, modelobj):
-    print('Renaming / Renumbering Reactions in Specification ' + \
-        str(modelnumber))
-    table = {}
-    # Step 1: Generate reaction renumbering table
-    for rxn_ID in spec['Reactions']:
-        table[rxn_ID] = 'exp' + str(count)
-        count = count + 1
-    # Step 2: Renumber specification
-    for rxn_ID in spec['Reactions']:
-        newID = table[rxn_ID]
-        spec['Reactions'][newID] = spec['Reactions'][rxn_ID]
-        del spec['Reactions'][rxn_ID]
-        print('  Specification %s: %s --> %s' % \
-            (modelnumber, rxn_ID, newID))
-    print('')
-    # Step 3: Renumbering model objects
-    print('  Number of Model Objects in Specification %s: %s' \
-        % (modelnumber, len(modelobj)))
-    print('')
-    index = 1
-    for name in modelobj:
-        mobj = modelobj[name]
-        print('  Object Name / Description %s: %s | %s' % \
-            (index, mobj.name, mobj.description))
-        print('')
-        index = index + 1
-        for key in list(mobj.influx.keys()):
-            newID = table[key]
-            mobj.influx[newID] = mobj.influx[key]
-            del mobj.influx[key]
-            print('    Influx %s --> %s' % (key, newID))
-        for key in list(mobj.outflux.keys()):
-            newID = table[key]
-            mobj.outflux[newID] = mobj.outflux[key]
-            del mobj.outflux[key]
-            print('    Outflux %s --> %s' % (key, newID))
-        print('')
-    '''
-    for key in spec['Reactions']:
-        print('%s / %s' % (key, spec['Reactions'][key]))
-    '''
-    return (spec, modelobj, count)
-
-def renameReactions(specList, modelobjList):
-    count = 1
-    for index in range(len(specList)):
-        (spec, 
-         modelobj,
-         count) = _renumberReactions(index+1, count,
-                                     specList[index], 
-                                     modelobjList[index])
-        specList[index] = spec
-        modelobjList[index] = modelobj
-    return (specList, modelobjList)
 
 def mergeModelObjects(modelobj, modelobjList):
     print('Merging Model Objects ...')
