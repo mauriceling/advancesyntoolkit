@@ -27,6 +27,31 @@ limitations under the License.
 def _renumberReactions(modelnumber, count, 
                        spec, modelobj, prefix='exp',
                        p_spec=True, p_modelobj=True):
+    '''!
+    Private function - used by renameReactions() to renumber all 
+    reactions in a single model specification and the corresponding 
+    list of model objects.
+
+    @param modelnumber Integer: Numerical order of models for 
+    processing - this is used for print statements.
+    @param count Integer: Numerical numbering for the next reaction 
+    count to use.
+    @param spec Object: Model specfication object as ConfigParser 
+    object.
+    @param modelobj Object: Model specfication object as ConfigParser 
+    object.
+    @param prefix String: Prefix for new reaction IDs. This prefix 
+    cannot be any existing prefixes in any of the model specifications 
+    to be merged. Default = 'exp'.
+    @param p_spec Boolean: Flag to determine whether reactions 
+    in model specification (spec) should be renumbered. Default = 
+    True (reactions in spec to be renumbered).
+    @param p_modelobj Boolean: Flag to determine whether 
+    reactions in model objects (modelobj) should be renumbered. 
+    Default = True (reactions in modelobj to be renumbered).
+    @return: (reaction renumbered specification, list of reaction 
+    renumbered model objects, next reaction count)
+    '''
     if p_spec:
         print('Renaming / Renumbering Reactions in Specification ' + \
             str(modelnumber))
@@ -74,6 +99,31 @@ def _renumberReactions(modelnumber, count,
 
 def renameReactions(specList, modelobjList, prefix='exp',
                     p_specList=True, p_modelobjList=True):
+    '''!
+    Function to renumber all reactions in model specifications and 
+    model objects. This is necessary to prevent duplicated reaction 
+    IDs, which will cause errors during model merging as reaction 
+    IDs are used as keys in various dictionaries; thus, it is 
+    necessary to have unique reaction IDs across the multiple 
+    model specifications to be merged.
+
+    @param specList List: List of AdvanceSyn model specifications 
+    as ConfigParser objects.
+    @param modelobjList List: List of model objects where each 
+    model objects is a list of model objects representing the 
+    corresponding (by index) model specification in specList.
+    @param prefix String: Prefix for new reaction IDs. This prefix 
+    cannot be any existing prefixes in any of the model specifications 
+    to be merged. Default = 'exp'.
+    @param p_specList Boolean: Flag to determine whether reactions 
+    in specList should be renumbered. Default = True (reactions 
+    in specList to be renumbered).
+    @param p_modelobjList Boolean: Flag to determine whether 
+    reactions in modelobjList should be renumbered. Default = True 
+    (reactions in modelobjList to be renumbered).
+    @return: (reaction renumbered specification list, list of 
+    reaction renumbered model object list)
+    '''
     count = 1
     for index in range(len(specList)):
         (spec, 
@@ -81,6 +131,7 @@ def renameReactions(specList, modelobjList, prefix='exp',
          count) = _renumberReactions(index+1, count,
                                      specList[index], 
                                      modelobjList[index],
+                                     prefix,
                                      p_specList, 
                                      p_modelobjList)
         specList[index] = spec
@@ -88,6 +139,17 @@ def renameReactions(specList, modelobjList, prefix='exp',
     return (specList, modelobjList)
 
 def mergeSpecification(spec, specList):
+    '''!
+    Function to merge a list of model specifications into a given 
+    model specification
+
+    @param spec Object: Model specfication object as ConfigParser 
+    object.
+    @param specList List: List of model specification objects 
+    where each element is a ConfigParser object.
+    @return: Merged model specification object as ConfigParser 
+    object.
+    '''
     print('Merge Specifications ...')
     statistics = {'Identifiers': [len(spec['Identifiers'])],
                   'Objects': [len(spec['Objects'])],
@@ -153,6 +215,19 @@ def mergeSpecification(spec, specList):
     return spec
 
 def mergeModelObjects(modelobj, modelobjList):
+    '''!
+    Function to merge a 2-dimensional list of model objects, where 
+    the first dimension is a list of model objects representing 
+    the a corresponding model specification, into a given list of 
+    model objects.
+
+    @param modelobj List: List of model objects for all model 
+    objects in modelobjList to merge into.
+    @param modelobjList List: List of list of model objects where 
+    each first-level element is a list of model objects representing 
+    the a corresponding model specification.
+    @return: List of merged model objects.
+    '''
     print('Merging Model Objects ...')
     objcount = [len(modelobj)] + [len(x) for x in modelobjList]
     print('Number of Model Objects: %s' % \
@@ -214,6 +289,29 @@ def mergeModelObjects(modelobj, modelobjList):
 
 def modelMerge(specList, modelobjList, prefix='exp',
                p_specList=True, p_modelobjList=True):
+    '''!
+    Function to merge a list of AdvanceSyn model specifications 
+    and model objects into a single specification and object. This 
+    function is the interface for models merging.
+
+    @param specList List: List of AdvanceSyn model specifications 
+    as ConfigParser objects.
+    @param modelobjList List: List of model objects where each 
+    model objects is a list of model objects representing the 
+    corresponding (by index) model specification in specList.
+    @param prefix String: Prefix for new reaction IDs. This prefix 
+    cannot be any existing prefixes in any of the model specifications 
+    to be merged. Default = 'exp'.
+    @param p_specList Boolean: Flag to determine whether specList 
+    should be merged. If not merged, the returned merged 
+    specification will be None. Default = True (specList to be 
+    merged).
+    @param p_modelobjList Boolean: Flag to determine whether 
+    modelobjList should be merged. If not merged, the returned list 
+    of merged model objects will be None. Default = True 
+    (modelobjList to be merged).
+    @return: (merged specification, list of merged model objects)
+    '''
     (specList, modelobjList) = renameReactions(specList, 
                                                modelobjList,
                                                prefix,
