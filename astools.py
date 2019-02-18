@@ -235,6 +235,45 @@ def mergeASM(modelfile, outputfile, prefix='exp'):
     merged_spec.write(outfile)
     outfile.close()
 
+def generateNetwork(modelfile, outputfile, outfmt='SIF'):
+    '''!
+    Function to read the AdvanceSyn model specification file(s) 
+    and merge them into a single AdvanceSyn model specification 
+    file.
+
+    Usage:
+
+        python astools.py genNetwork --outfmt=SIF --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=glycolysis_RFP.sif
+
+    @param modelfile String: Relative path(s) to the model specification 
+    file(s), separated by semi-colon. 
+    @param outputfile String: Relative path to the output model 
+    objects file.
+    @param prefix String: Prefix for new reaction IDs. This prefix 
+    cannot be any existing prefixes in any of the model specifications 
+    to be merged. Default = 'exp'.
+    '''
+    specList = []
+    modelfile = [x.strip() for x in modelfile.split(';')]
+    print('Input Model File(s) ...')
+    count = 1
+    for mf in modelfile:
+        mf = os.path.abspath(mf)
+        print('ASM Model File %s: %s' % (count, mf))
+        (spec, modelobj) = modelReader(mf, 'ASM', 'extended')
+        specList.append(spec)
+        count = count + 1
+    print('')
+    outfmt = str(outfmt).upper()
+    datalist = ASModeller.generateNetworkMap(specList, outfmt)
+    outputfile = os.path.abspath(outputfile)
+    outfile = open(outputfile, 'w')
+    print('Output File: ' + outputfile)
+    print('Output Format: ' + outfmt)
+    for line in datalist:
+        outfile.write(str(line) + '\n')
+    outfile.close()
+
 def fileWriter(datalist, relativefolder, filepath):
     '''!
     Function to write data from a list into a file.
@@ -532,6 +571,7 @@ def systemData():
     
 if __name__ == '__main__':
     exposed_functions = {'genMO': generateModelObject,
+                         'genNetwork': generateNetwork,
                          'genODE': generateODEScript,
                          'LSA': localSensitivity,
                          'mergeASM': mergeASM,

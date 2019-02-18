@@ -23,10 +23,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 '''
 
+from . import generator_network
 from . import generator_ode
 from . import model_object
 from . import model_access
 from . import model_merge
+
+from .generator_network import generateNetworkMap
 
 from .generator_ode import generate_ODE
 from .generator_ode import generate_object_table
