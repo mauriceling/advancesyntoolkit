@@ -238,8 +238,7 @@ def mergeASM(modelfile, outputfile, prefix='exp'):
 def generateNetwork(modelfile, outputfile, outfmt='SIF'):
     '''!
     Function to read the AdvanceSyn model specification file(s) 
-    and merge them into a single AdvanceSyn model specification 
-    file.
+    and generate a network / reaction visualization file.
 
     Usage:
 
@@ -249,9 +248,9 @@ def generateNetwork(modelfile, outputfile, outfmt='SIF'):
     file(s), separated by semi-colon. 
     @param outputfile String: Relative path to the output model 
     objects file.
-    @param prefix String: Prefix for new reaction IDs. This prefix 
-    cannot be any existing prefixes in any of the model specifications 
-    to be merged. Default = 'exp'.
+    @param outfmt String: Type of network visualizatio format to 
+    generate. Allowable options are 'SIF' (Simple Interaction 
+    Format). Default = 'SIF' (Simple Interaction Format).
     '''
     specList = []
     modelfile = [x.strip() for x in modelfile.split(';')]
