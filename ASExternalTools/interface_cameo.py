@@ -68,6 +68,49 @@ def find_pathway(model, product, max_prediction=4):
     for rxnID in pathways.pathways[0].data_frame['equation'].keys():
         print()
 
+def _fba(model, analysis):
+    '''!
+    Private function - to simulate a model using Flux Balance 
+    Analysis (FBA) or FBA-related methods, with Cameo.
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @analysis String: Type of FBA to perform. Allowable types are 
+    FBA (standard flux balance analysis) and pFBA (parsimonious 
+    FBA). 
+    '''
+    import cameo
+    if analysis == 'FBA':
+        print('Run flux balance analysis on model %s' % str(model))
+        return cameo.fba(model)
+    elif analysis =='pFBA':
+        print('Run parsimonious flux balance analysis on model %s' \
+              % str(model))
+        return cameo.pfba(model)
+
+def _fba_result(result, result_type, analysis):
+    '''!
+    Private function - to print out results from FBA analysis.
+
+    @result Object: Result object from FBA.
+    @result_type String: Type of result to give. Allowable types 
+    are growthrate (objective value from FBA) or flux (table of 
+    fluxes).
+    @analysis String: Type of FBA to perform. Allowable types are 
+    FBA (standard flux balance analysis) and pFBA (parsimonious 
+    FBA).
+    '''
+    if result_type == 'growthrate' and analysis == 'FBA':
+        print('Objective value = %s' % \
+            abs(result.data_frame.flux).sum())
+    if result_type == 'growthrate' and analysis == 'pFBA':
+        print('Objective value = %s' % result.objective_value)
+    elif result_type == 'flux':
+        for metabolite in result.data_frame['flux'].keys():
+            print('%s : %s' % \
+                (metabolite, 
+                 result.data_frame['flux'][metabolite]))
+
 def flux_balance_analysis(model, analysis='FBA',
                           result_type='growthrate'):
     '''!
@@ -87,20 +130,5 @@ def flux_balance_analysis(model, analysis='FBA',
     _cameo_header()
     print('Load model: %s' % str(model))
     model = cameo.load_model(model)
-    if analysis == 'FBA':
-        print('Run flux balance analysis on model %s' % str(model))
-        result = cameo.fba(model)
-    elif analysis =='pFBA':
-        print('Run parsimonious flux balance analysis on model %s' \
-              % str(model))
-        result = cameo.pfba(model)
-    if result_type == 'growthrate' and analysis == 'FBA':
-        print('Objective value = %s' % \
-            abs(result.data_frame.flux).sum())
-    if result_type == 'growthrate' and analysis == 'pFBA':
-        print('Objective value = %s' % result.objective_value)
-    elif result_type == 'flux':
-        for metabolite in result.data_frame['flux'].keys():
-            print('%s : %s' % \
-                (metabolite, 
-                 result.data_frame['flux'][metabolite]))
+    result = _fba(model, analysis)
+    _fba_result(result, result_type, analysis)
