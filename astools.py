@@ -593,6 +593,51 @@ def installDependencies():
                                'install', 'cameo'])
         import cameo
         print('... cameo installed and importable')
+
+def cameo_findPathway(model, product, max_prediction=4):
+    ASExternalTools.find_pathway(model, product, 
+                                 max_prediction)
+
+def cameo_FBA(model, result_type='growthrate'):
+    '''!
+    Function to simulate a model using Flux Balance Analysis (FBA), 
+    with Cameo.
+    
+    Usage:
+
+        python astools.py cameo-fba --model=iJO1366 --result_type=growthrate
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @result_type String: Type of result to give. Allowable types 
+    are growthrate (objective value from FBA) or flux (table of 
+    fluxes). Default value = growthrate.
+    '''
+    ASExternalTools.flux_balance_analysis(model, 'FBA', result_type)
+
+def cameo_pFBA(model, result_type='growthrate'):
+    '''!
+    Function to simulate a model using Parsimonious Flux Balance 
+    Analysis (pFBA), with Cameo.
+
+    Reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
+    J.A., Charusanti, P., Polpitiya, A.D., Adkins, J.N., Schramm, 
+    G., Purvine, S.O., Lopez‐Ferrer, D. and Weitz, K.K., 2010. 
+    Omic data from evolved E. coli are consistent with computed 
+    optimal growth from genome‐scale models. Molecular Systems 
+    Biology, 6(1):390. http://www.ncbi.nlm.nih.gov/pubmed/20664636
+    
+    Usage:
+
+        python astools.py cameo-pfba --model=iJO1366 --result_type=growthrate
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @result_type String: Type of result to give. Allowable types 
+    are growthrate (objective value from FBA) or flux (table of 
+    fluxes). Default value = growthrate.
+    '''
+    ASExternalTools.flux_balance_analysis(model, 'pFBA', result_type)
     
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
@@ -607,7 +652,9 @@ if __name__ == '__main__':
                          'runODE': runODEScript,
                          'senGen': sensitivityGenerator,
                          'systemdata': systemData}
-    cameo_functions = {}
+    cameo_functions = {'cameo-fba': cameo_FBA,
+                       'cameo-find-pathway': cameo_findPathway,
+                       'cameo-pfba': cameo_pFBA}
     exposed_functions = {**astools_functions, 
                          **cameo_functions}
     fire.Fire(exposed_functions)
