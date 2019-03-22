@@ -38,6 +38,26 @@ Cardoso, J.G., Jensen, K., Lieven, C., Lærke Hansen, A.S., Galkina, S., Beber, 
     print(text)
     print('')
 
+def get_reactions(model):
+    '''!
+    Function to list the reactions in a model, with Cameo.
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    import cameo
+    _cameo_header()
+    print('Load model: %s' % str(model))
+    model = cameo.load_model(model)
+    print('')
+    count = 1
+    print('Number : Reaction ID : Upper Bound : Lower Bound : Reaction Name')
+    for rxn in model.reactions:
+        print('%s : %s : %s : %s : %s' % \
+              (count, rxn.id, rxn.upper_bound, 
+               rxn.lower_bound, rxn.name))
+        count = count + 1
+
 def find_pathway(model, product, max_prediction=4):
     import cameo
     _cameo_header()

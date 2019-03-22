@@ -620,7 +620,7 @@ def cameo_pFBA(model, result_type='growthrate'):
     Function to simulate a model using Parsimonious Flux Balance 
     Analysis (pFBA), with Cameo.
 
-    Reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
+    pFBA reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
     J.A., Charusanti, P., Polpitiya, A.D., Adkins, J.N., Schramm, 
     G., Purvine, S.O., Lopez‐Ferrer, D. and Weitz, K.K., 2010. 
     Omic data from evolved E. coli are consistent with computed 
@@ -639,6 +639,20 @@ def cameo_pFBA(model, result_type='growthrate'):
     '''
     ASExternalTools.flux_balance_analysis(model, 'pFBA', result_type)
     
+def cameo_reactionList(model):
+    '''!
+    Function to list the reactions in a model, with Cameo.
+
+    Usage:
+
+        python astools.py cameo-rxn --model=iJO1366
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    ASExternalTools.get_reactions(model)
+
+
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
                          'genNetwork': generateNetwork,
@@ -654,7 +668,8 @@ if __name__ == '__main__':
                          'systemdata': systemData}
     cameo_functions = {'cameo-fba': cameo_FBA,
                        'cameo-find-pathway': cameo_findPathway,
-                       'cameo-pfba': cameo_pFBA}
+                       'cameo-pfba': cameo_pFBA,
+                       'cameo-rxn': cameo_reactionList}
     exposed_functions = {**astools_functions, 
                          **cameo_functions}
     fire.Fire(exposed_functions)
