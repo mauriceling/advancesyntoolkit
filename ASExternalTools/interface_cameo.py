@@ -132,3 +132,85 @@ def flux_balance_analysis(model, analysis='FBA',
     model = cameo.load_model(model)
     result = _fba(model, analysis)
     _fba_result(result, result_type, analysis)
+
+def _parse_mutation(mutation):
+    '''!
+    Private function - to process mutation definition into 
+    dictionary format. For example, RBFK,0,0 to {'RBFK': (0,0)}.
+
+    @mutation String: String to define mutation(s). Each mutation 
+    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    example, RBFK,0,0 will represent a knock out. Multiple mutations 
+    are delimited using semicolon.
+    @return: Dictionary to represent mutation(s)
+    '''
+    mutation = str(mutation)
+    mutation = [pair.strip() for pair in mutation.split(';')]
+    mutation = [[pair.split(',')[0], 
+                 pair.split(',')[1], 
+                 pair.split(',')[2]] 
+                 for pair in mutation]
+    mutation = [[pair[0].strip(), 
+                 pair[1].strip(), 
+                 pair[2].strip()] 
+                 for pair in mutation]
+    ndict = {}
+    for k in mutation:
+        ndict[str(k[0])] = (int(k[1]), int(k[2]))
+    return ndict
+
+def _perform_mutation(model, mutation):
+    '''!
+    Private method - to change the upper and lower bounds of one 
+    or more reactions to represent one or more mutations.
+
+    @model Object: Cameo model object
+    @return: model with flux change(s) (representing mutation(s))
+    '''
+    print('Process mutation(s) ... ')
+    for metabolite in mutation:
+        for i in range(len(model.reactions)):
+            if model.reactions[i].id == metabolite:
+                print('Metabolite %s found' % metabolite)
+                ori_ub = model.reactions[i].upper_bound
+                ori_lb = model.reactions[i].lower_bound
+                model.reactions[i].upper_bound = \
+                    mutation[metabolite][0]
+                model.reactions[i].lower_bound = \
+                    mutation[metabolite][1]
+                new_ub = model.reactions[i].upper_bound
+                new_lb = model.reactions[i].lower_bound
+                print('... Upper Bound: %s --> %s' % \
+                    (ori_ub, new_ub))
+                print('... Lower Bound: %s --> %s' % \
+                    (ori_lb, new_lb))
+    return model
+
+def mutantFBA(model, mutation, 
+              analysis='FBA',
+              result_type='growthrate'):
+    '''!
+    Function to simulate a model after adding mutation(s) using 
+    Flux Balance Analysis (FBA) or FBA-related methods, with Cameo.
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @mutation String: String to define mutation(s). Each mutation 
+    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    example, RBFK,0,0 will represent a knock out. Multiple mutations 
+    are delimited using semicolon.
+    @analysis String: Type of FBA to perform. Allowable types are 
+    FBA (standard flux balance analysis) and pFBA (parsimonious 
+    FBA). Default value = FBA.
+    @result_type String: Type of result to give. Allowable types 
+    are growthrate (objective value from FBA) or flux (table of 
+    fluxes). Default value = growthrate.
+    '''
+    import cameo
+    _cameo_header()
+    print('Load model: %s' % str(model))
+    model = cameo.load_model(model)
+    mutation = _parse_mutation(mutation)
+    model = _perform_mutation(model, mutation)
+    result = _fba(model, analysis)
+    _fba_result(result, result_type, analysis)

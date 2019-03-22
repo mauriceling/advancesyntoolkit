@@ -652,6 +652,55 @@ def cameo_reactionList(model):
     '''
     ASExternalTools.get_reactions(model)
 
+def cameo_mutantFBA(model, mutation, result_type='growthrate'):
+    '''!
+    Function to simulate a model after adding mutation(s) using 
+    Flux Balance Analysis (FBA), with Cameo.
+
+    Usage:
+
+        python astools.py cameo-mutant-fba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=growthrate
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @mutation String: String to define mutation(s). Each mutation 
+    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    example, RBFK,0,0 will represent a knock out. Multiple mutations 
+    are delimited using semicolon.
+    @result_type String: Type of result to give. Allowable types 
+    are growthrate (objective value from FBA) or flux (table of 
+    fluxes). Default value = growthrate.
+    '''
+    ASExternalTools.mutantFBA(model, mutation, 'FBA', result_type)
+
+def cameo_mutantpFBA(model, mutation, result_type='growthrate'):
+    '''!
+    Function to simulate a model after adding mutation(s) using 
+    Parsimonious Flux Balance Analysis (pFBA), with Cameo.
+
+    pFBA reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
+    J.A., Charusanti, P., Polpitiya, A.D., Adkins, J.N., Schramm, 
+    G., Purvine, S.O., Lopez‐Ferrer, D. and Weitz, K.K., 2010. 
+    Omic data from evolved E. coli are consistent with computed 
+    optimal growth from genome‐scale models. Molecular Systems 
+    Biology, 6(1):390. http://www.ncbi.nlm.nih.gov/pubmed/20664636
+
+    Usage:
+
+        python astools.py cameo-mutant-pfba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=growthrate
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @mutation String: String to define mutation(s). Each mutation 
+    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    example, RBFK,0,0 will represent a knock out. Multiple mutations 
+    are delimited using semicolon.
+    @result_type String: Type of result to give. Allowable types 
+    are growthrate (objective value from FBA) or flux (table of 
+    fluxes). Default value = growthrate.
+    '''
+    ASExternalTools.mutantFBA(model, mutation, 'pFBA', result_type)
+
 
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
@@ -668,6 +717,8 @@ if __name__ == '__main__':
                          'systemdata': systemData}
     cameo_functions = {'cameo-fba': cameo_FBA,
                        'cameo-find-pathway': cameo_findPathway,
+                       'cameo-mutant-fba': cameo_mutantFBA,
+                       'cameo-mutant-pfba': cameo_mutantpFBA,
                        'cameo-pfba': cameo_pFBA,
                        'cameo-rxn': cameo_reactionList}
     exposed_functions = {**astools_functions, 
