@@ -568,11 +568,36 @@ def systemData():
     print('')
     print('Current directory: %s' % os.getcwd())
     print('')
+
+def installDependencies():
+    '''!
+    Function to install external tools and dependencies. List of 
+    external tools and dependencies that will be installed:
+
+        - cameo (https://github.com/biosustain/cameo), Apache 
+        Licence 2.0
+
+    Usage:
+
+        python astools.py installdep
+    '''
+    # cameo 
+    try: 
+        print('Check for presence of cameo (https://github.com/biosustain/cameo)')
+        import cameo
+        print('... cameo found and importable')
+    except ImportError:
+        print('... cameo not found ==> proceed to install cameo')
+        subprocess.check_call([sys.executable, '-m', 'pip', 
+                               'install', 'cameo'])
+        import cameo
+        print('... cameo installed and importable')
     
 if __name__ == '__main__':
     exposed_functions = {'genMO': generateModelObject,
                          'genNetwork': generateNetwork,
                          'genODE': generateODEScript,
+                         'installdep': installDependencies,
                          'LSA': localSensitivity,
                          'mergeASM': mergeASM,
                          'printASM': printASM,
