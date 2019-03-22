@@ -39,6 +39,7 @@ except ImportError:
     import fire
 
 
+import ASExternalTools
 import ASModeller
 
 def printASM(modelfile, readertype):
