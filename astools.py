@@ -594,7 +594,7 @@ def installDependencies():
         print('... cameo installed and importable')
     
 if __name__ == '__main__':
-    exposed_functions = {'genMO': generateModelObject,
+    astools_functions = {'genMO': generateModelObject,
                          'genNetwork': generateNetwork,
                          'genODE': generateODEScript,
                          'installdep': installDependencies,
@@ -606,4 +606,7 @@ if __name__ == '__main__':
                          'runODE': runODEScript,
                          'senGen': sensitivityGenerator,
                          'systemdata': systemData}
+    cameo_functions = {}
+    exposed_functions = {**astools_functions, 
+                         **cameo_functions}
     fire.Fire(exposed_functions)
