@@ -26,10 +26,18 @@ import importlib
 import pickle
 import os
 import re
+import subprocess
 import sys
 from pprint import pprint
 
-import fire
+# Ensure fire is installed
+try: 
+    import fire
+except ImportError:
+    subprocess.check_call([sys.executable, '-m', 'pip', 
+                           'install', 'fire'])
+    import fire
+
 
 import ASModeller
 
