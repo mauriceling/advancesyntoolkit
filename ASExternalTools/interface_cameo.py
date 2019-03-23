@@ -36,9 +36,9 @@ This operation uses Cameo (https://github.com/biosustain/cameo). If you used it 
     print(text)
     print('')
 
-def get_reactions(model):
+def get_reaction_names(model):
     '''!
-    Function to list the reactions in a model, with Cameo.
+    Function to list the reaction names in a model, with Cameo.
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).

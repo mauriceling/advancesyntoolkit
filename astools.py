@@ -652,18 +652,18 @@ def cameo_pFBA(model, result_type='objective'):
     '''
     ASExternalTools.flux_balance_analysis(model, 'pFBA', result_type)
     
-def cameo_reactionList(model):
+def cameo_reactionNames(model):
     '''!
-    Function to list the reactions in a model, with Cameo.
+    Function to list the reaction names in a model, with Cameo.
 
     Usage:
 
-        python astools.py cameo-rxn --model=iJO1366
+        python astools.py cameo-rxn-names --model=iJO1366
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     '''
-    ASExternalTools.get_reactions(model)
+    ASExternalTools.get_reaction_names(model)
 
 def cameo_mutantFBA(model, mutation, result_type='objective'):
     '''!
@@ -733,7 +733,7 @@ if __name__ == '__main__':
                        'cameo-mutant-fba': cameo_mutantFBA,
                        'cameo-mutant-pfba': cameo_mutantpFBA,
                        'cameo-pfba': cameo_pFBA,
-                       'cameo-rxn': cameo_reactionList}
+                       'cameo-rxn-names': cameo_reactionNames}
     exposed_functions = {**astools_functions, 
                          **cameo_functions}
     fire.Fire(exposed_functions)

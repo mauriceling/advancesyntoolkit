@@ -22,7 +22,7 @@ limitations under the License.
 
 from . import interface_cameo
 
-from .interface_cameo import get_reactions
+from .interface_cameo import get_reaction_names
 from .interface_cameo import find_pathway
 from .interface_cameo import flux_balance_analysis
 from .interface_cameo import mutantFBA
