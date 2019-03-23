@@ -31,9 +31,7 @@ limitations under the License.
 
 def _cameo_header():
     text = '''
-This operation uses Cameo (https://github.com/biosustain/cameo). If you used it in your study, please cite 
-
-Cardoso, J.G., Jensen, K., Lieven, C., Lærke Hansen, A.S., Galkina, S., Beber, M., Ozdemir, E., Herrgård, M.J., Redestig, H. and Sonnenschein, N., 2018. Cameo: a Python library for computer aided metabolic engineering and optimization of cell factories. ACS synthetic biology, 7(4), pp.1163-1166.
+This operation uses Cameo (https://github.com/biosustain/cameo). If you used it in your study, please cite: Cardoso, J.G., Jensen, K., Lieven, C., Lærke Hansen, A.S., Galkina, S., Beber, M., Ozdemir, E., Herrgård, M.J., Redestig, H. and Sonnenschein, N., 2018. Cameo: a Python library for computer aided metabolic engineering and optimization of cell factories. ACS synthetic biology, 7(4), pp.1163-1166.
     '''
     print(text)
     print('')
