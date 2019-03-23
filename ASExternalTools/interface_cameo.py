@@ -36,12 +36,14 @@ This operation uses Cameo (https://github.com/biosustain/cameo). If you used it 
     print(text)
     print('')
 
-def get_reaction_names(model):
+def get_reaction_names(model, pflag=True):
     '''!
     Function to list the reaction names in a model, with Cameo.
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
     '''
     import cameo
     _cameo_header()
@@ -50,23 +52,27 @@ def get_reaction_names(model):
     print('')
     count = 1
     result = []
-    print('Number : Reaction ID : Upper Bound : Lower Bound : Reaction Name')
+    if pflag:
+        print('Number : Reaction ID : Upper Bound : Lower Bound : Reaction Name')
     for rxn in model.reactions:
-        print('%s : %s : %s : %s : %s' % \
-              (count, rxn.id, rxn.upper_bound, 
-               rxn.lower_bound, rxn.name))
+        if pflag:
+            print('%s : %s : %s : %s : %s' % \
+                  (count, rxn.id, rxn.upper_bound, 
+                   rxn.lower_bound, rxn.name))
         result.append([count, rxn.id, rxn.upper_bound, 
                        rxn.lower_bound, rxn.name])
         count = count + 1
     return result
 
-def get_reaction_compounds(model):
+def get_reaction_compounds(model, pflag=True):
     '''!
     Function to list the reactants and products for each reaction 
     in a model, with Cameo.
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
     '''
     import cameo
     _cameo_header()
@@ -75,15 +81,17 @@ def get_reaction_compounds(model):
     print('')
     count = 1
     result = []
-    print('Number : Reaction ID : Reactants : Products : Reaction Name')
+    if pflag:
+        print('Number : Reaction ID : Reactants : Products : Reaction Name')
     for rxn in model.reactions:
         rxn_id = rxn.id
         rxn_name = rxn.name
         reactants = [r.id for r in rxn.reactants]
         products = [p.id for p in rxn.products]
-        print('%s : %s : %s : %s : %s' % \
-              (count, rxn_id, '|'.join(reactants), 
-               '|'.join(products), rxn.name))
+        if pflag:
+            print('%s : %s : %s : %s : %s' % \
+                  (count, rxn_id, '|'.join(reactants), 
+                   '|'.join(products), rxn.name))
         result.append([count, rxn_id, reactants, 
                        products, rxn.name])
         count = count + 1
@@ -119,7 +127,7 @@ def _fba(model, analysis):
               % str(model))
         return cameo.pfba(model)
 
-def _fba_result(result, result_type, analysis):
+def _fba_result(result, result_type, analysis, pflag=True):
     '''!
     Private function - to print out results from FBA analysis.
 
@@ -130,27 +138,33 @@ def _fba_result(result, result_type, analysis):
     @analysis String: Type of FBA to perform. Allowable types are 
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA).
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
     @return: Required results from FBA result object.
     '''
     if result_type == 'objective' and analysis == 'FBA':
         result = abs(result.data_frame.flux).sum()
-        print('Objective value = %s' % result)
+        if pflag: 
+            print('Objective value = %s' % result)
         return result
     if result_type == 'objective' and analysis == 'pFBA':
-        print('Objective value = %s' % result.objective_value)
+        if pflag:
+            print('Objective value = %s' % result.objective_value)
         return result.objective_value
     elif result_type == 'flux':
         result = []
         for metabolite in result.data_frame['flux'].keys():
-            print('%s : %s' % \
-                (metabolite, 
-                 result.data_frame['flux'][metabolite]))
+            if pflag:
+                print('%s : %s' % \
+                    (metabolite, 
+                     result.data_frame['flux'][metabolite]))
             result.append([metabolite, 
                            result.data_frame['flux'][metabolite]])
         return result
 
 def flux_balance_analysis(model, analysis='FBA',
-                          result_type='objective'):
+                          result_type='objective',
+                          pflag=True):
     '''!
     Function to simulate a model using Flux Balance Analysis (FBA) 
     or FBA-related methods, with Cameo.
@@ -160,6 +174,8 @@ def flux_balance_analysis(model, analysis='FBA',
     @analysis String: Type of FBA to perform. Allowable types are 
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA). Default value = FBA.
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes).
@@ -169,7 +185,7 @@ def flux_balance_analysis(model, analysis='FBA',
     print('Load model: %s' % str(model))
     model = cameo.load_model(model)
     result = _fba(model, analysis)
-    result = _fba_result(result, result_type, analysis)
+    result = _fba_result(result, result_type, analysis, pflag)
     return result
 
 def _parse_mutation(mutation):
@@ -225,9 +241,8 @@ def _perform_mutation(model, mutation):
                     (ori_lb, new_lb))
     return model
 
-def mutantFBA(model, mutation, 
-              analysis='FBA',
-              result_type='objective'):
+def mutantFBA(model, mutation, analysis='FBA',
+              result_type='objective', pflag=True):
     '''!
     Function to simulate a model after adding mutation(s) using 
     Flux Balance Analysis (FBA) or FBA-related methods, with Cameo.
@@ -241,6 +256,8 @@ def mutantFBA(model, mutation,
     @analysis String: Type of FBA to perform. Allowable types are 
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA). Default value = FBA.
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes).
@@ -252,5 +269,5 @@ def mutantFBA(model, mutation,
     mutation = _parse_mutation(mutation)
     model = _perform_mutation(model, mutation)
     result = _fba(model, analysis)
-    result = _fba_result(result, result_type, analysis)
+    result = _fba_result(result, result_type, analysis, pflag)
     return result
