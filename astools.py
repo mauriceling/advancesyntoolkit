@@ -575,6 +575,8 @@ def installDependencies():
     Function to install external tools and dependencies. List of 
     external tools and dependencies that will be installed:
 
+        - bokeh (https://bokeh.pydata.org), BSD 3-Clause "New" or 
+        "Revised" License
         - cameo (https://github.com/biosustain/cameo), Apache 
         Licence 2.0
 
@@ -582,6 +584,17 @@ def installDependencies():
 
         python astools.py installdep
     '''
+    # bokeh 
+    try: 
+        print('Check for presence of bokeh (https://bokeh.pydata.org)')
+        import bohek
+        print('... bokeh found and importable')
+    except ImportError:
+        print('... bokeh not found ==> proceed to install bokeh')
+        subprocess.check_call([sys.executable, '-m', 'pip', 
+                               'install', 'bokeh'])
+        import bokeh
+        print('... bokeh installed and importable')
     # cameo 
     try: 
         print('Check for presence of cameo (https://github.com/biosustain/cameo)')
