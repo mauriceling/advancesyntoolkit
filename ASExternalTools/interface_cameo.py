@@ -92,16 +92,16 @@ def _fba_result(result, result_type, analysis):
 
     @result Object: Result object from FBA.
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
+    are objective (objective value from FBA) or flux (table of 
     fluxes).
     @analysis String: Type of FBA to perform. Allowable types are 
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA).
     '''
-    if result_type == 'growthrate' and analysis == 'FBA':
+    if result_type == 'objective' and analysis == 'FBA':
         print('Objective value = %s' % \
             abs(result.data_frame.flux).sum())
-    if result_type == 'growthrate' and analysis == 'pFBA':
+    if result_type == 'objective' and analysis == 'pFBA':
         print('Objective value = %s' % result.objective_value)
     elif result_type == 'flux':
         for metabolite in result.data_frame['flux'].keys():
@@ -110,7 +110,7 @@ def _fba_result(result, result_type, analysis):
                  result.data_frame['flux'][metabolite]))
 
 def flux_balance_analysis(model, analysis='FBA',
-                          result_type='growthrate'):
+                          result_type='objective'):
     '''!
     Function to simulate a model using Flux Balance Analysis (FBA) 
     or FBA-related methods, with Cameo.
@@ -121,8 +121,8 @@ def flux_balance_analysis(model, analysis='FBA',
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA). Default value = FBA.
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
-    fluxes). Default value = growthrate.
+    are objective (objective value from FBA) or flux (table of 
+    fluxes).
     '''
     import cameo
     _cameo_header()
@@ -186,7 +186,7 @@ def _perform_mutation(model, mutation):
 
 def mutantFBA(model, mutation, 
               analysis='FBA',
-              result_type='growthrate'):
+              result_type='objective'):
     '''!
     Function to simulate a model after adding mutation(s) using 
     Flux Balance Analysis (FBA) or FBA-related methods, with Cameo.
@@ -201,8 +201,8 @@ def mutantFBA(model, mutation,
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA). Default value = FBA.
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
-    fluxes). Default value = growthrate.
+    are objective (objective value from FBA) or flux (table of 
+    fluxes).
     '''
     import cameo
     _cameo_header()

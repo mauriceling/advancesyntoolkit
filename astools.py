@@ -611,24 +611,24 @@ def cameo_findPathway(model, product, max_prediction=4):
     ASExternalTools.find_pathway(model, product, 
                                  max_prediction)
 
-def cameo_FBA(model, result_type='growthrate'):
+def cameo_FBA(model, result_type='objective'):
     '''!
     Function to simulate a model using Flux Balance Analysis (FBA), 
     with Cameo.
     
     Usage:
 
-        python astools.py cameo-fba --model=iJO1366 --result_type=growthrate
+        python astools.py cameo-fba --model=iJO1366 --result_type=objective
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
-    fluxes). Default value = growthrate.
+    are objective (objective value from FBA) or flux (table of 
+    fluxes). Default value = objective.
     '''
     ASExternalTools.flux_balance_analysis(model, 'FBA', result_type)
 
-def cameo_pFBA(model, result_type='growthrate'):
+def cameo_pFBA(model, result_type='objective'):
     '''!
     Function to simulate a model using Parsimonious Flux Balance 
     Analysis (pFBA), with Cameo.
@@ -642,13 +642,13 @@ def cameo_pFBA(model, result_type='growthrate'):
     
     Usage:
 
-        python astools.py cameo-pfba --model=iJO1366 --result_type=growthrate
+        python astools.py cameo-pfba --model=iJO1366 --result_type=objective
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
-    fluxes). Default value = growthrate.
+    are objective (objective value from FBA) or flux (table of 
+    fluxes). Default value = objective.
     '''
     ASExternalTools.flux_balance_analysis(model, 'pFBA', result_type)
     
@@ -665,14 +665,14 @@ def cameo_reactionList(model):
     '''
     ASExternalTools.get_reactions(model)
 
-def cameo_mutantFBA(model, mutation, result_type='growthrate'):
+def cameo_mutantFBA(model, mutation, result_type='objective'):
     '''!
     Function to simulate a model after adding mutation(s) using 
     Flux Balance Analysis (FBA), with Cameo.
 
     Usage:
 
-        python astools.py cameo-mutant-fba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=growthrate
+        python astools.py cameo-mutant-fba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=objective
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
@@ -681,12 +681,12 @@ def cameo_mutantFBA(model, mutation, result_type='growthrate'):
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
-    fluxes). Default value = growthrate.
+    are objective (objective value from FBA) or flux (table of 
+    fluxes). Default value = objective.
     '''
     ASExternalTools.mutantFBA(model, mutation, 'FBA', result_type)
 
-def cameo_mutantpFBA(model, mutation, result_type='growthrate'):
+def cameo_mutantpFBA(model, mutation, result_type='objective'):
     '''!
     Function to simulate a model after adding mutation(s) using 
     Parsimonious Flux Balance Analysis (pFBA), with Cameo.
@@ -700,7 +700,7 @@ def cameo_mutantpFBA(model, mutation, result_type='growthrate'):
 
     Usage:
 
-        python astools.py cameo-mutant-pfba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=growthrate
+        python astools.py cameo-mutant-pfba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=objective
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
@@ -709,8 +709,8 @@ def cameo_mutantpFBA(model, mutation, result_type='growthrate'):
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
     @result_type String: Type of result to give. Allowable types 
-    are growthrate (objective value from FBA) or flux (table of 
-    fluxes). Default value = growthrate.
+    are objective (objective value from FBA) or flux (table of 
+    fluxes). Default value = objective.
     '''
     ASExternalTools.mutantFBA(model, mutation, 'pFBA', result_type)
 
