@@ -665,6 +665,20 @@ def cameo_reactionNames(model):
     '''
     ASExternalTools.get_reaction_names(model)
 
+def cameo_reactionCompounds(model):
+    '''!
+    Function to list the reactants and products for each reaction 
+    in a model, with Cameo.
+
+    Usage:
+
+        python astools.py cameo-rxn-cpds --model=iJO1366
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    ASExternalTools.get_reaction_compounds(model)
+
 def cameo_mutantFBA(model, mutation, result_type='objective'):
     '''!
     Function to simulate a model after adding mutation(s) using 
@@ -733,6 +747,7 @@ if __name__ == '__main__':
                        'cameo-mutant-fba': cameo_mutantFBA,
                        'cameo-mutant-pfba': cameo_mutantpFBA,
                        'cameo-pfba': cameo_pFBA,
+                       'cameo-rxn-cpds': cameo_reactionCompounds,
                        'cameo-rxn-names': cameo_reactionNames}
     exposed_functions = {**astools_functions, 
                          **cameo_functions}

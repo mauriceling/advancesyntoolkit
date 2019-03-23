@@ -60,6 +60,34 @@ def get_reaction_names(model):
         count = count + 1
     return result
 
+def get_reaction_compounds(model):
+    '''!
+    Function to list the reactants and products for each reaction 
+    in a model, with Cameo.
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    import cameo
+    _cameo_header()
+    print('Load model: %s' % str(model))
+    model = cameo.load_model(model)
+    print('')
+    count = 1
+    result = []
+    print('Number : Reaction ID : Reactants : Products : Reaction Name')
+    for rxn in model.reactions:
+        rxn_id = rxn.id
+        rxn_name = rxn.name
+        reactants = '|'.join([r.id for r in rxn.reactants])
+        products = '|'.join([p.id for p in rxn.products])
+        print('%s : %s : %s : %s : %s' % \
+              (count, rxn_id, reactants, products, rxn.name))
+        result.append([count, rxn_id, reactants, 
+                       products, rxn.name])
+        count = count + 1
+    return result
+
 def find_pathway(model, product, max_prediction=4):
     import cameo
     _cameo_header()
