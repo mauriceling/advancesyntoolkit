@@ -49,12 +49,16 @@ def get_reaction_names(model):
     model = cameo.load_model(model)
     print('')
     count = 1
+    result = []
     print('Number : Reaction ID : Upper Bound : Lower Bound : Reaction Name')
     for rxn in model.reactions:
         print('%s : %s : %s : %s : %s' % \
               (count, rxn.id, rxn.upper_bound, 
                rxn.lower_bound, rxn.name))
+        result.append([count, rxn.id, rxn.upper_bound, 
+                       rxn.lower_bound, rxn.name])
         count = count + 1
+    return result
 
 def find_pathway(model, product, max_prediction=4):
     import cameo
@@ -97,17 +101,24 @@ def _fba_result(result, result_type, analysis):
     @analysis String: Type of FBA to perform. Allowable types are 
     FBA (standard flux balance analysis) and pFBA (parsimonious 
     FBA).
+    @return: Required results from FBA result object.
     '''
     if result_type == 'objective' and analysis == 'FBA':
-        print('Objective value = %s' % \
-            abs(result.data_frame.flux).sum())
+        result = abs(result.data_frame.flux).sum()
+        print('Objective value = %s' % result)
+        return result
     if result_type == 'objective' and analysis == 'pFBA':
         print('Objective value = %s' % result.objective_value)
+        return result.objective_value
     elif result_type == 'flux':
+        result = []
         for metabolite in result.data_frame['flux'].keys():
             print('%s : %s' % \
                 (metabolite, 
                  result.data_frame['flux'][metabolite]))
+            result.append([metabolite, 
+                           result.data_frame['flux'][metabolite]])
+        return result
 
 def flux_balance_analysis(model, analysis='FBA',
                           result_type='objective'):
@@ -129,7 +140,8 @@ def flux_balance_analysis(model, analysis='FBA',
     print('Load model: %s' % str(model))
     model = cameo.load_model(model)
     result = _fba(model, analysis)
-    _fba_result(result, result_type, analysis)
+    result = _fba_result(result, result_type, analysis)
+    return result
 
 def _parse_mutation(mutation):
     '''!
@@ -211,4 +223,5 @@ def mutantFBA(model, mutation,
     mutation = _parse_mutation(mutation)
     model = _perform_mutation(model, mutation)
     result = _fba(model, analysis)
-    _fba_result(result, result_type, analysis)
+    result = _fba_result(result, result_type, analysis)
+    return result
