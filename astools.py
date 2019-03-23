@@ -587,7 +587,7 @@ def installDependencies():
     # bokeh 
     try: 
         print('Check for presence of bokeh (https://bokeh.pydata.org)')
-        import bohek
+        import bokeh
         print('... bokeh found and importable')
     except ImportError:
         print('... bokeh not found ==> proceed to install bokeh')
