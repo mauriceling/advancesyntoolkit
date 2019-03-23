@@ -79,10 +79,11 @@ def get_reaction_compounds(model):
     for rxn in model.reactions:
         rxn_id = rxn.id
         rxn_name = rxn.name
-        reactants = '|'.join([r.id for r in rxn.reactants])
-        products = '|'.join([p.id for p in rxn.products])
+        reactants = [r.id for r in rxn.reactants]
+        products = [p.id for p in rxn.products]
         print('%s : %s : %s : %s : %s' % \
-              (count, rxn_id, reactants, products, rxn.name))
+              (count, rxn_id, '|'.join(reactants), 
+               '|'.join(products), rxn.name))
         result.append([count, rxn_id, reactants, 
                        products, rxn.name])
         count = count + 1
