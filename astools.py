@@ -757,7 +757,7 @@ def cameo_medium(model):
 
 def cameo_mediumFBA(model, change, result_type='objective'):
     '''!
-    Function to simulate a model after adding mutation(s) using 
+    Function to simulate a model after adding media change(s) using 
     Flux Balance Analysis (FBA), with Cameo.
 
     Usage:
@@ -775,6 +775,27 @@ def cameo_mediumFBA(model, change, result_type='objective'):
     fluxes). Default value = objective.
     '''
     ASExternalTools.mediumFBA(model, change, 'FBA', result_type)
+
+def cameo_mediumpFBA(model, change, result_type='objective'):
+    '''!
+    Function to simulate a model after adding media change(s) using 
+    Parsimonious Flux Balance Analysis (pFBA), with Cameo.
+
+    Usage:
+
+        python astools.py cameo-medium-pfba --model=iAF1260 --change=EX_o2_e,0;EX_glc__D_e,5.0 --result_type=objective
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @change String: String to define medium change(s). Each change
+    is defined as <compound ID>:<new value>. For example, EX_o2_e,0 
+    will represent anaerobic condition. Multiple changes are delimited 
+    using semicolon.
+    @result_type String: Type of result to give. Allowable types 
+    are objective (objective value from FBA) or flux (table of 
+    fluxes). Default value = objective.
+    '''
+    ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
 
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
@@ -794,6 +815,7 @@ if __name__ == '__main__':
                        'cameo-find-pathway': cameo_findPathway,
                        'cameo-medium-cpd': cameo_medium,
                        'cameo-medium-fba': cameo_mediumFBA,
+                       'cameo-medium-pfba': cameo_mediumpFBA,
                        'cameo-mutant-fba': cameo_mutantFBA,
                        'cameo-mutant-pfba': cameo_mutantpFBA,
                        'cameo-pfba': cameo_pFBA,
