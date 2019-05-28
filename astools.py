@@ -698,7 +698,7 @@ def cameo_mutantFBA(model, mutation, result_type='objective'):
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @mutation String: String to define mutation(s). Each mutation 
-    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
     @result_type String: Type of result to give. Allowable types 
@@ -726,7 +726,7 @@ def cameo_mutantpFBA(model, mutation, result_type='objective'):
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @mutation String: String to define mutation(s). Each mutation 
-    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
     @result_type String: Type of result to give. Allowable types 

@@ -221,7 +221,7 @@ def _parse_mutation(mutation):
     dictionary format. For example, RBFK,0,0 to {'RBFK': (0,0)}.
 
     @mutation String: String to define mutation(s). Each mutation 
-    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
     @return: Dictionary to represent mutation(s)
@@ -277,7 +277,7 @@ def mutantFBA(model, mutation, analysis='FBA',
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @mutation String: String to define mutation(s). Each mutation 
-    is defined as <rection ID>:<upper bound>:<lower bound>. For 
+    is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
     @analysis String: Type of FBA to perform. Allowable types are 
