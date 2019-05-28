@@ -735,11 +735,32 @@ def cameo_mutantpFBA(model, mutation, result_type='objective'):
     '''
     ASExternalTools.mutantFBA(model, mutation, 'pFBA', result_type)
 
+def cameo_medium(model):
+    '''!
+    Function to list the medium in a model, with Cameo.
+
+    pFBA reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
+    J.A., Charusanti, P., Polpitiya, A.D., Adkins, J.N., Schramm, 
+    G., Purvine, S.O., Lopez‐Ferrer, D. and Weitz, K.K., 2010. 
+    Omic data from evolved E. coli are consistent with computed 
+    optimal growth from genome‐scale models. Molecular Systems 
+    Biology, 6(1):390. http://www.ncbi.nlm.nih.gov/pubmed/20664636
+
+    Usage:
+
+        python astools.py cameo-medium --model=iAF1260
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    ASExternalTools.get_medium(model)
+
 
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
                          'genNetwork': generateNetwork,
                          'genODE': generateODEScript,
+                         'GSM-to-ASM': GSM_to_ASM,
                          'installdep': installDependencies,
                          'LSA': localSensitivity,
                          'mergeASM': mergeASM,
@@ -751,6 +772,7 @@ if __name__ == '__main__':
                          'systemdata': systemData}
     cameo_functions = {'cameo-fba': cameo_FBA,
                        'cameo-find-pathway': cameo_findPathway,
+                       'cameo-medium': cameo_medium,
                        'cameo-mutant-fba': cameo_mutantFBA,
                        'cameo-mutant-pfba': cameo_mutantpFBA,
                        'cameo-pfba': cameo_pFBA,

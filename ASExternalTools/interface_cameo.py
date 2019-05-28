@@ -97,6 +97,33 @@ def get_reaction_compounds(model, pflag=True):
         count = count + 1
     return result
 
+def get_medium(model, pflag=True):
+    '''!
+    Function to list the medium in a model, with Cameo.
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
+    '''
+    import cameo
+    _cameo_header()
+    print('Load model: %s' % str(model))
+    model = cameo.load_model(model)
+    medium = model.medium
+    print('')
+    count = 1
+    result = []
+    if pflag:
+        print('Number : Component : Rate (mmol/gDW/h)')
+    for cpd in medium:
+        if pflag:
+            print('%s : %s : %s' % \
+                  (count, cpd, str(medium[cpd])))
+        result.append([count, cpd, str(medium[cpd])])
+        count = count + 1
+    return result
+
 def find_pathway(model, product, max_prediction=4):
     import cameo
     _cameo_header()
