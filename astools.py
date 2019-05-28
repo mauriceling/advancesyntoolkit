@@ -38,6 +38,13 @@ except ImportError:
                            'install', 'fire'])
     import fire
 
+# Ensure cameo is installed
+try: 
+    import cameo
+except ImportError:
+    subprocess.check_call([sys.executable, '-m', 'pip', 
+                           'install', 'cameo'])
+    import fire
 
 import ASExternalTools
 import ASModeller
