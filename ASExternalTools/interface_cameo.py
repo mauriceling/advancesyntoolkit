@@ -179,15 +179,15 @@ def _fba_result(result, result_type, analysis, pflag=True):
             print('Objective value = %s' % result.objective_value)
         return result.objective_value
     elif result_type == 'flux':
-        result = []
+        return_result = []
         for metabolite in result.data_frame['flux'].keys():
             if pflag:
                 print('%s : %s' % \
                     (metabolite, 
                      result.data_frame['flux'][metabolite]))
-            result.append([metabolite, 
+            return_result.append([metabolite, 
                            result.data_frame['flux'][metabolite]])
-        return result
+        return return_result
 
 def flux_balance_analysis(model, analysis='FBA',
                           result_type='objective',
