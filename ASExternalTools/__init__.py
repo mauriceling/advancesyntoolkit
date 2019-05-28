@@ -27,4 +27,5 @@ from .interface_cameo import get_reaction_compounds
 from .interface_cameo import get_reaction_names
 from .interface_cameo import find_pathway
 from .interface_cameo import flux_balance_analysis
+from .interface_cameo import mediumFBA
 from .interface_cameo import mutantFBA

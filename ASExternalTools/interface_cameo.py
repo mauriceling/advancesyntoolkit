@@ -298,3 +298,79 @@ def mutantFBA(model, mutation, analysis='FBA',
     result = _fba(model, analysis)
     result = _fba_result(result, result_type, analysis, pflag)
     return result
+
+def _parse_medium_change(change):
+    '''!
+    Private function - to process medium change definition into 
+    dictionary format. For example, EX_o2_e,0 to {'EX_o2_e': 0}.
+
+    @change String: String to define medium change(s). Each change
+    is defined as <compound ID>:<new value>. For example, EX_o2_e,0 
+    will represent anaerobic condition. Multiple changes are delimited 
+    using semicolon.
+    @return: Dictionary to represent change(s)
+    '''
+    change = str(change)
+    change = [pair.strip() for pair in change.split(';')]
+    change = [[pair.split(',')[0], 
+               pair.split(',')[1]] 
+              for pair in change]
+    change = [[pair[0].strip(), 
+              pair[1].strip()] 
+             for pair in change]
+    ndict = {}
+    for k in change:
+        ndict[str(k[0])] = float(k[1])
+    return ndict
+
+def _perform_medium_change(model, change):
+    '''!
+    Private method - to change the upper and lower bounds of one 
+    or more reactions to represent one or more mutations.
+
+    @model Object: Cameo model object
+    @return: model with flux change(s) (representing mutation(s))
+    '''
+    print('Process medium change(s) ... ')
+    medium = model.medium
+    for compound in change:
+        if compound in medium:
+            print('Compound %s found' % compound)
+            original_conc = medium[compound]
+            medium[compound] = change[compound]
+            print('... Change: %s --> %s' % \
+                (str(original_conc), str(change[compound])))
+    model.medium = medium
+    return model
+
+def mediumFBA(model, change, analysis='FBA',
+              result_type='objective', pflag=True):
+    '''!
+    Function to simulate a model after changing medium conditions(s) 
+    using Flux Balance Analysis (FBA) or FBA-related methods, with 
+    Cameo.
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    @change String: String to define medium change(s). Each change
+    is defined as <compound ID>:<new value>. For example, EX_o2_e,0 
+    will represent anaerobic condition. Multiple changes are delimited 
+    using semicolon.
+    @analysis String: Type of FBA to perform. Allowable types are 
+    FBA (standard flux balance analysis) and pFBA (parsimonious 
+    FBA). Default value = FBA.
+    @pflag Boolean: Flag to enable printing of results. Default = 
+    True (results are printed).
+    @result_type String: Type of result to give. Allowable types 
+    are objective (objective value from FBA) or flux (table of 
+    fluxes).
+    '''
+    import cameo
+    _cameo_header()
+    print('Load model: %s' % str(model))
+    model = cameo.load_model(model)
+    change = _parse_medium_change(change)
+    model = _perform_medium_change(model, change)
+    result = _fba(model, analysis)
+    result = _fba_result(result, result_type, analysis, pflag)
+    return result
