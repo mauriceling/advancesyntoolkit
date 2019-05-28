@@ -748,7 +748,7 @@ def cameo_medium(model):
 
     Usage:
 
-        python astools.py cameo-medium --model=iAF1260
+        python astools.py cameo-medium-cpd --model=iAF1260
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
@@ -772,7 +772,7 @@ if __name__ == '__main__':
                          'systemdata': systemData}
     cameo_functions = {'cameo-fba': cameo_FBA,
                        'cameo-find-pathway': cameo_findPathway,
-                       'cameo-medium': cameo_medium,
+                       'cameo-medium-cpd': cameo_medium,
                        'cameo-mutant-fba': cameo_mutantFBA,
                        'cameo-mutant-pfba': cameo_mutantpFBA,
                        'cameo-pfba': cameo_pFBA,
