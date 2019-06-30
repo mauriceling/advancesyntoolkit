@@ -1,0 +1,24 @@
+[Specification]
+type: 1
+
+[Identifiers]
+name: 2 substrates to 2 products
+author: Maurice Ling
+
+[Objects]
+A: molecule A
+B: molecule B
+P: molecule P
+Q: molecule Q
+
+[Initials]
+A: 1e-3
+B: 1e-3
+P: 0.0
+Q: 0.0
+
+[Variables]
+b: 100
+
+[Reactions]
+r1: A + B -> P + Q | ${Variables:b} * A * B
