@@ -320,7 +320,24 @@ def _parse_medium_change(change):
              for pair in change]
     ndict = {}
     for k in change:
-        ndict[str(k[0])] = float(k[1])
+        key = str(k[0])
+        value = str(k[1])
+        # Extra start characters
+        if key.startswith("('"): key = key[2:]
+        elif key.startswith("("): key = key[1:]
+        elif key.startswith("'"): key = key[1:]
+        if value.startswith("('"): value = value[2:]
+        elif value.startswith("("): value = value[1:]
+        elif value.startswith("'"): value = value[1:]
+        # Extra end characters
+        if key.endswith("')"): key = key[:-2]
+        elif key.endswith(")"): key = key[:-1]
+        elif key.endswith("'"): key = key[:-1]
+        if value.endswith("')"): value = value[:-2]
+        elif value.endswith(")"): value = value[:-1]
+        elif value.endswith("'"): value = value[:-1]
+        # Assigning to dictionary
+        ndict[key] = float(value)
     return ndict
 
 def _perform_medium_change(model, change):
