@@ -618,7 +618,7 @@ def cameo_findPathway(model, product, max_prediction=4):
     ASExternalTools.find_pathway(model, product, 
                                  max_prediction)
 
-def cameo_FBA(model, result_type='objective'):
+def cameo_FBA(model, result_type='objective', library=False):
     '''!
     Function to simulate a model using Flux Balance Analysis (FBA), 
     with Cameo.
@@ -632,10 +632,17 @@ def cameo_FBA(model, result_type='objective'):
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.flux_balance_analysis(model, 'FBA', result_type)
+    if library:
+        return ASExternalTools.flux_balance_analysis(model, 'FBA', 
+                                                     result_type)
+    else: 
+        ASExternalTools.flux_balance_analysis(model, 'FBA', result_type)
 
-def cameo_pFBA(model, result_type='objective'):
+def cameo_pFBA(model, result_type='objective', library=False):
     '''!
     Function to simulate a model using Parsimonious Flux Balance 
     Analysis (pFBA), with Cameo.
@@ -656,10 +663,17 @@ def cameo_pFBA(model, result_type='objective'):
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.flux_balance_analysis(model, 'pFBA', result_type)
+    if library:
+        return ASExternalTools.flux_balance_analysis(model, 'pFBA', 
+                                                     result_type)
+    else:
+        ASExternalTools.flux_balance_analysis(model, 'pFBA', result_type)
     
-def cameo_reactionNames(model):
+def cameo_reactionNames(model, library=False):
     '''!
     Function to list the reaction names in a model, with Cameo.
 
@@ -669,10 +683,16 @@ def cameo_reactionNames(model):
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.get_reaction_names(model)
+    if library:
+        return ASExternalTools.get_reaction_names(model)
+    else:
+        ASExternalTools.get_reaction_names(model)
 
-def cameo_reactionCompounds(model):
+def cameo_reactionCompounds(model, library=False):
     '''!
     Function to list the reactants and products for each reaction 
     in a model, with Cameo.
@@ -683,10 +703,17 @@ def cameo_reactionCompounds(model):
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.get_reaction_compounds(model)
+    if library:
+        return ASExternalTools.get_reaction_compounds(model)
+    else:
+        ASExternalTools.get_reaction_compounds(model)
 
-def cameo_mutantFBA(model, mutation, result_type='objective'):
+def cameo_mutantFBA(model, mutation, result_type='objective',
+                    library=False):
     '''!
     Function to simulate a model after adding mutation(s) using 
     Flux Balance Analysis (FBA), with Cameo.
@@ -704,10 +731,18 @@ def cameo_mutantFBA(model, mutation, result_type='objective'):
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.mutantFBA(model, mutation, 'FBA', result_type)
+    if library:
+        return ASExternalTools.mutantFBA(model, mutation, 'FBA', 
+                                         result_type)
+    else:
+        ASExternalTools.mutantFBA(model, mutation, 'FBA', result_type)
 
-def cameo_mutantpFBA(model, mutation, result_type='objective'):
+def cameo_mutantpFBA(model, mutation, result_type='objective',
+                     library=False):
     '''!
     Function to simulate a model after adding mutation(s) using 
     Parsimonious Flux Balance Analysis (pFBA), with Cameo.
@@ -732,10 +767,17 @@ def cameo_mutantpFBA(model, mutation, result_type='objective'):
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.mutantFBA(model, mutation, 'pFBA', result_type)
+    if library:
+        return ASExternalTools.mutantFBA(model, mutation, 'pFBA', 
+                                         result_type)
+    else:
+        ASExternalTools.mutantFBA(model, mutation, 'pFBA', result_type)
 
-def cameo_medium(model):
+def cameo_medium(model, library=False):
     '''!
     Function to list the medium in a model, with Cameo.
 
@@ -752,10 +794,17 @@ def cameo_medium(model):
 
     @model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.get_medium(model)
+    if library:
+        return ASExternalTools.get_medium(model)
+    else:
+        ASExternalTools.get_medium(model)
 
-def cameo_mediumFBA(model, change, result_type='objective'):
+def cameo_mediumFBA(model, change, result_type='objective', 
+                    library=False):
     '''!
     Function to simulate a model after adding media change(s) using 
     Flux Balance Analysis (FBA), with Cameo.
@@ -773,10 +822,17 @@ def cameo_mediumFBA(model, change, result_type='objective'):
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.mediumFBA(model, change, 'FBA', result_type)
+    if library:
+        return ASExternalTools.mediumFBA(model, change, 'FBA', result_type)
+    else:
+        ASExternalTools.mediumFBA(model, change, 'FBA', result_type)
 
-def cameo_mediumpFBA(model, change, result_type='objective'):
+def cameo_mediumpFBA(model, change, result_type='objective', 
+                     library=False):
     '''!
     Function to simulate a model after adding media change(s) using 
     Parsimonious Flux Balance Analysis (pFBA), with Cameo.
@@ -794,8 +850,14 @@ def cameo_mediumpFBA(model, change, result_type='objective'):
     @result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
+    @param library Boolean: Flag to use this function as a library 
+    function. If True, the results of execution will be returned in 
+    addition to printing on scree. Default = False.
     '''
-    ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
+    if library:
+        return ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
+    else:
+        ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
 
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
