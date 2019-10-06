@@ -627,9 +627,9 @@ def cameo_FBA(model, result_type='objective', library=False):
 
         python astools.py cameo-fba --model=iJO1366 --result_type=objective
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
-    @result_type String: Type of result to give. Allowable types 
+    @param result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
     @param library Boolean: Flag to use this function as a library 
@@ -658,9 +658,9 @@ def cameo_pFBA(model, result_type='objective', library=False):
 
         python astools.py cameo-pfba --model=iJO1366 --result_type=objective
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
-    @result_type String: Type of result to give. Allowable types 
+    @param result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
     @param library Boolean: Flag to use this function as a library 
@@ -681,7 +681,7 @@ def cameo_reactionNames(model, library=False):
 
         python astools.py cameo-rxn-names --model=iJO1366
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @param library Boolean: Flag to use this function as a library 
     function. If True, the results of execution will be returned in 
@@ -701,7 +701,7 @@ def cameo_reactionCompounds(model, library=False):
 
         python astools.py cameo-rxn-cpds --model=iJO1366
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @param library Boolean: Flag to use this function as a library 
     function. If True, the results of execution will be returned in 
@@ -722,13 +722,13 @@ def cameo_mutantFBA(model, mutation, result_type='objective',
 
         python astools.py cameo-mutant-fba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=objective
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @mutation String: String to define mutation(s). Each mutation 
     is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
-    @result_type String: Type of result to give. Allowable types 
+    @param result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
     @param library Boolean: Flag to use this function as a library 
@@ -758,13 +758,13 @@ def cameo_mutantpFBA(model, mutation, result_type='objective',
 
         python astools.py cameo-mutant-pfba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=objective
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
-    @mutation String: String to define mutation(s). Each mutation 
+    @param mutation String: String to define mutation(s). Each mutation 
     is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
-    @result_type String: Type of result to give. Allowable types 
+    @param result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
     @param library Boolean: Flag to use this function as a library 
@@ -792,7 +792,7 @@ def cameo_medium(model, library=False):
 
         python astools.py cameo-medium-cpd --model=iAF1260
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
     @param library Boolean: Flag to use this function as a library 
     function. If True, the results of execution will be returned in 
@@ -813,13 +813,13 @@ def cameo_mediumFBA(model, change, result_type='objective',
 
         python astools.py cameo-medium-fba --model=iAF1260 --change=EX_o2_e,0;EX_glc__D_e,5.0 --result_type=objective
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
-    @change String: String to define medium change(s). Each change
+    @param change String: String to define medium change(s). Each change
     is defined as <compound ID>:<new value>. For example, EX_o2_e,0 
     will represent anaerobic condition. Multiple changes are delimited 
     using semicolon.
-    @result_type String: Type of result to give. Allowable types 
+    @param result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
     @param library Boolean: Flag to use this function as a library 
@@ -841,13 +841,13 @@ def cameo_mediumpFBA(model, change, result_type='objective',
 
         python astools.py cameo-medium-pfba --model=iAF1260 --change=EX_o2_e,0;EX_glc__D_e,5.0 --result_type=objective
 
-    @model String: Model acceptable by Cameo (see 
+    @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
-    @change String: String to define medium change(s). Each change
+    @param change String: String to define medium change(s). Each change
     is defined as <compound ID>:<new value>. For example, EX_o2_e,0 
     will represent anaerobic condition. Multiple changes are delimited 
     using semicolon.
-    @result_type String: Type of result to give. Allowable types 
+    @param result_type String: Type of result to give. Allowable types 
     are objective (objective value from FBA) or flux (table of 
     fluxes). Default value = objective.
     @param library Boolean: Flag to use this function as a library 
