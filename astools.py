@@ -501,7 +501,8 @@ def sensitivityGenerator(modelfile, multiple=100,
 
 def localSensitivity(modelfile, multiple=100, prefix='', 
                      mtype='ASM', solver='RK4', timestep=1, 
-                     endtime=21600, cleanup=True,
+                     endtime=21600, cleanup=True, 
+                     outfmt='reduced', sampling=100,
                      resultfile='sensitivity_analysis.csv'):
     '''!
     Function to perform local sensitivity analysis using OFAT/OAT 
@@ -510,7 +511,7 @@ def localSensitivity(modelfile, multiple=100, prefix='',
 
     Usage:
 
-        python astools.py LSA --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --resultfile=sensitivity_analysis.csv
+        python astools.py LSA --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --outfmt=reduced --resultfile=sensitivity_analysis.csv
 
     @param modelfile String: Name of model specification file in 
     models folder. This assumes that the model file is not in models 
@@ -536,10 +537,19 @@ def localSensitivity(modelfile, multiple=100, prefix='',
     will run from 0 to end time. Default = 21600.
     @param cleanup String: Flag to determine whether to remove all 
     generated temporary models and ODE code files. Default = True.
+    @param outfmt String: Output format. Allowable types are 'reduced' 
+    (only the final result will be saved into resultfile) and 'full' 
+    (all data, depending on sampling, will be saved into resultfile).
+    @param sampling Integer: Sampling frequency. If 100, means only 
+    every 100th simulation result will be written out. The first 
+    (start) and last (end) result will always be written out. 
+    Default = 100.
     @param resultfile String: Relative or absolute file path to 
     write out sensitivity results. Default = 'sensitivity_analysis.csv'
     '''
     MSF = sensitivityGenerator(modelfile, multiple, prefix, mtype)
+    outfmt = str(outfmt).lower()
+    sampling = int(sampling)
     for param in MSF:
         # Generate ODE codes from model
         (spec, modelobj) = modelReader(MSF[param]['ASM'], 
@@ -553,16 +563,29 @@ def localSensitivity(modelfile, multiple=100, prefix='',
         # Simulate ODE codes
         m = importlib.import_module('models.temp.'+ odefile)
         labels = [param, 'Change'] + m.labels
+        simData = []
+        count = 0
         for data in m.model:
-            simData = [str(x) for x in data]
+            if outfmt == "reduced":
+                simData = [str(x) for x in data]
+            elif outfmt == "full":
+                if (count % sampling) == 0:
+                    simData.append([str(x) for x in data])
+                count = count + 1
         MSF[param]['Data'] = simData
     resultfile = os.path.abspath(resultfile)
     resultfile = open(resultfile, 'w')
     resultfile.write(','.join(labels) + '\n')
     for param in MSF:
-        data = [param, MSF[param]['Change']] + MSF[param]['Data']
-        data = [str(x) for x in data]
-        resultfile.write(','.join(data) + '\n')
+        if outfmt == "reduced":
+            data = [param, MSF[param]['Change']] + MSF[param]['Data']
+            data = [str(x) for x in data]
+            resultfile.write(','.join(data) + '\n')
+        elif outfmt == "full":
+            for datarow in MSF[param]['Data']:
+                data = [param, MSF[param]['Change']] + datarow
+                data = [str(x) for x in data]
+                resultfile.write(','.join(data) + '\n')
     resultfile.close()
     if str(cleanup).upper() == 'TRUE':
         for param in MSF:
