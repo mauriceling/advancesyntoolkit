@@ -550,11 +550,18 @@ def localSensitivity(modelfile, multiple=100, prefix='',
     MSF = sensitivityGenerator(modelfile, multiple, prefix, mtype)
     outfmt = str(outfmt).lower()
     sampling = int(sampling)
+    resultfile = os.path.abspath(resultfile)
+    resultfile = open(resultfile, 'w')
+    header = False
+    msf_count = len(MSF)
+    model_count = 0
     for param in MSF:
+        model_count = model_count + 1
         # Generate ODE codes from model
         (spec, modelobj) = modelReader(MSF[param]['ASM'], 
                                     mtype, 'extended')
-        print('Processing model: %s' % MSF[param]['ASM'])
+        print('Processing model %s of %s: %s' % \
+            (model_count, msf_count, MSF[param]['ASM']))
         ODECode = ASModeller.generate_ODE(spec, modelobj, solver, 
                  timestep, endtime)
         odefile = re.sub('\.', '_', param)
@@ -562,21 +569,21 @@ def localSensitivity(modelfile, multiple=100, prefix='',
         MSF[param]['ODE'] = filepath
         # Simulate ODE codes
         m = importlib.import_module('models.temp.'+ odefile)
-        labels = [param, 'Change'] + m.labels
+        if header == False:
+            labels = ['Parameter', 'Change'] + m.labels
+            resultfile.write(','.join(labels) + '\n')
+            header = True
         simData = []
-        count = 0
+        data_row_count = 0
         for data in m.model:
             if outfmt == "reduced":
                 simData = [str(x) for x in data]
             elif outfmt == "full":
-                if (count % sampling) == 0:
+                if (data_row_count % sampling) == 0:
                     simData.append([str(x) for x in data])
-                count = count + 1
+                data_row_count = data_row_count + 1
         MSF[param]['Data'] = simData
-    resultfile = os.path.abspath(resultfile)
-    resultfile = open(resultfile, 'w')
-    resultfile.write(','.join(labels) + '\n')
-    for param in MSF:
+        # Write out sensitivity results to resultfile
         if outfmt == "reduced":
             data = [param, MSF[param]['Change']] + MSF[param]['Data']
             data = [str(x) for x in data]
@@ -909,3 +916,18 @@ if __name__ == '__main__':
     exposed_functions = {**astools_functions, 
                          **cameo_functions}
     fire.Fire(exposed_functions)
+
+def GSM_to_ASM(model):
+    '''!
+    Function to read reactions in Genome-Scale Models (GSM) using 
+    Cameo and convert to AdvanceSyn Model (ASM) format.
+
+    Usage:
+
+        python astools.py GSM-to-ASM --model=iJO1366 --outputfile=models/asm/iJO1366.modelspec
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    rxnList = ASExternalTools.get_reaction_compounds(model, False)
+    return rxnList
