@@ -908,7 +908,7 @@ if __name__ == '__main__':
                          'systemdata': systemData}
     cameo_functions = {'cameo-fba': cameo_FBA,
                        'cameo-find-pathway': cameo_findPathway,
-                       'cameo-medium-cpd': cameo_medium,
+                       'cameo-medium-cpds': cameo_medium,
                        'cameo-medium-fba': cameo_mediumFBA,
                        'cameo-medium-pfba': cameo_mediumpFBA,
                        'cameo-mutant-fba': cameo_mutantFBA,
