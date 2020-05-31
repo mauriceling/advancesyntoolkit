@@ -200,12 +200,11 @@ def mergeASM(modelfile, outputfile, prefix='exp'):
 
     Usage:
 
-        python astools.py mergeASM --prefix=exp --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/asm/glycolysis_RFP.modelspec
+        python astools.py mergeASM --prefix=exp --modelfile=models/asm/glycolysis.modelspec;models/asm/ppp.modelspec --outputfile=models/asm/glycolysis_ppp.modelspec
 
     @param modelfile String: Relative path(s) to the model specification 
     file(s), separated by semi-colon. 
-    @param outputfile String: Relative path to the output model 
-    objects file.
+    @param outputfile String: Relative path to the output ASM model file.
     @param prefix String: Prefix for new reaction IDs. This prefix 
     cannot be any existing prefixes in any of the model specifications 
     to be merged. Default = 'exp'.
@@ -239,12 +238,11 @@ def generateNetwork(modelfile, outputfile, outfmt='SIF'):
 
     Usage:
 
-        python astools.py genNetwork --outfmt=SIF --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=glycolysis_RFP.sif
+        python astools.py genNetwork --outfmt=SIF --modelfile=models/asm/glycolysis.modelspec;models/asm/ppp.modelspec --outputfile=glycolysis_ppp.sif
 
     @param modelfile String: Relative path(s) to the model specification 
     file(s), separated by semi-colon. 
-    @param outputfile String: Relative path to the output model 
-    objects file.
+    @param outputfile String: Relative path to the output file.
     @param outfmt String: Type of network visualizatio format to 
     generate. Allowable options are 'SIF' (Simple Interaction 
     Format). Default = 'SIF' (Simple Interaction Format).
@@ -330,7 +328,7 @@ def generateODEScript(modelfile, mtype='ASM', solver='RK4',
         python astools.py genODE --modelfile=models/asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --lowerbound=0;0 --upperbound=1e-3;1e-3 --odefile=glycolysis.py
 
     @param modelfile String: Name of model specification file in 
-    models folder. This assumes that the model file is not in  models 
+    models folder. This assumes that the model file is not in models 
     folder.
     @param mtype String: Type of model specification file. Allowable 
     types are 'ASM' (AdvanceSyn Model Specification). Default = 'ASM'.
@@ -752,7 +750,7 @@ def cameo_mutantFBA(model, mutation, result_type='objective',
 
     @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
-    @mutation String: String to define mutation(s). Each mutation 
+    @param mutation String: String to define mutation(s). Each mutation 
     is defined as <reaction ID>:<upper bound>:<lower bound>. For 
     example, RBFK,0,0 will represent a knock out. Multiple mutations 
     are delimited using semicolon.
@@ -811,13 +809,6 @@ def cameo_medium(model, library=False):
     '''!
     Function to list the medium in a model, with Cameo.
 
-    pFBA reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
-    J.A., Charusanti, P., Polpitiya, A.D., Adkins, J.N., Schramm, 
-    G., Purvine, S.O., Lopez‐Ferrer, D. and Weitz, K.K., 2010. 
-    Omic data from evolved E. coli are consistent with computed 
-    optimal growth from genome‐scale models. Molecular Systems 
-    Biology, 6(1):390. http://www.ncbi.nlm.nih.gov/pubmed/20664636
-
     Usage:
 
         python astools.py cameo-medium-cpds --model=iAF1260
@@ -868,6 +859,13 @@ def cameo_mediumpFBA(model, change, result_type='objective',
     '''!
     Function to simulate a model after adding media change(s) using 
     Parsimonious Flux Balance Analysis (pFBA), with Cameo.
+
+    pFBA reference: Lewis, N.E., Hixson, K.K., Conrad, T.M., Lerman, 
+    J.A., Charusanti, P., Polpitiya, A.D., Adkins, J.N., Schramm, 
+    G., Purvine, S.O., Lopez‐Ferrer, D. and Weitz, K.K., 2010. 
+    Omic data from evolved E. coli are consistent with computed 
+    optimal growth from genome‐scale models. Molecular Systems 
+    Biology, 6(1):390. http://www.ncbi.nlm.nih.gov/pubmed/20664636
 
     Usage:
 
