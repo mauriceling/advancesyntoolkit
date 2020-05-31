@@ -37,14 +37,7 @@ except ImportError:
     subprocess.check_call([sys.executable, '-m', 'pip', 
                            'install', 'fire'])
     import fire
-
-# Ensure cameo is installed
-try: 
-    import cameo
-except ImportError:
-    subprocess.check_call([sys.executable, '-m', 'pip', 
-                           'install', 'cameo'])
-    import fire
+    
 
 import ASExternalTools
 import ASModeller
@@ -645,6 +638,7 @@ def installDependencies():
         print('... cameo installed and importable')
 
 def cameo_findPathway(model, product, max_prediction=4):
+    import cameo
     ASExternalTools.find_pathway(model, product, 
                                  max_prediction)
 
@@ -666,6 +660,7 @@ def cameo_FBA(model, result_type='objective', library=False):
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.flux_balance_analysis(model, 'FBA', 
                                                      result_type)
@@ -697,6 +692,7 @@ def cameo_pFBA(model, result_type='objective', library=False):
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.flux_balance_analysis(model, 'pFBA', 
                                                      result_type)
@@ -717,6 +713,7 @@ def cameo_reactionNames(model, library=False):
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.get_reaction_names(model)
     else:
@@ -737,6 +734,7 @@ def cameo_reactionCompounds(model, library=False):
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.get_reaction_compounds(model)
     else:
@@ -765,6 +763,7 @@ def cameo_mutantFBA(model, mutation, result_type='objective',
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.mutantFBA(model, mutation, 'FBA', 
                                          result_type)
@@ -801,6 +800,7 @@ def cameo_mutantpFBA(model, mutation, result_type='objective',
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.mutantFBA(model, mutation, 'pFBA', 
                                          result_type)
@@ -820,7 +820,7 @@ def cameo_medium(model, library=False):
 
     Usage:
 
-        python astools.py cameo-medium-cpd --model=iAF1260
+        python astools.py cameo-medium-cpds --model=iAF1260
 
     @param model String: Model acceptable by Cameo (see 
     http://cameo.bio/02-import-models.html).
@@ -828,6 +828,7 @@ def cameo_medium(model, library=False):
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.get_medium(model)
     else:
@@ -856,6 +857,7 @@ def cameo_mediumFBA(model, change, result_type='objective',
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.mediumFBA(model, change, 'FBA', result_type)
     else:
@@ -884,6 +886,7 @@ def cameo_mediumpFBA(model, change, result_type='objective',
     function. If True, the results of execution will be returned in 
     addition to printing on scree. Default = False.
     '''
+    import cameo
     if library:
         return ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
     else:
