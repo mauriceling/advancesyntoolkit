@@ -2,9 +2,9 @@
 type: 1
 
 [Identifiers]
-name: Universal model of core metabolism (version 1)
-authors: Madhurya V Murthy, Dakshahini Balan, Nur Jannah Kamarudin, Victor CC Wang, Xue Ting Tan, Avettra Ramesh, Shermaine SM Chew, Nikita V Yablochkin, Karthiga Mathivanan, Maurice HT Ling
-description: 292 metabolites, 310 enzymes, and 566 reactions extracted from KEGG
+name: Escherichia coli specific kinetic model (ecoJC20)
+authors: Jeremy L Cho, Maurice HT Ling
+description: Adaptation from UniKin1
 
 [Objects]
 C00001 : H2O 
