@@ -7,6 +7,11 @@ This file is a part of AdvanceSyn ToolKit.
 
 Copyright (c) 2018, AdvanceSyn Private Limited.
 
+Reference: Ling, MHT. 2020. AdvanceSyn Toolkit: An Open-Source Suite 
+for Model Development and Analysis in Biological Engineering. MOJ 
+Proteomics & Bioinformatics 9(4):83‒86.
+
+
 Licensed under the Apache License, Version 2.0 (the "License") for 
 academic and not-for-profit use only; commercial and/or for profit 
 use(s) is/are not licensed under the License and requires a 
