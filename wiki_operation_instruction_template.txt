@@ -1,0 +1,47 @@
+**Synopsis:** List the medium in a model, with Cameo.
+
+**Usage:** `python astools.py cameo-medium-cpds [option]`
+
+where `[option]` can be 
+
+* `model`: Model acceptable by Cameo (see http://cameo.bio/02-import-models.html).
+
+**For example:** 
+```
+python astools.py cameo-medium-cpds --model=iAF1260
+```
+
+**Working example:**
+```
+D:\Dropbox\MyProjects\astoolkit>python astools.py cameo-medium-cpds --model=iAF1260
+C:\Users\mauri\.conda\envs\py37\lib\site-packages\cameo\visualization\plotting\__init__.py:52 UserWarning: Cannot import any plotting library. Please install one of 'plotly', 'bokeh' or 'ggplot' if you want to use any plotting function.
+
+This operation uses Cameo (https://github.com/biosustain/cameo). If you used it in your study, please cite: Cardoso, J.G., Jensen, K., Lieven, C., Lærke Hansen, A.S., Galkina, S., Beber, M., Ozdemir, E., Herrgård, M.J., Redestig, H. and Sonnenschein, N., 2018. Cameo: a Python library for computer aided metabolic engineering and optimization of cell factories. ACS synthetic biology, 7(4), pp.1163-1166.
+
+
+Load model: iAF1260
+
+Number : Component : Rate (mmol/gDW/h)
+1 : EX_ca2_e : 999999.0
+2 : EX_cbl1_e : 0.01
+3 : EX_cl_e : 999999.0
+4 : EX_co2_e : 999999.0
+5 : EX_cobalt2_e : 999999.0
+6 : EX_cu2_e : 999999.0
+7 : EX_mg2_e : 999999.0
+8 : EX_mn2_e : 999999.0
+9 : EX_mobd_e : 999999.0
+10 : EX_na1_e : 999999.0
+11 : EX_nh4_e : 999999.0
+12 : EX_fe2_e : 999999.0
+13 : EX_fe3_e : 999999.0
+14 : EX_o2_e : 18.5
+15 : EX_tungs_e : 999999.0
+16 : EX_pi_e : 999999.0
+17 : EX_zn2_e : 999999.0
+18 : EX_so4_e : 999999.0
+19 : EX_glc__D_e : 8.0
+20 : EX_h2o_e : 999999.0
+21 : EX_h_e : 999999.0
+22 : EX_k_e : 999999.0
+```
