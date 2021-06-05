@@ -3,7 +3,12 @@ AdvanceSyn Toolkit External Tools Interface.
 
 Date created: 22nd March 2019
 
-Copyright (c) 2019 AdvanceSyn Private Limited.
+Authors: Maurice HT Ling
+
+This file is part of AdvanceSynModeller, which is a part of 
+AdvanceSynToolKit.
+
+Copyright (c) 2018, AdvanceSyn Private Limited and authors.
 
 Licensed under the Apache License, Version 2.0 (the "License") for 
 academic and not-for-profit use only; commercial and/or for profit 

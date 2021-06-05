@@ -4,10 +4,12 @@ model objects, and providing interfaces to model.
 
 Date created: 6th August 2018
 
-This file is part of AdvanceSyn Modeller, which is a part of 
-AdvanceSyn ToolKit.
+Authors: Maurice HT Ling
 
-Copyright (c) 2018, AdvanceSyn Private Limited.
+This file is part of AdvanceSynModeller, which is a part of 
+AdvanceSynToolKit.
+
+Copyright (c) 2018, AdvanceSyn Private Limited and authors.
 
 Licensed under the Apache License, Version 2.0 (the "License") for 
 academic and not-for-profit use only; commercial and/or for profit 

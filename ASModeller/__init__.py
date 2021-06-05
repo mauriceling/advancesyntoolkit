@@ -3,10 +3,12 @@ AdvanceSynModeller Package
 
 Date created: 6th August 2018
 
+Authors: Maurice HT Ling
+
 This file is part of AdvanceSynModeller, which is a part of 
 AdvanceSynToolKit.
 
-Copyright (c) 2018, AdvanceSyn Private Limited.
+Copyright (c) 2018, AdvanceSyn Private Limited and authors.
 
 Licensed under the Apache License, Version 2.0 (the "License") for 
 academic and not-for-profit use only; commercial and/or for profit 
@@ -25,6 +27,7 @@ limitations under the License.
 
 from . import generator_network
 from . import generator_ode
+from . import gsm_to_km
 from . import model_object
 from . import model_access
 from . import model_merge
@@ -37,6 +40,8 @@ from .generator_ode import print_header
 from .generator_ode import print_rateEq
 from .generator_ode import print_Setup
 from .generator_ode import substitute_rateEq
+
+from .gsm_to_km import gsm_km_converter
 
 from .model_object import ModelObject
 
