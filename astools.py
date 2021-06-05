@@ -3,9 +3,12 @@ Command-line processor for AdvanceSyn ToolKit.
 
 Date created: 6th August 2018
 
-This file is a part of AdvanceSyn ToolKit.
+Authors: Maurice HT Ling
 
-Copyright (c) 2018, AdvanceSyn Private Limited.
+This file is part of AdvanceSynModeller, which is a part of 
+AdvanceSynToolKit.
+
+Copyright (c) 2018, AdvanceSyn Private Limited and authors.
 
 Reference: Ling, MHT. 2020. AdvanceSyn Toolkit: An Open-Source Suite 
 for Model Development and Analysis in Biological Engineering. MOJ 
@@ -895,11 +898,28 @@ def cameo_mediumpFBA(model, change, result_type='objective',
     else:
         ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
 
+def GSM_to_ASM(model, name, outputfile):
+    '''!
+    Function to read reactions in Genome-Scale Models (GSM) using 
+    Cameo and convert to AdvanceSyn Model (ASM) format.
+
+    Usage:
+
+        python astools.py GSM-to-ASM --model=e_coli_core --name=e_coli_core --outputfile=models/asm/e_coli_core.modelspec
+
+    @model String: Model acceptable by Cameo (see 
+    http://cameo.bio/02-import-models.html).
+    '''
+    rxnList = ASExternalTools.get_reaction_compounds(model, False)
+    ASModeller.gsm_km_converter(model, name, outputfile, rxnList)
+    return rxnList
+
+
 if __name__ == '__main__':
     astools_functions = {'genMO': generateModelObject,
                          'genNetwork': generateNetwork,
                          'genODE': generateODEScript,
-                         #'GSM-to-ASM': GSM_to_ASM,
+                         'GSM-to-ASM': GSM_to_ASM,
                          'installdep': installDependencies,
                          'LSA': localSensitivity,
                          'mergeASM': mergeASM,
@@ -922,18 +942,3 @@ if __name__ == '__main__':
     exposed_functions = {**astools_functions, 
                          **cameo_functions}
     fire.Fire(exposed_functions)
-
-def GSM_to_ASM(model):
-    '''!
-    Function to read reactions in Genome-Scale Models (GSM) using 
-    Cameo and convert to AdvanceSyn Model (ASM) format.
-
-    Usage:
-
-        python astools.py GSM-to-ASM --model=iJO1366 --outputfile=models/asm/iJO1366.modelspec
-
-    @model String: Model acceptable by Cameo (see 
-    http://cameo.bio/02-import-models.html).
-    '''
-    rxnList = ASExternalTools.get_reaction_compounds(model, False)
-    return rxnList
