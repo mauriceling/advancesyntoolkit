@@ -898,20 +898,29 @@ def cameo_mediumpFBA(model, change, result_type='objective',
     else:
         ASExternalTools.mediumFBA(model, change, 'pFBA', result_type)
 
-def GSM_to_ASM(model, name, outputfile):
+def GSM_to_ASM(model, name, outputfile, metabolite_initial=1e-5, 
+               enzyme_conc=1e-6, enzyme_kcat=13.7, enzyme_km=130e-6):
     '''!
     Function to read reactions in Genome-Scale Models (GSM) using 
     Cameo and convert to AdvanceSyn Model (ASM) format.
 
     Usage:
 
-        python astools.py GSM-to-ASM --model=e_coli_core --name=e_coli_core --outputfile=models/asm/e_coli_core.modelspec
+        python astools.py GSM-to-ASM --metabolite_initial=1e-5 --enzyme_conc=1e-6 --enzyme_kcat=13.7 --enzyme_km=130e-6 --model=e_coli_core --name=e_coli_core --outputfile=models/asm/e_coli_core.modelspec 
 
-    @model String: Model acceptable by Cameo (see 
-    http://cameo.bio/02-import-models.html).
+    @param model String: Model acceptable by Cameo (see http://cameo.bio/02-import-models.html).
+    @param name String: Name of model author / creator.
+    @param outputfile String: Relative path to the write out the converted 
+    ASM model.
+    @param metabolite_initial Float: Initial metabolite concentration. Default = 1e-5 (10 uM).
+    @param enzyme_conc Float: Enzyme concentration. Default = 1e-6 (1 uM)
+    @param enzyme_kcat Float: Enzyme kcat / turnover number. Default = 13.7 (13.7 per second).
+    @param enzyme_km Float: Enzyme Km (Michaelis-Menten constant). Default = 130e-6 (130 uM).
     '''
     rxnList = ASExternalTools.get_reaction_compounds(model, False)
-    ASModeller.gsm_km_converter(model, name, outputfile, rxnList)
+    ASModeller.gsm_km_converter(model, name, outputfile, rxnList, 
+                                metabolite_initial, enzyme_conc, 
+                                enzyme_kcat, enzyme_km)
     return rxnList
 
 
