@@ -27,7 +27,8 @@ limitations under the License.
 
 import pandas as pd
 
-def gsm_km_converter(input_model, input_name, outputfile, rxnList):
+def gsm_km_converter(input_model, input_name, outputfile, rxnList, 
+                     metabolite_initial, enzyme_conc, enzyme_kcat, enzyme_km):
     pd.set_option('display.max_colwidth', None)
     filenamedata = []
     filenamedata.append(outputfile)
@@ -88,18 +89,18 @@ def gsm_km_converter(input_model, input_name, outputfile, rxnList):
         ['\n\n']
 
     initialsList = ['[Initials]' + '\n'] + \
-        [row['obj'].strip() + ' : 1e-5' + '\n' 
+        [row['obj'].strip() + ' : ' + str(metabolite_initial) + '\n' 
         for index, row in df4.iterrows()] + \
         ['\n\n']
 
     variable_concList = ['[Variables]' + '\n'] + \
-        [row['rxn_id'].strip() + '_conc : 1e-6' + '\n' 
+        [row['rxn_id'].strip() + '_conc : ' + str(enzyme_conc) + '\n' 
         for index, row in df.iterrows()]
 
-    variable_kcatList = [row['rxn_id'].strip() + '_kcat : 10' + '\n' 
+    variable_kcatList = [row['rxn_id'].strip() + '_kcat : ' + str(enzyme_kcat) + '\n' 
                          for index, row in df.iterrows()]
 
-    variable_kmList = [row['rxn_id'].strip() + '_km : 0.001' + '\n' 
+    variable_kmList = [row['rxn_id'].strip() + '_km : ' + str(enzyme_km) +'\n' 
                        for index, row in df.iterrows()] + ['\n\n']
 
     reactionList = ['[Reactions]' + '\n'] + \
