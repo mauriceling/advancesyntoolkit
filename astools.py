@@ -628,7 +628,9 @@ def installDependencies():
     except ImportError:
         print('... bokeh not found ==> proceed to install bokeh')
         subprocess.check_call([sys.executable, '-m', 'pip', 
-                               'install', 'bokeh'])
+                               'install', 'bokeh', 
+                               '--trusted-host', 'pypi.org', 
+                               '--trusted-host', 'files.pythonhosted.org'])
         import bokeh
         print('... bokeh installed and importable')
     # cameo 
@@ -639,7 +641,9 @@ def installDependencies():
     except ImportError:
         print('... cameo not found ==> proceed to install cameo')
         subprocess.check_call([sys.executable, '-m', 'pip', 
-                               'install', 'cameo'])
+                               'install', 'cameo', 
+                               '--trusted-host', 'pypi.org', 
+                               '--trusted-host', 'files.pythonhosted.org'])
         import cameo
         print('... cameo installed and importable')
 
