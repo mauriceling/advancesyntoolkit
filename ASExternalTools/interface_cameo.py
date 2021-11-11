@@ -232,15 +232,23 @@ def _parse_mutation(mutation):
     @return: Dictionary to represent mutation(s)
     '''
     mutation = str(mutation)
+    # print(mutation)
+    if mutation.startswith("(") and mutation.endswith(")"):
+        mutation = mutation[1:-1]
+        mutation = mutation.replace("'", "")
+    # print(mutation)
     mutation = [pair.strip() for pair in mutation.split(';')]
+    # print(mutation)
     mutation = [[pair.split(',')[0], 
                  pair.split(',')[1], 
                  pair.split(',')[2]] 
                  for pair in mutation]
+    # print(mutation)
     mutation = [[pair[0].strip(), 
                  pair[1].strip(), 
                  pair[2].strip()] 
                  for pair in mutation]
+    print(mutation)
     ndict = {}
     for k in mutation:
         ndict[str(k[0])] = (int(k[1]), int(k[2]))
