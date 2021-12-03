@@ -43,7 +43,9 @@ try:
     import fire
 except ImportError:
     subprocess.check_call([sys.executable, '-m', 'pip', 
-                           'install', 'fire'])
+                           'install', 'fire',
+                           '--trusted-host', 'pypi.org', 
+                           '--trusted-host', 'files.pythonhosted.org'])
     import fire
     
 
