@@ -1,0 +1,541 @@
+[Specification]
+type : 1
+
+[Identifiers]
+name : e_coli_core
+author : e_coli_core
+
+[Objects]
+m_adp_c : m_adp_c
+m_fdp_c : m_fdp_c
+m_h_c : m_h_c
+m_accoa_c : m_accoa_c
+m_for_c : m_for_c
+m_f6p_c : m_f6p_c
+m_13dpg_c : m_13dpg_c
+m_6pgc_c : m_6pgc_c
+m_nadh_c : m_nadh_c
+m_akg_c : m_akg_c
+m_3pg_c : m_3pg_c
+m_pi_c : m_pi_c
+m_acald_c : m_acald_c
+m_actp_c : m_actp_c
+m_oaa_c : m_oaa_c
+m_acon_C_c : m_acon_C_c
+m_h2o_c : m_h2o_c
+m_icit_c : m_icit_c
+m_co2_c : m_co2_c
+m_pep_c : m_pep_c
+m_ac_c : m_ac_c
+m_amp_c : m_amp_c
+m_succoa_c : m_succoa_c
+m_atp_c : m_atp_c
+m_coa_c : m_coa_c
+m_pyr_c : m_pyr_c
+m_nadp_c : m_nadp_c
+m_xu5p__D_c : m_xu5p__D_c
+m_cit_c : m_cit_c
+m_ru5p__D_c : m_ru5p__D_c
+m_succ_c : m_succ_c
+m_h_e : m_h_e
+m_q8_c : m_q8_c
+m_lac__D_c : m_lac__D_c
+m_succ_e : m_succ_e
+m_etoh_c : m_etoh_c
+m_fum_c : m_fum_c
+m_q8h2_c : m_q8h2_c
+m_e4p_c : m_e4p_c
+m_nad_c : m_nad_c
+m_nadph_c : m_nadph_c
+m_g3p_c : m_g3p_c
+m_s7p_c : m_s7p_c
+m_dhap_c : m_dhap_c
+m_mal__L_c : m_mal__L_c
+m_6pgl_c : m_6pgl_c
+m_g6p_c : m_g6p_c
+m_gln__L_c : m_gln__L_c
+m_nh4_c : m_nh4_c
+m_glu__L_c : m_glu__L_c
+m_glx_c : m_glx_c
+m_o2_c : m_o2_c
+m_akg_e : m_akg_e
+m_2pg_c : m_2pg_c
+m_pi_e : m_pi_e
+m_acald_e : m_acald_e
+m_ac_e : m_ac_e
+m_r5p_c : m_r5p_c
+m_pyr_e : m_pyr_e
+m_co2_e : m_co2_e
+m_lac__D_e : m_lac__D_e
+m_etoh_e : m_etoh_e
+m_for_e : m_for_e
+m_fru_e : m_fru_e
+m_fum_e : m_fum_e
+m_glc__D_e : m_glc__D_e
+m_gln__L_e : m_gln__L_e
+m_glu__L_e : m_glu__L_e
+m_h2o_e : m_h2o_e
+m_mal__L_e : m_mal__L_e
+m_nh4_e : m_nh4_e
+m_o2_e : m_o2_e
+
+
+[Initials]
+m_adp_c : 1e-05
+m_fdp_c : 1e-05
+m_h_c : 1e-05
+m_accoa_c : 1e-05
+m_for_c : 1e-05
+m_f6p_c : 1e-05
+m_13dpg_c : 1e-05
+m_6pgc_c : 1e-05
+m_nadh_c : 1e-05
+m_akg_c : 1e-05
+m_3pg_c : 1e-05
+m_pi_c : 1e-05
+m_acald_c : 1e-05
+m_actp_c : 1e-05
+m_oaa_c : 1e-05
+m_acon_C_c : 1e-05
+m_h2o_c : 1e-05
+m_icit_c : 1e-05
+m_co2_c : 1e-05
+m_pep_c : 1e-05
+m_ac_c : 1e-05
+m_amp_c : 1e-05
+m_succoa_c : 1e-05
+m_atp_c : 1e-05
+m_coa_c : 1e-05
+m_pyr_c : 1e-05
+m_nadp_c : 1e-05
+m_xu5p__D_c : 1e-05
+m_cit_c : 1e-05
+m_ru5p__D_c : 1e-05
+m_succ_c : 1e-05
+m_h_e : 1e-05
+m_q8_c : 1e-05
+m_lac__D_c : 1e-05
+m_succ_e : 1e-05
+m_etoh_c : 1e-05
+m_fum_c : 1e-05
+m_q8h2_c : 1e-05
+m_e4p_c : 1e-05
+m_nad_c : 1e-05
+m_nadph_c : 1e-05
+m_g3p_c : 1e-05
+m_s7p_c : 1e-05
+m_dhap_c : 1e-05
+m_mal__L_c : 1e-05
+m_6pgl_c : 1e-05
+m_g6p_c : 1e-05
+m_gln__L_c : 1e-05
+m_nh4_c : 1e-05
+m_glu__L_c : 1e-05
+m_glx_c : 1e-05
+m_o2_c : 1e-05
+m_akg_e : 1e-05
+m_2pg_c : 1e-05
+m_pi_e : 1e-05
+m_acald_e : 1e-05
+m_ac_e : 1e-05
+m_r5p_c : 1e-05
+m_pyr_e : 1e-05
+m_co2_e : 1e-05
+m_lac__D_e : 1e-05
+m_etoh_e : 1e-05
+m_for_e : 1e-05
+m_fru_e : 1e-05
+m_fum_e : 1e-05
+m_glc__D_e : 1e-05
+m_gln__L_e : 1e-05
+m_glu__L_e : 1e-05
+m_h2o_e : 1e-05
+m_mal__L_e : 1e-05
+m_nh4_e : 1e-05
+m_o2_e : 1e-05
+
+
+[Variables]
+m_PFK_conc : 1e-06
+m_PFL_conc : 1e-06
+m_PGI_conc : 1e-06
+m_PGK_conc : 1e-06
+m_PGL_conc : 1e-06
+m_ACALD_conc : 1e-06
+m_AKGt2r_conc : 1e-06
+m_PGM_conc : 1e-06
+m_PIt2r_conc : 1e-06
+m_ALCD2x_conc : 1e-06
+m_ACALDt_conc : 1e-06
+m_ACKr_conc : 1e-06
+m_PPC_conc : 1e-06
+m_ACONTa_conc : 1e-06
+m_ACONTb_conc : 1e-06
+m_ATPM_conc : 1e-06
+m_PPCK_conc : 1e-06
+m_ACt2r_conc : 1e-06
+m_PPS_conc : 1e-06
+m_ADK1_conc : 1e-06
+m_AKGDH_conc : 1e-06
+m_ATPS4r_conc : 1e-06
+m_PTAr_conc : 1e-06
+m_PYK_conc : 1e-06
+m_BIOMASS_Ecoli_core_w_GAM_conc : 1e-06
+m_PYRt2_conc : 1e-06
+m_CO2t_conc : 1e-06
+m_RPE_conc : 1e-06
+m_CS_conc : 1e-06
+m_RPI_conc : 1e-06
+m_SUCCt2_2_conc : 1e-06
+m_CYTBD_conc : 1e-06
+m_D_LACt2_conc : 1e-06
+m_ENO_conc : 1e-06
+m_SUCCt3_conc : 1e-06
+m_ETOHt2r_conc : 1e-06
+m_SUCDi_conc : 1e-06
+m_SUCOAS_conc : 1e-06
+m_TALA_conc : 1e-06
+m_THD2_conc : 1e-06
+m_TKT1_conc : 1e-06
+m_TKT2_conc : 1e-06
+m_TPI_conc : 1e-06
+m_EX_ac_e_conc : 1e-06
+m_EX_acald_e_conc : 1e-06
+m_EX_akg_e_conc : 1e-06
+m_EX_co2_e_conc : 1e-06
+m_EX_etoh_e_conc : 1e-06
+m_EX_for_e_conc : 1e-06
+m_EX_fru_e_conc : 1e-06
+m_EX_fum_e_conc : 1e-06
+m_EX_glc__D_e_conc : 1e-06
+m_EX_gln__L_e_conc : 1e-06
+m_EX_glu__L_e_conc : 1e-06
+m_EX_h_e_conc : 1e-06
+m_EX_h2o_e_conc : 1e-06
+m_EX_lac__D_e_conc : 1e-06
+m_EX_mal__L_e_conc : 1e-06
+m_EX_nh4_e_conc : 1e-06
+m_EX_o2_e_conc : 1e-06
+m_EX_pi_e_conc : 1e-06
+m_EX_pyr_e_conc : 1e-06
+m_EX_succ_e_conc : 1e-06
+m_FBA_conc : 1e-06
+m_FBP_conc : 1e-06
+m_FORt2_conc : 1e-06
+m_FORt_conc : 1e-06
+m_FRD7_conc : 1e-06
+m_FRUpts2_conc : 1e-06
+m_FUM_conc : 1e-06
+m_FUMt2_2_conc : 1e-06
+m_G6PDH2r_conc : 1e-06
+m_GAPD_conc : 1e-06
+m_GLCpts_conc : 1e-06
+m_GLNS_conc : 1e-06
+m_GLNabc_conc : 1e-06
+m_GLUDy_conc : 1e-06
+m_GLUN_conc : 1e-06
+m_GLUSy_conc : 1e-06
+m_GLUt2r_conc : 1e-06
+m_GND_conc : 1e-06
+m_H2Ot_conc : 1e-06
+m_ICDHyr_conc : 1e-06
+m_ICL_conc : 1e-06
+m_LDH_D_conc : 1e-06
+m_MALS_conc : 1e-06
+m_MALt2_2_conc : 1e-06
+m_MDH_conc : 1e-06
+m_ME1_conc : 1e-06
+m_ME2_conc : 1e-06
+m_NADH16_conc : 1e-06
+m_NADTRHD_conc : 1e-06
+m_NH4t_conc : 1e-06
+m_O2t_conc : 1e-06
+m_PDH_conc : 1e-06
+m_PFK_kcat : 13.7
+m_PFL_kcat : 13.7
+m_PGI_kcat : 13.7
+m_PGK_kcat : 13.7
+m_PGL_kcat : 13.7
+m_ACALD_kcat : 13.7
+m_AKGt2r_kcat : 13.7
+m_PGM_kcat : 13.7
+m_PIt2r_kcat : 13.7
+m_ALCD2x_kcat : 13.7
+m_ACALDt_kcat : 13.7
+m_ACKr_kcat : 13.7
+m_PPC_kcat : 13.7
+m_ACONTa_kcat : 13.7
+m_ACONTb_kcat : 13.7
+m_ATPM_kcat : 13.7
+m_PPCK_kcat : 13.7
+m_ACt2r_kcat : 13.7
+m_PPS_kcat : 13.7
+m_ADK1_kcat : 13.7
+m_AKGDH_kcat : 13.7
+m_ATPS4r_kcat : 13.7
+m_PTAr_kcat : 13.7
+m_PYK_kcat : 13.7
+m_BIOMASS_Ecoli_core_w_GAM_kcat : 13.7
+m_PYRt2_kcat : 13.7
+m_CO2t_kcat : 13.7
+m_RPE_kcat : 13.7
+m_CS_kcat : 13.7
+m_RPI_kcat : 13.7
+m_SUCCt2_2_kcat : 13.7
+m_CYTBD_kcat : 13.7
+m_D_LACt2_kcat : 13.7
+m_ENO_kcat : 13.7
+m_SUCCt3_kcat : 13.7
+m_ETOHt2r_kcat : 13.7
+m_SUCDi_kcat : 13.7
+m_SUCOAS_kcat : 13.7
+m_TALA_kcat : 13.7
+m_THD2_kcat : 13.7
+m_TKT1_kcat : 13.7
+m_TKT2_kcat : 13.7
+m_TPI_kcat : 13.7
+m_EX_ac_e_kcat : 13.7
+m_EX_acald_e_kcat : 13.7
+m_EX_akg_e_kcat : 13.7
+m_EX_co2_e_kcat : 13.7
+m_EX_etoh_e_kcat : 13.7
+m_EX_for_e_kcat : 13.7
+m_EX_fru_e_kcat : 13.7
+m_EX_fum_e_kcat : 13.7
+m_EX_glc__D_e_kcat : 13.7
+m_EX_gln__L_e_kcat : 13.7
+m_EX_glu__L_e_kcat : 13.7
+m_EX_h_e_kcat : 13.7
+m_EX_h2o_e_kcat : 13.7
+m_EX_lac__D_e_kcat : 13.7
+m_EX_mal__L_e_kcat : 13.7
+m_EX_nh4_e_kcat : 13.7
+m_EX_o2_e_kcat : 13.7
+m_EX_pi_e_kcat : 13.7
+m_EX_pyr_e_kcat : 13.7
+m_EX_succ_e_kcat : 13.7
+m_FBA_kcat : 13.7
+m_FBP_kcat : 13.7
+m_FORt2_kcat : 13.7
+m_FORt_kcat : 13.7
+m_FRD7_kcat : 13.7
+m_FRUpts2_kcat : 13.7
+m_FUM_kcat : 13.7
+m_FUMt2_2_kcat : 13.7
+m_G6PDH2r_kcat : 13.7
+m_GAPD_kcat : 13.7
+m_GLCpts_kcat : 13.7
+m_GLNS_kcat : 13.7
+m_GLNabc_kcat : 13.7
+m_GLUDy_kcat : 13.7
+m_GLUN_kcat : 13.7
+m_GLUSy_kcat : 13.7
+m_GLUt2r_kcat : 13.7
+m_GND_kcat : 13.7
+m_H2Ot_kcat : 13.7
+m_ICDHyr_kcat : 13.7
+m_ICL_kcat : 13.7
+m_LDH_D_kcat : 13.7
+m_MALS_kcat : 13.7
+m_MALt2_2_kcat : 13.7
+m_MDH_kcat : 13.7
+m_ME1_kcat : 13.7
+m_ME2_kcat : 13.7
+m_NADH16_kcat : 13.7
+m_NADTRHD_kcat : 13.7
+m_NH4t_kcat : 13.7
+m_O2t_kcat : 13.7
+m_PDH_kcat : 13.7
+m_PFK_km : 0.00013
+m_PFL_km : 0.00013
+m_PGI_km : 0.00013
+m_PGK_km : 0.00013
+m_PGL_km : 0.00013
+m_ACALD_km : 0.00013
+m_AKGt2r_km : 0.00013
+m_PGM_km : 0.00013
+m_PIt2r_km : 0.00013
+m_ALCD2x_km : 0.00013
+m_ACALDt_km : 0.00013
+m_ACKr_km : 0.00013
+m_PPC_km : 0.00013
+m_ACONTa_km : 0.00013
+m_ACONTb_km : 0.00013
+m_ATPM_km : 0.00013
+m_PPCK_km : 0.00013
+m_ACt2r_km : 0.00013
+m_PPS_km : 0.00013
+m_ADK1_km : 0.00013
+m_AKGDH_km : 0.00013
+m_ATPS4r_km : 0.00013
+m_PTAr_km : 0.00013
+m_PYK_km : 0.00013
+m_BIOMASS_Ecoli_core_w_GAM_km : 0.00013
+m_PYRt2_km : 0.00013
+m_CO2t_km : 0.00013
+m_RPE_km : 0.00013
+m_CS_km : 0.00013
+m_RPI_km : 0.00013
+m_SUCCt2_2_km : 0.00013
+m_CYTBD_km : 0.00013
+m_D_LACt2_km : 0.00013
+m_ENO_km : 0.00013
+m_SUCCt3_km : 0.00013
+m_ETOHt2r_km : 0.00013
+m_SUCDi_km : 0.00013
+m_SUCOAS_km : 0.00013
+m_TALA_km : 0.00013
+m_THD2_km : 0.00013
+m_TKT1_km : 0.00013
+m_TKT2_km : 0.00013
+m_TPI_km : 0.00013
+m_EX_ac_e_km : 0.00013
+m_EX_acald_e_km : 0.00013
+m_EX_akg_e_km : 0.00013
+m_EX_co2_e_km : 0.00013
+m_EX_etoh_e_km : 0.00013
+m_EX_for_e_km : 0.00013
+m_EX_fru_e_km : 0.00013
+m_EX_fum_e_km : 0.00013
+m_EX_glc__D_e_km : 0.00013
+m_EX_gln__L_e_km : 0.00013
+m_EX_glu__L_e_km : 0.00013
+m_EX_h_e_km : 0.00013
+m_EX_h2o_e_km : 0.00013
+m_EX_lac__D_e_km : 0.00013
+m_EX_mal__L_e_km : 0.00013
+m_EX_nh4_e_km : 0.00013
+m_EX_o2_e_km : 0.00013
+m_EX_pi_e_km : 0.00013
+m_EX_pyr_e_km : 0.00013
+m_EX_succ_e_km : 0.00013
+m_FBA_km : 0.00013
+m_FBP_km : 0.00013
+m_FORt2_km : 0.00013
+m_FORt_km : 0.00013
+m_FRD7_km : 0.00013
+m_FRUpts2_km : 0.00013
+m_FUM_km : 0.00013
+m_FUMt2_2_km : 0.00013
+m_G6PDH2r_km : 0.00013
+m_GAPD_km : 0.00013
+m_GLCpts_km : 0.00013
+m_GLNS_km : 0.00013
+m_GLNabc_km : 0.00013
+m_GLUDy_km : 0.00013
+m_GLUN_km : 0.00013
+m_GLUSy_km : 0.00013
+m_GLUt2r_km : 0.00013
+m_GND_km : 0.00013
+m_H2Ot_km : 0.00013
+m_ICDHyr_km : 0.00013
+m_ICL_km : 0.00013
+m_LDH_D_km : 0.00013
+m_MALS_km : 0.00013
+m_MALt2_2_km : 0.00013
+m_MDH_km : 0.00013
+m_ME1_km : 0.00013
+m_ME2_km : 0.00013
+m_NADH16_km : 0.00013
+m_NADTRHD_km : 0.00013
+m_NH4t_km : 0.00013
+m_O2t_km : 0.00013
+m_PDH_km : 0.00013
+
+
+[Reactions]
+R1: m_atp_c + m_f6p_c -> m_adp_c + m_fdp_c + m_h_c | (${Variables:m_PFK_kcat} * ${Variables:m_PFK_conc} * m_atp_c * m_f6p_c)/(${Variables:m_PFK_km} + ${Variables:m_PFK_conc} * m_atp_c * m_f6p_c)
+R2: m_coa_c + m_pyr_c -> m_accoa_c + m_for_c | (${Variables:m_PFL_kcat} * ${Variables:m_PFL_conc} * m_coa_c * m_pyr_c)/(${Variables:m_PFL_km} + ${Variables:m_PFL_conc} * m_coa_c * m_pyr_c)
+R3: m_g6p_c -> m_f6p_c | (${Variables:m_PGI_kcat} * ${Variables:m_PGI_conc} * m_g6p_c)/(${Variables:m_PGI_km} + ${Variables:m_PGI_conc} * m_g6p_c)
+R4: m_3pg_c + m_atp_c -> m_13dpg_c + m_adp_c | (${Variables:m_PGK_kcat} * ${Variables:m_PGK_conc} * m_3pg_c * m_atp_c)/(${Variables:m_PGK_km} + ${Variables:m_PGK_conc} * m_3pg_c * m_atp_c)
+R5: m_6pgl_c + m_h2o_c -> m_6pgc_c + m_h_c | (${Variables:m_PGL_kcat} * ${Variables:m_PGL_conc} * m_6pgl_c * m_h2o_c)/(${Variables:m_PGL_km} + ${Variables:m_PGL_conc} * m_6pgl_c * m_h2o_c)
+R6: m_acald_c + m_coa_c + m_nad_c -> m_accoa_c + m_h_c + m_nadh_c | (${Variables:m_ACALD_kcat} * ${Variables:m_ACALD_conc} * m_acald_c * m_coa_c * m_nad_c)/(${Variables:m_ACALD_km} + ${Variables:m_ACALD_conc} * m_acald_c * m_coa_c * m_nad_c)
+R7: m_akg_e + m_h_e -> m_akg_c + m_h_c | (${Variables:m_AKGt2r_kcat} * ${Variables:m_AKGt2r_conc} * m_akg_e * m_h_e)/(${Variables:m_AKGt2r_km} + ${Variables:m_AKGt2r_conc} * m_akg_e * m_h_e)
+R8: m_2pg_c -> m_3pg_c | (${Variables:m_PGM_kcat} * ${Variables:m_PGM_conc} * m_2pg_c)/(${Variables:m_PGM_km} + ${Variables:m_PGM_conc} * m_2pg_c)
+R9: m_h_e + m_pi_e -> m_h_c + m_pi_c | (${Variables:m_PIt2r_kcat} * ${Variables:m_PIt2r_conc} * m_h_e * m_pi_e)/(${Variables:m_PIt2r_km} + ${Variables:m_PIt2r_conc} * m_h_e * m_pi_e)
+R10: m_etoh_c + m_nad_c -> m_acald_c + m_h_c + m_nadh_c | (${Variables:m_ALCD2x_kcat} * ${Variables:m_ALCD2x_conc} * m_etoh_c * m_nad_c)/(${Variables:m_ALCD2x_km} + ${Variables:m_ALCD2x_conc} * m_etoh_c * m_nad_c)
+R11: m_acald_e -> m_acald_c | (${Variables:m_ACALDt_kcat} * ${Variables:m_ACALDt_conc} * m_acald_e)/(${Variables:m_ACALDt_km} + ${Variables:m_ACALDt_conc} * m_acald_e)
+R12: m_ac_c + m_atp_c -> m_actp_c + m_adp_c | (${Variables:m_ACKr_kcat} * ${Variables:m_ACKr_conc} * m_ac_c * m_atp_c)/(${Variables:m_ACKr_km} + ${Variables:m_ACKr_conc} * m_ac_c * m_atp_c)
+R13: m_co2_c + m_h2o_c + m_pep_c -> m_h_c + m_oaa_c + m_pi_c | (${Variables:m_PPC_kcat} * ${Variables:m_PPC_conc} * m_co2_c * m_h2o_c * m_pep_c)/(${Variables:m_PPC_km} + ${Variables:m_PPC_conc} * m_co2_c * m_h2o_c * m_pep_c)
+R14: m_cit_c -> m_acon_C_c + m_h2o_c | (${Variables:m_ACONTa_kcat} * ${Variables:m_ACONTa_conc} * m_cit_c)/(${Variables:m_ACONTa_km} + ${Variables:m_ACONTa_conc} * m_cit_c)
+R15: m_acon_C_c + m_h2o_c -> m_icit_c | (${Variables:m_ACONTb_kcat} * ${Variables:m_ACONTb_conc} * m_acon_C_c * m_h2o_c)/(${Variables:m_ACONTb_km} + ${Variables:m_ACONTb_conc} * m_acon_C_c * m_h2o_c)
+R16: m_atp_c + m_h2o_c -> m_adp_c + m_h_c + m_pi_c | (${Variables:m_ATPM_kcat} * ${Variables:m_ATPM_conc} * m_atp_c * m_h2o_c)/(${Variables:m_ATPM_km} + ${Variables:m_ATPM_conc} * m_atp_c * m_h2o_c)
+R17: m_atp_c + m_oaa_c -> m_adp_c + m_co2_c + m_pep_c | (${Variables:m_PPCK_kcat} * ${Variables:m_PPCK_conc} * m_atp_c * m_oaa_c)/(${Variables:m_PPCK_km} + ${Variables:m_PPCK_conc} * m_atp_c * m_oaa_c)
+R18: m_ac_e + m_h_e -> m_ac_c + m_h_c | (${Variables:m_ACt2r_kcat} * ${Variables:m_ACt2r_conc} * m_ac_e * m_h_e)/(${Variables:m_ACt2r_km} + ${Variables:m_ACt2r_conc} * m_ac_e * m_h_e)
+R19: m_atp_c + m_h2o_c + m_pyr_c -> m_amp_c + m_h_c + m_pep_c + m_pi_c | (${Variables:m_PPS_kcat} * ${Variables:m_PPS_conc} * m_atp_c * m_h2o_c * m_pyr_c)/(${Variables:m_PPS_km} + ${Variables:m_PPS_conc} * m_atp_c * m_h2o_c * m_pyr_c)
+R20: m_amp_c + m_atp_c -> m_adp_c | (${Variables:m_ADK1_kcat} * ${Variables:m_ADK1_conc} * m_amp_c * m_atp_c)/(${Variables:m_ADK1_km} + ${Variables:m_ADK1_conc} * m_amp_c * m_atp_c)
+R21: m_akg_c + m_coa_c + m_nad_c -> m_co2_c + m_nadh_c + m_succoa_c | (${Variables:m_AKGDH_kcat} * ${Variables:m_AKGDH_conc} * m_akg_c * m_coa_c * m_nad_c)/(${Variables:m_AKGDH_km} + ${Variables:m_AKGDH_conc} * m_akg_c * m_coa_c * m_nad_c)
+R22: m_adp_c + m_h_e + m_pi_c -> m_atp_c + m_h2o_c + m_h_c | (${Variables:m_ATPS4r_kcat} * ${Variables:m_ATPS4r_conc} * m_adp_c * m_h_e * m_pi_c)/(${Variables:m_ATPS4r_km} + ${Variables:m_ATPS4r_conc} * m_adp_c * m_h_e * m_pi_c)
+R23: m_accoa_c + m_pi_c -> m_actp_c + m_coa_c | (${Variables:m_PTAr_kcat} * ${Variables:m_PTAr_conc} * m_accoa_c * m_pi_c)/(${Variables:m_PTAr_km} + ${Variables:m_PTAr_conc} * m_accoa_c * m_pi_c)
+R24: m_adp_c + m_h_c + m_pep_c -> m_atp_c + m_pyr_c | (${Variables:m_PYK_kcat} * ${Variables:m_PYK_conc} * m_adp_c * m_h_c * m_pep_c)/(${Variables:m_PYK_km} + ${Variables:m_PYK_conc} * m_adp_c * m_h_c * m_pep_c)
+R25: m_3pg_c + m_accoa_c + m_atp_c + m_e4p_c + m_f6p_c + m_g3p_c + m_g6p_c + m_gln__L_c + m_glu__L_c + m_h2o_c + m_nad_c + m_nadph_c + m_oaa_c + m_pep_c + m_pyr_c + m_r5p_c -> m_adp_c + m_akg_c + m_coa_c + m_h_c + m_nadh_c + m_nadp_c + m_pi_c | (${Variables:m_BIOMASS_Ecoli_core_w_GAM_kcat} * ${Variables:m_BIOMASS_Ecoli_core_w_GAM_conc} * m_3pg_c * m_accoa_c * m_atp_c * m_e4p_c * m_f6p_c * m_g3p_c * m_g6p_c * m_gln__L_c * m_glu__L_c * m_h2o_c * m_nad_c * m_nadph_c * m_oaa_c * m_pep_c * m_pyr_c * m_r5p_c)/(${Variables:m_BIOMASS_Ecoli_core_w_GAM_km} + ${Variables:m_BIOMASS_Ecoli_core_w_GAM_conc} * m_3pg_c * m_accoa_c * m_atp_c * m_e4p_c * m_f6p_c * m_g3p_c * m_g6p_c * m_gln__L_c * m_glu__L_c * m_h2o_c * m_nad_c * m_nadph_c * m_oaa_c * m_pep_c * m_pyr_c * m_r5p_c)
+R26: m_h_e + m_pyr_e -> m_h_c + m_pyr_c | (${Variables:m_PYRt2_kcat} * ${Variables:m_PYRt2_conc} * m_h_e * m_pyr_e)/(${Variables:m_PYRt2_km} + ${Variables:m_PYRt2_conc} * m_h_e * m_pyr_e)
+R27: m_co2_e -> m_co2_c | (${Variables:m_CO2t_kcat} * ${Variables:m_CO2t_conc} * m_co2_e)/(${Variables:m_CO2t_km} + ${Variables:m_CO2t_conc} * m_co2_e)
+R28: m_ru5p__D_c -> m_xu5p__D_c | (${Variables:m_RPE_kcat} * ${Variables:m_RPE_conc} * m_ru5p__D_c)/(${Variables:m_RPE_km} + ${Variables:m_RPE_conc} * m_ru5p__D_c)
+R29: m_accoa_c + m_h2o_c + m_oaa_c -> m_cit_c + m_coa_c + m_h_c | (${Variables:m_CS_kcat} * ${Variables:m_CS_conc} * m_accoa_c * m_h2o_c * m_oaa_c)/(${Variables:m_CS_km} + ${Variables:m_CS_conc} * m_accoa_c * m_h2o_c * m_oaa_c)
+R30: m_r5p_c -> m_ru5p__D_c | (${Variables:m_RPI_kcat} * ${Variables:m_RPI_conc} * m_r5p_c)/(${Variables:m_RPI_km} + ${Variables:m_RPI_conc} * m_r5p_c)
+R31: m_h_e + m_succ_e -> m_h_c + m_succ_c | (${Variables:m_SUCCt2_2_kcat} * ${Variables:m_SUCCt2_2_conc} * m_h_e * m_succ_e)/(${Variables:m_SUCCt2_2_km} + ${Variables:m_SUCCt2_2_conc} * m_h_e * m_succ_e)
+R32: m_h_c + m_o2_c + m_q8h2_c -> m_h2o_c + m_h_e + m_q8_c | (${Variables:m_CYTBD_kcat} * ${Variables:m_CYTBD_conc} * m_h_c * m_o2_c * m_q8h2_c)/(${Variables:m_CYTBD_km} + ${Variables:m_CYTBD_conc} * m_h_c * m_o2_c * m_q8h2_c)
+R33: m_h_e + m_lac__D_e -> m_h_c + m_lac__D_c | (${Variables:m_D_LACt2_kcat} * ${Variables:m_D_LACt2_conc} * m_h_e * m_lac__D_e)/(${Variables:m_D_LACt2_km} + ${Variables:m_D_LACt2_conc} * m_h_e * m_lac__D_e)
+R34: m_2pg_c -> m_h2o_c + m_pep_c | (${Variables:m_ENO_kcat} * ${Variables:m_ENO_conc} * m_2pg_c)/(${Variables:m_ENO_km} + ${Variables:m_ENO_conc} * m_2pg_c)
+R35: m_h_e + m_succ_c -> m_h_c + m_succ_e | (${Variables:m_SUCCt3_kcat} * ${Variables:m_SUCCt3_conc} * m_h_e * m_succ_c)/(${Variables:m_SUCCt3_km} + ${Variables:m_SUCCt3_conc} * m_h_e * m_succ_c)
+R36: m_etoh_e + m_h_e -> m_etoh_c + m_h_c | (${Variables:m_ETOHt2r_kcat} * ${Variables:m_ETOHt2r_conc} * m_etoh_e * m_h_e)/(${Variables:m_ETOHt2r_km} + ${Variables:m_ETOHt2r_conc} * m_etoh_e * m_h_e)
+R37: m_q8_c + m_succ_c -> m_fum_c + m_q8h2_c | (${Variables:m_SUCDi_kcat} * ${Variables:m_SUCDi_conc} * m_q8_c * m_succ_c)/(${Variables:m_SUCDi_km} + ${Variables:m_SUCDi_conc} * m_q8_c * m_succ_c)
+R38: m_atp_c + m_coa_c + m_succ_c -> m_adp_c + m_pi_c + m_succoa_c | (${Variables:m_SUCOAS_kcat} * ${Variables:m_SUCOAS_conc} * m_atp_c * m_coa_c * m_succ_c)/(${Variables:m_SUCOAS_km} + ${Variables:m_SUCOAS_conc} * m_atp_c * m_coa_c * m_succ_c)
+R39: m_g3p_c + m_s7p_c -> m_e4p_c + m_f6p_c | (${Variables:m_TALA_kcat} * ${Variables:m_TALA_conc} * m_g3p_c * m_s7p_c)/(${Variables:m_TALA_km} + ${Variables:m_TALA_conc} * m_g3p_c * m_s7p_c)
+R40: m_h_e + m_nadh_c + m_nadp_c -> m_h_c + m_nad_c + m_nadph_c | (${Variables:m_THD2_kcat} * ${Variables:m_THD2_conc} * m_h_e * m_nadh_c * m_nadp_c)/(${Variables:m_THD2_km} + ${Variables:m_THD2_conc} * m_h_e * m_nadh_c * m_nadp_c)
+R41: m_r5p_c + m_xu5p__D_c -> m_g3p_c + m_s7p_c | (${Variables:m_TKT1_kcat} * ${Variables:m_TKT1_conc} * m_r5p_c * m_xu5p__D_c)/(${Variables:m_TKT1_km} + ${Variables:m_TKT1_conc} * m_r5p_c * m_xu5p__D_c)
+R42: m_e4p_c + m_xu5p__D_c -> m_f6p_c + m_g3p_c | (${Variables:m_TKT2_kcat} * ${Variables:m_TKT2_conc} * m_e4p_c * m_xu5p__D_c)/(${Variables:m_TKT2_km} + ${Variables:m_TKT2_conc} * m_e4p_c * m_xu5p__D_c)
+R43: m_dhap_c -> m_g3p_c | (${Variables:m_TPI_kcat} * ${Variables:m_TPI_conc} * m_dhap_c)/(${Variables:m_TPI_km} + ${Variables:m_TPI_conc} * m_dhap_c)
+R44: m_ac_e -> | (${Variables:m_EX_ac_e_kcat} * ${Variables:m_EX_ac_e_conc} * m_ac_e)/(${Variables:m_EX_ac_e_km} + ${Variables:m_EX_ac_e_conc} * m_ac_e)
+R45: m_acald_e -> | (${Variables:m_EX_acald_e_kcat} * ${Variables:m_EX_acald_e_conc} * m_acald_e)/(${Variables:m_EX_acald_e_km} + ${Variables:m_EX_acald_e_conc} * m_acald_e)
+R46: m_akg_e -> | (${Variables:m_EX_akg_e_kcat} * ${Variables:m_EX_akg_e_conc} * m_akg_e)/(${Variables:m_EX_akg_e_km} + ${Variables:m_EX_akg_e_conc} * m_akg_e)
+R47: m_co2_e -> | (${Variables:m_EX_co2_e_kcat} * ${Variables:m_EX_co2_e_conc} * m_co2_e)/(${Variables:m_EX_co2_e_km} + ${Variables:m_EX_co2_e_conc} * m_co2_e)
+R48: m_etoh_e -> | (${Variables:m_EX_etoh_e_kcat} * ${Variables:m_EX_etoh_e_conc} * m_etoh_e)/(${Variables:m_EX_etoh_e_km} + ${Variables:m_EX_etoh_e_conc} * m_etoh_e)
+R49: m_for_e -> | (${Variables:m_EX_for_e_kcat} * ${Variables:m_EX_for_e_conc} * m_for_e)/(${Variables:m_EX_for_e_km} + ${Variables:m_EX_for_e_conc} * m_for_e)
+R50: m_fru_e -> | (${Variables:m_EX_fru_e_kcat} * ${Variables:m_EX_fru_e_conc} * m_fru_e)/(${Variables:m_EX_fru_e_km} + ${Variables:m_EX_fru_e_conc} * m_fru_e)
+R51: m_fum_e -> | (${Variables:m_EX_fum_e_kcat} * ${Variables:m_EX_fum_e_conc} * m_fum_e)/(${Variables:m_EX_fum_e_km} + ${Variables:m_EX_fum_e_conc} * m_fum_e)
+R52: m_glc__D_e -> | (${Variables:m_EX_glc__D_e_kcat} * ${Variables:m_EX_glc__D_e_conc} * m_glc__D_e)/(${Variables:m_EX_glc__D_e_km} + ${Variables:m_EX_glc__D_e_conc} * m_glc__D_e)
+R53: m_gln__L_e -> | (${Variables:m_EX_gln__L_e_kcat} * ${Variables:m_EX_gln__L_e_conc} * m_gln__L_e)/(${Variables:m_EX_gln__L_e_km} + ${Variables:m_EX_gln__L_e_conc} * m_gln__L_e)
+R54: m_glu__L_e -> | (${Variables:m_EX_glu__L_e_kcat} * ${Variables:m_EX_glu__L_e_conc} * m_glu__L_e)/(${Variables:m_EX_glu__L_e_km} + ${Variables:m_EX_glu__L_e_conc} * m_glu__L_e)
+R55: m_h_e -> | (${Variables:m_EX_h_e_kcat} * ${Variables:m_EX_h_e_conc} * m_h_e)/(${Variables:m_EX_h_e_km} + ${Variables:m_EX_h_e_conc} * m_h_e)
+R56: m_h2o_e -> | (${Variables:m_EX_h2o_e_kcat} * ${Variables:m_EX_h2o_e_conc} * m_h2o_e)/(${Variables:m_EX_h2o_e_km} + ${Variables:m_EX_h2o_e_conc} * m_h2o_e)
+R57: m_lac__D_e -> | (${Variables:m_EX_lac__D_e_kcat} * ${Variables:m_EX_lac__D_e_conc} * m_lac__D_e)/(${Variables:m_EX_lac__D_e_km} + ${Variables:m_EX_lac__D_e_conc} * m_lac__D_e)
+R58: m_mal__L_e -> | (${Variables:m_EX_mal__L_e_kcat} * ${Variables:m_EX_mal__L_e_conc} * m_mal__L_e)/(${Variables:m_EX_mal__L_e_km} + ${Variables:m_EX_mal__L_e_conc} * m_mal__L_e)
+R59: m_nh4_e -> | (${Variables:m_EX_nh4_e_kcat} * ${Variables:m_EX_nh4_e_conc} * m_nh4_e)/(${Variables:m_EX_nh4_e_km} + ${Variables:m_EX_nh4_e_conc} * m_nh4_e)
+R60: m_o2_e -> | (${Variables:m_EX_o2_e_kcat} * ${Variables:m_EX_o2_e_conc} * m_o2_e)/(${Variables:m_EX_o2_e_km} + ${Variables:m_EX_o2_e_conc} * m_o2_e)
+R61: m_pi_e -> | (${Variables:m_EX_pi_e_kcat} * ${Variables:m_EX_pi_e_conc} * m_pi_e)/(${Variables:m_EX_pi_e_km} + ${Variables:m_EX_pi_e_conc} * m_pi_e)
+R62: m_pyr_e -> | (${Variables:m_EX_pyr_e_kcat} * ${Variables:m_EX_pyr_e_conc} * m_pyr_e)/(${Variables:m_EX_pyr_e_km} + ${Variables:m_EX_pyr_e_conc} * m_pyr_e)
+R63: m_succ_e -> | (${Variables:m_EX_succ_e_kcat} * ${Variables:m_EX_succ_e_conc} * m_succ_e)/(${Variables:m_EX_succ_e_km} + ${Variables:m_EX_succ_e_conc} * m_succ_e)
+R64: m_fdp_c -> m_dhap_c + m_g3p_c | (${Variables:m_FBA_kcat} * ${Variables:m_FBA_conc} * m_fdp_c)/(${Variables:m_FBA_km} + ${Variables:m_FBA_conc} * m_fdp_c)
+R65: m_fdp_c + m_h2o_c -> m_f6p_c + m_pi_c | (${Variables:m_FBP_kcat} * ${Variables:m_FBP_conc} * m_fdp_c * m_h2o_c)/(${Variables:m_FBP_km} + ${Variables:m_FBP_conc} * m_fdp_c * m_h2o_c)
+R66: m_for_e + m_h_e -> m_for_c + m_h_c | (${Variables:m_FORt2_kcat} * ${Variables:m_FORt2_conc} * m_for_e * m_h_e)/(${Variables:m_FORt2_km} + ${Variables:m_FORt2_conc} * m_for_e * m_h_e)
+R67: m_for_e -> m_for_c | (${Variables:m_FORt_kcat} * ${Variables:m_FORt_conc} * m_for_e)/(${Variables:m_FORt_km} + ${Variables:m_FORt_conc} * m_for_e)
+R68: m_fum_c + m_q8h2_c -> m_q8_c + m_succ_c | (${Variables:m_FRD7_kcat} * ${Variables:m_FRD7_conc} * m_fum_c * m_q8h2_c)/(${Variables:m_FRD7_km} + ${Variables:m_FRD7_conc} * m_fum_c * m_q8h2_c)
+R69: m_fru_e + m_pep_c -> m_f6p_c + m_pyr_c | (${Variables:m_FRUpts2_kcat} * ${Variables:m_FRUpts2_conc} * m_fru_e * m_pep_c)/(${Variables:m_FRUpts2_km} + ${Variables:m_FRUpts2_conc} * m_fru_e * m_pep_c)
+R70: m_fum_c + m_h2o_c -> m_mal__L_c | (${Variables:m_FUM_kcat} * ${Variables:m_FUM_conc} * m_fum_c * m_h2o_c)/(${Variables:m_FUM_km} + ${Variables:m_FUM_conc} * m_fum_c * m_h2o_c)
+R71: m_fum_e + m_h_e -> m_fum_c + m_h_c | (${Variables:m_FUMt2_2_kcat} * ${Variables:m_FUMt2_2_conc} * m_fum_e * m_h_e)/(${Variables:m_FUMt2_2_km} + ${Variables:m_FUMt2_2_conc} * m_fum_e * m_h_e)
+R72: m_g6p_c + m_nadp_c -> m_6pgl_c + m_h_c + m_nadph_c | (${Variables:m_G6PDH2r_kcat} * ${Variables:m_G6PDH2r_conc} * m_g6p_c * m_nadp_c)/(${Variables:m_G6PDH2r_km} + ${Variables:m_G6PDH2r_conc} * m_g6p_c * m_nadp_c)
+R73: m_g3p_c + m_nad_c + m_pi_c -> m_13dpg_c + m_h_c + m_nadh_c | (${Variables:m_GAPD_kcat} * ${Variables:m_GAPD_conc} * m_g3p_c * m_nad_c * m_pi_c)/(${Variables:m_GAPD_km} + ${Variables:m_GAPD_conc} * m_g3p_c * m_nad_c * m_pi_c)
+R74: m_glc__D_e + m_pep_c -> m_g6p_c + m_pyr_c | (${Variables:m_GLCpts_kcat} * ${Variables:m_GLCpts_conc} * m_glc__D_e * m_pep_c)/(${Variables:m_GLCpts_km} + ${Variables:m_GLCpts_conc} * m_glc__D_e * m_pep_c)
+R75: m_atp_c + m_glu__L_c + m_nh4_c -> m_adp_c + m_gln__L_c + m_h_c + m_pi_c | (${Variables:m_GLNS_kcat} * ${Variables:m_GLNS_conc} * m_atp_c * m_glu__L_c * m_nh4_c)/(${Variables:m_GLNS_km} + ${Variables:m_GLNS_conc} * m_atp_c * m_glu__L_c * m_nh4_c)
+R76: m_atp_c + m_gln__L_e + m_h2o_c -> m_adp_c + m_gln__L_c + m_h_c + m_pi_c | (${Variables:m_GLNabc_kcat} * ${Variables:m_GLNabc_conc} * m_atp_c * m_gln__L_e * m_h2o_c)/(${Variables:m_GLNabc_km} + ${Variables:m_GLNabc_conc} * m_atp_c * m_gln__L_e * m_h2o_c)
+R77: m_glu__L_c + m_h2o_c + m_nadp_c -> m_akg_c + m_h_c + m_nadph_c + m_nh4_c | (${Variables:m_GLUDy_kcat} * ${Variables:m_GLUDy_conc} * m_glu__L_c * m_h2o_c * m_nadp_c)/(${Variables:m_GLUDy_km} + ${Variables:m_GLUDy_conc} * m_glu__L_c * m_h2o_c * m_nadp_c)
+R78: m_gln__L_c + m_h2o_c -> m_glu__L_c + m_nh4_c | (${Variables:m_GLUN_kcat} * ${Variables:m_GLUN_conc} * m_gln__L_c * m_h2o_c)/(${Variables:m_GLUN_km} + ${Variables:m_GLUN_conc} * m_gln__L_c * m_h2o_c)
+R79: m_akg_c + m_gln__L_c + m_h_c + m_nadph_c -> m_glu__L_c + m_nadp_c | (${Variables:m_GLUSy_kcat} * ${Variables:m_GLUSy_conc} * m_akg_c * m_gln__L_c * m_h_c * m_nadph_c)/(${Variables:m_GLUSy_km} + ${Variables:m_GLUSy_conc} * m_akg_c * m_gln__L_c * m_h_c * m_nadph_c)
+R80: m_glu__L_e + m_h_e -> m_glu__L_c + m_h_c | (${Variables:m_GLUt2r_kcat} * ${Variables:m_GLUt2r_conc} * m_glu__L_e * m_h_e)/(${Variables:m_GLUt2r_km} + ${Variables:m_GLUt2r_conc} * m_glu__L_e * m_h_e)
+R81: m_6pgc_c + m_nadp_c -> m_co2_c + m_nadph_c + m_ru5p__D_c | (${Variables:m_GND_kcat} * ${Variables:m_GND_conc} * m_6pgc_c * m_nadp_c)/(${Variables:m_GND_km} + ${Variables:m_GND_conc} * m_6pgc_c * m_nadp_c)
+R82: m_h2o_e -> m_h2o_c | (${Variables:m_H2Ot_kcat} * ${Variables:m_H2Ot_conc} * m_h2o_e)/(${Variables:m_H2Ot_km} + ${Variables:m_H2Ot_conc} * m_h2o_e)
+R83: m_icit_c + m_nadp_c -> m_akg_c + m_co2_c + m_nadph_c | (${Variables:m_ICDHyr_kcat} * ${Variables:m_ICDHyr_conc} * m_icit_c * m_nadp_c)/(${Variables:m_ICDHyr_km} + ${Variables:m_ICDHyr_conc} * m_icit_c * m_nadp_c)
+R84: m_icit_c -> m_glx_c + m_succ_c | (${Variables:m_ICL_kcat} * ${Variables:m_ICL_conc} * m_icit_c)/(${Variables:m_ICL_km} + ${Variables:m_ICL_conc} * m_icit_c)
+R85: m_lac__D_c + m_nad_c -> m_h_c + m_nadh_c + m_pyr_c | (${Variables:m_LDH_D_kcat} * ${Variables:m_LDH_D_conc} * m_lac__D_c * m_nad_c)/(${Variables:m_LDH_D_km} + ${Variables:m_LDH_D_conc} * m_lac__D_c * m_nad_c)
+R86: m_accoa_c + m_glx_c + m_h2o_c -> m_coa_c + m_h_c + m_mal__L_c | (${Variables:m_MALS_kcat} * ${Variables:m_MALS_conc} * m_accoa_c * m_glx_c * m_h2o_c)/(${Variables:m_MALS_km} + ${Variables:m_MALS_conc} * m_accoa_c * m_glx_c * m_h2o_c)
+R87: m_h_e + m_mal__L_e -> m_h_c + m_mal__L_c | (${Variables:m_MALt2_2_kcat} * ${Variables:m_MALt2_2_conc} * m_h_e * m_mal__L_e)/(${Variables:m_MALt2_2_km} + ${Variables:m_MALt2_2_conc} * m_h_e * m_mal__L_e)
+R88: m_mal__L_c + m_nad_c -> m_h_c + m_nadh_c + m_oaa_c | (${Variables:m_MDH_kcat} * ${Variables:m_MDH_conc} * m_mal__L_c * m_nad_c)/(${Variables:m_MDH_km} + ${Variables:m_MDH_conc} * m_mal__L_c * m_nad_c)
+R89: m_mal__L_c + m_nad_c -> m_co2_c + m_nadh_c + m_pyr_c | (${Variables:m_ME1_kcat} * ${Variables:m_ME1_conc} * m_mal__L_c * m_nad_c)/(${Variables:m_ME1_km} + ${Variables:m_ME1_conc} * m_mal__L_c * m_nad_c)
+R90: m_mal__L_c + m_nadp_c -> m_co2_c + m_nadph_c + m_pyr_c | (${Variables:m_ME2_kcat} * ${Variables:m_ME2_conc} * m_mal__L_c * m_nadp_c)/(${Variables:m_ME2_km} + ${Variables:m_ME2_conc} * m_mal__L_c * m_nadp_c)
+R91: m_h_c + m_nadh_c + m_q8_c -> m_h_e + m_nad_c + m_q8h2_c | (${Variables:m_NADH16_kcat} * ${Variables:m_NADH16_conc} * m_h_c * m_nadh_c * m_q8_c)/(${Variables:m_NADH16_km} + ${Variables:m_NADH16_conc} * m_h_c * m_nadh_c * m_q8_c)
+R92: m_nad_c + m_nadph_c -> m_nadh_c + m_nadp_c | (${Variables:m_NADTRHD_kcat} * ${Variables:m_NADTRHD_conc} * m_nad_c * m_nadph_c)/(${Variables:m_NADTRHD_km} + ${Variables:m_NADTRHD_conc} * m_nad_c * m_nadph_c)
+R93: m_nh4_e -> m_nh4_c | (${Variables:m_NH4t_kcat} * ${Variables:m_NH4t_conc} * m_nh4_e)/(${Variables:m_NH4t_km} + ${Variables:m_NH4t_conc} * m_nh4_e)
+R94: m_o2_e -> m_o2_c | (${Variables:m_O2t_kcat} * ${Variables:m_O2t_conc} * m_o2_e)/(${Variables:m_O2t_km} + ${Variables:m_O2t_conc} * m_o2_e)
+R95: m_coa_c + m_nad_c + m_pyr_c -> m_accoa_c + m_co2_c + m_nadh_c | (${Variables:m_PDH_kcat} * ${Variables:m_PDH_conc} * m_coa_c * m_nad_c * m_pyr_c)/(${Variables:m_PDH_km} + ${Variables:m_PDH_conc} * m_coa_c * m_nad_c * m_pyr_c)
