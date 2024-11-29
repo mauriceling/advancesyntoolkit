@@ -1,0 +1,21 @@
+1. ECO_stage1.modelspec - UniKin1 after stage 1 modifications.
+
+2. ECO_stage2.modelspec - UniKin1 after stage 1, and 2 modifications.
+
+3. ECO_stage3.modelspec - UniKin1 after stage 1, 2, and 3 modifications.
+
+4. ECO_stage4.modelspec - UniKin1 after stage 1, 2, 3, and 4 modifications.
+
+5. ecoJC20.modelspec - UniKin1 after stage 1, 2, 3, 4, and 5 modifications; which is equivalent to ECO_stage5 and ecoJC20. 
+
+6. ecoJC20_N1.modelspec - Modified ecoJC20.modelspec to include pathway N1.
+
+7. ecoJC20_N1_Simulation.xlsx - Excel file containing simulation results for ecoJC20_N1.
+
+8. ecoJC20_N2.modelspec - Modified ecoJC20.modelspec to include pathway N2.
+
+9. ecoJC20_N2_Simulation.xlsx - Excel file containing simulation results for ecoJC20_N2.
+
+10. ecoJC20_Simulation.xlsx - Excel file containing simulation results for ecoJC20.
+
+11. List_of_Changes.xlsx - Excel file containing list of modifications from UniKin1 to ecoJC20.
