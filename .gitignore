@@ -105,3 +105,4 @@ venv.bak/
 
 # AdvanceSyn Toolkit
 odescript/*.py
+*.ini
