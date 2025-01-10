@@ -1,0 +1,8 @@
+To generate ODE script from model specification
+python astools.py genODE --modelfile=models/asm/lacAS24.modelspec --mtype=ASM --solver=RK4 --timestep=0.1 --endtime=3600 --lowerbound=0;0 --upperbound=1000;1000 --odefile=lacAS24.py
+
+To execute ODE script
+python astools.py runODE --odefile=lacAS24.py --sampling=20 --resultfile=result_lacAS24.csv
+
+To generate SIF visualization file
+python astools.py genNetwork --outfmt=SIF --modelfile=models/asm/lacAS24.modelspec --outputfile=lacAS24.sif
