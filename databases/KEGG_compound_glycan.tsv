@@ -3644,7 +3644,7 @@ C04799	Colominic acid(non-reducing N- or O-acylneuraminyl residue); Colominate
 C04800	D-Glucuronyl-N-acetyl-1,3-beta-D-galactosaminylproteoglycan; [Protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-GalNAc-(1->4)-beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine
 C04801	[3-Methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)]; Holo-[3-methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)]; Biotin-[3-methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)]; Holo-[methylcrotonoyl-CoA-carboxylase]; Biotin-[methylcrotonoyl-CoA-carboxylase]
 C04802	m7G(5')pppRm-mRNA; 5'-(N7-Methyl 5'-triphosphoguanosine)-(2'-O-methyl-purine-ribonucleotide)-[mRNA]; 5'-(N7-Methyl 5'-triphosphoguanosine)-(2'-O-methyl-purine-ribonucleotide)-(ribonucleotide)-[mRNA]
-C04804	UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimeloyl-D-alanine; UDP-N-acetylmuramoyl-L-Ala-D-gamma-Glu-6-carboxy-L-Lys-D-Ala; UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-6-carboxy-L-lysyl-D-alanine
+C04804	UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimeloyl-D-alanine; UDP-N-acetylmuramoyl-L-Ala-D-gamma-Glu-6-carboxy-L-Lys-D-Ala; UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-6-carboxy-L-lysyl-D-alanine; UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptanedioyl-D-alanine
 C04805	5(S)-HETE; 5-Hydroxyeicosatetraenoate; 5-HETE; (6E,8Z,11Z,14Z)-(5S)-5-Hydroxyicosa-6,8,11,14-tetraenoic acid
 C04806	17alpha-(N-Acetyl-D-glucosaminyl)-estradiol 3-D-glucuronoside
 C04807	6-Hydroxymethyl-7,8-dihydropterin diphosphate; (7,8-Dihydropterin-6-yl)methyl diphosphate; 2-Amino-7,8-dihydro-4-hydroxy-6-(diphosphooxymethyl)pteridine; 2-Amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine diphosphate; 7,8-Dihydropterin pyrophosphate
@@ -3700,7 +3700,7 @@ C04876	N-Acetyl-D-glucosaminyl-N-acetylmuramoyl-L-Ala-D-glutamyl-6-carboxy-L-lys
 C04877	UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimelate; UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptanedioate; UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptanedioate; UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimelate; UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diamino-heptanedioate
 C04880	N-Acetyl-beta-D-glucosaminyl-1,2-alpha-D-mannosyl-1,3-(R1)-beta-D-mannosyl-R2; 3-(2-[N-Acetyl-beta-D-glucosaminyl]-alpha-D-mannosyl)-beta-D-mannosyl-R
 C04881	N-Acetyl-beta-D-mannosaminyl-1,4-N-acetyl-D-glucosaminyldiphosphoundecaprenol; N-Acetyl-beta-D-mannosaminyl-(1->4)-N-acetyl-alpha-D-glucosaminyl-diphospho-ditrans,octacis-undecaprenol
-C04882	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-6-carboxy-L-lysyl-D-alanyl-D-alanine; UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine; UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-6-carboxy-L-lysyl-D-alanyl-D-alanine
+C04882	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-6-carboxy-L-lysyl-D-alanyl-D-alanine; UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine; UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-6-carboxy-L-lysyl-D-alanyl-D-alanine; UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptanedioyl-D-alanyl-D-alanine
 C04883	(+/-)-5-[(tert-Butylamino)-2'-hydroxypropoxy]-3,4-dihydro-1(2H)-naphthalenone; (+/-)-Bunolol
 C04884	N-Acetyl-D-galactosaminyl-(N-acetylneuraminyl)-D-galactosyl-D-glucosylceramide; GM2; Tay-Sachs ganglioside; N-Acetyl-D-galactosaminyl-(N-acetylneuraminyl)-D-galactosyl-1,4-beta-D-glucosyl-N-acylsphingosine; GalNAc-beta1->4(Neu5Ac-alpha2->3)Gal-beta1->4Glc-beta1->1'Cer
 C04885	alpha-N-Acetylneuraminyl-2,3-beta-D-galactosyl-1,3-N-acetyl-D-galactosaminyl-R; N-Acetyl-alpha-neuraminyl-(2->3)-beta-D-galactosyl-(1->3)-N-acetyl-D-galactosaminyl-R
@@ -9658,7 +9658,7 @@ C11892	Aphidicol-15-ene
 C11893	Cembrene; Thunbergen; (+)-Thunbergen; (+)-Cembrene
 C11894	Taxa-4(5),11(12)-diene; Taxa-4,11-diene
 C11895	Taxa-4(20),11(12)-dien-5alpha-ol; Taxa-4(20),11-dien-5alpha-ol
-C11896	Taxa-4(20),11(12)-dien-5alpha-yl acetate
+C11896	Taxa-4(20),11(12)-dien-5alpha-yl acetate; Taxa-4(20),11-dien-5alpha-yl acetate
 C11897	Taxa-4(20),11(12)-dien-5alpha,13alpha-diol
 C11898	Taxa-4(20),11(12)-dien-5alpha-acetoxy-10beta-ol; 10beta-Hydroxytaxa-4(20),11-dien-5alpha-yl acetate; 5alpha-Acetoxytaxa-4(20),11(12)-dien-10beta-ol
 C11899	10-Deacetyl-2-debenzoylbaccatin III
@@ -13513,7 +13513,7 @@ C16829	gamma-Humulene
 C16830	D-Aldonolactone
 C16831	L-2-Methyltryptophan; 2-Methyl-L-tryptophan
 C16832	[Protein]-N6-[(R)-dihydrolipoyl]-L-lysine; [Lipoyl-carrier protein]-N6-[(R)-dihydrolipoyl]-L-lysine; Protein N6-(dihydrolipoyl)lysine
-C16833	beta-Phenylalanoyl-CoA; (R)-beta-Phenylalanoyl-CoA; (R)-3-Amino-3-phenylpropanoyl-CoA; Amino phenylpropanoyl-CoA
+C16833	beta-Phenylalanoyl-CoA; (R)-beta-Phenylalanoyl-CoA; (R)-3-Amino-3-phenylpropanoyl-CoA; (3R)-beta-Phenylalanyl-CoA; Amino phenylpropanoyl-CoA
 C16834	1-Pentanol
 C16835	Succinic aldehyde; Succindialdehyde
 C16836	1,4'-Bipiperidine-1'-carboxylic acid; [1,4'-Bipiperidine]-1'-carboxylic acid
@@ -16348,7 +16348,7 @@ C19834	Dammara-20,24-diene; Dammara-18(28),21-diene
 C19835	Camelliol C
 C19836	Tuberculosinyl diphosphate; Halima-5(6),13-dien-15-yl diphosphate
 C19837	Indole-3-carboxylate; Indole-3-carboxylic acid
-C19838	D-erythro-3-Hydroxyaspartate
+C19838	D-erythro-3-Hydroxyaspartate; (3S)-3-Hydroxy-D-aspartate; (2R,3S)-beta-Hydroxyaspartate
 C19839	4,4'-Diaponeurosporen-4-al
 C19840	4,4'-Diapophytofluene
 C19841	4,4'-Diapo-zeta-carotene
@@ -16981,7 +16981,7 @@ C20483	(6R)-6beta-Hydroxy-1,4,5,6-tetrahydronicotinamide-adenine dinucleotide ph
 C20484	9-cis-beta-Carotene
 C20485	(4S)-4-Hydroxy-2-oxoglutarate; (S)-2-Hydroxy-4-oxopentanedioate; L-4-Hydroxy-2-oxoglutarate
 C20486	7-Epizingiberene; (5R)-2-Methyl-5-[(2R)-6-methylhept-5-en-2-yl]cyclohexa-1,3-diene
-C20487	L-beta-Phenylalanine; (R)-3-Amino-3-phenylpropanoate
+C20487	L-beta-Phenylalanine; (R)-3-Amino-3-phenylpropanoate; (3R)-beta-Phenylalanine
 C20488	D-beta-Phenylalanine; (S)-3-Amino-3-phenylpropanoate; (S)-beta-Phenylalanine
 C20489	Pelargonidin 3-O-beta-D-sambubioside
 C20490	Cyanidin 3-O-beta-D-sambubioside
@@ -18315,7 +18315,7 @@ C21855	5-Chloro-1H-pyrrole-2-carbonyl-[peptidyl-carrier protein]
 C21856	4,5-Dichloro-1H-pyrrole-2-carbonyl-[peptidyl-carrier protein]
 C21858	N-(4-Oxoglutaryl)-L-cysteinylglycine; Deaminated glutathione
 C21859	cis-3-[2,2-Dichloro-1-(4-chlorophenyl)vinyl]-6-chlorocyclohexa-3,5-diene-1,2-diol; cis-2,3-Dihydrodiol-DDE
-C21860	3-Demethylubiquinol; 3-Methoxy-6-methyl-5-(all trans-polyprenyl)benzene-1,2,4-triol; 3-Demethylubiquinol-n
+C21860	3-Demethylubiquinol; 3-Methoxy-6-methyl-5-(all trans-polyprenyl)benzene-1,2,4-triol; 3-Demethylubiquinol-n; 3-Hydroxy-2-methoxy-5-methyl-6-(all-trans-polyprenyl)-1,4-benzoquinol
 C21861	[Protein]-dehydroalanine
 C21862	5-Bromo-1H-pyrrole-2-carbonyl-[peptidyl-carrier protein]
 C21863	4,5-Dibromo-1H-pyrrole-2-carbonyl-[peptidyl-carrier protein]
@@ -19016,7 +19016,7 @@ C22571	5-Hydroxy-5-(4-hydroxyphenyl)-3-oxopentanoate
 C22572	4-Hydroxy-4-(4-hydroxyphenyl)-butan-2-one
 C22573	Adenine in double-stranded RNA
 C22574	Hypoxanthine in double-stranded RNA
-C22575	UDP-2-acetamido-4-amino-2,4,6-trideoxy-D-galactose; UDP-2-acetamido-4-amino-2,4,6-trideoxy-alpha-D-galactose
+C22575	UDP-2-acetamido-4-amino-2,4,6-trideoxy-D-galactose; UDP-2-acetamido-4-amino-2,4,6-trideoxy-alpha-D-galactose; UDP-AATGal; UDP-D-FucNAc4N
 C22576	UDP-2-acetamido-2-deoxy-L-altruronic acid; UDP-L-AltNAcA
 C22577	(2R,3R)-Flavan-3-ol
 C22578	Flavylium cation; Flavylium; 2-Phenylbenzopyrylium; Flavylium ion; 2-Phenylchromenylium
@@ -19435,6 +19435,33 @@ C22999	2-Fluorodeschloroketamine; Fluoroketamine; 2-(2-Fluorophenyl)-2-(methylam
 C23000	4-Hydroxy-4alpha,5beta-5,20-epoxytax-11-en-9-one; Oxo-taxadiene-4alpha-ol-9-one
 C23001	3-Aminopropyl(dimethyl)sulfanium; Dimethylsulfoniopropanoate-amine; DMSP-amine
 C23002	3-Dimethylsulfoniopropionaldehyde; 3-Dimethylsulfoniopropanal; DMSP-aldehyde
+C23003	3-[(3aS,4S,5R,7aS)-5-Hydroxy-7a-methyl-1-oxooctahydro-1H-inden-4-yl]propanoyl-CoA; 5alpha-OH-HIP-CoA
+C23004	(2E)-3-[(3aS,4S,5R,7aS)-5-Hydroxy-7a-methyl-1-oxooctahydro-1H-inden-4-yl]prop-2-enoyl-CoA; (E)-5OH-HIPE-CoA
+C23005	3-[(3aS,4S,5R,7aS)-5-Hydroxy-7a-methyl-1-oxooctahydro-1H-inden-4-yl]-3-hydroxypropanoyl-CoA; 3',5OH-HIP-CoA
+C23006	3-[(3aS,4S,5R,7aS)-5-Hydroxy-7a-methyl-1-oxooctahydro-1H-inden-4-yl]-3-oxopropanoyl-CoA
+C23007	(3aS,4S,5R,7aS)-5-Hydroxy-7a-methyl-1-oxooctahydro-1H-indene-4-carboxyl-CoA; 5alpha-OH-HIC-CoA
+C23009	(7aS)-7a-Methyl-1,5-dioxo-2,3,5,6,7,7a-hexahydro-1H-indene-4-carboxyl-CoA; HIEC-CoA
+C23010	3-Oxocholest-4,24-dien-26-oyl-CoA
+C23011	(25R)-3-Oxocholest-4-en-26-oyl-CoA
+C23012	24-Hydroxy-3-oxocholest-4-en-26-oyl-CoA
+C23013	3,24-Dioxocholest-4-en-26-oyl-CoA
+C23014	3-Oxochol-4,22-dien-24-oyl-CoA; (22E)-3-Oxochol-4,22-dien-24-oyl-CoA
+C23015	(22S)-Hydroxy-3-oxochol-4-en-24-oyl-CoA
+C23016	3,22-Dioxochol-4-en-24-oyl-CoA
+C23017	3-Oxopregnene-20-carboxyl-CoA; 3-Oxo-23,24-bisnorchol-4-en-22-oyl-CoA
+C23018	3-Oxo-4,17-pregnadiene-20-carboxyl-CoA; 3-Oxo-23,24-bisnorchol-4,17(20)-dien-22-oyl-CoA
+C23019	17-Hydroxy-3-oxo-4-pregnene-20-carboxyl-CoA; 17-Hydroxy-3-oxopregn-4-en-20-carboxy-CoA
+C23020	(3R)-2-(2-carboxyethyl)-3-methyl-6-oxocyclohex-1-ene-1-carboxyl-CoA; COCHEA-CoA
+C23021	9-Carboxy-6-methyl-3,7-dioxononanoyl-CoA; 6-Methyl-3,7-dioxodecanedioyl-CoA
+C23022	7-Carboxy-4-methyl-5-oxoheptanoyl-CoA; 4-Methyl-5-oxo-octanedioyl-CoA; MOODA-CoA
+C23023	(2E)-7-Carboxy-4-methyl-5-oxohept-2-enoyl-CoA
+C23024	7-Carboxy-3-hydroxy-4-methyl-5-oxoheptanoyl-CoA
+C23025	7-Carboxy-4-methyl-3,5-dioxoheptanoyl-CoA
+C23026	5-Carboxy-2-methyl-3-oxopentanoyl-CoA
+C23027	Ultra-long-chain omega-hydroxy fatty acyl-CoA; omega-OH ULCFA-CoA; omega-OH ULC acyl-CoA
+C23028	Ultra-long-chain omega-hydroxyceramide; omega-Hydroxyceramide; omega-OH Cer
+C23029	linoleate-esterified acylceramide; Acylceramide; Acyl-Cer
+C23030	Acylglucosylceramide; Acyl-GlcCer
 G00001	N-Acetyl-D-glucosaminyldiphosphodolichol; (GlcNAc)1 (PP-Dol)1
 G00002	N,N'-Chitobiosyldiphosphodolichol; (GlcNAc)2 (PP-Dol)1
 G00003	(GlcNAc)2 (Man)1 (PP-Dol)1
@@ -28485,7 +28512,7 @@ G10488	Galactinol; 1-alpha-D-Galactosyl-D-myo-inositol; (Gal)1 (Ino)1
 G10492	1,3-alpha-D-Glucan; 1,3-alpha-Glucan; (Glc)1 (*)2
 G10495	1,4-alpha-D-Glucan; 1,4-alpha-Glucan; Amylose; Maltodextrin; (Glc)1 (*)2
 G10497	(Fru)1 (*)2
-G10499	(Fru)1 (*)2
+G10499	(Fruf)1 (*)2
 G10501	beta-D-Glucosyl-1,4-N-acetyl-D-glucosaminyldiphosphoundecaprenol; (Glc)1 (GlcNAc)1 (PP-Und)1
 G10502	1,6-alpha-D-Glucan; 1,6-alpha-Glucan; Dextran; (Glc)1 (*)2
 G10504	Lactose; (Gal)1 (Glc)1
@@ -30501,17 +30528,17 @@ G13190	Polyglycerolphosphate lipoteichoic acid; (DAG)1 (Gal)1 (Glc)1 (Gro)2 (*)1
 G13191	Und-P-Gal; C55-P-Gal; (Gal)1 (P-Und)1
 G13192	(DAG)1 (Gal)2 (Glc)1 (Gro)2 (*)1 (P)2
 G13193	(Ala)1 (DAG)1 (Gal)2 (Glc)1 (Gro)2 (*)1 (P)2
-G13194	UDP-AATGal; UDP-2-acetamido-4-amino-2,4,6-trideoxygalactose; (UDP-AATGal)1
-G13195	(AATGal)1 (PP-Und)1
-G13196	(AATGal)1 (Glc)1 (PP-Und)1
-G13197	(AATGal)1 (Glc)1 (Rib-ol)1 (P)1 (PP-Und)1
-G13198	(AATGal)1 (GalNAc)1 (Glc)1 (Rib-ol)1 (P)1 (PP-Und)1
-G13199	(AATGal)1 (GalNAc)2 (Glc)1 (Rib-ol)1 (P)1 (PP-Und)1
-G13200	(AATGal)1 (Cho)1 (GalNAc)2 (Glc)1 (Rib-ol)1 (P)2 (PP-Und)1
-G13201	(AATGal)1 (Cho)2 (GalNAc)2 (Glc)1 (Rib-ol)1 (P)3 (PP-Und)1
-G13202	(AATGal)2 (Cho)4 (GalNAc)4 (Glc)2 (Rib-ol)2 (*)1 (P)6 (PP-Und)1
-G13203	(AATGal)2 (Cho)4 (DAG)1 (GalNAc)4 (Glc)3 (Rib-ol)2 (*)1 (P)6
-G13204	(AATGal)2 (Ala)2 (Cho)4 (DAG)1 (GalNAc)4 (Glc)3 (Rib-ol)2 (*)1 (P)6
+G13194	UDP-AATGal; UDP-D-FucNAc4N; UDP-2-acetamido-4-amino-2,4,6-trideoxygalactose; (UDP-FucNAc4N)1
+G13195	(FucNAc4N)1 (PP-Und)1
+G13196	(FucNAc4N)1 (Glc)1 (PP-Und)1
+G13197	(FucNAc4N)1 (Glc)1 (Rib-ol)1 (P)1 (PP-Und)1
+G13198	(FucNAc4N)1 (GalNAc)1 (Glc)1 (Rib-ol)1 (P)1 (PP-Und)1
+G13199	(FucNAc4N)1 (GalNAc)2 (Glc)1 (Rib-ol)1 (P)1 (PP-Und)1
+G13200	(Cho)1 (FucNAc4N)1 (GalNAc)2 (Glc)1 (Rib-ol)1 (P)2 (PP-Und)1
+G13201	(Cho)2 (FucNAc4N)1 (GalNAc)2 (Glc)1 (Rib-ol)1 (P)3 (PP-Und)1
+G13202	(Cho)4 (FucNAc4N)2 (GalNAc)4 (Glc)2 (Rib-ol)2 (*)1 (P)6 (PP-Und)1
+G13203	(Cho)4 (DAG)1 (FucNAc4N)2 (GalNAc)4 (Glc)3 (Rib-ol)2 (*)1 (P)6
+G13204	(Ala)2 (Cho)4 (DAG)1 (FucNAc4N)2 (GalNAc)4 (Glc)3 (Rib-ol)2 (*)1 (P)6
 G13205	(Kdo)2 (Lgro-manHep)2
 G13206	(Kdo)2 (Lgro-manHep)2 (P)1
 G13207	(GlcN)2 (Kdo)2 (Lgro-manHep)2
