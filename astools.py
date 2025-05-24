@@ -409,6 +409,7 @@ def runODEScript(odefile, sampling=100, resultfile='oderesult.csv'):
         if count % sampling == 0:
             data = [str(x) for x in data]
             resultfile.write(','.join(data) + '\n')
+            print("Time step = %s" % str(count))
         count = count + 1
     data = [str(x) for x in data]
     resultfile.write(','.join(data) + '\n')
