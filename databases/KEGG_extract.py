@@ -5,9 +5,6 @@ import time
 def list_compound_glycan():
     """
     Extract and process list of compounds and glycans
-
-    sqlite: .mode tabs
-    sqlite: .import KEGG_compound_glycan.tsv compound_glycan
     """
     f = requests.get("https://rest.kegg.jp/list/compound").text + requests.get("https://rest.kegg.jp/list/glycan").text
     f = f.split("\n")
@@ -23,10 +20,6 @@ def list_compound_glycan():
 def reactions():
     """
     Extract and process reactions data; including reactants, products, and enzymes
-
-    sqlite: .mode tabs
-    sqlite: .import KEGG_reaction_data.tsv reactions
-    sqlite: .import KEGG_reaction_enzymes.tsv reaction_enzyme_map
     """
     # Get list of reactions
     f = requests.get("https://rest.kegg.jp/list/reaction").text
