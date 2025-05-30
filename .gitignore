@@ -104,5 +104,4 @@ venv.bak/
 .mypy_cache/
 
 # AdvanceSyn Toolkit
-odescript/*.py
 *.ini
