@@ -29,7 +29,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 '''
-import argparse
+
 import importlib
 import pickle
 import os
@@ -37,6 +37,17 @@ import re
 import subprocess
 import sys
 from pprint import pprint
+
+# Ensure fire is installed
+try: 
+    import fire
+except ImportError:
+    subprocess.check_call([sys.executable, '-m', 'pip', 
+                           'install', 'fire',
+                           '--trusted-host', 'pypi.org', 
+                           '--trusted-host', 'files.pythonhosted.org'])
+    import fire
+    
 
 import ASExternalTools
 import ASModeller
@@ -920,91 +931,30 @@ def GSM_to_ASM(model, name, outputfile, metabolite_initial=1e-5,
     return rxnList
 
 
-exposed_functions = {
-    # AdvanceSyn Toolkit Functions
-    'genMO': generateModelObject,
-    'genNetwork': generateNetwork,
-    'genODE': generateODEScript,
-    'GSM-to-ASM': GSM_to_ASM,
-    'installdep': installDependencies,
-    'LSA': localSensitivity,
-    'mergeASM': mergeASM,
-    'printASM': printASM,
-    'readmodel': readModel,
-    'readflux': readFluxes,
-    'runODE': runODEScript,
-    'senGen': sensitivityGenerator,
-    'systemdata': systemData,
-    # Cameo Functions
-    'cameo-fba': cameo_FBA,
-    'cameo-find-pathway': cameo_findPathway,
-    'cameo-medium-cpds': cameo_medium,
-    'cameo-medium-fba': cameo_mediumFBA,
-    'cameo-medium-pfba': cameo_mediumpFBA,
-    'cameo-mutant-fba': cameo_mutantFBA,
-    'cameo-mutant-pfba': cameo_mutantpFBA,
-    'cameo-pfba': cameo_pFBA,
-    'cameo-rxn-cpds': cameo_reactionCompounds,
-    'cameo-rxn-names': cameo_reactionNames
-    }
-
-function_descriptions = {
-    'genMO': "Read the AdvanceSyn model specification file(s) and generate a file consisting of the internal model objects. Example: python astools.py genMO --prefix=exp --modelfile=models/asm/glycolysis.modelspec;models/asm/RFPproduction.modelspec --outputfile=models/mo/glycolysis.mo",
-    'genNetwork': "Read the AdvanceSyn model specification file(s) and generate a network / reaction visualization file. Example: python astools.py genNetwork --outfmt=SIF --modelfile=models/asm/glycolysis.modelspec;models/asm/ppp.modelspec --outputfile=glycolysis_ppp.sif",
-    'genODE': "Generate Python ODE script from a given model specification file. Example: python astools.py genODE --modelfile=models/asm/glycolysis.modelspec --mtype=ASM --solver=RK4 --timestep=1 --endtime=21600 --lowerbound=0;0 --upperbound=1e-3;1e-3 --odefile=glycolysis.py",
-    'GSM-to-ASM': "Read reactions in Genome-Scale Models (GSM) using Cameo and convert to AdvanceSyn Model (ASM) format. Example: python astools.py GSM-to-ASM --metabolite_initial=1e-5 --enzyme_conc=1e-6 --enzyme_kcat=13.7 --enzyme_km=130e-6 --model=e_coli_core --name=e_coli_core --outputfile=models/asm/e_coli_core.modelspec",
-    'installdep': "Install external tools and dependencies. Example: python astools.py installdep",
-    'LSA': "Perform local sensitivity analysis using OFAT/OAT (one factor at a time) method where the last data time (end time) simulation results are recorded into results file. Example: python astools.py LSA --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --outfmt=reduced --resultfile=sensitivity_analysis.csv",
-    'mergeASM': "Read the AdvanceSyn model specification file(s) and merge them into a single AdvanceSyn model specification file. Example: python astools.py mergeASM --prefix=exp --modelfile=models/asm/glycolysis.modelspec;models/asm/ppp.modelspec --outputfile=models/asm/glycolysis_ppp.modelspec",
-    'printASM': "Read the AdvanceSyn model specification file and print out its details before processing into model objects. Example: python astools.py printASM --modelfile=models/asm/glycolysis.modelspec --readertype=extended",
-    'readmodel': "Read a model file and print out its details after processing into model objects. Example: python astools.py readmodel --mtype=ASM --modelfile=models/asm/glycolysis.modelspec",
-    'readflux': "Read the AdvanceSyn model objects file and print out fluxes (productions and usages) of model objects. Example: python astools.py readflux --mtype=ASM --modelfile=models/asm/glycolysis.modelspec",
-    'runODE': "Run / execute the ODE model and write out the simulation results. Example: python astools.py runODE --odefile=glycolysis.py --sampling=500 --resultfile=oderesult.csv",
-    'senGen': "Generate a series of AdvanceSyn Model Specifications from an existing model by multiplying a multiple to the variable in preparation for sensitivity analyses. Example: python astools.py senGen --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100",
-    'systemdata': "Prints out system information. Example: pathon astools.py systemdata",
-    'cameo-fba': "Simulate a model using Flux Balance Analysis (FBA), with Cameo. Example: python astools.py cameo-fba --model=iJO1366 --result_type=objective",
-    'cameo-find-pathway': "cameo_findPathway",
-    'cameo-medium-cpds': "List the medium in a model, with Cameo. Example: python astools.py cameo-medium-cpds --model=iAF1260",
-    'cameo-medium-fba': "Simulate a model after adding media change(s) using Flux Balance Analysis (FBA), with Cameo. Example: python astools.py cameo-medium-fba --model=iAF1260 --change=EX_o2_e,0;EX_glc__D_e,5.0 --result_type=objective",
-    'cameo-medium-pfba': "simulate a model after adding media change(s) using Parsimonious Flux Balance Analysis (pFBA), with Cameo. Example: python astools.py cameo-medium-pfba --model=iAF1260 --change=EX_o2_e,0;EX_glc__D_e,5.0 --result_type=objective",
-    'cameo-mutant-fba': "Simulate a model after adding mutation(s) using Flux Balance Analysis (FBA), with Cameo. Example: python astools.py cameo-mutant-fba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=objective",
-    'cameo-mutant-pfba': "Simulate a model after adding mutation(s) using Parsimonious Flux Balance Analysis (pFBA), with Cameo. Example: python astools.py cameo-mutant-pfba --model=iJO1366 --mutation=NNAM,100,0;RBFK,0,0 --result_type=objective",
-    'cameo-pfba': "Simulate a model using Parsimonious Flux Balance Analysis (pFBA), with Cameo. Example: python astools.py cameo-pfba --model=iJO1366 --result_type=objective",
-    'cameo-rxn-cpds': "List the reactants and products for each reaction in a model, with Cameo. Example: python astools.py cameo-rxn-cpds --model=iJO1366",
-    'cameo-rxn-names': "List the reaction names in a model, with Cameo. Example: python astools.py cameo-rxn-names --model=iJO1366"
-}
-
-def main():
-    parser = argparse.ArgumentParser(description="AdvanceSyn Toolkit")
-    subparsers = parser.add_subparsers(dest='command', required=True)
-
-    for name, func in exposed_functions.items():
-        # Inspect function signature
-        subparser = subparsers.add_parser(name, help=function_descriptions[name])
-        try:
-            from inspect import signature
-            sig = signature(func)
-            for param in sig.parameters.values():
-                arg_name = f"--{param.name}"
-                subparser.add_argument(
-                    arg_name,
-                    required=param.default is param.empty,
-                    help=f"{param.name} parameter"
-                )
-        except Exception as e:
-            subparser.add_argument('--args', nargs=argparse.REMAINDER)
-
-    args = parser.parse_args()
-    func = exposed_functions[args.command]
-
-    # Filter args to function params
-    func_args = vars(args).copy()
-    del func_args['command']
-    result = func(**func_args)
-    if result is not None:
-        print(result)
-
-
 if __name__ == '__main__':
-    main()
-
+    astools_functions = {'genMO': generateModelObject,
+                         'genNetwork': generateNetwork,
+                         'genODE': generateODEScript,
+                         'GSM-to-ASM': GSM_to_ASM,
+                         'installdep': installDependencies,
+                         'LSA': localSensitivity,
+                         'mergeASM': mergeASM,
+                         'printASM': printASM,
+                         'readmodel': readModel,
+                         'readflux': readFluxes,
+                         'runODE': runODEScript,
+                         'senGen': sensitivityGenerator,
+                         'systemdata': systemData}
+    cameo_functions = {'cameo-fba': cameo_FBA,
+                       'cameo-find-pathway': cameo_findPathway,
+                       'cameo-medium-cpds': cameo_medium,
+                       'cameo-medium-fba': cameo_mediumFBA,
+                       'cameo-medium-pfba': cameo_mediumpFBA,
+                       'cameo-mutant-fba': cameo_mutantFBA,
+                       'cameo-mutant-pfba': cameo_mutantpFBA,
+                       'cameo-pfba': cameo_pFBA,
+                       'cameo-rxn-cpds': cameo_reactionCompounds,
+                       'cameo-rxn-names': cameo_reactionNames}
+    exposed_functions = {**astools_functions, 
+                         **cameo_functions}
+    fire.Fire(exposed_functions)
