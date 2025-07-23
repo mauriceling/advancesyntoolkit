@@ -19,3 +19,7 @@ To generate SIF visualization file
 python3.13 astools.py genNetwork \  --outfmt=SIF \        
   --modelfile=models/asm/UniKin2.modelspec \
   --outputfile=UniKin2.sif       
+
+Simulation Data Cleanup
+1. All mRNA productions and peptide productions were removed as they are using constant production rates.
+2. Metabolites where variance of concentration = 0 (no change in concentrations over time) were removed.
