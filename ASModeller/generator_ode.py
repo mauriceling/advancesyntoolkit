@@ -61,14 +61,20 @@ def substitute_rateEq(objlist, objTable):
     for name in objlist: 
         for item in objlist[name].influx:
             for k in objTable:
-                objlist[name].influx[item] = \
-                    re.sub(r'\b%s\b' % k, sTable[k], 
-                           objlist[name].influx[item])
+                try:
+                    objlist[name].influx[item] = \
+                        re.sub(r'\b%s\b' % k, sTable[k], 
+                               objlist[name].influx[item])
+                except: 
+                    print(k, sTable[k], objlist[name].influx[item])
         for item in objlist[name].outflux:
             for k in objTable:
-                objlist[name].outflux[item] = \
-                    re.sub(r'\b%s\b' % k, sTable[k], 
-                           objlist[name].outflux[item])
+                try:
+                    objlist[name].outflux[item] = \
+                        re.sub(r'\b%s\b' % k, sTable[k], 
+                               objlist[name].outflux[item])
+                except:
+                    print(k, sTable[k], objlist[name].outflux[item])
     return objlist
 
 def print_rateEq(objlist):
