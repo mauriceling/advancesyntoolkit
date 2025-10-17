@@ -1,8 +1,0 @@
-To generate ODE script from model specification
-python astools.py genODE --modelfile=models/asm/bsuN33SS25.modelspec --mtype=ASM --solver=RK4 --timestep=0.1 --endtime=3600 --lowerbound=0;0 --upperbound=1000;1000 --odefile=bsuN33SS25.py
-
-To execute ODE script
-python astools.py runODE --odefile=bsuN33SS25.py --sampling=20 --resultfile=result_bsuN33SS25.csv
-
-To generate SIF visualization file
-python astools.py genNetwork --outfmt=SIF --modelfile=models/asm/bsuN33SS25.modelspec --outputfile=bsuN33SS25.sif
