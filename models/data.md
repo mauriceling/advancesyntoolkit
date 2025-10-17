@@ -1,0 +1,1 @@
+The data folder has been moved into a rew repository: [KinModRe](https://github.com/mauriceling/kinmodre)
