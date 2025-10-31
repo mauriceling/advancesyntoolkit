@@ -724,8 +724,8 @@ def GSM_to_ASM(model, name, outputfile, metabolite_initial=1e-5,
     @param outputfile String: Relative path to the write out the converted ASM model.
     @param metabolite_initial Float: Initial metabolite concentration. Default = 1e-5 (10 uM).
     @param enzyme_conc Float: Enzyme concentration. Default = 1e-6 (1 uM)
-    @param enzyme_kcat Float: Enzyme kcat / turnover number. Default = 13.7 (13.7 per second).
-    @param enzyme_km Float: Enzyme Km (Michaelis-Menten constant). Default = 130e-6 (130 uM).
+    @param enzyme_kcat Float: Enzyme kcat / turnover number. Default = 13.7 (13.7 per second) based on Bar-Even et al (2011, 2015).
+    @param enzyme_km Float: Enzyme Km (Michaelis-Menten constant). Default = 130e-6 (130 uM) based on Bar-Even et al (2011, 2015).
     '''
     rxnList = ASExternalTools.get_reaction_compounds(model, False)
     mediumConc = {}
