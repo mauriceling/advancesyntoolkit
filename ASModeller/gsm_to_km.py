@@ -28,7 +28,8 @@ limitations under the License.
 import pandas as pd
 
 def gsm_km_converter(input_model, input_name, outputfile, rxnList, 
-                     metabolite_initial, enzyme_conc, enzyme_kcat, enzyme_km):
+                     metabolite_initial, enzyme_conc, enzyme_kcat, enzyme_km,
+                     mediumConc):
     pd.set_option('display.max_colwidth', None)
     filenamedata = []
     filenamedata.append(outputfile)
@@ -38,7 +39,7 @@ def gsm_km_converter(input_model, input_name, outputfile, rxnList,
     df = pd.DataFrame(rxnList)
     df.columns = ['rxn_no', 'rxn_id', 'reactants', 'products', 'rxn_name']
     df = df.applymap(str)
-    df.style.hide_index()
+    df.style.hide(axis="index")
     df['reactants'] = df['reactants'].str.replace("[", "", regex=False)
     df['reactants'] = df['reactants'].str.replace("']", "", regex=False)
     df['reactants'] = df['reactants'].str.replace("]", "", regex=False)
@@ -93,9 +94,18 @@ def gsm_km_converter(input_model, input_name, outputfile, rxnList,
         for index, row in df4.iterrows()] + \
         ['\n\n']
 
-    variable_concList = ['[Variables]' + '\n'] + \
-        [row['rxn_id'].strip() + '_conc : ' + str(enzyme_conc) + '\n' 
-        for index, row in df.iterrows()]
+    # variable_concList = ['[Variables]' + '\n'] + \
+    #     [row['rxn_id'].strip() + '_conc : ' + str(enzyme_conc) + '\n' 
+    #     for index, row in df.iterrows()]
+    variable_concList = ['[Variables]' + '\n']
+    for index, row in df.iterrows():
+        key = row['rxn_id'].strip() + '_conc'
+        if key in mediumConc:
+            concentration = mediumConc[key]
+            variable_conc = row['rxn_id'].strip() + '_conc : ' + str(concentration) + '\n'
+        else:
+            variable_conc = row['rxn_id'].strip() + '_conc : ' + str(enzyme_conc) + '\n'
+        variable_concList.append(variable_conc)
 
     variable_kcatList = [row['rxn_id'].strip() + '_kcat : ' + str(enzyme_kcat) + '\n' 
                          for index, row in df.iterrows()]

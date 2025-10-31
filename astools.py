@@ -728,9 +728,13 @@ def GSM_to_ASM(model, name, outputfile, metabolite_initial=1e-5,
     @param enzyme_km Float: Enzyme Km (Michaelis-Menten constant). Default = 130e-6 (130 uM).
     '''
     rxnList = ASExternalTools.get_reaction_compounds(model, False)
+    mediumConc = {}
+    for mediacpd in ASExternalTools.get_medium(model, False):
+        key = "m_" + mediacpd[1] + "_conc"
+        mediumConc[key] = mediacpd[2]
     ASModeller.gsm_km_converter(model, name, outputfile, rxnList, 
                                 metabolite_initial, enzyme_conc, 
-                                enzyme_kcat, enzyme_km)
+                                enzyme_kcat, enzyme_km, mediumConc)
     return rxnList
 
 
