@@ -371,7 +371,7 @@ def sensitivityGenerator(modelfile, multiple=100,
     for param in bspec['Variables']:
         # Step 2.1: Change parameter value 
         original_parameter = float(bspec['Variables'][param])
-        new_parameter = str(original_parameter * multiple)
+        new_parameter = str(original_parameter * float(multiple))
         bspec.set('Variables', param, new_parameter)
         # Step 2.2: Reprocess model to update model
         spec = ASModeller.specobj_reader(bspec, 'extended')
@@ -414,7 +414,7 @@ def localSensitivity(modelfile, multiple=100, prefix='',
 
     Usage:
 
-        python astools.py LSA --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --cleanup=True --outfmt=reduced --resultfile=sensitivity_analysis.csv
+        python astools.py LSA --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100 --solver=RK4 --timestep=1 --endtime=21600 --sampling=100 --cleanup=True --outfmt=reduced --resultfile=sensitivity_analysis.csv
 
     @param modelfile String: Name of model specification file in models folder. This assumes that the model file is not in models folder.
     @param multiple Integer: Multiples to change each variable value. Default = 100 (which will multiple the original parameter value by 100).
@@ -430,7 +430,8 @@ def localSensitivity(modelfile, multiple=100, prefix='',
     '''
     MSF = sensitivityGenerator(modelfile, multiple, prefix, mtype)
     outfmt = str(outfmt).lower()
-    sampling = int(sampling)
+    try: sampling = int(sampling)
+    except: sampling = 100
     resultfile = os.path.abspath(resultfile)
     resultfile = open(resultfile, 'w')
     header = False
@@ -445,7 +446,7 @@ def localSensitivity(modelfile, multiple=100, prefix='',
             (model_count, msf_count, MSF[param]['ASM']))
         ODECode = ASModeller.generate_ODE(spec, modelobj, solver, 
                  timestep, endtime)
-        odefile = re.sub('\.', '_', param)
+        odefile = re.sub(r'\.', '_', param)
         filepath = fileWriter(ODECode, 'models/temp', odefile + '.py')
         MSF[param]['ODE'] = filepath
         # Simulate ODE codes
