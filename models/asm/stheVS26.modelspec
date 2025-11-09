@@ -1,0 +1,4194 @@
+[Specification]
+type: 1
+
+[Identifiers]
+name: Whole Cell Kinetic Model (Enzymatic reactions with enzyme transcriptions and translations) of Streptococcus_thermophilus STH_CIRM_65
+author: Verma Sragvi
+
+[Objects]
+C00001 : Water
+C00002 : ATP
+C00003 : NAD+
+C00004 : NADH
+C00006 : NADP+
+C00008 : ADP
+C00009 : Phosphoric acid
+C00010 : CoA
+C00011 : Carbon dioxide 
+C00013 : Diphosphoric Acid 
+C00014 : Ammonia
+C00016 : FAD
+C00017 : Protein
+C00019 : SAM
+C00020 : AMP
+C00021 : S-Adenosyl-L-Homocysteine(SAH)
+C00022 : Pyruvate 
+C00024 : Acetyl-CoA
+C00025 : L-Glutamate
+C00026 : 2-Oxoglutarate 
+C00028 : Acceptor
+C00029 : UDP-glucose
+C00031 : D-Glucose
+C00033 : Acetate
+C00035 : GDP
+C00036 : Oxaloacetate
+C00037 : Glycine
+C00039 : DNA
+C00041 : L-Alanine
+C00043 : UDP-N-Acetyl-Alpha-D-Glucosamine
+C00044 : GTP
+C00046 : RNA
+C00047 : L-Lysine
+C00049 : L-Asparate
+C00051 : Glutathione
+C00052 : UDP-D-Galactose
+C00055 : Cytidine-5'-monophosphate/CMP
+C00058 : Formate
+C00061 : Flavin Mononucleotide/FMN
+C00062 : L-Arginine
+C00063 : CTP
+C00064 : L-Glutamine
+C00065 : L-Serine
+C00073 : L-Methionine 
+C00074 : Phosphoenolpyruvate 
+C00075 : UTP
+C00077 : L-Ornithine
+C00078 : L-Tryptophan
+C00079 : L-Phenylalanine
+C00080 : H+
+C00082 : L-Tyrosine
+C00083 : Malonyl-CoA
+C00084 : Acetaldehyde
+C00085 : D-Fructose 
+C00093 : sn-Glycerol 3-Phosphate 
+C00095 : D-Fructose 
+C00097 : L-Cysteine 
+C00101 : Tetrahydrofolate 
+C00103 : Glucose 1-Phosphate 
+C00105 : UMP
+C00106 : Uracil
+C00117 : D-Ribose 5-Phosphate 
+C00118 : D-Glyceraldehyde 3-Phosphate 
+C00122 : Fumarate
+C00123 : L-Leucine
+C00129 : Isopentenyl Diphosphate 
+C00130 : IMP
+C00133 : D-Alanine
+C00135 : L-Histidine
+C00138 : Reduced ferrodoxin
+C00140 : N-Acetyl-D-glucosamine 
+C00143 : 5,10-Methylenetetrahydrofolate
+C00144 : GMP
+C00148 : L-Proline 
+C00152 : L-Asparagine
+C00153 : Nicotinamide
+C00155 : L-Homocysteine
+C00158 : Citrate
+C00169 : Carbamoyl Phosphate 
+C00173 : Acyl-[acyl-carrier protein]
+C00179 : Agmatine
+C00183 : L-Valine
+C00186 : (S)-Lactate
+C00188 : L-Threonine
+C00197 : 3-Phospho-D-glycerate 
+C00199 : D-Ribulose 5-phosphate 
+C00201 : NTP
+C00212 : Adenosine 
+C00214 : Thymidine 
+C00217 : D-Glutamate 
+C00226 : Primary Alcohol
+C00229 : Acyl-carrier protein 
+C00233 : 4-Methyl-2-oxopentanoate 
+C00234 : 10-Formyltetrahydrofolate
+C00235 : Dimethylallyl diphosphate
+C00239 : dCMP
+C00240 : rRNA
+C00243 : Lactose
+C00250 : Pyridoxal
+C00251 : Chorismate
+C00254 : Prephenate
+C00255 : Riboflavin
+C00258 : D-Glycerate
+C00263 : L-Homoserine
+C00267 : alpha-D-Glucose 
+C00269 : CDP-diacylglycerol
+C00275 : D-Mannose-6-phosphate
+C00283 : Hydrogen Sulfide 
+C00288 : HCO3-
+C00290 : Fibrin
+C00301 : ADP-ribose
+C00311 : Isocitrate
+C00327 : L-Citrulline
+C00337 : (s)- Dihydroorotate
+C00341 : Geranyl_diphosphate
+C00342 : Thioredoxin
+C00343 : Thioredoxin disulfide 
+C00352 : D-Glucosamine 6-phosphate
+C00354 : D-Fructose 1,6-bisphosphate
+C00356 : (S)-3-Hydroxy-3-methylglutaryl-CoA
+C00357 : N-Acetyl-D-glucosamine 6-phosphate
+C00364 : dTMP
+C00365 : dUMP
+C00369 : Starch
+C00372 : Dextran
+C00378 : Thiamine
+C00407 : L-Isoleucine
+C00409 : Methanethiol
+C00416 : Phosphatidate
+C00418 : ( R )-Mevalonate
+C00437 : N-Acetylornithine
+C00440 : 5-Methyltetrahydrofolate
+C00441 : L-Aspartate 4-semialdehyde
+C00445 : 5,10-Methenyltetrahydrofolate
+C00446 : alpha-D-Galactose 1-phosphate 
+C00447 : Sedoheptulose 1,7-bisphosphate
+C00454 : NDP
+C00455 : Nicotinamide-D-ribonucleotide
+C00459 : dTTP
+C00460 : dUTP
+C00466 : Acetoin
+C00475 : Cytidine
+C00493 : Shikimate
+C00521 : (s)- Limonene
+C00562 : Phosphoprotein
+C00568 : 4-Aminobenzonate
+C00615 : Protein histidine
+C00620 : alpha-D-ribose 1-phosphate
+C00624 : N-Acetyle-L-glutamate
+C00631 : 2-Phospho-D-glycerate
+C00636 : D-Mannose 1-phosphate
+C00640 : (3s)-3Hydroxyacyl-CoA
+C00641 : 1,2-Diacyl-sn-glycerol
+C00668 : alpha-D-Glucose 6-phosphate 
+C00669 : gamma-L-Glutamyl-L-cysteine
+C00677 : Deoxynucleoside triphosphate
+C00680 : meso-2,6-Diaminoheptanedioate
+C00692 : UDP-N-acetylmuramoyl-L-alanyl-D-glutamate
+C00704 : Superoxide
+C00718 : Amylose
+C00740 : D-Serine
+C00741 : Diacetyle
+C00787 : tRNA(Tyr)
+C00810 : R-acetoin
+C00821 : Adenine
+C00842 : dTDP-glucose
+C00857 : Deamino-NAD+
+C00864 : Pantothenate
+C00868 : tRNA uridine
+C00900 : 2-Acetolactate
+C00921 : Dihydropteroate
+C00944 : 3-Dihydroquinate
+C00979 : O-Acetyl-L-serine
+C00984 : alpha-D-Galactose
+C00988 : 2-Phosphoglycolate
+C00993 : D-Alanyl-D-alanine
+C01005 : O-Phospho-L-serine
+C01050 : UDP-N-acetylmuramate
+C01077 : 0-Acetyl-L-homoserine
+C01094 : D-Fructose 1-phosphate
+C01100 : L-Histidinol phosphate
+C01102 : O-Phospho-L-homoserine
+C01103 : Orotidine 5'-phosphate 
+C01107 : (R)-5-Phosphomevalonate
+C01118 : O-Succinyl-L-homoserine
+C01134 : Pantetheine 4'-phosphate
+C01143 : (R)-5-Diphosphomevalonate
+C01165 : L-Glutamate 5-semialdheyde 
+C01167 : Protein tyrosine phosphate
+C01185 : Nicotinate D-ribonucleotide
+C01209 : Malonyl -[acyl - carrier protein]
+C01212 : UDP-N-acetylmuramoyl-L-alanine
+C01228 : Guanosine 3'-5'-bis(diphosphate)
+C01229 : Phospholipid olefinic fatty acid
+C01250 : N-Acetyl-L-glutamate 5-semialdehyde 
+C01269 : 5-O-(1-Carboxyvinyl)-3-phosphoshikimate
+C01271 : (3R)-3-Hydroxyacyl-[acyl-carrier protein]
+C01300 : 6-(Hydroxymethyl)-7,8-dihydropterin
+C01302 : 1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate
+C01322 : Organic halide
+C01353 : Carbonic acid; Dihydrogen carbonate
+C01419 : L-Cysteinylglycine
+C01635 : tRNA(Ala)
+C01636 : tRNA(Arg)
+C01637 : tRNA(Asn)
+C01638 : tRNA(Asp)
+C01639 : tRNA(Cys)
+C01640 : tRNA(Gln)
+C01641 : tRNA(Glu)
+C01642 : tRNA(Gly)
+C01643 : tRNA(His)
+C01644 : tRNA(Ile)
+C01645 : tRNA(Leu)
+C01646 : tRNA(Lys)
+C01647 : tRNA(Met)
+C01648 : tRNA(Phe)
+C01649 : tRNA(Pro)
+C01650 : tRNA(Ser)
+C01651 : tRNA(Thr)
+C01652 : tRNA(Trp)
+C01653 : tRNA(Val)
+C01764 : tRNA containing uridine at position
+C01977 : tRNA guanine
+C01978 : tRNA queuine
+C02103 : (S)-2-Haloacid
+C02128 : 5'-Phospho-DNA
+C02133 : Acyl phosphate 
+C02211 : tRNA precursor
+C02282 : Glutaminyl-tRNA
+C02291 : L-Cystathionine
+C02342 : Activated' tRNA
+C02430 : L-Methionyl-tRNA
+C02504 : alpha-Isopropylmalate
+C02520 : 5'-Ribonucleotide
+C02583 : Protein glutamine
+C02614 : (S)-2-Methylmalate
+C02735 : Phenylethanolamine
+C02743 : [Protein]-L-cysteine 
+C02850 : N-Acyl-L-amino acid
+C02995 : Maltose 6'-phosphate
+C03023 : Peptide-L-methionine 
+C03090 : 5-Phosphoribosylamine
+C03103 : Cyclobutadipyrimidine
+C03172 : S-Methyl-L-methionine
+C03175 : Shikimate 3-phosphate
+C03373 : Aminoimidazole Ribotide
+C03406 : N-(L-Arginino)succinate;
+C03451 : (R)-S-Lactoylglutathione
+C03492 : D-4'-Phosphopantothenate
+C03539 : S-Ribosyl-L-homocysteine
+C03541 : THF-polyglutamate
+C03620 : Monocarboxylic acid amide
+C03680 : 4-Imidazolone-5-propanoate
+C03688 : Apo-[acyl-carrier protein]
+C03794 : N6-(1,2-Dicarboxyethyl)-AMP
+C03798 : Peptidylproline (omega=180)
+C03803 : Ribosomal-protein L-alanine
+C03838 : 5'-Phosphoribosylglycinamide
+C03880 : N-Substituted aminoacyl-tRNA
+C03892 : Phosphatidylglycerophosphate
+C03899 : S-(2-Hydroxyacyl)glutathione
+C03972 : 2,3,4,5-Tetrahydrodipicolinate
+C04039 : 2,3-Dihydroxy-3-methylbutanoate
+C04131 : Monoamide of dicarboxylate
+C04232 : 2'-Deoxyribonucleoside diphosphate
+C04250 : DNA containing 6-O-methylguanine
+C04253 : Electron-transferring flavoprotein;
+C04272 : (R)-2,3-Dihydroxy-3-methylbutanoate
+C04302 : N-(5-Phospho-D-ribosyl)anthranilate;
+C04352 : ( R )- 4' - Phosphopantothenoyl -L-cysteine
+C04376 : 5'-Phosphoribosyl-N-formylglycinamide
+C04390 : N6-Acetyl-LL-2,6-diaminoheptanedioate
+C04419 : Carboxybiotin-carboxyl-carrier protein
+C04489 : 5-Methyltetrahydropteroyltri-L-glutamate
+C04501 : N-Acetyl-alpha-D-glucosamine 1-phosphate
+C04556 : 4-Amino-2-methyl-5-(phosphooxymethyl)pyrimidine
+C04574 : di-trans,poly-cis-Undecaprenyl diphosphate
+C04640 : 2-(Formamido)-N1-(5'-phosphoribosyl)acetamidine
+C04677 : 1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide
+C04691 : 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate
+C04702 : UDPMurNAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)
+C04751 : 1-(5-Phospho-D-ribosyl)-5-amino-4-imidazolecarboxylate
+C04807 : 6-Hydroxymethyl-7,8-dihydropterin diphosphate
+C04851 : MurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)-diphospho-undecaprenol
+C04856 : (6S)-6beta-Hydroxy-1,4,5,6-tetrahydronicotinamide-adenine dinucleotide
+C04874 : 7,8-Dihydroneopterin
+C05196 : Dihydroflavodoxin
+C05197 : Protein glycine; [Enzyme]-glycine
+C05345 : beta-D-Fructose 6-phosphate
+C05382 : Sedoheptulose 7-phosphate
+C05754 : trans-Dec-2-enoyl-[acp]
+C05892 : UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-L-lysine
+C06010 : (S)-2-Acetolactate
+C06156 : alpha-D-Glucosamine 1-phosphate
+C06197 : P1,P3-Bis(5'-adenosyl) triphosphate
+C06250 : Holo-[carboxylase]
+C06364 : 1,2-Diacyl-3-alpha-D-glucosyl-sn-glycerol
+C11355 : 4-Amino-4-deoxychorismate
+C11439 : Formyl-L-methionyl peptide
+C15585 : myo-Inositol phosphate
+C15586 : Purine nucleoside
+C15667 : 5-Carboxyamino-1-(5-phospho-D-ribosyl)imidazole
+C15811 : [Enzyme]-cysteine
+C15812 : [Enzyme]-S-sulfanylcysteine
+C16240 : Apoprotein
+C16241 : (R)-Lipoate
+C16675 : 7-Aminomethyl-7-carbaguanine
+C16832 : [Protein]-N6-[(R)-dihydrolipoyl]-L-lysine
+C17324 : tRNA adenine
+C17556 : di-trans,poly-cis-Undecaprenyl phosphate
+C17558 : Undecaprenol
+C17627 : Prenyl diphosphate
+C19722 : [tRNA(Ile2)]-cytidine34
+C19803 : [Protein]-L-threonine
+C19967 : 8-Oxo-dGTP
+C20239 : 6-Carboxytetrahydropterin
+C20248 : 7-Carboxy-7-carbaguanine
+C20446 : tRNA 7-aminomethyl-7-carbaguanine
+C20648 : Adenine in rRNA
+C20675 : Short-chain acyl-CoA
+C20905 : 2-Iminobutanoate
+C22409 : UDP-3-O-[(3R)-3-hydroxyacyl]-alpha-D-glucosamine
+E1_1_1_1_mRNA : E1_1_1_1_mRNA
+E1_2_1_10_mRNA : E1_2_1_10_mRNA
+E1_1_1_100_mRNA : E1_1_1_100_mRNA
+E1_1_1_169_mRNA : E1_1_1_169_mRNA
+E1_1_1_205_mRNA : E1_1_1_205_mRNA
+E1_1_1_25_mRNA : E1_1_1_25_mRNA
+E1_1_1_27_mRNA : E1_1_1_27_mRNA
+E1_1_1_3_mRNA : E1_1_1_3_mRNA
+E1_1_1_303_mRNA : E1_1_1_303_mRNA
+E2_3_1_190_mRNA : E2_3_1_190_mRNA
+E1_1_1_304_mRNA : E1_1_1_304_mRNA
+E2_3_1_191_mRNA : E2_3_1_191_mRNA
+E1_1_1_42_mRNA : E1_1_1_42_mRNA
+E1_1_1_85_mRNA : E1_1_1_85_mRNA
+E1_1_1_86_mRNA : E1_1_1_86_mRNA
+E1_1_1_88_mRNA : E1_1_1_88_mRNA
+E1_1_1_94_mRNA : E1_1_1_94_mRNA
+E1_1_1_95_mRNA : E1_1_1_95_mRNA
+E1_1_1_95_mRNA : E1_1_1_95_mRNA
+E1_11_1_15_mRNA : E1_11_1_15_mRNA
+E1_15_1_1_mRNA : E1_15_1_1_mRNA
+E1_17_1_8_mRNA : E1_17_1_8_mRNA
+E1_17_4_1_mRNA : E1_17_4_1_mRNA
+E1_17_4_2_mRNA : E1_17_4_2_mRNA
+E1_17_99_6_mRNA : E1_17_99_6_mRNA
+E1_18_1_2_mRNA : E1_18_1_2_mRNA
+E1_2_1_11_mRNA : E1_2_1_11_mRNA
+E1_2_1_12_mRNA : E1_2_1_12_mRNA
+E1_2_1_38_mRNA : E1_2_1_38_mRNA
+E1_2_1_41_mRNA : E1_2_1_41_mRNA
+E1_2_1_9_mRNA : E1_2_1_9_mRNA
+E1_3_1_12_mRNA : E1_3_1_12_mRNA
+E1_3_1_15_mRNA : E1_3_1_15_mRNA
+E1_3_1_9_mRNA : E1_3_1_9_mRNA
+E1_3_1_98_mRNA : E1_3_1_98_mRNA
+E1_3_8_1_mRNA : E1_3_8_1_mRNA
+E1_3_98_1_mRNA : E1_3_98_1_mRNA
+E1_4_1_4_mRNA : E1_4_1_4_mRNA
+E1_5_1_2_mRNA : E1_5_1_2_mRNA
+E1_5_1_20_mRNA : E1_5_1_20_mRNA
+E1_5_1_3_mRNA : E1_5_1_3_mRNA
+E1_5_1_5_mRNA : E1_5_1_5_mRNA
+E3_5_4_9_mRNA : E3_5_4_9_mRNA
+E1_6_99_3_mRNA : E1_6_99_3_mRNA
+E1_7_1_13_mRNA : E1_7_1_13_mRNA
+E1_8_1_4_mRNA : E1_8_1_4_mRNA
+E1_8_1_7_mRNA : E1_8_1_7_mRNA
+E1_8_1_9_mRNA : E1_8_1_9_mRNA
+E1_8_4_11_mRNA : E1_8_4_11_mRNA
+E1_8_4_12_mRNA : E1_8_4_12_mRNA
+E1_97_1_4_mRNA : E1_97_1_4_mRNA
+E2_1_1_10_mRNA : E2_1_1_10_mRNA
+E2_1_1_14_mRNA : E2_1_1_14_mRNA
+E2_1_1_170_mRNA : E2_1_1_170_mRNA
+E2_1_1_171_mRNA : E2_1_1_171_mRNA
+E2_1_1_176_mRNA : E2_1_1_176_mRNA
+E2_1_1_177_mRNA : E2_1_1_177_mRNA
+E2_1_1_182_mRNA : E2_1_1_182_mRNA
+E2_1_1_192_mRNA : E2_1_1_192_mRNA
+E2_1_1_193_mRNA : E2_1_1_193_mRNA
+E2_1_1_198_mRNA : E2_1_1_198_mRNA
+E2_1_1_199_mRNA : E2_1_1_199_mRNA
+E2_1_1_207_mRNA : E2_1_1_207_mRNA
+E2_1_1_217_mRNA : E2_1_1_217_mRNA
+E2_1_1_223_mRNA : E2_1_1_223_mRNA
+E2_1_1_264_mRNA : E2_1_1_264_mRNA
+E2_1_1_28_mRNA : E2_1_1_28_mRNA
+E2_1_1_297_mRNA : E2_1_1_297_mRNA
+E2_1_1_33_mRNA : E2_1_1_33_mRNA
+E2_1_1_45_mRNA : E2_1_1_45_mRNA
+E2_1_1_63_mRNA : E2_1_1_63_mRNA
+E2_1_1_72_mRNA : E2_1_1_72_mRNA
+E2_1_1_74_mRNA : E2_1_1_74_mRNA
+E2_1_1_79_mRNA : E2_1_1_79_mRNA
+E2_1_2_1_mRNA : E2_1_2_1_mRNA
+E2_1_2_2_mRNA : E2_1_2_2_mRNA
+E2_1_2_3_mRNA : E2_1_2_3_mRNA
+E3_5_4_10_mRNA : E3_5_4_10_mRNA
+E2_1_2_9_mRNA : E2_1_2_9_mRNA
+E2_1_3_15_mRNA : E2_1_3_15_mRNA
+E2_1_3_2_mRNA : E2_1_3_2_mRNA
+E2_1_3_3_mRNA : E2_1_3_3_mRNA
+E2_1_5_4_mRNA : E2_1_5_4_mRNA
+E2_2_1_1_mRNA : E2_2_1_1_mRNA
+E2_2_1_6_mRNA : E2_2_1_6_mRNA
+E2_3_3_13_mRNA : E2_3_3_13_mRNA
+E2_3_1_180_mRNA : E2_3_1_180_mRNA
+E2_3_1_266_mRNA : E2_3_1_266_mRNA
+E2_3_1_30_mRNA : E2_3_1_30_mRNA
+E2_3_1_31_mRNA : E2_3_1_31_mRNA
+E2_3_1_35_mRNA : E2_3_1_35_mRNA
+E2_3_1_1_mRNA : E2_3_1_1_mRNA
+E2_3_1_39_mRNA : E2_3_1_39_mRNA
+E2_3_1_41_mRNA : E2_3_1_41_mRNA
+E2_3_1_54_mRNA : E2_3_1_54_mRNA
+E2_3_1_8_mRNA : E2_3_1_8_mRNA
+E2_3_1_89_mRNA : E2_3_1_89_mRNA
+E2_3_3_10_mRNA : E2_3_3_10_mRNA
+E2_3_3_16_mRNA : E2_3_3_16_mRNA
+E2_4_1_1_mRNA : E2_4_1_1_mRNA
+E2_4_1_129_mRNA : E2_4_1_129_mRNA
+E3_4_16_4_mRNA : E3_4_16_4_mRNA
+E2_4_1_208_mRNA : E2_4_1_208_mRNA
+E2_4_1_337_mRNA : E2_4_1_337_mRNA
+E2_4_1_227_mRNA : E2_4_1_227_mRNA
+E2_4_1_25_mRNA : E2_4_1_25_mRNA
+E2_4_2_1_mRNA : E2_4_2_1_mRNA
+E2_4_2_10_mRNA : E2_4_2_10_mRNA
+E2_4_2_14_mRNA : E2_4_2_14_mRNA
+E2_4_2_18_mRNA : E2_4_2_18_mRNA
+E2_4_2_29_mRNA : E2_4_2_29_mRNA
+E2_4_2_3_mRNA : E2_4_2_3_mRNA
+E2_4_2_7_mRNA : E2_4_2_7_mRNA
+E2_4_2_8_mRNA : E2_4_2_8_mRNA
+E2_4_2_9_mRNA : E2_4_2_9_mRNA
+E2_4_99_17_mRNA : E2_4_99_17_mRNA
+E2_5_1_10_mRNA : E2_5_1_10_mRNA
+E2_5_1_15_mRNA : E2_5_1_15_mRNA
+E2_5_1_18_mRNA : E2_5_1_18_mRNA
+E2_5_1_19_mRNA : E2_5_1_19_mRNA
+E2_5_1_31_mRNA : E2_5_1_31_mRNA
+E2_5_1_47_mRNA : E2_5_1_47_mRNA
+E4_4_1_1_mRNA : E4_4_1_1_mRNA
+E2_5_1_48_mRNA : E2_5_1_48_mRNA
+E2_5_1_49_mRNA : E2_5_1_49_mRNA
+E2_5_1_6_mRNA : E2_5_1_6_mRNA
+E2_5_1_7_mRNA : E2_5_1_7_mRNA
+E2_5_1_75_mRNA : E2_5_1_75_mRNA
+E2_6_1_1_mRNA : E2_6_1_1_mRNA
+E2_6_1_11_mRNA : E2_6_1_11_mRNA
+E2_6_1_16_mRNA : E2_6_1_16_mRNA
+E2_6_1_42_mRNA : E2_6_1_42_mRNA
+E2_6_1_52_mRNA : E2_6_1_52_mRNA
+E2_6_1_85_mRNA : E2_6_1_85_mRNA
+E4_1_3_38_mRNA : E4_1_3_38_mRNA
+E4_1_3_27_mRNA : E4_1_3_27_mRNA
+E2_7_1_107_mRNA : E2_7_1_107_mRNA
+E2_7_1_11_mRNA : E2_7_1_11_mRNA
+E2_7_1_180_mRNA : E2_7_1_180_mRNA
+E2_7_1_2_mRNA : E2_7_1_2_mRNA
+E2_7_1_59_mRNA : E2_7_1_59_mRNA
+E2_7_1_21_mRNA : E2_7_1_21_mRNA
+E2_7_1_23_mRNA : E2_7_1_23_mRNA
+E2_7_1_24_mRNA : E2_7_1_24_mRNA
+E2_7_1_26_mRNA : E2_7_1_26_mRNA
+E2_7_7_2_mRNA : E2_7_7_2_mRNA
+E2_7_1_31_mRNA : E2_7_1_31_mRNA
+E2_7_1_33_mRNA : E2_7_1_33_mRNA
+E2_7_1_35_mRNA : E2_7_1_35_mRNA
+E2_7_1_36_mRNA : E2_7_1_36_mRNA
+E2_7_1_39_mRNA : E2_7_1_39_mRNA
+E2_7_1_4_mRNA : E2_7_1_4_mRNA
+E2_7_1_40_mRNA : E2_7_1_40_mRNA
+E2_7_1_48_mRNA : E2_7_1_48_mRNA
+E2_7_1_56_mRNA : E2_7_1_56_mRNA
+E2_7_1_6_mRNA : E2_7_1_6_mRNA
+E2_7_1_66_mRNA : E2_7_1_66_mRNA
+E2_7_1_71_mRNA : E2_7_1_71_mRNA
+E2_7_11_1_mRNA : E2_7_11_1_mRNA
+E2_7_13_3_mRNA : E2_7_13_3_mRNA
+E2_7_2_1_mRNA : E2_7_2_1_mRNA
+E2_7_2_11_mRNA : E2_7_2_11_mRNA
+E2_7_2_3_mRNA : E2_7_2_3_mRNA
+E2_7_2_4_mRNA : E2_7_2_4_mRNA
+E2_7_2_8_mRNA : E2_7_2_8_mRNA
+E2_7_3_9_mRNA : E2_7_3_9_mRNA
+E2_7_4_2_mRNA : E2_7_4_2_mRNA
+E2_7_4_22_mRNA : E2_7_4_22_mRNA
+E2_7_4_25_mRNA : E2_7_4_25_mRNA
+E2_7_4_3_mRNA : E2_7_4_3_mRNA
+E2_7_4_6_mRNA : E2_7_4_6_mRNA
+E2_7_4_7_mRNA : E2_7_4_7_mRNA
+E2_7_4_8_mRNA : E2_7_4_8_mRNA
+E2_7_4_9_mRNA : E2_7_4_9_mRNA
+E2_7_6_1_mRNA : E2_7_6_1_mRNA
+E2_7_6_2_mRNA : E2_7_6_2_mRNA
+E2_7_6_3_mRNA : E2_7_6_3_mRNA
+E2_7_6_5_mRNA : E2_7_6_5_mRNA
+E3_1_7_2_mRNA : E3_1_7_2_mRNA
+E2_7_7_1_mRNA : E2_7_7_1_mRNA
+E2_7_7_22_mRNA : E2_7_7_22_mRNA
+E2_7_7_12_mRNA : E2_7_7_12_mRNA
+E2_7_7_23_mRNA : E2_7_7_23_mRNA
+E2_3_1_157_mRNA : E2_3_1_157_mRNA
+E2_7_7_24_mRNA : E2_7_7_24_mRNA
+E2_7_7_3_mRNA : E2_7_7_3_mRNA
+E2_7_7_41_mRNA : E2_7_7_41_mRNA
+E2_7_7_6_mRNA : E2_7_7_6_mRNA
+E2_7_7_7_mRNA : E2_7_7_7_mRNA
+E2_7_7_72_mRNA : E2_7_7_72_mRNA
+E2_7_7_8_mRNA : E2_7_7_8_mRNA
+E3_1_13_1_mRNA : E3_1_13_1_mRNA
+E2_7_7_85_mRNA : E2_7_7_85_mRNA
+E2_7_7_9_mRNA : E2_7_7_9_mRNA
+E2_7_8_13_mRNA : E2_7_8_13_mRNA
+E2_7_8_5_mRNA : E2_7_8_5_mRNA
+E2_7_8_7_mRNA : E2_7_8_7_mRNA
+E2_8_1_13_mRNA : E2_8_1_13_mRNA
+E2_8_1_4_mRNA : E2_8_1_4_mRNA
+E2_8_1_7_mRNA : E2_8_1_7_mRNA
+E3_6_4_12_mRNA : E3_6_4_12_mRNA
+E3_1_1_29_mRNA : E3_1_1_29_mRNA
+E3_1_11_2_mRNA : E3_1_11_2_mRNA
+E3_1_11_6_mRNA : E3_1_11_6_mRNA
+E3_1_11_7_mRNA : E3_1_11_7_mRNA
+E3_1_2_6_mRNA : E3_1_2_6_mRNA
+E3_1_21_3_mRNA : E3_1_21_3_mRNA
+E3_1_21_5_mRNA : E3_1_21_5_mRNA
+E3_1_22_4_mRNA : E3_1_22_4_mRNA
+E3_1_26_11_mRNA : E3_1_26_11_mRNA
+E3_1_26_3_mRNA : E3_1_26_3_mRNA
+E3_1_26_4_mRNA : E3_1_26_4_mRNA
+E3_1_26_5_mRNA : E3_1_26_5_mRNA
+E3_1_26_8_mRNA : E3_1_26_8_mRNA
+E5_2_1_8_mRNA : E5_2_1_8_mRNA
+E3_1_3_15_mRNA : E3_1_3_15_mRNA
+E3_1_3_16_mRNA : E3_1_3_16_mRNA
+E3_1_3_18_mRNA : E3_1_3_18_mRNA
+E3_1_3_25_mRNA : E3_1_3_25_mRNA
+E3_1_3_27_mRNA : E3_1_3_27_mRNA
+E3_1_3_3_mRNA : E3_1_3_3_mRNA
+E3_1_3_48_mRNA : E3_1_3_48_mRNA
+E3_1_3_5_mRNA : E3_1_3_5_mRNA
+E3_1_3_90_mRNA : E3_1_3_90_mRNA
+E3_1_7_1_mRNA : E3_1_7_1_mRNA
+E3_6_1_13_mRNA : E3_6_1_13_mRNA
+E3_2_1_1_mRNA : E3_2_1_1_mRNA
+E3_2_1_11_mRNA : E3_2_1_11_mRNA
+E3_2_1_23_mRNA : E3_2_1_23_mRNA
+E3_2_1_26_mRNA : E3_2_1_26_mRNA
+E3_2_2_20_mRNA : E3_2_2_20_mRNA
+E3_2_2_23_mRNA : E3_2_2_23_mRNA
+E3_2_2_27_mRNA : E3_2_2_27_mRNA
+E3_2_2_31_mRNA : E3_2_2_31_mRNA
+E3_2_2_9_mRNA : E3_2_2_9_mRNA
+E3_3_1_1_mRNA : E3_3_1_1_mRNA
+E3_4_11_18_mRNA : E3_4_11_18_mRNA
+E3_4_11_2_mRNA : E3_4_11_2_mRNA
+E3_4_11_24_mRNA : E3_4_11_24_mRNA
+E3_4_11_4_mRNA : E3_4_11_4_mRNA
+E3_4_13_9_mRNA : E3_4_13_9_mRNA
+E3_4_14_11_mRNA : E3_4_14_11_mRNA
+E3_4_16_5_mRNA : E3_4_16_5_mRNA
+E3_4_21_107_mRNA : E3_4_21_107_mRNA
+E3_4_21_53_mRNA : E3_4_21_53_mRNA
+E3_4_21_89_mRNA : E3_4_21_89_mRNA
+E3_4_21_92_mRNA : E3_4_21_92_mRNA
+E3_4_22_40_mRNA : E3_4_22_40_mRNA
+E3_4_23_36_mRNA : E3_4_23_36_mRNA
+E3_5_1_1_mRNA : E3_5_1_1_mRNA
+E3_5_1_14_mRNA : E3_5_1_14_mRNA
+E3_5_1_19_mRNA : E3_5_1_19_mRNA
+E3_5_1_25_mRNA : E3_5_1_25_mRNA
+E3_5_1_3_mRNA : E3_5_1_3_mRNA
+E3_5_1_4_mRNA : E3_5_1_4_mRNA
+E3_5_1_47_mRNA : E3_5_1_47_mRNA
+E3_5_1_5_mRNA : E3_5_1_5_mRNA
+E3_5_1_88_mRNA : E3_5_1_88_mRNA
+E3_5_2_3_mRNA : E3_5_2_3_mRNA
+E3_5_3_11_mRNA : E3_5_3_11_mRNA
+E3_5_4_12_mRNA : E3_5_4_12_mRNA
+E3_5_4_16_mRNA : E3_5_4_16_mRNA
+E3_5_4_33_mRNA : E3_5_4_33_mRNA
+E3_5_4_4_mRNA : E3_5_4_4_mRNA
+E3_5_4_5_mRNA : E3_5_4_5_mRNA
+E3_5_99_10_mRNA : E3_5_99_10_mRNA
+E3_5_99_6_mRNA : E3_5_99_6_mRNA
+E3_6_1_1_mRNA : E3_6_1_1_mRNA
+E3_6_1_23_mRNA : E3_6_1_23_mRNA
+E3_6_1_27_mRNA : E3_6_1_27_mRNA
+E3_6_1_29_mRNA : E3_6_1_29_mRNA
+E3_6_1_55_mRNA : E3_6_1_55_mRNA
+E3_6_1_7_mRNA : E3_6_1_7_mRNA
+E3_6_166_mRNA : E3_6_166_mRNA
+E3_6_4_13_mRNA : E3_6_4_13_mRNA
+E3_8_1_2_mRNA : E3_8_1_2_mRNA
+E4_1_1_20_mRNA : E4_1_1_20_mRNA
+E4_1_1_23_mRNA : E4_1_1_23_mRNA
+E4_1_1_31_mRNA : E4_1_1_31_mRNA
+E4_1_1_33_mRNA : E4_1_1_33_mRNA
+E4_1_1_36_mRNA : E4_1_1_36_mRNA
+E4_1_1_48_mRNA : E4_1_1_48_mRNA
+E4_1_1_5_mRNA : E4_1_1_5_mRNA
+E4_1_2_13_mRNA : E4_1_2_13_mRNA
+E4_1_2_25_mRNA : E4_1_2_25_mRNA
+E4_1_99_3_mRNA : E4_1_99_3_mRNA
+E4_2_1_1_mRNA : E4_2_1_1_mRNA
+E4_2_1_10_mRNA : E4_2_1_10_mRNA
+E4_2_1_11_mRNA : E4_2_1_11_mRNA
+E4_2_1_136_mRNA : E4_2_1_136_mRNA
+E4_2_1_20_mRNA : E4_2_1_20_mRNA
+E4_2_1_21_mRNA : E4_2_1_21_mRNA
+E4_2_1_3_mRNA : E4_2_1_3_mRNA
+E4_2_1_33_mRNA : E4_2_1_33_mRNA
+E4_2_1_34_mRNA : E4_2_1_34_mRNA
+E4_2_1_46_mRNA : E4_2_1_46_mRNA
+E4_2_1_49_mRNA : E4_2_1_49_mRNA
+E4_2_1_51_mRNA : E4_2_1_51_mRNA
+E4_2_1_59_mRNA : E4_2_1_59_mRNA
+E4_2_1_70_mRNA : E4_2_1_70_mRNA
+E4_2_1_9_mRNA : E4_2_1_9_mRNA
+E4_2_3_1_mRNA : E4_2_3_1_mRNA
+E4_2_3_4_mRNA : E4_2_3_4_mRNA
+E4_2_3_5_mRNA : E4_2_3_5_mRNA
+E4_2_99_18_mRNA : E4_2_99_18_mRNA
+E4_3_1_17_mRNA : E4_3_1_17_mRNA
+E4_3_1_18_mRNA : E4_3_1_18_mRNA
+E4_3_1_19_mRNA : E4_3_1_19_mRNA
+E4_3_2_1_mRNA : E4_3_2_1_mRNA
+E4_3_2_2_mRNA : E4_3_2_2_mRNA
+E4_3_3_7_mRNA : E4_3_3_7_mRNA
+E4_3_99_3_mRNA : E4_3_99_3_mRNA
+E4_4_1_2_mRNA : E4_4_1_2_mRNA
+E4_4_1_21_mRNA : E4_4_1_21_mRNA
+E4_4_1_5_mRNA : E4_4_1_5_mRNA
+E4_4_1_8_mRNA : E4_4_1_8_mRNA
+E4_99_1_1_mRNA : E4_99_1_1_mRNA
+E5_1_1_1_mRNA : E5_1_1_1_mRNA
+E5_1_1_3_mRNA : E5_1_1_3_mRNA
+E5_1_3_1_mRNA : E5_1_3_1_mRNA
+E5_1_3_2_mRNA : E5_1_3_2_mRNA
+E5_1_3_7_mRNA : E5_1_3_7_mRNA
+E5_1_3_3__mRNA : E5_1_3_3__mRNA
+E5_3_1_1_mRNA : E5_3_1_1_mRNA
+E5_3_1_24_mRNA : E5_3_1_24_mRNA
+E5_3_1_6_mRNA : E5_3_1_6_mRNA
+E5_3_1_8_mRNA : E5_3_1_8_mRNA
+E5_3_1_9_mRNA : E5_3_1_9_mRNA
+E5_3_3_14_mRNA : E5_3_3_14_mRNA
+E5_3_3_2_mRNA : E5_3_3_2_mRNA
+E5_4_2_10_mRNA : E5_4_2_10_mRNA
+E5_4_2_2_mRNA : E5_4_2_2_mRNA
+E5_4_2_7_mRNA : E5_4_2_7_mRNA
+E5_4_99_12_mRNA : E5_4_99_12_mRNA
+E5_4_99_18_mRNA : E5_4_99_18_mRNA
+E5_4_99_25_mRNA : E5_4_99_25_mRNA
+E5_4_99_5_mRNA : E5_4_99_5_mRNA
+E5_4_99_9_mRNA : E5_4_99_9_mRNA
+E5_6_2_1_mRNA : E5_6_2_1_mRNA
+E5_6_2_2_mRNA : E5_6_2_2_mRNA
+E6_1_1_1_mRNA : E6_1_1_1_mRNA
+E6_1_1_10_mRNA : E6_1_1_10_mRNA
+E6_1_1_11_mRNA : E6_1_1_11_mRNA
+E6_1_1_12_mRNA : E6_1_1_12_mRNA
+E6_1_1_14_mRNA : E6_1_1_14_mRNA
+E6_1_1_15_mRNA : E6_1_1_15_mRNA
+E6_1_1_16_mRNA : E6_1_1_16_mRNA
+E6_1_1_17_mRNA : E6_1_1_17_mRNA
+E6_1_1_24_mRNA : E6_1_1_24_mRNA
+E6_1_1_19_mRNA : E6_1_1_19_mRNA
+E6_1_1_2_mRNA : E6_1_1_2_mRNA
+E6_1_1_20_mRNA : E6_1_1_20_mRNA
+E6_1_1_21_mRNA : E6_1_1_21_mRNA
+E6_1_1_22_mRNA : E6_1_1_22_mRNA
+E6_1_1_3_mRNA : E6_1_1_3_mRNA
+E6_1_1_4_mRNA : E6_1_1_4_mRNA
+E6_1_1_5_mRNA : E6_1_1_5_mRNA
+E6_1_1_6_mRNA : E6_1_1_6_mRNA
+E6_1_1_7_mRNA : E6_1_1_7_mRNA
+E6_1_1_9_mRNA : E6_1_1_9_mRNA
+E6_2_1_54_mRNA : E6_2_1_54_mRNA
+E6_3_1_1_mRNA : E6_3_1_1_mRNA
+E6_3_1_2_mRNA : E6_3_1_2_mRNA
+E6_3_1_20_mRNA : E6_3_1_20_mRNA
+E6_3_1_5_mRNA : E6_3_1_5_mRNA
+E6_3_2_10_mRNA : E6_3_2_10_mRNA
+E6_3_2_12_mRNA : E6_3_2_12_mRNA
+E6_3_2_17_mRNA : E6_3_2_17_mRNA
+E6_3_2_2_mRNA : E6_3_2_2_mRNA
+E6_3_2_3_mRNA : E6_3_2_3_mRNA
+E6_3_2_4_mRNA : E6_3_2_4_mRNA
+E6_3_2_5_mRNA : E6_3_2_5_mRNA
+E6_3_2_6_mRNA : E6_3_2_6_mRNA
+E6_3_2_7_mRNA : E6_3_2_7_mRNA
+E6_3_2_8_mRNA : E6_3_2_8_mRNA
+E6_3_2_9_mRNA : E6_3_2_9_mRNA
+E6_3_3_1_mRNA : E6_3_3_1_mRNA
+E6_3_3_2_mRNA : E6_3_3_2_mRNA
+E6_3_4_13_mRNA : E6_3_4_13_mRNA
+E6_3_4_14_mRNA : E6_3_4_14_mRNA
+E6_3_4_18_mRNA : E6_3_4_18_mRNA
+E6_3_4_19_mRNA : E6_3_4_19_mRNA
+E6_3_4_2_mRNA : E6_3_4_2_mRNA
+E6_3_4_20_mRNA : E6_3_4_20_mRNA
+E6_3_4_21_mRNA : E6_3_4_21_mRNA
+E6_3_4_3_mRNA : E6_3_4_3_mRNA
+E6_3_4_4_mRNA : E6_3_4_4_mRNA
+E6_3_4_5_mRNA : E6_3_4_5_mRNA
+E6_3_5_13_mRNA : E6_3_5_13_mRNA
+E6_3_5_14_mRNA : E6_3_5_14_mRNA
+E6_3_5_2_mRNA : E6_3_5_2_mRNA
+E6_3_5_3_mRNA : E6_3_5_3_mRNA
+E6_3_5_5_mRNA : E6_3_5_5_mRNA
+E6_3_5_7_mRNA : E6_3_5_7_mRNA
+E6_4_1_2_mRNA : E6_4_1_2_mRNA
+E6_5_1_2_mRNA : E6_5_1_2_mRNA
+E7_1_2_2_mRNA : E7_1_2_2_mRNA
+E7_2_2_10_mRNA : E7_2_2_10_mRNA
+E7_2_2_8_mRNA : E7_2_2_8_mRNA
+E7_6_2_11_mRNA : E7_6_2_11_mRNA
+E1_1_1_1 : E1_1_1_1
+E1_2_1_10 : E1_2_1_10
+E1_1_1_100 : E1_1_1_100
+E1_1_1_169 : E1_1_1_169
+E1_1_1_205 : E1_1_1_205
+E1_1_1_25 : E1_1_1_25
+E1_1_1_27 : E1_1_1_27
+E1_1_1_3 : E1_1_1_3
+E1_1_1_303 : E1_1_1_303
+E2_3_1_190 : E2_3_1_190
+E1_1_1_304 : E1_1_1_304
+E2_3_1_191 : E2_3_1_191
+E1_1_1_42 : E1_1_1_42
+E1_1_1_85 : E1_1_1_85
+E1_1_1_86 : E1_1_1_86
+E1_1_1_88 : E1_1_1_88
+E1_1_1_94 : E1_1_1_94
+E1_1_1_95 : E1_1_1_95
+E1_1_1_95 : E1_1_1_95
+E1_11_1_15 : E1_11_1_15
+E1_15_1_1 : E1_15_1_1
+E1_17_1_8 : E1_17_1_8
+E1_17_4_1 : E1_17_4_1
+E1_17_4_2 : E1_17_4_2
+E1_17_99_6 : E1_17_99_6
+E1_18_1_2 : E1_18_1_2
+E1_2_1_11 : E1_2_1_11
+E1_2_1_12 : E1_2_1_12
+E1_2_1_38 : E1_2_1_38
+E1_2_1_41 : E1_2_1_41
+E1_2_1_9 : E1_2_1_9
+E1_3_1_12 : E1_3_1_12
+E1_3_1_15 : E1_3_1_15
+E1_3_1_9 : E1_3_1_9
+E1_3_1_98 : E1_3_1_98
+E1_3_8_1 : E1_3_8_1
+E1_3_98_1 : E1_3_98_1
+E1_4_1_4 : E1_4_1_4
+E1_5_1_2 : E1_5_1_2
+E1_5_1_20 : E1_5_1_20
+E1_5_1_3 : E1_5_1_3
+E1_5_1_5 : E1_5_1_5
+E3_5_4_9 : E3_5_4_9
+E1_6_99_3 : E1_6_99_3
+E1_7_1_13 : E1_7_1_13
+E1_8_1_4 : E1_8_1_4
+E1_8_1_7 : E1_8_1_7
+E1_8_1_9 : E1_8_1_9
+E1_8_4_11 : E1_8_4_11
+E1_8_4_12 : E1_8_4_12
+E1_97_1_4 : E1_97_1_4
+E2_1_1_10 : E2_1_1_10
+E2_1_1_14 : E2_1_1_14
+E2_1_1_170 : E2_1_1_170
+E2_1_1_171 : E2_1_1_171
+E2_1_1_176 : E2_1_1_176
+E2_1_1_177 : E2_1_1_177
+E2_1_1_182 : E2_1_1_182
+E2_1_1_192 : E2_1_1_192
+E2_1_1_193 : E2_1_1_193
+E2_1_1_198 : E2_1_1_198
+E2_1_1_199 : E2_1_1_199
+E2_1_1_207 : E2_1_1_207
+E2_1_1_217 : E2_1_1_217
+E2_1_1_223 : E2_1_1_223
+E2_1_1_264 : E2_1_1_264
+E2_1_1_28 : E2_1_1_28
+E2_1_1_297 : E2_1_1_297
+E2_1_1_33 : E2_1_1_33
+E2_1_1_45 : E2_1_1_45
+E2_1_1_63 : E2_1_1_63
+E2_1_1_72 : E2_1_1_72
+E2_1_1_74 : E2_1_1_74
+E2_1_1_79 : E2_1_1_79
+E2_1_2_1 : E2_1_2_1
+E2_1_2_2 : E2_1_2_2
+E2_1_2_3 : E2_1_2_3
+E3_5_4_10 : E3_5_4_10
+E2_1_2_9 : E2_1_2_9
+E2_1_3_15 : E2_1_3_15
+E2_1_3_2 : E2_1_3_2
+E2_1_3_3 : E2_1_3_3
+E2_1_5_4 : E2_1_5_4
+E2_2_1_1 : E2_2_1_1
+E2_2_1_6 : E2_2_1_6
+E2_3_3_13 : E2_3_3_13
+E2_3_1_180 : E2_3_1_180
+E2_3_1_266 : E2_3_1_266
+E2_3_1_30 : E2_3_1_30
+E2_3_1_31 : E2_3_1_31
+E2_3_1_35 : E2_3_1_35
+E2_3_1_1 : E2_3_1_1
+E2_3_1_39 : E2_3_1_39
+E2_3_1_41 : E2_3_1_41
+E2_3_1_54 : E2_3_1_54
+E2_3_1_8 : E2_3_1_8
+E2_3_1_89 : E2_3_1_89
+E2_3_3_10 : E2_3_3_10
+E2_3_3_16 : E2_3_3_16
+E2_4_1_1 : E2_4_1_1
+E2_4_1_129 : E2_4_1_129
+E3_4_16_4 : E3_4_16_4
+E2_4_1_208 : E2_4_1_208
+E2_4_1_337 : E2_4_1_337
+E2_4_1_227 : E2_4_1_227
+E2_4_1_25 : E2_4_1_25
+E2_4_2_1 : E2_4_2_1
+E2_4_2_10 : E2_4_2_10
+E2_4_2_14 : E2_4_2_14
+E2_4_2_18 : E2_4_2_18
+E2_4_2_29 : E2_4_2_29
+E2_4_2_3 : E2_4_2_3
+E2_4_2_7 : E2_4_2_7
+E2_4_2_8 : E2_4_2_8
+E2_4_2_9 : E2_4_2_9
+E2_4_99_17 : E2_4_99_17
+E2_5_1_10 : E2_5_1_10
+E2_5_1_15 : E2_5_1_15
+E2_5_1_18 : E2_5_1_18
+E2_5_1_19 : E2_5_1_19
+E2_5_1_31 : E2_5_1_31
+E2_5_1_47 : E2_5_1_47
+E4_4_1_1 : E4_4_1_1
+E2_5_1_48 : E2_5_1_48
+E2_5_1_49 : E2_5_1_49
+E2_5_1_6 : E2_5_1_6
+E2_5_1_7 : E2_5_1_7
+E2_5_1_75 : E2_5_1_75
+E2_6_1_1 : E2_6_1_1
+E2_6_1_11 : E2_6_1_11
+E2_6_1_16 : E2_6_1_16
+E2_6_1_42 : E2_6_1_42
+E2_6_1_52 : E2_6_1_52
+E2_6_1_85 : E2_6_1_85
+E4_1_3_38 : E4_1_3_38
+E4_1_3_27 : E4_1_3_27
+E2_7_1_107 : E2_7_1_107
+E2_7_1_11 : E2_7_1_11
+E2_7_1_180 : E2_7_1_180
+E2_7_1_2 : E2_7_1_2
+E2_7_1_59 : E2_7_1_59
+E2_7_1_21 : E2_7_1_21
+E2_7_1_23 : E2_7_1_23
+E2_7_1_24 : E2_7_1_24
+E2_7_1_26 : E2_7_1_26
+E2_7_7_2 : E2_7_7_2
+E2_7_1_31 : E2_7_1_31
+E2_7_1_33 : E2_7_1_33
+E2_7_1_35 : E2_7_1_35
+E2_7_1_36 : E2_7_1_36
+E2_7_1_39 : E2_7_1_39
+E2_7_1_4 : E2_7_1_4
+E2_7_1_40 : E2_7_1_40
+E2_7_1_48 : E2_7_1_48
+E2_7_1_56 : E2_7_1_56
+E2_7_1_6 : E2_7_1_6
+E2_7_1_66 : E2_7_1_66
+E2_7_1_71 : E2_7_1_71
+E2_7_11_1 : E2_7_11_1
+E2_7_13_3 : E2_7_13_3
+E2_7_2_1 : E2_7_2_1
+E2_7_2_11 : E2_7_2_11
+E2_7_2_3 : E2_7_2_3
+E2_7_2_4 : E2_7_2_4
+E2_7_2_8 : E2_7_2_8
+E2_7_3_9 : E2_7_3_9
+E2_7_4_2 : E2_7_4_2
+E2_7_4_22 : E2_7_4_22
+E2_7_4_25 : E2_7_4_25
+E2_7_4_3 : E2_7_4_3
+E2_7_4_6 : E2_7_4_6
+E2_7_4_7 : E2_7_4_7
+E2_7_4_8 : E2_7_4_8
+E2_7_4_9 : E2_7_4_9
+E2_7_6_1 : E2_7_6_1
+E2_7_6_2 : E2_7_6_2
+E2_7_6_3 : E2_7_6_3
+E2_7_6_5 : E2_7_6_5
+E3_1_7_2 : E3_1_7_2
+E2_7_7_1 : E2_7_7_1
+E2_7_7_22 : E2_7_7_22
+E2_7_7_12 : E2_7_7_12
+E2_7_7_23 : E2_7_7_23
+E2_3_1_157 : E2_3_1_157
+E2_7_7_24 : E2_7_7_24
+E2_7_7_3 : E2_7_7_3
+E2_7_7_41 : E2_7_7_41
+E2_7_7_6 : E2_7_7_6
+E2_7_7_7 : E2_7_7_7
+E2_7_7_72 : E2_7_7_72
+E2_7_7_8 : E2_7_7_8
+E3_1_13_1 : E3_1_13_1
+E2_7_7_85 : E2_7_7_85
+E2_7_7_9 : E2_7_7_9
+E2_7_8_13 : E2_7_8_13
+E2_7_8_5 : E2_7_8_5
+E2_7_8_7 : E2_7_8_7
+E2_8_1_13 : E2_8_1_13
+E2_8_1_4 : E2_8_1_4
+E2_8_1_7 : E2_8_1_7
+E3_6_4_12 : E3_6_4_12
+E3_1_1_29 : E3_1_1_29
+E3_1_11_2 : E3_1_11_2
+E3_1_11_6 : E3_1_11_6
+E3_1_11_7 : E3_1_11_7
+E3_1_2_6 : E3_1_2_6
+E3_1_21_3 : E3_1_21_3
+E3_1_21_5 : E3_1_21_5
+E3_1_22_4 : E3_1_22_4
+E3_1_26_11 : E3_1_26_11
+E3_1_26_3 : E3_1_26_3
+E3_1_26_4 : E3_1_26_4
+E3_1_26_5 : E3_1_26_5
+E3_1_26_8 : E3_1_26_8
+E5_2_1_8 : E5_2_1_8
+E3_1_3_15 : E3_1_3_15
+E3_1_3_16 : E3_1_3_16
+E3_1_3_18 : E3_1_3_18
+E3_1_3_25 : E3_1_3_25
+E3_1_3_27 : E3_1_3_27
+E3_1_3_3 : E3_1_3_3
+E3_1_3_48 : E3_1_3_48
+E3_1_3_5 : E3_1_3_5
+E3_1_3_90 : E3_1_3_90
+E3_1_7_1 : E3_1_7_1
+E3_6_1_13 : E3_6_1_13
+E3_2_1_1 : E3_2_1_1
+E3_2_1_11 : E3_2_1_11
+E3_2_1_23 : E3_2_1_23
+E3_2_1_26 : E3_2_1_26
+E3_2_2_20 : E3_2_2_20
+E3_2_2_23 : E3_2_2_23
+E3_2_2_27 : E3_2_2_27
+E3_2_2_31 : E3_2_2_31
+E3_2_2_9 : E3_2_2_9
+E3_3_1_1 : E3_3_1_1
+E3_4_11_18 : E3_4_11_18
+E3_4_11_2 : E3_4_11_2
+E3_4_11_24 : E3_4_11_24
+E3_4_11_4 : E3_4_11_4
+E3_4_13_9 : E3_4_13_9
+E3_4_14_11 : E3_4_14_11
+E3_4_16_5 : E3_4_16_5
+E3_4_21_107 : E3_4_21_107
+E3_4_21_53 : E3_4_21_53
+E3_4_21_89 : E3_4_21_89
+E3_4_21_92 : E3_4_21_92
+E3_4_22_40 : E3_4_22_40
+E3_4_23_36 : E3_4_23_36
+E3_5_1_1 : E3_5_1_1
+E3_5_1_14 : E3_5_1_14
+E3_5_1_19 : E3_5_1_19
+E3_5_1_25 : E3_5_1_25
+E3_5_1_3 : E3_5_1_3
+E3_5_1_4 : E3_5_1_4
+E3_5_1_47 : E3_5_1_47
+E3_5_1_5 : E3_5_1_5
+E3_5_1_88 : E3_5_1_88
+E3_5_2_3 : E3_5_2_3
+E3_5_3_11 : E3_5_3_11
+E3_5_4_12 : E3_5_4_12
+E3_5_4_16 : E3_5_4_16
+E3_5_4_33 : E3_5_4_33
+E3_5_4_4 : E3_5_4_4
+E3_5_4_5 : E3_5_4_5
+E3_5_99_10 : E3_5_99_10
+E3_5_99_6 : E3_5_99_6
+E3_6_1_1 : E3_6_1_1
+E3_6_1_23 : E3_6_1_23
+E3_6_1_27 : E3_6_1_27
+E3_6_1_29 : E3_6_1_29
+E3_6_1_55 : E3_6_1_55
+E3_6_1_7 : E3_6_1_7
+E3_6_166 : E3_6_166
+E3_6_4_13 : E3_6_4_13
+E3_8_1_2 : E3_8_1_2
+E4_1_1_20 : E4_1_1_20
+E4_1_1_23 : E4_1_1_23
+E4_1_1_31 : E4_1_1_31
+E4_1_1_33 : E4_1_1_33
+E4_1_1_36 : E4_1_1_36
+E4_1_1_48 : E4_1_1_48
+E4_1_1_5 : E4_1_1_5
+E4_1_2_13 : E4_1_2_13
+E4_1_2_25 : E4_1_2_25
+E4_1_99_3 : E4_1_99_3
+E4_2_1_1 : E4_2_1_1
+E4_2_1_10 : E4_2_1_10
+E4_2_1_11 : E4_2_1_11
+E4_2_1_136 : E4_2_1_136
+E4_2_1_20 : E4_2_1_20
+E4_2_1_21 : E4_2_1_21
+E4_2_1_3 : E4_2_1_3
+E4_2_1_33 : E4_2_1_33
+E4_2_1_34 : E4_2_1_34
+E4_2_1_46 : E4_2_1_46
+E4_2_1_49 : E4_2_1_49
+E4_2_1_51 : E4_2_1_51
+E4_2_1_59 : E4_2_1_59
+E4_2_1_70 : E4_2_1_70
+E4_2_1_9 : E4_2_1_9
+E4_2_3_1 : E4_2_3_1
+E4_2_3_4 : E4_2_3_4
+E4_2_3_5 : E4_2_3_5
+E4_2_99_18 : E4_2_99_18
+E4_3_1_17 : E4_3_1_17
+E4_3_1_18 : E4_3_1_18
+E4_3_1_19 : E4_3_1_19
+E4_3_2_1 : E4_3_2_1
+E4_3_2_2 : E4_3_2_2
+E4_3_3_7 : E4_3_3_7
+E4_3_99_3 : E4_3_99_3
+E4_4_1_2 : E4_4_1_2
+E4_4_1_21 : E4_4_1_21
+E4_4_1_5 : E4_4_1_5
+E4_4_1_8 : E4_4_1_8
+E4_99_1_1 : E4_99_1_1
+E5_1_1_1 : E5_1_1_1
+E5_1_1_3 : E5_1_1_3
+E5_1_3_1 : E5_1_3_1
+E5_1_3_2 : E5_1_3_2
+E5_1_3_7 : E5_1_3_7
+E5_1_3_3_ : E5_1_3_3_
+E5_3_1_1 : E5_3_1_1
+E5_3_1_24 : E5_3_1_24
+E5_3_1_6 : E5_3_1_6
+E5_3_1_8 : E5_3_1_8
+E5_3_1_9 : E5_3_1_9
+E5_3_3_14 : E5_3_3_14
+E5_3_3_2 : E5_3_3_2
+E5_4_2_10 : E5_4_2_10
+E5_4_2_2 : E5_4_2_2
+E5_4_2_7 : E5_4_2_7
+E5_4_99_12 : E5_4_99_12
+E5_4_99_18 : E5_4_99_18
+E5_4_99_25 : E5_4_99_25
+E5_4_99_5 : E5_4_99_5
+E5_4_99_9 : E5_4_99_9
+E5_6_2_1 : E5_6_2_1
+E5_6_2_2 : E5_6_2_2
+E6_1_1_1 : E6_1_1_1
+E6_1_1_10 : E6_1_1_10
+E6_1_1_11 : E6_1_1_11
+E6_1_1_12 : E6_1_1_12
+E6_1_1_14 : E6_1_1_14
+E6_1_1_15 : E6_1_1_15
+E6_1_1_16 : E6_1_1_16
+E6_1_1_17 : E6_1_1_17
+E6_1_1_24 : E6_1_1_24
+E6_1_1_19 : E6_1_1_19
+E6_1_1_2 : E6_1_1_2
+E6_1_1_20 : E6_1_1_20
+E6_1_1_21 : E6_1_1_21
+E6_1_1_22 : E6_1_1_22
+E6_1_1_3 : E6_1_1_3
+E6_1_1_4 : E6_1_1_4
+E6_1_1_5 : E6_1_1_5
+E6_1_1_6 : E6_1_1_6
+E6_1_1_7 : E6_1_1_7
+E6_1_1_9 : E6_1_1_9
+E6_2_1_54 : E6_2_1_54
+E6_3_1_1 : E6_3_1_1
+E6_3_1_2 : E6_3_1_2
+E6_3_1_20 : E6_3_1_20
+E6_3_1_5 : E6_3_1_5
+E6_3_2_10 : E6_3_2_10
+E6_3_2_12 : E6_3_2_12
+E6_3_2_17 : E6_3_2_17
+E6_3_2_2 : E6_3_2_2
+E6_3_2_3 : E6_3_2_3
+E6_3_2_4 : E6_3_2_4
+E6_3_2_5 : E6_3_2_5
+E6_3_2_6 : E6_3_2_6
+E6_3_2_7 : E6_3_2_7
+E6_3_2_8 : E6_3_2_8
+E6_3_2_9 : E6_3_2_9
+E6_3_3_1 : E6_3_3_1
+E6_3_3_2 : E6_3_3_2
+E6_3_4_13 : E6_3_4_13
+E6_3_4_14 : E6_3_4_14
+E6_3_4_18 : E6_3_4_18
+E6_3_4_19 : E6_3_4_19
+E6_3_4_2 : E6_3_4_2
+E6_3_4_20 : E6_3_4_20
+E6_3_4_21 : E6_3_4_21
+E6_3_4_3 : E6_3_4_3
+E6_3_4_4 : E6_3_4_4
+E6_3_4_5 : E6_3_4_5
+E6_3_5_13 : E6_3_5_13
+E6_3_5_14 : E6_3_5_14
+E6_3_5_2 : E6_3_5_2
+E6_3_5_3 : E6_3_5_3
+E6_3_5_5 : E6_3_5_5
+E6_3_5_7 : E6_3_5_7
+E6_4_1_2 : E6_4_1_2
+E6_5_1_2 : E6_5_1_2
+E7_1_2_2 : E7_1_2_2
+E7_2_2_10 : E7_2_2_10
+E7_2_2_8 : E7_2_2_8
+E7_6_2_11 : E7_6_2_11
+ 
+[Initials]
+C00001:1000
+C00002:1000
+C00003:1
+C00004:1
+C00006:1
+C00008:1
+C00009:1
+C00010:1
+C00011:1
+C00013:1
+C00014:1
+C00016:1
+C00017:1
+C00019:1
+C00020:1
+C00021:1
+C00022:1
+C00024:1
+C00025:1000
+C00026:1
+C00028:1
+C00029:1
+C00031:1000
+C00033:1
+C00035:1
+C00036:1
+C00037:1000
+C00039:1
+C00041:1000
+C00043:1
+C00044:1
+C00046:1
+C00047:1000
+C00049:1000
+C00051:1000
+C00052:1
+C00055:1
+C00058:1
+C00061:1
+C00062:1
+C00063:1
+C00064:1000
+C00065:1000
+C00073:1000
+C00074:1
+C00075:1
+C00077:1
+C00078:1
+C00079:1
+C00080:1
+C00082:1
+C00083:1
+C00084:1
+C00085:1
+C00093:1
+C00095:1
+C00097:1000
+C00101:1
+C00103:1
+C00105:1
+C00106:1
+C00117:1
+C00118:1
+C00122:1
+C00123:1
+C00129:1
+C00130:1
+C00133:1000
+C00135:1
+C00138:1
+C00140:1
+C00143:1
+C00144:1
+C00148:1000
+C00152:1
+C00153:1
+C00155:1
+C00158:1
+C00169:1
+C00173:1
+C00179:1
+C00183:1
+C00186:1
+C00188:1
+C00197:1
+C00199:1
+C00201:1
+C00212:1
+C00214:1
+C00217:1
+C00226:1
+C00229:1
+C00233:1
+C00234:1
+C00235:1
+C00239:1
+C00240:1
+C00243:1
+C00250:1
+C00251:1
+C00254:1
+C00255:1
+C00258:1
+C00263:1
+C00267:1
+C00269:1
+C00275:1
+C00283:1
+C00288:1
+C00290:1
+C00301:1
+C00311:1
+C00327:1
+C00337:1
+C00341:1
+C00342:1
+C00343:1
+C00352:1
+C00354:1
+C00356:1
+C00357:1
+C00364:1
+C00365:1
+C00369:1
+C00372:1
+C00378:1
+C00407:1
+C00409:1
+C00416:1
+C00418:1
+C00437:1
+C00440:1
+C00441:1
+C00445:1
+C00446:1
+C00447:1
+C00454:1
+C00455:1
+C00459:1
+C00460:1
+C00466:1
+C00475:1
+C00493:1
+C00521:1
+C00562:1
+C00568:1
+C00615:1
+C00620:1
+C00624:1
+C00631:1
+C00636:1
+C00640:1
+C00641:1
+C00668:1
+C00669:1
+C00677:1
+C00680:1
+C00692:1
+C00704:1
+C00718:1
+C00740:1
+C00741:1
+C00787:1
+C00810:1
+C00821:1
+C00842:1
+C00857:1
+C00864:1
+C00868:1
+C00900:1
+C00921:1
+C00944:1
+C00979:1
+C00984:1
+C00988:1
+C00993:1
+C01005:1
+C01050:1
+C01077:1
+C01094:1
+C01100:1
+C01102:1
+C01103:1
+C01107:1
+C01118:1
+C01134:1
+C01143:1
+C01165:1
+C01167:1
+C01185:1
+C01209:1
+C01212:1
+C01228:1
+C01229:1
+C01250:1
+C01269:1
+C01271:1
+C01300:1
+C01302:1
+C01322:1
+C01353:1
+C01419:1
+C01635:1
+C01636:1
+C01637:1
+C01638:1
+C01639:1
+C01640:1
+C01641:1
+C01642:1
+C01643:1
+C01644:1
+C01645:1
+C01646:1
+C01647:1
+C01648:1
+C01649:1
+C01650:1
+C01651:1
+C01652:1
+C01653:1
+C01764:1
+C01977:1
+C01978:1
+C02103:1
+C02128:1
+C02133:1
+C02211:1
+C02282:1
+C02291:1
+C02342:1
+C02430:1
+C02504:1
+C02520:1
+C02583:1
+C02614:1
+C02735:1
+C02743:1
+C02850:1
+C02995:1
+C03023:1
+C03090:1
+C03103:1
+C03172:1
+C03175:1
+C03373:1
+C03406:1
+C03451:1
+C03492:1
+C03539:1
+C03541:1
+C03620:1
+C03680:1
+C03688:1
+C03794:1
+C03798:1
+C03803:1
+C03838:1
+C03880:1
+C03892:1
+C03899:1
+C03972:1
+C04039:1
+C04131:1
+C04232:1
+C04250:1
+C04253:1
+C04272:1
+C04302:1
+C04352:1
+C04376:1
+C04390:1
+C04419:1
+C04489:1
+C04501:1
+C04556:1
+C04574:1
+C04640:1
+C04677:1
+C04691:1
+C04702:1
+C04751:1
+C04807:1
+C04851:1
+C04856:1
+C04874:1
+C05196:1
+C05197:1
+C05345:1
+C05382:1
+C05754:1
+C05892:1
+C06010:1
+C06156:1
+C06197:1
+C06250:1
+C06364:1
+C11355:1
+C11439:1
+C15585:1
+C15586:1
+C15667:1
+C15811:1
+C15812:1
+C16240:1
+C16241:1
+C16675:1
+C16832:1
+C17324:1
+C17556:1
+C17558:1
+C17627:1
+C19722:1
+C19803:1
+C19967:1
+C20239:1
+C20248:1
+C20446:1
+C20648:1
+C20675:1
+C20905:1
+C22409:1
+E1_1_1_1_mRNA : 0
+E1_2_1_10_mRNA : 0
+E1_1_1_100_mRNA : 0
+E1_1_1_169_mRNA : 0
+E1_1_1_205_mRNA : 0
+E1_1_1_25_mRNA : 0
+E1_1_1_27_mRNA : 0
+E1_1_1_3_mRNA : 0
+E1_1_1_303_mRNA : 0
+E2_3_1_190_mRNA : 0
+E1_1_1_304_mRNA : 0
+E2_3_1_191_mRNA : 0
+E1_1_1_42_mRNA : 0
+E1_1_1_85_mRNA : 0
+E1_1_1_86_mRNA : 0
+E1_1_1_88_mRNA : 0
+E1_1_1_94_mRNA : 0
+E1_1_1_95_mRNA : 0
+E1_1_1_95_mRNA : 0
+E1_11_1_15_mRNA : 0
+E1_15_1_1_mRNA : 0
+E1_17_1_8_mRNA : 0
+E1_17_4_1_mRNA : 0
+E1_17_4_2_mRNA : 0
+E1_17_99_6_mRNA : 0
+E1_18_1_2_mRNA : 0
+E1_2_1_11_mRNA : 0
+E1_2_1_12_mRNA : 0
+E1_2_1_38_mRNA : 0
+E1_2_1_41_mRNA : 0
+E1_2_1_9_mRNA : 0
+E1_3_1_12_mRNA : 0
+E1_3_1_15_mRNA : 0
+E1_3_1_9_mRNA : 0
+E1_3_1_98_mRNA : 0
+E1_3_8_1_mRNA : 0
+E1_3_98_1_mRNA : 0
+E1_4_1_4_mRNA : 0
+E1_5_1_2_mRNA : 0
+E1_5_1_20_mRNA : 0
+E1_5_1_3_mRNA : 0
+E1_5_1_5_mRNA : 0
+E3_5_4_9_mRNA : 0
+E1_6_99_3_mRNA : 0
+E1_7_1_13_mRNA : 0
+E1_8_1_4_mRNA : 0
+E1_8_1_7_mRNA : 0
+E1_8_1_9_mRNA : 0
+E1_8_4_11_mRNA : 0
+E1_8_4_12_mRNA : 0
+E1_97_1_4_mRNA : 0
+E2_1_1_10_mRNA : 0
+E2_1_1_14_mRNA : 0
+E2_1_1_170_mRNA : 0
+E2_1_1_171_mRNA : 0
+E2_1_1_176_mRNA : 0
+E2_1_1_177_mRNA : 0
+E2_1_1_182_mRNA : 0
+E2_1_1_192_mRNA : 0
+E2_1_1_193_mRNA : 0
+E2_1_1_198_mRNA : 0
+E2_1_1_199_mRNA : 0
+E2_1_1_207_mRNA : 0
+E2_1_1_217_mRNA : 0
+E2_1_1_223_mRNA : 0
+E2_1_1_264_mRNA : 0
+E2_1_1_28_mRNA : 0
+E2_1_1_297_mRNA : 0
+E2_1_1_33_mRNA : 0
+E2_1_1_45_mRNA : 0
+E2_1_1_63_mRNA : 0
+E2_1_1_72_mRNA : 0
+E2_1_1_74_mRNA : 0
+E2_1_1_79_mRNA : 0
+E2_1_2_1_mRNA : 0
+E2_1_2_2_mRNA : 0
+E2_1_2_3_mRNA : 0
+E3_5_4_10_mRNA : 0
+E2_1_2_9_mRNA : 0
+E2_1_3_15_mRNA : 0
+E2_1_3_2_mRNA : 0
+E2_1_3_3_mRNA : 0
+E2_1_5_4_mRNA : 0
+E2_2_1_1_mRNA : 0
+E2_2_1_6_mRNA : 0
+E2_3_3_13_mRNA : 0
+E2_3_1_180_mRNA : 0
+E2_3_1_266_mRNA : 0
+E2_3_1_30_mRNA : 0
+E2_3_1_31_mRNA : 0
+E2_3_1_35_mRNA : 0
+E2_3_1_1_mRNA : 0
+E2_3_1_39_mRNA : 0
+E2_3_1_41_mRNA : 0
+E2_3_1_54_mRNA : 0
+E2_3_1_8_mRNA : 0
+E2_3_1_89_mRNA : 0
+E2_3_3_10_mRNA : 0
+E2_3_3_16_mRNA : 0
+E2_4_1_1_mRNA : 0
+E2_4_1_129_mRNA : 0
+E3_4_16_4_mRNA : 0
+E2_4_1_208_mRNA : 0
+E2_4_1_337_mRNA : 0
+E2_4_1_227_mRNA : 0
+E2_4_1_25_mRNA : 0
+E2_4_2_1_mRNA : 0
+E2_4_2_10_mRNA : 0
+E2_4_2_14_mRNA : 0
+E2_4_2_18_mRNA : 0
+E2_4_2_29_mRNA : 0
+E2_4_2_3_mRNA : 0
+E2_4_2_7_mRNA : 0
+E2_4_2_8_mRNA : 0
+E2_4_2_9_mRNA : 0
+E2_4_99_17_mRNA : 0
+E2_5_1_10_mRNA : 0
+E2_5_1_15_mRNA : 0
+E2_5_1_18_mRNA : 0
+E2_5_1_19_mRNA : 0
+E2_5_1_31_mRNA : 0
+E2_5_1_47_mRNA : 0
+E4_4_1_1_mRNA : 0
+E2_5_1_48_mRNA : 0
+E2_5_1_49_mRNA : 0
+E2_5_1_6_mRNA : 0
+E2_5_1_7_mRNA : 0
+E2_5_1_75_mRNA : 0
+E2_6_1_1_mRNA : 0
+E2_6_1_11_mRNA : 0
+E2_6_1_16_mRNA : 0
+E2_6_1_42_mRNA : 0
+E2_6_1_52_mRNA : 0
+E2_6_1_85_mRNA : 0
+E4_1_3_38_mRNA : 0
+E4_1_3_27_mRNA : 0
+E2_7_1_107_mRNA : 0
+E2_7_1_11_mRNA : 0
+E2_7_1_180_mRNA : 0
+E2_7_1_2_mRNA : 0
+E2_7_1_59_mRNA : 0
+E2_7_1_21_mRNA : 0
+E2_7_1_23_mRNA : 0
+E2_7_1_24_mRNA : 0
+E2_7_1_26_mRNA : 0
+E2_7_7_2_mRNA : 0
+E2_7_1_31_mRNA : 0
+E2_7_1_33_mRNA : 0
+E2_7_1_35_mRNA : 0
+E2_7_1_36_mRNA : 0
+E2_7_1_39_mRNA : 0
+E2_7_1_4_mRNA : 0
+E2_7_1_40_mRNA : 0
+E2_7_1_48_mRNA : 0
+E2_7_1_56_mRNA : 0
+E2_7_1_6_mRNA : 0
+E2_7_1_66_mRNA : 0
+E2_7_1_71_mRNA : 0
+E2_7_11_1_mRNA : 0
+E2_7_13_3_mRNA : 0
+E2_7_2_1_mRNA : 0
+E2_7_2_11_mRNA : 0
+E2_7_2_3_mRNA : 0
+E2_7_2_4_mRNA : 0
+E2_7_2_8_mRNA : 0
+E2_7_3_9_mRNA : 0
+E2_7_4_2_mRNA : 0
+E2_7_4_22_mRNA : 0
+E2_7_4_25_mRNA : 0
+E2_7_4_3_mRNA : 0
+E2_7_4_6_mRNA : 0
+E2_7_4_7_mRNA : 0
+E2_7_4_8_mRNA : 0
+E2_7_4_9_mRNA : 0
+E2_7_6_1_mRNA : 0
+E2_7_6_2_mRNA : 0
+E2_7_6_3_mRNA : 0
+E2_7_6_5_mRNA : 0
+E3_1_7_2_mRNA : 0
+E2_7_7_1_mRNA : 0
+E2_7_7_22_mRNA : 0
+E2_7_7_12_mRNA : 0
+E2_7_7_23_mRNA : 0
+E2_3_1_157_mRNA : 0
+E2_7_7_24_mRNA : 0
+E2_7_7_3_mRNA : 0
+E2_7_7_41_mRNA : 0
+E2_7_7_6_mRNA : 0
+E2_7_7_7_mRNA : 0
+E2_7_7_72_mRNA : 0
+E2_7_7_8_mRNA : 0
+E3_1_13_1_mRNA : 0
+E2_7_7_85_mRNA : 0
+E2_7_7_9_mRNA : 0
+E2_7_8_13_mRNA : 0
+E2_7_8_5_mRNA : 0
+E2_7_8_7_mRNA : 0
+E2_8_1_13_mRNA : 0
+E2_8_1_4_mRNA : 0
+E2_8_1_7_mRNA : 0
+E3_6_4_12_mRNA : 0
+E3_1_1_29_mRNA : 0
+E3_1_11_2_mRNA : 0
+E3_1_11_6_mRNA : 0
+E3_1_11_7_mRNA : 0
+E3_1_2_6_mRNA : 0
+E3_1_21_3_mRNA : 0
+E3_1_21_5_mRNA : 0
+E3_1_22_4_mRNA : 0
+E3_1_26_11_mRNA : 0
+E3_1_26_3_mRNA : 0
+E3_1_26_4_mRNA : 0
+E3_1_26_5_mRNA : 0
+E3_1_26_8_mRNA : 0
+E5_2_1_8_mRNA : 0
+E3_1_3_15_mRNA : 0
+E3_1_3_16_mRNA : 0
+E3_1_3_18_mRNA : 0
+E3_1_3_25_mRNA : 0
+E3_1_3_27_mRNA : 0
+E3_1_3_3_mRNA : 0
+E3_1_3_48_mRNA : 0
+E3_1_3_5_mRNA : 0
+E3_1_3_90_mRNA : 0
+E3_1_7_1_mRNA : 0
+E3_6_1_13_mRNA : 0
+E3_2_1_1_mRNA : 0
+E3_2_1_11_mRNA : 0
+E3_2_1_23_mRNA : 0
+E3_2_1_26_mRNA : 0
+E3_2_2_20_mRNA : 0
+E3_2_2_23_mRNA : 0
+E3_2_2_27_mRNA : 0
+E3_2_2_31_mRNA : 0
+E3_2_2_9_mRNA : 0
+E3_3_1_1_mRNA : 0
+E3_4_11_18_mRNA : 0
+E3_4_11_2_mRNA : 0
+E3_4_11_24_mRNA : 0
+E3_4_11_4_mRNA : 0
+E3_4_13_9_mRNA : 0
+E3_4_14_11_mRNA : 0
+E3_4_16_5_mRNA : 0
+E3_4_21_107_mRNA : 0
+E3_4_21_53_mRNA : 0
+E3_4_21_89_mRNA : 0
+E3_4_21_92_mRNA : 0
+E3_4_22_40_mRNA : 0
+E3_4_23_36_mRNA : 0
+E3_5_1_1_mRNA : 0
+E3_5_1_14_mRNA : 0
+E3_5_1_19_mRNA : 0
+E3_5_1_25_mRNA : 0
+E3_5_1_3_mRNA : 0
+E3_5_1_4_mRNA : 0
+E3_5_1_47_mRNA : 0
+E3_5_1_5_mRNA : 0
+E3_5_1_88_mRNA : 0
+E3_5_2_3_mRNA : 0
+E3_5_3_11_mRNA : 0
+E3_5_4_12_mRNA : 0
+E3_5_4_16_mRNA : 0
+E3_5_4_33_mRNA : 0
+E3_5_4_4_mRNA : 0
+E3_5_4_5_mRNA : 0
+E3_5_99_10_mRNA : 0
+E3_5_99_6_mRNA : 0
+E3_6_1_1_mRNA : 0
+E3_6_1_23_mRNA : 0
+E3_6_1_27_mRNA : 0
+E3_6_1_29_mRNA : 0
+E3_6_1_55_mRNA : 0
+E3_6_1_7_mRNA : 0
+E3_6_166_mRNA : 0
+E3_6_4_13_mRNA : 0
+E3_8_1_2_mRNA : 0
+E4_1_1_20_mRNA : 0
+E4_1_1_23_mRNA : 0
+E4_1_1_31_mRNA : 0
+E4_1_1_33_mRNA : 0
+E4_1_1_36_mRNA : 0
+E4_1_1_48_mRNA : 0
+E4_1_1_5_mRNA : 0
+E4_1_2_13_mRNA : 0
+E4_1_2_25_mRNA : 0
+E4_1_99_3_mRNA : 0
+E4_2_1_1_mRNA : 0
+E4_2_1_10_mRNA : 0
+E4_2_1_11_mRNA : 0
+E4_2_1_136_mRNA : 0
+E4_2_1_20_mRNA : 0
+E4_2_1_21_mRNA : 0
+E4_2_1_3_mRNA : 0
+E4_2_1_33_mRNA : 0
+E4_2_1_34_mRNA : 0
+E4_2_1_46_mRNA : 0
+E4_2_1_49_mRNA : 0
+E4_2_1_51_mRNA : 0
+E4_2_1_59_mRNA : 0
+E4_2_1_70_mRNA : 0
+E4_2_1_9_mRNA : 0
+E4_2_3_1_mRNA : 0
+E4_2_3_4_mRNA : 0
+E4_2_3_5_mRNA : 0
+E4_2_99_18_mRNA : 0
+E4_3_1_17_mRNA : 0
+E4_3_1_18_mRNA : 0
+E4_3_1_19_mRNA : 0
+E4_3_2_1_mRNA : 0
+E4_3_2_2_mRNA : 0
+E4_3_3_7_mRNA : 0
+E4_3_99_3_mRNA : 0
+E4_4_1_2_mRNA : 0
+E4_4_1_21_mRNA : 0
+E4_4_1_5_mRNA : 0
+E4_4_1_8_mRNA : 0
+E4_99_1_1_mRNA : 0
+E5_1_1_1_mRNA : 0
+E5_1_1_3_mRNA : 0
+E5_1_3_1_mRNA : 0
+E5_1_3_2_mRNA : 0
+E5_1_3_7_mRNA : 0
+E5_1_3_3__mRNA : 0
+E5_3_1_1_mRNA : 0
+E5_3_1_24_mRNA : 0
+E5_3_1_6_mRNA : 0
+E5_3_1_8_mRNA : 0
+E5_3_1_9_mRNA : 0
+E5_3_3_14_mRNA : 0
+E5_3_3_2_mRNA : 0
+E5_4_2_10_mRNA : 0
+E5_4_2_2_mRNA : 0
+E5_4_2_7_mRNA : 0
+E5_4_99_12_mRNA : 0
+E5_4_99_18_mRNA : 0
+E5_4_99_25_mRNA : 0
+E5_4_99_5_mRNA : 0
+E5_4_99_9_mRNA : 0
+E5_6_2_1_mRNA : 0
+E5_6_2_2_mRNA : 0
+E6_1_1_1_mRNA : 0
+E6_1_1_10_mRNA : 0
+E6_1_1_11_mRNA : 0
+E6_1_1_12_mRNA : 0
+E6_1_1_14_mRNA : 0
+E6_1_1_15_mRNA : 0
+E6_1_1_16_mRNA : 0
+E6_1_1_17_mRNA : 0
+E6_1_1_24_mRNA : 0
+E6_1_1_19_mRNA : 0
+E6_1_1_2_mRNA : 0
+E6_1_1_20_mRNA : 0
+E6_1_1_21_mRNA : 0
+E6_1_1_22_mRNA : 0
+E6_1_1_3_mRNA : 0
+E6_1_1_4_mRNA : 0
+E6_1_1_5_mRNA : 0
+E6_1_1_6_mRNA : 0
+E6_1_1_7_mRNA : 0
+E6_1_1_9_mRNA : 0
+E6_2_1_54_mRNA : 0
+E6_3_1_1_mRNA : 0
+E6_3_1_2_mRNA : 0
+E6_3_1_20_mRNA : 0
+E6_3_1_5_mRNA : 0
+E6_3_2_10_mRNA : 0
+E6_3_2_12_mRNA : 0
+E6_3_2_17_mRNA : 0
+E6_3_2_2_mRNA : 0
+E6_3_2_3_mRNA : 0
+E6_3_2_4_mRNA : 0
+E6_3_2_5_mRNA : 0
+E6_3_2_6_mRNA : 0
+E6_3_2_7_mRNA : 0
+E6_3_2_8_mRNA : 0
+E6_3_2_9_mRNA : 0
+E6_3_3_1_mRNA : 0
+E6_3_3_2_mRNA : 0
+E6_3_4_13_mRNA : 0
+E6_3_4_14_mRNA : 0
+E6_3_4_18_mRNA : 0
+E6_3_4_19_mRNA : 0
+E6_3_4_2_mRNA : 0
+E6_3_4_20_mRNA : 0
+E6_3_4_21_mRNA : 0
+E6_3_4_3_mRNA : 0
+E6_3_4_4_mRNA : 0
+E6_3_4_5_mRNA : 0
+E6_3_5_13_mRNA : 0
+E6_3_5_14_mRNA : 0
+E6_3_5_2_mRNA : 0
+E6_3_5_3_mRNA : 0
+E6_3_5_5_mRNA : 0
+E6_3_5_7_mRNA : 0
+E6_4_1_2_mRNA : 0
+E6_5_1_2_mRNA : 0
+E7_1_2_2_mRNA : 0
+E7_2_2_10_mRNA : 0
+E7_2_2_8_mRNA : 0
+E7_6_2_11_mRNA : 0
+E1_1_1_1 : 0
+E1_2_1_10 : 0
+E1_1_1_100 : 0
+E1_1_1_169 : 0
+E1_1_1_205 : 0
+E1_1_1_25 : 0
+E1_1_1_27 : 0
+E1_1_1_3 : 0
+E1_1_1_303 : 0
+E2_3_1_190 : 0
+E1_1_1_304 : 0
+E2_3_1_191 : 0
+E1_1_1_42 : 0
+E1_1_1_85 : 0
+E1_1_1_86 : 0
+E1_1_1_88 : 0
+E1_1_1_94 : 0
+E1_1_1_95 : 0
+E1_1_1_95 : 0
+E1_11_1_15 : 0
+E1_15_1_1 : 0
+E1_17_1_8 : 0
+E1_17_4_1 : 0
+E1_17_4_2 : 0
+E1_17_99_6 : 0
+E1_18_1_2 : 0
+E1_2_1_11 : 0
+E1_2_1_12 : 0
+E1_2_1_38 : 0
+E1_2_1_41 : 0
+E1_2_1_9 : 0
+E1_3_1_12 : 0
+E1_3_1_15 : 0
+E1_3_1_9 : 0
+E1_3_1_98 : 0
+E1_3_8_1 : 0
+E1_3_98_1 : 0
+E1_4_1_4 : 0
+E1_5_1_2 : 0
+E1_5_1_20 : 0
+E1_5_1_3 : 0
+E1_5_1_5 : 0
+E3_5_4_9 : 0
+E1_6_99_3 : 0
+E1_7_1_13 : 0
+E1_8_1_4 : 0
+E1_8_1_7 : 0
+E1_8_1_9 : 0
+E1_8_4_11 : 0
+E1_8_4_12 : 0
+E1_97_1_4 : 0
+E2_1_1_10 : 0
+E2_1_1_14 : 0
+E2_1_1_170 : 0
+E2_1_1_171 : 0
+E2_1_1_176 : 0
+E2_1_1_177 : 0
+E2_1_1_182 : 0
+E2_1_1_192 : 0
+E2_1_1_193 : 0
+E2_1_1_198 : 0
+E2_1_1_199 : 0
+E2_1_1_207 : 0
+E2_1_1_217 : 0
+E2_1_1_223 : 0
+E2_1_1_264 : 0
+E2_1_1_28 : 0
+E2_1_1_297 : 0
+E2_1_1_33 : 0
+E2_1_1_45 : 0
+E2_1_1_63 : 0
+E2_1_1_72 : 0
+E2_1_1_74 : 0
+E2_1_1_79 : 0
+E2_1_2_1 : 0
+E2_1_2_2 : 0
+E2_1_2_3 : 0
+E3_5_4_10 : 0
+E2_1_2_9 : 0
+E2_1_3_15 : 0
+E2_1_3_2 : 0
+E2_1_3_3 : 0
+E2_1_5_4 : 0
+E2_2_1_1 : 0
+E2_2_1_6 : 0
+E2_3_3_13 : 0
+E2_3_1_180 : 0
+E2_3_1_266 : 0
+E2_3_1_30 : 0
+E2_3_1_31 : 0
+E2_3_1_35 : 0
+E2_3_1_1 : 0
+E2_3_1_39 : 0
+E2_3_1_41 : 0
+E2_3_1_54 : 0
+E2_3_1_8 : 0
+E2_3_1_89 : 0
+E2_3_3_10 : 0
+E2_3_3_16 : 0
+E2_4_1_1 : 0
+E2_4_1_129 : 0
+E3_4_16_4 : 0
+E2_4_1_208 : 0
+E2_4_1_337 : 0
+E2_4_1_227 : 0
+E2_4_1_25 : 0
+E2_4_2_1 : 0
+E2_4_2_10 : 0
+E2_4_2_14 : 0
+E2_4_2_18 : 0
+E2_4_2_29 : 0
+E2_4_2_3 : 0
+E2_4_2_7 : 0
+E2_4_2_8 : 0
+E2_4_2_9 : 0
+E2_4_99_17 : 0
+E2_5_1_10 : 0
+E2_5_1_15 : 0
+E2_5_1_18 : 0
+E2_5_1_19 : 0
+E2_5_1_31 : 0
+E2_5_1_47 : 0
+E4_4_1_1 : 0
+E2_5_1_48 : 0
+E2_5_1_49 : 0
+E2_5_1_6 : 0
+E2_5_1_7 : 0
+E2_5_1_75 : 0
+E2_6_1_1 : 0
+E2_6_1_11 : 0
+E2_6_1_16 : 0
+E2_6_1_42 : 0
+E2_6_1_52 : 0
+E2_6_1_85 : 0
+E4_1_3_38 : 0
+E4_1_3_27 : 0
+E2_7_1_107 : 0
+E2_7_1_11 : 0
+E2_7_1_180 : 0
+E2_7_1_2 : 0
+E2_7_1_59 : 0
+E2_7_1_21 : 0
+E2_7_1_23 : 0
+E2_7_1_24 : 0
+E2_7_1_26 : 0
+E2_7_7_2 : 0
+E2_7_1_31 : 0
+E2_7_1_33 : 0
+E2_7_1_35 : 0
+E2_7_1_36 : 0
+E2_7_1_39 : 0
+E2_7_1_4 : 0
+E2_7_1_40 : 0
+E2_7_1_48 : 0
+E2_7_1_56 : 0
+E2_7_1_6 : 0
+E2_7_1_66 : 0
+E2_7_1_71 : 0
+E2_7_11_1 : 0
+E2_7_13_3 : 0
+E2_7_2_1 : 0
+E2_7_2_11 : 0
+E2_7_2_3 : 0
+E2_7_2_4 : 0
+E2_7_2_8 : 0
+E2_7_3_9 : 0
+E2_7_4_2 : 0
+E2_7_4_22 : 0
+E2_7_4_25 : 0
+E2_7_4_3 : 0
+E2_7_4_6 : 0
+E2_7_4_7 : 0
+E2_7_4_8 : 0
+E2_7_4_9 : 0
+E2_7_6_1 : 0
+E2_7_6_2 : 0
+E2_7_6_3 : 0
+E2_7_6_5 : 0
+E3_1_7_2 : 0
+E2_7_7_1 : 0
+E2_7_7_22 : 0
+E2_7_7_12 : 0
+E2_7_7_23 : 0
+E2_3_1_157 : 0
+E2_7_7_24 : 0
+E2_7_7_3 : 0
+E2_7_7_41 : 0
+E2_7_7_6 : 0
+E2_7_7_7 : 0
+E2_7_7_72 : 0
+E2_7_7_8 : 0
+E3_1_13_1 : 0
+E2_7_7_85 : 0
+E2_7_7_9 : 0
+E2_7_8_13 : 0
+E2_7_8_5 : 0
+E2_7_8_7 : 0
+E2_8_1_13 : 0
+E2_8_1_4 : 0
+E2_8_1_7 : 0
+E3_6_4_12 : 0
+E3_1_1_29 : 0
+E3_1_11_2 : 0
+E3_1_11_6 : 0
+E3_1_11_7 : 0
+E3_1_2_6 : 0
+E3_1_21_3 : 0
+E3_1_21_5 : 0
+E3_1_22_4 : 0
+E3_1_26_11 : 0
+E3_1_26_3 : 0
+E3_1_26_4 : 0
+E3_1_26_5 : 0
+E3_1_26_8 : 0
+E5_2_1_8 : 0
+E3_1_3_15 : 0
+E3_1_3_16 : 0
+E3_1_3_18 : 0
+E3_1_3_25 : 0
+E3_1_3_27 : 0
+E3_1_3_3 : 0
+E3_1_3_48 : 0
+E3_1_3_5 : 0
+E3_1_3_90 : 0
+E3_1_7_1 : 0
+E3_6_1_13 : 0
+E3_2_1_1 : 0
+E3_2_1_11 : 0
+E3_2_1_23 : 0
+E3_2_1_26 : 0
+E3_2_2_20 : 0
+E3_2_2_23 : 0
+E3_2_2_27 : 0
+E3_2_2_31 : 0
+E3_2_2_9 : 0
+E3_3_1_1 : 0
+E3_4_11_18 : 0
+E3_4_11_2 : 0
+E3_4_11_24 : 0
+E3_4_11_4 : 0
+E3_4_13_9 : 0
+E3_4_14_11 : 0
+E3_4_16_5 : 0
+E3_4_21_107 : 0
+E3_4_21_53 : 0
+E3_4_21_89 : 0
+E3_4_21_92 : 0
+E3_4_22_40 : 0
+E3_4_23_36 : 0
+E3_5_1_1 : 0
+E3_5_1_14 : 0
+E3_5_1_19 : 0
+E3_5_1_25 : 0
+E3_5_1_3 : 0
+E3_5_1_4 : 0
+E3_5_1_47 : 0
+E3_5_1_5 : 0
+E3_5_1_88 : 0
+E3_5_2_3 : 0
+E3_5_3_11 : 0
+E3_5_4_12 : 0
+E3_5_4_16 : 0
+E3_5_4_33 : 0
+E3_5_4_4 : 0
+E3_5_4_5 : 0
+E3_5_99_10 : 0
+E3_5_99_6 : 0
+E3_6_1_1 : 0
+E3_6_1_23 : 0
+E3_6_1_27 : 0
+E3_6_1_29 : 0
+E3_6_1_55 : 0
+E3_6_1_7 : 0
+E3_6_166 : 0
+E3_6_4_13 : 0
+E3_8_1_2 : 0
+E4_1_1_20 : 0
+E4_1_1_23 : 0
+E4_1_1_31 : 0
+E4_1_1_33 : 0
+E4_1_1_36 : 0
+E4_1_1_48 : 0
+E4_1_1_5 : 0
+E4_1_2_13 : 0
+E4_1_2_25 : 0
+E4_1_99_3 : 0
+E4_2_1_1 : 0
+E4_2_1_10 : 0
+E4_2_1_11 : 0
+E4_2_1_136 : 0
+E4_2_1_20 : 0
+E4_2_1_21 : 0
+E4_2_1_3 : 0
+E4_2_1_33 : 0
+E4_2_1_34 : 0
+E4_2_1_46 : 0
+E4_2_1_49 : 0
+E4_2_1_51 : 0
+E4_2_1_59 : 0
+E4_2_1_70 : 0
+E4_2_1_9 : 0
+E4_2_3_1 : 0
+E4_2_3_4 : 0
+E4_2_3_5 : 0
+E4_2_99_18 : 0
+E4_3_1_17 : 0
+E4_3_1_18 : 0
+E4_3_1_19 : 0
+E4_3_2_1 : 0
+E4_3_2_2 : 0
+E4_3_3_7 : 0
+E4_3_99_3 : 0
+E4_4_1_2 : 0
+E4_4_1_21 : 0
+E4_4_1_5 : 0
+E4_4_1_8 : 0
+E4_99_1_1 : 0
+E5_1_1_1 : 0
+E5_1_1_3 : 0
+E5_1_3_1 : 0
+E5_1_3_2 : 0
+E5_1_3_7 : 0
+E5_1_3_3_ : 0
+E5_3_1_1 : 0
+E5_3_1_24 : 0
+E5_3_1_6 : 0
+E5_3_1_8 : 0
+E5_3_1_9 : 0
+E5_3_3_14 : 0
+E5_3_3_2 : 0
+E5_4_2_10 : 0
+E5_4_2_2 : 0
+E5_4_2_7 : 0
+E5_4_99_12 : 0
+E5_4_99_18 : 0
+E5_4_99_25 : 0
+E5_4_99_5 : 0
+E5_4_99_9 : 0
+E5_6_2_1 : 0
+E5_6_2_2 : 0
+E6_1_1_1 : 0
+E6_1_1_10 : 0
+E6_1_1_11 : 0
+E6_1_1_12 : 0
+E6_1_1_14 : 0
+E6_1_1_15 : 0
+E6_1_1_16 : 0
+E6_1_1_17 : 0
+E6_1_1_24 : 0
+E6_1_1_19 : 0
+E6_1_1_2 : 0
+E6_1_1_20 : 0
+E6_1_1_21 : 0
+E6_1_1_22 : 0
+E6_1_1_3 : 0
+E6_1_1_4 : 0
+E6_1_1_5 : 0
+E6_1_1_6 : 0
+E6_1_1_7 : 0
+E6_1_1_9 : 0
+E6_2_1_54 : 0
+E6_3_1_1 : 0
+E6_3_1_2 : 0
+E6_3_1_20 : 0
+E6_3_1_5 : 0
+E6_3_2_10 : 0
+E6_3_2_12 : 0
+E6_3_2_17 : 0
+E6_3_2_2 : 0
+E6_3_2_3 : 0
+E6_3_2_4 : 0
+E6_3_2_5 : 0
+E6_3_2_6 : 0
+E6_3_2_7 : 0
+E6_3_2_8 : 0
+E6_3_2_9 : 0
+E6_3_3_1 : 0
+E6_3_3_2 : 0
+E6_3_4_13 : 0
+E6_3_4_14 : 0
+E6_3_4_18 : 0
+E6_3_4_19 : 0
+E6_3_4_2 : 0
+E6_3_4_20 : 0
+E6_3_4_21 : 0
+E6_3_4_3 : 0
+E6_3_4_4 : 0
+E6_3_4_5 : 0
+E6_3_5_13 : 0
+E6_3_5_14 : 0
+E6_3_5_2 : 0
+E6_3_5_3 : 0
+E6_3_5_5 : 0
+E6_3_5_7 : 0
+E6_4_1_2 : 0
+E6_5_1_2 : 0
+E7_1_2_2 : 0
+E7_2_2_10 : 0
+E7_2_2_8 : 0
+E7_6_2_11 : 0
+
+[Variables]
+E1_1_1_1_kcat : 13.7
+E1_2_1_10_kcat : 13.7
+E1_1_1_100_kcat : 13.7
+E1_1_1_169_kcat : 13.7
+E1_1_1_205_kcat : 13.7
+E1_1_1_25_kcat : 13.7
+E1_1_1_27_kcat : 13.7
+E1_1_1_3_kcat : 13.7
+E1_1_1_303_kcat : 13.7
+E2_3_1_190_kcat : 13.7
+E1_1_1_304_kcat : 13.7
+E2_3_1_191_kcat : 13.7
+E1_1_1_42_kcat : 13.7
+E1_1_1_85_kcat : 13.7
+E1_1_1_86_kcat : 13.7
+E1_1_1_88_kcat : 13.7
+E1_1_1_94_kcat : 13.7
+E1_1_1_95_kcat : 13.7
+E1_1_1_95_kcat : 13.7
+E1_11_1_15_kcat : 13.7
+E1_15_1_1_kcat : 13.7
+E1_17_1_8_kcat : 13.7
+E1_17_4_1_kcat : 13.7
+E1_17_4_2_kcat : 13.7
+E1_17_99_6_kcat : 13.7
+E1_18_1_2_kcat : 13.7
+E1_2_1_11_kcat : 13.7
+E1_2_1_12_kcat : 13.7
+E1_2_1_38_kcat : 13.7
+E1_2_1_41_kcat : 13.7
+E1_2_1_9_kcat : 13.7
+E1_3_1_12_kcat : 13.7
+E1_3_1_15_kcat : 13.7
+E1_3_1_9_kcat : 13.7
+E1_3_1_98_kcat : 13.7
+E1_3_8_1_kcat : 13.7
+E1_3_98_1_kcat : 13.7
+E1_4_1_4_kcat : 13.7
+E1_5_1_2_kcat : 13.7
+E1_5_1_20_kcat : 13.7
+E1_5_1_3_kcat : 13.7
+E1_5_1_5_kcat : 13.7
+E3_5_4_9_kcat : 13.7
+E1_6_99_3_kcat : 13.7
+E1_7_1_13_kcat : 13.7
+E1_8_1_4_kcat : 13.7
+E1_8_1_7_kcat : 13.7
+E1_8_1_9_kcat : 13.7
+E1_8_4_11_kcat : 13.7
+E1_8_4_12_kcat : 13.7
+E1_97_1_4_kcat : 13.7
+E2_1_1_10_kcat : 13.7
+E2_1_1_14_kcat : 13.7
+E2_1_1_170_kcat : 13.7
+E2_1_1_171_kcat : 13.7
+E2_1_1_176_kcat : 13.7
+E2_1_1_177_kcat : 13.7
+E2_1_1_182_kcat : 13.7
+E2_1_1_192_kcat : 13.7
+E2_1_1_193_kcat : 13.7
+E2_1_1_198_kcat : 13.7
+E2_1_1_199_kcat : 13.7
+E2_1_1_207_kcat : 13.7
+E2_1_1_217_kcat : 13.7
+E2_1_1_223_kcat : 13.7
+E2_1_1_264_kcat : 13.7
+E2_1_1_28_kcat : 13.7
+E2_1_1_297_kcat : 13.7
+E2_1_1_33_kcat : 13.7
+E2_1_1_45_kcat : 13.7
+E2_1_1_63_kcat : 13.7
+E2_1_1_72_kcat : 13.7
+E2_1_1_74_kcat : 13.7
+E2_1_1_79_kcat : 13.7
+E2_1_2_1_kcat : 13.7
+E2_1_2_2_kcat : 13.7
+E2_1_2_3_kcat : 13.7
+E3_5_4_10_kcat : 13.7
+E2_1_2_9_kcat : 13.7
+E2_1_3_15_kcat : 13.7
+E2_1_3_2_kcat : 13.7
+E2_1_3_3_kcat : 13.7
+E2_1_5_4_kcat : 13.7
+E2_2_1_1_kcat : 13.7
+E2_2_1_6_kcat : 13.7
+E2_3_3_13_kcat : 13.7
+E2_3_1_180_kcat : 13.7
+E2_3_1_266_kcat : 13.7
+E2_3_1_30_kcat : 13.7
+E2_3_1_31_kcat : 13.7
+E2_3_1_35_kcat : 13.7
+E2_3_1_1_kcat : 13.7
+E2_3_1_39_kcat : 13.7
+E2_3_1_41_kcat : 13.7
+E2_3_1_54_kcat : 13.7
+E2_3_1_8_kcat : 13.7
+E2_3_1_89_kcat : 13.7
+E2_3_3_10_kcat : 13.7
+E2_3_3_16_kcat : 13.7
+E2_4_1_1_kcat : 13.7
+E2_4_1_129_kcat : 13.7
+E3_4_16_4_kcat : 13.7
+E2_4_1_208_kcat : 13.7
+E2_4_1_337_kcat : 13.7
+E2_4_1_227_kcat : 13.7
+E2_4_1_25_kcat : 13.7
+E2_4_2_1_kcat : 13.7
+E2_4_2_10_kcat : 13.7
+E2_4_2_14_kcat : 13.7
+E2_4_2_18_kcat : 13.7
+E2_4_2_29_kcat : 13.7
+E2_4_2_3_kcat : 13.7
+E2_4_2_7_kcat : 13.7
+E2_4_2_8_kcat : 13.7
+E2_4_2_9_kcat : 13.7
+E2_4_99_17_kcat : 13.7
+E2_5_1_10_kcat : 13.7
+E2_5_1_15_kcat : 13.7
+E2_5_1_18_kcat : 13.7
+E2_5_1_19_kcat : 13.7
+E2_5_1_31_kcat : 13.7
+E2_5_1_47_kcat : 13.7
+E4_4_1_1_kcat : 13.7
+E2_5_1_48_kcat : 13.7
+E2_5_1_49_kcat : 13.7
+E2_5_1_6_kcat : 13.7
+E2_5_1_7_kcat : 13.7
+E2_5_1_75_kcat : 13.7
+E2_6_1_1_kcat : 13.7
+E2_6_1_11_kcat : 13.7
+E2_6_1_16_kcat : 13.7
+E2_6_1_42_kcat : 13.7
+E2_6_1_52_kcat : 13.7
+E2_6_1_85_kcat : 13.7
+E4_1_3_38_kcat : 13.7
+E4_1_3_27_kcat : 13.7
+E2_7_1_107_kcat : 13.7
+E2_7_1_11_kcat : 13.7
+E2_7_1_180_kcat : 13.7
+E2_7_1_2_kcat : 13.7
+E2_7_1_59_kcat : 13.7
+E2_7_1_21_kcat : 13.7
+E2_7_1_23_kcat : 13.7
+E2_7_1_24_kcat : 13.7
+E2_7_1_26_kcat : 13.7
+E2_7_7_2_kcat : 13.7
+E2_7_1_31_kcat : 13.7
+E2_7_1_33_kcat : 13.7
+E2_7_1_35_kcat : 13.7
+E2_7_1_36_kcat : 13.7
+E2_7_1_39_kcat : 13.7
+E2_7_1_4_kcat : 13.7
+E2_7_1_40_kcat : 13.7
+E2_7_1_48_kcat : 13.7
+E2_7_1_56_kcat : 13.7
+E2_7_1_6_kcat : 13.7
+E2_7_1_66_kcat : 13.7
+E2_7_1_71_kcat : 13.7
+E2_7_11_1_kcat : 13.7
+E2_7_13_3_kcat : 13.7
+E2_7_2_1_kcat : 13.7
+E2_7_2_11_kcat : 13.7
+E2_7_2_3_kcat : 13.7
+E2_7_2_4_kcat : 13.7
+E2_7_2_8_kcat : 13.7
+E2_7_3_9_kcat : 13.7
+E2_7_4_2_kcat : 13.7
+E2_7_4_22_kcat : 13.7
+E2_7_4_25_kcat : 13.7
+E2_7_4_3_kcat : 13.7
+E2_7_4_6_kcat : 13.7
+E2_7_4_7_kcat : 13.7
+E2_7_4_8_kcat : 13.7
+E2_7_4_9_kcat : 13.7
+E2_7_6_1_kcat : 13.7
+E2_7_6_2_kcat : 13.7
+E2_7_6_3_kcat : 13.7
+E2_7_6_5_kcat : 13.7
+E3_1_7_2_kcat : 13.7
+E2_7_7_1_kcat : 13.7
+E2_7_7_22_kcat : 13.7
+E2_7_7_12_kcat : 13.7
+E2_7_7_23_kcat : 13.7
+E2_3_1_157_kcat : 13.7
+E2_7_7_24_kcat : 13.7
+E2_7_7_3_kcat : 13.7
+E2_7_7_41_kcat : 13.7
+E2_7_7_6_kcat : 13.7
+E2_7_7_7_kcat : 13.7
+E2_7_7_72_kcat : 13.7
+E2_7_7_8_kcat : 13.7
+E3_1_13_1_kcat : 13.7
+E2_7_7_85_kcat : 13.7
+E2_7_7_9_kcat : 13.7
+E2_7_8_13_kcat : 13.7
+E2_7_8_5_kcat : 13.7
+E2_7_8_7_kcat : 13.7
+E2_8_1_13_kcat : 13.7
+E2_8_1_4_kcat : 13.7
+E2_8_1_7_kcat : 13.7
+E3_6_4_12_kcat : 13.7
+E3_1_1_29_kcat : 13.7
+E3_1_11_2_kcat : 13.7
+E3_1_11_6_kcat : 13.7
+E3_1_11_7_kcat : 13.7
+E3_1_2_6_kcat : 13.7
+E3_1_21_3_kcat : 13.7
+E3_1_21_5_kcat : 13.7
+E3_1_22_4_kcat : 13.7
+E3_1_26_11_kcat : 13.7
+E3_1_26_3_kcat : 13.7
+E3_1_26_4_kcat : 13.7
+E3_1_26_5_kcat : 13.7
+E3_1_26_8_kcat : 13.7
+E5_2_1_8_kcat : 13.7
+E3_1_3_15_kcat : 13.7
+E3_1_3_16_kcat : 13.7
+E3_1_3_18_kcat : 13.7
+E3_1_3_25_kcat : 13.7
+E3_1_3_27_kcat : 13.7
+E3_1_3_3_kcat : 13.7
+E3_1_3_48_kcat : 13.7
+E3_1_3_5_kcat : 13.7
+E3_1_3_90_kcat : 13.7
+E3_1_7_1_kcat : 13.7
+E3_6_1_13_kcat : 13.7
+E3_2_1_1_kcat : 13.7
+E3_2_1_11_kcat : 13.7
+E3_2_1_23_kcat : 13.7
+E3_2_1_26_kcat : 13.7
+E3_2_2_20_kcat : 13.7
+E3_2_2_23_kcat : 13.7
+E3_2_2_27_kcat : 13.7
+E3_2_2_31_kcat : 13.7
+E3_2_2_9_kcat : 13.7
+E3_3_1_1_kcat : 13.7
+E3_4_11_18_kcat : 13.7
+E3_4_11_2_kcat : 13.7
+E3_4_11_24_kcat : 13.7
+E3_4_11_4_kcat : 13.7
+E3_4_13_9_kcat : 13.7
+E3_4_14_11_kcat : 13.7
+E3_4_16_5_kcat : 13.7
+E3_4_21_107_kcat : 13.7
+E3_4_21_53_kcat : 13.7
+E3_4_21_89_kcat : 13.7
+E3_4_21_92_kcat : 13.7
+E3_4_22_40_kcat : 13.7
+E3_4_23_36_kcat : 13.7
+E3_5_1_1_kcat : 13.7
+E3_5_1_14_kcat : 13.7
+E3_5_1_19_kcat : 13.7
+E3_5_1_25_kcat : 13.7
+E3_5_1_3_kcat : 13.7
+E3_5_1_4_kcat : 13.7
+E3_5_1_47_kcat : 13.7
+E3_5_1_5_kcat : 13.7
+E3_5_1_88_kcat : 13.7
+E3_5_2_3_kcat : 13.7
+E3_5_3_11_kcat : 13.7
+E3_5_4_12_kcat : 13.7
+E3_5_4_16_kcat : 13.7
+E3_5_4_33_kcat : 13.7
+E3_5_4_4_kcat : 13.7
+E3_5_4_5_kcat : 13.7
+E3_5_99_10_kcat : 13.7
+E3_5_99_6_kcat : 13.7
+E3_6_1_1_kcat : 13.7
+E3_6_1_23_kcat : 13.7
+E3_6_1_27_kcat : 13.7
+E3_6_1_29_kcat : 13.7
+E3_6_1_55_kcat : 13.7
+E3_6_1_7_kcat : 13.7
+E3_6_166_kcat : 13.7
+E3_6_4_13_kcat : 13.7
+E3_8_1_2_kcat : 13.7
+E4_1_1_20_kcat : 13.7
+E4_1_1_23_kcat : 13.7
+E4_1_1_31_kcat : 13.7
+E4_1_1_33_kcat : 13.7
+E4_1_1_36_kcat : 13.7
+E4_1_1_48_kcat : 13.7
+E4_1_1_5_kcat : 13.7
+E4_1_2_13_kcat : 13.7
+E4_1_2_25_kcat : 13.7
+E4_1_99_3_kcat : 13.7
+E4_2_1_1_kcat : 13.7
+E4_2_1_10_kcat : 13.7
+E4_2_1_11_kcat : 13.7
+E4_2_1_136_kcat : 13.7
+E4_2_1_20_kcat : 13.7
+E4_2_1_21_kcat : 13.7
+E4_2_1_3_kcat : 13.7
+E4_2_1_33_kcat : 13.7
+E4_2_1_34_kcat : 13.7
+E4_2_1_46_kcat : 13.7
+E4_2_1_49_kcat : 13.7
+E4_2_1_51_kcat : 13.7
+E4_2_1_59_kcat : 13.7
+E4_2_1_70_kcat : 13.7
+E4_2_1_9_kcat : 13.7
+E4_2_3_1_kcat : 13.7
+E4_2_3_4_kcat : 13.7
+E4_2_3_5_kcat : 13.7
+E4_2_99_18_kcat : 13.7
+E4_3_1_17_kcat : 13.7
+E4_3_1_18_kcat : 13.7
+E4_3_1_19_kcat : 13.7
+E4_3_2_1_kcat : 13.7
+E4_3_2_2_kcat : 13.7
+E4_3_3_7_kcat : 13.7
+E4_3_99_3_kcat : 13.7
+E4_4_1_2_kcat : 13.7
+E4_4_1_21_kcat : 13.7
+E4_4_1_5_kcat : 13.7
+E4_4_1_8_kcat : 13.7
+E4_99_1_1_kcat : 13.7
+E5_1_1_1_kcat : 13.7
+E5_1_1_3_kcat : 13.7
+E5_1_3_1_kcat : 13.7
+E5_1_3_2_kcat : 13.7
+E5_1_3_7_kcat : 13.7
+E5_1_3_3__kcat : 13.7
+E5_3_1_1_kcat : 13.7
+E5_3_1_24_kcat : 13.7
+E5_3_1_6_kcat : 13.7
+E5_3_1_8_kcat : 13.7
+E5_3_1_9_kcat : 13.7
+E5_3_3_14_kcat : 13.7
+E5_3_3_2_kcat : 13.7
+E5_4_2_10_kcat : 13.7
+E5_4_2_2_kcat : 13.7
+E5_4_2_7_kcat : 13.7
+E5_4_99_12_kcat : 13.7
+E5_4_99_18_kcat : 13.7
+E5_4_99_25_kcat : 13.7
+E5_4_99_5_kcat : 13.7
+E5_4_99_9_kcat : 13.7
+E5_6_2_1_kcat : 13.7
+E5_6_2_2_kcat : 13.7
+E6_1_1_1_kcat : 13.7
+E6_1_1_10_kcat : 13.7
+E6_1_1_11_kcat : 13.7
+E6_1_1_12_kcat : 13.7
+E6_1_1_14_kcat : 13.7
+E6_1_1_15_kcat : 13.7
+E6_1_1_16_kcat : 13.7
+E6_1_1_17_kcat : 13.7
+E6_1_1_24_kcat : 13.7
+E6_1_1_19_kcat : 13.7
+E6_1_1_2_kcat : 13.7
+E6_1_1_20_kcat : 13.7
+E6_1_1_21_kcat : 13.7
+E6_1_1_22_kcat : 13.7
+E6_1_1_3_kcat : 13.7
+E6_1_1_4_kcat : 13.7
+E6_1_1_5_kcat : 13.7
+E6_1_1_6_kcat : 13.7
+E6_1_1_7_kcat : 13.7
+E6_1_1_9_kcat : 13.7
+E6_2_1_54_kcat : 13.7
+E6_3_1_1_kcat : 13.7
+E6_3_1_2_kcat : 13.7
+E6_3_1_20_kcat : 13.7
+E6_3_1_5_kcat : 13.7
+E6_3_2_10_kcat : 13.7
+E6_3_2_12_kcat : 13.7
+E6_3_2_17_kcat : 13.7
+E6_3_2_2_kcat : 13.7
+E6_3_2_3_kcat : 13.7
+E6_3_2_4_kcat : 13.7
+E6_3_2_5_kcat : 13.7
+E6_3_2_6_kcat : 13.7
+E6_3_2_7_kcat : 13.7
+E6_3_2_8_kcat : 13.7
+E6_3_2_9_kcat : 13.7
+E6_3_3_1_kcat : 13.7
+E6_3_3_2_kcat : 13.7
+E6_3_4_13_kcat : 13.7
+E6_3_4_14_kcat : 13.7
+E6_3_4_18_kcat : 13.7
+E6_3_4_19_kcat : 13.7
+E6_3_4_2_kcat : 13.7
+E6_3_4_20_kcat : 13.7
+E6_3_4_21_kcat : 13.7
+E6_3_4_3_kcat : 13.7
+E6_3_4_4_kcat : 13.7
+E6_3_4_5_kcat : 13.7
+E6_3_5_13_kcat : 13.7
+E6_3_5_14_kcat : 13.7
+E6_3_5_2_kcat : 13.7
+E6_3_5_3_kcat : 13.7
+E6_3_5_5_kcat : 13.7
+E6_3_5_7_kcat : 13.7
+E6_4_1_2_kcat : 13.7
+E6_5_1_2_kcat : 13.7
+E7_1_2_2_kcat : 13.7
+E7_2_2_10_kcat : 13.7
+E7_2_2_8_kcat : 13.7
+E7_6_2_11_kcat : 13.7
+E1_1_1_1_km : 1
+E1_2_1_10_km : 1
+E1_1_1_100_km : 1
+E1_1_1_169_km : 1
+E1_1_1_205_km : 1
+E1_1_1_25_km : 1
+E1_1_1_27_km : 1
+E1_1_1_3_km : 1
+E1_1_1_303_km : 1
+E2_3_1_190_km : 1
+E1_1_1_304_km : 1
+E2_3_1_191_km : 1
+E1_1_1_42_km : 1
+E1_1_1_85_km : 1
+E1_1_1_86_km : 1
+E1_1_1_88_km : 1
+E1_1_1_94_km : 1
+E1_1_1_95_km : 1
+E1_1_1_95_km : 1
+E1_11_1_15_km : 1
+E1_15_1_1_km : 1
+E1_17_1_8_km : 1
+E1_17_4_1_km : 1
+E1_17_4_2_km : 1
+E1_17_99_6_km : 1
+E1_18_1_2_km : 1
+E1_2_1_11_km : 1
+E1_2_1_12_km : 1
+E1_2_1_38_km : 1
+E1_2_1_41_km : 1
+E1_2_1_9_km : 1
+E1_3_1_12_km : 1
+E1_3_1_15_km : 1
+E1_3_1_9_km : 1
+E1_3_1_98_km : 1
+E1_3_8_1_km : 1
+E1_3_98_1_km : 1
+E1_4_1_4_km : 1
+E1_5_1_2_km : 1
+E1_5_1_20_km : 1
+E1_5_1_3_km : 1
+E1_5_1_5_km : 1
+E3_5_4_9_km : 1
+E1_6_99_3_km : 1
+E1_7_1_13_km : 1
+E1_8_1_4_km : 1
+E1_8_1_7_km : 1
+E1_8_1_9_km : 1
+E1_8_4_11_km : 1
+E1_8_4_12_km : 1
+E1_97_1_4_km : 1
+E2_1_1_10_km : 1
+E2_1_1_14_km : 1
+E2_1_1_170_km : 1
+E2_1_1_171_km : 1
+E2_1_1_176_km : 1
+E2_1_1_177_km : 1
+E2_1_1_182_km : 1
+E2_1_1_192_km : 1
+E2_1_1_193_km : 1
+E2_1_1_198_km : 1
+E2_1_1_199_km : 1
+E2_1_1_207_km : 1
+E2_1_1_217_km : 1
+E2_1_1_223_km : 1
+E2_1_1_264_km : 1
+E2_1_1_28_km : 1
+E2_1_1_297_km : 1
+E2_1_1_33_km : 1
+E2_1_1_45_km : 1
+E2_1_1_63_km : 1
+E2_1_1_72_km : 1
+E2_1_1_74_km : 1
+E2_1_1_79_km : 1
+E2_1_2_1_km : 1
+E2_1_2_2_km : 1
+E2_1_2_3_km : 1
+E3_5_4_10_km : 1
+E2_1_2_9_km : 1
+E2_1_3_15_km : 1
+E2_1_3_2_km : 1
+E2_1_3_3_km : 1
+E2_1_5_4_km : 1
+E2_2_1_1_km : 1
+E2_2_1_6_km : 1
+E2_3_3_13_km : 1
+E2_3_1_180_km : 1
+E2_3_1_266_km : 1
+E2_3_1_30_km : 1
+E2_3_1_31_km : 1
+E2_3_1_35_km : 1
+E2_3_1_1_km : 1
+E2_3_1_39_km : 1
+E2_3_1_41_km : 1
+E2_3_1_54_km : 1
+E2_3_1_8_km : 1
+E2_3_1_89_km : 1
+E2_3_3_10_km : 1
+E2_3_3_16_km : 1
+E2_4_1_1_km : 1
+E2_4_1_129_km : 1
+E3_4_16_4_km : 1
+E2_4_1_208_km : 1
+E2_4_1_337_km : 1
+E2_4_1_227_km : 1
+E2_4_1_25_km : 1
+E2_4_2_1_km : 1
+E2_4_2_10_km : 1
+E2_4_2_14_km : 1
+E2_4_2_18_km : 1
+E2_4_2_29_km : 1
+E2_4_2_3_km : 1
+E2_4_2_7_km : 1
+E2_4_2_8_km : 1
+E2_4_2_9_km : 1
+E2_4_99_17_km : 1
+E2_5_1_10_km : 1
+E2_5_1_15_km : 1
+E2_5_1_18_km : 1
+E2_5_1_19_km : 1
+E2_5_1_31_km : 1
+E2_5_1_47_km : 1
+E4_4_1_1_km : 1
+E2_5_1_48_km : 1
+E2_5_1_49_km : 1
+E2_5_1_6_km : 1
+E2_5_1_7_km : 1
+E2_5_1_75_km : 1
+E2_6_1_1_km : 1
+E2_6_1_11_km : 1
+E2_6_1_16_km : 1
+E2_6_1_42_km : 1
+E2_6_1_52_km : 1
+E2_6_1_85_km : 1
+E4_1_3_38_km : 1
+E4_1_3_27_km : 1
+E2_7_1_107_km : 1
+E2_7_1_11_km : 1
+E2_7_1_180_km : 1
+E2_7_1_2_km : 1
+E2_7_1_59_km : 1
+E2_7_1_21_km : 1
+E2_7_1_23_km : 1
+E2_7_1_24_km : 1
+E2_7_1_26_km : 1
+E2_7_7_2_km : 1
+E2_7_1_31_km : 1
+E2_7_1_33_km : 1
+E2_7_1_35_km : 1
+E2_7_1_36_km : 1
+E2_7_1_39_km : 1
+E2_7_1_4_km : 1
+E2_7_1_40_km : 1
+E2_7_1_48_km : 1
+E2_7_1_56_km : 1
+E2_7_1_6_km : 1
+E2_7_1_66_km : 1
+E2_7_1_71_km : 1
+E2_7_11_1_km : 1
+E2_7_13_3_km : 1
+E2_7_2_1_km : 1
+E2_7_2_11_km : 1
+E2_7_2_3_km : 1
+E2_7_2_4_km : 1
+E2_7_2_8_km : 1
+E2_7_3_9_km : 1
+E2_7_4_2_km : 1
+E2_7_4_22_km : 1
+E2_7_4_25_km : 1
+E2_7_4_3_km : 1
+E2_7_4_6_km : 1
+E2_7_4_7_km : 1
+E2_7_4_8_km : 1
+E2_7_4_9_km : 1
+E2_7_6_1_km : 1
+E2_7_6_2_km : 1
+E2_7_6_3_km : 1
+E2_7_6_5_km : 1
+E3_1_7_2_km : 1
+E2_7_7_1_km : 1
+E2_7_7_22_km : 1
+E2_7_7_12_km : 1
+E2_7_7_23_km : 1
+E2_3_1_157_km : 1
+E2_7_7_24_km : 1
+E2_7_7_3_km : 1
+E2_7_7_41_km : 1
+E2_7_7_6_km : 1
+E2_7_7_7_km : 1
+E2_7_7_72_km : 1
+E2_7_7_8_km : 1
+E3_1_13_1_km : 1
+E2_7_7_85_km : 1
+E2_7_7_9_km : 1
+E2_7_8_13_km : 1
+E2_7_8_5_km : 1
+E2_7_8_7_km : 1
+E2_8_1_13_km : 1
+E2_8_1_4_km : 1
+E2_8_1_7_km : 1
+E3_6_4_12_km : 1
+E3_1_1_29_km : 1
+E3_1_11_2_km : 1
+E3_1_11_6_km : 1
+E3_1_11_7_km : 1
+E3_1_2_6_km : 1
+E3_1_21_3_km : 1
+E3_1_21_5_km : 1
+E3_1_22_4_km : 1
+E3_1_26_11_km : 1
+E3_1_26_3_km : 1
+E3_1_26_4_km : 1
+E3_1_26_5_km : 1
+E3_1_26_8_km : 1
+E5_2_1_8_km : 1
+E3_1_3_15_km : 1
+E3_1_3_16_km : 1
+E3_1_3_18_km : 1
+E3_1_3_25_km : 1
+E3_1_3_27_km : 1
+E3_1_3_3_km : 1
+E3_1_3_48_km : 1
+E3_1_3_5_km : 1
+E3_1_3_90_km : 1
+E3_1_7_1_km : 1
+E3_6_1_13_km : 1
+E3_2_1_1_km : 1
+E3_2_1_11_km : 1
+E3_2_1_23_km : 1
+E3_2_1_26_km : 1
+E3_2_2_20_km : 1
+E3_2_2_23_km : 1
+E3_2_2_27_km : 1
+E3_2_2_31_km : 1
+E3_2_2_9_km : 1
+E3_3_1_1_km : 1
+E3_4_11_18_km : 1
+E3_4_11_2_km : 1
+E3_4_11_24_km : 1
+E3_4_11_4_km : 1
+E3_4_13_9_km : 1
+E3_4_14_11_km : 1
+E3_4_16_5_km : 1
+E3_4_21_107_km : 1
+E3_4_21_53_km : 1
+E3_4_21_89_km : 1
+E3_4_21_92_km : 1
+E3_4_22_40_km : 1
+E3_4_23_36_km : 1
+E3_5_1_1_km : 1
+E3_5_1_14_km : 1
+E3_5_1_19_km : 1
+E3_5_1_25_km : 1
+E3_5_1_3_km : 1
+E3_5_1_4_km : 1
+E3_5_1_47_km : 1
+E3_5_1_5_km : 1
+E3_5_1_88_km : 1
+E3_5_2_3_km : 1
+E3_5_3_11_km : 1
+E3_5_4_12_km : 1
+E3_5_4_16_km : 1
+E3_5_4_33_km : 1
+E3_5_4_4_km : 1
+E3_5_4_5_km : 1
+E3_5_99_10_km : 1
+E3_5_99_6_km : 1
+E3_6_1_1_km : 1
+E3_6_1_23_km : 1
+E3_6_1_27_km : 1
+E3_6_1_29_km : 1
+E3_6_1_55_km : 1
+E3_6_1_7_km : 1
+E3_6_166_km : 1
+E3_6_4_13_km : 1
+E3_8_1_2_km : 1
+E4_1_1_20_km : 1
+E4_1_1_23_km : 1
+E4_1_1_31_km : 1
+E4_1_1_33_km : 1
+E4_1_1_36_km : 1
+E4_1_1_48_km : 1
+E4_1_1_5_km : 1
+E4_1_2_13_km : 1
+E4_1_2_25_km : 1
+E4_1_99_3_km : 1
+E4_2_1_1_km : 1
+E4_2_1_10_km : 1
+E4_2_1_11_km : 1
+E4_2_1_136_km : 1
+E4_2_1_20_km : 1
+E4_2_1_21_km : 1
+E4_2_1_3_km : 1
+E4_2_1_33_km : 1
+E4_2_1_34_km : 1
+E4_2_1_46_km : 1
+E4_2_1_49_km : 1
+E4_2_1_51_km : 1
+E4_2_1_59_km : 1
+E4_2_1_70_km : 1
+E4_2_1_9_km : 1
+E4_2_3_1_km : 1
+E4_2_3_4_km : 1
+E4_2_3_5_km : 1
+E4_2_99_18_km : 1
+E4_3_1_17_km : 1
+E4_3_1_18_km : 1
+E4_3_1_19_km : 1
+E4_3_2_1_km : 1
+E4_3_2_2_km : 1
+E4_3_3_7_km : 1
+E4_3_99_3_km : 1
+E4_4_1_2_km : 1
+E4_4_1_21_km : 1
+E4_4_1_5_km : 1
+E4_4_1_8_km : 1
+E4_99_1_1_km : 1
+E5_1_1_1_km : 1
+E5_1_1_3_km : 1
+E5_1_3_1_km : 1
+E5_1_3_2_km : 1
+E5_1_3_7_km : 1
+E5_1_3_3__km : 1
+E5_3_1_1_km : 1
+E5_3_1_24_km : 1
+E5_3_1_6_km : 1
+E5_3_1_8_km : 1
+E5_3_1_9_km : 1
+E5_3_3_14_km : 1
+E5_3_3_2_km : 1
+E5_4_2_10_km : 1
+E5_4_2_2_km : 1
+E5_4_2_7_km : 1
+E5_4_99_12_km : 1
+E5_4_99_18_km : 1
+E5_4_99_25_km : 1
+E5_4_99_5_km : 1
+E5_4_99_9_km : 1
+E5_6_2_1_km : 1
+E5_6_2_2_km : 1
+E6_1_1_1_km : 1
+E6_1_1_10_km : 1
+E6_1_1_11_km : 1
+E6_1_1_12_km : 1
+E6_1_1_14_km : 1
+E6_1_1_15_km : 1
+E6_1_1_16_km : 1
+E6_1_1_17_km : 1
+E6_1_1_24_km : 1
+E6_1_1_19_km : 1
+E6_1_1_2_km : 1
+E6_1_1_20_km : 1
+E6_1_1_21_km : 1
+E6_1_1_22_km : 1
+E6_1_1_3_km : 1
+E6_1_1_4_km : 1
+E6_1_1_5_km : 1
+E6_1_1_6_km : 1
+E6_1_1_7_km : 1
+E6_1_1_9_km : 1
+E6_2_1_54_km : 1
+E6_3_1_1_km : 1
+E6_3_1_2_km : 1
+E6_3_1_20_km : 1
+E6_3_1_5_km : 1
+E6_3_2_10_km : 1
+E6_3_2_12_km : 1
+E6_3_2_17_km : 1
+E6_3_2_2_km : 1
+E6_3_2_3_km : 1
+E6_3_2_4_km : 1
+E6_3_2_5_km : 1
+E6_3_2_6_km : 1
+E6_3_2_7_km : 1
+E6_3_2_8_km : 1
+E6_3_2_9_km : 1
+E6_3_3_1_km : 1
+E6_3_3_2_km : 1
+E6_3_4_13_km : 1
+E6_3_4_14_km : 1
+E6_3_4_18_km : 1
+E6_3_4_19_km : 1
+E6_3_4_2_km : 1
+E6_3_4_20_km : 1
+E6_3_4_21_km : 1
+E6_3_4_3_km : 1
+E6_3_4_4_km : 1
+E6_3_4_5_km : 1
+E6_3_5_13_km : 1
+E6_3_5_14_km : 1
+E6_3_5_2_km : 1
+E6_3_5_3_km : 1
+E6_3_5_5_km : 1
+E6_3_5_7_km : 1
+E6_4_1_2_km : 1
+E6_5_1_2_km : 1
+E7_1_2_2_km : 1
+E7_2_2_10_km : 1
+E7_2_2_8_km : 1
+E7_6_2_11_km : 1
+
+[Reactions]
+mRNA1: -> E1_1_1_1_mRNA | 0.00292 - (0.0093 * E1_1_1_1_mRNA)
+mRNA2: -> E1_2_1_10_mRNA | 0.00292 - (0.0093 * E1_2_1_10_mRNA)
+mRNA3: -> E1_1_1_100_mRNA | 0.00292 - (0.0093 * E1_1_1_100_mRNA)
+mRNA4: -> E1_1_1_169_mRNA | 0.00292 - (0.0093 * E1_1_1_169_mRNA)
+mRNA5: -> E1_1_1_205_mRNA | 0.00292 - (0.0093 * E1_1_1_205_mRNA)
+mRNA6: -> E1_1_1_25_mRNA | 0.00292 - (0.0093 * E1_1_1_25_mRNA)
+mRNA7: -> E1_1_1_27_mRNA | 0.00292 - (0.0093 * E1_1_1_27_mRNA)
+mRNA8: -> E1_1_1_3_mRNA | 0.00292 - (0.0093 * E1_1_1_3_mRNA)
+mRNA9: -> E1_1_1_303_mRNA | 0.00292 - (0.0093 * E1_1_1_303_mRNA)
+mRNA10: -> E2_3_1_190_mRNA | 0.00292 - (0.0093 * E2_3_1_190_mRNA)
+mRNA11: -> E1_1_1_304_mRNA | 0.00292 - (0.0093 * E1_1_1_304_mRNA)
+mRNA12: -> E2_3_1_191_mRNA | 0.00292 - (0.0093 * E2_3_1_191_mRNA)
+mRNA13: -> E1_1_1_42_mRNA | 0.00292 - (0.0093 * E1_1_1_42_mRNA)
+mRNA14: -> E1_1_1_85_mRNA | 0.00292 - (0.0093 * E1_1_1_85_mRNA)
+mRNA15: -> E1_1_1_86_mRNA | 0.00292 - (0.0093 * E1_1_1_86_mRNA)
+mRNA16: -> E1_1_1_88_mRNA | 0.00292 - (0.0093 * E1_1_1_88_mRNA)
+mRNA17: -> E1_1_1_94_mRNA | 0.00292 - (0.0093 * E1_1_1_94_mRNA)
+mRNA18: -> E1_1_1_95_mRNA | 0.00292 - (0.0093 * E1_1_1_95_mRNA)
+mRNA19: -> E1_1_1_95_mRNA | 0.00292 - (0.0093 * E1_1_1_95_mRNA)
+mRNA20: -> E1_11_1_15_mRNA | 0.00292 - (0.0093 * E1_11_1_15_mRNA)
+mRNA21: -> E1_15_1_1_mRNA | 0.00292 - (0.0093 * E1_15_1_1_mRNA)
+mRNA22: -> E1_17_1_8_mRNA | 0.00292 - (0.0093 * E1_17_1_8_mRNA)
+mRNA23: -> E1_17_4_1_mRNA | 0.00292 - (0.0093 * E1_17_4_1_mRNA)
+mRNA24: -> E1_17_4_2_mRNA | 0.00292 - (0.0093 * E1_17_4_2_mRNA)
+mRNA25: -> E1_17_99_6_mRNA | 0.00292 - (0.0093 * E1_17_99_6_mRNA)
+mRNA26: -> E1_18_1_2_mRNA | 0.00292 - (0.0093 * E1_18_1_2_mRNA)
+mRNA27: -> E1_2_1_11_mRNA | 0.00292 - (0.0093 * E1_2_1_11_mRNA)
+mRNA28: -> E1_2_1_12_mRNA | 0.00292 - (0.0093 * E1_2_1_12_mRNA)
+mRNA29: -> E1_2_1_38_mRNA | 0.00292 - (0.0093 * E1_2_1_38_mRNA)
+mRNA30: -> E1_2_1_41_mRNA | 0.00292 - (0.0093 * E1_2_1_41_mRNA)
+mRNA31: -> E1_2_1_9_mRNA | 0.00292 - (0.0093 * E1_2_1_9_mRNA)
+mRNA32: -> E1_3_1_12_mRNA | 0.00292 - (0.0093 * E1_3_1_12_mRNA)
+mRNA33: -> E1_3_1_15_mRNA | 0.00292 - (0.0093 * E1_3_1_15_mRNA)
+mRNA34: -> E1_3_1_9_mRNA | 0.00292 - (0.0093 * E1_3_1_9_mRNA)
+mRNA35: -> E1_3_1_98_mRNA | 0.00292 - (0.0093 * E1_3_1_98_mRNA)
+mRNA36: -> E1_3_8_1_mRNA | 0.00292 - (0.0093 * E1_3_8_1_mRNA)
+mRNA37: -> E1_3_98_1_mRNA | 0.00292 - (0.0093 * E1_3_98_1_mRNA)
+mRNA38: -> E1_4_1_4_mRNA | 0.00292 - (0.0093 * E1_4_1_4_mRNA)
+mRNA39: -> E1_5_1_2_mRNA | 0.00292 - (0.0093 * E1_5_1_2_mRNA)
+mRNA40: -> E1_5_1_20_mRNA | 0.00292 - (0.0093 * E1_5_1_20_mRNA)
+mRNA41: -> E1_5_1_3_mRNA | 0.00292 - (0.0093 * E1_5_1_3_mRNA)
+mRNA42: -> E1_5_1_5_mRNA | 0.00292 - (0.0093 * E1_5_1_5_mRNA)
+mRNA43: -> E3_5_4_9_mRNA | 0.00292 - (0.0093 * E3_5_4_9_mRNA)
+mRNA44: -> E1_6_99_3_mRNA | 0.00292 - (0.0093 * E1_6_99_3_mRNA)
+mRNA45: -> E1_7_1_13_mRNA | 0.00292 - (0.0093 * E1_7_1_13_mRNA)
+mRNA46: -> E1_8_1_4_mRNA | 0.00292 - (0.0093 * E1_8_1_4_mRNA)
+mRNA47: -> E1_8_1_7_mRNA | 0.00292 - (0.0093 * E1_8_1_7_mRNA)
+mRNA48: -> E1_8_1_9_mRNA | 0.00292 - (0.0093 * E1_8_1_9_mRNA)
+mRNA49: -> E1_8_4_11_mRNA | 0.00292 - (0.0093 * E1_8_4_11_mRNA)
+mRNA50: -> E1_8_4_12_mRNA | 0.00292 - (0.0093 * E1_8_4_12_mRNA)
+mRNA51: -> E1_97_1_4_mRNA | 0.00292 - (0.0093 * E1_97_1_4_mRNA)
+mRNA52: -> E2_1_1_10_mRNA | 0.00292 - (0.0093 * E2_1_1_10_mRNA)
+mRNA53: -> E2_1_1_14_mRNA | 0.00292 - (0.0093 * E2_1_1_14_mRNA)
+mRNA54: -> E2_1_1_170_mRNA | 0.00292 - (0.0093 * E2_1_1_170_mRNA)
+mRNA55: -> E2_1_1_171_mRNA | 0.00292 - (0.0093 * E2_1_1_171_mRNA)
+mRNA56: -> E2_1_1_176_mRNA | 0.00292 - (0.0093 * E2_1_1_176_mRNA)
+mRNA57: -> E2_1_1_177_mRNA | 0.00292 - (0.0093 * E2_1_1_177_mRNA)
+mRNA58: -> E2_1_1_182_mRNA | 0.00292 - (0.0093 * E2_1_1_182_mRNA)
+mRNA59: -> E2_1_1_192_mRNA | 0.00292 - (0.0093 * E2_1_1_192_mRNA)
+mRNA60: -> E2_1_1_193_mRNA | 0.00292 - (0.0093 * E2_1_1_193_mRNA)
+mRNA61: -> E2_1_1_198_mRNA | 0.00292 - (0.0093 * E2_1_1_198_mRNA)
+mRNA62: -> E2_1_1_199_mRNA | 0.00292 - (0.0093 * E2_1_1_199_mRNA)
+mRNA63: -> E2_1_1_207_mRNA | 0.00292 - (0.0093 * E2_1_1_207_mRNA)
+mRNA64: -> E2_1_1_217_mRNA | 0.00292 - (0.0093 * E2_1_1_217_mRNA)
+mRNA65: -> E2_1_1_223_mRNA | 0.00292 - (0.0093 * E2_1_1_223_mRNA)
+mRNA66: -> E2_1_1_264_mRNA | 0.00292 - (0.0093 * E2_1_1_264_mRNA)
+mRNA67: -> E2_1_1_28_mRNA | 0.00292 - (0.0093 * E2_1_1_28_mRNA)
+mRNA68: -> E2_1_1_297_mRNA | 0.00292 - (0.0093 * E2_1_1_297_mRNA)
+mRNA69: -> E2_1_1_33_mRNA | 0.00292 - (0.0093 * E2_1_1_33_mRNA)
+mRNA70: -> E2_1_1_45_mRNA | 0.00292 - (0.0093 * E2_1_1_45_mRNA)
+mRNA71: -> E2_1_1_63_mRNA | 0.00292 - (0.0093 * E2_1_1_63_mRNA)
+mRNA72: -> E2_1_1_72_mRNA | 0.00292 - (0.0093 * E2_1_1_72_mRNA)
+mRNA73: -> E2_1_1_74_mRNA | 0.00292 - (0.0093 * E2_1_1_74_mRNA)
+mRNA74: -> E2_1_1_79_mRNA | 0.00292 - (0.0093 * E2_1_1_79_mRNA)
+mRNA75: -> E2_1_2_1_mRNA | 0.00292 - (0.0093 * E2_1_2_1_mRNA)
+mRNA76: -> E2_1_2_2_mRNA | 0.00292 - (0.0093 * E2_1_2_2_mRNA)
+mRNA77: -> E2_1_2_3_mRNA | 0.00292 - (0.0093 * E2_1_2_3_mRNA)
+mRNA78: -> E3_5_4_10_mRNA | 0.00292 - (0.0093 * E3_5_4_10_mRNA)
+mRNA79: -> E2_1_2_9_mRNA | 0.00292 - (0.0093 * E2_1_2_9_mRNA)
+mRNA80: -> E2_1_3_15_mRNA | 0.00292 - (0.0093 * E2_1_3_15_mRNA)
+mRNA81: -> E2_1_3_2_mRNA | 0.00292 - (0.0093 * E2_1_3_2_mRNA)
+mRNA82: -> E2_1_3_3_mRNA | 0.00292 - (0.0093 * E2_1_3_3_mRNA)
+mRNA83: -> E2_1_5_4_mRNA | 0.00292 - (0.0093 * E2_1_5_4_mRNA)
+mRNA84: -> E2_2_1_1_mRNA | 0.00292 - (0.0093 * E2_2_1_1_mRNA)
+mRNA85: -> E2_2_1_6_mRNA | 0.00292 - (0.0093 * E2_2_1_6_mRNA)
+mRNA86: -> E2_3_3_13_mRNA | 0.00292 - (0.0093 * E2_3_3_13_mRNA)
+mRNA87: -> E2_3_1_180_mRNA | 0.00292 - (0.0093 * E2_3_1_180_mRNA)
+mRNA88: -> E2_3_1_266_mRNA | 0.00292 - (0.0093 * E2_3_1_266_mRNA)
+mRNA89: -> E2_3_1_30_mRNA | 0.00292 - (0.0093 * E2_3_1_30_mRNA)
+mRNA90: -> E2_3_1_31_mRNA | 0.00292 - (0.0093 * E2_3_1_31_mRNA)
+mRNA91: -> E2_3_1_35_mRNA | 0.00292 - (0.0093 * E2_3_1_35_mRNA)
+mRNA92: -> E2_3_1_1_mRNA | 0.00292 - (0.0093 * E2_3_1_1_mRNA)
+mRNA93: -> E2_3_1_39_mRNA | 0.00292 - (0.0093 * E2_3_1_39_mRNA)
+mRNA94: -> E2_3_1_41_mRNA | 0.00292 - (0.0093 * E2_3_1_41_mRNA)
+mRNA95: -> E2_3_1_54_mRNA | 0.00292 - (0.0093 * E2_3_1_54_mRNA)
+mRNA96: -> E2_3_1_8_mRNA | 0.00292 - (0.0093 * E2_3_1_8_mRNA)
+mRNA97: -> E2_3_1_89_mRNA | 0.00292 - (0.0093 * E2_3_1_89_mRNA)
+mRNA98: -> E2_3_3_10_mRNA | 0.00292 - (0.0093 * E2_3_3_10_mRNA)
+mRNA99: -> E2_3_3_16_mRNA | 0.00292 - (0.0093 * E2_3_3_16_mRNA)
+mRNA100: -> E2_4_1_1_mRNA | 0.00292 - (0.0093 * E2_4_1_1_mRNA)
+mRNA101: -> E2_4_1_129_mRNA | 0.00292 - (0.0093 * E2_4_1_129_mRNA)
+mRNA102: -> E3_4_16_4_mRNA | 0.00292 - (0.0093 * E3_4_16_4_mRNA)
+mRNA103: -> E2_4_1_208_mRNA | 0.00292 - (0.0093 * E2_4_1_208_mRNA)
+mRNA104: -> E2_4_1_337_mRNA | 0.00292 - (0.0093 * E2_4_1_337_mRNA)
+mRNA105: -> E2_4_1_227_mRNA | 0.00292 - (0.0093 * E2_4_1_227_mRNA)
+mRNA106: -> E2_4_1_25_mRNA | 0.00292 - (0.0093 * E2_4_1_25_mRNA)
+mRNA107: -> E2_4_2_1_mRNA | 0.00292 - (0.0093 * E2_4_2_1_mRNA)
+mRNA108: -> E2_4_2_10_mRNA | 0.00292 - (0.0093 * E2_4_2_10_mRNA)
+mRNA109: -> E2_4_2_14_mRNA | 0.00292 - (0.0093 * E2_4_2_14_mRNA)
+mRNA110: -> E2_4_2_18_mRNA | 0.00292 - (0.0093 * E2_4_2_18_mRNA)
+mRNA111: -> E2_4_2_29_mRNA | 0.00292 - (0.0093 * E2_4_2_29_mRNA)
+mRNA112: -> E2_4_2_3_mRNA | 0.00292 - (0.0093 * E2_4_2_3_mRNA)
+mRNA113: -> E2_4_2_7_mRNA | 0.00292 - (0.0093 * E2_4_2_7_mRNA)
+mRNA114: -> E2_4_2_8_mRNA | 0.00292 - (0.0093 * E2_4_2_8_mRNA)
+mRNA115: -> E2_4_2_9_mRNA | 0.00292 - (0.0093 * E2_4_2_9_mRNA)
+mRNA116: -> E2_4_99_17_mRNA | 0.00292 - (0.0093 * E2_4_99_17_mRNA)
+mRNA117: -> E2_5_1_10_mRNA | 0.00292 - (0.0093 * E2_5_1_10_mRNA)
+mRNA118: -> E2_5_1_15_mRNA | 0.00292 - (0.0093 * E2_5_1_15_mRNA)
+mRNA119: -> E2_5_1_18_mRNA | 0.00292 - (0.0093 * E2_5_1_18_mRNA)
+mRNA120: -> E2_5_1_19_mRNA | 0.00292 - (0.0093 * E2_5_1_19_mRNA)
+mRNA121: -> E2_5_1_31_mRNA | 0.00292 - (0.0093 * E2_5_1_31_mRNA)
+mRNA122: -> E2_5_1_47_mRNA | 0.00292 - (0.0093 * E2_5_1_47_mRNA)
+mRNA123: -> E4_4_1_1_mRNA | 0.00292 - (0.0093 * E4_4_1_1_mRNA)
+mRNA124: -> E2_5_1_48_mRNA | 0.00292 - (0.0093 * E2_5_1_48_mRNA)
+mRNA125: -> E2_5_1_49_mRNA | 0.00292 - (0.0093 * E2_5_1_49_mRNA)
+mRNA126: -> E2_5_1_6_mRNA | 0.00292 - (0.0093 * E2_5_1_6_mRNA)
+mRNA127: -> E2_5_1_7_mRNA | 0.00292 - (0.0093 * E2_5_1_7_mRNA)
+mRNA128: -> E2_5_1_75_mRNA | 0.00292 - (0.0093 * E2_5_1_75_mRNA)
+mRNA129: -> E2_6_1_1_mRNA | 0.00292 - (0.0093 * E2_6_1_1_mRNA)
+mRNA130: -> E2_6_1_11_mRNA | 0.00292 - (0.0093 * E2_6_1_11_mRNA)
+mRNA131: -> E2_6_1_16_mRNA | 0.00292 - (0.0093 * E2_6_1_16_mRNA)
+mRNA132: -> E2_6_1_42_mRNA | 0.00292 - (0.0093 * E2_6_1_42_mRNA)
+mRNA133: -> E2_6_1_52_mRNA | 0.00292 - (0.0093 * E2_6_1_52_mRNA)
+mRNA134: -> E2_6_1_85_mRNA | 0.00292 - (0.0093 * E2_6_1_85_mRNA)
+mRNA135: -> E4_1_3_38_mRNA | 0.00292 - (0.0093 * E4_1_3_38_mRNA)
+mRNA136: -> E4_1_3_27_mRNA | 0.00292 - (0.0093 * E4_1_3_27_mRNA)
+mRNA137: -> E2_7_1_107_mRNA | 0.00292 - (0.0093 * E2_7_1_107_mRNA)
+mRNA138: -> E2_7_1_11_mRNA | 0.00292 - (0.0093 * E2_7_1_11_mRNA)
+mRNA139: -> E2_7_1_180_mRNA | 0.00292 - (0.0093 * E2_7_1_180_mRNA)
+mRNA140: -> E2_7_1_2_mRNA | 0.00292 - (0.0093 * E2_7_1_2_mRNA)
+mRNA141: -> E2_7_1_59_mRNA | 0.00292 - (0.0093 * E2_7_1_59_mRNA)
+mRNA142: -> E2_7_1_21_mRNA | 0.00292 - (0.0093 * E2_7_1_21_mRNA)
+mRNA143: -> E2_7_1_23_mRNA | 0.00292 - (0.0093 * E2_7_1_23_mRNA)
+mRNA144: -> E2_7_1_24_mRNA | 0.00292 - (0.0093 * E2_7_1_24_mRNA)
+mRNA145: -> E2_7_1_26_mRNA | 0.00292 - (0.0093 * E2_7_1_26_mRNA)
+mRNA146: -> E2_7_7_2_mRNA | 0.00292 - (0.0093 * E2_7_7_2_mRNA)
+mRNA147: -> E2_7_1_31_mRNA | 0.00292 - (0.0093 * E2_7_1_31_mRNA)
+mRNA148: -> E2_7_1_33_mRNA | 0.00292 - (0.0093 * E2_7_1_33_mRNA)
+mRNA149: -> E2_7_1_35_mRNA | 0.00292 - (0.0093 * E2_7_1_35_mRNA)
+mRNA150: -> E2_7_1_36_mRNA | 0.00292 - (0.0093 * E2_7_1_36_mRNA)
+mRNA151: -> E2_7_1_39_mRNA | 0.00292 - (0.0093 * E2_7_1_39_mRNA)
+mRNA152: -> E2_7_1_4_mRNA | 0.00292 - (0.0093 * E2_7_1_4_mRNA)
+mRNA153: -> E2_7_1_40_mRNA | 0.00292 - (0.0093 * E2_7_1_40_mRNA)
+mRNA154: -> E2_7_1_48_mRNA | 0.00292 - (0.0093 * E2_7_1_48_mRNA)
+mRNA155: -> E2_7_1_56_mRNA | 0.00292 - (0.0093 * E2_7_1_56_mRNA)
+mRNA156: -> E2_7_1_6_mRNA | 0.00292 - (0.0093 * E2_7_1_6_mRNA)
+mRNA157: -> E2_7_1_66_mRNA | 0.00292 - (0.0093 * E2_7_1_66_mRNA)
+mRNA158: -> E2_7_1_71_mRNA | 0.00292 - (0.0093 * E2_7_1_71_mRNA)
+mRNA159: -> E2_7_11_1_mRNA | 0.00292 - (0.0093 * E2_7_11_1_mRNA)
+mRNA160: -> E2_7_13_3_mRNA | 0.00292 - (0.0093 * E2_7_13_3_mRNA)
+mRNA161: -> E2_7_2_1_mRNA | 0.00292 - (0.0093 * E2_7_2_1_mRNA)
+mRNA162: -> E2_7_2_11_mRNA | 0.00292 - (0.0093 * E2_7_2_11_mRNA)
+mRNA163: -> E2_7_2_3_mRNA | 0.00292 - (0.0093 * E2_7_2_3_mRNA)
+mRNA164: -> E2_7_2_4_mRNA | 0.00292 - (0.0093 * E2_7_2_4_mRNA)
+mRNA165: -> E2_7_2_8_mRNA | 0.00292 - (0.0093 * E2_7_2_8_mRNA)
+mRNA166: -> E2_7_3_9_mRNA | 0.00292 - (0.0093 * E2_7_3_9_mRNA)
+mRNA167: -> E2_7_4_2_mRNA | 0.00292 - (0.0093 * E2_7_4_2_mRNA)
+mRNA168: -> E2_7_4_22_mRNA | 0.00292 - (0.0093 * E2_7_4_22_mRNA)
+mRNA169: -> E2_7_4_25_mRNA | 0.00292 - (0.0093 * E2_7_4_25_mRNA)
+mRNA170: -> E2_7_4_3_mRNA | 0.00292 - (0.0093 * E2_7_4_3_mRNA)
+mRNA171: -> E2_7_4_6_mRNA | 0.00292 - (0.0093 * E2_7_4_6_mRNA)
+mRNA172: -> E2_7_4_7_mRNA | 0.00292 - (0.0093 * E2_7_4_7_mRNA)
+mRNA173: -> E2_7_4_8_mRNA | 0.00292 - (0.0093 * E2_7_4_8_mRNA)
+mRNA174: -> E2_7_4_9_mRNA | 0.00292 - (0.0093 * E2_7_4_9_mRNA)
+mRNA175: -> E2_7_6_1_mRNA | 0.00292 - (0.0093 * E2_7_6_1_mRNA)
+mRNA176: -> E2_7_6_2_mRNA | 0.00292 - (0.0093 * E2_7_6_2_mRNA)
+mRNA177: -> E2_7_6_3_mRNA | 0.00292 - (0.0093 * E2_7_6_3_mRNA)
+mRNA178: -> E2_7_6_5_mRNA | 0.00292 - (0.0093 * E2_7_6_5_mRNA)
+mRNA179: -> E3_1_7_2_mRNA | 0.00292 - (0.0093 * E3_1_7_2_mRNA)
+mRNA180: -> E2_7_7_1_mRNA | 0.00292 - (0.0093 * E2_7_7_1_mRNA)
+mRNA181: -> E2_7_7_22_mRNA | 0.00292 - (0.0093 * E2_7_7_22_mRNA)
+mRNA182: -> E2_7_7_12_mRNA | 0.00292 - (0.0093 * E2_7_7_12_mRNA)
+mRNA183: -> E2_7_7_23_mRNA | 0.00292 - (0.0093 * E2_7_7_23_mRNA)
+mRNA184: -> E2_3_1_157_mRNA | 0.00292 - (0.0093 * E2_3_1_157_mRNA)
+mRNA185: -> E2_7_7_24_mRNA | 0.00292 - (0.0093 * E2_7_7_24_mRNA)
+mRNA186: -> E2_7_7_3_mRNA | 0.00292 - (0.0093 * E2_7_7_3_mRNA)
+mRNA187: -> E2_7_7_41_mRNA | 0.00292 - (0.0093 * E2_7_7_41_mRNA)
+mRNA188: -> E2_7_7_6_mRNA | 0.00292 - (0.0093 * E2_7_7_6_mRNA)
+mRNA189: -> E2_7_7_7_mRNA | 0.00292 - (0.0093 * E2_7_7_7_mRNA)
+mRNA190: -> E2_7_7_72_mRNA | 0.00292 - (0.0093 * E2_7_7_72_mRNA)
+mRNA191: -> E2_7_7_8_mRNA | 0.00292 - (0.0093 * E2_7_7_8_mRNA)
+mRNA192: -> E3_1_13_1_mRNA | 0.00292 - (0.0093 * E3_1_13_1_mRNA)
+mRNA193: -> E2_7_7_85_mRNA | 0.00292 - (0.0093 * E2_7_7_85_mRNA)
+mRNA194: -> E2_7_7_9_mRNA | 0.00292 - (0.0093 * E2_7_7_9_mRNA)
+mRNA195: -> E2_7_8_13_mRNA | 0.00292 - (0.0093 * E2_7_8_13_mRNA)
+mRNA196: -> E2_7_8_5_mRNA | 0.00292 - (0.0093 * E2_7_8_5_mRNA)
+mRNA197: -> E2_7_8_7_mRNA | 0.00292 - (0.0093 * E2_7_8_7_mRNA)
+mRNA198: -> E2_8_1_13_mRNA | 0.00292 - (0.0093 * E2_8_1_13_mRNA)
+mRNA199: -> E2_8_1_4_mRNA | 0.00292 - (0.0093 * E2_8_1_4_mRNA)
+mRNA200: -> E2_8_1_7_mRNA | 0.00292 - (0.0093 * E2_8_1_7_mRNA)
+mRNA201: -> E3_6_4_12_mRNA | 0.00292 - (0.0093 * E3_6_4_12_mRNA)
+mRNA202: -> E3_1_1_29_mRNA | 0.00292 - (0.0093 * E3_1_1_29_mRNA)
+mRNA203: -> E3_1_11_2_mRNA | 0.00292 - (0.0093 * E3_1_11_2_mRNA)
+mRNA204: -> E3_1_11_6_mRNA | 0.00292 - (0.0093 * E3_1_11_6_mRNA)
+mRNA205: -> E3_1_11_7_mRNA | 0.00292 - (0.0093 * E3_1_11_7_mRNA)
+mRNA206: -> E3_1_2_6_mRNA | 0.00292 - (0.0093 * E3_1_2_6_mRNA)
+mRNA207: -> E3_1_21_3_mRNA | 0.00292 - (0.0093 * E3_1_21_3_mRNA)
+mRNA208: -> E3_1_21_5_mRNA | 0.00292 - (0.0093 * E3_1_21_5_mRNA)
+mRNA209: -> E3_1_22_4_mRNA | 0.00292 - (0.0093 * E3_1_22_4_mRNA)
+mRNA210: -> E3_1_26_11_mRNA | 0.00292 - (0.0093 * E3_1_26_11_mRNA)
+mRNA211: -> E3_1_26_3_mRNA | 0.00292 - (0.0093 * E3_1_26_3_mRNA)
+mRNA212: -> E3_1_26_4_mRNA | 0.00292 - (0.0093 * E3_1_26_4_mRNA)
+mRNA213: -> E3_1_26_5_mRNA | 0.00292 - (0.0093 * E3_1_26_5_mRNA)
+mRNA214: -> E3_1_26_8_mRNA | 0.00292 - (0.0093 * E3_1_26_8_mRNA)
+mRNA215: -> E5_2_1_8_mRNA | 0.00292 - (0.0093 * E5_2_1_8_mRNA)
+mRNA216: -> E3_1_3_15_mRNA | 0.00292 - (0.0093 * E3_1_3_15_mRNA)
+mRNA217: -> E3_1_3_16_mRNA | 0.00292 - (0.0093 * E3_1_3_16_mRNA)
+mRNA218: -> E3_1_3_18_mRNA | 0.00292 - (0.0093 * E3_1_3_18_mRNA)
+mRNA219: -> E3_1_3_25_mRNA | 0.00292 - (0.0093 * E3_1_3_25_mRNA)
+mRNA220: -> E3_1_3_27_mRNA | 0.00292 - (0.0093 * E3_1_3_27_mRNA)
+mRNA221: -> E3_1_3_3_mRNA | 0.00292 - (0.0093 * E3_1_3_3_mRNA)
+mRNA222: -> E3_1_3_48_mRNA | 0.00292 - (0.0093 * E3_1_3_48_mRNA)
+mRNA223: -> E3_1_3_5_mRNA | 0.00292 - (0.0093 * E3_1_3_5_mRNA)
+mRNA224: -> E3_1_3_90_mRNA | 0.00292 - (0.0093 * E3_1_3_90_mRNA)
+mRNA225: -> E3_1_7_1_mRNA | 0.00292 - (0.0093 * E3_1_7_1_mRNA)
+mRNA226: -> E3_6_1_13_mRNA | 0.00292 - (0.0093 * E3_6_1_13_mRNA)
+mRNA227: -> E3_2_1_1_mRNA | 0.00292 - (0.0093 * E3_2_1_1_mRNA)
+mRNA228: -> E3_2_1_11_mRNA | 0.00292 - (0.0093 * E3_2_1_11_mRNA)
+mRNA229: -> E3_2_1_23_mRNA | 0.00292 - (0.0093 * E3_2_1_23_mRNA)
+mRNA230: -> E3_2_1_26_mRNA | 0.00292 - (0.0093 * E3_2_1_26_mRNA)
+mRNA231: -> E3_2_2_20_mRNA | 0.00292 - (0.0093 * E3_2_2_20_mRNA)
+mRNA232: -> E3_2_2_23_mRNA | 0.00292 - (0.0093 * E3_2_2_23_mRNA)
+mRNA233: -> E3_2_2_27_mRNA | 0.00292 - (0.0093 * E3_2_2_27_mRNA)
+mRNA234: -> E3_2_2_31_mRNA | 0.00292 - (0.0093 * E3_2_2_31_mRNA)
+mRNA235: -> E3_2_2_9_mRNA | 0.00292 - (0.0093 * E3_2_2_9_mRNA)
+mRNA236: -> E3_3_1_1_mRNA | 0.00292 - (0.0093 * E3_3_1_1_mRNA)
+mRNA237: -> E3_4_11_18_mRNA | 0.00292 - (0.0093 * E3_4_11_18_mRNA)
+mRNA238: -> E3_4_11_2_mRNA | 0.00292 - (0.0093 * E3_4_11_2_mRNA)
+mRNA239: -> E3_4_11_24_mRNA | 0.00292 - (0.0093 * E3_4_11_24_mRNA)
+mRNA240: -> E3_4_11_4_mRNA | 0.00292 - (0.0093 * E3_4_11_4_mRNA)
+mRNA241: -> E3_4_13_9_mRNA | 0.00292 - (0.0093 * E3_4_13_9_mRNA)
+mRNA242: -> E3_4_14_11_mRNA | 0.00292 - (0.0093 * E3_4_14_11_mRNA)
+mRNA243: -> E3_4_16_5_mRNA | 0.00292 - (0.0093 * E3_4_16_5_mRNA)
+mRNA244: -> E3_4_21_107_mRNA | 0.00292 - (0.0093 * E3_4_21_107_mRNA)
+mRNA245: -> E3_4_21_53_mRNA | 0.00292 - (0.0093 * E3_4_21_53_mRNA)
+mRNA246: -> E3_4_21_89_mRNA | 0.00292 - (0.0093 * E3_4_21_89_mRNA)
+mRNA247: -> E3_4_21_92_mRNA | 0.00292 - (0.0093 * E3_4_21_92_mRNA)
+mRNA248: -> E3_4_22_40_mRNA | 0.00292 - (0.0093 * E3_4_22_40_mRNA)
+mRNA249: -> E3_4_23_36_mRNA | 0.00292 - (0.0093 * E3_4_23_36_mRNA)
+mRNA250: -> E3_5_1_1_mRNA | 0.00292 - (0.0093 * E3_5_1_1_mRNA)
+mRNA251: -> E3_5_1_14_mRNA | 0.00292 - (0.0093 * E3_5_1_14_mRNA)
+mRNA252: -> E3_5_1_19_mRNA | 0.00292 - (0.0093 * E3_5_1_19_mRNA)
+mRNA253: -> E3_5_1_25_mRNA | 0.00292 - (0.0093 * E3_5_1_25_mRNA)
+mRNA254: -> E3_5_1_3_mRNA | 0.00292 - (0.0093 * E3_5_1_3_mRNA)
+mRNA255: -> E3_5_1_4_mRNA | 0.00292 - (0.0093 * E3_5_1_4_mRNA)
+mRNA256: -> E3_5_1_47_mRNA | 0.00292 - (0.0093 * E3_5_1_47_mRNA)
+mRNA257: -> E3_5_1_5_mRNA | 0.00292 - (0.0093 * E3_5_1_5_mRNA)
+mRNA258: -> E3_5_1_88_mRNA | 0.00292 - (0.0093 * E3_5_1_88_mRNA)
+mRNA259: -> E3_5_2_3_mRNA | 0.00292 - (0.0093 * E3_5_2_3_mRNA)
+mRNA260: -> E3_5_3_11_mRNA | 0.00292 - (0.0093 * E3_5_3_11_mRNA)
+mRNA261: -> E3_5_4_12_mRNA | 0.00292 - (0.0093 * E3_5_4_12_mRNA)
+mRNA262: -> E3_5_4_16_mRNA | 0.00292 - (0.0093 * E3_5_4_16_mRNA)
+mRNA263: -> E3_5_4_33_mRNA | 0.00292 - (0.0093 * E3_5_4_33_mRNA)
+mRNA264: -> E3_5_4_4_mRNA | 0.00292 - (0.0093 * E3_5_4_4_mRNA)
+mRNA265: -> E3_5_4_5_mRNA | 0.00292 - (0.0093 * E3_5_4_5_mRNA)
+mRNA266: -> E3_5_99_10_mRNA | 0.00292 - (0.0093 * E3_5_99_10_mRNA)
+mRNA267: -> E3_5_99_6_mRNA | 0.00292 - (0.0093 * E3_5_99_6_mRNA)
+mRNA268: -> E3_6_1_1_mRNA | 0.00292 - (0.0093 * E3_6_1_1_mRNA)
+mRNA269: -> E3_6_1_23_mRNA | 0.00292 - (0.0093 * E3_6_1_23_mRNA)
+mRNA270: -> E3_6_1_27_mRNA | 0.00292 - (0.0093 * E3_6_1_27_mRNA)
+mRNA271: -> E3_6_1_29_mRNA | 0.00292 - (0.0093 * E3_6_1_29_mRNA)
+mRNA272: -> E3_6_1_55_mRNA | 0.00292 - (0.0093 * E3_6_1_55_mRNA)
+mRNA273: -> E3_6_1_7_mRNA | 0.00292 - (0.0093 * E3_6_1_7_mRNA)
+mRNA274: -> E3_6_166_mRNA | 0.00292 - (0.0093 * E3_6_166_mRNA)
+mRNA275: -> E3_6_4_13_mRNA | 0.00292 - (0.0093 * E3_6_4_13_mRNA)
+mRNA276: -> E3_8_1_2_mRNA | 0.00292 - (0.0093 * E3_8_1_2_mRNA)
+mRNA277: -> E4_1_1_20_mRNA | 0.00292 - (0.0093 * E4_1_1_20_mRNA)
+mRNA278: -> E4_1_1_23_mRNA | 0.00292 - (0.0093 * E4_1_1_23_mRNA)
+mRNA279: -> E4_1_1_31_mRNA | 0.00292 - (0.0093 * E4_1_1_31_mRNA)
+mRNA280: -> E4_1_1_33_mRNA | 0.00292 - (0.0093 * E4_1_1_33_mRNA)
+mRNA281: -> E4_1_1_36_mRNA | 0.00292 - (0.0093 * E4_1_1_36_mRNA)
+mRNA282: -> E4_1_1_48_mRNA | 0.00292 - (0.0093 * E4_1_1_48_mRNA)
+mRNA283: -> E4_1_1_5_mRNA | 0.00292 - (0.0093 * E4_1_1_5_mRNA)
+mRNA284: -> E4_1_2_13_mRNA | 0.00292 - (0.0093 * E4_1_2_13_mRNA)
+mRNA285: -> E4_1_2_25_mRNA | 0.00292 - (0.0093 * E4_1_2_25_mRNA)
+mRNA286: -> E4_1_99_3_mRNA | 0.00292 - (0.0093 * E4_1_99_3_mRNA)
+mRNA287: -> E4_2_1_1_mRNA | 0.00292 - (0.0093 * E4_2_1_1_mRNA)
+mRNA288: -> E4_2_1_10_mRNA | 0.00292 - (0.0093 * E4_2_1_10_mRNA)
+mRNA289: -> E4_2_1_11_mRNA | 0.00292 - (0.0093 * E4_2_1_11_mRNA)
+mRNA290: -> E4_2_1_136_mRNA | 0.00292 - (0.0093 * E4_2_1_136_mRNA)
+mRNA291: -> E4_2_1_20_mRNA | 0.00292 - (0.0093 * E4_2_1_20_mRNA)
+mRNA292: -> E4_2_1_21_mRNA | 0.00292 - (0.0093 * E4_2_1_21_mRNA)
+mRNA293: -> E4_2_1_3_mRNA | 0.00292 - (0.0093 * E4_2_1_3_mRNA)
+mRNA294: -> E4_2_1_33_mRNA | 0.00292 - (0.0093 * E4_2_1_33_mRNA)
+mRNA295: -> E4_2_1_34_mRNA | 0.00292 - (0.0093 * E4_2_1_34_mRNA)
+mRNA296: -> E4_2_1_46_mRNA | 0.00292 - (0.0093 * E4_2_1_46_mRNA)
+mRNA297: -> E4_2_1_49_mRNA | 0.00292 - (0.0093 * E4_2_1_49_mRNA)
+mRNA298: -> E4_2_1_51_mRNA | 0.00292 - (0.0093 * E4_2_1_51_mRNA)
+mRNA299: -> E4_2_1_59_mRNA | 0.00292 - (0.0093 * E4_2_1_59_mRNA)
+mRNA300: -> E4_2_1_70_mRNA | 0.00292 - (0.0093 * E4_2_1_70_mRNA)
+mRNA301: -> E4_2_1_9_mRNA | 0.00292 - (0.0093 * E4_2_1_9_mRNA)
+mRNA302: -> E4_2_3_1_mRNA | 0.00292 - (0.0093 * E4_2_3_1_mRNA)
+mRNA303: -> E4_2_3_4_mRNA | 0.00292 - (0.0093 * E4_2_3_4_mRNA)
+mRNA304: -> E4_2_3_5_mRNA | 0.00292 - (0.0093 * E4_2_3_5_mRNA)
+mRNA305: -> E4_2_99_18_mRNA | 0.00292 - (0.0093 * E4_2_99_18_mRNA)
+mRNA306: -> E4_3_1_17_mRNA | 0.00292 - (0.0093 * E4_3_1_17_mRNA)
+mRNA307: -> E4_3_1_18_mRNA | 0.00292 - (0.0093 * E4_3_1_18_mRNA)
+mRNA308: -> E4_3_1_19_mRNA | 0.00292 - (0.0093 * E4_3_1_19_mRNA)
+mRNA309: -> E4_3_2_1_mRNA | 0.00292 - (0.0093 * E4_3_2_1_mRNA)
+mRNA310: -> E4_3_2_2_mRNA | 0.00292 - (0.0093 * E4_3_2_2_mRNA)
+mRNA311: -> E4_3_3_7_mRNA | 0.00292 - (0.0093 * E4_3_3_7_mRNA)
+mRNA312: -> E4_3_99_3_mRNA | 0.00292 - (0.0093 * E4_3_99_3_mRNA)
+mRNA313: -> E4_4_1_2_mRNA | 0.00292 - (0.0093 * E4_4_1_2_mRNA)
+mRNA314: -> E4_4_1_21_mRNA | 0.00292 - (0.0093 * E4_4_1_21_mRNA)
+mRNA315: -> E4_4_1_5_mRNA | 0.00292 - (0.0093 * E4_4_1_5_mRNA)
+mRNA316: -> E4_4_1_8_mRNA | 0.00292 - (0.0093 * E4_4_1_8_mRNA)
+mRNA317: -> E4_99_1_1_mRNA | 0.00292 - (0.0093 * E4_99_1_1_mRNA)
+mRNA318: -> E5_1_1_1_mRNA | 0.00292 - (0.0093 * E5_1_1_1_mRNA)
+mRNA319: -> E5_1_1_3_mRNA | 0.00292 - (0.0093 * E5_1_1_3_mRNA)
+mRNA320: -> E5_1_3_1_mRNA | 0.00292 - (0.0093 * E5_1_3_1_mRNA)
+mRNA321: -> E5_1_3_2_mRNA | 0.00292 - (0.0093 * E5_1_3_2_mRNA)
+mRNA322: -> E5_1_3_7_mRNA | 0.00292 - (0.0093 * E5_1_3_7_mRNA)
+mRNA323: -> E5_1_3_3__mRNA | 0.00292 - (0.0093 * E5_1_3_3__mRNA)
+mRNA324: -> E5_3_1_1_mRNA | 0.00292 - (0.0093 * E5_3_1_1_mRNA)
+mRNA325: -> E5_3_1_24_mRNA | 0.00292 - (0.0093 * E5_3_1_24_mRNA)
+mRNA326: -> E5_3_1_6_mRNA | 0.00292 - (0.0093 * E5_3_1_6_mRNA)
+mRNA327: -> E5_3_1_8_mRNA | 0.00292 - (0.0093 * E5_3_1_8_mRNA)
+mRNA328: -> E5_3_1_9_mRNA | 0.00292 - (0.0093 * E5_3_1_9_mRNA)
+mRNA329: -> E5_3_3_14_mRNA | 0.00292 - (0.0093 * E5_3_3_14_mRNA)
+mRNA330: -> E5_3_3_2_mRNA | 0.00292 - (0.0093 * E5_3_3_2_mRNA)
+mRNA331: -> E5_4_2_10_mRNA | 0.00292 - (0.0093 * E5_4_2_10_mRNA)
+mRNA332: -> E5_4_2_2_mRNA | 0.00292 - (0.0093 * E5_4_2_2_mRNA)
+mRNA333: -> E5_4_2_7_mRNA | 0.00292 - (0.0093 * E5_4_2_7_mRNA)
+mRNA334: -> E5_4_99_12_mRNA | 0.00292 - (0.0093 * E5_4_99_12_mRNA)
+mRNA335: -> E5_4_99_18_mRNA | 0.00292 - (0.0093 * E5_4_99_18_mRNA)
+mRNA336: -> E5_4_99_25_mRNA | 0.00292 - (0.0093 * E5_4_99_25_mRNA)
+mRNA337: -> E5_4_99_5_mRNA | 0.00292 - (0.0093 * E5_4_99_5_mRNA)
+mRNA338: -> E5_4_99_9_mRNA | 0.00292 - (0.0093 * E5_4_99_9_mRNA)
+mRNA339: -> E5_6_2_1_mRNA | 0.00292 - (0.0093 * E5_6_2_1_mRNA)
+mRNA340: -> E5_6_2_2_mRNA | 0.00292 - (0.0093 * E5_6_2_2_mRNA)
+mRNA341: -> E6_1_1_1_mRNA | 0.00292 - (0.0093 * E6_1_1_1_mRNA)
+mRNA342: -> E6_1_1_10_mRNA | 0.00292 - (0.0093 * E6_1_1_10_mRNA)
+mRNA343: -> E6_1_1_11_mRNA | 0.00292 - (0.0093 * E6_1_1_11_mRNA)
+mRNA344: -> E6_1_1_12_mRNA | 0.00292 - (0.0093 * E6_1_1_12_mRNA)
+mRNA345: -> E6_1_1_14_mRNA | 0.00292 - (0.0093 * E6_1_1_14_mRNA)
+mRNA346: -> E6_1_1_15_mRNA | 0.00292 - (0.0093 * E6_1_1_15_mRNA)
+mRNA347: -> E6_1_1_16_mRNA | 0.00292 - (0.0093 * E6_1_1_16_mRNA)
+mRNA348: -> E6_1_1_17_mRNA | 0.00292 - (0.0093 * E6_1_1_17_mRNA)
+mRNA349: -> E6_1_1_24_mRNA | 0.00292 - (0.0093 * E6_1_1_24_mRNA)
+mRNA350: -> E6_1_1_19_mRNA | 0.00292 - (0.0093 * E6_1_1_19_mRNA)
+mRNA351: -> E6_1_1_2_mRNA | 0.00292 - (0.0093 * E6_1_1_2_mRNA)
+mRNA352: -> E6_1_1_20_mRNA | 0.00292 - (0.0093 * E6_1_1_20_mRNA)
+mRNA353: -> E6_1_1_21_mRNA | 0.00292 - (0.0093 * E6_1_1_21_mRNA)
+mRNA354: -> E6_1_1_22_mRNA | 0.00292 - (0.0093 * E6_1_1_22_mRNA)
+mRNA355: -> E6_1_1_3_mRNA | 0.00292 - (0.0093 * E6_1_1_3_mRNA)
+mRNA356: -> E6_1_1_4_mRNA | 0.00292 - (0.0093 * E6_1_1_4_mRNA)
+mRNA357: -> E6_1_1_5_mRNA | 0.00292 - (0.0093 * E6_1_1_5_mRNA)
+mRNA358: -> E6_1_1_6_mRNA | 0.00292 - (0.0093 * E6_1_1_6_mRNA)
+mRNA359: -> E6_1_1_7_mRNA | 0.00292 - (0.0093 * E6_1_1_7_mRNA)
+mRNA360: -> E6_1_1_9_mRNA | 0.00292 - (0.0093 * E6_1_1_9_mRNA)
+mRNA361: -> E6_2_1_54_mRNA | 0.00292 - (0.0093 * E6_2_1_54_mRNA)
+mRNA362: -> E6_3_1_1_mRNA | 0.00292 - (0.0093 * E6_3_1_1_mRNA)
+mRNA363: -> E6_3_1_2_mRNA | 0.00292 - (0.0093 * E6_3_1_2_mRNA)
+mRNA364: -> E6_3_1_20_mRNA | 0.00292 - (0.0093 * E6_3_1_20_mRNA)
+mRNA365: -> E6_3_1_5_mRNA | 0.00292 - (0.0093 * E6_3_1_5_mRNA)
+mRNA366: -> E6_3_2_10_mRNA | 0.00292 - (0.0093 * E6_3_2_10_mRNA)
+mRNA367: -> E6_3_2_12_mRNA | 0.00292 - (0.0093 * E6_3_2_12_mRNA)
+mRNA368: -> E6_3_2_17_mRNA | 0.00292 - (0.0093 * E6_3_2_17_mRNA)
+mRNA369: -> E6_3_2_2_mRNA | 0.00292 - (0.0093 * E6_3_2_2_mRNA)
+mRNA370: -> E6_3_2_3_mRNA | 0.00292 - (0.0093 * E6_3_2_3_mRNA)
+mRNA371: -> E6_3_2_4_mRNA | 0.00292 - (0.0093 * E6_3_2_4_mRNA)
+mRNA372: -> E6_3_2_5_mRNA | 0.00292 - (0.0093 * E6_3_2_5_mRNA)
+mRNA373: -> E6_3_2_6_mRNA | 0.00292 - (0.0093 * E6_3_2_6_mRNA)
+mRNA374: -> E6_3_2_7_mRNA | 0.00292 - (0.0093 * E6_3_2_7_mRNA)
+mRNA375: -> E6_3_2_8_mRNA | 0.00292 - (0.0093 * E6_3_2_8_mRNA)
+mRNA376: -> E6_3_2_9_mRNA | 0.00292 - (0.0093 * E6_3_2_9_mRNA)
+mRNA377: -> E6_3_3_1_mRNA | 0.00292 - (0.0093 * E6_3_3_1_mRNA)
+mRNA378: -> E6_3_3_2_mRNA | 0.00292 - (0.0093 * E6_3_3_2_mRNA)
+mRNA379: -> E6_3_4_13_mRNA | 0.00292 - (0.0093 * E6_3_4_13_mRNA)
+mRNA380: -> E6_3_4_14_mRNA | 0.00292 - (0.0093 * E6_3_4_14_mRNA)
+mRNA381: -> E6_3_4_18_mRNA | 0.00292 - (0.0093 * E6_3_4_18_mRNA)
+mRNA382: -> E6_3_4_19_mRNA | 0.00292 - (0.0093 * E6_3_4_19_mRNA)
+mRNA383: -> E6_3_4_2_mRNA | 0.00292 - (0.0093 * E6_3_4_2_mRNA)
+mRNA384: -> E6_3_4_20_mRNA | 0.00292 - (0.0093 * E6_3_4_20_mRNA)
+mRNA385: -> E6_3_4_21_mRNA | 0.00292 - (0.0093 * E6_3_4_21_mRNA)
+mRNA386: -> E6_3_4_3_mRNA | 0.00292 - (0.0093 * E6_3_4_3_mRNA)
+mRNA387: -> E6_3_4_4_mRNA | 0.00292 - (0.0093 * E6_3_4_4_mRNA)
+mRNA388: -> E6_3_4_5_mRNA | 0.00292 - (0.0093 * E6_3_4_5_mRNA)
+mRNA389: -> E6_3_5_13_mRNA | 0.00292 - (0.0093 * E6_3_5_13_mRNA)
+mRNA390: -> E6_3_5_14_mRNA | 0.00292 - (0.0093 * E6_3_5_14_mRNA)
+mRNA391: -> E6_3_5_2_mRNA | 0.00292 - (0.0093 * E6_3_5_2_mRNA)
+mRNA392: -> E6_3_5_3_mRNA | 0.00292 - (0.0093 * E6_3_5_3_mRNA)
+mRNA393: -> E6_3_5_5_mRNA | 0.00292 - (0.0093 * E6_3_5_5_mRNA)
+mRNA394: -> E6_3_5_7_mRNA | 0.00292 - (0.0093 * E6_3_5_7_mRNA)
+mRNA395: -> E6_4_1_2_mRNA | 0.00292 - (0.0093 * E6_4_1_2_mRNA)
+mRNA396: -> E6_5_1_2_mRNA | 0.00292 - (0.0093 * E6_5_1_2_mRNA)
+mRNA397: -> E7_1_2_2_mRNA | 0.00292 - (0.0093 * E7_1_2_2_mRNA)
+mRNA398: -> E7_2_2_10_mRNA | 0.00292 - (0.0093 * E7_2_2_10_mRNA)
+mRNA399: -> E7_2_2_8_mRNA | 0.00292 - (0.0093 * E7_2_2_8_mRNA)
+mRNA400: -> E7_6_2_11_mRNA | 0.00292 - (0.0093 * E7_6_2_11_mRNA)
+Peptide1: E1_1_1_1_mRNA -> E1_1_1_1 | (0.278 * E1_1_1_1_mRNA) - (0.000000278 * E1_1_1_1)
+Peptide2: E1_2_1_10_mRNA -> E1_2_1_10 | (0.278 * E1_2_1_10_mRNA) - (0.000000278 * E1_2_1_10)
+Peptide3: E1_1_1_100_mRNA -> E1_1_1_100 | (0.278 * E1_1_1_100_mRNA) - (0.000000278 * E1_1_1_100)
+Peptide4: E1_1_1_169_mRNA -> E1_1_1_169 | (0.278 * E1_1_1_169_mRNA) - (0.000000278 * E1_1_1_169)
+Peptide5: E1_1_1_205_mRNA -> E1_1_1_205 | (0.278 * E1_1_1_205_mRNA) - (0.000000278 * E1_1_1_205)
+Peptide6: E1_1_1_25_mRNA -> E1_1_1_25 | (0.278 * E1_1_1_25_mRNA) - (0.000000278 * E1_1_1_25)
+Peptide7: E1_1_1_27_mRNA -> E1_1_1_27 | (0.278 * E1_1_1_27_mRNA) - (0.000000278 * E1_1_1_27)
+Peptide8: E1_1_1_3_mRNA -> E1_1_1_3 | (0.278 * E1_1_1_3_mRNA) - (0.000000278 * E1_1_1_3)
+Peptide9: E1_1_1_303_mRNA -> E1_1_1_303 | (0.278 * E1_1_1_303_mRNA) - (0.000000278 * E1_1_1_303)
+Peptide10: E2_3_1_190_mRNA -> E2_3_1_190 | (0.278 * E2_3_1_190_mRNA) - (0.000000278 * E2_3_1_190)
+Peptide11: E1_1_1_304_mRNA -> E1_1_1_304 | (0.278 * E1_1_1_304_mRNA) - (0.000000278 * E1_1_1_304)
+Peptide12: E2_3_1_191_mRNA -> E2_3_1_191 | (0.278 * E2_3_1_191_mRNA) - (0.000000278 * E2_3_1_191)
+Peptide13: E1_1_1_42_mRNA -> E1_1_1_42 | (0.278 * E1_1_1_42_mRNA) - (0.000000278 * E1_1_1_42)
+Peptide14: E1_1_1_85_mRNA -> E1_1_1_85 | (0.278 * E1_1_1_85_mRNA) - (0.000000278 * E1_1_1_85)
+Peptide15: E1_1_1_86_mRNA -> E1_1_1_86 | (0.278 * E1_1_1_86_mRNA) - (0.000000278 * E1_1_1_86)
+Peptide16: E1_1_1_88_mRNA -> E1_1_1_88 | (0.278 * E1_1_1_88_mRNA) - (0.000000278 * E1_1_1_88)
+Peptide17: E1_1_1_94_mRNA -> E1_1_1_94 | (0.278 * E1_1_1_94_mRNA) - (0.000000278 * E1_1_1_94)
+Peptide18: E1_1_1_95_mRNA -> E1_1_1_95 | (0.278 * E1_1_1_95_mRNA) - (0.000000278 * E1_1_1_95)
+Peptide19: E1_1_1_95_mRNA -> E1_1_1_95 | (0.278 * E1_1_1_95_mRNA) - (0.000000278 * E1_1_1_95)
+Peptide20: E1_11_1_15_mRNA -> E1_11_1_15 | (0.278 * E1_11_1_15_mRNA) - (0.000000278 * E1_11_1_15)
+Peptide21: E1_15_1_1_mRNA -> E1_15_1_1 | (0.278 * E1_15_1_1_mRNA) - (0.000000278 * E1_15_1_1)
+Peptide22: E1_17_1_8_mRNA -> E1_17_1_8 | (0.278 * E1_17_1_8_mRNA) - (0.000000278 * E1_17_1_8)
+Peptide23: E1_17_4_1_mRNA -> E1_17_4_1 | (0.278 * E1_17_4_1_mRNA) - (0.000000278 * E1_17_4_1)
+Peptide24: E1_17_4_2_mRNA -> E1_17_4_2 | (0.278 * E1_17_4_2_mRNA) - (0.000000278 * E1_17_4_2)
+Peptide25: E1_17_99_6_mRNA -> E1_17_99_6 | (0.278 * E1_17_99_6_mRNA) - (0.000000278 * E1_17_99_6)
+Peptide26: E1_18_1_2_mRNA -> E1_18_1_2 | (0.278 * E1_18_1_2_mRNA) - (0.000000278 * E1_18_1_2)
+Peptide27: E1_2_1_11_mRNA -> E1_2_1_11 | (0.278 * E1_2_1_11_mRNA) - (0.000000278 * E1_2_1_11)
+Peptide28: E1_2_1_12_mRNA -> E1_2_1_12 | (0.278 * E1_2_1_12_mRNA) - (0.000000278 * E1_2_1_12)
+Peptide29: E1_2_1_38_mRNA -> E1_2_1_38 | (0.278 * E1_2_1_38_mRNA) - (0.000000278 * E1_2_1_38)
+Peptide30: E1_2_1_41_mRNA -> E1_2_1_41 | (0.278 * E1_2_1_41_mRNA) - (0.000000278 * E1_2_1_41)
+Peptide31: E1_2_1_9_mRNA -> E1_2_1_9 | (0.278 * E1_2_1_9_mRNA) - (0.000000278 * E1_2_1_9)
+Peptide32: E1_3_1_12_mRNA -> E1_3_1_12 | (0.278 * E1_3_1_12_mRNA) - (0.000000278 * E1_3_1_12)
+Peptide33: E1_3_1_15_mRNA -> E1_3_1_15 | (0.278 * E1_3_1_15_mRNA) - (0.000000278 * E1_3_1_15)
+Peptide34: E1_3_1_9_mRNA -> E1_3_1_9 | (0.278 * E1_3_1_9_mRNA) - (0.000000278 * E1_3_1_9)
+Peptide35: E1_3_1_98_mRNA -> E1_3_1_98 | (0.278 * E1_3_1_98_mRNA) - (0.000000278 * E1_3_1_98)
+Peptide36: E1_3_8_1_mRNA -> E1_3_8_1 | (0.278 * E1_3_8_1_mRNA) - (0.000000278 * E1_3_8_1)
+Peptide37: E1_3_98_1_mRNA -> E1_3_98_1 | (0.278 * E1_3_98_1_mRNA) - (0.000000278 * E1_3_98_1)
+Peptide38: E1_4_1_4_mRNA -> E1_4_1_4 | (0.278 * E1_4_1_4_mRNA) - (0.000000278 * E1_4_1_4)
+Peptide39: E1_5_1_2_mRNA -> E1_5_1_2 | (0.278 * E1_5_1_2_mRNA) - (0.000000278 * E1_5_1_2)
+Peptide40: E1_5_1_20_mRNA -> E1_5_1_20 | (0.278 * E1_5_1_20_mRNA) - (0.000000278 * E1_5_1_20)
+Peptide41: E1_5_1_3_mRNA -> E1_5_1_3 | (0.278 * E1_5_1_3_mRNA) - (0.000000278 * E1_5_1_3)
+Peptide42: E1_5_1_5_mRNA -> E1_5_1_5 | (0.278 * E1_5_1_5_mRNA) - (0.000000278 * E1_5_1_5)
+Peptide43: E3_5_4_9_mRNA -> E3_5_4_9 | (0.278 * E3_5_4_9_mRNA) - (0.000000278 * E3_5_4_9)
+Peptide44: E1_6_99_3_mRNA -> E1_6_99_3 | (0.278 * E1_6_99_3_mRNA) - (0.000000278 * E1_6_99_3)
+Peptide45: E1_7_1_13_mRNA -> E1_7_1_13 | (0.278 * E1_7_1_13_mRNA) - (0.000000278 * E1_7_1_13)
+Peptide46: E1_8_1_4_mRNA -> E1_8_1_4 | (0.278 * E1_8_1_4_mRNA) - (0.000000278 * E1_8_1_4)
+Peptide47: E1_8_1_7_mRNA -> E1_8_1_7 | (0.278 * E1_8_1_7_mRNA) - (0.000000278 * E1_8_1_7)
+Peptide48: E1_8_1_9_mRNA -> E1_8_1_9 | (0.278 * E1_8_1_9_mRNA) - (0.000000278 * E1_8_1_9)
+Peptide49: E1_8_4_11_mRNA -> E1_8_4_11 | (0.278 * E1_8_4_11_mRNA) - (0.000000278 * E1_8_4_11)
+Peptide50: E1_8_4_12_mRNA -> E1_8_4_12 | (0.278 * E1_8_4_12_mRNA) - (0.000000278 * E1_8_4_12)
+Peptide51: E1_97_1_4_mRNA -> E1_97_1_4 | (0.278 * E1_97_1_4_mRNA) - (0.000000278 * E1_97_1_4)
+Peptide52: E2_1_1_10_mRNA -> E2_1_1_10 | (0.278 * E2_1_1_10_mRNA) - (0.000000278 * E2_1_1_10)
+Peptide53: E2_1_1_14_mRNA -> E2_1_1_14 | (0.278 * E2_1_1_14_mRNA) - (0.000000278 * E2_1_1_14)
+Peptide54: E2_1_1_170_mRNA -> E2_1_1_170 | (0.278 * E2_1_1_170_mRNA) - (0.000000278 * E2_1_1_170)
+Peptide55: E2_1_1_171_mRNA -> E2_1_1_171 | (0.278 * E2_1_1_171_mRNA) - (0.000000278 * E2_1_1_171)
+Peptide56: E2_1_1_176_mRNA -> E2_1_1_176 | (0.278 * E2_1_1_176_mRNA) - (0.000000278 * E2_1_1_176)
+Peptide57: E2_1_1_177_mRNA -> E2_1_1_177 | (0.278 * E2_1_1_177_mRNA) - (0.000000278 * E2_1_1_177)
+Peptide58: E2_1_1_182_mRNA -> E2_1_1_182 | (0.278 * E2_1_1_182_mRNA) - (0.000000278 * E2_1_1_182)
+Peptide59: E2_1_1_192_mRNA -> E2_1_1_192 | (0.278 * E2_1_1_192_mRNA) - (0.000000278 * E2_1_1_192)
+Peptide60: E2_1_1_193_mRNA -> E2_1_1_193 | (0.278 * E2_1_1_193_mRNA) - (0.000000278 * E2_1_1_193)
+Peptide61: E2_1_1_198_mRNA -> E2_1_1_198 | (0.278 * E2_1_1_198_mRNA) - (0.000000278 * E2_1_1_198)
+Peptide62: E2_1_1_199_mRNA -> E2_1_1_199 | (0.278 * E2_1_1_199_mRNA) - (0.000000278 * E2_1_1_199)
+Peptide63: E2_1_1_207_mRNA -> E2_1_1_207 | (0.278 * E2_1_1_207_mRNA) - (0.000000278 * E2_1_1_207)
+Peptide64: E2_1_1_217_mRNA -> E2_1_1_217 | (0.278 * E2_1_1_217_mRNA) - (0.000000278 * E2_1_1_217)
+Peptide65: E2_1_1_223_mRNA -> E2_1_1_223 | (0.278 * E2_1_1_223_mRNA) - (0.000000278 * E2_1_1_223)
+Peptide66: E2_1_1_264_mRNA -> E2_1_1_264 | (0.278 * E2_1_1_264_mRNA) - (0.000000278 * E2_1_1_264)
+Peptide67: E2_1_1_28_mRNA -> E2_1_1_28 | (0.278 * E2_1_1_28_mRNA) - (0.000000278 * E2_1_1_28)
+Peptide68: E2_1_1_297_mRNA -> E2_1_1_297 | (0.278 * E2_1_1_297_mRNA) - (0.000000278 * E2_1_1_297)
+Peptide69: E2_1_1_33_mRNA -> E2_1_1_33 | (0.278 * E2_1_1_33_mRNA) - (0.000000278 * E2_1_1_33)
+Peptide70: E2_1_1_45_mRNA -> E2_1_1_45 | (0.278 * E2_1_1_45_mRNA) - (0.000000278 * E2_1_1_45)
+Peptide71: E2_1_1_63_mRNA -> E2_1_1_63 | (0.278 * E2_1_1_63_mRNA) - (0.000000278 * E2_1_1_63)
+Peptide72: E2_1_1_72_mRNA -> E2_1_1_72 | (0.278 * E2_1_1_72_mRNA) - (0.000000278 * E2_1_1_72)
+Peptide73: E2_1_1_74_mRNA -> E2_1_1_74 | (0.278 * E2_1_1_74_mRNA) - (0.000000278 * E2_1_1_74)
+Peptide74: E2_1_1_79_mRNA -> E2_1_1_79 | (0.278 * E2_1_1_79_mRNA) - (0.000000278 * E2_1_1_79)
+Peptide75: E2_1_2_1_mRNA -> E2_1_2_1 | (0.278 * E2_1_2_1_mRNA) - (0.000000278 * E2_1_2_1)
+Peptide76: E2_1_2_2_mRNA -> E2_1_2_2 | (0.278 * E2_1_2_2_mRNA) - (0.000000278 * E2_1_2_2)
+Peptide77: E2_1_2_3_mRNA -> E2_1_2_3 | (0.278 * E2_1_2_3_mRNA) - (0.000000278 * E2_1_2_3)
+Peptide78: E3_5_4_10_mRNA -> E3_5_4_10 | (0.278 * E3_5_4_10_mRNA) - (0.000000278 * E3_5_4_10)
+Peptide79: E2_1_2_9_mRNA -> E2_1_2_9 | (0.278 * E2_1_2_9_mRNA) - (0.000000278 * E2_1_2_9)
+Peptide80: E2_1_3_15_mRNA -> E2_1_3_15 | (0.278 * E2_1_3_15_mRNA) - (0.000000278 * E2_1_3_15)
+Peptide81: E2_1_3_2_mRNA -> E2_1_3_2 | (0.278 * E2_1_3_2_mRNA) - (0.000000278 * E2_1_3_2)
+Peptide82: E2_1_3_3_mRNA -> E2_1_3_3 | (0.278 * E2_1_3_3_mRNA) - (0.000000278 * E2_1_3_3)
+Peptide83: E2_1_5_4_mRNA -> E2_1_5_4 | (0.278 * E2_1_5_4_mRNA) - (0.000000278 * E2_1_5_4)
+Peptide84: E2_2_1_1_mRNA -> E2_2_1_1 | (0.278 * E2_2_1_1_mRNA) - (0.000000278 * E2_2_1_1)
+Peptide85: E2_2_1_6_mRNA -> E2_2_1_6 | (0.278 * E2_2_1_6_mRNA) - (0.000000278 * E2_2_1_6)
+Peptide86: E2_3_3_13_mRNA -> E2_3_3_13 | (0.278 * E2_3_3_13_mRNA) - (0.000000278 * E2_3_3_13)
+Peptide87: E2_3_1_180_mRNA -> E2_3_1_180 | (0.278 * E2_3_1_180_mRNA) - (0.000000278 * E2_3_1_180)
+Peptide88: E2_3_1_266_mRNA -> E2_3_1_266 | (0.278 * E2_3_1_266_mRNA) - (0.000000278 * E2_3_1_266)
+Peptide89: E2_3_1_30_mRNA -> E2_3_1_30 | (0.278 * E2_3_1_30_mRNA) - (0.000000278 * E2_3_1_30)
+Peptide90: E2_3_1_31_mRNA -> E2_3_1_31 | (0.278 * E2_3_1_31_mRNA) - (0.000000278 * E2_3_1_31)
+Peptide91: E2_3_1_35_mRNA -> E2_3_1_35 | (0.278 * E2_3_1_35_mRNA) - (0.000000278 * E2_3_1_35)
+Peptide92: E2_3_1_1_mRNA -> E2_3_1_1 | (0.278 * E2_3_1_1_mRNA) - (0.000000278 * E2_3_1_1)
+Peptide93: E2_3_1_39_mRNA -> E2_3_1_39 | (0.278 * E2_3_1_39_mRNA) - (0.000000278 * E2_3_1_39)
+Peptide94: E2_3_1_41_mRNA -> E2_3_1_41 | (0.278 * E2_3_1_41_mRNA) - (0.000000278 * E2_3_1_41)
+Peptide95: E2_3_1_54_mRNA -> E2_3_1_54 | (0.278 * E2_3_1_54_mRNA) - (0.000000278 * E2_3_1_54)
+Peptide96: E2_3_1_8_mRNA -> E2_3_1_8 | (0.278 * E2_3_1_8_mRNA) - (0.000000278 * E2_3_1_8)
+Peptide97: E2_3_1_89_mRNA -> E2_3_1_89 | (0.278 * E2_3_1_89_mRNA) - (0.000000278 * E2_3_1_89)
+Peptide98: E2_3_3_10_mRNA -> E2_3_3_10 | (0.278 * E2_3_3_10_mRNA) - (0.000000278 * E2_3_3_10)
+Peptide99: E2_3_3_16_mRNA -> E2_3_3_16 | (0.278 * E2_3_3_16_mRNA) - (0.000000278 * E2_3_3_16)
+Peptide100: E2_4_1_1_mRNA -> E2_4_1_1 | (0.278 * E2_4_1_1_mRNA) - (0.000000278 * E2_4_1_1)
+Peptide101: E2_4_1_129_mRNA -> E2_4_1_129 | (0.278 * E2_4_1_129_mRNA) - (0.000000278 * E2_4_1_129)
+Peptide102: E3_4_16_4_mRNA -> E3_4_16_4 | (0.278 * E3_4_16_4_mRNA) - (0.000000278 * E3_4_16_4)
+Peptide103: E2_4_1_208_mRNA -> E2_4_1_208 | (0.278 * E2_4_1_208_mRNA) - (0.000000278 * E2_4_1_208)
+Peptide104: E2_4_1_337_mRNA -> E2_4_1_337 | (0.278 * E2_4_1_337_mRNA) - (0.000000278 * E2_4_1_337)
+Peptide105: E2_4_1_227_mRNA -> E2_4_1_227 | (0.278 * E2_4_1_227_mRNA) - (0.000000278 * E2_4_1_227)
+Peptide106: E2_4_1_25_mRNA -> E2_4_1_25 | (0.278 * E2_4_1_25_mRNA) - (0.000000278 * E2_4_1_25)
+Peptide107: E2_4_2_1_mRNA -> E2_4_2_1 | (0.278 * E2_4_2_1_mRNA) - (0.000000278 * E2_4_2_1)
+Peptide108: E2_4_2_10_mRNA -> E2_4_2_10 | (0.278 * E2_4_2_10_mRNA) - (0.000000278 * E2_4_2_10)
+Peptide109: E2_4_2_14_mRNA -> E2_4_2_14 | (0.278 * E2_4_2_14_mRNA) - (0.000000278 * E2_4_2_14)
+Peptide110: E2_4_2_18_mRNA -> E2_4_2_18 | (0.278 * E2_4_2_18_mRNA) - (0.000000278 * E2_4_2_18)
+Peptide111: E2_4_2_29_mRNA -> E2_4_2_29 | (0.278 * E2_4_2_29_mRNA) - (0.000000278 * E2_4_2_29)
+Peptide112: E2_4_2_3_mRNA -> E2_4_2_3 | (0.278 * E2_4_2_3_mRNA) - (0.000000278 * E2_4_2_3)
+Peptide113: E2_4_2_7_mRNA -> E2_4_2_7 | (0.278 * E2_4_2_7_mRNA) - (0.000000278 * E2_4_2_7)
+Peptide114: E2_4_2_8_mRNA -> E2_4_2_8 | (0.278 * E2_4_2_8_mRNA) - (0.000000278 * E2_4_2_8)
+Peptide115: E2_4_2_9_mRNA -> E2_4_2_9 | (0.278 * E2_4_2_9_mRNA) - (0.000000278 * E2_4_2_9)
+Peptide116: E2_4_99_17_mRNA -> E2_4_99_17 | (0.278 * E2_4_99_17_mRNA) - (0.000000278 * E2_4_99_17)
+Peptide117: E2_5_1_10_mRNA -> E2_5_1_10 | (0.278 * E2_5_1_10_mRNA) - (0.000000278 * E2_5_1_10)
+Peptide118: E2_5_1_15_mRNA -> E2_5_1_15 | (0.278 * E2_5_1_15_mRNA) - (0.000000278 * E2_5_1_15)
+Peptide119: E2_5_1_18_mRNA -> E2_5_1_18 | (0.278 * E2_5_1_18_mRNA) - (0.000000278 * E2_5_1_18)
+Peptide120: E2_5_1_19_mRNA -> E2_5_1_19 | (0.278 * E2_5_1_19_mRNA) - (0.000000278 * E2_5_1_19)
+Peptide121: E2_5_1_31_mRNA -> E2_5_1_31 | (0.278 * E2_5_1_31_mRNA) - (0.000000278 * E2_5_1_31)
+Peptide122: E2_5_1_47_mRNA -> E2_5_1_47 | (0.278 * E2_5_1_47_mRNA) - (0.000000278 * E2_5_1_47)
+Peptide123: E4_4_1_1_mRNA -> E4_4_1_1 | (0.278 * E4_4_1_1_mRNA) - (0.000000278 * E4_4_1_1)
+Peptide124: E2_5_1_48_mRNA -> E2_5_1_48 | (0.278 * E2_5_1_48_mRNA) - (0.000000278 * E2_5_1_48)
+Peptide125: E2_5_1_49_mRNA -> E2_5_1_49 | (0.278 * E2_5_1_49_mRNA) - (0.000000278 * E2_5_1_49)
+Peptide126: E2_5_1_6_mRNA -> E2_5_1_6 | (0.278 * E2_5_1_6_mRNA) - (0.000000278 * E2_5_1_6)
+Peptide127: E2_5_1_7_mRNA -> E2_5_1_7 | (0.278 * E2_5_1_7_mRNA) - (0.000000278 * E2_5_1_7)
+Peptide128: E2_5_1_75_mRNA -> E2_5_1_75 | (0.278 * E2_5_1_75_mRNA) - (0.000000278 * E2_5_1_75)
+Peptide129: E2_6_1_1_mRNA -> E2_6_1_1 | (0.278 * E2_6_1_1_mRNA) - (0.000000278 * E2_6_1_1)
+Peptide130: E2_6_1_11_mRNA -> E2_6_1_11 | (0.278 * E2_6_1_11_mRNA) - (0.000000278 * E2_6_1_11)
+Peptide131: E2_6_1_16_mRNA -> E2_6_1_16 | (0.278 * E2_6_1_16_mRNA) - (0.000000278 * E2_6_1_16)
+Peptide132: E2_6_1_42_mRNA -> E2_6_1_42 | (0.278 * E2_6_1_42_mRNA) - (0.000000278 * E2_6_1_42)
+Peptide133: E2_6_1_52_mRNA -> E2_6_1_52 | (0.278 * E2_6_1_52_mRNA) - (0.000000278 * E2_6_1_52)
+Peptide134: E2_6_1_85_mRNA -> E2_6_1_85 | (0.278 * E2_6_1_85_mRNA) - (0.000000278 * E2_6_1_85)
+Peptide135: E4_1_3_38_mRNA -> E4_1_3_38 | (0.278 * E4_1_3_38_mRNA) - (0.000000278 * E4_1_3_38)
+Peptide136: E4_1_3_27_mRNA -> E4_1_3_27 | (0.278 * E4_1_3_27_mRNA) - (0.000000278 * E4_1_3_27)
+Peptide137: E2_7_1_107_mRNA -> E2_7_1_107 | (0.278 * E2_7_1_107_mRNA) - (0.000000278 * E2_7_1_107)
+Peptide138: E2_7_1_11_mRNA -> E2_7_1_11 | (0.278 * E2_7_1_11_mRNA) - (0.000000278 * E2_7_1_11)
+Peptide139: E2_7_1_180_mRNA -> E2_7_1_180 | (0.278 * E2_7_1_180_mRNA) - (0.000000278 * E2_7_1_180)
+Peptide140: E2_7_1_2_mRNA -> E2_7_1_2 | (0.278 * E2_7_1_2_mRNA) - (0.000000278 * E2_7_1_2)
+Peptide141: E2_7_1_59_mRNA -> E2_7_1_59 | (0.278 * E2_7_1_59_mRNA) - (0.000000278 * E2_7_1_59)
+Peptide142: E2_7_1_21_mRNA -> E2_7_1_21 | (0.278 * E2_7_1_21_mRNA) - (0.000000278 * E2_7_1_21)
+Peptide143: E2_7_1_23_mRNA -> E2_7_1_23 | (0.278 * E2_7_1_23_mRNA) - (0.000000278 * E2_7_1_23)
+Peptide144: E2_7_1_24_mRNA -> E2_7_1_24 | (0.278 * E2_7_1_24_mRNA) - (0.000000278 * E2_7_1_24)
+Peptide145: E2_7_1_26_mRNA -> E2_7_1_26 | (0.278 * E2_7_1_26_mRNA) - (0.000000278 * E2_7_1_26)
+Peptide146: E2_7_7_2_mRNA -> E2_7_7_2 | (0.278 * E2_7_7_2_mRNA) - (0.000000278 * E2_7_7_2)
+Peptide147: E2_7_1_31_mRNA -> E2_7_1_31 | (0.278 * E2_7_1_31_mRNA) - (0.000000278 * E2_7_1_31)
+Peptide148: E2_7_1_33_mRNA -> E2_7_1_33 | (0.278 * E2_7_1_33_mRNA) - (0.000000278 * E2_7_1_33)
+Peptide149: E2_7_1_35_mRNA -> E2_7_1_35 | (0.278 * E2_7_1_35_mRNA) - (0.000000278 * E2_7_1_35)
+Peptide150: E2_7_1_36_mRNA -> E2_7_1_36 | (0.278 * E2_7_1_36_mRNA) - (0.000000278 * E2_7_1_36)
+Peptide151: E2_7_1_39_mRNA -> E2_7_1_39 | (0.278 * E2_7_1_39_mRNA) - (0.000000278 * E2_7_1_39)
+Peptide152: E2_7_1_4_mRNA -> E2_7_1_4 | (0.278 * E2_7_1_4_mRNA) - (0.000000278 * E2_7_1_4)
+Peptide153: E2_7_1_40_mRNA -> E2_7_1_40 | (0.278 * E2_7_1_40_mRNA) - (0.000000278 * E2_7_1_40)
+Peptide154: E2_7_1_48_mRNA -> E2_7_1_48 | (0.278 * E2_7_1_48_mRNA) - (0.000000278 * E2_7_1_48)
+Peptide155: E2_7_1_56_mRNA -> E2_7_1_56 | (0.278 * E2_7_1_56_mRNA) - (0.000000278 * E2_7_1_56)
+Peptide156: E2_7_1_6_mRNA -> E2_7_1_6 | (0.278 * E2_7_1_6_mRNA) - (0.000000278 * E2_7_1_6)
+Peptide157: E2_7_1_66_mRNA -> E2_7_1_66 | (0.278 * E2_7_1_66_mRNA) - (0.000000278 * E2_7_1_66)
+Peptide158: E2_7_1_71_mRNA -> E2_7_1_71 | (0.278 * E2_7_1_71_mRNA) - (0.000000278 * E2_7_1_71)
+Peptide159: E2_7_11_1_mRNA -> E2_7_11_1 | (0.278 * E2_7_11_1_mRNA) - (0.000000278 * E2_7_11_1)
+Peptide160: E2_7_13_3_mRNA -> E2_7_13_3 | (0.278 * E2_7_13_3_mRNA) - (0.000000278 * E2_7_13_3)
+Peptide161: E2_7_2_1_mRNA -> E2_7_2_1 | (0.278 * E2_7_2_1_mRNA) - (0.000000278 * E2_7_2_1)
+Peptide162: E2_7_2_11_mRNA -> E2_7_2_11 | (0.278 * E2_7_2_11_mRNA) - (0.000000278 * E2_7_2_11)
+Peptide163: E2_7_2_3_mRNA -> E2_7_2_3 | (0.278 * E2_7_2_3_mRNA) - (0.000000278 * E2_7_2_3)
+Peptide164: E2_7_2_4_mRNA -> E2_7_2_4 | (0.278 * E2_7_2_4_mRNA) - (0.000000278 * E2_7_2_4)
+Peptide165: E2_7_2_8_mRNA -> E2_7_2_8 | (0.278 * E2_7_2_8_mRNA) - (0.000000278 * E2_7_2_8)
+Peptide166: E2_7_3_9_mRNA -> E2_7_3_9 | (0.278 * E2_7_3_9_mRNA) - (0.000000278 * E2_7_3_9)
+Peptide167: E2_7_4_2_mRNA -> E2_7_4_2 | (0.278 * E2_7_4_2_mRNA) - (0.000000278 * E2_7_4_2)
+Peptide168: E2_7_4_22_mRNA -> E2_7_4_22 | (0.278 * E2_7_4_22_mRNA) - (0.000000278 * E2_7_4_22)
+Peptide169: E2_7_4_25_mRNA -> E2_7_4_25 | (0.278 * E2_7_4_25_mRNA) - (0.000000278 * E2_7_4_25)
+Peptide170: E2_7_4_3_mRNA -> E2_7_4_3 | (0.278 * E2_7_4_3_mRNA) - (0.000000278 * E2_7_4_3)
+Peptide171: E2_7_4_6_mRNA -> E2_7_4_6 | (0.278 * E2_7_4_6_mRNA) - (0.000000278 * E2_7_4_6)
+Peptide172: E2_7_4_7_mRNA -> E2_7_4_7 | (0.278 * E2_7_4_7_mRNA) - (0.000000278 * E2_7_4_7)
+Peptide173: E2_7_4_8_mRNA -> E2_7_4_8 | (0.278 * E2_7_4_8_mRNA) - (0.000000278 * E2_7_4_8)
+Peptide174: E2_7_4_9_mRNA -> E2_7_4_9 | (0.278 * E2_7_4_9_mRNA) - (0.000000278 * E2_7_4_9)
+Peptide175: E2_7_6_1_mRNA -> E2_7_6_1 | (0.278 * E2_7_6_1_mRNA) - (0.000000278 * E2_7_6_1)
+Peptide176: E2_7_6_2_mRNA -> E2_7_6_2 | (0.278 * E2_7_6_2_mRNA) - (0.000000278 * E2_7_6_2)
+Peptide177: E2_7_6_3_mRNA -> E2_7_6_3 | (0.278 * E2_7_6_3_mRNA) - (0.000000278 * E2_7_6_3)
+Peptide178: E2_7_6_5_mRNA -> E2_7_6_5 | (0.278 * E2_7_6_5_mRNA) - (0.000000278 * E2_7_6_5)
+Peptide179: E3_1_7_2_mRNA -> E3_1_7_2 | (0.278 * E3_1_7_2_mRNA) - (0.000000278 * E3_1_7_2)
+Peptide180: E2_7_7_1_mRNA -> E2_7_7_1 | (0.278 * E2_7_7_1_mRNA) - (0.000000278 * E2_7_7_1)
+Peptide181: E2_7_7_22_mRNA -> E2_7_7_22 | (0.278 * E2_7_7_22_mRNA) - (0.000000278 * E2_7_7_22)
+Peptide182: E2_7_7_12_mRNA -> E2_7_7_12 | (0.278 * E2_7_7_12_mRNA) - (0.000000278 * E2_7_7_12)
+Peptide183: E2_7_7_23_mRNA -> E2_7_7_23 | (0.278 * E2_7_7_23_mRNA) - (0.000000278 * E2_7_7_23)
+Peptide184: E2_3_1_157_mRNA -> E2_3_1_157 | (0.278 * E2_3_1_157_mRNA) - (0.000000278 * E2_3_1_157)
+Peptide185: E2_7_7_24_mRNA -> E2_7_7_24 | (0.278 * E2_7_7_24_mRNA) - (0.000000278 * E2_7_7_24)
+Peptide186: E2_7_7_3_mRNA -> E2_7_7_3 | (0.278 * E2_7_7_3_mRNA) - (0.000000278 * E2_7_7_3)
+Peptide187: E2_7_7_41_mRNA -> E2_7_7_41 | (0.278 * E2_7_7_41_mRNA) - (0.000000278 * E2_7_7_41)
+Peptide188: E2_7_7_6_mRNA -> E2_7_7_6 | (0.278 * E2_7_7_6_mRNA) - (0.000000278 * E2_7_7_6)
+Peptide189: E2_7_7_7_mRNA -> E2_7_7_7 | (0.278 * E2_7_7_7_mRNA) - (0.000000278 * E2_7_7_7)
+Peptide190: E2_7_7_72_mRNA -> E2_7_7_72 | (0.278 * E2_7_7_72_mRNA) - (0.000000278 * E2_7_7_72)
+Peptide191: E2_7_7_8_mRNA -> E2_7_7_8 | (0.278 * E2_7_7_8_mRNA) - (0.000000278 * E2_7_7_8)
+Peptide192: E3_1_13_1_mRNA -> E3_1_13_1 | (0.278 * E3_1_13_1_mRNA) - (0.000000278 * E3_1_13_1)
+Peptide193: E2_7_7_85_mRNA -> E2_7_7_85 | (0.278 * E2_7_7_85_mRNA) - (0.000000278 * E2_7_7_85)
+Peptide194: E2_7_7_9_mRNA -> E2_7_7_9 | (0.278 * E2_7_7_9_mRNA) - (0.000000278 * E2_7_7_9)
+Peptide195: E2_7_8_13_mRNA -> E2_7_8_13 | (0.278 * E2_7_8_13_mRNA) - (0.000000278 * E2_7_8_13)
+Peptide196: E2_7_8_5_mRNA -> E2_7_8_5 | (0.278 * E2_7_8_5_mRNA) - (0.000000278 * E2_7_8_5)
+Peptide197: E2_7_8_7_mRNA -> E2_7_8_7 | (0.278 * E2_7_8_7_mRNA) - (0.000000278 * E2_7_8_7)
+Peptide198: E2_8_1_13_mRNA -> E2_8_1_13 | (0.278 * E2_8_1_13_mRNA) - (0.000000278 * E2_8_1_13)
+Peptide199: E2_8_1_4_mRNA -> E2_8_1_4 | (0.278 * E2_8_1_4_mRNA) - (0.000000278 * E2_8_1_4)
+Peptide200: E2_8_1_7_mRNA -> E2_8_1_7 | (0.278 * E2_8_1_7_mRNA) - (0.000000278 * E2_8_1_7)
+Peptide201: E3_6_4_12_mRNA -> E3_6_4_12 | (0.278 * E3_6_4_12_mRNA) - (0.000000278 * E3_6_4_12)
+Peptide202: E3_1_1_29_mRNA -> E3_1_1_29 | (0.278 * E3_1_1_29_mRNA) - (0.000000278 * E3_1_1_29)
+Peptide203: E3_1_11_2_mRNA -> E3_1_11_2 | (0.278 * E3_1_11_2_mRNA) - (0.000000278 * E3_1_11_2)
+Peptide204: E3_1_11_6_mRNA -> E3_1_11_6 | (0.278 * E3_1_11_6_mRNA) - (0.000000278 * E3_1_11_6)
+Peptide205: E3_1_11_7_mRNA -> E3_1_11_7 | (0.278 * E3_1_11_7_mRNA) - (0.000000278 * E3_1_11_7)
+Peptide206: E3_1_2_6_mRNA -> E3_1_2_6 | (0.278 * E3_1_2_6_mRNA) - (0.000000278 * E3_1_2_6)
+Peptide207: E3_1_21_3_mRNA -> E3_1_21_3 | (0.278 * E3_1_21_3_mRNA) - (0.000000278 * E3_1_21_3)
+Peptide208: E3_1_21_5_mRNA -> E3_1_21_5 | (0.278 * E3_1_21_5_mRNA) - (0.000000278 * E3_1_21_5)
+Peptide209: E3_1_22_4_mRNA -> E3_1_22_4 | (0.278 * E3_1_22_4_mRNA) - (0.000000278 * E3_1_22_4)
+Peptide210: E3_1_26_11_mRNA -> E3_1_26_11 | (0.278 * E3_1_26_11_mRNA) - (0.000000278 * E3_1_26_11)
+Peptide211: E3_1_26_3_mRNA -> E3_1_26_3 | (0.278 * E3_1_26_3_mRNA) - (0.000000278 * E3_1_26_3)
+Peptide212: E3_1_26_4_mRNA -> E3_1_26_4 | (0.278 * E3_1_26_4_mRNA) - (0.000000278 * E3_1_26_4)
+Peptide213: E3_1_26_5_mRNA -> E3_1_26_5 | (0.278 * E3_1_26_5_mRNA) - (0.000000278 * E3_1_26_5)
+Peptide214: E3_1_26_8_mRNA -> E3_1_26_8 | (0.278 * E3_1_26_8_mRNA) - (0.000000278 * E3_1_26_8)
+Peptide215: E5_2_1_8_mRNA -> E5_2_1_8 | (0.278 * E5_2_1_8_mRNA) - (0.000000278 * E5_2_1_8)
+Peptide216: E3_1_3_15_mRNA -> E3_1_3_15 | (0.278 * E3_1_3_15_mRNA) - (0.000000278 * E3_1_3_15)
+Peptide217: E3_1_3_16_mRNA -> E3_1_3_16 | (0.278 * E3_1_3_16_mRNA) - (0.000000278 * E3_1_3_16)
+Peptide218: E3_1_3_18_mRNA -> E3_1_3_18 | (0.278 * E3_1_3_18_mRNA) - (0.000000278 * E3_1_3_18)
+Peptide219: E3_1_3_25_mRNA -> E3_1_3_25 | (0.278 * E3_1_3_25_mRNA) - (0.000000278 * E3_1_3_25)
+Peptide220: E3_1_3_27_mRNA -> E3_1_3_27 | (0.278 * E3_1_3_27_mRNA) - (0.000000278 * E3_1_3_27)
+Peptide221: E3_1_3_3_mRNA -> E3_1_3_3 | (0.278 * E3_1_3_3_mRNA) - (0.000000278 * E3_1_3_3)
+Peptide222: E3_1_3_48_mRNA -> E3_1_3_48 | (0.278 * E3_1_3_48_mRNA) - (0.000000278 * E3_1_3_48)
+Peptide223: E3_1_3_5_mRNA -> E3_1_3_5 | (0.278 * E3_1_3_5_mRNA) - (0.000000278 * E3_1_3_5)
+Peptide224: E3_1_3_90_mRNA -> E3_1_3_90 | (0.278 * E3_1_3_90_mRNA) - (0.000000278 * E3_1_3_90)
+Peptide225: E3_1_7_1_mRNA -> E3_1_7_1 | (0.278 * E3_1_7_1_mRNA) - (0.000000278 * E3_1_7_1)
+Peptide226: E3_6_1_13_mRNA -> E3_6_1_13 | (0.278 * E3_6_1_13_mRNA) - (0.000000278 * E3_6_1_13)
+Peptide227: E3_2_1_1_mRNA -> E3_2_1_1 | (0.278 * E3_2_1_1_mRNA) - (0.000000278 * E3_2_1_1)
+Peptide228: E3_2_1_11_mRNA -> E3_2_1_11 | (0.278 * E3_2_1_11_mRNA) - (0.000000278 * E3_2_1_11)
+Peptide229: E3_2_1_23_mRNA -> E3_2_1_23 | (0.278 * E3_2_1_23_mRNA) - (0.000000278 * E3_2_1_23)
+Peptide230: E3_2_1_26_mRNA -> E3_2_1_26 | (0.278 * E3_2_1_26_mRNA) - (0.000000278 * E3_2_1_26)
+Peptide231: E3_2_2_20_mRNA -> E3_2_2_20 | (0.278 * E3_2_2_20_mRNA) - (0.000000278 * E3_2_2_20)
+Peptide232: E3_2_2_23_mRNA -> E3_2_2_23 | (0.278 * E3_2_2_23_mRNA) - (0.000000278 * E3_2_2_23)
+Peptide233: E3_2_2_27_mRNA -> E3_2_2_27 | (0.278 * E3_2_2_27_mRNA) - (0.000000278 * E3_2_2_27)
+Peptide234: E3_2_2_31_mRNA -> E3_2_2_31 | (0.278 * E3_2_2_31_mRNA) - (0.000000278 * E3_2_2_31)
+Peptide235: E3_2_2_9_mRNA -> E3_2_2_9 | (0.278 * E3_2_2_9_mRNA) - (0.000000278 * E3_2_2_9)
+Peptide236: E3_3_1_1_mRNA -> E3_3_1_1 | (0.278 * E3_3_1_1_mRNA) - (0.000000278 * E3_3_1_1)
+Peptide237: E3_4_11_18_mRNA -> E3_4_11_18 | (0.278 * E3_4_11_18_mRNA) - (0.000000278 * E3_4_11_18)
+Peptide238: E3_4_11_2_mRNA -> E3_4_11_2 | (0.278 * E3_4_11_2_mRNA) - (0.000000278 * E3_4_11_2)
+Peptide239: E3_4_11_24_mRNA -> E3_4_11_24 | (0.278 * E3_4_11_24_mRNA) - (0.000000278 * E3_4_11_24)
+Peptide240: E3_4_11_4_mRNA -> E3_4_11_4 | (0.278 * E3_4_11_4_mRNA) - (0.000000278 * E3_4_11_4)
+Peptide241: E3_4_13_9_mRNA -> E3_4_13_9 | (0.278 * E3_4_13_9_mRNA) - (0.000000278 * E3_4_13_9)
+Peptide242: E3_4_14_11_mRNA -> E3_4_14_11 | (0.278 * E3_4_14_11_mRNA) - (0.000000278 * E3_4_14_11)
+Peptide243: E3_4_16_5_mRNA -> E3_4_16_5 | (0.278 * E3_4_16_5_mRNA) - (0.000000278 * E3_4_16_5)
+Peptide244: E3_4_21_107_mRNA -> E3_4_21_107 | (0.278 * E3_4_21_107_mRNA) - (0.000000278 * E3_4_21_107)
+Peptide245: E3_4_21_53_mRNA -> E3_4_21_53 | (0.278 * E3_4_21_53_mRNA) - (0.000000278 * E3_4_21_53)
+Peptide246: E3_4_21_89_mRNA -> E3_4_21_89 | (0.278 * E3_4_21_89_mRNA) - (0.000000278 * E3_4_21_89)
+Peptide247: E3_4_21_92_mRNA -> E3_4_21_92 | (0.278 * E3_4_21_92_mRNA) - (0.000000278 * E3_4_21_92)
+Peptide248: E3_4_22_40_mRNA -> E3_4_22_40 | (0.278 * E3_4_22_40_mRNA) - (0.000000278 * E3_4_22_40)
+Peptide249: E3_4_23_36_mRNA -> E3_4_23_36 | (0.278 * E3_4_23_36_mRNA) - (0.000000278 * E3_4_23_36)
+Peptide250: E3_5_1_1_mRNA -> E3_5_1_1 | (0.278 * E3_5_1_1_mRNA) - (0.000000278 * E3_5_1_1)
+Peptide251: E3_5_1_14_mRNA -> E3_5_1_14 | (0.278 * E3_5_1_14_mRNA) - (0.000000278 * E3_5_1_14)
+Peptide252: E3_5_1_19_mRNA -> E3_5_1_19 | (0.278 * E3_5_1_19_mRNA) - (0.000000278 * E3_5_1_19)
+Peptide253: E3_5_1_25_mRNA -> E3_5_1_25 | (0.278 * E3_5_1_25_mRNA) - (0.000000278 * E3_5_1_25)
+Peptide254: E3_5_1_3_mRNA -> E3_5_1_3 | (0.278 * E3_5_1_3_mRNA) - (0.000000278 * E3_5_1_3)
+Peptide255: E3_5_1_4_mRNA -> E3_5_1_4 | (0.278 * E3_5_1_4_mRNA) - (0.000000278 * E3_5_1_4)
+Peptide256: E3_5_1_47_mRNA -> E3_5_1_47 | (0.278 * E3_5_1_47_mRNA) - (0.000000278 * E3_5_1_47)
+Peptide257: E3_5_1_5_mRNA -> E3_5_1_5 | (0.278 * E3_5_1_5_mRNA) - (0.000000278 * E3_5_1_5)
+Peptide258: E3_5_1_88_mRNA -> E3_5_1_88 | (0.278 * E3_5_1_88_mRNA) - (0.000000278 * E3_5_1_88)
+Peptide259: E3_5_2_3_mRNA -> E3_5_2_3 | (0.278 * E3_5_2_3_mRNA) - (0.000000278 * E3_5_2_3)
+Peptide260: E3_5_3_11_mRNA -> E3_5_3_11 | (0.278 * E3_5_3_11_mRNA) - (0.000000278 * E3_5_3_11)
+Peptide261: E3_5_4_12_mRNA -> E3_5_4_12 | (0.278 * E3_5_4_12_mRNA) - (0.000000278 * E3_5_4_12)
+Peptide262: E3_5_4_16_mRNA -> E3_5_4_16 | (0.278 * E3_5_4_16_mRNA) - (0.000000278 * E3_5_4_16)
+Peptide263: E3_5_4_33_mRNA -> E3_5_4_33 | (0.278 * E3_5_4_33_mRNA) - (0.000000278 * E3_5_4_33)
+Peptide264: E3_5_4_4_mRNA -> E3_5_4_4 | (0.278 * E3_5_4_4_mRNA) - (0.000000278 * E3_5_4_4)
+Peptide265: E3_5_4_5_mRNA -> E3_5_4_5 | (0.278 * E3_5_4_5_mRNA) - (0.000000278 * E3_5_4_5)
+Peptide266: E3_5_99_10_mRNA -> E3_5_99_10 | (0.278 * E3_5_99_10_mRNA) - (0.000000278 * E3_5_99_10)
+Peptide267: E3_5_99_6_mRNA -> E3_5_99_6 | (0.278 * E3_5_99_6_mRNA) - (0.000000278 * E3_5_99_6)
+Peptide268: E3_6_1_1_mRNA -> E3_6_1_1 | (0.278 * E3_6_1_1_mRNA) - (0.000000278 * E3_6_1_1)
+Peptide269: E3_6_1_23_mRNA -> E3_6_1_23 | (0.278 * E3_6_1_23_mRNA) - (0.000000278 * E3_6_1_23)
+Peptide270: E3_6_1_27_mRNA -> E3_6_1_27 | (0.278 * E3_6_1_27_mRNA) - (0.000000278 * E3_6_1_27)
+Peptide271: E3_6_1_29_mRNA -> E3_6_1_29 | (0.278 * E3_6_1_29_mRNA) - (0.000000278 * E3_6_1_29)
+Peptide272: E3_6_1_55_mRNA -> E3_6_1_55 | (0.278 * E3_6_1_55_mRNA) - (0.000000278 * E3_6_1_55)
+Peptide273: E3_6_1_7_mRNA -> E3_6_1_7 | (0.278 * E3_6_1_7_mRNA) - (0.000000278 * E3_6_1_7)
+Peptide274: E3_6_166_mRNA -> E3_6_166 | (0.278 * E3_6_166_mRNA) - (0.000000278 * E3_6_166)
+Peptide275: E3_6_4_13_mRNA -> E3_6_4_13 | (0.278 * E3_6_4_13_mRNA) - (0.000000278 * E3_6_4_13)
+Peptide276: E3_8_1_2_mRNA -> E3_8_1_2 | (0.278 * E3_8_1_2_mRNA) - (0.000000278 * E3_8_1_2)
+Peptide277: E4_1_1_20_mRNA -> E4_1_1_20 | (0.278 * E4_1_1_20_mRNA) - (0.000000278 * E4_1_1_20)
+Peptide278: E4_1_1_23_mRNA -> E4_1_1_23 | (0.278 * E4_1_1_23_mRNA) - (0.000000278 * E4_1_1_23)
+Peptide279: E4_1_1_31_mRNA -> E4_1_1_31 | (0.278 * E4_1_1_31_mRNA) - (0.000000278 * E4_1_1_31)
+Peptide280: E4_1_1_33_mRNA -> E4_1_1_33 | (0.278 * E4_1_1_33_mRNA) - (0.000000278 * E4_1_1_33)
+Peptide281: E4_1_1_36_mRNA -> E4_1_1_36 | (0.278 * E4_1_1_36_mRNA) - (0.000000278 * E4_1_1_36)
+Peptide282: E4_1_1_48_mRNA -> E4_1_1_48 | (0.278 * E4_1_1_48_mRNA) - (0.000000278 * E4_1_1_48)
+Peptide283: E4_1_1_5_mRNA -> E4_1_1_5 | (0.278 * E4_1_1_5_mRNA) - (0.000000278 * E4_1_1_5)
+Peptide284: E4_1_2_13_mRNA -> E4_1_2_13 | (0.278 * E4_1_2_13_mRNA) - (0.000000278 * E4_1_2_13)
+Peptide285: E4_1_2_25_mRNA -> E4_1_2_25 | (0.278 * E4_1_2_25_mRNA) - (0.000000278 * E4_1_2_25)
+Peptide286: E4_1_99_3_mRNA -> E4_1_99_3 | (0.278 * E4_1_99_3_mRNA) - (0.000000278 * E4_1_99_3)
+Peptide287: E4_2_1_1_mRNA -> E4_2_1_1 | (0.278 * E4_2_1_1_mRNA) - (0.000000278 * E4_2_1_1)
+Peptide288: E4_2_1_10_mRNA -> E4_2_1_10 | (0.278 * E4_2_1_10_mRNA) - (0.000000278 * E4_2_1_10)
+Peptide289: E4_2_1_11_mRNA -> E4_2_1_11 | (0.278 * E4_2_1_11_mRNA) - (0.000000278 * E4_2_1_11)
+Peptide290: E4_2_1_136_mRNA -> E4_2_1_136 | (0.278 * E4_2_1_136_mRNA) - (0.000000278 * E4_2_1_136)
+Peptide291: E4_2_1_20_mRNA -> E4_2_1_20 | (0.278 * E4_2_1_20_mRNA) - (0.000000278 * E4_2_1_20)
+Peptide292: E4_2_1_21_mRNA -> E4_2_1_21 | (0.278 * E4_2_1_21_mRNA) - (0.000000278 * E4_2_1_21)
+Peptide293: E4_2_1_3_mRNA -> E4_2_1_3 | (0.278 * E4_2_1_3_mRNA) - (0.000000278 * E4_2_1_3)
+Peptide294: E4_2_1_33_mRNA -> E4_2_1_33 | (0.278 * E4_2_1_33_mRNA) - (0.000000278 * E4_2_1_33)
+Peptide295: E4_2_1_34_mRNA -> E4_2_1_34 | (0.278 * E4_2_1_34_mRNA) - (0.000000278 * E4_2_1_34)
+Peptide296: E4_2_1_46_mRNA -> E4_2_1_46 | (0.278 * E4_2_1_46_mRNA) - (0.000000278 * E4_2_1_46)
+Peptide297: E4_2_1_49_mRNA -> E4_2_1_49 | (0.278 * E4_2_1_49_mRNA) - (0.000000278 * E4_2_1_49)
+Peptide298: E4_2_1_51_mRNA -> E4_2_1_51 | (0.278 * E4_2_1_51_mRNA) - (0.000000278 * E4_2_1_51)
+Peptide299: E4_2_1_59_mRNA -> E4_2_1_59 | (0.278 * E4_2_1_59_mRNA) - (0.000000278 * E4_2_1_59)
+Peptide300: E4_2_1_70_mRNA -> E4_2_1_70 | (0.278 * E4_2_1_70_mRNA) - (0.000000278 * E4_2_1_70)
+Peptide301: E4_2_1_9_mRNA -> E4_2_1_9 | (0.278 * E4_2_1_9_mRNA) - (0.000000278 * E4_2_1_9)
+Peptide302: E4_2_3_1_mRNA -> E4_2_3_1 | (0.278 * E4_2_3_1_mRNA) - (0.000000278 * E4_2_3_1)
+Peptide303: E4_2_3_4_mRNA -> E4_2_3_4 | (0.278 * E4_2_3_4_mRNA) - (0.000000278 * E4_2_3_4)
+Peptide304: E4_2_3_5_mRNA -> E4_2_3_5 | (0.278 * E4_2_3_5_mRNA) - (0.000000278 * E4_2_3_5)
+Peptide305: E4_2_99_18_mRNA -> E4_2_99_18 | (0.278 * E4_2_99_18_mRNA) - (0.000000278 * E4_2_99_18)
+Peptide306: E4_3_1_17_mRNA -> E4_3_1_17 | (0.278 * E4_3_1_17_mRNA) - (0.000000278 * E4_3_1_17)
+Peptide307: E4_3_1_18_mRNA -> E4_3_1_18 | (0.278 * E4_3_1_18_mRNA) - (0.000000278 * E4_3_1_18)
+Peptide308: E4_3_1_19_mRNA -> E4_3_1_19 | (0.278 * E4_3_1_19_mRNA) - (0.000000278 * E4_3_1_19)
+Peptide309: E4_3_2_1_mRNA -> E4_3_2_1 | (0.278 * E4_3_2_1_mRNA) - (0.000000278 * E4_3_2_1)
+Peptide310: E4_3_2_2_mRNA -> E4_3_2_2 | (0.278 * E4_3_2_2_mRNA) - (0.000000278 * E4_3_2_2)
+Peptide311: E4_3_3_7_mRNA -> E4_3_3_7 | (0.278 * E4_3_3_7_mRNA) - (0.000000278 * E4_3_3_7)
+Peptide312: E4_3_99_3_mRNA -> E4_3_99_3 | (0.278 * E4_3_99_3_mRNA) - (0.000000278 * E4_3_99_3)
+Peptide313: E4_4_1_2_mRNA -> E4_4_1_2 | (0.278 * E4_4_1_2_mRNA) - (0.000000278 * E4_4_1_2)
+Peptide314: E4_4_1_21_mRNA -> E4_4_1_21 | (0.278 * E4_4_1_21_mRNA) - (0.000000278 * E4_4_1_21)
+Peptide315: E4_4_1_5_mRNA -> E4_4_1_5 | (0.278 * E4_4_1_5_mRNA) - (0.000000278 * E4_4_1_5)
+Peptide316: E4_4_1_8_mRNA -> E4_4_1_8 | (0.278 * E4_4_1_8_mRNA) - (0.000000278 * E4_4_1_8)
+Peptide317: E4_99_1_1_mRNA -> E4_99_1_1 | (0.278 * E4_99_1_1_mRNA) - (0.000000278 * E4_99_1_1)
+Peptide318: E5_1_1_1_mRNA -> E5_1_1_1 | (0.278 * E5_1_1_1_mRNA) - (0.000000278 * E5_1_1_1)
+Peptide319: E5_1_1_3_mRNA -> E5_1_1_3 | (0.278 * E5_1_1_3_mRNA) - (0.000000278 * E5_1_1_3)
+Peptide320: E5_1_3_1_mRNA -> E5_1_3_1 | (0.278 * E5_1_3_1_mRNA) - (0.000000278 * E5_1_3_1)
+Peptide321: E5_1_3_2_mRNA -> E5_1_3_2 | (0.278 * E5_1_3_2_mRNA) - (0.000000278 * E5_1_3_2)
+Peptide322: E5_1_3_7_mRNA -> E5_1_3_7 | (0.278 * E5_1_3_7_mRNA) - (0.000000278 * E5_1_3_7)
+Peptide323: E5_1_3_3__mRNA -> E5_1_3_3_ | (0.278 * E5_1_3_3__mRNA) - (0.000000278 * E5_1_3_3_)
+Peptide324: E5_3_1_1_mRNA -> E5_3_1_1 | (0.278 * E5_3_1_1_mRNA) - (0.000000278 * E5_3_1_1)
+Peptide325: E5_3_1_24_mRNA -> E5_3_1_24 | (0.278 * E5_3_1_24_mRNA) - (0.000000278 * E5_3_1_24)
+Peptide326: E5_3_1_6_mRNA -> E5_3_1_6 | (0.278 * E5_3_1_6_mRNA) - (0.000000278 * E5_3_1_6)
+Peptide327: E5_3_1_8_mRNA -> E5_3_1_8 | (0.278 * E5_3_1_8_mRNA) - (0.000000278 * E5_3_1_8)
+Peptide328: E5_3_1_9_mRNA -> E5_3_1_9 | (0.278 * E5_3_1_9_mRNA) - (0.000000278 * E5_3_1_9)
+Peptide329: E5_3_3_14_mRNA -> E5_3_3_14 | (0.278 * E5_3_3_14_mRNA) - (0.000000278 * E5_3_3_14)
+Peptide330: E5_3_3_2_mRNA -> E5_3_3_2 | (0.278 * E5_3_3_2_mRNA) - (0.000000278 * E5_3_3_2)
+Peptide331: E5_4_2_10_mRNA -> E5_4_2_10 | (0.278 * E5_4_2_10_mRNA) - (0.000000278 * E5_4_2_10)
+Peptide332: E5_4_2_2_mRNA -> E5_4_2_2 | (0.278 * E5_4_2_2_mRNA) - (0.000000278 * E5_4_2_2)
+Peptide333: E5_4_2_7_mRNA -> E5_4_2_7 | (0.278 * E5_4_2_7_mRNA) - (0.000000278 * E5_4_2_7)
+Peptide334: E5_4_99_12_mRNA -> E5_4_99_12 | (0.278 * E5_4_99_12_mRNA) - (0.000000278 * E5_4_99_12)
+Peptide335: E5_4_99_18_mRNA -> E5_4_99_18 | (0.278 * E5_4_99_18_mRNA) - (0.000000278 * E5_4_99_18)
+Peptide336: E5_4_99_25_mRNA -> E5_4_99_25 | (0.278 * E5_4_99_25_mRNA) - (0.000000278 * E5_4_99_25)
+Peptide337: E5_4_99_5_mRNA -> E5_4_99_5 | (0.278 * E5_4_99_5_mRNA) - (0.000000278 * E5_4_99_5)
+Peptide338: E5_4_99_9_mRNA -> E5_4_99_9 | (0.278 * E5_4_99_9_mRNA) - (0.000000278 * E5_4_99_9)
+Peptide339: E5_6_2_1_mRNA -> E5_6_2_1 | (0.278 * E5_6_2_1_mRNA) - (0.000000278 * E5_6_2_1)
+Peptide340: E5_6_2_2_mRNA -> E5_6_2_2 | (0.278 * E5_6_2_2_mRNA) - (0.000000278 * E5_6_2_2)
+Peptide341: E6_1_1_1_mRNA -> E6_1_1_1 | (0.278 * E6_1_1_1_mRNA) - (0.000000278 * E6_1_1_1)
+Peptide342: E6_1_1_10_mRNA -> E6_1_1_10 | (0.278 * E6_1_1_10_mRNA) - (0.000000278 * E6_1_1_10)
+Peptide343: E6_1_1_11_mRNA -> E6_1_1_11 | (0.278 * E6_1_1_11_mRNA) - (0.000000278 * E6_1_1_11)
+Peptide344: E6_1_1_12_mRNA -> E6_1_1_12 | (0.278 * E6_1_1_12_mRNA) - (0.000000278 * E6_1_1_12)
+Peptide345: E6_1_1_14_mRNA -> E6_1_1_14 | (0.278 * E6_1_1_14_mRNA) - (0.000000278 * E6_1_1_14)
+Peptide346: E6_1_1_15_mRNA -> E6_1_1_15 | (0.278 * E6_1_1_15_mRNA) - (0.000000278 * E6_1_1_15)
+Peptide347: E6_1_1_16_mRNA -> E6_1_1_16 | (0.278 * E6_1_1_16_mRNA) - (0.000000278 * E6_1_1_16)
+Peptide348: E6_1_1_17_mRNA -> E6_1_1_17 | (0.278 * E6_1_1_17_mRNA) - (0.000000278 * E6_1_1_17)
+Peptide349: E6_1_1_24_mRNA -> E6_1_1_24 | (0.278 * E6_1_1_24_mRNA) - (0.000000278 * E6_1_1_24)
+Peptide350: E6_1_1_19_mRNA -> E6_1_1_19 | (0.278 * E6_1_1_19_mRNA) - (0.000000278 * E6_1_1_19)
+Peptide351: E6_1_1_2_mRNA -> E6_1_1_2 | (0.278 * E6_1_1_2_mRNA) - (0.000000278 * E6_1_1_2)
+Peptide352: E6_1_1_20_mRNA -> E6_1_1_20 | (0.278 * E6_1_1_20_mRNA) - (0.000000278 * E6_1_1_20)
+Peptide353: E6_1_1_21_mRNA -> E6_1_1_21 | (0.278 * E6_1_1_21_mRNA) - (0.000000278 * E6_1_1_21)
+Peptide354: E6_1_1_22_mRNA -> E6_1_1_22 | (0.278 * E6_1_1_22_mRNA) - (0.000000278 * E6_1_1_22)
+Peptide355: E6_1_1_3_mRNA -> E6_1_1_3 | (0.278 * E6_1_1_3_mRNA) - (0.000000278 * E6_1_1_3)
+Peptide356: E6_1_1_4_mRNA -> E6_1_1_4 | (0.278 * E6_1_1_4_mRNA) - (0.000000278 * E6_1_1_4)
+Peptide357: E6_1_1_5_mRNA -> E6_1_1_5 | (0.278 * E6_1_1_5_mRNA) - (0.000000278 * E6_1_1_5)
+Peptide358: E6_1_1_6_mRNA -> E6_1_1_6 | (0.278 * E6_1_1_6_mRNA) - (0.000000278 * E6_1_1_6)
+Peptide359: E6_1_1_7_mRNA -> E6_1_1_7 | (0.278 * E6_1_1_7_mRNA) - (0.000000278 * E6_1_1_7)
+Peptide360: E6_1_1_9_mRNA -> E6_1_1_9 | (0.278 * E6_1_1_9_mRNA) - (0.000000278 * E6_1_1_9)
+Peptide361: E6_2_1_54_mRNA -> E6_2_1_54 | (0.278 * E6_2_1_54_mRNA) - (0.000000278 * E6_2_1_54)
+Peptide362: E6_3_1_1_mRNA -> E6_3_1_1 | (0.278 * E6_3_1_1_mRNA) - (0.000000278 * E6_3_1_1)
+Peptide363: E6_3_1_2_mRNA -> E6_3_1_2 | (0.278 * E6_3_1_2_mRNA) - (0.000000278 * E6_3_1_2)
+Peptide364: E6_3_1_20_mRNA -> E6_3_1_20 | (0.278 * E6_3_1_20_mRNA) - (0.000000278 * E6_3_1_20)
+Peptide365: E6_3_1_5_mRNA -> E6_3_1_5 | (0.278 * E6_3_1_5_mRNA) - (0.000000278 * E6_3_1_5)
+Peptide366: E6_3_2_10_mRNA -> E6_3_2_10 | (0.278 * E6_3_2_10_mRNA) - (0.000000278 * E6_3_2_10)
+Peptide367: E6_3_2_12_mRNA -> E6_3_2_12 | (0.278 * E6_3_2_12_mRNA) - (0.000000278 * E6_3_2_12)
+Peptide368: E6_3_2_17_mRNA -> E6_3_2_17 | (0.278 * E6_3_2_17_mRNA) - (0.000000278 * E6_3_2_17)
+Peptide369: E6_3_2_2_mRNA -> E6_3_2_2 | (0.278 * E6_3_2_2_mRNA) - (0.000000278 * E6_3_2_2)
+Peptide370: E6_3_2_3_mRNA -> E6_3_2_3 | (0.278 * E6_3_2_3_mRNA) - (0.000000278 * E6_3_2_3)
+Peptide371: E6_3_2_4_mRNA -> E6_3_2_4 | (0.278 * E6_3_2_4_mRNA) - (0.000000278 * E6_3_2_4)
+Peptide372: E6_3_2_5_mRNA -> E6_3_2_5 | (0.278 * E6_3_2_5_mRNA) - (0.000000278 * E6_3_2_5)
+Peptide373: E6_3_2_6_mRNA -> E6_3_2_6 | (0.278 * E6_3_2_6_mRNA) - (0.000000278 * E6_3_2_6)
+Peptide374: E6_3_2_7_mRNA -> E6_3_2_7 | (0.278 * E6_3_2_7_mRNA) - (0.000000278 * E6_3_2_7)
+Peptide375: E6_3_2_8_mRNA -> E6_3_2_8 | (0.278 * E6_3_2_8_mRNA) - (0.000000278 * E6_3_2_8)
+Peptide376: E6_3_2_9_mRNA -> E6_3_2_9 | (0.278 * E6_3_2_9_mRNA) - (0.000000278 * E6_3_2_9)
+Peptide377: E6_3_3_1_mRNA -> E6_3_3_1 | (0.278 * E6_3_3_1_mRNA) - (0.000000278 * E6_3_3_1)
+Peptide378: E6_3_3_2_mRNA -> E6_3_3_2 | (0.278 * E6_3_3_2_mRNA) - (0.000000278 * E6_3_3_2)
+Peptide379: E6_3_4_13_mRNA -> E6_3_4_13 | (0.278 * E6_3_4_13_mRNA) - (0.000000278 * E6_3_4_13)
+Peptide380: E6_3_4_14_mRNA -> E6_3_4_14 | (0.278 * E6_3_4_14_mRNA) - (0.000000278 * E6_3_4_14)
+Peptide381: E6_3_4_18_mRNA -> E6_3_4_18 | (0.278 * E6_3_4_18_mRNA) - (0.000000278 * E6_3_4_18)
+Peptide382: E6_3_4_19_mRNA -> E6_3_4_19 | (0.278 * E6_3_4_19_mRNA) - (0.000000278 * E6_3_4_19)
+Peptide383: E6_3_4_2_mRNA -> E6_3_4_2 | (0.278 * E6_3_4_2_mRNA) - (0.000000278 * E6_3_4_2)
+Peptide384: E6_3_4_20_mRNA -> E6_3_4_20 | (0.278 * E6_3_4_20_mRNA) - (0.000000278 * E6_3_4_20)
+Peptide385: E6_3_4_21_mRNA -> E6_3_4_21 | (0.278 * E6_3_4_21_mRNA) - (0.000000278 * E6_3_4_21)
+Peptide386: E6_3_4_3_mRNA -> E6_3_4_3 | (0.278 * E6_3_4_3_mRNA) - (0.000000278 * E6_3_4_3)
+Peptide387: E6_3_4_4_mRNA -> E6_3_4_4 | (0.278 * E6_3_4_4_mRNA) - (0.000000278 * E6_3_4_4)
+Peptide388: E6_3_4_5_mRNA -> E6_3_4_5 | (0.278 * E6_3_4_5_mRNA) - (0.000000278 * E6_3_4_5)
+Peptide389: E6_3_5_13_mRNA -> E6_3_5_13 | (0.278 * E6_3_5_13_mRNA) - (0.000000278 * E6_3_5_13)
+Peptide390: E6_3_5_14_mRNA -> E6_3_5_14 | (0.278 * E6_3_5_14_mRNA) - (0.000000278 * E6_3_5_14)
+Peptide391: E6_3_5_2_mRNA -> E6_3_5_2 | (0.278 * E6_3_5_2_mRNA) - (0.000000278 * E6_3_5_2)
+Peptide392: E6_3_5_3_mRNA -> E6_3_5_3 | (0.278 * E6_3_5_3_mRNA) - (0.000000278 * E6_3_5_3)
+Peptide393: E6_3_5_5_mRNA -> E6_3_5_5 | (0.278 * E6_3_5_5_mRNA) - (0.000000278 * E6_3_5_5)
+Peptide394: E6_3_5_7_mRNA -> E6_3_5_7 | (0.278 * E6_3_5_7_mRNA) - (0.000000278 * E6_3_5_7)
+Peptide395: E6_4_1_2_mRNA -> E6_4_1_2 | (0.278 * E6_4_1_2_mRNA) - (0.000000278 * E6_4_1_2)
+Peptide396: E6_5_1_2_mRNA -> E6_5_1_2 | (0.278 * E6_5_1_2_mRNA) - (0.000000278 * E6_5_1_2)
+Peptide397: E7_1_2_2_mRNA -> E7_1_2_2 | (0.278 * E7_1_2_2_mRNA) - (0.000000278 * E7_1_2_2)
+Peptide398: E7_2_2_10_mRNA -> E7_2_2_10 | (0.278 * E7_2_2_10_mRNA) - (0.000000278 * E7_2_2_10)
+Peptide399: E7_2_2_8_mRNA -> E7_2_2_8 | (0.278 * E7_2_2_8_mRNA) - (0.000000278 * E7_2_2_8)
+Peptide400: E7_6_2_11_mRNA -> E7_6_2_11 | (0.278 * E7_6_2_11_mRNA) - (0.000000278 * E7_6_2_11)
+r1: C00226 + C00003 -> C00071 + C00004 + C00080 | (${Variables:E1_1_1_1_kcat} * E1_1_1_1 * C00226 * C00003)/(${Variables:E1_1_1_1_km} + (E1_1_1_1 * C00226 * C00003))
+r2: C00084 + C00010 + C00003 -> C00024 + C00004 + C00080 | (${Variables:E1_2_1_10_kcat} * E1_2_1_10 * C00084 * C00010 * C00003)/(${Variables:E1_2_1_10_km} + (E1_2_1_10 * C00084 * C00010 * C00003))
+r3: C01271 + C00006 -> C00685 + C00005 + C00080 | (${Variables:E1_1_1_100_kcat} * E1_1_1_100 * C01271 * C00006)/(${Variables:E1_1_1_100_km} + (E1_1_1_100 * C01271 * C00006))
+r4: C0052 + C00006 -> C0096 + C00005 + C00080 | (${Variables:E1_1_1_169_kcat} * E1_1_1_169 * C0052 * C00006)/(${Variables:E1_1_1_169_km} + (E1_1_1_169 * C0052 * C00006))
+r5: C00130 + C00003 + C00001 -> C00655 + C00004 + C00080 | (${Variables:E1_1_1_205_kcat} * E1_1_1_205 * C00130 * C00003 * C00001)/(${Variables:E1_1_1_205_km} + (E1_1_1_205 * C00130 * C00003 * C00001))
+r6: C00493 + C00006 -> C02637 + C00005 + C00080 | (${Variables:E1_1_1_25_kcat} * E1_1_1_25 * C00493 * C00006)/(${Variables:E1_1_1_25_km} + (E1_1_1_25 * C00493 * C00006))
+r7: C00186 + C00003 -> C00022 + C00004 + C00080 | (${Variables:E1_1_1_27_kcat} * E1_1_1_27 * C00186 * C00003)/(${Variables:E1_1_1_27_km} + (E1_1_1_27 * C00186 * C00003))
+r8: C00263 + C00003 -> C00441 + C00004 + C00080 | (${Variables:E1_1_1_3_kcat} * E1_1_1_3 * C00263 * C00003)/(${Variables:E1_1_1_3_km} + (E1_1_1_3 * C00263 * C00003))
+r9: C00810 + C00003 -> C00741 + C00004 + C00080 | (${Variables:E1_1_1_303_kcat} * E1_1_1_303 * C00810 * C00003)/(${Variables:E1_1_1_303_km} + (E1_1_1_303 * C00810 * C00003))
+r10: C00466 + C00010 + C00003 -> C00084 + C00024 + C00004 + C00080 | (${Variables:E2_3_1_190_kcat} * E2_3_1_190 * C00466 * C00010 * C00003)/(${Variables:E2_3_1_190_km} + (E2_3_1_190 * C00466 * C00010 * C00003))
+r11: C00741 + C00004 + C00080 -> C01769  + C00003 | (${Variables:E1_1_1_304_kcat} * E1_1_1_304 * C00741 * C00004 * C00080)/(${Variables:E1_1_1_304_km} + (E1_1_1_304 * C00741 * C00004 * C00080))
+r12: C01271 + C22409  -> C22410 + C00229 | (${Variables:E2_3_1_191_kcat} * E2_3_1_191 * C01271 * C22409 )/(${Variables:E2_3_1_191_km} + (E2_3_1_191 * C01271 * C22409 ))
+r13: C00311 + C00006  -> C00026 + C00011 + C00005 + C00080 | (${Variables:E1_1_1_42_kcat} * E1_1_1_42 * C00311 * C00006 )/(${Variables:E1_1_1_42_km} + (E1_1_1_42 * C00311 * C00006 ))
+r14: C00233 + C00011 -> C04236 | (${Variables:E1_1_1_85_kcat} * E1_1_1_85 * C00233 * C00011)/(${Variables:E1_1_1_85_km} + (E1_1_1_85 * C00233 * C00011))
+r15: C04272 + C00006  -> C06010 + C00005 + C00080 | (${Variables:E1_1_1_86_kcat} * E1_1_1_86 * C04272 * C00006 )/(${Variables:E1_1_1_86_km} + (E1_1_1_86 * C04272 * C00006 ))
+r16: C00418 + C00010 +  C00003 -> C00356 + C00004 + C00080 | (${Variables:E1_1_1_88_kcat} * E1_1_1_88 * C00418 * C00010 *  C00003)/(${Variables:E1_1_1_88_km} + (E1_1_1_88 * C00418 * C00010 *  C00003))
+r17: C00093 + C00003  -> C00111 + C00004 + C00080 | (${Variables:E1_1_1_94_kcat} * E1_1_1_94 * C00093 * C00003 )/(${Variables:E1_1_1_94_km} + (E1_1_1_94 * C00093 * C00003 ))
+r18: C00197 + C00003 -> C03232 + C00004 + C00080 | (${Variables:E1_1_1_95_kcat} * E1_1_1_95 * C00197 * C00003)/(${Variables:E1_1_1_95_km} + (E1_1_1_95 * C00197 * C00003))
+r19: C00704 + C00080 -> C00027 + C00007 | (${Variables:E1_15_1_1_kcat} * E1_15_1_1 * C00704 * C00080)/(${Variables:E1_15_1_1_km} + (E1_15_1_1 * C00704 * C00080))
+r20: C03972 + C00003 + C00001 -> C20258 + C00004 + C00080 | (${Variables:E1_17_1_8_kcat} * E1_17_1_8 * C03972 * C00003 * C00001)/(${Variables:E1_17_1_8_km} + (E1_17_1_8 * C03972 * C00003 * C00001))
+r21: C04232 + C00343 + C00001 -> C03723 + C00342 | (${Variables:E1_17_4_1_kcat} * E1_17_4_1 * C04232 * C00343 * C00001)/(${Variables:E1_17_4_1_km} + (E1_17_4_1 * C04232 * C00343 * C00001))
+r22: C00677 + C00343 + C00001 -> C03802 + C00342 | (${Variables:E1_17_4_2_kcat} * E1_17_4_2 * C00677 * C00343 * C00001)/(${Variables:E1_17_4_2_km} + (E1_17_4_2 * C00677 * C00343 * C00001))
+r23: C01978 +C00028 + C00001 -> C19647 + C00030 | (${Variables:E1_17_99_6_kcat} * E1_17_99_6 * C01978 *C00028 * C00001)/(${Variables:E1_17_99_6_km} + (E1_17_99_6 * C01978 *C00028 * C00001))
+r24: C00138 + C00006 + C00080 -> C00139 + C00005 | (${Variables:E1_18_1_2_kcat} * E1_18_1_2 *  C00138 * C00006 * C00080)/(${Variables:E1_18_1_2_km} + (E1_18_1_2 *  C00138 * C00006 * C00080))
+r25: C00441 + C00009 + C00006 -> C03082 + C00005 + C00080 | (${Variables:E1_2_1_11_kcat} * E1_2_1_11 * C00441 * C00009 * C00006)/(${Variables:E1_2_1_11_km} + (E1_2_1_11 * C00441 * C00009 * C00006))
+r26: C00118 + C00009 + C00003 -> C00236 + C00004 + C00080 | (${Variables:E1_2_1_12_kcat} * E1_2_1_12 * C00118 * C00009 * C00003)/(${Variables:E1_2_1_12_km} + (E1_2_1_12 * C00118 * C00009 * C00003))
+r27: C01250 + C00009 + C00006 -> C04133 + C00005 + C00080 | (${Variables:E1_2_1_38_kcat} * E1_2_1_38 * C01250 * C00009 * C00006)/(${Variables:E1_2_1_38_km} + (E1_2_1_38 * C01250 * C00009 * C00006))
+r28: C01165 + C00009 + C00006 -> C03287 + C00005 + C0080 | (${Variables:E1_2_1_41_kcat} * E1_2_1_41 * C01165 * C00009 * C00006)/(${Variables:E1_2_1_41_km} + (E1_2_1_41 * C01165 * C00009 * C00006))
+r29: C00118 + C00006 + C00001 -> C00197 + C00005 + C00080 | (${Variables:E1_2_1_9_kcat} * E1_2_1_9 * C00118 * C00006 * C00001)/(${Variables:E1_2_1_9_km} + (E1_2_1_9 * C00118 * C00006 * C00001))
+r30: C00254 + C00003  -> C01179 + C00011 + C00004 + C00080 | (${Variables:E1_3_1_12_kcat} * E1_3_1_12 * C00254 * C00003 )/(${Variables:E1_3_1_12_km} + (E1_3_1_12 * C00254 * C00003 ))
+r31: C00337 + C00006  -> C00295 + C00005 + C00080 | (${Variables:E1_3_1_15_kcat} * E1_3_1_15 * C00337 * C00006 )/(${Variables:E1_3_1_15_km} + (E1_3_1_15 * C00337 * C00006 ))
+r32: C00173 + C00003 -> C00693 + C00004 + C00080 | (${Variables:E1_3_1_9_kcat} * E1_3_1_9 * C00173 * C00003)/(${Variables:E1_3_1_9_km} + (E1_3_1_9 * C00173 * C00003))
+r33: C01050 + C00006 -> C04631 + C00005 + C00080 | (${Variables:E1_3_1_98_kcat} * E1_3_1_98 * C01050 * C00006)/(${Variables:E1_3_1_98_km} + (E1_3_1_98 * C01050 * C00006))
+r34: C20675 + C04253 -> C20676 + C04570 | (${Variables:E1_3_8_1_kcat} * E1_3_8_1 * C20675 * C04253)/(${Variables:E1_3_8_1_km} + (E1_3_8_1 * C20675 * C04253))
+r35: C00337 + C00122 -> C00295 + C00042 | (${Variables:E1_3_98_1_kcat} * E1_3_98_1 * C00337 * C00122)/(${Variables:E1_3_98_1_km} + (E1_3_98_1 * C00337 * C00122))
+r36: C00025 + C00006 + C00001 -> C00026 + C00014 + C00005 + C0080 | (${Variables:E1_4_1_4_kcat} * E1_4_1_4 * C00025 * C00006 * C00001)/(${Variables:E1_4_1_4_km} + (E1_4_1_4 * C00025 * C00006 * C00001))
+r37: C00148 + C00003 -> C03912 + C00004 + C00080 | (${Variables:E1_5_1_2_kcat} * E1_5_1_2 * C00148 * C00003)/(${Variables:E1_5_1_2_km} + (E1_5_1_2 * C00148 * C00003))
+r38: C00440 + C00006 -> C00143 + C00005 + C00080 | (${Variables:E1_5_1_20_kcat} * E1_5_1_20 * C00440 * C00006)/(${Variables:E1_5_1_20_km} + (E1_5_1_20 * C00440 * C00006))
+r39: C00101 + C00006 -> C00415 + C00005 + C00080 | (${Variables:E1_5_1_3_kcat} * E1_5_1_3 * C00101 * C00006)/(${Variables:E1_5_1_3_km} + (E1_5_1_3 * C00101 * C00006))
+r40: C00143 + C00006 -> C00445 + C00005 | (${Variables:E1_5_1_5_kcat} * E1_5_1_5 * C00143 * C00006)/(${Variables:E1_5_1_5_km} + (E1_5_1_5 * C00143 * C00006))
+r41: C00445 + C00001  -> C00234 + C00080 | (${Variables:E3_5_4_9_kcat} * E3_5_4_9 * C00445 * C00001 )/(${Variables:E3_5_4_9_km} + (E3_5_4_9 * C00445 * C00001 ))
+r42: C16675 + C00006 -> C15996 + C00005 + C00080 | (${Variables:E1_7_1_13_kcat} * E1_7_1_13 * C16675 * C00006)/(${Variables:E1_7_1_13_km} + (E1_7_1_13 * C16675 * C00006))
+r43: C16832 + C00003 -> C16237 + C00004 + C00080 | (${Variables:E1_8_1_4_kcat} * E1_8_1_4 * C16832 * C00003)/(${Variables:E1_8_1_4_km} + (E1_8_1_4 * C16832 * C00003))
+r44: C00051 + C00006  -> C00127 + C00005 + C00080 | (${Variables:E1_8_1_7_kcat} * E1_8_1_7 * C00051 * C00006 )/(${Variables:E1_8_1_7_km} + (E1_8_1_7 * C00051 * C00006 ))
+r45: C00342 + C00006 -> C00343 + C00005 + C0080 | (${Variables:E1_8_1_9_kcat} * E1_8_1_9 * C00342 * C00006)/(${Variables:E1_8_1_9_km} + (E1_8_1_9 * C00342 * C00006))
+r46: C03023 + C00343 + C00002 -> C03895 + C00342 | (${Variables:E1_8_4_11_kcat} * E1_8_4_11 * C03023 * C00343 * C00002)/(${Variables:E1_8_4_11_km} + (E1_8_4_11 * C03023 * C00343 * C00002))
+r47: C03023 + C00343 + C00001 -> C15653 + C00342 | (${Variables:E1_8_4_12_kcat} * E1_8_4_12 * C03023 * C00343 * C00001)/(${Variables:E1_8_4_12_km} + (E1_8_4_12 * C03023 * C00343 * C00001))
+r48: C00019 + C05196 + C05197 -> C05198 + C00073 + C05199 + C05312 | (${Variables:E1_97_1_4_kcat} * E1_97_1_4 * C00019 * C05196 * C05197)/(${Variables:E1_97_1_4_km} + (E1_97_1_4 * C00019 * C05196 * C05197))
+r49: C03172 + C00155 -> C00073 | (${Variables:E2_1_1_10_kcat} * E2_1_1_10 * C03172 * C00155)/(${Variables:E2_1_1_10_km} + (E2_1_1_10 * C03172 * C00155))
+r50: C04489 + C00155 -> C04144 + C00073 | (${Variables:E2_1_1_14_kcat} * E2_1_1_14 * C04489 * C00155)/(${Variables:E2_1_1_14_km} + (E2_1_1_14 * C04489 * C00155))
+r51: C00019 + C00240 -> C00021 + C04153 | (${Variables:E2_1_1_171_kcat} * E2_1_1_171 * C00019 * C00240)/(${Variables:E2_1_1_171_km} + (E2_1_1_171 * C00019 * C00240))
+r52: C00019 + C20648 -> C00021 + C20796 | (${Variables:E2_1_1_182_kcat} * E2_1_1_182 * C00019 * C20648)/(${Variables:E2_1_1_182_km} + (E2_1_1_182 * C00019 * C20648))
+r53: C00019 + C02735 -> C00021 + C03711 | (${Variables:E2_1_1_28_kcat} * E2_1_1_28 * C00019 * C02735)/(${Variables:E2_1_1_28_km} + (E2_1_1_28 * C00019 * C02735))
+r54: C02583 + C00019 -> C20858 + C00021 | (${Variables:E2_1_1_297_kcat} * E2_1_1_297 * C02583 * C00019)/(${Variables:E2_1_1_297_km} + (E2_1_1_297 * C02583 * C00019))
+r55: C00019 + C01977 -> C00021 + C04160 | (${Variables:E2_1_1_33_kcat} * E2_1_1_33 * C00019 * C01977)/(${Variables:E2_1_1_33_km} + (E2_1_1_33 * C00019 * C01977))
+r56: C00365 + C00143 -> C00415 + C00364 | (${Variables:E2_1_1_45_kcat} * E2_1_1_45 * C00365 * C00143)/(${Variables:E2_1_1_45_km} + (E2_1_1_45 * C00365 * C00143))
+r57: C04250 + C02743 -> C03800 + C11475 | (${Variables:E2_1_1_63_kcat} * E2_1_1_63 * C04250 * C02743)/(${Variables:E2_1_1_63_km} + (E2_1_1_63 * C04250 * C02743))
+r58: C00019 + C00821 -> C00021 + C03391 | (${Variables:E2_1_1_72_kcat} * E2_1_1_72 * C00019 * C00821)/(${Variables:E2_1_1_72_km} + (E2_1_1_72 * C00019 * C00821))
+r59: C00143 + C01764 + C00004 + C00080 -> C00101 + C03446 + C00003 | (${Variables:E2_1_1_74_kcat} * E2_1_1_74 * C00143 * C01764 * C00004 * C00080)/(${Variables:E2_1_1_74_km} + (E2_1_1_74 * C00143 * C01764 * C00004 * C00080))
+r60: C00019 + C01229 -> C00021 + C04340 | (${Variables:E2_1_1_79_kcat} * E2_1_1_79 * C00019 * C01229)/(${Variables:E2_1_1_79_km} + (E2_1_1_79 * C00019 * C01229))
+r61: C00143 + C00037 + C00001 -> C00101 + C00065 | (${Variables:E2_1_2_1_kcat} * E2_1_2_1 * C00143 * C00037 * C00001)/(${Variables:E2_1_2_1_km} + (E2_1_2_1 * C00143 * C00037 * C00001))
+r62: C00234 +C03838 -> C00101 + C04376 | (${Variables:E2_1_2_2_kcat} * E2_1_2_2 * C00234 *C03838)/(${Variables:E2_1_2_2_km} + (E2_1_2_2 * C00234 *C03838))
+r63: C00234 + C04677  -> C00101 + C04734 | (${Variables:E2_1_2_3_kcat} * E2_1_2_3 * C00234 * C04677 )/(${Variables:E2_1_2_3_km} + (E2_1_2_3 * C00234 * C04677 ))
+r64: C00130 + C00001 -> C04734 | (${Variables:E3_5_4_10_kcat} * E3_5_4_10 * C00130 * C00001)/(${Variables:E3_5_4_10_km} + (E3_5_4_10 * C00130 * C00001))
+r65: C02430 + C00234 -> C00101 + C03294 | (${Variables:E2_1_2_9_kcat} * E2_1_2_9 * C02430 * C00234)/(${Variables:E2_1_2_9_km} + (E2_1_2_9 * C02430 * C00234))
+r66: C00024 + C04419 -> C00083 + C06250 | (${Variables:E2_1_3_15_kcat} * E2_1_3_15 * C00024 * C04419)/(${Variables:E2_1_3_15_km} + (E2_1_3_15 * C00024 * C04419))
+r67: C00169 + C00049 -> C00009 + C00438 | (${Variables:E2_1_3_2_kcat} * E2_1_3_2 * C00169 * C00049)/(${Variables:E2_1_3_2_km} + (E2_1_3_2 * C00169 * C00049))
+r68: C00169 + C00077 -> C00009 + C00327 | (${Variables:E2_1_3_3_kcat} * E2_1_3_3 * C00169 * C00077)/(${Variables:E2_1_3_3_km} + (E2_1_3_3 * C00169 * C00077))
+r69: C05382 + C00118 -> C00117 + C00231 | (${Variables:E2_2_1_1_kcat} * E2_2_1_1 * C05382 * C00118)/(${Variables:E2_2_1_1_km} + (E2_2_1_1 * C05382 * C00118))
+r70: C00900 + C00011 ->  C00022 | (${Variables:E2_2_1_6_kcat} * E2_2_1_6 * C00900 * C00011)/(${Variables:E2_2_1_6_km} + (E2_2_1_6 * C00900 * C00011))
+r71: C00900 + C00011 -> C00022 | (${Variables:E2_2_1_6_kcat} * E2_2_1_6 * C00900 * C00011)/(${Variables:E2_2_1_6_km} + (E2_2_1_6 * C00900 * C00011))
+r72: C00024 + C01209  -> C05744 + C00010 + C00011 | (${Variables:E2_3_1_180_kcat} * E2_3_1_180 * C00024 * C01209 )/(${Variables:E2_3_1_180_km} + (E2_3_1_180 * C00024 * C01209 ))
+r73: C00024 + C03803 -> C00010 + C04341 | (${Variables:E2_3_1_266_kcat} * E2_3_1_266 * C00024 * C03803)/(${Variables:E2_3_1_266_km} + (E2_3_1_266 * C00024 * C03803))
+r74: C00065 + C00024 -> C00979 + C00010 | (${Variables:E2_3_1_30_kcat} * E2_3_1_30 * C00065 * C00024)/(${Variables:E2_3_1_30_km} + (E2_3_1_30 * C00065 * C00024))
+r75: C00024 + C00263  -> C00010 + C01077 | (${Variables:E2_3_1_31_kcat} * E2_3_1_31 * C00024 * C00263 )/(${Variables:E2_3_1_31_km} + (E2_3_1_31 * C00024 * C00263 ))
+r76: C00437 + C00025 -> C00077 + C00624 | (${Variables:E2_3_1_35_kcat} * E2_3_1_35 * C00437 * C00025)/(${Variables:E2_3_1_35_km} + (E2_3_1_35 * C00437 * C00025))
+r77: C00024 + C00025  -> C00010 + C00624 | (${Variables:E2_3_1_1_kcat} * E2_3_1_1 * C00024 * C00025 )/(${Variables:E2_3_1_1_km} + (E2_3_1_1 * C00024 * C00025 ))
+r78: C00083 + C00229 -> C00010 + C01209 | (${Variables:E2_3_1_39_kcat} * E2_3_1_39 * C00083 * C00229)/(${Variables:E2_3_1_39_km} + (E2_3_1_39 * C00083 * C00229))
+r79: C00173 + C01209  -> C00685 + C00011  + C00229 | (${Variables:E2_3_1_41_kcat} * E2_3_1_41 * C00173 * C01209 )/(${Variables:E2_3_1_41_km} + (E2_3_1_41 * C00173 * C01209 ))
+r80: C00024 + C00058 -> C00010 + C00022 | (${Variables:E2_3_1_54_kcat} * E2_3_1_54 * C00024 * C00058)/(${Variables:E2_3_1_54_km} + (E2_3_1_54 * C00024 * C00058))
+r81: C00024 + C00009 -> C00010 + C00227 | (${Variables:E2_3_1_8_kcat} * E2_3_1_8 * C00024 * C00009)/(${Variables:E2_3_1_8_km} + (E2_3_1_8 * C00024 * C00009))
+r82: C03972 + C00024 + C00001 -> C05539 + C00010 | (${Variables:E2_3_1_89_kcat} * E2_3_1_89 * C03972 * C00024 * C00001)/(${Variables:E2_3_1_89_km} + (E2_3_1_89 * C03972 * C00024 * C00001))
+r83: C00356 + C00010 -> C00024 + C00001 + C00332 | (${Variables:E2_3_3_10_kcat} * E2_3_3_10 * C00356 * C00010)/(${Variables:E2_3_3_10_km} + (E2_3_3_10 * C00356 * C00010))
+r84: C00158 + C00010 -> C00024 + C00001 + C00036 | (${Variables:E2_3_3_16_kcat} * E2_3_3_16 * C00158 * C00010)/(${Variables:E2_3_3_16_km} + (E2_3_3_16 * C00158 * C00010))
+r85: C00029 + C06364 -> C00015 + C06365 | (${Variables:E2_4_1_208_kcat} * E2_4_1_208 * C00029 * C06364)/(${Variables:E2_4_1_208_km} + (E2_4_1_208 * C00029 * C06364))
+r86: C00029 + C00641 -> C00015 + C06364 | (${Variables:E2_4_1_337_kcat} * E2_4_1_337 * C00029 * C00641)/(${Variables:E2_4_1_337_km} + (E2_4_1_337 * C00029 * C00641))
+r87: C04851 + C00043 -> C05893 + C00015 | (${Variables:E2_4_1_227_kcat} * E2_4_1_227 * C04851 * C00043)/(${Variables:E2_4_1_227_km} + (E2_4_1_227 * C04851 * C00043))
+r88: C00718 +  COOO31  -> C00208 | (${Variables:E2_4_1_25_kcat} * E2_4_1_25 * C00718 *  COOO31 )/(${Variables:E2_4_1_25_km} + (E2_4_1_25 * C00718 *  COOO31 ))
+r89: C15586 + C00009 -> C15587 + C00620 | (${Variables:E2_4_2_1_kcat} * E2_4_2_1 * C15586 * C00009)/(${Variables:E2_4_2_1_km} + (E2_4_2_1 * C15586 * C00009))
+r90: C01103 + C00013 -> C00295 + C00119 | (${Variables:E2_4_2_10_kcat} * E2_4_2_10 * C01103 * C00013)/(${Variables:E2_4_2_10_km} + (E2_4_2_10 * C01103 * C00013))
+r91: C03090 + C00013 + C00025 -> C00064 + C0019 + C00001 | (${Variables:E2_4_2_14_kcat} * E2_4_2_14 * C03090 * C00013 * C00025)/(${Variables:E2_4_2_14_km} + (E2_4_2_14 * C03090 * C00013 * C00025))
+r92: C04302 + C00013  -> C00108 + C00119 | (${Variables:E2_4_2_18_kcat} * E2_4_2_18 * C04302 * C00013 )/(${Variables:E2_4_2_18_km} + (E2_4_2_18 * C04302 * C00013 ))
+r93: C01977 + C16675  -> C20446 + C00242 | (${Variables:E2_4_2_29_kcat} * E2_4_2_29 * C01977 * C16675 )/(${Variables:E2_4_2_29_km} + (E2_4_2_29 * C01977 * C16675 ))
+r94: C0029 + C00009 -> C00106 + C00620 | (${Variables:E2_4_2_3_kcat} * E2_4_2_3 * C0029 * C00009)/(${Variables:E2_4_2_3_km} + (E2_4_2_3 * C0029 * C00009))
+r95: C00020 + C00013 -> C00147 + C00119 | (${Variables:E2_4_2_7_kcat} * E2_4_2_7 * C00020 * C00013)/(${Variables:E2_4_2_7_km} + (E2_4_2_7 * C00020 * C00013))
+r96: C00130 + C00001 -> C00262 + C00119 | (${Variables:E2_4_2_8_kcat} * E2_4_2_8 * C00130 * C00001)/(${Variables:E2_4_2_8_km} + (E2_4_2_8 * C00130 * C00001))
+r97: C00105 + C00013 -> C00106 + C00119 | (${Variables:E2_4_2_9_kcat} * E2_4_2_9 * C00105 * C00013)/(${Variables:E2_4_2_9_km} + (E2_4_2_9 * C00105 * C00013))
+r98: C00019 + C20446 -> C00073 + C00147 + C19647 | (${Variables:E2_4_99_17_kcat} * E2_4_99_17 * C00019 * C20446)/(${Variables:E2_4_99_17_km} + (E2_4_99_17 * C00019 * C20446))
+r99: C00341 + C00129  -> C00013 + C00448 | (${Variables:E2_5_1_10_kcat} * E2_5_1_10 * C00341 * C00129 )/(${Variables:E2_5_1_10_km} + (E2_5_1_10 * C00341 * C00129 ))
+r100: C04807 + C00568 -> C00013 + C00921 | (${Variables:E2_5_1_15_kcat} * E2_5_1_15 * C04807 * C00568)/(${Variables:E2_5_1_15_km} + (E2_5_1_15 * C04807 * C00568))
+r101: C01322 + C00051 -> C00462 + C02320 | (${Variables:E2_5_1_18_kcat} * E2_5_1_18 * C01322 * C00051)/(${Variables:E2_5_1_18_km} + (E2_5_1_18 * C01322 * C00051))
+r102: C00074 + C03175 -> C00009 + C01269 | (${Variables:E2_5_1_19_kcat} * E2_5_1_19 * C00074 * C03175)/(${Variables:E2_5_1_19_km} + (E2_5_1_19 * C00074 * C03175))
+r103: C00447 +  C00129 -> C04574 + C00013 | (${Variables:E2_5_1_31_kcat} * E2_5_1_31 * C00447 * C00129)/(${Variables:E2_5_1_31_km} + (E2_5_1_31 * C00447 * C00129))
+r104: C00979 + C00283 -> C00097 + C00033 | (${Variables:E2_5_1_47_kcat} * E2_5_1_47 * C00979 * C00283)/(${Variables:E2_5_1_47_km} + (E2_5_1_47 * C00979 * C00283))
+r105: C02291 + C00001 -> C000097 + C00014 + C00109 | (${Variables:E4_4_1_1_kcat} * E4_4_1_1 * C02291 * C00001)/(${Variables:E4_4_1_1_km} + (E4_4_1_1 * C02291 * C00001))
+r106: C01118 + C00097 -> C02291 + C00042 | (${Variables:E2_5_1_48_kcat} * E2_5_1_48 * C01118 * C00097)/(${Variables:E2_5_1_48_km} + (E2_5_1_48 * C01118 * C00097))
+r107: C01077 + C00409  -> C00073 + C00033 | (${Variables:E2_5_1_49_kcat} * E2_5_1_49 * C01077 * C00409 )/(${Variables:E2_5_1_49_km} + (E2_5_1_49 * C01077 * C00409 ))
+r108: C00009 + C00013 + C00019 -> C00002 + C00073 + C00001 | (${Variables:E2_5_1_6_kcat} * E2_5_1_6 * C00009 * C00013 * C00019)/(${Variables:E2_5_1_6_km} + (E2_5_1_6 * C00009 * C00013 * C00019))
+r109: C00074 + C00043  -> C04631 + C00009 | (${Variables:E2_5_1_7_kcat} * E2_5_1_7 * C00074 * C00043 )/(${Variables:E2_5_1_7_km} + (E2_5_1_7 * C00074 * C00043 ))
+r110: C00235 + C17324  -> C00013 + C04432 | (${Variables:E2_5_1_75_kcat} * E2_5_1_75 * C00235 * C17324 )/(${Variables:E2_5_1_75_km} + (E2_5_1_75 * C00235 * C17324 ))
+r111: C00049 + C00026 -> C00036 + C00025 | (${Variables:E2_6_1_1_kcat} * E2_6_1_1 * C00049 * C00026)/(${Variables:E2_6_1_1_km} + (E2_6_1_1 * C00049 * C00026))
+r112: C00437 + C00026  -> C01250 + C00025 | (${Variables:E2_6_1_11_kcat} * E2_6_1_11 * C00437 * C00026 )/(${Variables:E2_6_1_11_km} + (E2_6_1_11 * C00437 * C00026 ))
+r113: C00064 + C00085 -> C00025 + C00352 | (${Variables:E2_6_1_16_kcat} * E2_6_1_16 * C00064 * C00085)/(${Variables:E2_6_1_16_km} + (E2_6_1_16 * C00064 * C00085))
+r114: C00123 + C00026  -> C00233 + C00025 | (${Variables:E2_6_1_42_kcat} * E2_6_1_42 * C00123 * C00026 )/(${Variables:E2_6_1_42_km} + (E2_6_1_42 * C00123 * C00026 ))
+r115: C01005 + C00026 -> C03232 + C00025 | (${Variables:E2_6_1_52_kcat} * E2_6_1_52 * C01005 * C00026)/(${Variables:E2_6_1_52_km} + (E2_6_1_52 * C01005 * C00026))
+r116: C00064 + C00001  -> C00025 + C00014 | (${Variables:E2_6_1_85_kcat} * E2_6_1_85 * C00064 * C00001 )/(${Variables:E2_6_1_85_km} + (E2_6_1_85 * C00064 * C00001 ))
+r117: C11355 -> C00568 + C00022 | (${Variables:E4_1_3_38_kcat} * E4_1_3_38 * C11355)/(${Variables:E4_1_3_38_km} + (E4_1_3_38 * C11355))
+r118: C00251 + C00064  -> C00108 + C00022 + C00025 | (${Variables:E4_1_3_27_kcat} * E4_1_3_27 * C00251 * C00064 )/(${Variables:E4_1_3_27_km} + (E4_1_3_27 * C00251 * C00064 ))
+r119: C00002 + C00641 -> C00008 + C00416 | (${Variables:E2_7_1_107_kcat} * E2_7_1_107 * C00002 * C00641)/(${Variables:E2_7_1_107_km} + (E2_7_1_107 * C00002 * C00641))
+r120: C00002 + C05345 -> C000008 + C05378 | (${Variables:E2_7_1_11_kcat} * E2_7_1_11 * C00002 * C05345)/(${Variables:E2_7_1_11_km} + (E2_7_1_11 * C00002 * C05345))
+r121: C00016 + C19803 -> C20730 + C00020 | (${Variables:E2_7_1_180_kcat} * E2_7_1_180 * C00016 * C19803)/(${Variables:E2_7_1_180_km} + (E2_7_1_180 * C00016 * C19803))
+r122: C00002 + C00031 -> C00008 + C00092 | (${Variables:E2_7_1_2_kcat} * E2_7_1_2 * C00002 * C00031)/(${Variables:E2_7_1_2_km} + (E2_7_1_2 * C00002 * C00031))
+r123: C00002 + C00140 -> C00008 + C00357 | (${Variables:E2_7_1_59_kcat} * E2_7_1_59 * C00002 * C00140)/(${Variables:E2_7_1_59_km} + (E2_7_1_59 * C00002 * C00140))
+r124: C00002 + C00214 -> C00008 + C00364 | (${Variables:E2_7_1_21_kcat} * E2_7_1_21 * C00002 * C00214)/(${Variables:E2_7_1_21_km} + (E2_7_1_21 * C00002 * C00214))
+r125: C00002 + C00003 -> C00008 + C00006 | (${Variables:E2_7_1_23_kcat} * E2_7_1_23 * C00002 * C00003)/(${Variables:E2_7_1_23_km} + (E2_7_1_23 * C00002 * C00003))
+r126: C00002 + C00008 -> C00008 + C00010 | (${Variables:E2_7_1_24_kcat} * E2_7_1_24 * C00002 * C00008)/(${Variables:E2_7_1_24_km} + (E2_7_1_24 * C00002 * C00008))
+r127: C00002 + C00255 -> C00008 + C00061 | (${Variables:E2_7_1_26_kcat} * E2_7_1_26 * C00002 * C00255)/(${Variables:E2_7_1_26_km} + (E2_7_1_26 * C00002 * C00255))
+r128: C00002 + C00061 -> C00013 + C000016 | (${Variables:E2_7_7_2_kcat} * E2_7_7_2 * C00002 * C00061)/(${Variables:E2_7_7_2_km} + (E2_7_7_2 * C00002 * C00061))
+r129: C00002 + C00258 -> C00008 + C00197 | (${Variables:E2_7_1_31_kcat} * E2_7_1_31 * C00002 * C00258)/(${Variables:E2_7_1_31_km} + (E2_7_1_31 * C00002 * C00258))
+r130: C00002 + C00864 -> C00008 + C03492 | (${Variables:E2_7_1_33_kcat} * E2_7_1_33 * C00002 * C00864)/(${Variables:E2_7_1_33_km} + (E2_7_1_33 * C00002 * C00864))
+r131: C00002 + C00250 -> C00008 + C00018 | (${Variables:E2_7_1_35_kcat} * E2_7_1_35 * C00002 * C00250)/(${Variables:E2_7_1_35_km} + (E2_7_1_35 * C00002 * C00250))
+r132: C00002 + C00418 -> C00008 + C01107 | (${Variables:E2_7_1_36_kcat} * E2_7_1_36 * C00002 * C00418)/(${Variables:E2_7_1_36_km} + (E2_7_1_36 * C00002 * C00418))
+r133: C00002 + C00263 -> C00008 + C01102 | (${Variables:E2_7_1_39_kcat} * E2_7_1_39 * C00002 * C00263)/(${Variables:E2_7_1_39_km} + (E2_7_1_39 * C00002 * C00263))
+r134: C00002 + C00095 -> C00008 + C00085 | (${Variables:E2_7_1_4_kcat} * E2_7_1_4 * C00002 * C00095)/(${Variables:E2_7_1_4_km} + (E2_7_1_4 * C00002 * C00095))
+r135: C00002 + C00022 -> C00008 + C00074 | (${Variables:E2_7_1_40_kcat} * E2_7_1_40 * C00002 * C00022)/(${Variables:E2_7_1_40_km} + (E2_7_1_40 * C00002 * C00022))
+r136: C00002 + C00475 -> C00008 + C00055 | (${Variables:E2_7_1_48_kcat} * E2_7_1_48 * C00002 * C00475)/(${Variables:E2_7_1_48_km} + (E2_7_1_48 * C00002 * C00475))
+r137: C00002 + C01094 -> C00008 + C00354 | (${Variables:E2_7_1_56_kcat} * E2_7_1_56 * C00002 * C01094)/(${Variables:E2_7_1_56_km} + (E2_7_1_56 * C00002 * C01094))
+r138: C00002 + C00984 -> C00008 + C00446 | (${Variables:E2_7_1_6_kcat} * E2_7_1_6 * C00002 * C00984)/(${Variables:E2_7_1_6_km} + (E2_7_1_6 * C00002 * C00984))
+r139: C00002 + C17558 -> C00008 + C17556 | (${Variables:E2_7_1_66_kcat} * E2_7_1_66 * C00002 * C17558)/(${Variables:E2_7_1_66_km} + (E2_7_1_66 * C00002 * C17558))
+r140: C00002 + C00493 -> C00008 + C03175 | (${Variables:E2_7_1_71_kcat} * E2_7_1_71 * C00002 * C00493)/(${Variables:E2_7_1_71_km} + (E2_7_1_71 * C00002 * C00493))
+r141: C00002 + C00017 -> C00008 + C00562 | (${Variables:E2_7_11_1_kcat} * E2_7_11_1 * C00002 * C00017)/(${Variables:E2_7_11_1_km} + (E2_7_11_1 * C00002 * C00017))
+r142: C00002 + C00033 -> C00008 + C00227 | (${Variables:E2_7_2_1_kcat} * E2_7_2_1 * C00002 * C00033)/(${Variables:E2_7_2_1_km} + (E2_7_2_1 * C00002 * C00033))
+r143: C00002 + C00025 -> C00008 + C03287 | (${Variables:E2_7_2_11_kcat} * E2_7_2_11 * C00002 * C00025)/(${Variables:E2_7_2_11_km} + (E2_7_2_11 * C00002 * C00025))
+r144: C00002 + C00197 -> C00008 + C00236 | (${Variables:E2_7_2_3_kcat} * E2_7_2_3 * C00002 * C00197)/(${Variables:E2_7_2_3_km} + (E2_7_2_3 * C00002 * C00197))
+r145: C00002 + C00049 -> C00008 + C03082 | (${Variables:E2_7_2_4_kcat} * E2_7_2_4 * C00002 * C00049)/(${Variables:E2_7_2_4_km} + (E2_7_2_4 * C00002 * C00049))
+r146: C00002 + C00624 -> C00008 + C04133 | (${Variables:E2_7_2_8_kcat} * E2_7_2_8 * C00002 * C00624)/(${Variables:E2_7_2_8_km} + (E2_7_2_8 * C00002 * C00624))
+r147: C00074 + C00615 -> C00022 + C04261 | (${Variables:E2_7_3_9_kcat} * E2_7_3_9 * C00074 * C00615)/(${Variables:E2_7_3_9_km} + (E2_7_3_9 * C00074 * C00615))
+r148: C00002 + C01107 -> C00008 + C01143 | (${Variables:E2_7_4_2_kcat} * E2_7_4_2 * C00002 * C01107)/(${Variables:E2_7_4_2_km} + (E2_7_4_2 * C00002 * C01107))
+r149: C00002 + C00105 -> C00008 + C00015 | (${Variables:E2_7_4_22_kcat} * E2_7_4_22 * C00002 * C00105)/(${Variables:E2_7_4_22_km} + (E2_7_4_22 * C00002 * C00105))
+r150: C00002 + C00055 -> C00008 + C00112 | (${Variables:E2_7_4_25_kcat} * E2_7_4_25 * C00002 * C00055)/(${Variables:E2_7_4_25_km} + (E2_7_4_25 * C00002 * C00055))
+r151: C00002 + C00020 -> C00008 | (${Variables:E2_7_4_3_kcat} * E2_7_4_3 * C00002 * C00020)/(${Variables:E2_7_4_3_km} + (E2_7_4_3 * C00002 * C00020))
+r152: C00002 + C00454 -> C00008 + C00201 | (${Variables:E2_7_4_6_kcat} * E2_7_4_6 * C00002 * C00454)/(${Variables:E2_7_4_6_km} + (E2_7_4_6 * C00002 * C00454))
+r153: C00002 + C04556 -> C00008 + C04752 | (${Variables:E2_7_4_7_kcat} * E2_7_4_7 * C00002 * C04556)/(${Variables:E2_7_4_7_km} + (E2_7_4_7 * C00002 * C04556))
+r154: C00002 + C00144 -> C00008 + C00035 | (${Variables:E2_7_4_8_kcat} * E2_7_4_8 * C00002 * C00144)/(${Variables:E2_7_4_8_km} + (E2_7_4_8 * C00002 * C00144))
+r155: C00002 + C00364 -> C00008 + C00363 | (${Variables:E2_7_4_9_kcat} * E2_7_4_9 * C00002 * C00364)/(${Variables:E2_7_4_9_km} + (E2_7_4_9 * C00002 * C00364))
+r156: C00002 + C00117 -> C00020 + C00119 | (${Variables:E2_7_6_1_kcat} * E2_7_6_1 * C00002 * C00117)/(${Variables:E2_7_6_1_km} + (E2_7_6_1 * C00002 * C00117))
+r157: C00002 + C00378 -> C000020 + C00068 | (${Variables:E2_7_6_2_kcat} * E2_7_6_2 * C00002 * C00378)/(${Variables:E2_7_6_2_km} + (E2_7_6_2 * C00002 * C00378))
+r158: C00002 + C01300 -> C00020 + C04807 | (${Variables:E2_7_6_3_kcat} * E2_7_6_3 * C00002 * C01300)/(${Variables:E2_7_6_3_km} + (E2_7_6_3 * C00002 * C01300))
+r159: C00002 + C00044 -> C00020 + C04494 | (${Variables:E2_7_6_5_kcat} * E2_7_6_5 * C00002 * C00044)/(${Variables:E2_7_6_5_km} + (E2_7_6_5 * C00002 * C00044))
+r160: C01228 + C00001 -> C00035 + C00013 | (${Variables:E3_1_7_2_kcat} * E3_1_7_2 * C01228 * C00001)/(${Variables:E3_1_7_2_km} + (E3_1_7_2 * C01228 * C00001))
+r161: C00002 + C00455 -> C00013 + C00003 | (${Variables:E2_7_7_1_kcat} * E2_7_7_1 * C00002 * C00455)/(${Variables:E2_7_7_1_km} + (E2_7_7_1 * C00002 * C00455))
+r162: C00035 + C00636 -> C00009 + C00096 | (${Variables:E2_7_7_22_kcat} * E2_7_7_22 * C00035 * C00636)/(${Variables:E2_7_7_22_km} + (E2_7_7_22 * C00035 * C00636))
+r163: C00029 + C00446 -> C00103 + C00052 | (${Variables:E2_7_7_12_kcat} * E2_7_7_12 * C00029 * C00446)/(${Variables:E2_7_7_12_km} + (E2_7_7_12 * C00029 * C00446))
+r164: C00075 + C04501 -> C00013 + C00043 | (${Variables:E2_7_7_23_kcat} * E2_7_7_23 * C00075 * C04501)/(${Variables:E2_7_7_23_km} + (E2_7_7_23 * C00075 * C04501))
+r165: C00024 + C06156 -> C00010 + C04501 | (${Variables:E2_3_1_157_kcat} * E2_3_1_157 * C00024 * C06156)/(${Variables:E2_3_1_157_km} + (E2_3_1_157 * C00024 * C06156))
+r166: C00459 + C00103 -> C00013 + C00842 | (${Variables:E2_7_7_24_kcat} * E2_7_7_24 * C00459 * C00103)/(${Variables:E2_7_7_24_km} + (E2_7_7_24 * C00459 * C00103))
+r167: C00002 + C01134 -> C00013 + C00882 | (${Variables:E2_7_7_3_kcat} * E2_7_7_3 * C00002 * C01134)/(${Variables:E2_7_7_3_km} + (E2_7_7_3 * C00002 * C01134))
+r168: C00063 + C00416 -> C00013 + C00269 | (${Variables:E2_7_7_41_kcat} * E2_7_7_41 * C00063 * C00416)/(${Variables:E2_7_7_41_km} + (E2_7_7_41 * C00063 * C00416))
+r169: C00201 + C00046  -> C00013 + C00046 | (${Variables:E2_7_7_6_kcat} * E2_7_7_6 * C00201 * C00046 )/(${Variables:E2_7_7_6_km} + (E2_7_7_6 * C00201 * C00046 ))
+r170: C00677 + C00039  -> C00013 + C00039  | (${Variables:E2_7_7_7_kcat} * E2_7_7_7 * C00677 * C00039 )/(${Variables:E2_7_7_7_km} + (E2_7_7_7 * C00677 * C00039 ))
+r171: C02211 +  C00063 + C00002 -> C19085 + C00013 | (${Variables:E2_7_7_72_kcat} * E2_7_7_72 * C02211 * C00063 * C00002)/(${Variables:E2_7_7_72_km} + (E2_7_7_72 * C02211 * C00063 * C00002))
+r172: C00046 + C00009 -> C00046 + C00454 | (${Variables:E2_7_7_8_kcat} * E2_7_7_8 * C00046 * C00009)/(${Variables:E2_7_7_8_km} + (E2_7_7_8 * C00046 * C00009))
+r173:  C00002  ->  C00013 + C20565 | (${Variables:E2_7_7_85_kcat} * E2_7_7_85 * C00002 )/(${Variables:E2_7_7_85_km} + (E2_7_7_85 * C00002 ))
+r174: C00075 + C00103 -> C00013 + C00029 | (${Variables:E2_7_7_9_kcat} * E2_7_7_9 * C00075 * C00103)/(${Variables:E2_7_7_9_km} + (E2_7_7_9 * C00075 * C00103))
+r175: C04702 + C17556 -> C00105 + C04851 | (${Variables:E2_7_8_13_kcat} * E2_7_8_13 * C04702 * C17556)/(${Variables:E2_7_8_13_km} + (E2_7_8_13 * C04702 * C17556))
+r176: C00269 + C00093  -> C00055 + C03892 | (${Variables:E2_7_8_5_kcat} * E2_7_8_5 * C00269 * C00093 )/(${Variables:E2_7_8_5_km} + (E2_7_8_5 * C00269 * C00093 ))
+r177: C00010 + C03688 -> C00054 + C00229 | (${Variables:E2_7_8_7_kcat} * E2_7_8_7 * C00010 * C03688)/(${Variables:E2_7_8_7_km} + (E2_7_8_7 * C00010 * C03688))
+r178: C00868 + C15812 + C00002 -> C17322 + C15811 + C00020 + C00013 | (${Variables:E2_8_1_13_kcat} * E2_8_1_13 * C00868 * C15812 * C00002)/(${Variables:E2_8_1_13_km} + (E2_8_1_13 * C00868 * C15812 * C00002))
+r179: C00097 + C02342 -> C00065 + C04161 | (${Variables:E2_8_1_4_kcat} * E2_8_1_4 * C00097 * C02342)/(${Variables:E2_8_1_4_km} + (E2_8_1_4 * C00097 * C02342))
+r180: C15811 + C00097 -> C15812 + C00041 | (${Variables:E2_8_1_7_kcat} * E2_8_1_7 * C15811 * C00097)/(${Variables:E2_8_1_7_km} + (E2_8_1_7 * C15811 * C00097))
+r181: C03880 + C00001 -> C03523 + C00066 | (${Variables:E3_1_1_29_kcat} * E3_1_1_29 * C03880 * C00001)/(${Variables:E3_1_1_29_km} + (E3_1_1_29 * C03880 * C00001))
+r182: C03899 + C00001 -> C00051 + C02929 | (${Variables:E3_1_2_6_kcat} * E3_1_2_6 * C03899 * C00001)/(${Variables:E3_1_2_6_km} + (E3_1_2_6 * C03899 * C00001))
+r183: C03798 -> C03633 | (${Variables:E5_2_1_8_kcat} * E5_2_1_8 * C03798)/(${Variables:E5_2_1_8_km} + (E5_2_1_8 * C03798))
+r184: C01100 + C00001 -> C00860 + C00009 | (${Variables:E3_1_3_15_kcat} * E3_1_3_15 * C01100 * C00001)/(${Variables:E3_1_3_15_km} + (E3_1_3_15 * C01100 * C00001))
+r185: C00562 + C00001 -> C00017 + C00009 | (${Variables:E3_1_3_16_kcat} * E3_1_3_16 * C00562 * C00001)/(${Variables:E3_1_3_16_km} + (E3_1_3_16 * C00562 * C00001))
+r186: C00988 + C00001 -> C00160 + C00009 | (${Variables:E3_1_3_18_kcat} * E3_1_3_18 * C00988 * C00001)/(${Variables:E3_1_3_18_km} + (E3_1_3_18 * C00988 * C00001))
+r187: C15585 + C00001  -> C00137 + C00009 | (${Variables:E3_1_3_25_kcat} * E3_1_3_25 * C15585 * C00001 )/(${Variables:E3_1_3_25_km} + (E3_1_3_25 * C15585 * C00001 ))
+r188: C03892 + C00001 -> C00344 + C00009 | (${Variables:E3_1_3_27_kcat} * E3_1_3_27 * C03892 * C00001)/(${Variables:E3_1_3_27_km} + (E3_1_3_27 * C03892 * C00001))
+r189: C01005 + C00001 -> C00065 + C00009 | (${Variables:E3_1_3_3_kcat} * E3_1_3_3 * C01005 * C00001)/(${Variables:E3_1_3_3_km} + (E3_1_3_3 * C01005 * C00001))
+r190: C01167 + C00001 -> C00585 + C00009 | (${Variables:E3_1_3_48_kcat} * E3_1_3_48 * C01167 * C00001)/(${Variables:E3_1_3_48_km} + (E3_1_3_48 * C01167 * C00001))
+r191: C02520 + C00001 -> C00911 + C00009 | (${Variables:E3_1_3_5_kcat} * E3_1_3_5 * C02520 * C00001)/(${Variables:E3_1_3_5_km} + (E3_1_3_5 * C02520 * C00001))
+r192: C02995 + C00001 -> C00208 + C00009 | (${Variables:E3_1_3_90_kcat} * E3_1_3_90 * C02995 * C00001)/(${Variables:E3_1_3_90_km} + (E3_1_3_90 * C02995 * C00001))
+r193: C17627 + C00001 -> C17628 + C000013 | (${Variables:E3_1_7_1_kcat} * E3_1_7_1 * C17627 * C00001)/(${Variables:E3_1_7_1_km} + (E3_1_7_1 * C17627 * C00001))
+r194: C00301 + C00001 -> C00020 + C00117 | (${Variables:E3_6_1_13_kcat} * E3_6_1_13 * C00301 * C00001)/(${Variables:E3_6_1_13_km} + (E3_6_1_13 * C00301 * C00001))
+r195: C00369 + C00001 -> C00721 + C00369 | (${Variables:E3_2_1_1_kcat} * E3_2_1_1 * C00369 * C00001)/(${Variables:E3_2_1_1_km} + (E3_2_1_1 * C00369 * C00001))
+r196: C00372  -> C00252 | (${Variables:E3_2_1_11_kcat} * E3_2_1_11 * C00372 )/(${Variables:E3_2_1_11_km} + (E3_2_1_11 * C00372 ))
+r197: C00243 + C00001 -> C00031 + C00962 | (${Variables:E3_2_1_23_kcat} * E3_2_1_23 * C00243 * C00001)/(${Variables:E3_2_1_23_km} + (E3_2_1_23 * C00243 * C00001))
+r198: C00021 + C00001 -> C03539 + C00147 | (${Variables:E3_2_2_9_kcat} * E3_2_2_9 * C00021 * C00001)/(${Variables:E3_2_2_9_km} + (E3_2_2_9 * C00021 * C00001))
+r199: C01419 + C00001 -> C00097 + C00037 | (${Variables:E3_4_11_2_kcat} * E3_4_11_2 * C01419 * C00001)/(${Variables:E3_4_11_2_km} + (E3_4_11_2 * C01419 * C00001))
+r200: C00152 + C00001  -> C00049 + C00014 | (${Variables:E3_5_1_1_kcat} * E3_5_1_1 * C00152 * C00001 )/(${Variables:E3_5_1_1_km} + (E3_5_1_1 * C00152 * C00001 ))
+r201: C02850 + C00001 -> C00060 + C00151 | (${Variables:E3_5_1_14_kcat} * E3_5_1_14 * C02850 * C00001)/(${Variables:E3_5_1_14_km} + (E3_5_1_14 * C02850 * C00001))
+r202: C00153 + C00001 -> C00253 + C00014 | (${Variables:E3_5_1_19_kcat} * E3_5_1_19 * C00153 * C00001)/(${Variables:E3_5_1_19_km} + (E3_5_1_19 * C00153 * C00001))
+r203: C00357 + C00001 -> C00352 + C00033 | (${Variables:E3_5_1_25_kcat} * E3_5_1_25 * C00357 * C00001)/(${Variables:E3_5_1_25_km} + (E3_5_1_25 * C00357 * C00001))
+r204: C04131 + C00001 -> C02028 + C00014 | (${Variables:E3_5_1_3_kcat} * E3_5_1_3 * C04131 * C00001)/(${Variables:E3_5_1_3_km} + (E3_5_1_3 * C04131 * C00001))
+r205: C03620 + C00001 -> C00060 + C00014 | (${Variables:E3_5_1_4_kcat} * E3_5_1_4 * C03620 * C00001)/(${Variables:E3_5_1_4_km} + (E3_5_1_4 * C03620 * C00001))
+r206: C04390 + C00001 -> C00033 + C00666 | (${Variables:E3_5_1_47_kcat} * E3_5_1_47 * C04390 * C00001)/(${Variables:E3_5_1_47_km} + (E3_5_1_47 * C04390 * C00001))
+r207: C00014 + C00288  -> C01563 + C00001 | (${Variables:E3_5_1_5_kcat} * E3_5_1_5 * C00014 * C00288 )/(${Variables:E3_5_1_5_km} + (E3_5_1_5 * C00014 * C00288 ))
+r208: C11439 + C00001 -> C11440 + C00058 | (${Variables:E3_5_1_88_kcat} * E3_5_1_88 * C11439 * C00001)/(${Variables:E3_5_1_88_km} + (E3_5_1_88 * C11439 * C00001))
+r209: C00337 + C00001 -> C00438 | (${Variables:E3_5_2_3_kcat} * E3_5_2_3 * C00337 * C00001)/(${Variables:E3_5_2_3_km} + (E3_5_2_3 * C00337 * C00001))
+r210: C00179 + C00001  -> C00134 + C00086 | (${Variables:E3_5_3_11_kcat} * E3_5_3_11 * C00179 * C00001 )/(${Variables:E3_5_3_11_km} + (E3_5_3_11 * C00179 * C00001 ))
+r211: C00239 + C00001 -> C00365 + C000014 | (${Variables:E3_5_4_12_kcat} * E3_5_4_12 * C00239 * C00001)/(${Variables:E3_5_4_12_km} + (E3_5_4_12 * C00239 * C00001))
+r212: C00044 + C00001 -> C04895 + C00058 | (${Variables:E3_5_4_16_kcat} * E3_5_4_16 * C00044 * C00001)/(${Variables:E3_5_4_16_km} + (E3_5_4_16 * C00044 * C00001))
+r213: C17324 + C00001 -> C20451 + C00014 | (${Variables:E3_5_4_33_kcat} * E3_5_4_33 * C17324 * C00001)/(${Variables:E3_5_4_33_km} + (E3_5_4_33 * C17324 * C00001))
+r214: C00212 + C00001 -> C00294 + C00014 | (${Variables:E3_5_4_4_kcat} * E3_5_4_4 * C00212 * C00001)/(${Variables:E3_5_4_4_km} + (E3_5_4_4 * C00212 * C00001))
+r215: C00475 + C00001 -> C00299 + C00014 | (${Variables:E3_5_4_5_kcat} * E3_5_4_5 * C00475 * C00001)/(${Variables:E3_5_4_5_km} + (E3_5_4_5 * C00475 * C00001))
+r216: C20905 + C00001 -> C00109 + C00014 | (${Variables:E3_5_99_10_kcat} * E3_5_99_10 * C20905 * C00001)/(${Variables:E3_5_99_10_km} + (E3_5_99_10 * C20905 * C00001))
+r217: C00352 + C00001 -> C00085 + C00014 | (${Variables:E3_5_99_6_kcat} * E3_5_99_6 * C00352 * C00001)/(${Variables:E3_5_99_6_km} + (E3_5_99_6 * C00352 * C00001))
+r218: C00460 + C00001 -> C00365 + C00013 | (${Variables:E3_6_1_23_kcat} * E3_6_1_23 * C00460 * C00001)/(${Variables:E3_6_1_23_km} + (E3_6_1_23 * C00460 * C00001))
+r219: C04574 + C00001 -> C17556 + C00009 | (${Variables:E3_6_1_27_kcat} * E3_6_1_27 * C04574 * C00001)/(${Variables:E3_6_1_27_km} + (E3_6_1_27 * C04574 * C00001))
+r220: C06197 + C00001 -> C00008 + C00020 | (${Variables:E3_6_1_29_kcat} * E3_6_1_29 * C06197 * C00001)/(${Variables:E3_6_1_29_km} + (E3_6_1_29 * C06197 * C00001))
+r221: C19967 + C00001 -> C19968 + C00013 | (${Variables:E3_6_1_55_kcat} * E3_6_1_55 * C19967 * C00001)/(${Variables:E3_6_1_55_km} + (E3_6_1_55 * C19967 * C00001))
+r222: C02133 + C00001 -> C00060 + C00009 | (${Variables:E3_6_1_7_kcat} * E3_6_1_7 * C02133 * C00001)/(${Variables:E3_6_1_7_km} + (E3_6_1_7 * C02133 * C00001))
+r223: C02103 + C00001 -> C02489 + C00462 | (${Variables:E3_8_1_2_kcat} * E3_8_1_2 * C02103 * C00001)/(${Variables:E3_8_1_2_km} + (E3_8_1_2 * C02103 * C00001))
+r224: C00680  -> C00047 + C00011 | (${Variables:E4_1_1_20_kcat} * E4_1_1_20 * C00680 )/(${Variables:E4_1_1_20_km} + (E4_1_1_20 * C00680 ))
+r225: C01103 -> C00105 + C00011 | (${Variables:E4_1_1_23_kcat} * E4_1_1_23 * C01103)/(${Variables:E4_1_1_23_km} + (E4_1_1_23 * C01103))
+r226: C00009 + C00036 -> C00074 + C00011 | (${Variables:E4_1_1_31_kcat} * E4_1_1_31 * C00009 * C00036)/(${Variables:E4_1_1_31_km} + (E4_1_1_31 * C00009 * C00036))
+r227: C00002 + C01143 -> C00008 + C00009 + C00129 + C00011 | (${Variables:E4_1_1_33_kcat} * E4_1_1_33 * C00002 * C01143)/(${Variables:E4_1_1_33_km} + (E4_1_1_33 * C00002 * C01143))
+r228: C04352 -> C01134 + C00011 | (${Variables:E4_1_1_36_kcat} * E4_1_1_36 * C04352)/(${Variables:E4_1_1_36_km} + (E4_1_1_36 * C04352))
+r229: C01302  -> C03506 + C00011 + C00001 | (${Variables:E4_1_1_48_kcat} * E4_1_1_48 * C01302 )/(${Variables:E4_1_1_48_km} + (E4_1_1_48 * C01302 ))
+r230: C06010 -> C00810 + C00011 | (${Variables:E4_1_1_5_kcat} * E4_1_1_5 * C06010)/(${Variables:E4_1_1_5_km} + (E4_1_1_5 * C06010))
+r231: C00354  -> C00111 + C00118 | (${Variables:E4_1_2_13_kcat} * E4_1_2_13 * C00354 )/(${Variables:E4_1_2_13_km} + (E4_1_2_13 * C00354 ))
+r232: C04874 -> C00266 + C01300 | (${Variables:E4_1_2_25_kcat} * E4_1_2_25 * C04874)/(${Variables:E4_1_2_25_km} + (E4_1_2_25 * C04874))
+r233: C00251 + C000064 -> C00108 + C00022 + C00025 | (${Variables:E4_1_3_27_kcat} * E4_1_3_27 * C00251 * C000064)/(${Variables:E4_1_3_27_km} + (E4_1_3_27 * C00251 * C000064))
+r234: C03103  -> C08249 | (${Variables:E4_1_99_3_kcat} * E4_1_99_3 * C03103 )/(${Variables:E4_1_99_3_km} + (E4_1_99_3 * C03103 ))
+r235: C01353  -> C00011 + C00001 | (${Variables:E4_2_1_1_kcat} * E4_2_1_1 * C01353 )/(${Variables:E4_2_1_1_km} + (E4_2_1_1 * C01353 ))
+r236: C00944  -> C02637 + C00001 | (${Variables:E4_2_1_10_kcat} * E4_2_1_10 * C00944 )/(${Variables:E4_2_1_10_km} + (E4_2_1_10 * C00944 ))
+r237: C00631  -> C00074 + C00001 | (${Variables:E4_2_1_11_kcat} * E4_2_1_11 * C00631 )/(${Variables:E4_2_1_11_km} + (E4_2_1_11 * C00631 ))
+r238: C00008 + C04856  -> C00020 + C00009 + C00004 | (${Variables:E4_2_1_136_kcat} * E4_2_1_136 * C00008 * C04856 )/(${Variables:E4_2_1_136_km} + (E4_2_1_136 * C00008 * C04856 ))
+r239: C00158  -> C00311 | (${Variables:E4_2_1_3_kcat} * E4_2_1_3 * C00158 )/(${Variables:E4_2_1_3_km} + (E4_2_1_3 * C00158 ))
+r240: C02504  -> C02631 + C00001 | (${Variables:E4_2_1_33_kcat} * E4_2_1_33 * C02504 )/(${Variables:E4_2_1_33_km} + (E4_2_1_33 * C02504 ))
+r241: C02614  -> C01732 + C00001 | (${Variables:E4_2_1_34_kcat} * E4_2_1_34 * C02614 )/(${Variables:E4_2_1_34_km} + (E4_2_1_34 * C02614 ))
+r242: C00842  -> C11907 + C00001 | (${Variables:E4_2_1_46_kcat} * E4_2_1_46 * C00842 )/(${Variables:E4_2_1_46_km} + (E4_2_1_46 * C00842 ))
+r243: C03680  -> C00785 + C00001 | (${Variables:E4_2_1_49_kcat} * E4_2_1_49 * C03680 )/(${Variables:E4_2_1_49_km} + (E4_2_1_49 * C03680 ))
+r244: C00254 -> C00166 + C00001 + C00011 | (${Variables:E4_2_1_51_kcat} * E4_2_1_51 * C00254)/(${Variables:E4_2_1_51_km} + (E4_2_1_51 * C00254))
+r245: C01271 -> C00693 + C00001 | (${Variables:E4_2_1_59_kcat} * E4_2_1_59 * C01271)/(${Variables:E4_2_1_59_km} + (E4_2_1_59 * C01271))
+r246: C00106 + C00117 -> C01168 + C00001 | (${Variables:E4_2_1_70_kcat} * E4_2_1_70 * C00106 * C00117)/(${Variables:E4_2_1_70_km} + (E4_2_1_70 * C00106 * C00117))
+r247: C04039  -> C00141 + C00001 | (${Variables:E4_2_1_9_kcat} * E4_2_1_9 * C04039 )/(${Variables:E4_2_1_9_km} + (E4_2_1_9 * C04039 ))
+r248: C01102 + C00001 -> C00188 + C00009 | (${Variables:E4_2_3_1_kcat} * E4_2_3_1 * C01102 * C00001)/(${Variables:E4_2_3_1_km} + (E4_2_3_1 * C01102 * C00001))
+r249: C04691 -> C00944 + C00009 | (${Variables:E4_2_3_4_kcat} * E4_2_3_4 * C04691)/(${Variables:E4_2_3_4_km} + (E4_2_3_4 * C04691))
+r250: C01269 -> C00251 | (${Variables:E4_2_3_5_kcat} * E4_2_3_5 * C01269)/(${Variables:E4_2_3_5_km} + (E4_2_3_5 * C01269))
+r251: C00065 -> C00022 + C00014 | (${Variables:E4_3_1_17_kcat} * E4_3_1_17 * C00065)/(${Variables:E4_3_1_17_km} + (E4_3_1_17 * C00065))
+r252: C00740  -> C00022 + C00014 | (${Variables:E4_3_1_18_kcat} * E4_3_1_18 * C00740 )/(${Variables:E4_3_1_18_km} + (E4_3_1_18 * C00740 ))
+r253: C00188 -> C00109 + C00014 | (${Variables:E4_3_1_19_kcat} * E4_3_1_19 * C00188)/(${Variables:E4_3_1_19_km} + (E4_3_1_19 * C00188))
+r254: C03406  -> C00122 + C00062 | (${Variables:E4_3_2_1_kcat} * E4_3_2_1 * C03406 )/(${Variables:E4_3_2_1_km} + (E4_3_2_1 * C03406 ))
+r255: C03794 -> C00122 + C00020 | (${Variables:E4_3_2_2_kcat} * E4_3_2_2 * C03794)/(${Variables:E4_3_2_2_km} + (E4_3_2_2 * C03794))
+r256: C00441 + C00022 -> C20258 + C00001 | (${Variables:E4_3_3_7_kcat} * E4_3_3_7 * C00441 * C00022)/(${Variables:E4_3_3_7_km} + (E4_3_3_7 * C00441 * C00022))
+r257: C20239  -> C20248 + C00014 | (${Variables:E4_3_99_3_kcat} * E4_3_99_3 * C20239 )/(${Variables:E4_3_99_3_km} + (E4_3_99_3 * C20239 ))
+r258: C02291 + C00001 -> C00097 + C00014 + C00109 | (${Variables:E4_4_1_1_kcat} * E4_4_1_1 * C02291 * C00001)/(${Variables:E4_4_1_1_km} + (E4_4_1_1 * C02291 * C00001))
+r259: C00155 + C00001 -> C00283 + C00014 + C00109 | (${Variables:E4_4_1_2_kcat} * E4_4_1_2 * C00155 * C00001)/(${Variables:E4_4_1_2_km} + (E4_4_1_2 * C00155 * C00001))
+r260: C03539 -> C11838 + C00155 | (${Variables:E4_4_1_21_kcat} * E4_4_1_21 * C03539)/(${Variables:E4_4_1_21_km} + (E4_4_1_21 * C03539))
+r261: C03451 -> C00051 + C00546 | (${Variables:E4_4_1_5_kcat} * E4_4_1_5 * C03451)/(${Variables:E4_4_1_5_km} + (E4_4_1_5 * C03451))
+r262: C00041  -> C00133 | (${Variables:E5_1_1_1_kcat} * E5_1_1_1 * C00041 )/(${Variables:E5_1_1_1_km} + (E5_1_1_1 * C00041 ))
+r263: C00025  -> C00217 | (${Variables:E5_1_1_3_kcat} * E5_1_1_3 * C00025 )/(${Variables:E5_1_1_3_km} + (E5_1_1_3 * C00025 ))
+r264: C00199  -> C00231 | (${Variables:E5_1_3_1_kcat} * E5_1_3_1 * C00199 )/(${Variables:E5_1_3_1_km} + (E5_1_3_1 * C00199 ))
+r265: C00029 -> C00052 | (${Variables:E5_1_3_2_kcat} * E5_1_3_2 * C00029)/(${Variables:E5_1_3_2_km} + (E5_1_3_2 * C00029))
+r266: C00043 -> C00203 | (${Variables:E5_1_3_7_kcat} * E5_1_3_7 * C00043)/(${Variables:E5_1_3_7_km} + (E5_1_3_7 * C00043))
+r267: C00267 -> C00221 | (${Variables:E5_1_3_3__kcat} * E5_1_3_3_ * C00267)/(${Variables:E5_1_3_3__km} + (E5_1_3_3_ * C00267))
+r268: C00118  -> C00111 | (${Variables:E5_3_1_1_kcat} * E5_3_1_1 * C00118 )/(${Variables:E5_3_1_1_km} + (E5_3_1_1 * C00118 ))
+r269: C04302  -> C01302 | (${Variables:E5_3_1_24_kcat} * E5_3_1_24 * C04302 )/(${Variables:E5_3_1_24_km} + (E5_3_1_24 * C04302 ))
+r270: C00117 -> C00199 | (${Variables:E5_3_1_6_kcat} * E5_3_1_6 * C00117)/(${Variables:E5_3_1_6_km} + (E5_3_1_6 * C00117))
+r271: C00275 -> C00085 | (${Variables:E5_3_1_8_kcat} * E5_3_1_8 * C00275)/(${Variables:E5_3_1_8_km} + (E5_3_1_8 * C00275))
+r272: C00668  -> C05345 | (${Variables:E5_3_1_9_kcat} * E5_3_1_9 * C00668 )/(${Variables:E5_3_1_9_km} + (E5_3_1_9 * C00668 ))
+r273: C05754 -> C04180 | (${Variables:E5_3_3_14_kcat} * E5_3_3_14 * C05754)/(${Variables:E5_3_3_14_km} + (E5_3_3_14 * C05754))
+r274: C00129 -> C00235 | (${Variables:E5_3_3_2_kcat} * E5_3_3_2 * C00129)/(${Variables:E5_3_3_2_km} + (E5_3_3_2 * C00129))
+r275: C06156 -> C00352 | (${Variables:E5_4_2_10_kcat} * E5_4_2_10 * C06156)/(${Variables:E5_4_2_10_km} + (E5_4_2_10 * C06156))
+r276: C00103 -> C00092 | (${Variables:E5_4_2_2_kcat} * E5_4_2_2 * C00103)/(${Variables:E5_4_2_2_km} + (E5_4_2_2 * C00103))
+r277: C00620 -> C00117 | (${Variables:E5_4_2_7_kcat} * E5_4_2_7 * C00620)/(${Variables:E5_4_2_7_km} + (E5_4_2_7 * C00620))
+r278: C00868 -> C02764 | (${Variables:E5_4_99_12_kcat} * E5_4_99_12 * C00868)/(${Variables:E5_4_99_12_km} + (E5_4_99_12 * C00868))
+r279: C15667 -> C04751 | (${Variables:E5_4_99_18_kcat} * E5_4_99_18 * C15667)/(${Variables:E5_4_99_18_km} + (E5_4_99_18 * C15667))
+r280: C00251 -> C00254 | (${Variables:E5_4_99_5_kcat} * E5_4_99_5 * C00251)/(${Variables:E5_4_99_5_km} + (E5_4_99_5 * C00251))
+r281: C00052 -> C03733 | (${Variables:E5_4_99_9_kcat} * E5_4_99_9 * C00052)/(${Variables:E5_4_99_9_km} + (E5_4_99_9 * C00052))
+r282: C00002 + C00082 + C00787 -> C00020 + C00013 + C02839 | (${Variables:E6_1_1_1_kcat} * E6_1_1_1 * C00002 * C00082 * C00787)/(${Variables:E6_1_1_1_km} + (E6_1_1_1 * C00002 * C00082 * C00787))
+r283: C00002 + C00073 + C01647 -> C000020 + C00013 + C02430 | (${Variables:E6_1_1_10_kcat} * E6_1_1_10 * C00002 * C00073 * C01647)/(${Variables:E6_1_1_10_km} + (E6_1_1_10 * C00002 * C00073 * C01647))
+r284: C00002 + C00065 + C01650 -> C00020 + C00013 + C02553 | (${Variables:E6_1_1_11_kcat} * E6_1_1_11 * C00002 * C00065 * C01650)/(${Variables:E6_1_1_11_km} + (E6_1_1_11 * C00002 * C00065 * C01650))
+r285: C01638 + C00049 + C00002 -> C02984 + C00013 + C00020 | (${Variables:E6_1_1_12_kcat} * E6_1_1_12 * C01638 * C00049 * C00002)/(${Variables:E6_1_1_12_km} + (E6_1_1_12 * C01638 * C00049 * C00002))
+r286: C00002 + C00037 + C01642 -> C00020 + C00013 + C02412 | (${Variables:E6_1_1_14_kcat} * E6_1_1_14 * C00002 * C00037 * C01642)/(${Variables:E6_1_1_14_km} + (E6_1_1_14 * C00002 * C00037 * C01642))
+r287: C00002 + C00148 + C01649 -> C00020 + C00013 + C02702 | (${Variables:E6_1_1_15_kcat} * E6_1_1_15 * C00002 * C00148 * C01649)/(${Variables:E6_1_1_15_km} + (E6_1_1_15 * C00002 * C00148 * C01649))
+r288: C00002 + C00097 + C01639 -> C00020 + C00013 + C03125 | (${Variables:E6_1_1_16_kcat} * E6_1_1_16 * C00002 * C00097 * C01639)/(${Variables:E6_1_1_16_km} + (E6_1_1_16 * C00002 * C00097 * C01639))
+r289: C01641 + C00025 + C00002 -> C02987 + C00013 + C00020 | (${Variables:E6_1_1_17_kcat} * E6_1_1_17 * C01641 * C00025 * C00002)/(${Variables:E6_1_1_17_km} + (E6_1_1_17 * C01641 * C00025 * C00002))
+r290: C00002 + C00025 + C01640 -> C00020 + C00013 + C06112 | (${Variables:E6_1_1_24_kcat} * E6_1_1_24 * C00002 * C00025 * C01640)/(${Variables:E6_1_1_24_km} + (E6_1_1_24 * C00002 * C00025 * C01640))
+r291: C00002 + C00062 + C01636 -> C00020 + C00013 + C02163 | (${Variables:E6_1_1_19_kcat} * E6_1_1_19 * C00002 * C00062 * C01636)/(${Variables:E6_1_1_19_km} + (E6_1_1_19 * C00002 * C00062 * C01636))
+r292: C00002 + C00078 + C01652 -> C00020 + C00013 + C03512 | (${Variables:E6_1_1_2_kcat} * E6_1_1_2 * C00002 * C00078 * C01652)/(${Variables:E6_1_1_2_km} + (E6_1_1_2 * C00002 * C00078 * C01652))
+r293: C00002 + C00079 + C01648 -> C00020 + C00013 + C03511 | (${Variables:E6_1_1_20_kcat} * E6_1_1_20 * C00002 * C00079 * C01648)/(${Variables:E6_1_1_20_km} + (E6_1_1_20 * C00002 * C00079 * C01648))
+r294: C00002 + C00135 + C01643 -> C00020 + C00013 + C02988 | (${Variables:E6_1_1_21_kcat} * E6_1_1_21 * C00002 * C00135 * C01643)/(${Variables:E6_1_1_21_km} + (E6_1_1_21 * C00002 * C00135 * C01643))
+r295: C00002 + C00152 + C01637 -> C00020 + C00013 + C03402 | (${Variables:E6_1_1_22_kcat} * E6_1_1_22 * C00002 * C00152 * C01637)/(${Variables:E6_1_1_22_km} + (E6_1_1_22 * C00002 * C00152 * C01637))
+r296: C00002 + C00188 + C01651 -> C00020 + C00013 + C02992 | (${Variables:E6_1_1_3_kcat} * E6_1_1_3 * C00002 * C00188 * C01651)/(${Variables:E6_1_1_3_km} + (E6_1_1_3 * C00002 * C00188 * C01651))
+r297: C00002 + C00123 + C01645 -> C00020 + C00013 + C02047 | (${Variables:E6_1_1_4_kcat} * E6_1_1_4 * C00002 * C00123 * C01645)/(${Variables:E6_1_1_4_km} + (E6_1_1_4 * C00002 * C00123 * C01645))
+r298: C00002 + C00407 + C01644 -> C00020 + C00013 + C03127 | (${Variables:E6_1_1_5_kcat} * E6_1_1_5 * C00002 * C00407 * C01644)/(${Variables:E6_1_1_5_km} + (E6_1_1_5 * C00002 * C00407 * C01644))
+r299: C00002 + C00047 + C01646 -> C00020 + C00013 + C01931 | (${Variables:E6_1_1_6_kcat} * E6_1_1_6 * C00002 * C00047 * C01646)/(${Variables:E6_1_1_6_km} + (E6_1_1_6 * C00002 * C00047 * C01646))
+r300: C00002 + C00041 + C01635 -> C00020 + C00013 +C00886 | (${Variables:E6_1_1_7_kcat} * E6_1_1_7 * C00002 * C00041 * C01635)/(${Variables:E6_1_1_7_km} + (E6_1_1_7 * C00002 * C00041 * C01635))
+r301:  C00002 + C00183 + C01653 -> C00020 + C00013 + C02554 | (${Variables:E6_1_1_9_kcat} * E6_1_1_9 *  C00002 * C00183 * C01653)/(${Variables:E6_1_1_9_km} + (E6_1_1_9 *  C00002 * C00183 * C01653))
+r302: C00002 + C00049 + C00014 -> C00020 + C00013 + C00152 | (${Variables:E6_3_1_1_kcat} * E6_3_1_1 * C00002 * C00049 * C00014)/(${Variables:E6_3_1_1_km} + (E6_3_1_1 * C00002 * C00049 * C00014))
+r303: C00002 + C00025 + C00014 -> C00008 + C00009 + C00064 | (${Variables:E6_3_1_2_kcat} * E6_3_1_2 * C00002 * C00025 * C00014)/(${Variables:E6_3_1_2_km} + (E6_3_1_2 * C00002 * C00025 * C00014))
+r304: C00002 + C16241 + C16240 -> C16237 + C00020 + C00013 | (${Variables:E6_3_1_20_kcat} * E6_3_1_20 * C00002 * C16241 * C16240)/(${Variables:E6_3_1_20_km} + (E6_3_1_20 * C00002 * C16241 * C16240))
+r305: C00002 + C00857 + C00014 -> C00020 + C00013 + C00003 | (${Variables:E6_3_1_5_kcat} * E6_3_1_5 * C00002 * C00857 * C00014)/(${Variables:E6_3_1_5_km} + (E6_3_1_5 * C00002 * C00857 * C00014))
+r306: C00002 + C05892 + C00993 -> C00008 + C00009 + C04702 | (${Variables:E6_3_2_10_kcat} * E6_3_2_10 * C00002 * C05892 * C00993)/(${Variables:E6_3_2_10_km} + (E6_3_2_10 * C00002 * C05892 * C00993))
+r307: C00002 + C00921 + C00025 -> C00008 + C00009 + C00415 | (${Variables:E6_3_2_12_kcat} * E6_3_2_12 * C00002 * C00921 * C00025)/(${Variables:E6_3_2_12_km} + (E6_3_2_12 * C00002 * C00921 * C00025))
+r308: C00002 + C03541  + C00025 -> C00008 + C00009 + C0354 | (${Variables:E6_3_2_17_kcat} * E6_3_2_17 * C00002 * C03541 * C00025)/(${Variables:E6_3_2_17_km} + (E6_3_2_17 * C00002 * C03541 * C00025))
+r309: C00002 + C03541  + C00025 -> C00008 + C00009 + C03541  | (${Variables:E6_3_2_17_kcat} * E6_3_2_17 * C00002 * C03541  * C00025)/(${Variables:E6_3_2_17_km} + (E6_3_2_17 * C00002 * C03541  * C00025))
+r310: C00002 + C00025 + C00097 -> C00008 + C00009 + C00669 | (${Variables:E6_3_2_2_kcat} * E6_3_2_2 * C00002 * C00025 * C00097)/(${Variables:E6_3_2_2_km} + (E6_3_2_2 * C00002 * C00025 * C00097))
+r311: C00002 + C00669 + C00037 -> C00008 + C00009 + C00051 | (${Variables:E6_3_2_3_kcat} * E6_3_2_3 * C00002 * C00669 * C00037)/(${Variables:E6_3_2_3_km} + (E6_3_2_3 * C00002 * C00669 * C00037))
+r312: C00002 + C00133  -> C00008 + C00009 + C00993 | (${Variables:E6_3_2_4_kcat} * E6_3_2_4 * C00002 * C00133 )/(${Variables:E6_3_2_4_km} + (E6_3_2_4 * C00002 * C00133 ))
+r313: C00063 + C03492 + C00097 -> C00055 + C00013 + C04352 | (${Variables:E6_3_2_5_kcat} * E6_3_2_5 * C00063 * C03492 * C00097)/(${Variables:E6_3_2_5_km} + (E6_3_2_5 * C00063 * C03492 * C00097))
+r314: C00002 + C04751 + C00049 -> C00008 + C00009 + C04823 | (${Variables:E6_3_2_6_kcat} * E6_3_2_6 * C00002 * C04751 * C00049)/(${Variables:E6_3_2_6_km} + (E6_3_2_6 * C00002 * C04751 * C00049))
+r315: C00002 + C00692 + C00047 -> C00008 + C00009 + C05892 | (${Variables:E6_3_2_7_kcat} * E6_3_2_7 * C00002 * C00692 * C00047)/(${Variables:E6_3_2_7_km} + (E6_3_2_7 * C00002 * C00692 * C00047))
+r316: C00002 + C01050 + C00041 -> C00008 + C00009 + C01212 | (${Variables:E6_3_2_8_kcat} * E6_3_2_8 * C00002 * C01050 * C00041)/(${Variables:E6_3_2_8_km} + (E6_3_2_8 * C00002 * C01050 * C00041))
+r317: C00002 + C01212 + C00217 -> C00008 + C00009 + C00692 | (${Variables:E6_3_2_9_kcat} * E6_3_2_9 * C00002 * C01212 * C00217)/(${Variables:E6_3_2_9_km} + (E6_3_2_9 * C00002 * C01212 * C00217))
+r318: C00002 + C04640 -> C00008 + C00009 + C03373 | (${Variables:E6_3_3_1_kcat} * E6_3_3_1 * C00002 * C04640)/(${Variables:E6_3_3_1_km} + (E6_3_3_1 * C00002 * C04640))
+r319: C00002 + C03090 + C00037 -> C00008 + C00009 + C03838 | (${Variables:E6_3_4_13_kcat} * E6_3_4_13 * C00002 * C03090 * C00037)/(${Variables:E6_3_4_13_km} + (E6_3_4_13 * C00002 * C03090 * C00037))
+r320: C00002 + C06250 + C00288 -> C00008 + C00009 + C04419 | (${Variables:E6_3_4_14_kcat} * E6_3_4_14 * C00002 * C06250 * C00288)/(${Variables:E6_3_4_14_km} + (E6_3_4_14 * C00002 * C06250 * C00288))
+r321: C00002 + C03373 + C00288 -> C00008 + C00009 + C15667 | (${Variables:E6_3_4_18_kcat} * E6_3_4_18 * C00002 * C03373 * C00288)/(${Variables:E6_3_4_18_km} + (E6_3_4_18 * C00002 * C03373 * C00288))
+r322: C19722 + C000047 + C00002 -> C19723 + C00020 + C00013 + C00001 | (${Variables:E6_3_4_19_kcat} * E6_3_4_19 * C19722 * C000047 * C00002)/(${Variables:E6_3_4_19_km} + (E6_3_4_19 * C19722 * C000047 * C00002))
+r323: C00064 + C00001  -> C00025 + C00014 | (${Variables:E6_3_4_2_kcat} * E6_3_4_2 * C00064 * C00001 )/(${Variables:E6_3_4_2_km} + (E6_3_4_2 * C00064 * C00001 ))
+r324: C20248 + C000014 + C00002 -> C15996 + C00008 + C00009 + C00001 | (${Variables:E6_3_4_20_kcat} * E6_3_4_20 * C20248 * C000014 * C00002)/(${Variables:E6_3_4_20_km} + (E6_3_4_20 * C20248 * C000014 * C00002))
+r325: C01185 + C00013 + C00008 + C00009 -> C00253 + C00119 + C00002 + C00001 + C00080 | (${Variables:E6_3_4_21_kcat} * E6_3_4_21 * C01185 * C00013 * C00008 * C00009)/(${Variables:E6_3_4_21_km} + (E6_3_4_21 * C01185 * C00013 * C00008 * C00009))
+r326: C00101 + C00058 + C00002 -> C00008 + C00009 + C00234 | (${Variables:E6_3_4_3_kcat} * E6_3_4_3 * C00101 * C00058 * C00002)/(${Variables:E6_3_4_3_km} + (E6_3_4_3 * C00101 * C00058 * C00002))
+r327: C00044 + C00130 + C00049 -> C00035 + C00009 + C03794 | (${Variables:E6_3_4_4_kcat} * E6_3_4_4 * C00044 * C00130 * C00049)/(${Variables:E6_3_4_4_km} + (E6_3_4_4 * C00044 * C00130 * C00049))
+r328: C00002 + C00327 + C00049 -> C00020 + C00013 + C03406 | (${Variables:E6_3_4_5_kcat} * E6_3_4_5 * C00002 * C00327 * C00049)/(${Variables:E6_3_4_5_km} + (E6_3_4_5 * C00002 * C00327 * C00049))
+r329: C00064 + C00001  -> C00025 + C00014 | (${Variables:E6_3_5_13_kcat} * E6_3_5_13 * C00064 * C00001 )/(${Variables:E6_3_5_13_km} + (E6_3_5_13 * C00064 * C00001 ))
+r330: C00064 + C00001 -> C00025 + C00014 | (${Variables:E6_3_5_2_kcat} * E6_3_5_2 * C00064 * C00001)/(${Variables:E6_3_5_2_km} + (E6_3_5_2 * C00064 * C00001))
+r331: C00002 + C04376 + C0064 + C00001 -> C00008 + C00009 + C04640 + C00025 | (${Variables:E6_3_5_3_kcat} * E6_3_5_3 * C00002 * C04376 * C0064 * C00001)/(${Variables:E6_3_5_3_km} + (E6_3_5_3 * C00002 * C04376 * C0064 * C00001))
+r332:  C00064 + C00001  -> C00025 + C00014 | (${Variables:E6_3_5_5_kcat} * E6_3_5_5 *  C00064 * C00001 )/(${Variables:E6_3_5_5_km} + (E6_3_5_5 *  C00064 * C00001 ))
+r333: C02282 + C00025 + C00009 + C00008 -> C06112 + C00064 + C00002 + C00001 | (${Variables:E6_3_5_7_kcat} * E6_3_5_7 * C02282 * C00025 * C00009 * C00008)/(${Variables:E6_3_5_7_km} + (E6_3_5_7 * C02282 * C00025 * C00009 * C00008))
+r334: C00002 + C00024 + C00288 -> C00008 + C00009 + C00083 | (${Variables:E6_4_1_2_kcat} * E6_4_1_2 * C00002 * C00024 * C00288)/(${Variables:E6_4_1_2_km} + (E6_4_1_2 * C00002 * C00024 * C00288))
+r335: C00003 + C00039 + C02128 -> C00020 + C00455 + C00039 | (${Variables:E6_5_1_2_kcat} * E6_5_1_2 * C00003 * C00039 * C02128)/(${Variables:E6_5_1_2_km} + (E6_5_1_2 * C00003 * C00039 * C02128))
+r336: C00002 + C00001 -> C00008 + C00009 | (${Variables:E7_1_2_2_kcat} * E7_1_2_2 * C00002 * C00001)/(${Variables:E7_1_2_2_km} + (E7_1_2_2 * C00002 * C00001))
