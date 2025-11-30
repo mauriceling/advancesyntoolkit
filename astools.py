@@ -327,18 +327,20 @@ def runODEScript(odefile, sampling=100, resultfile='oderesult.csv'):
     resultfile.close()
 
 def sensitivityGenerator(modelfile, multiple=100, 
-                         prefix='', mtype='ASM'):
+                         prefix='', mtype='ASM',
+                         exclusions=None):
     '''!
     Function to generate a series of AdvanceSyn Model Specifications from an existing model by multiplying a multiple to the variable in preparation for sensitivity analyses.
 
     Usage:
 
-        python astools.py senGen --modelfile=models/asm/glycolysis.modelspec --prefix=sen01 --mtype=ASM --multiple=100
+        python astools.py senGen --modelfile=models/asm/e_coli_core.modelspec --prefix=sen01 --mtype=ASM --multiple=100
 
     @param modelfile String: Name of model specification file in models folder. This assumes that the model file is not in models folder.
     @param multiple Integer: Multiples to change each variable value. Default = 100 (which will multiple the original parameter value by 100).
     @param prefix String: A prefixing string for the set of new model specification for identification purposes. Default = ''.
     @param mtype String: Type of model specification file. Allowable types are 'ASM' (AdvanceSyn Model Specification). Default = 'ASM'.
+    @param exclusions String: List of excluded parameters, delimited by semi-colon. Default = None.
     @return: Dictionary of file paths of generated models.
     '''
     gModelSpecFiles = {}
@@ -368,7 +370,11 @@ def sensitivityGenerator(modelfile, multiple=100,
         {'ASM': os.path.abspath(filepath),
          'Change': 'None'}
     # Step 2: Generate models for changed parameter value 
-    for param in bspec['Variables']:
+    if exclusions:
+        exclusion_list = [v.strip() for v in exclusions.split(";")]
+    else:
+        exclusion_list = []
+    for param in [param for param in bspec['Variables'] if param not in exclusion_list]:
         # Step 2.1: Change parameter value 
         original_parameter = float(bspec['Variables'][param])
         new_parameter = str(original_parameter * float(multiple))
