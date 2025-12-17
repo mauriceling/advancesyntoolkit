@@ -2,8 +2,8 @@
 type : 1
 
 [Identifiers]
-name : models\bigg\iML1515.xml
-author : iML1515
+name : models/bigg/iML1515.xml
+author : eiML1515
 
 [Objects]
 m_cmp_c : m_cmp_c
