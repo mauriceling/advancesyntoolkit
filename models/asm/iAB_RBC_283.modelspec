@@ -1,0 +1,2577 @@
+[Specification]
+type : 1
+
+[Identifiers]
+name : models/bigg/iAB_RBC_283.xml
+author : iAB_RBC_283
+
+[Objects]
+m_akg_c : m_akg_c
+m_met__L_c : m_met__L_c
+m_3moxtyr_e : m_3moxtyr_e
+m_adp_c : m_adp_c
+m_h_c : m_h_c
+m_pi_c : m_pi_c
+m_4pyrdx_e : m_4pyrdx_e
+m_5aop_c : m_5aop_c
+m_acald_c : m_acald_c
+m_acmana_c : m_acmana_c
+m_acgam6p_c : m_acgam6p_c
+m_acnamp_c : m_acnamp_c
+m_acnam_c : m_acnam_c
+m_pyr_c : m_pyr_c
+m_ribflv_c : m_ribflv_c
+m_ac_c : m_ac_c
+m_ins_c : m_ins_c
+m_nh4_c : m_nh4_c
+m_ade_c : m_ade_c
+m_ametam_c : m_ametam_c
+m_co2_c : m_co2_c
+m_camp_c : m_camp_c
+m_ppi_c : m_ppi_c
+m_amp_c : m_amp_c
+m_coa_c : m_coa_c
+m_odecrn_c : m_odecrn_c
+m_adn_c : m_adn_c
+m_crn_c : m_crn_c
+m_odecoa_c : m_odecoa_c
+m_ca2_c : m_ca2_c
+m_ca2_e : m_ca2_e
+m_h_e : m_h_e
+m_camp_e : m_camp_e
+m_adrnl_c : m_adrnl_c
+m_gam6p_c : m_gam6p_c
+m_pa_hs_16_0_16_0_c : m_pa_hs_16_0_16_0_c
+m_h2o_c : m_h2o_c
+m_o2_c : m_o2_c
+m_pa_hs_16_0_18_1_c : m_pa_hs_16_0_18_1_c
+m_pa_hs_16_0_18_2_c : m_pa_hs_16_0_18_2_c
+m_cmp_c : m_cmp_c
+m_pail_hs_16_0_16_0_c : m_pail_hs_16_0_16_0_c
+m_pa_hs_18_1_18_1_c : m_pa_hs_18_1_18_1_c
+m_pail_hs_16_0_18_1_c : m_pail_hs_16_0_18_1_c
+m_pail_hs_16_0_18_2_c : m_pail_hs_16_0_18_2_c
+m_pa_hs_18_1_18_2_c : m_pa_hs_18_1_18_2_c
+m_pail_hs_18_1_18_1_c : m_pail_hs_18_1_18_1_c
+m_pail_hs_18_1_18_2_c : m_pail_hs_18_1_18_2_c
+m_pa_hs_18_2_16_0_c : m_pa_hs_18_2_16_0_c
+m_pail_hs_18_2_16_0_c : m_pail_hs_18_2_16_0_c
+m_pail_hs_18_2_18_1_c : m_pail_hs_18_2_18_1_c
+m_cdpdag_hs_16_0_16_0_c : m_cdpdag_hs_16_0_16_0_c
+m_cdpdag_hs_16_0_18_1_c : m_cdpdag_hs_16_0_18_1_c
+m_cdpdag_hs_16_0_18_2_c : m_cdpdag_hs_16_0_18_2_c
+m_pa_hs_18_2_18_1_c : m_pa_hs_18_2_18_1_c
+m_cdpdag_hs_18_1_18_1_c : m_cdpdag_hs_18_1_18_1_c
+m_cdpdag_hs_18_1_18_2_c : m_cdpdag_hs_18_1_18_2_c
+m_cdpdag_hs_18_2_16_0_c : m_cdpdag_hs_18_2_16_0_c
+m_hcys__L_c : m_hcys__L_c
+m_cdpdag_hs_18_2_18_1_c : m_cdpdag_hs_18_2_18_1_c
+m_35cgmp_e : m_35cgmp_e
+m_ala__L_c : m_ala__L_c
+m_na1_c : m_na1_c
+m_chol_c : m_chol_c
+m_cdpchol_c : m_cdpchol_c
+m_cholp_c : m_cholp_c
+m_nadh_c : m_nadh_c
+m_co_e : m_co_e
+m_pppg9_c : m_pppg9_c
+m_acmanap_c : m_acmanap_c
+m_cys__L_c : m_cys__L_c
+m_imp_c : m_imp_c
+m_atp_c : m_atp_c
+m_cdp_c : m_cdp_c
+m_lac__D_c : m_lac__D_c
+m_dag_hs_16_0_16_0_c : m_dag_hs_16_0_16_0_c
+m_orn_c : m_orn_c
+m_urea_c : m_urea_c
+m_dag_hs_16_0_18_1_c : m_dag_hs_16_0_18_1_c
+m_dag_hs_16_0_18_2_c : m_dag_hs_16_0_18_2_c
+m_arg__L_c : m_arg__L_c
+m_dag_hs_18_1_18_1_c : m_dag_hs_18_1_18_1_c
+m_dag_hs_18_1_18_2_c : m_dag_hs_18_1_18_2_c
+m_pe_hs_16_0_16_0_c : m_pe_hs_16_0_16_0_c
+m_ascb__L_c : m_ascb__L_c
+m_ahcys_c : m_ahcys_c
+m_bandmt_c : m_bandmt_c
+m_xylu__L_c : m_xylu__L_c
+m_dhdascb_c : m_dhdascb_c
+m_bilglcur_c : m_bilglcur_c
+m_hco3_e : m_hco3_e
+m_nad_c : m_nad_c
+m_udp_c : m_udp_c
+m_3moxtyr_c : m_3moxtyr_c
+m_dopa_c : m_dopa_c
+m_bilirub_c : m_bilirub_c
+m_nadp_c : m_nadp_c
+m_23dpg_c : m_23dpg_c
+m_pmtcrn_c : m_pmtcrn_c
+m_3pg_c : m_3pg_c
+m_pmtcoa_c : m_pmtcoa_c
+m_pep_c : m_pep_c
+m_gthrd_c : m_gthrd_c
+m_35cgmp_c : m_35cgmp_c
+m_gmp_c : m_gmp_c
+m_etha_c : m_etha_c
+m_dhmtp_c : m_dhmtp_c
+m_guln__L_c : m_guln__L_c
+m_gtp_c : m_gtp_c
+m_lnlccoa_c : m_lnlccoa_c
+m_h2o2_c : m_h2o2_c
+m_fmn_c : m_fmn_c
+m_utp_c : m_utp_c
+m_ctp_c : m_ctp_c
+m_nh4_e : m_nh4_e
+m_dhap_c : m_dhap_c
+m_g3p_c : m_g3p_c
+m_f6p_c : m_f6p_c
+m_hco3_c : m_hco3_c
+m_nicrnt_c : m_nicrnt_c
+m_cl_e : m_cl_e
+m_hdca_c : m_hdca_c
+m_pheme_c : m_pheme_c
+m_fe2_c : m_fe2_c
+m_fad_c : m_fad_c
+m_g6p_c : m_g6p_c
+m_man6p_c : m_man6p_c
+m_hmbil_c : m_hmbil_c
+m_fru_c : m_fru_c
+m_mal__L_c : m_mal__L_c
+m_fum_c : m_fum_c
+m_dnad_c : m_dnad_c
+m_6pgl_c : m_6pgl_c
+m_nadph_c : m_nadph_c
+m_gal1p_c : m_gal1p_c
+m_biliverd_c : m_biliverd_c
+m_co_c : m_co_c
+m_normete__L_e : m_normete__L_e
+m_nicrns_c : m_nicrns_c
+m_galt_c : m_galt_c
+m_udpgal_c : m_udpgal_c
+m_hxan_c : m_hxan_c
+m_nrpphr_c : m_nrpphr_c
+m_udpg_c : m_udpg_c
+m_gal_c : m_gal_c
+m_gam_c : m_gam_c
+m_xmp_c : m_xmp_c
+m_13dpg_c : m_13dpg_c
+m_uri_c : m_uri_c
+m_rnam_c : m_rnam_c
+m_5oxpro_c : m_5oxpro_c
+m_gdp_c : m_gdp_c
+m_glc__D_c : m_glc__D_c
+m_cl_c : m_cl_c
+m_k_c : m_k_c
+m_lac__L_c : m_lac__L_c
+m_gln__L_c : m_gln__L_c
+m_glucys_c : m_glucys_c
+m_glyc_e : m_glyc_e
+m_glyc3p_c : m_glyc3p_c
+m_leuktrA4_c : m_leuktrA4_c
+m_leuktrB4_c : m_leuktrB4_c
+m_lgt__S_c : m_lgt__S_c
+m_gsn_c : m_gsn_c
+m_lnlccrn_c : m_lnlccrn_c
+m_gly_c : m_gly_c
+m_na1_e : m_na1_e
+m_lnlc_c : m_lnlc_c
+m_glu__L_c : m_glu__L_c
+m_ru5p__D_c : m_ru5p__D_c
+m_alpa_hs_16_0_c : m_alpa_hs_16_0_c
+m_ocdcea_c : m_ocdcea_c
+m_alpa_hs_18_1_c : m_alpa_hs_18_1_c
+m_man_c : m_man_c
+m_alpa_hs_18_2_c : m_alpa_hs_18_2_c
+m_ump_c : m_ump_c
+m_gthox_c : m_gthox_c
+m_oaa_c : m_oaa_c
+m_gthox_e : m_gthox_e
+m_dkmpp_c : m_dkmpp_c
+m_ptrc_c : m_ptrc_c
+m_mepi_e : m_mepi_e
+m_amet_c : m_amet_c
+m_orot_c : m_orot_c
+m_prpp_c : m_prpp_c
+m_mthgxl_c : m_mthgxl_c
+m_pydx5p_c : m_pydx5p_c
+m_pydxn_c : m_pydxn_c
+m_mi134p_c : m_mi134p_c
+m_mi1345p_c : m_mi1345p_c
+m_mi14p_c : m_mi14p_c
+m_inost_c : m_inost_c
+m_pail45p_hs_16_0_18_2_c : m_pail45p_hs_16_0_18_2_c
+m_pail45p_hs_18_1_18_1_c : m_pail45p_hs_18_1_18_1_c
+m_pail45p_hs_18_1_18_2_c : m_pail45p_hs_18_1_18_2_c
+m_cdpea_c : m_cdpea_c
+m_pail45p_hs_18_2_16_0_c : m_pail45p_hs_18_2_16_0_c
+m_mi1p__D_c : m_mi1p__D_c
+m_5mdr1p_c : m_5mdr1p_c
+m_pail45p_hs_18_2_18_1_c : m_pail45p_hs_18_2_18_1_c
+m_5mdru1p_c : m_5mdru1p_c
+m_fdp_c : m_fdp_c
+m_nac_c : m_nac_c
+m_dag_hs_18_2_16_0_c : m_dag_hs_18_2_16_0_c
+m_dag_hs_18_2_18_1_c : m_dag_hs_18_2_18_1_c
+m_adprbp_c : m_adprbp_c
+m_ncam_c : m_ncam_c
+m_f26bp_c : m_f26bp_c
+m_pail4p_hs_16_0_16_0_c : m_pail4p_hs_16_0_16_0_c
+m_pail4p_hs_16_0_18_1_c : m_pail4p_hs_16_0_18_1_c
+m_pail4p_hs_16_0_18_2_c : m_pail4p_hs_16_0_18_2_c
+m_3dhguln_c : m_3dhguln_c
+m_6pgc_c : m_6pgc_c
+m_pail4p_hs_18_1_18_1_c : m_pail4p_hs_18_1_18_1_c
+m_pail4p_hs_18_1_18_2_c : m_pail4p_hs_18_1_18_2_c
+m_pail4p_hs_18_2_16_0_c : m_pail4p_hs_18_2_16_0_c
+m_pail4p_hs_18_2_18_1_c : m_pail4p_hs_18_2_18_1_c
+m_phpyr_c : m_phpyr_c
+m_ppbng_c : m_ppbng_c
+m_r5p_c : m_r5p_c
+m_ppp9_c : m_ppp9_c
+m_phe__L_c : m_phe__L_c
+m_pi_e : m_pi_e
+m_lpchol_hs_16_0_c : m_lpchol_hs_16_0_c
+m_ptrc_e : m_ptrc_e
+m_lpchol_hs_18_1_c : m_lpchol_hs_18_1_c
+m_r1p_c : m_r1p_c
+m_gua_c : m_gua_c
+m_lpchol_hs_18_2_c : m_lpchol_hs_18_2_c
+m_pyam5p_c : m_pyam5p_c
+m_pydam_c : m_pydam_c
+m_4pyrdx_c : m_4pyrdx_c
+m_pdx5p_c : m_pdx5p_c
+m_pydx_c : m_pydx_c
+m_pe_hs_18_1_18_2_c : m_pe_hs_18_1_18_2_c
+m_mi145p_c : m_mi145p_c
+m_pe_hs_18_2_16_0_c : m_pe_hs_18_2_16_0_c
+m_pe_hs_18_2_18_1_c : m_pe_hs_18_2_18_1_c
+m_pchol_hs_16_0_16_0_c : m_pchol_hs_16_0_16_0_c
+m_pchol_hs_16_0_18_1_c : m_pchol_hs_16_0_18_1_c
+m_pchol_hs_16_0_18_2_c : m_pchol_hs_16_0_18_2_c
+m_pchol_hs_18_1_18_1_c : m_pchol_hs_18_1_18_1_c
+m_ethamp_c : m_ethamp_c
+m_nmn_c : m_nmn_c
+m_xu5p__D_c : m_xu5p__D_c
+m_g3pc_c : m_g3pc_c
+m_normete__L_c : m_normete__L_c
+m_mepi_c : m_mepi_c
+m_sbt__D_c : m_sbt__D_c
+m_spmd_e : m_spmd_e
+m_ribflv_e : m_ribflv_e
+m_5mta_c : m_5mta_c
+m_spmd_c : m_spmd_c
+m_pail45p_hs_16_0_16_0_c : m_pail45p_hs_16_0_16_0_c
+m_sprm_c : m_sprm_c
+m_pail45p_hs_16_0_18_1_c : m_pail45p_hs_16_0_18_1_c
+m_e4p_c : m_e4p_c
+m_thmmp_c : m_thmmp_c
+m_thmpp_c : m_thmpp_c
+m_thm_c : m_thm_c
+m_s7p_c : m_s7p_c
+m_thmtp_c : m_thmtp_c
+m_udpglcur_c : m_udpglcur_c
+m_glcur_c : m_glcur_c
+m_g1p_c : m_g1p_c
+m_uppg3_c : m_uppg3_c
+m_cpppg3_c : m_cpppg3_c
+m_xylu__D_c : m_xylu__D_c
+m_xylt_c : m_xylt_c
+m_2kmb_c : m_2kmb_c
+m_for_c : m_for_c
+m_pchol_hs_18_1_18_2_c : m_pchol_hs_18_1_18_2_c
+m_pchol_hs_18_2_16_0_c : m_pchol_hs_18_2_16_0_c
+m_pchol_hs_18_2_18_1_c : m_pchol_hs_18_2_18_1_c
+m_pe_hs_16_0_18_1_c : m_pe_hs_16_0_18_1_c
+m_pe_hs_16_0_18_2_c : m_pe_hs_16_0_18_2_c
+m_pe_hs_18_1_18_1_c : m_pe_hs_18_1_18_1_c
+m_5aop_e : m_5aop_e
+m_ade_e : m_ade_e
+m_adn_e : m_adn_e
+m_acald_e : m_acald_e
+m_acgam_c : m_acgam_c
+m_adrnl_e : m_adrnl_e
+m_ala__L_e : m_ala__L_e
+m_arg__L_e : m_arg__L_e
+m_ascb__L_e : m_ascb__L_e
+m_bilglcur_e : m_bilglcur_e
+m_acnam_e : m_acnam_e
+m_chol_e : m_chol_e
+m_co2_e : m_co2_e
+m_cys__L_e : m_cys__L_e
+m_dhdascb_e : m_dhdascb_e
+m_dopa_e : m_dopa_e
+m_etha_e : m_etha_e
+m_ac_e : m_ac_e
+m_fe2_e : m_fe2_e
+m_fru_e : m_fru_e
+m_fum_e : m_fum_e
+m_gal_e : m_gal_e
+m_gam_e : m_gam_e
+m_glc__D_e : m_glc__D_e
+m_gln__L_e : m_gln__L_e
+m_gluala_e : m_gluala_e
+m_gly_e : m_gly_e
+m_h2o_e : m_h2o_e
+m_h2o2_e : m_h2o2_e
+m_hcys__L_e : m_hcys__L_e
+m_hdca_e : m_hdca_e
+m_hxan_e : m_hxan_e
+m_ins_e : m_ins_e
+m_k_e : m_k_e
+m_lac__D_e : m_lac__D_e
+m_lac__L_e : m_lac__L_e
+m_leuktrA4_e : m_leuktrA4_e
+m_leuktrB4_e : m_leuktrB4_e
+m_lnlc_e : m_lnlc_e
+m_mal__L_e : m_mal__L_e
+m_man_e : m_man_e
+m_met__L_e : m_met__L_e
+m_nac_e : m_nac_e
+m_ncam_e : m_ncam_e
+m_nrpphr_e : m_nrpphr_e
+m_o2_e : m_o2_e
+m_ocdcea_e : m_ocdcea_e
+m_orot_e : m_orot_e
+m_phe__L_e : m_phe__L_e
+m_pydam_e : m_pydam_e
+m_pydx_e : m_pydx_e
+m_pydxn_e : m_pydxn_e
+m_pyr_e : m_pyr_e
+m_ap4a_c : m_ap4a_c
+m_sprm_e : m_sprm_e
+m_thm_e : m_thm_e
+m_thmmp_e : m_thmmp_e
+m_urea_e : m_urea_e
+m_uri_e : m_uri_e
+m_band_c : m_band_c
+m_2pg_c : m_2pg_c
+m_icit_c : m_icit_c
+m_glyc_c : m_glyc_c
+m_orot5p_c : m_orot5p_c
+m_man1p_c : m_man1p_c
+
+
+[Initials]
+m_akg_c : 1e-5
+m_met__L_c : 1e-5
+m_3moxtyr_e : 1e-5
+m_adp_c : 1e-5
+m_h_c : 1e-5
+m_pi_c : 1e-5
+m_4pyrdx_e : 1e-5
+m_5aop_c : 1e-5
+m_acald_c : 1e-5
+m_acmana_c : 1e-5
+m_acgam6p_c : 1e-5
+m_acnamp_c : 1e-5
+m_acnam_c : 1e-5
+m_pyr_c : 1e-5
+m_ribflv_c : 1e-5
+m_ac_c : 1e-5
+m_ins_c : 1e-5
+m_nh4_c : 1e-5
+m_ade_c : 1e-5
+m_ametam_c : 1e-5
+m_co2_c : 1e-5
+m_camp_c : 1e-5
+m_ppi_c : 1e-5
+m_amp_c : 1e-5
+m_coa_c : 1e-5
+m_odecrn_c : 1e-5
+m_adn_c : 1e-5
+m_crn_c : 1e-5
+m_odecoa_c : 1e-5
+m_ca2_c : 1e-5
+m_ca2_e : 1e-5
+m_h_e : 1e-5
+m_camp_e : 1e-5
+m_adrnl_c : 1e-5
+m_gam6p_c : 1e-5
+m_pa_hs_16_0_16_0_c : 1e-5
+m_h2o_c : 1e-5
+m_o2_c : 1e-5
+m_pa_hs_16_0_18_1_c : 1e-5
+m_pa_hs_16_0_18_2_c : 1e-5
+m_cmp_c : 1e-5
+m_pail_hs_16_0_16_0_c : 1e-5
+m_pa_hs_18_1_18_1_c : 1e-5
+m_pail_hs_16_0_18_1_c : 1e-5
+m_pail_hs_16_0_18_2_c : 1e-5
+m_pa_hs_18_1_18_2_c : 1e-5
+m_pail_hs_18_1_18_1_c : 1e-5
+m_pail_hs_18_1_18_2_c : 1e-5
+m_pa_hs_18_2_16_0_c : 1e-5
+m_pail_hs_18_2_16_0_c : 1e-5
+m_pail_hs_18_2_18_1_c : 1e-5
+m_cdpdag_hs_16_0_16_0_c : 1e-5
+m_cdpdag_hs_16_0_18_1_c : 1e-5
+m_cdpdag_hs_16_0_18_2_c : 1e-5
+m_pa_hs_18_2_18_1_c : 1e-5
+m_cdpdag_hs_18_1_18_1_c : 1e-5
+m_cdpdag_hs_18_1_18_2_c : 1e-5
+m_cdpdag_hs_18_2_16_0_c : 1e-5
+m_hcys__L_c : 1e-5
+m_cdpdag_hs_18_2_18_1_c : 1e-5
+m_35cgmp_e : 1e-5
+m_ala__L_c : 1e-5
+m_na1_c : 1e-5
+m_chol_c : 1e-5
+m_cdpchol_c : 1e-5
+m_cholp_c : 1e-5
+m_nadh_c : 1e-5
+m_co_e : 1e-5
+m_pppg9_c : 1e-5
+m_acmanap_c : 1e-5
+m_cys__L_c : 1e-5
+m_imp_c : 1e-5
+m_atp_c : 1e-5
+m_cdp_c : 1e-5
+m_lac__D_c : 1e-5
+m_dag_hs_16_0_16_0_c : 1e-5
+m_orn_c : 1e-5
+m_urea_c : 1e-5
+m_dag_hs_16_0_18_1_c : 1e-5
+m_dag_hs_16_0_18_2_c : 1e-5
+m_arg__L_c : 1e-5
+m_dag_hs_18_1_18_1_c : 1e-5
+m_dag_hs_18_1_18_2_c : 1e-5
+m_pe_hs_16_0_16_0_c : 1e-5
+m_ascb__L_c : 1e-5
+m_ahcys_c : 1e-5
+m_bandmt_c : 1e-5
+m_xylu__L_c : 1e-5
+m_dhdascb_c : 1e-5
+m_bilglcur_c : 1e-5
+m_hco3_e : 1e-5
+m_nad_c : 1e-5
+m_udp_c : 1e-5
+m_3moxtyr_c : 1e-5
+m_dopa_c : 1e-5
+m_bilirub_c : 1e-5
+m_nadp_c : 1e-5
+m_23dpg_c : 1e-5
+m_pmtcrn_c : 1e-5
+m_3pg_c : 1e-5
+m_pmtcoa_c : 1e-5
+m_pep_c : 1e-5
+m_gthrd_c : 1e-5
+m_35cgmp_c : 1e-5
+m_gmp_c : 1e-5
+m_etha_c : 1e-5
+m_dhmtp_c : 1e-5
+m_guln__L_c : 1e-5
+m_gtp_c : 1e-5
+m_lnlccoa_c : 1e-5
+m_h2o2_c : 1e-5
+m_fmn_c : 1e-5
+m_utp_c : 1e-5
+m_ctp_c : 1e-5
+m_nh4_e : 1e-5
+m_dhap_c : 1e-5
+m_g3p_c : 1e-5
+m_f6p_c : 1e-5
+m_hco3_c : 1e-5
+m_nicrnt_c : 1e-5
+m_cl_e : 1e-5
+m_hdca_c : 1e-5
+m_pheme_c : 1e-5
+m_fe2_c : 1e-5
+m_fad_c : 1e-5
+m_g6p_c : 1e-5
+m_man6p_c : 1e-5
+m_hmbil_c : 1e-5
+m_fru_c : 1e-5
+m_mal__L_c : 1e-5
+m_fum_c : 1e-5
+m_dnad_c : 1e-5
+m_6pgl_c : 1e-5
+m_nadph_c : 1e-5
+m_gal1p_c : 1e-5
+m_biliverd_c : 1e-5
+m_co_c : 1e-5
+m_normete__L_e : 1e-5
+m_nicrns_c : 1e-5
+m_galt_c : 1e-5
+m_udpgal_c : 1e-5
+m_hxan_c : 1e-5
+m_nrpphr_c : 1e-5
+m_udpg_c : 1e-5
+m_gal_c : 1e-5
+m_gam_c : 1e-5
+m_xmp_c : 1e-5
+m_13dpg_c : 1e-5
+m_uri_c : 1e-5
+m_rnam_c : 1e-5
+m_5oxpro_c : 1e-5
+m_gdp_c : 1e-5
+m_glc__D_c : 1e-5
+m_cl_c : 1e-5
+m_k_c : 1e-5
+m_lac__L_c : 1e-5
+m_gln__L_c : 1e-5
+m_glucys_c : 1e-5
+m_glyc_e : 1e-5
+m_glyc3p_c : 1e-5
+m_leuktrA4_c : 1e-5
+m_leuktrB4_c : 1e-5
+m_lgt__S_c : 1e-5
+m_gsn_c : 1e-5
+m_lnlccrn_c : 1e-5
+m_gly_c : 1e-5
+m_na1_e : 1e-5
+m_lnlc_c : 1e-5
+m_glu__L_c : 1e-5
+m_ru5p__D_c : 1e-5
+m_alpa_hs_16_0_c : 1e-5
+m_ocdcea_c : 1e-5
+m_alpa_hs_18_1_c : 1e-5
+m_man_c : 1e-5
+m_alpa_hs_18_2_c : 1e-5
+m_ump_c : 1e-5
+m_gthox_c : 1e-5
+m_oaa_c : 1e-5
+m_gthox_e : 1e-5
+m_dkmpp_c : 1e-5
+m_ptrc_c : 1e-5
+m_mepi_e : 1e-5
+m_amet_c : 1e-5
+m_orot_c : 1e-5
+m_prpp_c : 1e-5
+m_mthgxl_c : 1e-5
+m_pydx5p_c : 1e-5
+m_pydxn_c : 1e-5
+m_mi134p_c : 1e-5
+m_mi1345p_c : 1e-5
+m_mi14p_c : 1e-5
+m_inost_c : 1e-5
+m_pail45p_hs_16_0_18_2_c : 1e-5
+m_pail45p_hs_18_1_18_1_c : 1e-5
+m_pail45p_hs_18_1_18_2_c : 1e-5
+m_cdpea_c : 1e-5
+m_pail45p_hs_18_2_16_0_c : 1e-5
+m_mi1p__D_c : 1e-5
+m_5mdr1p_c : 1e-5
+m_pail45p_hs_18_2_18_1_c : 1e-5
+m_5mdru1p_c : 1e-5
+m_fdp_c : 1e-5
+m_nac_c : 1e-5
+m_dag_hs_18_2_16_0_c : 1e-5
+m_dag_hs_18_2_18_1_c : 1e-5
+m_adprbp_c : 1e-5
+m_ncam_c : 1e-5
+m_f26bp_c : 1e-5
+m_pail4p_hs_16_0_16_0_c : 1e-5
+m_pail4p_hs_16_0_18_1_c : 1e-5
+m_pail4p_hs_16_0_18_2_c : 1e-5
+m_3dhguln_c : 1e-5
+m_6pgc_c : 1e-5
+m_pail4p_hs_18_1_18_1_c : 1e-5
+m_pail4p_hs_18_1_18_2_c : 1e-5
+m_pail4p_hs_18_2_16_0_c : 1e-5
+m_pail4p_hs_18_2_18_1_c : 1e-5
+m_phpyr_c : 1e-5
+m_ppbng_c : 1e-5
+m_r5p_c : 1e-5
+m_ppp9_c : 1e-5
+m_phe__L_c : 1e-5
+m_pi_e : 1e-5
+m_lpchol_hs_16_0_c : 1e-5
+m_ptrc_e : 1e-5
+m_lpchol_hs_18_1_c : 1e-5
+m_r1p_c : 1e-5
+m_gua_c : 1e-5
+m_lpchol_hs_18_2_c : 1e-5
+m_pyam5p_c : 1e-5
+m_pydam_c : 1e-5
+m_4pyrdx_c : 1e-5
+m_pdx5p_c : 1e-5
+m_pydx_c : 1e-5
+m_pe_hs_18_1_18_2_c : 1e-5
+m_mi145p_c : 1e-5
+m_pe_hs_18_2_16_0_c : 1e-5
+m_pe_hs_18_2_18_1_c : 1e-5
+m_pchol_hs_16_0_16_0_c : 1e-5
+m_pchol_hs_16_0_18_1_c : 1e-5
+m_pchol_hs_16_0_18_2_c : 1e-5
+m_pchol_hs_18_1_18_1_c : 1e-5
+m_ethamp_c : 1e-5
+m_nmn_c : 1e-5
+m_xu5p__D_c : 1e-5
+m_g3pc_c : 1e-5
+m_normete__L_c : 1e-5
+m_mepi_c : 1e-5
+m_sbt__D_c : 1e-5
+m_spmd_e : 1e-5
+m_ribflv_e : 1e-5
+m_5mta_c : 1e-5
+m_spmd_c : 1e-5
+m_pail45p_hs_16_0_16_0_c : 1e-5
+m_sprm_c : 1e-5
+m_pail45p_hs_16_0_18_1_c : 1e-5
+m_e4p_c : 1e-5
+m_thmmp_c : 1e-5
+m_thmpp_c : 1e-5
+m_thm_c : 1e-5
+m_s7p_c : 1e-5
+m_thmtp_c : 1e-5
+m_udpglcur_c : 1e-5
+m_glcur_c : 1e-5
+m_g1p_c : 1e-5
+m_uppg3_c : 1e-5
+m_cpppg3_c : 1e-5
+m_xylu__D_c : 1e-5
+m_xylt_c : 1e-5
+m_2kmb_c : 1e-5
+m_for_c : 1e-5
+m_pchol_hs_18_1_18_2_c : 1e-5
+m_pchol_hs_18_2_16_0_c : 1e-5
+m_pchol_hs_18_2_18_1_c : 1e-5
+m_pe_hs_16_0_18_1_c : 1e-5
+m_pe_hs_16_0_18_2_c : 1e-5
+m_pe_hs_18_1_18_1_c : 1e-5
+m_5aop_e : 1e-5
+m_ade_e : 1e-5
+m_adn_e : 1e-5
+m_acald_e : 1e-5
+m_acgam_c : 1e-5
+m_adrnl_e : 1e-5
+m_ala__L_e : 1e-5
+m_arg__L_e : 1e-5
+m_ascb__L_e : 1e-5
+m_bilglcur_e : 1e-5
+m_acnam_e : 1e-5
+m_chol_e : 1e-5
+m_co2_e : 1e-5
+m_cys__L_e : 1e-5
+m_dhdascb_e : 1e-5
+m_dopa_e : 1e-5
+m_etha_e : 1e-5
+m_ac_e : 1e-5
+m_fe2_e : 1e-5
+m_fru_e : 1e-5
+m_fum_e : 1e-5
+m_gal_e : 1e-5
+m_gam_e : 1e-5
+m_glc__D_e : 1e-5
+m_gln__L_e : 1e-5
+m_gluala_e : 1e-5
+m_gly_e : 1e-5
+m_h2o_e : 1e-5
+m_h2o2_e : 1e-5
+m_hcys__L_e : 1e-5
+m_hdca_e : 1e-5
+m_hxan_e : 1e-5
+m_ins_e : 1e-5
+m_k_e : 1e-5
+m_lac__D_e : 1e-5
+m_lac__L_e : 1e-5
+m_leuktrA4_e : 1e-5
+m_leuktrB4_e : 1e-5
+m_lnlc_e : 1e-5
+m_mal__L_e : 1e-5
+m_man_e : 1e-5
+m_met__L_e : 1e-5
+m_nac_e : 1e-5
+m_ncam_e : 1e-5
+m_nrpphr_e : 1e-5
+m_o2_e : 1e-5
+m_ocdcea_e : 1e-5
+m_orot_e : 1e-5
+m_phe__L_e : 1e-5
+m_pydam_e : 1e-5
+m_pydx_e : 1e-5
+m_pydxn_e : 1e-5
+m_pyr_e : 1e-5
+m_ap4a_c : 1e-5
+m_sprm_e : 1e-5
+m_thm_e : 1e-5
+m_thmmp_e : 1e-5
+m_urea_e : 1e-5
+m_uri_e : 1e-5
+m_band_c : 1e-5
+m_2pg_c : 1e-5
+m_icit_c : 1e-5
+m_glyc_c : 1e-5
+m_orot5p_c : 1e-5
+m_man1p_c : 1e-5
+
+
+[Variables]
+m_SK_pchol_hs_18_1_18_1_c_conc : 1e-6
+m_SK_pchol_hs_18_1_18_2_c_conc : 1e-6
+m_SK_pchol_hs_18_2_16_0_c_conc : 1e-6
+m_SK_pchol_hs_18_2_18_1_c_conc : 1e-6
+m_SK_pe_hs_16_0_16_0_c_conc : 1e-6
+m_SK_pe_hs_16_0_18_1_c_conc : 1e-6
+m_SK_pe_hs_16_0_18_2_c_conc : 1e-6
+m_SK_pe_hs_18_1_18_1_c_conc : 1e-6
+m_SK_pe_hs_18_1_18_2_c_conc : 1e-6
+m_SK_pe_hs_18_2_16_0_c_conc : 1e-6
+m_SK_pe_hs_18_2_18_1_c_conc : 1e-6
+m_UNK3_conc : 1e-6
+m_3MOXTYRESSte_conc : 1e-6
+m_4PYRDX_conc : 1e-6
+m_5AOPt2_conc : 1e-6
+m_EX_ade_e_conc : 0.014
+m_EX_adn_e_conc : 0.01
+m_ACALDt_conc : 1e-6
+m_EX_35cgmp_e_conc : 1e-6
+m_ACGAM2E_conc : 1e-6
+m_EX_adrnl_e_conc : 0.0378
+m_ACGAMK_conc : 1e-6
+m_EX_ala__L_e_conc : 1e-6
+m_EX_arg__L_e_conc : 0.1152
+m_ACNAM9PL_conc : 1e-6
+m_EX_ascb__L_e_conc : 1e-6
+m_EX_3moxtyr_e_conc : 1e-6
+m_EX_4pyrdx_e_conc : 1e-6
+m_ACNAMPH_conc : 1e-6
+m_EX_bilglcur_e_conc : 1e-6
+m_EX_ca2_e_conc : 10.0
+m_ACNAMt2_conc : 1e-6
+m_EX_camp_e_conc : 1e-6
+m_EX_chol_e_conc : 0.012
+m_EX_cl_e_conc : 10.0
+m_ACNML_conc : 1e-6
+m_EX_co_e_conc : 1e-6
+m_EX_co2_e_conc : 5.87112293333346
+m_ACP1_FMN_conc : 1e-6
+m_EX_cys__L_e_conc : 0.08
+m_EX_dhdascb_e_conc : 0.1111
+m_EX_dopa_e_conc : 0.0324
+m_EX_5aop_e_conc : 0.02
+m_EX_etha_e_conc : 0.012
+m_ACt2r_conc : 1e-6
+m_EX_fe2_e_conc : 10.0
+m_ADA_conc : 1e-6
+m_EX_fru_e_conc : 0.0075
+m_EX_fum_e_conc : 0.25
+m_EX_gal_e_conc : 0.3169
+m_EX_ac_e_conc : 1e-6
+m_EX_gam_e_conc : 1e-05
+m_EX_acald_e_conc : 10.0
+m_ADEt_conc : 1e-6
+m_EX_acnam_e_conc : 3.74e-05
+m_EX_glc__D_e_conc : 1.12
+m_ADK1_conc : 1e-6
+m_EX_gln__L_e_conc : 10.0
+m_ADMDC_conc : 1e-6
+m_ADNCYC_conc : 1e-6
+m_EX_gluala_e_conc : 0.08
+m_ADNK1_conc : 1e-6
+m_EX_gly_e_conc : 0.08
+m_EX_glyc_e_conc : 0.012
+m_C181CPT1_conc : 1e-6
+m_ADNt_conc : 1e-6
+m_C181CPT2rbc_conc : 1e-6
+m_CA2t_conc : 1e-6
+m_EX_gthox_e_conc : 1e-6
+m_EX_h_e_conc : 0.900450000000104
+m_EX_h2o_e_conc : 6.45680282666678
+m_EX_h2o2_e_conc : 10.0
+m_ADPT_conc : 1e-6
+m_CAATPS_conc : 1e-6
+m_CAMPt_conc : 1e-6
+m_ADRNLtu_conc : 1e-6
+m_EX_hco3_e_conc : 0.0824999999999996
+m_AGDC_conc : 1e-6
+m_AGPAT1_16_0_16_1_conc : 1e-6
+m_CAT_conc : 1e-6
+m_AGPAT1_16_0_18_3_conc : 1e-6
+m_EX_hcys__L_e_conc : 1e-6
+m_AGPAT1_16_0_18_4_conc : 1e-6
+m_EX_hdca_e_conc : 0.012
+m_EX_hxan_e_conc : 1e-6
+m_CDIPTr_16_0_16_0_conc : 1e-6
+m_EX_ins_e_conc : 1e-6
+m_AGPAT1_18_1_18_3_conc : 1e-6
+m_EX_k_e_conc : 10.0
+m_EX_lac__D_e_conc : 1e-6
+m_CDIPTr_16_0_18_1_conc : 1e-6
+m_CDIPTr_16_0_18_2_conc : 1e-6
+m_EX_lac__L_e_conc : 1e-6
+m_AGPAT1_18_1_18_4_conc : 1e-6
+m_EX_leuktrA4_e_conc : 2.4e-06
+m_CDIPTr_18_1_18_1_conc : 1e-6
+m_CDIPTr_18_1_18_2_conc : 1e-6
+m_EX_leuktrB4_e_conc : 1e-6
+m_AGPAT1_18_2_16_0_conc : 1e-6
+m_EX_lnlc_e_conc : 0.006
+m_EX_mal__L_e_conc : 0.5
+m_EX_man_e_conc : 0.01
+m_CDIPTr_18_2_16_0_conc : 1e-6
+m_CDIPTr_18_2_18_1_conc : 1e-6
+m_CDS_16_0_16_0_conc : 1e-6
+m_CDS_16_0_18_1_conc : 1e-6
+m_CDS_16_0_18_2_conc : 1e-6
+m_AGPAT1_18_2_18_1_conc : 1e-6
+m_CDS_18_1_18_1_conc : 1e-6
+m_CDS_18_1_18_2_conc : 1e-6
+m_EX_mepi_e_conc : 1e-6
+m_EX_met__L_e_conc : 0.01
+m_EX_na1_e_conc : 10.0
+m_CDS_18_2_16_0_conc : 1e-6
+m_AHCi_conc : 1e-6
+m_CDS_18_2_18_1_conc : 1e-6
+m_CGMPt_conc : 1e-6
+m_EX_nac_e_conc : 0.001
+m_ALAt4_conc : 1e-6
+m_EX_ncam_e_conc : 1e-6
+m_EX_nh4_e_conc : 0.000999999999999446
+m_EX_normete__L_e_conc : 1e-6
+m_EX_nrpphr_e_conc : 0.0288
+m_CHLP_conc : 1e-6
+m_CHLPCTD_conc : 1e-6
+m_EX_o2_e_conc : 0.0943609999999993
+m_EX_ocdcea_e_conc : 0.006
+m_CHOLK_conc : 1e-6
+m_ALDD2x_conc : 1e-6
+m_CHOLt4_conc : 1e-6
+m_CO2t_conc : 1e-6
+m_COt_conc : 1e-6
+m_EX_orot_e_conc : 0.01
+m_EX_phe__L_e_conc : 10.0
+m_EX_pi_e_conc : 1.30470065185183
+m_EX_ptrc_e_conc : 1e-6
+m_EX_pydam_e_conc : 0.0001
+m_EX_pydx_e_conc : 0.000155
+m_EX_pydxn_e_conc : 0.000128
+m_EX_pyr_e_conc : 1e-6
+m_CPPPGO_conc : 1e-6
+m_AMANK_conc : 1e-6
+m_CYStec_conc : 1e-6
+m_AMPDA_conc : 1e-6
+m_AP4AH1_conc : 1e-6
+m_CYTK1_conc : 1e-6
+m_EX_ribflv_e_conc : 10.0
+m_EX_spmd_e_conc : 1e-6
+m_EX_sprm_e_conc : 1e-6
+m_D_LACt2_conc : 1e-6
+m_DAGK_hs_16_0_16_0_conc : 1e-6
+m_ARGN_conc : 1e-6
+m_EX_thm_e_conc : 6e-05
+m_EX_thmmp_e_conc : 1e-6
+m_DAGK_hs_16_0_18_1_conc : 1e-6
+m_DAGK_hs_16_0_18_2_conc : 1e-6
+m_ARGt5r_conc : 1e-6
+m_DAGK_hs_18_1_18_1_conc : 1e-6
+m_DAGK_hs_18_1_18_2_conc : 1e-6
+m_CEPTE_16_0_16_0_conc : 1e-6
+m_EX_urea_e_conc : 1e-6
+m_EX_uri_e_conc : 1e-6
+m_ASCBt_conc : 1e-6
+m_DAGK_hs_18_2_16_0_conc : 1e-6
+m_DAGK_hs_18_2_18_1_conc : 1e-6
+m_BANDMT_conc : 1e-6
+m_DGULND_conc : 1e-6
+m_SK_adprbp_c_conc : 1e-6
+m_DHAAt1r_conc : 1e-6
+m_BILGLCURt_conc : 1e-6
+m_DM_nadh_conc : 1e-6
+m_SK_akg_c_conc : 1e-6
+m_SK_band_c_conc : 1e-6
+m_SK_bandmt_c_conc : 1e-6
+m_BILIRBU_conc : 1e-6
+m_SK_for_c_conc : 1e-6
+m_SK_mi1345p_c_conc : 1e-6
+m_SK_mi134p_c_conc : 1e-6
+m_DOPAMT_conc : 1e-6
+m_DOPAtu_conc : 1e-6
+m_SK_mi145p_c_conc : 1e-6
+m_BILIRED_conc : 1e-6
+m_SK_mi14p_c_conc : 1e-6
+m_SK_pchol_hs_16_0_16_0_c_conc : 1e-6
+m_SK_pchol_hs_16_0_18_1_c_conc : 1e-6
+m_SK_pchol_hs_16_0_18_2_c_conc : 1e-6
+m_DPGM_conc : 1e-6
+m_C160CPT1_conc : 1e-6
+m_DPGase_conc : 1e-6
+m_C160CPT2rbc_conc : 1e-6
+m_ENO_conc : 1e-6
+m_GTHS_conc : 1e-6
+m_GUACYC_conc : 1e-6
+m_GUAPRT_conc : 1e-6
+m_ETHAt_conc : 1e-6
+m_ENOPH_conc : 1e-6
+m_ETHP_conc : 1e-6
+m_GULND_conc : 1e-6
+m_NDPK1_conc : 1e-6
+m_FACOAL160_conc : 1e-6
+m_FACOAL181_conc : 1e-6
+m_FACOAL1821_conc : 1e-6
+m_H2O2t_conc : 1e-6
+m_FADDP_conc : 1e-6
+m_NDPK2_conc : 1e-6
+m_NDPK3_conc : 1e-6
+m_NH4t3r_conc : 1e-6
+m_FBA_conc : 1e-6
+m_FBP26_conc : 1e-6
+m_H2Ot_conc : 1e-6
+m_HCO3E_conc : 1e-6
+m_NICRNS_conc : 1e-6
+m_HCO3_CLt_conc : 1e-6
+m_HCYSte_conc : 1e-6
+m_HDCAt_conc : 1e-6
+m_FCLT_conc : 1e-6
+m_FE2t_conc : 1e-6
+m_FMNAT_conc : 1e-6
+m_HEX1_conc : 1e-6
+m_NMNAT_conc : 1e-6
+m_HEX10_conc : 1e-6
+m_HEX4_conc : 1e-6
+m_HEX7_conc : 1e-6
+m_HMBS_conc : 1e-6
+m_FRUt1r_conc : 1e-6
+m_FUM_conc : 1e-6
+m_FUMtr_conc : 1e-6
+m_NNATr_conc : 1e-6
+m_G6PDA_conc : 1e-6
+m_G6PDH2r_conc : 1e-6
+m_GALKr_conc : 1e-6
+m_HOXG_conc : 1e-6
+m_HXPRT_conc : 1e-6
+m_NORMETEVESSte_conc : 1e-6
+m_NP1_conc : 1e-6
+m_GALOR_conc : 1e-6
+m_GALT_conc : 1e-6
+m_HYXNt_conc : 1e-6
+m_NRPPHRtu_conc : 1e-6
+m_GALUi_conc : 1e-6
+m_GALt1r_conc : 1e-6
+m_NT5C_conc : 1e-6
+m_Ht_conc : 1e-6
+m_GAMt1r_conc : 1e-6
+m_ICDHyr_conc : 1e-6
+m_NTD11_conc : 1e-6
+m_IMPD_conc : 1e-6
+m_GAPD_conc : 1e-6
+m_NTD2_conc : 1e-6
+m_NMNHYD_conc : 1e-6
+m_GGLUCT_conc : 1e-6
+m_GK1_conc : 1e-6
+m_GLCt1_conc : 1e-6
+m_INSt_conc : 1e-6
+m_KCCt_conc : 1e-6
+m_L_LACt2r_conc : 1e-6
+m_GLNS_conc : 1e-6
+m_GLNt4_conc : 1e-6
+m_LDH_L_conc : 1e-6
+m_GLUCYS_conc : 1e-6
+m_NTD7_conc : 1e-6
+m_GLYCt_conc : 1e-6
+m_GLYK_conc : 1e-6
+m_LEUKTRA4t_conc : 1e-6
+m_LEUKTRB4t_conc : 1e-6
+m_LGTHL_conc : 1e-6
+m_GLYOX_conc : 1e-6
+m_NTD9_conc : 1e-6
+m_LNLCCPT1_conc : 1e-6
+m_GLYt7_211_r_conc : 1e-6
+m_LNLCCPT2rbc_conc : 1e-6
+m_NaKt_conc : 1e-6
+m_LNLCt_conc : 1e-6
+m_GMPR_conc : 1e-6
+m_O2t_conc : 1e-6
+m_GMPS2_conc : 1e-6
+m_GND_conc : 1e-6
+m_LTA4H_conc : 1e-6
+m_MALt_conc : 1e-6
+m_GPAM_hs_16_1_conc : 1e-6
+m_OCDCEAt_conc : 1e-6
+m_GPAM_hs_18_3_conc : 1e-6
+m_MAN6PI_conc : 1e-6
+m_MANt1r_conc : 1e-6
+m_GPAM_hs_18_4_conc : 1e-6
+m_OMPDC_conc : 1e-6
+m_GPDDA1_conc : 1e-6
+m_GTHDH_conc : 1e-6
+m_MDH_conc : 1e-6
+m_OPAH_conc : 1e-6
+m_GTHOr_conc : 1e-6
+m_GTHOXti2_conc : 1e-6
+m_GTHPi_conc : 1e-6
+m_MDRPD_conc : 1e-6
+m_ME2_conc : 1e-6
+m_ORNDC_conc : 1e-6
+m_MEPIVESSte_conc : 1e-6
+m_METAT_conc : 1e-6
+m_OROATP_conc : 1e-6
+m_METtec_conc : 1e-6
+m_ORPT_conc : 1e-6
+m_MGSA_conc : 1e-6
+m_PDX5POi_conc : 1e-6
+m_PDXPP_conc : 1e-6
+m_MI1345PP_conc : 1e-6
+m_MI145PK_conc : 1e-6
+m_MI145PP_conc : 1e-6
+m_MI1PP_conc : 1e-6
+m_PI4P5K_16_0_18_4_conc : 1e-6
+m_PI4P5K_18_1_18_3_conc : 1e-6
+m_PI4P5K_18_1_18_4_conc : 1e-6
+m_PETHCT_conc : 1e-6
+m_PI4P5K_18_2_16_0_conc : 1e-6
+m_MI1PS_conc : 1e-6
+m_MTAP_conc : 1e-6
+m_PI4P5K_18_2_18_1_conc : 1e-6
+m_MTRI_conc : 1e-6
+m_PFK_conc : 1e-6
+m_NACt_conc : 1e-6
+m_NADK_conc : 1e-6
+m_PI4PLC_16_0_16_0_conc : 1e-6
+m_PI4PLC_16_0_18_1_conc : 1e-6
+m_PI4PLC_16_0_18_2_conc : 1e-6
+m_PI4PLC_18_1_18_1_conc : 1e-6
+m_PI4PLC_18_1_18_2_conc : 1e-6
+m_PI4PLC_18_2_16_0_conc : 1e-6
+m_PI4PLC_18_2_18_1_conc : 1e-6
+m_PI4PP_16_0_16_0_conc : 1e-6
+m_NADPN_conc : 1e-6
+m_PFK26_conc : 1e-6
+m_PI4PP_16_0_18_1_conc : 1e-6
+m_PI4PP_16_0_18_2_conc : 1e-6
+m_NADS2_conc : 1e-6
+m_PI4PP_18_1_18_1_conc : 1e-6
+m_PGI_conc : 1e-6
+m_PI4PP_18_1_18_2_conc : 1e-6
+m_PI4PP_18_2_16_0_conc : 1e-6
+m_NAt_conc : 1e-6
+m_NCAMUP_conc : 1e-6
+m_PI4PP_18_2_18_1_conc : 1e-6
+m_PGK_conc : 1e-6
+m_PIK4_16_0_16_0_conc : 1e-6
+m_PIK4_16_0_18_1_conc : 1e-6
+m_PIK4_16_0_18_2_conc : 1e-6
+m_GULN3D_conc : 1e-6
+m_PGL_conc : 1e-6
+m_PIK4_18_1_18_1_conc : 1e-6
+m_PIK4_18_1_18_2_conc : 1e-6
+m_PIK4_18_2_16_0_conc : 1e-6
+m_PIK4_18_2_18_1_conc : 1e-6
+m_PIPLC_16_0_16_0_conc : 1e-6
+m_PPAP_18_1_18_1_conc : 1e-6
+m_PPAP_18_1_18_2_conc : 1e-6
+m_PPAP_18_2_16_0_conc : 1e-6
+m_PIPLC_16_0_18_1_conc : 1e-6
+m_PGM_conc : 1e-6
+m_PIPLC_16_0_18_2_conc : 1e-6
+m_PIPLC_18_1_18_1_conc : 1e-6
+m_PPAP_18_2_18_1_conc : 1e-6
+m_PIPLC_18_1_18_2_conc : 1e-6
+m_PHETA1_conc : 1e-6
+m_PIPLC_18_2_16_0_conc : 1e-6
+m_PIPLC_18_2_18_1_conc : 1e-6
+m_PPBNGS_conc : 1e-6
+m_PPM_conc : 1e-6
+m_PPPGO_conc : 1e-6
+m_PHEtec_conc : 1e-6
+m_PRPPS_conc : 1e-6
+m_PIt_conc : 1e-6
+m_PI45P5P_16_0_16_0_conc : 1e-6
+m_PLA2_2_16_0_16_0_conc : 1e-6
+m_PLA2_2_16_0_18_1_conc : 1e-6
+m_PTRCtex2_conc : 1e-6
+m_PI45P5P_16_0_18_1_conc : 1e-6
+m_PLA2_2_16_0_18_2_conc : 1e-6
+m_PLA2_2_18_1_18_1_conc : 1e-6
+m_PLA2_2_18_1_18_2_conc : 1e-6
+m_PUNP1_conc : 1e-6
+m_PUNP3_conc : 1e-6
+m_PUNP5_conc : 1e-6
+m_PLA2_2_18_2_16_0_conc : 1e-6
+m_PLA2_2_18_2_18_1_conc : 1e-6
+m_PYAM5PO_conc : 1e-6
+m_PI45P5P_16_0_18_2_conc : 1e-6
+m_PYDAMK_conc : 1e-6
+m_PNP_conc : 1e-6
+m_PI45P5P_18_1_18_1_conc : 1e-6
+m_PYDAMtr_conc : 1e-6
+m_PI45P5P_18_1_18_2_conc : 1e-6
+m_PYDXDH_conc : 1e-6
+m_PYDXK_conc : 1e-6
+m_PPA_conc : 1e-6
+m_PI45P5P_18_2_16_0_conc : 1e-6
+m_PPAP_16_0_16_0_conc : 1e-6
+m_PYDXNK_conc : 1e-6
+m_PPAP_16_0_18_1_conc : 1e-6
+m_PI45P5P_18_2_18_1_conc : 1e-6
+m_PPAP_16_0_18_2_conc : 1e-6
+m_PYDXNtr_conc : 1e-6
+m_PYDXPP_conc : 1e-6
+m_PYDXtr_conc : 1e-6
+m_PYK_conc : 1e-6
+m_CEPTE_18_1_18_2_conc : 1e-6
+m_PI45PLC_16_0_16_0_conc : 1e-6
+m_CEPTE_18_2_16_0_conc : 1e-6
+m_PYRt2_conc : 1e-6
+m_CEPTE_18_2_18_1_conc : 1e-6
+m_RBFK_conc : 1e-6
+m_PI45PLC_16_0_18_1_conc : 1e-6
+m_CEPTC_16_0_16_0_conc : 1e-6
+m_CEPTC_16_0_18_1_conc : 1e-6
+m_CEPTC_16_0_18_2_conc : 1e-6
+m_CEPTC_18_1_18_1_conc : 1e-6
+m_ETHAK_conc : 1e-6
+m_RIBFLVt3_conc : 1e-6
+m_RNMK_conc : 1e-6
+m_RPE_conc : 1e-6
+m_LPASE_16_0_conc : 1e-6
+m_LPASE_18_1_conc : 1e-6
+m_RPI_conc : 1e-6
+m_PI45PLC_16_0_18_2_conc : 1e-6
+m_LPASE_18_2_conc : 1e-6
+m_SALMCOM_conc : 1e-6
+m_PDE1_conc : 1e-6
+m_PI45PLC_18_1_18_1_conc : 1e-6
+m_PMANM_conc : 1e-6
+m_SALMCOM2_conc : 1e-6
+m_PI45PLC_18_1_18_2_conc : 1e-6
+m_SBTD_D2_conc : 1e-6
+m_SBTR_conc : 1e-6
+m_PI45PLC_18_2_16_0_conc : 1e-6
+m_SPMDtex2_conc : 1e-6
+m_RIBFLVt3o_conc : 1e-6
+m_PI45PLC_18_2_18_1_conc : 1e-6
+m_SPMS_conc : 1e-6
+m_PI4P5K_16_0_16_1_conc : 1e-6
+m_SPRMS_conc : 1e-6
+m_PI4P5K_16_0_18_3_conc : 1e-6
+m_SPRMt2i_conc : 1e-6
+m_TALA_conc : 1e-6
+m_PGMT_conc : 1e-6
+m_TDP_conc : 1e-6
+m_THMMPtrbc_conc : 1e-6
+m_THMTP_conc : 1e-6
+m_THMtrbc_conc : 1e-6
+m_TKT1_conc : 1e-6
+m_TKT2_conc : 1e-6
+m_TMDPK_conc : 1e-6
+m_TMDPPK_conc : 1e-6
+m_TPI_conc : 1e-6
+m_UDPG4E_conc : 1e-6
+m_UDPGD_conc : 1e-6
+m_UDPGNP_conc : 1e-6
+m_UGLT_conc : 1e-6
+m_UMPK_conc : 1e-6
+m_UPP3S_conc : 1e-6
+m_UPPDC1_conc : 1e-6
+m_UREAt_conc : 1e-6
+m_URIt_conc : 1e-6
+m_XYLK_conc : 1e-6
+m_XYLTD_D_conc : 1e-6
+m_XYLUR_conc : 1e-6
+m_ARD_conc : 1e-6
+m_CEPTC_18_1_18_2_conc : 1e-6
+m_CEPTC_18_2_16_0_conc : 1e-6
+m_CEPTC_18_2_18_1_conc : 1e-6
+m_CEPTE_16_0_18_1_conc : 1e-6
+m_CEPTE_16_0_18_2_conc : 1e-6
+m_CEPTE_18_1_18_1_conc : 1e-6
+m_SK_pchol_hs_18_1_18_1_c_kcat : 13.7
+m_SK_pchol_hs_18_1_18_2_c_kcat : 13.7
+m_SK_pchol_hs_18_2_16_0_c_kcat : 13.7
+m_SK_pchol_hs_18_2_18_1_c_kcat : 13.7
+m_SK_pe_hs_16_0_16_0_c_kcat : 13.7
+m_SK_pe_hs_16_0_18_1_c_kcat : 13.7
+m_SK_pe_hs_16_0_18_2_c_kcat : 13.7
+m_SK_pe_hs_18_1_18_1_c_kcat : 13.7
+m_SK_pe_hs_18_1_18_2_c_kcat : 13.7
+m_SK_pe_hs_18_2_16_0_c_kcat : 13.7
+m_SK_pe_hs_18_2_18_1_c_kcat : 13.7
+m_UNK3_kcat : 13.7
+m_3MOXTYRESSte_kcat : 13.7
+m_4PYRDX_kcat : 13.7
+m_5AOPt2_kcat : 13.7
+m_EX_ade_e_kcat : 13.7
+m_EX_adn_e_kcat : 13.7
+m_ACALDt_kcat : 13.7
+m_EX_35cgmp_e_kcat : 13.7
+m_ACGAM2E_kcat : 13.7
+m_EX_adrnl_e_kcat : 13.7
+m_ACGAMK_kcat : 13.7
+m_EX_ala__L_e_kcat : 13.7
+m_EX_arg__L_e_kcat : 13.7
+m_ACNAM9PL_kcat : 13.7
+m_EX_ascb__L_e_kcat : 13.7
+m_EX_3moxtyr_e_kcat : 13.7
+m_EX_4pyrdx_e_kcat : 13.7
+m_ACNAMPH_kcat : 13.7
+m_EX_bilglcur_e_kcat : 13.7
+m_EX_ca2_e_kcat : 13.7
+m_ACNAMt2_kcat : 13.7
+m_EX_camp_e_kcat : 13.7
+m_EX_chol_e_kcat : 13.7
+m_EX_cl_e_kcat : 13.7
+m_ACNML_kcat : 13.7
+m_EX_co_e_kcat : 13.7
+m_EX_co2_e_kcat : 13.7
+m_ACP1_FMN_kcat : 13.7
+m_EX_cys__L_e_kcat : 13.7
+m_EX_dhdascb_e_kcat : 13.7
+m_EX_dopa_e_kcat : 13.7
+m_EX_5aop_e_kcat : 13.7
+m_EX_etha_e_kcat : 13.7
+m_ACt2r_kcat : 13.7
+m_EX_fe2_e_kcat : 13.7
+m_ADA_kcat : 13.7
+m_EX_fru_e_kcat : 13.7
+m_EX_fum_e_kcat : 13.7
+m_EX_gal_e_kcat : 13.7
+m_EX_ac_e_kcat : 13.7
+m_EX_gam_e_kcat : 13.7
+m_EX_acald_e_kcat : 13.7
+m_ADEt_kcat : 13.7
+m_EX_acnam_e_kcat : 13.7
+m_EX_glc__D_e_kcat : 13.7
+m_ADK1_kcat : 13.7
+m_EX_gln__L_e_kcat : 13.7
+m_ADMDC_kcat : 13.7
+m_ADNCYC_kcat : 13.7
+m_EX_gluala_e_kcat : 13.7
+m_ADNK1_kcat : 13.7
+m_EX_gly_e_kcat : 13.7
+m_EX_glyc_e_kcat : 13.7
+m_C181CPT1_kcat : 13.7
+m_ADNt_kcat : 13.7
+m_C181CPT2rbc_kcat : 13.7
+m_CA2t_kcat : 13.7
+m_EX_gthox_e_kcat : 13.7
+m_EX_h_e_kcat : 13.7
+m_EX_h2o_e_kcat : 13.7
+m_EX_h2o2_e_kcat : 13.7
+m_ADPT_kcat : 13.7
+m_CAATPS_kcat : 13.7
+m_CAMPt_kcat : 13.7
+m_ADRNLtu_kcat : 13.7
+m_EX_hco3_e_kcat : 13.7
+m_AGDC_kcat : 13.7
+m_AGPAT1_16_0_16_1_kcat : 13.7
+m_CAT_kcat : 13.7
+m_AGPAT1_16_0_18_3_kcat : 13.7
+m_EX_hcys__L_e_kcat : 13.7
+m_AGPAT1_16_0_18_4_kcat : 13.7
+m_EX_hdca_e_kcat : 13.7
+m_EX_hxan_e_kcat : 13.7
+m_CDIPTr_16_0_16_0_kcat : 13.7
+m_EX_ins_e_kcat : 13.7
+m_AGPAT1_18_1_18_3_kcat : 13.7
+m_EX_k_e_kcat : 13.7
+m_EX_lac__D_e_kcat : 13.7
+m_CDIPTr_16_0_18_1_kcat : 13.7
+m_CDIPTr_16_0_18_2_kcat : 13.7
+m_EX_lac__L_e_kcat : 13.7
+m_AGPAT1_18_1_18_4_kcat : 13.7
+m_EX_leuktrA4_e_kcat : 13.7
+m_CDIPTr_18_1_18_1_kcat : 13.7
+m_CDIPTr_18_1_18_2_kcat : 13.7
+m_EX_leuktrB4_e_kcat : 13.7
+m_AGPAT1_18_2_16_0_kcat : 13.7
+m_EX_lnlc_e_kcat : 13.7
+m_EX_mal__L_e_kcat : 13.7
+m_EX_man_e_kcat : 13.7
+m_CDIPTr_18_2_16_0_kcat : 13.7
+m_CDIPTr_18_2_18_1_kcat : 13.7
+m_CDS_16_0_16_0_kcat : 13.7
+m_CDS_16_0_18_1_kcat : 13.7
+m_CDS_16_0_18_2_kcat : 13.7
+m_AGPAT1_18_2_18_1_kcat : 13.7
+m_CDS_18_1_18_1_kcat : 13.7
+m_CDS_18_1_18_2_kcat : 13.7
+m_EX_mepi_e_kcat : 13.7
+m_EX_met__L_e_kcat : 13.7
+m_EX_na1_e_kcat : 13.7
+m_CDS_18_2_16_0_kcat : 13.7
+m_AHCi_kcat : 13.7
+m_CDS_18_2_18_1_kcat : 13.7
+m_CGMPt_kcat : 13.7
+m_EX_nac_e_kcat : 13.7
+m_ALAt4_kcat : 13.7
+m_EX_ncam_e_kcat : 13.7
+m_EX_nh4_e_kcat : 13.7
+m_EX_normete__L_e_kcat : 13.7
+m_EX_nrpphr_e_kcat : 13.7
+m_CHLP_kcat : 13.7
+m_CHLPCTD_kcat : 13.7
+m_EX_o2_e_kcat : 13.7
+m_EX_ocdcea_e_kcat : 13.7
+m_CHOLK_kcat : 13.7
+m_ALDD2x_kcat : 13.7
+m_CHOLt4_kcat : 13.7
+m_CO2t_kcat : 13.7
+m_COt_kcat : 13.7
+m_EX_orot_e_kcat : 13.7
+m_EX_phe__L_e_kcat : 13.7
+m_EX_pi_e_kcat : 13.7
+m_EX_ptrc_e_kcat : 13.7
+m_EX_pydam_e_kcat : 13.7
+m_EX_pydx_e_kcat : 13.7
+m_EX_pydxn_e_kcat : 13.7
+m_EX_pyr_e_kcat : 13.7
+m_CPPPGO_kcat : 13.7
+m_AMANK_kcat : 13.7
+m_CYStec_kcat : 13.7
+m_AMPDA_kcat : 13.7
+m_AP4AH1_kcat : 13.7
+m_CYTK1_kcat : 13.7
+m_EX_ribflv_e_kcat : 13.7
+m_EX_spmd_e_kcat : 13.7
+m_EX_sprm_e_kcat : 13.7
+m_D_LACt2_kcat : 13.7
+m_DAGK_hs_16_0_16_0_kcat : 13.7
+m_ARGN_kcat : 13.7
+m_EX_thm_e_kcat : 13.7
+m_EX_thmmp_e_kcat : 13.7
+m_DAGK_hs_16_0_18_1_kcat : 13.7
+m_DAGK_hs_16_0_18_2_kcat : 13.7
+m_ARGt5r_kcat : 13.7
+m_DAGK_hs_18_1_18_1_kcat : 13.7
+m_DAGK_hs_18_1_18_2_kcat : 13.7
+m_CEPTE_16_0_16_0_kcat : 13.7
+m_EX_urea_e_kcat : 13.7
+m_EX_uri_e_kcat : 13.7
+m_ASCBt_kcat : 13.7
+m_DAGK_hs_18_2_16_0_kcat : 13.7
+m_DAGK_hs_18_2_18_1_kcat : 13.7
+m_BANDMT_kcat : 13.7
+m_DGULND_kcat : 13.7
+m_SK_adprbp_c_kcat : 13.7
+m_DHAAt1r_kcat : 13.7
+m_BILGLCURt_kcat : 13.7
+m_DM_nadh_kcat : 13.7
+m_SK_akg_c_kcat : 13.7
+m_SK_band_c_kcat : 13.7
+m_SK_bandmt_c_kcat : 13.7
+m_BILIRBU_kcat : 13.7
+m_SK_for_c_kcat : 13.7
+m_SK_mi1345p_c_kcat : 13.7
+m_SK_mi134p_c_kcat : 13.7
+m_DOPAMT_kcat : 13.7
+m_DOPAtu_kcat : 13.7
+m_SK_mi145p_c_kcat : 13.7
+m_BILIRED_kcat : 13.7
+m_SK_mi14p_c_kcat : 13.7
+m_SK_pchol_hs_16_0_16_0_c_kcat : 13.7
+m_SK_pchol_hs_16_0_18_1_c_kcat : 13.7
+m_SK_pchol_hs_16_0_18_2_c_kcat : 13.7
+m_DPGM_kcat : 13.7
+m_C160CPT1_kcat : 13.7
+m_DPGase_kcat : 13.7
+m_C160CPT2rbc_kcat : 13.7
+m_ENO_kcat : 13.7
+m_GTHS_kcat : 13.7
+m_GUACYC_kcat : 13.7
+m_GUAPRT_kcat : 13.7
+m_ETHAt_kcat : 13.7
+m_ENOPH_kcat : 13.7
+m_ETHP_kcat : 13.7
+m_GULND_kcat : 13.7
+m_NDPK1_kcat : 13.7
+m_FACOAL160_kcat : 13.7
+m_FACOAL181_kcat : 13.7
+m_FACOAL1821_kcat : 13.7
+m_H2O2t_kcat : 13.7
+m_FADDP_kcat : 13.7
+m_NDPK2_kcat : 13.7
+m_NDPK3_kcat : 13.7
+m_NH4t3r_kcat : 13.7
+m_FBA_kcat : 13.7
+m_FBP26_kcat : 13.7
+m_H2Ot_kcat : 13.7
+m_HCO3E_kcat : 13.7
+m_NICRNS_kcat : 13.7
+m_HCO3_CLt_kcat : 13.7
+m_HCYSte_kcat : 13.7
+m_HDCAt_kcat : 13.7
+m_FCLT_kcat : 13.7
+m_FE2t_kcat : 13.7
+m_FMNAT_kcat : 13.7
+m_HEX1_kcat : 13.7
+m_NMNAT_kcat : 13.7
+m_HEX10_kcat : 13.7
+m_HEX4_kcat : 13.7
+m_HEX7_kcat : 13.7
+m_HMBS_kcat : 13.7
+m_FRUt1r_kcat : 13.7
+m_FUM_kcat : 13.7
+m_FUMtr_kcat : 13.7
+m_NNATr_kcat : 13.7
+m_G6PDA_kcat : 13.7
+m_G6PDH2r_kcat : 13.7
+m_GALKr_kcat : 13.7
+m_HOXG_kcat : 13.7
+m_HXPRT_kcat : 13.7
+m_NORMETEVESSte_kcat : 13.7
+m_NP1_kcat : 13.7
+m_GALOR_kcat : 13.7
+m_GALT_kcat : 13.7
+m_HYXNt_kcat : 13.7
+m_NRPPHRtu_kcat : 13.7
+m_GALUi_kcat : 13.7
+m_GALt1r_kcat : 13.7
+m_NT5C_kcat : 13.7
+m_Ht_kcat : 13.7
+m_GAMt1r_kcat : 13.7
+m_ICDHyr_kcat : 13.7
+m_NTD11_kcat : 13.7
+m_IMPD_kcat : 13.7
+m_GAPD_kcat : 13.7
+m_NTD2_kcat : 13.7
+m_NMNHYD_kcat : 13.7
+m_GGLUCT_kcat : 13.7
+m_GK1_kcat : 13.7
+m_GLCt1_kcat : 13.7
+m_INSt_kcat : 13.7
+m_KCCt_kcat : 13.7
+m_L_LACt2r_kcat : 13.7
+m_GLNS_kcat : 13.7
+m_GLNt4_kcat : 13.7
+m_LDH_L_kcat : 13.7
+m_GLUCYS_kcat : 13.7
+m_NTD7_kcat : 13.7
+m_GLYCt_kcat : 13.7
+m_GLYK_kcat : 13.7
+m_LEUKTRA4t_kcat : 13.7
+m_LEUKTRB4t_kcat : 13.7
+m_LGTHL_kcat : 13.7
+m_GLYOX_kcat : 13.7
+m_NTD9_kcat : 13.7
+m_LNLCCPT1_kcat : 13.7
+m_GLYt7_211_r_kcat : 13.7
+m_LNLCCPT2rbc_kcat : 13.7
+m_NaKt_kcat : 13.7
+m_LNLCt_kcat : 13.7
+m_GMPR_kcat : 13.7
+m_O2t_kcat : 13.7
+m_GMPS2_kcat : 13.7
+m_GND_kcat : 13.7
+m_LTA4H_kcat : 13.7
+m_MALt_kcat : 13.7
+m_GPAM_hs_16_1_kcat : 13.7
+m_OCDCEAt_kcat : 13.7
+m_GPAM_hs_18_3_kcat : 13.7
+m_MAN6PI_kcat : 13.7
+m_MANt1r_kcat : 13.7
+m_GPAM_hs_18_4_kcat : 13.7
+m_OMPDC_kcat : 13.7
+m_GPDDA1_kcat : 13.7
+m_GTHDH_kcat : 13.7
+m_MDH_kcat : 13.7
+m_OPAH_kcat : 13.7
+m_GTHOr_kcat : 13.7
+m_GTHOXti2_kcat : 13.7
+m_GTHPi_kcat : 13.7
+m_MDRPD_kcat : 13.7
+m_ME2_kcat : 13.7
+m_ORNDC_kcat : 13.7
+m_MEPIVESSte_kcat : 13.7
+m_METAT_kcat : 13.7
+m_OROATP_kcat : 13.7
+m_METtec_kcat : 13.7
+m_ORPT_kcat : 13.7
+m_MGSA_kcat : 13.7
+m_PDX5POi_kcat : 13.7
+m_PDXPP_kcat : 13.7
+m_MI1345PP_kcat : 13.7
+m_MI145PK_kcat : 13.7
+m_MI145PP_kcat : 13.7
+m_MI1PP_kcat : 13.7
+m_PI4P5K_16_0_18_4_kcat : 13.7
+m_PI4P5K_18_1_18_3_kcat : 13.7
+m_PI4P5K_18_1_18_4_kcat : 13.7
+m_PETHCT_kcat : 13.7
+m_PI4P5K_18_2_16_0_kcat : 13.7
+m_MI1PS_kcat : 13.7
+m_MTAP_kcat : 13.7
+m_PI4P5K_18_2_18_1_kcat : 13.7
+m_MTRI_kcat : 13.7
+m_PFK_kcat : 13.7
+m_NACt_kcat : 13.7
+m_NADK_kcat : 13.7
+m_PI4PLC_16_0_16_0_kcat : 13.7
+m_PI4PLC_16_0_18_1_kcat : 13.7
+m_PI4PLC_16_0_18_2_kcat : 13.7
+m_PI4PLC_18_1_18_1_kcat : 13.7
+m_PI4PLC_18_1_18_2_kcat : 13.7
+m_PI4PLC_18_2_16_0_kcat : 13.7
+m_PI4PLC_18_2_18_1_kcat : 13.7
+m_PI4PP_16_0_16_0_kcat : 13.7
+m_NADPN_kcat : 13.7
+m_PFK26_kcat : 13.7
+m_PI4PP_16_0_18_1_kcat : 13.7
+m_PI4PP_16_0_18_2_kcat : 13.7
+m_NADS2_kcat : 13.7
+m_PI4PP_18_1_18_1_kcat : 13.7
+m_PGI_kcat : 13.7
+m_PI4PP_18_1_18_2_kcat : 13.7
+m_PI4PP_18_2_16_0_kcat : 13.7
+m_NAt_kcat : 13.7
+m_NCAMUP_kcat : 13.7
+m_PI4PP_18_2_18_1_kcat : 13.7
+m_PGK_kcat : 13.7
+m_PIK4_16_0_16_0_kcat : 13.7
+m_PIK4_16_0_18_1_kcat : 13.7
+m_PIK4_16_0_18_2_kcat : 13.7
+m_GULN3D_kcat : 13.7
+m_PGL_kcat : 13.7
+m_PIK4_18_1_18_1_kcat : 13.7
+m_PIK4_18_1_18_2_kcat : 13.7
+m_PIK4_18_2_16_0_kcat : 13.7
+m_PIK4_18_2_18_1_kcat : 13.7
+m_PIPLC_16_0_16_0_kcat : 13.7
+m_PPAP_18_1_18_1_kcat : 13.7
+m_PPAP_18_1_18_2_kcat : 13.7
+m_PPAP_18_2_16_0_kcat : 13.7
+m_PIPLC_16_0_18_1_kcat : 13.7
+m_PGM_kcat : 13.7
+m_PIPLC_16_0_18_2_kcat : 13.7
+m_PIPLC_18_1_18_1_kcat : 13.7
+m_PPAP_18_2_18_1_kcat : 13.7
+m_PIPLC_18_1_18_2_kcat : 13.7
+m_PHETA1_kcat : 13.7
+m_PIPLC_18_2_16_0_kcat : 13.7
+m_PIPLC_18_2_18_1_kcat : 13.7
+m_PPBNGS_kcat : 13.7
+m_PPM_kcat : 13.7
+m_PPPGO_kcat : 13.7
+m_PHEtec_kcat : 13.7
+m_PRPPS_kcat : 13.7
+m_PIt_kcat : 13.7
+m_PI45P5P_16_0_16_0_kcat : 13.7
+m_PLA2_2_16_0_16_0_kcat : 13.7
+m_PLA2_2_16_0_18_1_kcat : 13.7
+m_PTRCtex2_kcat : 13.7
+m_PI45P5P_16_0_18_1_kcat : 13.7
+m_PLA2_2_16_0_18_2_kcat : 13.7
+m_PLA2_2_18_1_18_1_kcat : 13.7
+m_PLA2_2_18_1_18_2_kcat : 13.7
+m_PUNP1_kcat : 13.7
+m_PUNP3_kcat : 13.7
+m_PUNP5_kcat : 13.7
+m_PLA2_2_18_2_16_0_kcat : 13.7
+m_PLA2_2_18_2_18_1_kcat : 13.7
+m_PYAM5PO_kcat : 13.7
+m_PI45P5P_16_0_18_2_kcat : 13.7
+m_PYDAMK_kcat : 13.7
+m_PNP_kcat : 13.7
+m_PI45P5P_18_1_18_1_kcat : 13.7
+m_PYDAMtr_kcat : 13.7
+m_PI45P5P_18_1_18_2_kcat : 13.7
+m_PYDXDH_kcat : 13.7
+m_PYDXK_kcat : 13.7
+m_PPA_kcat : 13.7
+m_PI45P5P_18_2_16_0_kcat : 13.7
+m_PPAP_16_0_16_0_kcat : 13.7
+m_PYDXNK_kcat : 13.7
+m_PPAP_16_0_18_1_kcat : 13.7
+m_PI45P5P_18_2_18_1_kcat : 13.7
+m_PPAP_16_0_18_2_kcat : 13.7
+m_PYDXNtr_kcat : 13.7
+m_PYDXPP_kcat : 13.7
+m_PYDXtr_kcat : 13.7
+m_PYK_kcat : 13.7
+m_CEPTE_18_1_18_2_kcat : 13.7
+m_PI45PLC_16_0_16_0_kcat : 13.7
+m_CEPTE_18_2_16_0_kcat : 13.7
+m_PYRt2_kcat : 13.7
+m_CEPTE_18_2_18_1_kcat : 13.7
+m_RBFK_kcat : 13.7
+m_PI45PLC_16_0_18_1_kcat : 13.7
+m_CEPTC_16_0_16_0_kcat : 13.7
+m_CEPTC_16_0_18_1_kcat : 13.7
+m_CEPTC_16_0_18_2_kcat : 13.7
+m_CEPTC_18_1_18_1_kcat : 13.7
+m_ETHAK_kcat : 13.7
+m_RIBFLVt3_kcat : 13.7
+m_RNMK_kcat : 13.7
+m_RPE_kcat : 13.7
+m_LPASE_16_0_kcat : 13.7
+m_LPASE_18_1_kcat : 13.7
+m_RPI_kcat : 13.7
+m_PI45PLC_16_0_18_2_kcat : 13.7
+m_LPASE_18_2_kcat : 13.7
+m_SALMCOM_kcat : 13.7
+m_PDE1_kcat : 13.7
+m_PI45PLC_18_1_18_1_kcat : 13.7
+m_PMANM_kcat : 13.7
+m_SALMCOM2_kcat : 13.7
+m_PI45PLC_18_1_18_2_kcat : 13.7
+m_SBTD_D2_kcat : 13.7
+m_SBTR_kcat : 13.7
+m_PI45PLC_18_2_16_0_kcat : 13.7
+m_SPMDtex2_kcat : 13.7
+m_RIBFLVt3o_kcat : 13.7
+m_PI45PLC_18_2_18_1_kcat : 13.7
+m_SPMS_kcat : 13.7
+m_PI4P5K_16_0_16_1_kcat : 13.7
+m_SPRMS_kcat : 13.7
+m_PI4P5K_16_0_18_3_kcat : 13.7
+m_SPRMt2i_kcat : 13.7
+m_TALA_kcat : 13.7
+m_PGMT_kcat : 13.7
+m_TDP_kcat : 13.7
+m_THMMPtrbc_kcat : 13.7
+m_THMTP_kcat : 13.7
+m_THMtrbc_kcat : 13.7
+m_TKT1_kcat : 13.7
+m_TKT2_kcat : 13.7
+m_TMDPK_kcat : 13.7
+m_TMDPPK_kcat : 13.7
+m_TPI_kcat : 13.7
+m_UDPG4E_kcat : 13.7
+m_UDPGD_kcat : 13.7
+m_UDPGNP_kcat : 13.7
+m_UGLT_kcat : 13.7
+m_UMPK_kcat : 13.7
+m_UPP3S_kcat : 13.7
+m_UPPDC1_kcat : 13.7
+m_UREAt_kcat : 13.7
+m_URIt_kcat : 13.7
+m_XYLK_kcat : 13.7
+m_XYLTD_D_kcat : 13.7
+m_XYLUR_kcat : 13.7
+m_ARD_kcat : 13.7
+m_CEPTC_18_1_18_2_kcat : 13.7
+m_CEPTC_18_2_16_0_kcat : 13.7
+m_CEPTC_18_2_18_1_kcat : 13.7
+m_CEPTE_16_0_18_1_kcat : 13.7
+m_CEPTE_16_0_18_2_kcat : 13.7
+m_CEPTE_18_1_18_1_kcat : 13.7
+m_SK_pchol_hs_18_1_18_1_c_km : 130e-6
+m_SK_pchol_hs_18_1_18_2_c_km : 130e-6
+m_SK_pchol_hs_18_2_16_0_c_km : 130e-6
+m_SK_pchol_hs_18_2_18_1_c_km : 130e-6
+m_SK_pe_hs_16_0_16_0_c_km : 130e-6
+m_SK_pe_hs_16_0_18_1_c_km : 130e-6
+m_SK_pe_hs_16_0_18_2_c_km : 130e-6
+m_SK_pe_hs_18_1_18_1_c_km : 130e-6
+m_SK_pe_hs_18_1_18_2_c_km : 130e-6
+m_SK_pe_hs_18_2_16_0_c_km : 130e-6
+m_SK_pe_hs_18_2_18_1_c_km : 130e-6
+m_UNK3_km : 130e-6
+m_3MOXTYRESSte_km : 130e-6
+m_4PYRDX_km : 130e-6
+m_5AOPt2_km : 130e-6
+m_EX_ade_e_km : 130e-6
+m_EX_adn_e_km : 130e-6
+m_ACALDt_km : 130e-6
+m_EX_35cgmp_e_km : 130e-6
+m_ACGAM2E_km : 130e-6
+m_EX_adrnl_e_km : 130e-6
+m_ACGAMK_km : 130e-6
+m_EX_ala__L_e_km : 130e-6
+m_EX_arg__L_e_km : 130e-6
+m_ACNAM9PL_km : 130e-6
+m_EX_ascb__L_e_km : 130e-6
+m_EX_3moxtyr_e_km : 130e-6
+m_EX_4pyrdx_e_km : 130e-6
+m_ACNAMPH_km : 130e-6
+m_EX_bilglcur_e_km : 130e-6
+m_EX_ca2_e_km : 130e-6
+m_ACNAMt2_km : 130e-6
+m_EX_camp_e_km : 130e-6
+m_EX_chol_e_km : 130e-6
+m_EX_cl_e_km : 130e-6
+m_ACNML_km : 130e-6
+m_EX_co_e_km : 130e-6
+m_EX_co2_e_km : 130e-6
+m_ACP1_FMN_km : 130e-6
+m_EX_cys__L_e_km : 130e-6
+m_EX_dhdascb_e_km : 130e-6
+m_EX_dopa_e_km : 130e-6
+m_EX_5aop_e_km : 130e-6
+m_EX_etha_e_km : 130e-6
+m_ACt2r_km : 130e-6
+m_EX_fe2_e_km : 130e-6
+m_ADA_km : 130e-6
+m_EX_fru_e_km : 130e-6
+m_EX_fum_e_km : 130e-6
+m_EX_gal_e_km : 130e-6
+m_EX_ac_e_km : 130e-6
+m_EX_gam_e_km : 130e-6
+m_EX_acald_e_km : 130e-6
+m_ADEt_km : 130e-6
+m_EX_acnam_e_km : 130e-6
+m_EX_glc__D_e_km : 130e-6
+m_ADK1_km : 130e-6
+m_EX_gln__L_e_km : 130e-6
+m_ADMDC_km : 130e-6
+m_ADNCYC_km : 130e-6
+m_EX_gluala_e_km : 130e-6
+m_ADNK1_km : 130e-6
+m_EX_gly_e_km : 130e-6
+m_EX_glyc_e_km : 130e-6
+m_C181CPT1_km : 130e-6
+m_ADNt_km : 130e-6
+m_C181CPT2rbc_km : 130e-6
+m_CA2t_km : 130e-6
+m_EX_gthox_e_km : 130e-6
+m_EX_h_e_km : 130e-6
+m_EX_h2o_e_km : 130e-6
+m_EX_h2o2_e_km : 130e-6
+m_ADPT_km : 130e-6
+m_CAATPS_km : 130e-6
+m_CAMPt_km : 130e-6
+m_ADRNLtu_km : 130e-6
+m_EX_hco3_e_km : 130e-6
+m_AGDC_km : 130e-6
+m_AGPAT1_16_0_16_1_km : 130e-6
+m_CAT_km : 130e-6
+m_AGPAT1_16_0_18_3_km : 130e-6
+m_EX_hcys__L_e_km : 130e-6
+m_AGPAT1_16_0_18_4_km : 130e-6
+m_EX_hdca_e_km : 130e-6
+m_EX_hxan_e_km : 130e-6
+m_CDIPTr_16_0_16_0_km : 130e-6
+m_EX_ins_e_km : 130e-6
+m_AGPAT1_18_1_18_3_km : 130e-6
+m_EX_k_e_km : 130e-6
+m_EX_lac__D_e_km : 130e-6
+m_CDIPTr_16_0_18_1_km : 130e-6
+m_CDIPTr_16_0_18_2_km : 130e-6
+m_EX_lac__L_e_km : 130e-6
+m_AGPAT1_18_1_18_4_km : 130e-6
+m_EX_leuktrA4_e_km : 130e-6
+m_CDIPTr_18_1_18_1_km : 130e-6
+m_CDIPTr_18_1_18_2_km : 130e-6
+m_EX_leuktrB4_e_km : 130e-6
+m_AGPAT1_18_2_16_0_km : 130e-6
+m_EX_lnlc_e_km : 130e-6
+m_EX_mal__L_e_km : 130e-6
+m_EX_man_e_km : 130e-6
+m_CDIPTr_18_2_16_0_km : 130e-6
+m_CDIPTr_18_2_18_1_km : 130e-6
+m_CDS_16_0_16_0_km : 130e-6
+m_CDS_16_0_18_1_km : 130e-6
+m_CDS_16_0_18_2_km : 130e-6
+m_AGPAT1_18_2_18_1_km : 130e-6
+m_CDS_18_1_18_1_km : 130e-6
+m_CDS_18_1_18_2_km : 130e-6
+m_EX_mepi_e_km : 130e-6
+m_EX_met__L_e_km : 130e-6
+m_EX_na1_e_km : 130e-6
+m_CDS_18_2_16_0_km : 130e-6
+m_AHCi_km : 130e-6
+m_CDS_18_2_18_1_km : 130e-6
+m_CGMPt_km : 130e-6
+m_EX_nac_e_km : 130e-6
+m_ALAt4_km : 130e-6
+m_EX_ncam_e_km : 130e-6
+m_EX_nh4_e_km : 130e-6
+m_EX_normete__L_e_km : 130e-6
+m_EX_nrpphr_e_km : 130e-6
+m_CHLP_km : 130e-6
+m_CHLPCTD_km : 130e-6
+m_EX_o2_e_km : 130e-6
+m_EX_ocdcea_e_km : 130e-6
+m_CHOLK_km : 130e-6
+m_ALDD2x_km : 130e-6
+m_CHOLt4_km : 130e-6
+m_CO2t_km : 130e-6
+m_COt_km : 130e-6
+m_EX_orot_e_km : 130e-6
+m_EX_phe__L_e_km : 130e-6
+m_EX_pi_e_km : 130e-6
+m_EX_ptrc_e_km : 130e-6
+m_EX_pydam_e_km : 130e-6
+m_EX_pydx_e_km : 130e-6
+m_EX_pydxn_e_km : 130e-6
+m_EX_pyr_e_km : 130e-6
+m_CPPPGO_km : 130e-6
+m_AMANK_km : 130e-6
+m_CYStec_km : 130e-6
+m_AMPDA_km : 130e-6
+m_AP4AH1_km : 130e-6
+m_CYTK1_km : 130e-6
+m_EX_ribflv_e_km : 130e-6
+m_EX_spmd_e_km : 130e-6
+m_EX_sprm_e_km : 130e-6
+m_D_LACt2_km : 130e-6
+m_DAGK_hs_16_0_16_0_km : 130e-6
+m_ARGN_km : 130e-6
+m_EX_thm_e_km : 130e-6
+m_EX_thmmp_e_km : 130e-6
+m_DAGK_hs_16_0_18_1_km : 130e-6
+m_DAGK_hs_16_0_18_2_km : 130e-6
+m_ARGt5r_km : 130e-6
+m_DAGK_hs_18_1_18_1_km : 130e-6
+m_DAGK_hs_18_1_18_2_km : 130e-6
+m_CEPTE_16_0_16_0_km : 130e-6
+m_EX_urea_e_km : 130e-6
+m_EX_uri_e_km : 130e-6
+m_ASCBt_km : 130e-6
+m_DAGK_hs_18_2_16_0_km : 130e-6
+m_DAGK_hs_18_2_18_1_km : 130e-6
+m_BANDMT_km : 130e-6
+m_DGULND_km : 130e-6
+m_SK_adprbp_c_km : 130e-6
+m_DHAAt1r_km : 130e-6
+m_BILGLCURt_km : 130e-6
+m_DM_nadh_km : 130e-6
+m_SK_akg_c_km : 130e-6
+m_SK_band_c_km : 130e-6
+m_SK_bandmt_c_km : 130e-6
+m_BILIRBU_km : 130e-6
+m_SK_for_c_km : 130e-6
+m_SK_mi1345p_c_km : 130e-6
+m_SK_mi134p_c_km : 130e-6
+m_DOPAMT_km : 130e-6
+m_DOPAtu_km : 130e-6
+m_SK_mi145p_c_km : 130e-6
+m_BILIRED_km : 130e-6
+m_SK_mi14p_c_km : 130e-6
+m_SK_pchol_hs_16_0_16_0_c_km : 130e-6
+m_SK_pchol_hs_16_0_18_1_c_km : 130e-6
+m_SK_pchol_hs_16_0_18_2_c_km : 130e-6
+m_DPGM_km : 130e-6
+m_C160CPT1_km : 130e-6
+m_DPGase_km : 130e-6
+m_C160CPT2rbc_km : 130e-6
+m_ENO_km : 130e-6
+m_GTHS_km : 130e-6
+m_GUACYC_km : 130e-6
+m_GUAPRT_km : 130e-6
+m_ETHAt_km : 130e-6
+m_ENOPH_km : 130e-6
+m_ETHP_km : 130e-6
+m_GULND_km : 130e-6
+m_NDPK1_km : 130e-6
+m_FACOAL160_km : 130e-6
+m_FACOAL181_km : 130e-6
+m_FACOAL1821_km : 130e-6
+m_H2O2t_km : 130e-6
+m_FADDP_km : 130e-6
+m_NDPK2_km : 130e-6
+m_NDPK3_km : 130e-6
+m_NH4t3r_km : 130e-6
+m_FBA_km : 130e-6
+m_FBP26_km : 130e-6
+m_H2Ot_km : 130e-6
+m_HCO3E_km : 130e-6
+m_NICRNS_km : 130e-6
+m_HCO3_CLt_km : 130e-6
+m_HCYSte_km : 130e-6
+m_HDCAt_km : 130e-6
+m_FCLT_km : 130e-6
+m_FE2t_km : 130e-6
+m_FMNAT_km : 130e-6
+m_HEX1_km : 130e-6
+m_NMNAT_km : 130e-6
+m_HEX10_km : 130e-6
+m_HEX4_km : 130e-6
+m_HEX7_km : 130e-6
+m_HMBS_km : 130e-6
+m_FRUt1r_km : 130e-6
+m_FUM_km : 130e-6
+m_FUMtr_km : 130e-6
+m_NNATr_km : 130e-6
+m_G6PDA_km : 130e-6
+m_G6PDH2r_km : 130e-6
+m_GALKr_km : 130e-6
+m_HOXG_km : 130e-6
+m_HXPRT_km : 130e-6
+m_NORMETEVESSte_km : 130e-6
+m_NP1_km : 130e-6
+m_GALOR_km : 130e-6
+m_GALT_km : 130e-6
+m_HYXNt_km : 130e-6
+m_NRPPHRtu_km : 130e-6
+m_GALUi_km : 130e-6
+m_GALt1r_km : 130e-6
+m_NT5C_km : 130e-6
+m_Ht_km : 130e-6
+m_GAMt1r_km : 130e-6
+m_ICDHyr_km : 130e-6
+m_NTD11_km : 130e-6
+m_IMPD_km : 130e-6
+m_GAPD_km : 130e-6
+m_NTD2_km : 130e-6
+m_NMNHYD_km : 130e-6
+m_GGLUCT_km : 130e-6
+m_GK1_km : 130e-6
+m_GLCt1_km : 130e-6
+m_INSt_km : 130e-6
+m_KCCt_km : 130e-6
+m_L_LACt2r_km : 130e-6
+m_GLNS_km : 130e-6
+m_GLNt4_km : 130e-6
+m_LDH_L_km : 130e-6
+m_GLUCYS_km : 130e-6
+m_NTD7_km : 130e-6
+m_GLYCt_km : 130e-6
+m_GLYK_km : 130e-6
+m_LEUKTRA4t_km : 130e-6
+m_LEUKTRB4t_km : 130e-6
+m_LGTHL_km : 130e-6
+m_GLYOX_km : 130e-6
+m_NTD9_km : 130e-6
+m_LNLCCPT1_km : 130e-6
+m_GLYt7_211_r_km : 130e-6
+m_LNLCCPT2rbc_km : 130e-6
+m_NaKt_km : 130e-6
+m_LNLCt_km : 130e-6
+m_GMPR_km : 130e-6
+m_O2t_km : 130e-6
+m_GMPS2_km : 130e-6
+m_GND_km : 130e-6
+m_LTA4H_km : 130e-6
+m_MALt_km : 130e-6
+m_GPAM_hs_16_1_km : 130e-6
+m_OCDCEAt_km : 130e-6
+m_GPAM_hs_18_3_km : 130e-6
+m_MAN6PI_km : 130e-6
+m_MANt1r_km : 130e-6
+m_GPAM_hs_18_4_km : 130e-6
+m_OMPDC_km : 130e-6
+m_GPDDA1_km : 130e-6
+m_GTHDH_km : 130e-6
+m_MDH_km : 130e-6
+m_OPAH_km : 130e-6
+m_GTHOr_km : 130e-6
+m_GTHOXti2_km : 130e-6
+m_GTHPi_km : 130e-6
+m_MDRPD_km : 130e-6
+m_ME2_km : 130e-6
+m_ORNDC_km : 130e-6
+m_MEPIVESSte_km : 130e-6
+m_METAT_km : 130e-6
+m_OROATP_km : 130e-6
+m_METtec_km : 130e-6
+m_ORPT_km : 130e-6
+m_MGSA_km : 130e-6
+m_PDX5POi_km : 130e-6
+m_PDXPP_km : 130e-6
+m_MI1345PP_km : 130e-6
+m_MI145PK_km : 130e-6
+m_MI145PP_km : 130e-6
+m_MI1PP_km : 130e-6
+m_PI4P5K_16_0_18_4_km : 130e-6
+m_PI4P5K_18_1_18_3_km : 130e-6
+m_PI4P5K_18_1_18_4_km : 130e-6
+m_PETHCT_km : 130e-6
+m_PI4P5K_18_2_16_0_km : 130e-6
+m_MI1PS_km : 130e-6
+m_MTAP_km : 130e-6
+m_PI4P5K_18_2_18_1_km : 130e-6
+m_MTRI_km : 130e-6
+m_PFK_km : 130e-6
+m_NACt_km : 130e-6
+m_NADK_km : 130e-6
+m_PI4PLC_16_0_16_0_km : 130e-6
+m_PI4PLC_16_0_18_1_km : 130e-6
+m_PI4PLC_16_0_18_2_km : 130e-6
+m_PI4PLC_18_1_18_1_km : 130e-6
+m_PI4PLC_18_1_18_2_km : 130e-6
+m_PI4PLC_18_2_16_0_km : 130e-6
+m_PI4PLC_18_2_18_1_km : 130e-6
+m_PI4PP_16_0_16_0_km : 130e-6
+m_NADPN_km : 130e-6
+m_PFK26_km : 130e-6
+m_PI4PP_16_0_18_1_km : 130e-6
+m_PI4PP_16_0_18_2_km : 130e-6
+m_NADS2_km : 130e-6
+m_PI4PP_18_1_18_1_km : 130e-6
+m_PGI_km : 130e-6
+m_PI4PP_18_1_18_2_km : 130e-6
+m_PI4PP_18_2_16_0_km : 130e-6
+m_NAt_km : 130e-6
+m_NCAMUP_km : 130e-6
+m_PI4PP_18_2_18_1_km : 130e-6
+m_PGK_km : 130e-6
+m_PIK4_16_0_16_0_km : 130e-6
+m_PIK4_16_0_18_1_km : 130e-6
+m_PIK4_16_0_18_2_km : 130e-6
+m_GULN3D_km : 130e-6
+m_PGL_km : 130e-6
+m_PIK4_18_1_18_1_km : 130e-6
+m_PIK4_18_1_18_2_km : 130e-6
+m_PIK4_18_2_16_0_km : 130e-6
+m_PIK4_18_2_18_1_km : 130e-6
+m_PIPLC_16_0_16_0_km : 130e-6
+m_PPAP_18_1_18_1_km : 130e-6
+m_PPAP_18_1_18_2_km : 130e-6
+m_PPAP_18_2_16_0_km : 130e-6
+m_PIPLC_16_0_18_1_km : 130e-6
+m_PGM_km : 130e-6
+m_PIPLC_16_0_18_2_km : 130e-6
+m_PIPLC_18_1_18_1_km : 130e-6
+m_PPAP_18_2_18_1_km : 130e-6
+m_PIPLC_18_1_18_2_km : 130e-6
+m_PHETA1_km : 130e-6
+m_PIPLC_18_2_16_0_km : 130e-6
+m_PIPLC_18_2_18_1_km : 130e-6
+m_PPBNGS_km : 130e-6
+m_PPM_km : 130e-6
+m_PPPGO_km : 130e-6
+m_PHEtec_km : 130e-6
+m_PRPPS_km : 130e-6
+m_PIt_km : 130e-6
+m_PI45P5P_16_0_16_0_km : 130e-6
+m_PLA2_2_16_0_16_0_km : 130e-6
+m_PLA2_2_16_0_18_1_km : 130e-6
+m_PTRCtex2_km : 130e-6
+m_PI45P5P_16_0_18_1_km : 130e-6
+m_PLA2_2_16_0_18_2_km : 130e-6
+m_PLA2_2_18_1_18_1_km : 130e-6
+m_PLA2_2_18_1_18_2_km : 130e-6
+m_PUNP1_km : 130e-6
+m_PUNP3_km : 130e-6
+m_PUNP5_km : 130e-6
+m_PLA2_2_18_2_16_0_km : 130e-6
+m_PLA2_2_18_2_18_1_km : 130e-6
+m_PYAM5PO_km : 130e-6
+m_PI45P5P_16_0_18_2_km : 130e-6
+m_PYDAMK_km : 130e-6
+m_PNP_km : 130e-6
+m_PI45P5P_18_1_18_1_km : 130e-6
+m_PYDAMtr_km : 130e-6
+m_PI45P5P_18_1_18_2_km : 130e-6
+m_PYDXDH_km : 130e-6
+m_PYDXK_km : 130e-6
+m_PPA_km : 130e-6
+m_PI45P5P_18_2_16_0_km : 130e-6
+m_PPAP_16_0_16_0_km : 130e-6
+m_PYDXNK_km : 130e-6
+m_PPAP_16_0_18_1_km : 130e-6
+m_PI45P5P_18_2_18_1_km : 130e-6
+m_PPAP_16_0_18_2_km : 130e-6
+m_PYDXNtr_km : 130e-6
+m_PYDXPP_km : 130e-6
+m_PYDXtr_km : 130e-6
+m_PYK_km : 130e-6
+m_CEPTE_18_1_18_2_km : 130e-6
+m_PI45PLC_16_0_16_0_km : 130e-6
+m_CEPTE_18_2_16_0_km : 130e-6
+m_PYRt2_km : 130e-6
+m_CEPTE_18_2_18_1_km : 130e-6
+m_RBFK_km : 130e-6
+m_PI45PLC_16_0_18_1_km : 130e-6
+m_CEPTC_16_0_16_0_km : 130e-6
+m_CEPTC_16_0_18_1_km : 130e-6
+m_CEPTC_16_0_18_2_km : 130e-6
+m_CEPTC_18_1_18_1_km : 130e-6
+m_ETHAK_km : 130e-6
+m_RIBFLVt3_km : 130e-6
+m_RNMK_km : 130e-6
+m_RPE_km : 130e-6
+m_LPASE_16_0_km : 130e-6
+m_LPASE_18_1_km : 130e-6
+m_RPI_km : 130e-6
+m_PI45PLC_16_0_18_2_km : 130e-6
+m_LPASE_18_2_km : 130e-6
+m_SALMCOM_km : 130e-6
+m_PDE1_km : 130e-6
+m_PI45PLC_18_1_18_1_km : 130e-6
+m_PMANM_km : 130e-6
+m_SALMCOM2_km : 130e-6
+m_PI45PLC_18_1_18_2_km : 130e-6
+m_SBTD_D2_km : 130e-6
+m_SBTR_km : 130e-6
+m_PI45PLC_18_2_16_0_km : 130e-6
+m_SPMDtex2_km : 130e-6
+m_RIBFLVt3o_km : 130e-6
+m_PI45PLC_18_2_18_1_km : 130e-6
+m_SPMS_km : 130e-6
+m_PI4P5K_16_0_16_1_km : 130e-6
+m_SPRMS_km : 130e-6
+m_PI4P5K_16_0_18_3_km : 130e-6
+m_SPRMt2i_km : 130e-6
+m_TALA_km : 130e-6
+m_PGMT_km : 130e-6
+m_TDP_km : 130e-6
+m_THMMPtrbc_km : 130e-6
+m_THMTP_km : 130e-6
+m_THMtrbc_km : 130e-6
+m_TKT1_km : 130e-6
+m_TKT2_km : 130e-6
+m_TMDPK_km : 130e-6
+m_TMDPPK_km : 130e-6
+m_TPI_km : 130e-6
+m_UDPG4E_km : 130e-6
+m_UDPGD_km : 130e-6
+m_UDPGNP_km : 130e-6
+m_UGLT_km : 130e-6
+m_UMPK_km : 130e-6
+m_UPP3S_km : 130e-6
+m_UPPDC1_km : 130e-6
+m_UREAt_km : 130e-6
+m_URIt_km : 130e-6
+m_XYLK_km : 130e-6
+m_XYLTD_D_km : 130e-6
+m_XYLUR_km : 130e-6
+m_ARD_km : 130e-6
+m_CEPTC_18_1_18_2_km : 130e-6
+m_CEPTC_18_2_16_0_km : 130e-6
+m_CEPTC_18_2_18_1_km : 130e-6
+m_CEPTE_16_0_18_1_km : 130e-6
+m_CEPTE_16_0_18_2_km : 130e-6
+m_CEPTE_18_1_18_1_km : 130e-6
+
+
+[Reactions]
+R1: m_pchol_hs_18_1_18_1_c -> | (${Variables:m_SK_pchol_hs_18_1_18_1_c_kcat} * ${Variables:m_SK_pchol_hs_18_1_18_1_c_conc} * m_pchol_hs_18_1_18_1_c)/(${Variables:m_SK_pchol_hs_18_1_18_1_c_km} + ${Variables:m_SK_pchol_hs_18_1_18_1_c_conc} * m_pchol_hs_18_1_18_1_c)
+R2: m_pchol_hs_18_1_18_2_c -> | (${Variables:m_SK_pchol_hs_18_1_18_2_c_kcat} * ${Variables:m_SK_pchol_hs_18_1_18_2_c_conc} * m_pchol_hs_18_1_18_2_c)/(${Variables:m_SK_pchol_hs_18_1_18_2_c_km} + ${Variables:m_SK_pchol_hs_18_1_18_2_c_conc} * m_pchol_hs_18_1_18_2_c)
+R3: m_pchol_hs_18_2_16_0_c -> | (${Variables:m_SK_pchol_hs_18_2_16_0_c_kcat} * ${Variables:m_SK_pchol_hs_18_2_16_0_c_conc} * m_pchol_hs_18_2_16_0_c)/(${Variables:m_SK_pchol_hs_18_2_16_0_c_km} + ${Variables:m_SK_pchol_hs_18_2_16_0_c_conc} * m_pchol_hs_18_2_16_0_c)
+R4: m_pchol_hs_18_2_18_1_c -> | (${Variables:m_SK_pchol_hs_18_2_18_1_c_kcat} * ${Variables:m_SK_pchol_hs_18_2_18_1_c_conc} * m_pchol_hs_18_2_18_1_c)/(${Variables:m_SK_pchol_hs_18_2_18_1_c_km} + ${Variables:m_SK_pchol_hs_18_2_18_1_c_conc} * m_pchol_hs_18_2_18_1_c)
+R5: m_pe_hs_16_0_16_0_c -> | (${Variables:m_SK_pe_hs_16_0_16_0_c_kcat} * ${Variables:m_SK_pe_hs_16_0_16_0_c_conc} * m_pe_hs_16_0_16_0_c)/(${Variables:m_SK_pe_hs_16_0_16_0_c_km} + ${Variables:m_SK_pe_hs_16_0_16_0_c_conc} * m_pe_hs_16_0_16_0_c)
+R6: m_pe_hs_16_0_18_1_c -> | (${Variables:m_SK_pe_hs_16_0_18_1_c_kcat} * ${Variables:m_SK_pe_hs_16_0_18_1_c_conc} * m_pe_hs_16_0_18_1_c)/(${Variables:m_SK_pe_hs_16_0_18_1_c_km} + ${Variables:m_SK_pe_hs_16_0_18_1_c_conc} * m_pe_hs_16_0_18_1_c)
+R7: m_pe_hs_16_0_18_2_c -> | (${Variables:m_SK_pe_hs_16_0_18_2_c_kcat} * ${Variables:m_SK_pe_hs_16_0_18_2_c_conc} * m_pe_hs_16_0_18_2_c)/(${Variables:m_SK_pe_hs_16_0_18_2_c_km} + ${Variables:m_SK_pe_hs_16_0_18_2_c_conc} * m_pe_hs_16_0_18_2_c)
+R8: m_pe_hs_18_1_18_1_c -> | (${Variables:m_SK_pe_hs_18_1_18_1_c_kcat} * ${Variables:m_SK_pe_hs_18_1_18_1_c_conc} * m_pe_hs_18_1_18_1_c)/(${Variables:m_SK_pe_hs_18_1_18_1_c_km} + ${Variables:m_SK_pe_hs_18_1_18_1_c_conc} * m_pe_hs_18_1_18_1_c)
+R9: m_pe_hs_18_1_18_2_c -> | (${Variables:m_SK_pe_hs_18_1_18_2_c_kcat} * ${Variables:m_SK_pe_hs_18_1_18_2_c_conc} * m_pe_hs_18_1_18_2_c)/(${Variables:m_SK_pe_hs_18_1_18_2_c_km} + ${Variables:m_SK_pe_hs_18_1_18_2_c_conc} * m_pe_hs_18_1_18_2_c)
+R10: m_pe_hs_18_2_16_0_c -> | (${Variables:m_SK_pe_hs_18_2_16_0_c_kcat} * ${Variables:m_SK_pe_hs_18_2_16_0_c_conc} * m_pe_hs_18_2_16_0_c)/(${Variables:m_SK_pe_hs_18_2_16_0_c_km} + ${Variables:m_SK_pe_hs_18_2_16_0_c_conc} * m_pe_hs_18_2_16_0_c)
+R11: m_pe_hs_18_2_18_1_c -> | (${Variables:m_SK_pe_hs_18_2_18_1_c_kcat} * ${Variables:m_SK_pe_hs_18_2_18_1_c_conc} * m_pe_hs_18_2_18_1_c)/(${Variables:m_SK_pe_hs_18_2_18_1_c_km} + ${Variables:m_SK_pe_hs_18_2_18_1_c_conc} * m_pe_hs_18_2_18_1_c)
+R12: m_2kmb_c + m_glu__L_c -> m_akg_c + m_met__L_c | (${Variables:m_UNK3_kcat} * ${Variables:m_UNK3_conc} * m_2kmb_c * m_glu__L_c)/(${Variables:m_UNK3_km} + ${Variables:m_UNK3_conc} * m_2kmb_c * m_glu__L_c)
+R13: m_3moxtyr_c + m_atp_c + m_h2o_c -> m_3moxtyr_e + m_adp_c + m_h_c + m_pi_c | (${Variables:m_3MOXTYRESSte_kcat} * ${Variables:m_3MOXTYRESSte_conc} * m_3moxtyr_c * m_atp_c * m_h2o_c)/(${Variables:m_3MOXTYRESSte_km} + ${Variables:m_3MOXTYRESSte_conc} * m_3moxtyr_c * m_atp_c * m_h2o_c)
+R14: m_4pyrdx_c + m_atp_c + m_h2o_c -> m_4pyrdx_e + m_adp_c + m_h_c + m_pi_c | (${Variables:m_4PYRDX_kcat} * ${Variables:m_4PYRDX_conc} * m_4pyrdx_c * m_atp_c * m_h2o_c)/(${Variables:m_4PYRDX_km} + ${Variables:m_4PYRDX_conc} * m_4pyrdx_c * m_atp_c * m_h2o_c)
+R15: m_5aop_e + m_h_e -> m_5aop_c + m_h_c | (${Variables:m_5AOPt2_kcat} * ${Variables:m_5AOPt2_conc} * m_5aop_e * m_h_e)/(${Variables:m_5AOPt2_km} + ${Variables:m_5AOPt2_conc} * m_5aop_e * m_h_e)
+R16: m_ade_e -> | (${Variables:m_EX_ade_e_kcat} * ${Variables:m_EX_ade_e_conc} * m_ade_e)/(${Variables:m_EX_ade_e_km} + ${Variables:m_EX_ade_e_conc} * m_ade_e)
+R17: m_adn_e -> | (${Variables:m_EX_adn_e_kcat} * ${Variables:m_EX_adn_e_conc} * m_adn_e)/(${Variables:m_EX_adn_e_km} + ${Variables:m_EX_adn_e_conc} * m_adn_e)
+R18: m_acald_e -> m_acald_c | (${Variables:m_ACALDt_kcat} * ${Variables:m_ACALDt_conc} * m_acald_e)/(${Variables:m_ACALDt_km} + ${Variables:m_ACALDt_conc} * m_acald_e)
+R19: m_35cgmp_e -> | (${Variables:m_EX_35cgmp_e_kcat} * ${Variables:m_EX_35cgmp_e_conc} * m_35cgmp_e)/(${Variables:m_EX_35cgmp_e_km} + ${Variables:m_EX_35cgmp_e_conc} * m_35cgmp_e)
+R20: m_acgam_c -> m_acmana_c | (${Variables:m_ACGAM2E_kcat} * ${Variables:m_ACGAM2E_conc} * m_acgam_c)/(${Variables:m_ACGAM2E_km} + ${Variables:m_ACGAM2E_conc} * m_acgam_c)
+R21: m_adrnl_e -> | (${Variables:m_EX_adrnl_e_kcat} * ${Variables:m_EX_adrnl_e_conc} * m_adrnl_e)/(${Variables:m_EX_adrnl_e_km} + ${Variables:m_EX_adrnl_e_conc} * m_adrnl_e)
+R22: m_acgam_c + m_atp_c -> m_acgam6p_c + m_adp_c + m_h_c | (${Variables:m_ACGAMK_kcat} * ${Variables:m_ACGAMK_conc} * m_acgam_c * m_atp_c)/(${Variables:m_ACGAMK_km} + ${Variables:m_ACGAMK_conc} * m_acgam_c * m_atp_c)
+R23: m_ala__L_e -> | (${Variables:m_EX_ala__L_e_kcat} * ${Variables:m_EX_ala__L_e_conc} * m_ala__L_e)/(${Variables:m_EX_ala__L_e_km} + ${Variables:m_EX_ala__L_e_conc} * m_ala__L_e)
+R24: m_arg__L_e -> | (${Variables:m_EX_arg__L_e_kcat} * ${Variables:m_EX_arg__L_e_conc} * m_arg__L_e)/(${Variables:m_EX_arg__L_e_km} + ${Variables:m_EX_arg__L_e_conc} * m_arg__L_e)
+R25: m_acmanap_c + m_h2o_c + m_pep_c -> m_acnamp_c + m_pi_c | (${Variables:m_ACNAM9PL_kcat} * ${Variables:m_ACNAM9PL_conc} * m_acmanap_c * m_h2o_c * m_pep_c)/(${Variables:m_ACNAM9PL_km} + ${Variables:m_ACNAM9PL_conc} * m_acmanap_c * m_h2o_c * m_pep_c)
+R26: m_ascb__L_e -> | (${Variables:m_EX_ascb__L_e_kcat} * ${Variables:m_EX_ascb__L_e_conc} * m_ascb__L_e)/(${Variables:m_EX_ascb__L_e_km} + ${Variables:m_EX_ascb__L_e_conc} * m_ascb__L_e)
+R27: m_3moxtyr_e -> | (${Variables:m_EX_3moxtyr_e_kcat} * ${Variables:m_EX_3moxtyr_e_conc} * m_3moxtyr_e)/(${Variables:m_EX_3moxtyr_e_km} + ${Variables:m_EX_3moxtyr_e_conc} * m_3moxtyr_e)
+R28: m_4pyrdx_e -> | (${Variables:m_EX_4pyrdx_e_kcat} * ${Variables:m_EX_4pyrdx_e_conc} * m_4pyrdx_e)/(${Variables:m_EX_4pyrdx_e_km} + ${Variables:m_EX_4pyrdx_e_conc} * m_4pyrdx_e)
+R29: m_acnamp_c + m_h2o_c -> m_acnam_c + m_pi_c | (${Variables:m_ACNAMPH_kcat} * ${Variables:m_ACNAMPH_conc} * m_acnamp_c * m_h2o_c)/(${Variables:m_ACNAMPH_km} + ${Variables:m_ACNAMPH_conc} * m_acnamp_c * m_h2o_c)
+R30: m_bilglcur_e -> | (${Variables:m_EX_bilglcur_e_kcat} * ${Variables:m_EX_bilglcur_e_conc} * m_bilglcur_e)/(${Variables:m_EX_bilglcur_e_km} + ${Variables:m_EX_bilglcur_e_conc} * m_bilglcur_e)
+R31: m_ca2_e -> | (${Variables:m_EX_ca2_e_kcat} * ${Variables:m_EX_ca2_e_conc} * m_ca2_e)/(${Variables:m_EX_ca2_e_km} + ${Variables:m_EX_ca2_e_conc} * m_ca2_e)
+R32: m_acnam_e + m_h_e -> m_acnam_c + m_h_c | (${Variables:m_ACNAMt2_kcat} * ${Variables:m_ACNAMt2_conc} * m_acnam_e * m_h_e)/(${Variables:m_ACNAMt2_km} + ${Variables:m_ACNAMt2_conc} * m_acnam_e * m_h_e)
+R33: m_camp_e -> | (${Variables:m_EX_camp_e_kcat} * ${Variables:m_EX_camp_e_conc} * m_camp_e)/(${Variables:m_EX_camp_e_km} + ${Variables:m_EX_camp_e_conc} * m_camp_e)
+R34: m_chol_e -> | (${Variables:m_EX_chol_e_kcat} * ${Variables:m_EX_chol_e_conc} * m_chol_e)/(${Variables:m_EX_chol_e_km} + ${Variables:m_EX_chol_e_conc} * m_chol_e)
+R35: m_cl_e -> | (${Variables:m_EX_cl_e_kcat} * ${Variables:m_EX_cl_e_conc} * m_cl_e)/(${Variables:m_EX_cl_e_km} + ${Variables:m_EX_cl_e_conc} * m_cl_e)
+R36: m_acnam_c -> m_acmana_c + m_pyr_c | (${Variables:m_ACNML_kcat} * ${Variables:m_ACNML_conc} * m_acnam_c)/(${Variables:m_ACNML_km} + ${Variables:m_ACNML_conc} * m_acnam_c)
+R37: m_co_e -> | (${Variables:m_EX_co_e_kcat} * ${Variables:m_EX_co_e_conc} * m_co_e)/(${Variables:m_EX_co_e_km} + ${Variables:m_EX_co_e_conc} * m_co_e)
+R38: m_co2_e -> | (${Variables:m_EX_co2_e_kcat} * ${Variables:m_EX_co2_e_conc} * m_co2_e)/(${Variables:m_EX_co2_e_km} + ${Variables:m_EX_co2_e_conc} * m_co2_e)
+R39: m_fmn_c + m_h2o_c -> m_pi_c + m_ribflv_c | (${Variables:m_ACP1_FMN_kcat} * ${Variables:m_ACP1_FMN_conc} * m_fmn_c * m_h2o_c)/(${Variables:m_ACP1_FMN_km} + ${Variables:m_ACP1_FMN_conc} * m_fmn_c * m_h2o_c)
+R40: m_cys__L_e -> | (${Variables:m_EX_cys__L_e_kcat} * ${Variables:m_EX_cys__L_e_conc} * m_cys__L_e)/(${Variables:m_EX_cys__L_e_km} + ${Variables:m_EX_cys__L_e_conc} * m_cys__L_e)
+R41: m_dhdascb_e -> | (${Variables:m_EX_dhdascb_e_kcat} * ${Variables:m_EX_dhdascb_e_conc} * m_dhdascb_e)/(${Variables:m_EX_dhdascb_e_km} + ${Variables:m_EX_dhdascb_e_conc} * m_dhdascb_e)
+R42: m_dopa_e -> | (${Variables:m_EX_dopa_e_kcat} * ${Variables:m_EX_dopa_e_conc} * m_dopa_e)/(${Variables:m_EX_dopa_e_km} + ${Variables:m_EX_dopa_e_conc} * m_dopa_e)
+R43: m_5aop_e -> | (${Variables:m_EX_5aop_e_kcat} * ${Variables:m_EX_5aop_e_conc} * m_5aop_e)/(${Variables:m_EX_5aop_e_km} + ${Variables:m_EX_5aop_e_conc} * m_5aop_e)
+R44: m_etha_e -> | (${Variables:m_EX_etha_e_kcat} * ${Variables:m_EX_etha_e_conc} * m_etha_e)/(${Variables:m_EX_etha_e_km} + ${Variables:m_EX_etha_e_conc} * m_etha_e)
+R45: m_ac_e + m_h_e -> m_ac_c + m_h_c | (${Variables:m_ACt2r_kcat} * ${Variables:m_ACt2r_conc} * m_ac_e * m_h_e)/(${Variables:m_ACt2r_km} + ${Variables:m_ACt2r_conc} * m_ac_e * m_h_e)
+R46: m_fe2_e -> | (${Variables:m_EX_fe2_e_kcat} * ${Variables:m_EX_fe2_e_conc} * m_fe2_e)/(${Variables:m_EX_fe2_e_km} + ${Variables:m_EX_fe2_e_conc} * m_fe2_e)
+R47: m_adn_c + m_h2o_c + m_h_c -> m_ins_c + m_nh4_c | (${Variables:m_ADA_kcat} * ${Variables:m_ADA_conc} * m_adn_c * m_h2o_c * m_h_c)/(${Variables:m_ADA_km} + ${Variables:m_ADA_conc} * m_adn_c * m_h2o_c * m_h_c)
+R48: m_fru_e -> | (${Variables:m_EX_fru_e_kcat} * ${Variables:m_EX_fru_e_conc} * m_fru_e)/(${Variables:m_EX_fru_e_km} + ${Variables:m_EX_fru_e_conc} * m_fru_e)
+R49: m_fum_e -> | (${Variables:m_EX_fum_e_kcat} * ${Variables:m_EX_fum_e_conc} * m_fum_e)/(${Variables:m_EX_fum_e_km} + ${Variables:m_EX_fum_e_conc} * m_fum_e)
+R50: m_gal_e -> | (${Variables:m_EX_gal_e_kcat} * ${Variables:m_EX_gal_e_conc} * m_gal_e)/(${Variables:m_EX_gal_e_km} + ${Variables:m_EX_gal_e_conc} * m_gal_e)
+R51: m_ac_e -> | (${Variables:m_EX_ac_e_kcat} * ${Variables:m_EX_ac_e_conc} * m_ac_e)/(${Variables:m_EX_ac_e_km} + ${Variables:m_EX_ac_e_conc} * m_ac_e)
+R52: m_gam_e -> | (${Variables:m_EX_gam_e_kcat} * ${Variables:m_EX_gam_e_conc} * m_gam_e)/(${Variables:m_EX_gam_e_km} + ${Variables:m_EX_gam_e_conc} * m_gam_e)
+R53: m_acald_e -> | (${Variables:m_EX_acald_e_kcat} * ${Variables:m_EX_acald_e_conc} * m_acald_e)/(${Variables:m_EX_acald_e_km} + ${Variables:m_EX_acald_e_conc} * m_acald_e)
+R54: m_ade_e -> m_ade_c | (${Variables:m_ADEt_kcat} * ${Variables:m_ADEt_conc} * m_ade_e)/(${Variables:m_ADEt_km} + ${Variables:m_ADEt_conc} * m_ade_e)
+R55: m_acnam_e -> | (${Variables:m_EX_acnam_e_kcat} * ${Variables:m_EX_acnam_e_conc} * m_acnam_e)/(${Variables:m_EX_acnam_e_km} + ${Variables:m_EX_acnam_e_conc} * m_acnam_e)
+R56: m_glc__D_e -> | (${Variables:m_EX_glc__D_e_kcat} * ${Variables:m_EX_glc__D_e_conc} * m_glc__D_e)/(${Variables:m_EX_glc__D_e_km} + ${Variables:m_EX_glc__D_e_conc} * m_glc__D_e)
+R57: m_amp_c + m_atp_c -> m_adp_c | (${Variables:m_ADK1_kcat} * ${Variables:m_ADK1_conc} * m_amp_c * m_atp_c)/(${Variables:m_ADK1_km} + ${Variables:m_ADK1_conc} * m_amp_c * m_atp_c)
+R58: m_gln__L_e -> | (${Variables:m_EX_gln__L_e_kcat} * ${Variables:m_EX_gln__L_e_conc} * m_gln__L_e)/(${Variables:m_EX_gln__L_e_km} + ${Variables:m_EX_gln__L_e_conc} * m_gln__L_e)
+R59: m_amet_c + m_h_c -> m_ametam_c + m_co2_c | (${Variables:m_ADMDC_kcat} * ${Variables:m_ADMDC_conc} * m_amet_c * m_h_c)/(${Variables:m_ADMDC_km} + ${Variables:m_ADMDC_conc} * m_amet_c * m_h_c)
+R60: m_atp_c -> m_camp_c + m_ppi_c | (${Variables:m_ADNCYC_kcat} * ${Variables:m_ADNCYC_conc} * m_atp_c)/(${Variables:m_ADNCYC_km} + ${Variables:m_ADNCYC_conc} * m_atp_c)
+R61: m_gluala_e -> | (${Variables:m_EX_gluala_e_kcat} * ${Variables:m_EX_gluala_e_conc} * m_gluala_e)/(${Variables:m_EX_gluala_e_km} + ${Variables:m_EX_gluala_e_conc} * m_gluala_e)
+R62: m_adn_c + m_atp_c -> m_adp_c + m_amp_c + m_h_c | (${Variables:m_ADNK1_kcat} * ${Variables:m_ADNK1_conc} * m_adn_c * m_atp_c)/(${Variables:m_ADNK1_km} + ${Variables:m_ADNK1_conc} * m_adn_c * m_atp_c)
+R63: m_gly_e -> | (${Variables:m_EX_gly_e_kcat} * ${Variables:m_EX_gly_e_conc} * m_gly_e)/(${Variables:m_EX_gly_e_km} + ${Variables:m_EX_gly_e_conc} * m_gly_e)
+R64: m_glyc_e -> | (${Variables:m_EX_glyc_e_kcat} * ${Variables:m_EX_glyc_e_conc} * m_glyc_e)/(${Variables:m_EX_glyc_e_km} + ${Variables:m_EX_glyc_e_conc} * m_glyc_e)
+R65: m_crn_c + m_odecoa_c -> m_coa_c + m_odecrn_c | (${Variables:m_C181CPT1_kcat} * ${Variables:m_C181CPT1_conc} * m_crn_c * m_odecoa_c)/(${Variables:m_C181CPT1_km} + ${Variables:m_C181CPT1_conc} * m_crn_c * m_odecoa_c)
+R66: m_adn_e -> m_adn_c | (${Variables:m_ADNt_kcat} * ${Variables:m_ADNt_conc} * m_adn_e)/(${Variables:m_ADNt_km} + ${Variables:m_ADNt_conc} * m_adn_e)
+R67: m_coa_c + m_odecrn_c -> m_crn_c + m_odecoa_c | (${Variables:m_C181CPT2rbc_kcat} * ${Variables:m_C181CPT2rbc_conc} * m_coa_c * m_odecrn_c)/(${Variables:m_C181CPT2rbc_km} + ${Variables:m_C181CPT2rbc_conc} * m_coa_c * m_odecrn_c)
+R68: m_ca2_e -> m_ca2_c | (${Variables:m_CA2t_kcat} * ${Variables:m_CA2t_conc} * m_ca2_e)/(${Variables:m_CA2t_km} + ${Variables:m_CA2t_conc} * m_ca2_e)
+R69: m_gthox_e -> | (${Variables:m_EX_gthox_e_kcat} * ${Variables:m_EX_gthox_e_conc} * m_gthox_e)/(${Variables:m_EX_gthox_e_km} + ${Variables:m_EX_gthox_e_conc} * m_gthox_e)
+R70: m_h_e -> | (${Variables:m_EX_h_e_kcat} * ${Variables:m_EX_h_e_conc} * m_h_e)/(${Variables:m_EX_h_e_km} + ${Variables:m_EX_h_e_conc} * m_h_e)
+R71: m_h2o_e -> | (${Variables:m_EX_h2o_e_kcat} * ${Variables:m_EX_h2o_e_conc} * m_h2o_e)/(${Variables:m_EX_h2o_e_km} + ${Variables:m_EX_h2o_e_conc} * m_h2o_e)
+R72: m_h2o2_e -> | (${Variables:m_EX_h2o2_e_kcat} * ${Variables:m_EX_h2o2_e_conc} * m_h2o2_e)/(${Variables:m_EX_h2o2_e_km} + ${Variables:m_EX_h2o2_e_conc} * m_h2o2_e)
+R73: m_ade_c + m_prpp_c -> m_amp_c + m_ppi_c | (${Variables:m_ADPT_kcat} * ${Variables:m_ADPT_conc} * m_ade_c * m_prpp_c)/(${Variables:m_ADPT_km} + ${Variables:m_ADPT_conc} * m_ade_c * m_prpp_c)
+R74: m_atp_c + m_ca2_c + m_h2o_c -> m_adp_c + m_ca2_e + m_h_e + m_pi_c | (${Variables:m_CAATPS_kcat} * ${Variables:m_CAATPS_conc} * m_atp_c * m_ca2_c * m_h2o_c)/(${Variables:m_CAATPS_km} + ${Variables:m_CAATPS_conc} * m_atp_c * m_ca2_c * m_h2o_c)
+R75: m_atp_c + m_camp_c + m_h2o_c -> m_adp_c + m_camp_e + m_h_c + m_pi_c | (${Variables:m_CAMPt_kcat} * ${Variables:m_CAMPt_conc} * m_atp_c * m_camp_c * m_h2o_c)/(${Variables:m_CAMPt_km} + ${Variables:m_CAMPt_conc} * m_atp_c * m_camp_c * m_h2o_c)
+R76: m_adrnl_e -> m_adrnl_c | (${Variables:m_ADRNLtu_kcat} * ${Variables:m_ADRNLtu_conc} * m_adrnl_e)/(${Variables:m_ADRNLtu_km} + ${Variables:m_ADRNLtu_conc} * m_adrnl_e)
+R77: m_hco3_e -> | (${Variables:m_EX_hco3_e_kcat} * ${Variables:m_EX_hco3_e_conc} * m_hco3_e)/(${Variables:m_EX_hco3_e_km} + ${Variables:m_EX_hco3_e_conc} * m_hco3_e)
+R78: m_acgam6p_c + m_h2o_c -> m_ac_c + m_gam6p_c | (${Variables:m_AGDC_kcat} * ${Variables:m_AGDC_conc} * m_acgam6p_c * m_h2o_c)/(${Variables:m_AGDC_km} + ${Variables:m_AGDC_conc} * m_acgam6p_c * m_h2o_c)
+R79: m_alpa_hs_16_0_c + m_pmtcoa_c -> m_coa_c + m_pa_hs_16_0_16_0_c | (${Variables:m_AGPAT1_16_0_16_1_kcat} * ${Variables:m_AGPAT1_16_0_16_1_conc} * m_alpa_hs_16_0_c * m_pmtcoa_c)/(${Variables:m_AGPAT1_16_0_16_1_km} + ${Variables:m_AGPAT1_16_0_16_1_conc} * m_alpa_hs_16_0_c * m_pmtcoa_c)
+R80: m_h2o2_c -> m_h2o_c + m_o2_c | (${Variables:m_CAT_kcat} * ${Variables:m_CAT_conc} * m_h2o2_c)/(${Variables:m_CAT_km} + ${Variables:m_CAT_conc} * m_h2o2_c)
+R81: m_alpa_hs_16_0_c + m_odecoa_c -> m_coa_c + m_pa_hs_16_0_18_1_c | (${Variables:m_AGPAT1_16_0_18_3_kcat} * ${Variables:m_AGPAT1_16_0_18_3_conc} * m_alpa_hs_16_0_c * m_odecoa_c)/(${Variables:m_AGPAT1_16_0_18_3_km} + ${Variables:m_AGPAT1_16_0_18_3_conc} * m_alpa_hs_16_0_c * m_odecoa_c)
+R82: m_hcys__L_e -> | (${Variables:m_EX_hcys__L_e_kcat} * ${Variables:m_EX_hcys__L_e_conc} * m_hcys__L_e)/(${Variables:m_EX_hcys__L_e_km} + ${Variables:m_EX_hcys__L_e_conc} * m_hcys__L_e)
+R83: m_alpa_hs_16_0_c + m_lnlccoa_c -> m_coa_c + m_pa_hs_16_0_18_2_c | (${Variables:m_AGPAT1_16_0_18_4_kcat} * ${Variables:m_AGPAT1_16_0_18_4_conc} * m_alpa_hs_16_0_c * m_lnlccoa_c)/(${Variables:m_AGPAT1_16_0_18_4_km} + ${Variables:m_AGPAT1_16_0_18_4_conc} * m_alpa_hs_16_0_c * m_lnlccoa_c)
+R84: m_hdca_e -> | (${Variables:m_EX_hdca_e_kcat} * ${Variables:m_EX_hdca_e_conc} * m_hdca_e)/(${Variables:m_EX_hdca_e_km} + ${Variables:m_EX_hdca_e_conc} * m_hdca_e)
+R85: m_hxan_e -> | (${Variables:m_EX_hxan_e_kcat} * ${Variables:m_EX_hxan_e_conc} * m_hxan_e)/(${Variables:m_EX_hxan_e_km} + ${Variables:m_EX_hxan_e_conc} * m_hxan_e)
+R86: m_cdpdag_hs_16_0_16_0_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_16_0_16_0_c | (${Variables:m_CDIPTr_16_0_16_0_kcat} * ${Variables:m_CDIPTr_16_0_16_0_conc} * m_cdpdag_hs_16_0_16_0_c * m_inost_c)/(${Variables:m_CDIPTr_16_0_16_0_km} + ${Variables:m_CDIPTr_16_0_16_0_conc} * m_cdpdag_hs_16_0_16_0_c * m_inost_c)
+R87: m_ins_e -> | (${Variables:m_EX_ins_e_kcat} * ${Variables:m_EX_ins_e_conc} * m_ins_e)/(${Variables:m_EX_ins_e_km} + ${Variables:m_EX_ins_e_conc} * m_ins_e)
+R88: m_alpa_hs_18_1_c + m_odecoa_c -> m_coa_c + m_pa_hs_18_1_18_1_c | (${Variables:m_AGPAT1_18_1_18_3_kcat} * ${Variables:m_AGPAT1_18_1_18_3_conc} * m_alpa_hs_18_1_c * m_odecoa_c)/(${Variables:m_AGPAT1_18_1_18_3_km} + ${Variables:m_AGPAT1_18_1_18_3_conc} * m_alpa_hs_18_1_c * m_odecoa_c)
+R89: m_k_e -> | (${Variables:m_EX_k_e_kcat} * ${Variables:m_EX_k_e_conc} * m_k_e)/(${Variables:m_EX_k_e_km} + ${Variables:m_EX_k_e_conc} * m_k_e)
+R90: m_lac__D_e -> | (${Variables:m_EX_lac__D_e_kcat} * ${Variables:m_EX_lac__D_e_conc} * m_lac__D_e)/(${Variables:m_EX_lac__D_e_km} + ${Variables:m_EX_lac__D_e_conc} * m_lac__D_e)
+R91: m_cdpdag_hs_16_0_18_1_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_16_0_18_1_c | (${Variables:m_CDIPTr_16_0_18_1_kcat} * ${Variables:m_CDIPTr_16_0_18_1_conc} * m_cdpdag_hs_16_0_18_1_c * m_inost_c)/(${Variables:m_CDIPTr_16_0_18_1_km} + ${Variables:m_CDIPTr_16_0_18_1_conc} * m_cdpdag_hs_16_0_18_1_c * m_inost_c)
+R92: m_cdpdag_hs_16_0_18_2_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_16_0_18_2_c | (${Variables:m_CDIPTr_16_0_18_2_kcat} * ${Variables:m_CDIPTr_16_0_18_2_conc} * m_cdpdag_hs_16_0_18_2_c * m_inost_c)/(${Variables:m_CDIPTr_16_0_18_2_km} + ${Variables:m_CDIPTr_16_0_18_2_conc} * m_cdpdag_hs_16_0_18_2_c * m_inost_c)
+R93: m_lac__L_e -> | (${Variables:m_EX_lac__L_e_kcat} * ${Variables:m_EX_lac__L_e_conc} * m_lac__L_e)/(${Variables:m_EX_lac__L_e_km} + ${Variables:m_EX_lac__L_e_conc} * m_lac__L_e)
+R94: m_alpa_hs_18_1_c + m_lnlccoa_c -> m_coa_c + m_pa_hs_18_1_18_2_c | (${Variables:m_AGPAT1_18_1_18_4_kcat} * ${Variables:m_AGPAT1_18_1_18_4_conc} * m_alpa_hs_18_1_c * m_lnlccoa_c)/(${Variables:m_AGPAT1_18_1_18_4_km} + ${Variables:m_AGPAT1_18_1_18_4_conc} * m_alpa_hs_18_1_c * m_lnlccoa_c)
+R95: m_leuktrA4_e -> | (${Variables:m_EX_leuktrA4_e_kcat} * ${Variables:m_EX_leuktrA4_e_conc} * m_leuktrA4_e)/(${Variables:m_EX_leuktrA4_e_km} + ${Variables:m_EX_leuktrA4_e_conc} * m_leuktrA4_e)
+R96: m_cdpdag_hs_18_1_18_1_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_18_1_18_1_c | (${Variables:m_CDIPTr_18_1_18_1_kcat} * ${Variables:m_CDIPTr_18_1_18_1_conc} * m_cdpdag_hs_18_1_18_1_c * m_inost_c)/(${Variables:m_CDIPTr_18_1_18_1_km} + ${Variables:m_CDIPTr_18_1_18_1_conc} * m_cdpdag_hs_18_1_18_1_c * m_inost_c)
+R97: m_cdpdag_hs_18_1_18_2_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_18_1_18_2_c | (${Variables:m_CDIPTr_18_1_18_2_kcat} * ${Variables:m_CDIPTr_18_1_18_2_conc} * m_cdpdag_hs_18_1_18_2_c * m_inost_c)/(${Variables:m_CDIPTr_18_1_18_2_km} + ${Variables:m_CDIPTr_18_1_18_2_conc} * m_cdpdag_hs_18_1_18_2_c * m_inost_c)
+R98: m_leuktrB4_e -> | (${Variables:m_EX_leuktrB4_e_kcat} * ${Variables:m_EX_leuktrB4_e_conc} * m_leuktrB4_e)/(${Variables:m_EX_leuktrB4_e_km} + ${Variables:m_EX_leuktrB4_e_conc} * m_leuktrB4_e)
+R99: m_alpa_hs_18_2_c + m_pmtcoa_c -> m_coa_c + m_pa_hs_18_2_16_0_c | (${Variables:m_AGPAT1_18_2_16_0_kcat} * ${Variables:m_AGPAT1_18_2_16_0_conc} * m_alpa_hs_18_2_c * m_pmtcoa_c)/(${Variables:m_AGPAT1_18_2_16_0_km} + ${Variables:m_AGPAT1_18_2_16_0_conc} * m_alpa_hs_18_2_c * m_pmtcoa_c)
+R100: m_lnlc_e -> | (${Variables:m_EX_lnlc_e_kcat} * ${Variables:m_EX_lnlc_e_conc} * m_lnlc_e)/(${Variables:m_EX_lnlc_e_km} + ${Variables:m_EX_lnlc_e_conc} * m_lnlc_e)
+R101: m_mal__L_e -> | (${Variables:m_EX_mal__L_e_kcat} * ${Variables:m_EX_mal__L_e_conc} * m_mal__L_e)/(${Variables:m_EX_mal__L_e_km} + ${Variables:m_EX_mal__L_e_conc} * m_mal__L_e)
+R102: m_man_e -> | (${Variables:m_EX_man_e_kcat} * ${Variables:m_EX_man_e_conc} * m_man_e)/(${Variables:m_EX_man_e_km} + ${Variables:m_EX_man_e_conc} * m_man_e)
+R103: m_cdpdag_hs_18_2_16_0_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_18_2_16_0_c | (${Variables:m_CDIPTr_18_2_16_0_kcat} * ${Variables:m_CDIPTr_18_2_16_0_conc} * m_cdpdag_hs_18_2_16_0_c * m_inost_c)/(${Variables:m_CDIPTr_18_2_16_0_km} + ${Variables:m_CDIPTr_18_2_16_0_conc} * m_cdpdag_hs_18_2_16_0_c * m_inost_c)
+R104: m_cdpdag_hs_18_2_18_1_c + m_inost_c -> m_cmp_c + m_h_c + m_pail_hs_18_2_18_1_c | (${Variables:m_CDIPTr_18_2_18_1_kcat} * ${Variables:m_CDIPTr_18_2_18_1_conc} * m_cdpdag_hs_18_2_18_1_c * m_inost_c)/(${Variables:m_CDIPTr_18_2_18_1_km} + ${Variables:m_CDIPTr_18_2_18_1_conc} * m_cdpdag_hs_18_2_18_1_c * m_inost_c)
+R105: m_ctp_c + m_h_c + m_pa_hs_16_0_16_0_c -> m_cdpdag_hs_16_0_16_0_c + m_ppi_c | (${Variables:m_CDS_16_0_16_0_kcat} * ${Variables:m_CDS_16_0_16_0_conc} * m_ctp_c * m_h_c * m_pa_hs_16_0_16_0_c)/(${Variables:m_CDS_16_0_16_0_km} + ${Variables:m_CDS_16_0_16_0_conc} * m_ctp_c * m_h_c * m_pa_hs_16_0_16_0_c)
+R106: m_ctp_c + m_h_c + m_pa_hs_16_0_18_1_c -> m_cdpdag_hs_16_0_18_1_c + m_ppi_c | (${Variables:m_CDS_16_0_18_1_kcat} * ${Variables:m_CDS_16_0_18_1_conc} * m_ctp_c * m_h_c * m_pa_hs_16_0_18_1_c)/(${Variables:m_CDS_16_0_18_1_km} + ${Variables:m_CDS_16_0_18_1_conc} * m_ctp_c * m_h_c * m_pa_hs_16_0_18_1_c)
+R107: m_ctp_c + m_h_c + m_pa_hs_16_0_18_2_c -> m_cdpdag_hs_16_0_18_2_c + m_ppi_c | (${Variables:m_CDS_16_0_18_2_kcat} * ${Variables:m_CDS_16_0_18_2_conc} * m_ctp_c * m_h_c * m_pa_hs_16_0_18_2_c)/(${Variables:m_CDS_16_0_18_2_km} + ${Variables:m_CDS_16_0_18_2_conc} * m_ctp_c * m_h_c * m_pa_hs_16_0_18_2_c)
+R108: m_alpa_hs_18_2_c + m_odecoa_c -> m_coa_c + m_pa_hs_18_2_18_1_c | (${Variables:m_AGPAT1_18_2_18_1_kcat} * ${Variables:m_AGPAT1_18_2_18_1_conc} * m_alpa_hs_18_2_c * m_odecoa_c)/(${Variables:m_AGPAT1_18_2_18_1_km} + ${Variables:m_AGPAT1_18_2_18_1_conc} * m_alpa_hs_18_2_c * m_odecoa_c)
+R109: m_ctp_c + m_h_c + m_pa_hs_18_1_18_1_c -> m_cdpdag_hs_18_1_18_1_c + m_ppi_c | (${Variables:m_CDS_18_1_18_1_kcat} * ${Variables:m_CDS_18_1_18_1_conc} * m_ctp_c * m_h_c * m_pa_hs_18_1_18_1_c)/(${Variables:m_CDS_18_1_18_1_km} + ${Variables:m_CDS_18_1_18_1_conc} * m_ctp_c * m_h_c * m_pa_hs_18_1_18_1_c)
+R110: m_ctp_c + m_h_c + m_pa_hs_18_1_18_2_c -> m_cdpdag_hs_18_1_18_2_c + m_ppi_c | (${Variables:m_CDS_18_1_18_2_kcat} * ${Variables:m_CDS_18_1_18_2_conc} * m_ctp_c * m_h_c * m_pa_hs_18_1_18_2_c)/(${Variables:m_CDS_18_1_18_2_km} + ${Variables:m_CDS_18_1_18_2_conc} * m_ctp_c * m_h_c * m_pa_hs_18_1_18_2_c)
+R111: m_mepi_e -> | (${Variables:m_EX_mepi_e_kcat} * ${Variables:m_EX_mepi_e_conc} * m_mepi_e)/(${Variables:m_EX_mepi_e_km} + ${Variables:m_EX_mepi_e_conc} * m_mepi_e)
+R112: m_met__L_e -> | (${Variables:m_EX_met__L_e_kcat} * ${Variables:m_EX_met__L_e_conc} * m_met__L_e)/(${Variables:m_EX_met__L_e_km} + ${Variables:m_EX_met__L_e_conc} * m_met__L_e)
+R113: m_na1_e -> | (${Variables:m_EX_na1_e_kcat} * ${Variables:m_EX_na1_e_conc} * m_na1_e)/(${Variables:m_EX_na1_e_km} + ${Variables:m_EX_na1_e_conc} * m_na1_e)
+R114: m_ctp_c + m_h_c + m_pa_hs_18_2_16_0_c -> m_cdpdag_hs_18_2_16_0_c + m_ppi_c | (${Variables:m_CDS_18_2_16_0_kcat} * ${Variables:m_CDS_18_2_16_0_conc} * m_ctp_c * m_h_c * m_pa_hs_18_2_16_0_c)/(${Variables:m_CDS_18_2_16_0_km} + ${Variables:m_CDS_18_2_16_0_conc} * m_ctp_c * m_h_c * m_pa_hs_18_2_16_0_c)
+R115: m_ahcys_c + m_h2o_c -> m_adn_c + m_hcys__L_c | (${Variables:m_AHCi_kcat} * ${Variables:m_AHCi_conc} * m_ahcys_c * m_h2o_c)/(${Variables:m_AHCi_km} + ${Variables:m_AHCi_conc} * m_ahcys_c * m_h2o_c)
+R116: m_ctp_c + m_h_c + m_pa_hs_18_2_18_1_c -> m_cdpdag_hs_18_2_18_1_c + m_ppi_c | (${Variables:m_CDS_18_2_18_1_kcat} * ${Variables:m_CDS_18_2_18_1_conc} * m_ctp_c * m_h_c * m_pa_hs_18_2_18_1_c)/(${Variables:m_CDS_18_2_18_1_km} + ${Variables:m_CDS_18_2_18_1_conc} * m_ctp_c * m_h_c * m_pa_hs_18_2_18_1_c)
+R117: m_35cgmp_c + m_atp_c + m_h2o_c -> m_35cgmp_e + m_adp_c + m_h_c + m_pi_c | (${Variables:m_CGMPt_kcat} * ${Variables:m_CGMPt_conc} * m_35cgmp_c * m_atp_c * m_h2o_c)/(${Variables:m_CGMPt_km} + ${Variables:m_CGMPt_conc} * m_35cgmp_c * m_atp_c * m_h2o_c)
+R118: m_nac_e -> | (${Variables:m_EX_nac_e_kcat} * ${Variables:m_EX_nac_e_conc} * m_nac_e)/(${Variables:m_EX_nac_e_km} + ${Variables:m_EX_nac_e_conc} * m_nac_e)
+R119: m_ala__L_e + m_na1_e -> m_ala__L_c + m_na1_c | (${Variables:m_ALAt4_kcat} * ${Variables:m_ALAt4_conc} * m_ala__L_e * m_na1_e)/(${Variables:m_ALAt4_km} + ${Variables:m_ALAt4_conc} * m_ala__L_e * m_na1_e)
+R120: m_ncam_e -> | (${Variables:m_EX_ncam_e_kcat} * ${Variables:m_EX_ncam_e_conc} * m_ncam_e)/(${Variables:m_EX_ncam_e_km} + ${Variables:m_EX_ncam_e_conc} * m_ncam_e)
+R121: m_nh4_e -> | (${Variables:m_EX_nh4_e_kcat} * ${Variables:m_EX_nh4_e_conc} * m_nh4_e)/(${Variables:m_EX_nh4_e_km} + ${Variables:m_EX_nh4_e_conc} * m_nh4_e)
+R122: m_normete__L_e -> | (${Variables:m_EX_normete__L_e_kcat} * ${Variables:m_EX_normete__L_e_conc} * m_normete__L_e)/(${Variables:m_EX_normete__L_e_km} + ${Variables:m_EX_normete__L_e_conc} * m_normete__L_e)
+R123: m_nrpphr_e -> | (${Variables:m_EX_nrpphr_e_kcat} * ${Variables:m_EX_nrpphr_e_conc} * m_nrpphr_e)/(${Variables:m_EX_nrpphr_e_km} + ${Variables:m_EX_nrpphr_e_conc} * m_nrpphr_e)
+R124: m_cholp_c + m_h2o_c -> m_chol_c + m_pi_c | (${Variables:m_CHLP_kcat} * ${Variables:m_CHLP_conc} * m_cholp_c * m_h2o_c)/(${Variables:m_CHLP_km} + ${Variables:m_CHLP_conc} * m_cholp_c * m_h2o_c)
+R125: m_cholp_c + m_ctp_c + m_h_c -> m_cdpchol_c + m_ppi_c | (${Variables:m_CHLPCTD_kcat} * ${Variables:m_CHLPCTD_conc} * m_cholp_c * m_ctp_c * m_h_c)/(${Variables:m_CHLPCTD_km} + ${Variables:m_CHLPCTD_conc} * m_cholp_c * m_ctp_c * m_h_c)
+R126: m_o2_e -> | (${Variables:m_EX_o2_e_kcat} * ${Variables:m_EX_o2_e_conc} * m_o2_e)/(${Variables:m_EX_o2_e_km} + ${Variables:m_EX_o2_e_conc} * m_o2_e)
+R127: m_ocdcea_e -> | (${Variables:m_EX_ocdcea_e_kcat} * ${Variables:m_EX_ocdcea_e_conc} * m_ocdcea_e)/(${Variables:m_EX_ocdcea_e_km} + ${Variables:m_EX_ocdcea_e_conc} * m_ocdcea_e)
+R128: m_atp_c + m_chol_c -> m_adp_c + m_cholp_c + m_h_c | (${Variables:m_CHOLK_kcat} * ${Variables:m_CHOLK_conc} * m_atp_c * m_chol_c)/(${Variables:m_CHOLK_km} + ${Variables:m_CHOLK_conc} * m_atp_c * m_chol_c)
+R129: m_acald_c + m_h2o_c + m_nad_c -> m_ac_c + m_h_c + m_nadh_c | (${Variables:m_ALDD2x_kcat} * ${Variables:m_ALDD2x_conc} * m_acald_c * m_h2o_c * m_nad_c)/(${Variables:m_ALDD2x_km} + ${Variables:m_ALDD2x_conc} * m_acald_c * m_h2o_c * m_nad_c)
+R130: m_chol_e + m_na1_e -> m_chol_c + m_na1_c | (${Variables:m_CHOLt4_kcat} * ${Variables:m_CHOLt4_conc} * m_chol_e * m_na1_e)/(${Variables:m_CHOLt4_km} + ${Variables:m_CHOLt4_conc} * m_chol_e * m_na1_e)
+R131: m_co2_e -> m_co2_c | (${Variables:m_CO2t_kcat} * ${Variables:m_CO2t_conc} * m_co2_e)/(${Variables:m_CO2t_km} + ${Variables:m_CO2t_conc} * m_co2_e)
+R132: m_co_c -> m_co_e | (${Variables:m_COt_kcat} * ${Variables:m_COt_conc} * m_co_c)/(${Variables:m_COt_km} + ${Variables:m_COt_conc} * m_co_c)
+R133: m_orot_e -> | (${Variables:m_EX_orot_e_kcat} * ${Variables:m_EX_orot_e_conc} * m_orot_e)/(${Variables:m_EX_orot_e_km} + ${Variables:m_EX_orot_e_conc} * m_orot_e)
+R134: m_phe__L_e -> | (${Variables:m_EX_phe__L_e_kcat} * ${Variables:m_EX_phe__L_e_conc} * m_phe__L_e)/(${Variables:m_EX_phe__L_e_km} + ${Variables:m_EX_phe__L_e_conc} * m_phe__L_e)
+R135: m_pi_e -> | (${Variables:m_EX_pi_e_kcat} * ${Variables:m_EX_pi_e_conc} * m_pi_e)/(${Variables:m_EX_pi_e_km} + ${Variables:m_EX_pi_e_conc} * m_pi_e)
+R136: m_ptrc_e -> | (${Variables:m_EX_ptrc_e_kcat} * ${Variables:m_EX_ptrc_e_conc} * m_ptrc_e)/(${Variables:m_EX_ptrc_e_km} + ${Variables:m_EX_ptrc_e_conc} * m_ptrc_e)
+R137: m_pydam_e -> | (${Variables:m_EX_pydam_e_kcat} * ${Variables:m_EX_pydam_e_conc} * m_pydam_e)/(${Variables:m_EX_pydam_e_km} + ${Variables:m_EX_pydam_e_conc} * m_pydam_e)
+R138: m_pydx_e -> | (${Variables:m_EX_pydx_e_kcat} * ${Variables:m_EX_pydx_e_conc} * m_pydx_e)/(${Variables:m_EX_pydx_e_km} + ${Variables:m_EX_pydx_e_conc} * m_pydx_e)
+R139: m_pydxn_e -> | (${Variables:m_EX_pydxn_e_kcat} * ${Variables:m_EX_pydxn_e_conc} * m_pydxn_e)/(${Variables:m_EX_pydxn_e_km} + ${Variables:m_EX_pydxn_e_conc} * m_pydxn_e)
+R140: m_pyr_e -> | (${Variables:m_EX_pyr_e_kcat} * ${Variables:m_EX_pyr_e_conc} * m_pyr_e)/(${Variables:m_EX_pyr_e_km} + ${Variables:m_EX_pyr_e_conc} * m_pyr_e)
+R141: m_cpppg3_c + m_h_c + m_o2_c -> m_co2_c + m_h2o_c + m_pppg9_c | (${Variables:m_CPPPGO_kcat} * ${Variables:m_CPPPGO_conc} * m_cpppg3_c * m_h_c * m_o2_c)/(${Variables:m_CPPPGO_km} + ${Variables:m_CPPPGO_conc} * m_cpppg3_c * m_h_c * m_o2_c)
+R142: m_acmana_c + m_atp_c -> m_acmanap_c + m_adp_c + m_h_c | (${Variables:m_AMANK_kcat} * ${Variables:m_AMANK_conc} * m_acmana_c * m_atp_c)/(${Variables:m_AMANK_km} + ${Variables:m_AMANK_conc} * m_acmana_c * m_atp_c)
+R143: m_cys__L_e -> m_cys__L_c | (${Variables:m_CYStec_kcat} * ${Variables:m_CYStec_conc} * m_cys__L_e)/(${Variables:m_CYStec_km} + ${Variables:m_CYStec_conc} * m_cys__L_e)
+R144: m_amp_c + m_h2o_c + m_h_c -> m_imp_c + m_nh4_c | (${Variables:m_AMPDA_kcat} * ${Variables:m_AMPDA_conc} * m_amp_c * m_h2o_c * m_h_c)/(${Variables:m_AMPDA_km} + ${Variables:m_AMPDA_conc} * m_amp_c * m_h2o_c * m_h_c)
+R145: m_ap4a_c + m_h2o_c -> m_amp_c + m_atp_c + m_h_c | (${Variables:m_AP4AH1_kcat} * ${Variables:m_AP4AH1_conc} * m_ap4a_c * m_h2o_c)/(${Variables:m_AP4AH1_km} + ${Variables:m_AP4AH1_conc} * m_ap4a_c * m_h2o_c)
+R146: m_atp_c + m_cmp_c -> m_adp_c + m_cdp_c | (${Variables:m_CYTK1_kcat} * ${Variables:m_CYTK1_conc} * m_atp_c * m_cmp_c)/(${Variables:m_CYTK1_km} + ${Variables:m_CYTK1_conc} * m_atp_c * m_cmp_c)
+R147: m_ribflv_e -> | (${Variables:m_EX_ribflv_e_kcat} * ${Variables:m_EX_ribflv_e_conc} * m_ribflv_e)/(${Variables:m_EX_ribflv_e_km} + ${Variables:m_EX_ribflv_e_conc} * m_ribflv_e)
+R148: m_spmd_e -> | (${Variables:m_EX_spmd_e_kcat} * ${Variables:m_EX_spmd_e_conc} * m_spmd_e)/(${Variables:m_EX_spmd_e_km} + ${Variables:m_EX_spmd_e_conc} * m_spmd_e)
+R149: m_sprm_e -> | (${Variables:m_EX_sprm_e_kcat} * ${Variables:m_EX_sprm_e_conc} * m_sprm_e)/(${Variables:m_EX_sprm_e_km} + ${Variables:m_EX_sprm_e_conc} * m_sprm_e)
+R150: m_h_e + m_lac__D_e -> m_h_c + m_lac__D_c | (${Variables:m_D_LACt2_kcat} * ${Variables:m_D_LACt2_conc} * m_h_e * m_lac__D_e)/(${Variables:m_D_LACt2_km} + ${Variables:m_D_LACt2_conc} * m_h_e * m_lac__D_e)
+R151: m_adp_c + m_h_c + m_pa_hs_16_0_16_0_c -> m_atp_c + m_dag_hs_16_0_16_0_c | (${Variables:m_DAGK_hs_16_0_16_0_kcat} * ${Variables:m_DAGK_hs_16_0_16_0_conc} * m_adp_c * m_h_c * m_pa_hs_16_0_16_0_c)/(${Variables:m_DAGK_hs_16_0_16_0_km} + ${Variables:m_DAGK_hs_16_0_16_0_conc} * m_adp_c * m_h_c * m_pa_hs_16_0_16_0_c)
+R152: m_arg__L_c + m_h2o_c -> m_orn_c + m_urea_c | (${Variables:m_ARGN_kcat} * ${Variables:m_ARGN_conc} * m_arg__L_c * m_h2o_c)/(${Variables:m_ARGN_km} + ${Variables:m_ARGN_conc} * m_arg__L_c * m_h2o_c)
+R153: m_thm_e -> | (${Variables:m_EX_thm_e_kcat} * ${Variables:m_EX_thm_e_conc} * m_thm_e)/(${Variables:m_EX_thm_e_km} + ${Variables:m_EX_thm_e_conc} * m_thm_e)
+R154: m_thmmp_e -> | (${Variables:m_EX_thmmp_e_kcat} * ${Variables:m_EX_thmmp_e_conc} * m_thmmp_e)/(${Variables:m_EX_thmmp_e_km} + ${Variables:m_EX_thmmp_e_conc} * m_thmmp_e)
+R155: m_adp_c + m_h_c + m_pa_hs_16_0_18_1_c -> m_atp_c + m_dag_hs_16_0_18_1_c | (${Variables:m_DAGK_hs_16_0_18_1_kcat} * ${Variables:m_DAGK_hs_16_0_18_1_conc} * m_adp_c * m_h_c * m_pa_hs_16_0_18_1_c)/(${Variables:m_DAGK_hs_16_0_18_1_km} + ${Variables:m_DAGK_hs_16_0_18_1_conc} * m_adp_c * m_h_c * m_pa_hs_16_0_18_1_c)
+R156: m_adp_c + m_h_c + m_pa_hs_16_0_18_2_c -> m_atp_c + m_dag_hs_16_0_18_2_c | (${Variables:m_DAGK_hs_16_0_18_2_kcat} * ${Variables:m_DAGK_hs_16_0_18_2_conc} * m_adp_c * m_h_c * m_pa_hs_16_0_18_2_c)/(${Variables:m_DAGK_hs_16_0_18_2_km} + ${Variables:m_DAGK_hs_16_0_18_2_conc} * m_adp_c * m_h_c * m_pa_hs_16_0_18_2_c)
+R157: m_arg__L_e -> m_arg__L_c | (${Variables:m_ARGt5r_kcat} * ${Variables:m_ARGt5r_conc} * m_arg__L_e)/(${Variables:m_ARGt5r_km} + ${Variables:m_ARGt5r_conc} * m_arg__L_e)
+R158: m_adp_c + m_h_c + m_pa_hs_18_1_18_1_c -> m_atp_c + m_dag_hs_18_1_18_1_c | (${Variables:m_DAGK_hs_18_1_18_1_kcat} * ${Variables:m_DAGK_hs_18_1_18_1_conc} * m_adp_c * m_h_c * m_pa_hs_18_1_18_1_c)/(${Variables:m_DAGK_hs_18_1_18_1_km} + ${Variables:m_DAGK_hs_18_1_18_1_conc} * m_adp_c * m_h_c * m_pa_hs_18_1_18_1_c)
+R159: m_adp_c + m_h_c + m_pa_hs_18_1_18_2_c -> m_atp_c + m_dag_hs_18_1_18_2_c | (${Variables:m_DAGK_hs_18_1_18_2_kcat} * ${Variables:m_DAGK_hs_18_1_18_2_conc} * m_adp_c * m_h_c * m_pa_hs_18_1_18_2_c)/(${Variables:m_DAGK_hs_18_1_18_2_km} + ${Variables:m_DAGK_hs_18_1_18_2_conc} * m_adp_c * m_h_c * m_pa_hs_18_1_18_2_c)
+R160: m_cdpea_c + m_dag_hs_16_0_16_0_c -> m_cmp_c + m_h_c + m_pe_hs_16_0_16_0_c | (${Variables:m_CEPTE_16_0_16_0_kcat} * ${Variables:m_CEPTE_16_0_16_0_conc} * m_cdpea_c * m_dag_hs_16_0_16_0_c)/(${Variables:m_CEPTE_16_0_16_0_km} + ${Variables:m_CEPTE_16_0_16_0_conc} * m_cdpea_c * m_dag_hs_16_0_16_0_c)
+R161: m_urea_e -> | (${Variables:m_EX_urea_e_kcat} * ${Variables:m_EX_urea_e_conc} * m_urea_e)/(${Variables:m_EX_urea_e_km} + ${Variables:m_EX_urea_e_conc} * m_urea_e)
+R162: m_uri_e -> | (${Variables:m_EX_uri_e_kcat} * ${Variables:m_EX_uri_e_conc} * m_uri_e)/(${Variables:m_EX_uri_e_km} + ${Variables:m_EX_uri_e_conc} * m_uri_e)
+R163: m_ascb__L_e -> m_ascb__L_c | (${Variables:m_ASCBt_kcat} * ${Variables:m_ASCBt_conc} * m_ascb__L_e)/(${Variables:m_ASCBt_km} + ${Variables:m_ASCBt_conc} * m_ascb__L_e)
+R164: m_atp_c + m_dag_hs_18_2_16_0_c -> m_adp_c + m_h_c + m_pa_hs_18_2_16_0_c | (${Variables:m_DAGK_hs_18_2_16_0_kcat} * ${Variables:m_DAGK_hs_18_2_16_0_conc} * m_atp_c * m_dag_hs_18_2_16_0_c)/(${Variables:m_DAGK_hs_18_2_16_0_km} + ${Variables:m_DAGK_hs_18_2_16_0_conc} * m_atp_c * m_dag_hs_18_2_16_0_c)
+R165: m_atp_c + m_dag_hs_18_2_18_1_c -> m_adp_c + m_h_c + m_pa_hs_18_2_18_1_c | (${Variables:m_DAGK_hs_18_2_18_1_kcat} * ${Variables:m_DAGK_hs_18_2_18_1_conc} * m_atp_c * m_dag_hs_18_2_18_1_c)/(${Variables:m_DAGK_hs_18_2_18_1_km} + ${Variables:m_DAGK_hs_18_2_18_1_conc} * m_atp_c * m_dag_hs_18_2_18_1_c)
+R166: m_amet_c + m_band_c -> m_ahcys_c + m_bandmt_c + m_h_c | (${Variables:m_BANDMT_kcat} * ${Variables:m_BANDMT_conc} * m_amet_c * m_band_c)/(${Variables:m_BANDMT_km} + ${Variables:m_BANDMT_conc} * m_amet_c * m_band_c)
+R167: m_3dhguln_c + m_h_c -> m_co2_c + m_xylu__L_c | (${Variables:m_DGULND_kcat} * ${Variables:m_DGULND_conc} * m_3dhguln_c * m_h_c)/(${Variables:m_DGULND_km} + ${Variables:m_DGULND_conc} * m_3dhguln_c * m_h_c)
+R168: m_adprbp_c -> | (${Variables:m_SK_adprbp_c_kcat} * ${Variables:m_SK_adprbp_c_conc} * m_adprbp_c)/(${Variables:m_SK_adprbp_c_km} + ${Variables:m_SK_adprbp_c_conc} * m_adprbp_c)
+R169: m_dhdascb_e -> m_dhdascb_c | (${Variables:m_DHAAt1r_kcat} * ${Variables:m_DHAAt1r_conc} * m_dhdascb_e)/(${Variables:m_DHAAt1r_km} + ${Variables:m_DHAAt1r_conc} * m_dhdascb_e)
+R170: m_bilglcur_e + m_hco3_c -> m_bilglcur_c + m_hco3_e | (${Variables:m_BILGLCURt_kcat} * ${Variables:m_BILGLCURt_conc} * m_bilglcur_e * m_hco3_c)/(${Variables:m_BILGLCURt_km} + ${Variables:m_BILGLCURt_conc} * m_bilglcur_e * m_hco3_c)
+R171: m_nadh_c -> m_h_c + m_nad_c | (${Variables:m_DM_nadh_kcat} * ${Variables:m_DM_nadh_conc} * m_nadh_c)/(${Variables:m_DM_nadh_km} + ${Variables:m_DM_nadh_conc} * m_nadh_c)
+R172: m_akg_c -> | (${Variables:m_SK_akg_c_kcat} * ${Variables:m_SK_akg_c_conc} * m_akg_c)/(${Variables:m_SK_akg_c_km} + ${Variables:m_SK_akg_c_conc} * m_akg_c)
+R173: m_band_c -> | (${Variables:m_SK_band_c_kcat} * ${Variables:m_SK_band_c_conc} * m_band_c)/(${Variables:m_SK_band_c_km} + ${Variables:m_SK_band_c_conc} * m_band_c)
+R174: m_bandmt_c -> | (${Variables:m_SK_bandmt_c_kcat} * ${Variables:m_SK_bandmt_c_conc} * m_bandmt_c)/(${Variables:m_SK_bandmt_c_km} + ${Variables:m_SK_bandmt_c_conc} * m_bandmt_c)
+R175: m_bilirub_c + m_h_c + m_udpglcur_c -> m_bilglcur_c + m_udp_c | (${Variables:m_BILIRBU_kcat} * ${Variables:m_BILIRBU_conc} * m_bilirub_c * m_h_c * m_udpglcur_c)/(${Variables:m_BILIRBU_km} + ${Variables:m_BILIRBU_conc} * m_bilirub_c * m_h_c * m_udpglcur_c)
+R176: m_for_c -> | (${Variables:m_SK_for_c_kcat} * ${Variables:m_SK_for_c_conc} * m_for_c)/(${Variables:m_SK_for_c_km} + ${Variables:m_SK_for_c_conc} * m_for_c)
+R177: m_mi1345p_c -> | (${Variables:m_SK_mi1345p_c_kcat} * ${Variables:m_SK_mi1345p_c_conc} * m_mi1345p_c)/(${Variables:m_SK_mi1345p_c_km} + ${Variables:m_SK_mi1345p_c_conc} * m_mi1345p_c)
+R178: m_mi134p_c -> | (${Variables:m_SK_mi134p_c_kcat} * ${Variables:m_SK_mi134p_c_conc} * m_mi134p_c)/(${Variables:m_SK_mi134p_c_km} + ${Variables:m_SK_mi134p_c_conc} * m_mi134p_c)
+R179: m_amet_c + m_dopa_c -> m_3moxtyr_c + m_ahcys_c + m_h_c | (${Variables:m_DOPAMT_kcat} * ${Variables:m_DOPAMT_conc} * m_amet_c * m_dopa_c)/(${Variables:m_DOPAMT_km} + ${Variables:m_DOPAMT_conc} * m_amet_c * m_dopa_c)
+R180: m_dopa_e -> m_dopa_c | (${Variables:m_DOPAtu_kcat} * ${Variables:m_DOPAtu_conc} * m_dopa_e)/(${Variables:m_DOPAtu_km} + ${Variables:m_DOPAtu_conc} * m_dopa_e)
+R181: m_mi145p_c -> | (${Variables:m_SK_mi145p_c_kcat} * ${Variables:m_SK_mi145p_c_conc} * m_mi145p_c)/(${Variables:m_SK_mi145p_c_km} + ${Variables:m_SK_mi145p_c_conc} * m_mi145p_c)
+R182: m_biliverd_c + m_h_c + m_nadph_c -> m_bilirub_c + m_nadp_c | (${Variables:m_BILIRED_kcat} * ${Variables:m_BILIRED_conc} * m_biliverd_c * m_h_c * m_nadph_c)/(${Variables:m_BILIRED_km} + ${Variables:m_BILIRED_conc} * m_biliverd_c * m_h_c * m_nadph_c)
+R183: m_mi14p_c -> | (${Variables:m_SK_mi14p_c_kcat} * ${Variables:m_SK_mi14p_c_conc} * m_mi14p_c)/(${Variables:m_SK_mi14p_c_km} + ${Variables:m_SK_mi14p_c_conc} * m_mi14p_c)
+R184: m_pchol_hs_16_0_16_0_c -> | (${Variables:m_SK_pchol_hs_16_0_16_0_c_kcat} * ${Variables:m_SK_pchol_hs_16_0_16_0_c_conc} * m_pchol_hs_16_0_16_0_c)/(${Variables:m_SK_pchol_hs_16_0_16_0_c_km} + ${Variables:m_SK_pchol_hs_16_0_16_0_c_conc} * m_pchol_hs_16_0_16_0_c)
+R185: m_pchol_hs_16_0_18_1_c -> | (${Variables:m_SK_pchol_hs_16_0_18_1_c_kcat} * ${Variables:m_SK_pchol_hs_16_0_18_1_c_conc} * m_pchol_hs_16_0_18_1_c)/(${Variables:m_SK_pchol_hs_16_0_18_1_c_km} + ${Variables:m_SK_pchol_hs_16_0_18_1_c_conc} * m_pchol_hs_16_0_18_1_c)
+R186: m_pchol_hs_16_0_18_2_c -> | (${Variables:m_SK_pchol_hs_16_0_18_2_c_kcat} * ${Variables:m_SK_pchol_hs_16_0_18_2_c_conc} * m_pchol_hs_16_0_18_2_c)/(${Variables:m_SK_pchol_hs_16_0_18_2_c_km} + ${Variables:m_SK_pchol_hs_16_0_18_2_c_conc} * m_pchol_hs_16_0_18_2_c)
+R187: m_13dpg_c -> m_23dpg_c + m_h_c | (${Variables:m_DPGM_kcat} * ${Variables:m_DPGM_conc} * m_13dpg_c)/(${Variables:m_DPGM_km} + ${Variables:m_DPGM_conc} * m_13dpg_c)
+R188: m_crn_c + m_pmtcoa_c -> m_coa_c + m_pmtcrn_c | (${Variables:m_C160CPT1_kcat} * ${Variables:m_C160CPT1_conc} * m_crn_c * m_pmtcoa_c)/(${Variables:m_C160CPT1_km} + ${Variables:m_C160CPT1_conc} * m_crn_c * m_pmtcoa_c)
+R189: m_23dpg_c + m_h2o_c -> m_3pg_c + m_pi_c | (${Variables:m_DPGase_kcat} * ${Variables:m_DPGase_conc} * m_23dpg_c * m_h2o_c)/(${Variables:m_DPGase_km} + ${Variables:m_DPGase_conc} * m_23dpg_c * m_h2o_c)
+R190: m_coa_c + m_pmtcrn_c -> m_crn_c + m_pmtcoa_c | (${Variables:m_C160CPT2rbc_kcat} * ${Variables:m_C160CPT2rbc_conc} * m_coa_c * m_pmtcrn_c)/(${Variables:m_C160CPT2rbc_km} + ${Variables:m_C160CPT2rbc_conc} * m_coa_c * m_pmtcrn_c)
+R191: m_2pg_c -> m_h2o_c + m_pep_c | (${Variables:m_ENO_kcat} * ${Variables:m_ENO_conc} * m_2pg_c)/(${Variables:m_ENO_km} + ${Variables:m_ENO_conc} * m_2pg_c)
+R192: m_atp_c + m_glucys_c + m_gly_c -> m_adp_c + m_gthrd_c + m_h_c + m_pi_c | (${Variables:m_GTHS_kcat} * ${Variables:m_GTHS_conc} * m_atp_c * m_glucys_c * m_gly_c)/(${Variables:m_GTHS_km} + ${Variables:m_GTHS_conc} * m_atp_c * m_glucys_c * m_gly_c)
+R193: m_gtp_c -> m_35cgmp_c + m_ppi_c | (${Variables:m_GUACYC_kcat} * ${Variables:m_GUACYC_conc} * m_gtp_c)/(${Variables:m_GUACYC_km} + ${Variables:m_GUACYC_conc} * m_gtp_c)
+R194: m_gua_c + m_prpp_c -> m_gmp_c + m_ppi_c | (${Variables:m_GUAPRT_kcat} * ${Variables:m_GUAPRT_conc} * m_gua_c * m_prpp_c)/(${Variables:m_GUAPRT_km} + ${Variables:m_GUAPRT_conc} * m_gua_c * m_prpp_c)
+R195: m_etha_e -> m_etha_c | (${Variables:m_ETHAt_kcat} * ${Variables:m_ETHAt_conc} * m_etha_e)/(${Variables:m_ETHAt_km} + ${Variables:m_ETHAt_conc} * m_etha_e)
+R196: m_dkmpp_c + m_h2o_c -> m_dhmtp_c + m_pi_c | (${Variables:m_ENOPH_kcat} * ${Variables:m_ENOPH_conc} * m_dkmpp_c * m_h2o_c)/(${Variables:m_ENOPH_km} + ${Variables:m_ENOPH_conc} * m_dkmpp_c * m_h2o_c)
+R197: m_ethamp_c + m_h2o_c -> m_etha_c + m_pi_c | (${Variables:m_ETHP_kcat} * ${Variables:m_ETHP_conc} * m_ethamp_c * m_h2o_c)/(${Variables:m_ETHP_km} + ${Variables:m_ETHP_conc} * m_ethamp_c * m_h2o_c)
+R198: m_glcur_c + m_h_c + m_nadph_c -> m_guln__L_c + m_nadp_c | (${Variables:m_GULND_kcat} * ${Variables:m_GULND_conc} * m_glcur_c * m_h_c * m_nadph_c)/(${Variables:m_GULND_km} + ${Variables:m_GULND_conc} * m_glcur_c * m_h_c * m_nadph_c)
+R199: m_atp_c + m_gdp_c -> m_adp_c + m_gtp_c | (${Variables:m_NDPK1_kcat} * ${Variables:m_NDPK1_conc} * m_atp_c * m_gdp_c)/(${Variables:m_NDPK1_km} + ${Variables:m_NDPK1_conc} * m_atp_c * m_gdp_c)
+R200: m_atp_c + m_coa_c + m_hdca_c -> m_amp_c + m_pmtcoa_c + m_ppi_c | (${Variables:m_FACOAL160_kcat} * ${Variables:m_FACOAL160_conc} * m_atp_c * m_coa_c * m_hdca_c)/(${Variables:m_FACOAL160_km} + ${Variables:m_FACOAL160_conc} * m_atp_c * m_coa_c * m_hdca_c)
+R201: m_atp_c + m_coa_c + m_ocdcea_c -> m_amp_c + m_odecoa_c + m_ppi_c | (${Variables:m_FACOAL181_kcat} * ${Variables:m_FACOAL181_conc} * m_atp_c * m_coa_c * m_ocdcea_c)/(${Variables:m_FACOAL181_km} + ${Variables:m_FACOAL181_conc} * m_atp_c * m_coa_c * m_ocdcea_c)
+R202: m_atp_c + m_coa_c + m_lnlc_c -> m_amp_c + m_lnlccoa_c + m_ppi_c | (${Variables:m_FACOAL1821_kcat} * ${Variables:m_FACOAL1821_conc} * m_atp_c * m_coa_c * m_lnlc_c)/(${Variables:m_FACOAL1821_km} + ${Variables:m_FACOAL1821_conc} * m_atp_c * m_coa_c * m_lnlc_c)
+R203: m_h2o2_e -> m_h2o2_c | (${Variables:m_H2O2t_kcat} * ${Variables:m_H2O2t_conc} * m_h2o2_e)/(${Variables:m_H2O2t_km} + ${Variables:m_H2O2t_conc} * m_h2o2_e)
+R204: m_fad_c + m_h2o_c -> m_amp_c + m_fmn_c + m_h_c | (${Variables:m_FADDP_kcat} * ${Variables:m_FADDP_conc} * m_fad_c * m_h2o_c)/(${Variables:m_FADDP_km} + ${Variables:m_FADDP_conc} * m_fad_c * m_h2o_c)
+R205: m_atp_c + m_udp_c -> m_adp_c + m_utp_c | (${Variables:m_NDPK2_kcat} * ${Variables:m_NDPK2_conc} * m_atp_c * m_udp_c)/(${Variables:m_NDPK2_km} + ${Variables:m_NDPK2_conc} * m_atp_c * m_udp_c)
+R206: m_atp_c + m_cdp_c -> m_adp_c + m_ctp_c | (${Variables:m_NDPK3_kcat} * ${Variables:m_NDPK3_conc} * m_atp_c * m_cdp_c)/(${Variables:m_NDPK3_km} + ${Variables:m_NDPK3_conc} * m_atp_c * m_cdp_c)
+R207: m_h_e + m_nh4_c -> m_h_c + m_nh4_e | (${Variables:m_NH4t3r_kcat} * ${Variables:m_NH4t3r_conc} * m_h_e * m_nh4_c)/(${Variables:m_NH4t3r_km} + ${Variables:m_NH4t3r_conc} * m_h_e * m_nh4_c)
+R208: m_fdp_c -> m_dhap_c + m_g3p_c | (${Variables:m_FBA_kcat} * ${Variables:m_FBA_conc} * m_fdp_c)/(${Variables:m_FBA_km} + ${Variables:m_FBA_conc} * m_fdp_c)
+R209: m_f26bp_c + m_h2o_c -> m_f6p_c + m_pi_c | (${Variables:m_FBP26_kcat} * ${Variables:m_FBP26_conc} * m_f26bp_c * m_h2o_c)/(${Variables:m_FBP26_km} + ${Variables:m_FBP26_conc} * m_f26bp_c * m_h2o_c)
+R210: m_h2o_e -> m_h2o_c | (${Variables:m_H2Ot_kcat} * ${Variables:m_H2Ot_conc} * m_h2o_e)/(${Variables:m_H2Ot_km} + ${Variables:m_H2Ot_conc} * m_h2o_e)
+R211: m_co2_c + m_h2o_c -> m_h_c + m_hco3_c | (${Variables:m_HCO3E_kcat} * ${Variables:m_HCO3E_conc} * m_co2_c * m_h2o_c)/(${Variables:m_HCO3E_km} + ${Variables:m_HCO3E_conc} * m_co2_c * m_h2o_c)
+R212: m_atp_c + m_nicrns_c -> m_adp_c + m_h_c + m_nicrnt_c | (${Variables:m_NICRNS_kcat} * ${Variables:m_NICRNS_conc} * m_atp_c * m_nicrns_c)/(${Variables:m_NICRNS_km} + ${Variables:m_NICRNS_conc} * m_atp_c * m_nicrns_c)
+R213: m_cl_c + m_hco3_e -> m_cl_e + m_hco3_c | (${Variables:m_HCO3_CLt_kcat} * ${Variables:m_HCO3_CLt_conc} * m_cl_c * m_hco3_e)/(${Variables:m_HCO3_CLt_km} + ${Variables:m_HCO3_CLt_conc} * m_cl_c * m_hco3_e)
+R214: m_hcys__L_e -> m_hcys__L_c | (${Variables:m_HCYSte_kcat} * ${Variables:m_HCYSte_conc} * m_hcys__L_e)/(${Variables:m_HCYSte_km} + ${Variables:m_HCYSte_conc} * m_hcys__L_e)
+R215: m_hdca_e -> m_hdca_c | (${Variables:m_HDCAt_kcat} * ${Variables:m_HDCAt_conc} * m_hdca_e)/(${Variables:m_HDCAt_km} + ${Variables:m_HDCAt_conc} * m_hdca_e)
+R216: m_fe2_c + m_ppp9_c -> m_h_c + m_pheme_c | (${Variables:m_FCLT_kcat} * ${Variables:m_FCLT_conc} * m_fe2_c * m_ppp9_c)/(${Variables:m_FCLT_km} + ${Variables:m_FCLT_conc} * m_fe2_c * m_ppp9_c)
+R217: m_fe2_e -> m_fe2_c | (${Variables:m_FE2t_kcat} * ${Variables:m_FE2t_conc} * m_fe2_e)/(${Variables:m_FE2t_km} + ${Variables:m_FE2t_conc} * m_fe2_e)
+R218: m_atp_c + m_fmn_c + m_h_c -> m_fad_c + m_ppi_c | (${Variables:m_FMNAT_kcat} * ${Variables:m_FMNAT_conc} * m_atp_c * m_fmn_c * m_h_c)/(${Variables:m_FMNAT_km} + ${Variables:m_FMNAT_conc} * m_atp_c * m_fmn_c * m_h_c)
+R219: m_atp_c + m_glc__D_c -> m_adp_c + m_g6p_c + m_h_c | (${Variables:m_HEX1_kcat} * ${Variables:m_HEX1_conc} * m_atp_c * m_glc__D_c)/(${Variables:m_HEX1_km} + ${Variables:m_HEX1_conc} * m_atp_c * m_glc__D_c)
+R220: m_atp_c + m_h_c + m_nmn_c -> m_nad_c + m_ppi_c | (${Variables:m_NMNAT_kcat} * ${Variables:m_NMNAT_conc} * m_atp_c * m_h_c * m_nmn_c)/(${Variables:m_NMNAT_km} + ${Variables:m_NMNAT_conc} * m_atp_c * m_h_c * m_nmn_c)
+R221: m_atp_c + m_gam_c -> m_adp_c + m_gam6p_c + m_h_c | (${Variables:m_HEX10_kcat} * ${Variables:m_HEX10_conc} * m_atp_c * m_gam_c)/(${Variables:m_HEX10_km} + ${Variables:m_HEX10_conc} * m_atp_c * m_gam_c)
+R222: m_atp_c + m_man_c -> m_adp_c + m_h_c + m_man6p_c | (${Variables:m_HEX4_kcat} * ${Variables:m_HEX4_conc} * m_atp_c * m_man_c)/(${Variables:m_HEX4_km} + ${Variables:m_HEX4_conc} * m_atp_c * m_man_c)
+R223: m_atp_c + m_fru_c -> m_adp_c + m_f6p_c + m_h_c | (${Variables:m_HEX7_kcat} * ${Variables:m_HEX7_conc} * m_atp_c * m_fru_c)/(${Variables:m_HEX7_km} + ${Variables:m_HEX7_conc} * m_atp_c * m_fru_c)
+R224: m_h2o_c + m_ppbng_c -> m_hmbil_c + m_nh4_c | (${Variables:m_HMBS_kcat} * ${Variables:m_HMBS_conc} * m_h2o_c * m_ppbng_c)/(${Variables:m_HMBS_km} + ${Variables:m_HMBS_conc} * m_h2o_c * m_ppbng_c)
+R225: m_fru_e -> m_fru_c | (${Variables:m_FRUt1r_kcat} * ${Variables:m_FRUt1r_conc} * m_fru_e)/(${Variables:m_FRUt1r_km} + ${Variables:m_FRUt1r_conc} * m_fru_e)
+R226: m_fum_c + m_h2o_c -> m_mal__L_c | (${Variables:m_FUM_kcat} * ${Variables:m_FUM_conc} * m_fum_c * m_h2o_c)/(${Variables:m_FUM_km} + ${Variables:m_FUM_conc} * m_fum_c * m_h2o_c)
+R227: m_fum_e -> m_fum_c | (${Variables:m_FUMtr_kcat} * ${Variables:m_FUMtr_conc} * m_fum_e)/(${Variables:m_FUMtr_km} + ${Variables:m_FUMtr_conc} * m_fum_e)
+R228: m_atp_c + m_h_c + m_nicrnt_c -> m_dnad_c + m_ppi_c | (${Variables:m_NNATr_kcat} * ${Variables:m_NNATr_conc} * m_atp_c * m_h_c * m_nicrnt_c)/(${Variables:m_NNATr_km} + ${Variables:m_NNATr_conc} * m_atp_c * m_h_c * m_nicrnt_c)
+R229: m_gam6p_c + m_h2o_c -> m_f6p_c + m_nh4_c | (${Variables:m_G6PDA_kcat} * ${Variables:m_G6PDA_conc} * m_gam6p_c * m_h2o_c)/(${Variables:m_G6PDA_km} + ${Variables:m_G6PDA_conc} * m_gam6p_c * m_h2o_c)
+R230: m_g6p_c + m_nadp_c -> m_6pgl_c + m_h_c + m_nadph_c | (${Variables:m_G6PDH2r_kcat} * ${Variables:m_G6PDH2r_conc} * m_g6p_c * m_nadp_c)/(${Variables:m_G6PDH2r_km} + ${Variables:m_G6PDH2r_conc} * m_g6p_c * m_nadp_c)
+R231: m_atp_c + m_gal_c -> m_adp_c + m_gal1p_c + m_h_c | (${Variables:m_GALKr_kcat} * ${Variables:m_GALKr_conc} * m_atp_c * m_gal_c)/(${Variables:m_GALKr_km} + ${Variables:m_GALKr_conc} * m_atp_c * m_gal_c)
+R232: m_h_c + m_nadph_c + m_o2_c + m_pheme_c -> m_biliverd_c + m_co_c + m_fe2_c + m_h2o_c + m_nadp_c | (${Variables:m_HOXG_kcat} * ${Variables:m_HOXG_conc} * m_h_c * m_nadph_c * m_o2_c * m_pheme_c)/(${Variables:m_HOXG_km} + ${Variables:m_HOXG_conc} * m_h_c * m_nadph_c * m_o2_c * m_pheme_c)
+R233: m_hxan_c + m_prpp_c -> m_imp_c + m_ppi_c | (${Variables:m_HXPRT_kcat} * ${Variables:m_HXPRT_conc} * m_hxan_c * m_prpp_c)/(${Variables:m_HXPRT_km} + ${Variables:m_HXPRT_conc} * m_hxan_c * m_prpp_c)
+R234: m_atp_c + m_h2o_c + m_normete__L_c -> m_adp_c + m_h_c + m_normete__L_e + m_pi_c | (${Variables:m_NORMETEVESSte_kcat} * ${Variables:m_NORMETEVESSte_conc} * m_atp_c * m_h2o_c * m_normete__L_c)/(${Variables:m_NORMETEVESSte_km} + ${Variables:m_NORMETEVESSte_conc} * m_atp_c * m_h2o_c * m_normete__L_c)
+R235: m_h_c + m_nac_c + m_r1p_c -> m_nicrns_c + m_pi_c | (${Variables:m_NP1_kcat} * ${Variables:m_NP1_conc} * m_h_c * m_nac_c * m_r1p_c)/(${Variables:m_NP1_km} + ${Variables:m_NP1_conc} * m_h_c * m_nac_c * m_r1p_c)
+R236: m_gal_c + m_h_c + m_nadph_c -> m_galt_c + m_nadp_c | (${Variables:m_GALOR_kcat} * ${Variables:m_GALOR_conc} * m_gal_c * m_h_c * m_nadph_c)/(${Variables:m_GALOR_km} + ${Variables:m_GALOR_conc} * m_gal_c * m_h_c * m_nadph_c)
+R237: m_gal1p_c + m_h_c + m_utp_c -> m_ppi_c + m_udpgal_c | (${Variables:m_GALT_kcat} * ${Variables:m_GALT_conc} * m_gal1p_c * m_h_c * m_utp_c)/(${Variables:m_GALT_km} + ${Variables:m_GALT_conc} * m_gal1p_c * m_h_c * m_utp_c)
+R238: m_hxan_e -> m_hxan_c | (${Variables:m_HYXNt_kcat} * ${Variables:m_HYXNt_conc} * m_hxan_e)/(${Variables:m_HYXNt_km} + ${Variables:m_HYXNt_conc} * m_hxan_e)
+R239: m_nrpphr_e -> m_nrpphr_c | (${Variables:m_NRPPHRtu_kcat} * ${Variables:m_NRPPHRtu_conc} * m_nrpphr_e)/(${Variables:m_NRPPHRtu_km} + ${Variables:m_NRPPHRtu_conc} * m_nrpphr_e)
+R240: m_g1p_c + m_h_c + m_utp_c -> m_ppi_c + m_udpg_c | (${Variables:m_GALUi_kcat} * ${Variables:m_GALUi_conc} * m_g1p_c * m_h_c * m_utp_c)/(${Variables:m_GALUi_km} + ${Variables:m_GALUi_conc} * m_g1p_c * m_h_c * m_utp_c)
+R241: m_gal_e -> m_gal_c | (${Variables:m_GALt1r_kcat} * ${Variables:m_GALt1r_conc} * m_gal_e)/(${Variables:m_GALt1r_km} + ${Variables:m_GALt1r_conc} * m_gal_e)
+R242: m_h2o_c + m_nicrnt_c -> m_nicrns_c + m_pi_c | (${Variables:m_NT5C_kcat} * ${Variables:m_NT5C_conc} * m_h2o_c * m_nicrnt_c)/(${Variables:m_NT5C_km} + ${Variables:m_NT5C_conc} * m_h2o_c * m_nicrnt_c)
+R243: m_h_e -> m_h_c | (${Variables:m_Ht_kcat} * ${Variables:m_Ht_conc} * m_h_e)/(${Variables:m_Ht_km} + ${Variables:m_Ht_conc} * m_h_e)
+R244: m_gam_e -> m_gam_c | (${Variables:m_GAMt1r_kcat} * ${Variables:m_GAMt1r_conc} * m_gam_e)/(${Variables:m_GAMt1r_km} + ${Variables:m_GAMt1r_conc} * m_gam_e)
+R245: m_icit_c + m_nadp_c -> m_akg_c + m_co2_c + m_nadph_c | (${Variables:m_ICDHyr_kcat} * ${Variables:m_ICDHyr_conc} * m_icit_c * m_nadp_c)/(${Variables:m_ICDHyr_km} + ${Variables:m_ICDHyr_conc} * m_icit_c * m_nadp_c)
+R246: m_h2o_c + m_imp_c -> m_ins_c + m_pi_c | (${Variables:m_NTD11_kcat} * ${Variables:m_NTD11_conc} * m_h2o_c * m_imp_c)/(${Variables:m_NTD11_km} + ${Variables:m_NTD11_conc} * m_h2o_c * m_imp_c)
+R247: m_h2o_c + m_imp_c + m_nad_c -> m_h_c + m_nadh_c + m_xmp_c | (${Variables:m_IMPD_kcat} * ${Variables:m_IMPD_conc} * m_h2o_c * m_imp_c * m_nad_c)/(${Variables:m_IMPD_km} + ${Variables:m_IMPD_conc} * m_h2o_c * m_imp_c * m_nad_c)
+R248: m_g3p_c + m_nad_c + m_pi_c -> m_13dpg_c + m_h_c + m_nadh_c | (${Variables:m_GAPD_kcat} * ${Variables:m_GAPD_conc} * m_g3p_c * m_nad_c * m_pi_c)/(${Variables:m_GAPD_km} + ${Variables:m_GAPD_conc} * m_g3p_c * m_nad_c * m_pi_c)
+R249: m_h2o_c + m_ump_c -> m_pi_c + m_uri_c | (${Variables:m_NTD2_kcat} * ${Variables:m_NTD2_conc} * m_h2o_c * m_ump_c)/(${Variables:m_NTD2_km} + ${Variables:m_NTD2_conc} * m_h2o_c * m_ump_c)
+R250: m_h2o_c + m_nmn_c -> m_pi_c + m_rnam_c | (${Variables:m_NMNHYD_kcat} * ${Variables:m_NMNHYD_conc} * m_h2o_c * m_nmn_c)/(${Variables:m_NMNHYD_km} + ${Variables:m_NMNHYD_conc} * m_h2o_c * m_nmn_c)
+R251: m_gluala_e -> m_5oxpro_c + m_ala__L_c | (${Variables:m_GGLUCT_kcat} * ${Variables:m_GGLUCT_conc} * m_gluala_e)/(${Variables:m_GGLUCT_km} + ${Variables:m_GGLUCT_conc} * m_gluala_e)
+R252: m_atp_c + m_gmp_c -> m_adp_c + m_gdp_c | (${Variables:m_GK1_kcat} * ${Variables:m_GK1_conc} * m_atp_c * m_gmp_c)/(${Variables:m_GK1_km} + ${Variables:m_GK1_conc} * m_atp_c * m_gmp_c)
+R253: m_glc__D_e -> m_glc__D_c | (${Variables:m_GLCt1_kcat} * ${Variables:m_GLCt1_conc} * m_glc__D_e)/(${Variables:m_GLCt1_km} + ${Variables:m_GLCt1_conc} * m_glc__D_e)
+R254: m_ins_e -> m_ins_c | (${Variables:m_INSt_kcat} * ${Variables:m_INSt_conc} * m_ins_e)/(${Variables:m_INSt_km} + ${Variables:m_INSt_conc} * m_ins_e)
+R255: m_cl_e + m_k_e -> m_cl_c + m_k_c | (${Variables:m_KCCt_kcat} * ${Variables:m_KCCt_conc} * m_cl_e * m_k_e)/(${Variables:m_KCCt_km} + ${Variables:m_KCCt_conc} * m_cl_e * m_k_e)
+R256: m_h_e + m_lac__L_e -> m_h_c + m_lac__L_c | (${Variables:m_L_LACt2r_kcat} * ${Variables:m_L_LACt2r_conc} * m_h_e * m_lac__L_e)/(${Variables:m_L_LACt2r_km} + ${Variables:m_L_LACt2r_conc} * m_h_e * m_lac__L_e)
+R257: m_atp_c + m_glu__L_c + m_nh4_c -> m_adp_c + m_gln__L_c + m_h_c + m_pi_c | (${Variables:m_GLNS_kcat} * ${Variables:m_GLNS_conc} * m_atp_c * m_glu__L_c * m_nh4_c)/(${Variables:m_GLNS_km} + ${Variables:m_GLNS_conc} * m_atp_c * m_glu__L_c * m_nh4_c)
+R258: m_gln__L_e + m_na1_e -> m_gln__L_c + m_na1_c | (${Variables:m_GLNt4_kcat} * ${Variables:m_GLNt4_conc} * m_gln__L_e * m_na1_e)/(${Variables:m_GLNt4_km} + ${Variables:m_GLNt4_conc} * m_gln__L_e * m_na1_e)
+R259: m_lac__L_c + m_nad_c -> m_h_c + m_nadh_c + m_pyr_c | (${Variables:m_LDH_L_kcat} * ${Variables:m_LDH_L_conc} * m_lac__L_c * m_nad_c)/(${Variables:m_LDH_L_km} + ${Variables:m_LDH_L_conc} * m_lac__L_c * m_nad_c)
+R260: m_atp_c + m_cys__L_c + m_glu__L_c -> m_adp_c + m_glucys_c + m_h_c + m_pi_c | (${Variables:m_GLUCYS_kcat} * ${Variables:m_GLUCYS_conc} * m_atp_c * m_cys__L_c * m_glu__L_c)/(${Variables:m_GLUCYS_km} + ${Variables:m_GLUCYS_conc} * m_atp_c * m_cys__L_c * m_glu__L_c)
+R261: m_amp_c + m_h2o_c -> m_adn_c + m_pi_c | (${Variables:m_NTD7_kcat} * ${Variables:m_NTD7_conc} * m_amp_c * m_h2o_c)/(${Variables:m_NTD7_km} + ${Variables:m_NTD7_conc} * m_amp_c * m_h2o_c)
+R262: m_glyc_c -> m_glyc_e | (${Variables:m_GLYCt_kcat} * ${Variables:m_GLYCt_conc} * m_glyc_c)/(${Variables:m_GLYCt_km} + ${Variables:m_GLYCt_conc} * m_glyc_c)
+R263: m_atp_c + m_glyc_c -> m_adp_c + m_glyc3p_c + m_h_c | (${Variables:m_GLYK_kcat} * ${Variables:m_GLYK_conc} * m_atp_c * m_glyc_c)/(${Variables:m_GLYK_km} + ${Variables:m_GLYK_conc} * m_atp_c * m_glyc_c)
+R264: m_leuktrA4_e -> m_leuktrA4_c | (${Variables:m_LEUKTRA4t_kcat} * ${Variables:m_LEUKTRA4t_conc} * m_leuktrA4_e)/(${Variables:m_LEUKTRA4t_km} + ${Variables:m_LEUKTRA4t_conc} * m_leuktrA4_e)
+R265: m_leuktrB4_e -> m_leuktrB4_c | (${Variables:m_LEUKTRB4t_kcat} * ${Variables:m_LEUKTRB4t_conc} * m_leuktrB4_e)/(${Variables:m_LEUKTRB4t_km} + ${Variables:m_LEUKTRB4t_conc} * m_leuktrB4_e)
+R266: m_gthrd_c + m_mthgxl_c -> m_lgt__S_c | (${Variables:m_LGTHL_kcat} * ${Variables:m_LGTHL_conc} * m_gthrd_c * m_mthgxl_c)/(${Variables:m_LGTHL_km} + ${Variables:m_LGTHL_conc} * m_gthrd_c * m_mthgxl_c)
+R267: m_h2o_c + m_lgt__S_c -> m_gthrd_c + m_h_c + m_lac__D_c | (${Variables:m_GLYOX_kcat} * ${Variables:m_GLYOX_conc} * m_h2o_c * m_lgt__S_c)/(${Variables:m_GLYOX_km} + ${Variables:m_GLYOX_conc} * m_h2o_c * m_lgt__S_c)
+R268: m_gmp_c + m_h2o_c -> m_gsn_c + m_pi_c | (${Variables:m_NTD9_kcat} * ${Variables:m_NTD9_conc} * m_gmp_c * m_h2o_c)/(${Variables:m_NTD9_km} + ${Variables:m_NTD9_conc} * m_gmp_c * m_h2o_c)
+R269: m_crn_c + m_lnlccoa_c -> m_coa_c + m_lnlccrn_c | (${Variables:m_LNLCCPT1_kcat} * ${Variables:m_LNLCCPT1_conc} * m_crn_c * m_lnlccoa_c)/(${Variables:m_LNLCCPT1_km} + ${Variables:m_LNLCCPT1_conc} * m_crn_c * m_lnlccoa_c)
+R270: m_cl_e + m_gly_e + m_na1_e -> m_cl_c + m_gly_c + m_na1_c | (${Variables:m_GLYt7_211_r_kcat} * ${Variables:m_GLYt7_211_r_conc} * m_cl_e * m_gly_e * m_na1_e)/(${Variables:m_GLYt7_211_r_km} + ${Variables:m_GLYt7_211_r_conc} * m_cl_e * m_gly_e * m_na1_e)
+R271: m_coa_c + m_lnlccrn_c -> m_crn_c + m_lnlccoa_c | (${Variables:m_LNLCCPT2rbc_kcat} * ${Variables:m_LNLCCPT2rbc_conc} * m_coa_c * m_lnlccrn_c)/(${Variables:m_LNLCCPT2rbc_km} + ${Variables:m_LNLCCPT2rbc_conc} * m_coa_c * m_lnlccrn_c)
+R272: m_atp_c + m_h2o_c + m_k_e + m_na1_c -> m_adp_c + m_h_c + m_k_c + m_na1_e + m_pi_c | (${Variables:m_NaKt_kcat} * ${Variables:m_NaKt_conc} * m_atp_c * m_h2o_c * m_k_e * m_na1_c)/(${Variables:m_NaKt_km} + ${Variables:m_NaKt_conc} * m_atp_c * m_h2o_c * m_k_e * m_na1_c)
+R273: m_lnlc_e -> m_lnlc_c | (${Variables:m_LNLCt_kcat} * ${Variables:m_LNLCt_conc} * m_lnlc_e)/(${Variables:m_LNLCt_km} + ${Variables:m_LNLCt_conc} * m_lnlc_e)
+R274: m_gmp_c + m_h_c + m_nadph_c -> m_imp_c + m_nadp_c + m_nh4_c | (${Variables:m_GMPR_kcat} * ${Variables:m_GMPR_conc} * m_gmp_c * m_h_c * m_nadph_c)/(${Variables:m_GMPR_km} + ${Variables:m_GMPR_conc} * m_gmp_c * m_h_c * m_nadph_c)
+R275: m_o2_e -> m_o2_c | (${Variables:m_O2t_kcat} * ${Variables:m_O2t_conc} * m_o2_e)/(${Variables:m_O2t_km} + ${Variables:m_O2t_conc} * m_o2_e)
+R276: m_atp_c + m_gln__L_c + m_h2o_c + m_xmp_c -> m_amp_c + m_glu__L_c + m_gmp_c + m_h_c + m_ppi_c | (${Variables:m_GMPS2_kcat} * ${Variables:m_GMPS2_conc} * m_atp_c * m_gln__L_c * m_h2o_c * m_xmp_c)/(${Variables:m_GMPS2_km} + ${Variables:m_GMPS2_conc} * m_atp_c * m_gln__L_c * m_h2o_c * m_xmp_c)
+R277: m_6pgc_c + m_nadp_c -> m_co2_c + m_nadph_c + m_ru5p__D_c | (${Variables:m_GND_kcat} * ${Variables:m_GND_conc} * m_6pgc_c * m_nadp_c)/(${Variables:m_GND_km} + ${Variables:m_GND_conc} * m_6pgc_c * m_nadp_c)
+R278: m_h2o_c + m_leuktrA4_c -> m_leuktrB4_c | (${Variables:m_LTA4H_kcat} * ${Variables:m_LTA4H_conc} * m_h2o_c * m_leuktrA4_c)/(${Variables:m_LTA4H_km} + ${Variables:m_LTA4H_conc} * m_h2o_c * m_leuktrA4_c)
+R279: m_mal__L_e -> m_mal__L_c | (${Variables:m_MALt_kcat} * ${Variables:m_MALt_conc} * m_mal__L_e)/(${Variables:m_MALt_km} + ${Variables:m_MALt_conc} * m_mal__L_e)
+R280: m_glyc3p_c + m_pmtcoa_c -> m_alpa_hs_16_0_c + m_coa_c | (${Variables:m_GPAM_hs_16_1_kcat} * ${Variables:m_GPAM_hs_16_1_conc} * m_glyc3p_c * m_pmtcoa_c)/(${Variables:m_GPAM_hs_16_1_km} + ${Variables:m_GPAM_hs_16_1_conc} * m_glyc3p_c * m_pmtcoa_c)
+R281: m_ocdcea_e -> m_ocdcea_c | (${Variables:m_OCDCEAt_kcat} * ${Variables:m_OCDCEAt_conc} * m_ocdcea_e)/(${Variables:m_OCDCEAt_km} + ${Variables:m_OCDCEAt_conc} * m_ocdcea_e)
+R282: m_glyc3p_c + m_odecoa_c -> m_alpa_hs_18_1_c + m_coa_c | (${Variables:m_GPAM_hs_18_3_kcat} * ${Variables:m_GPAM_hs_18_3_conc} * m_glyc3p_c * m_odecoa_c)/(${Variables:m_GPAM_hs_18_3_km} + ${Variables:m_GPAM_hs_18_3_conc} * m_glyc3p_c * m_odecoa_c)
+R283: m_man6p_c -> m_f6p_c | (${Variables:m_MAN6PI_kcat} * ${Variables:m_MAN6PI_conc} * m_man6p_c)/(${Variables:m_MAN6PI_km} + ${Variables:m_MAN6PI_conc} * m_man6p_c)
+R284: m_man_e -> m_man_c | (${Variables:m_MANt1r_kcat} * ${Variables:m_MANt1r_conc} * m_man_e)/(${Variables:m_MANt1r_km} + ${Variables:m_MANt1r_conc} * m_man_e)
+R285: m_glyc3p_c + m_lnlccoa_c -> m_alpa_hs_18_2_c + m_coa_c | (${Variables:m_GPAM_hs_18_4_kcat} * ${Variables:m_GPAM_hs_18_4_conc} * m_glyc3p_c * m_lnlccoa_c)/(${Variables:m_GPAM_hs_18_4_km} + ${Variables:m_GPAM_hs_18_4_conc} * m_glyc3p_c * m_lnlccoa_c)
+R286: m_h_c + m_orot5p_c -> m_co2_c + m_ump_c | (${Variables:m_OMPDC_kcat} * ${Variables:m_OMPDC_conc} * m_h_c * m_orot5p_c)/(${Variables:m_OMPDC_km} + ${Variables:m_OMPDC_conc} * m_h_c * m_orot5p_c)
+R287: m_g3pc_c + m_h2o_c -> m_chol_c + m_glyc3p_c + m_h_c | (${Variables:m_GPDDA1_kcat} * ${Variables:m_GPDDA1_conc} * m_g3pc_c * m_h2o_c)/(${Variables:m_GPDDA1_km} + ${Variables:m_GPDDA1_conc} * m_g3pc_c * m_h2o_c)
+R288: m_dhdascb_c + m_gthrd_c -> m_ascb__L_c + m_gthox_c | (${Variables:m_GTHDH_kcat} * ${Variables:m_GTHDH_conc} * m_dhdascb_c * m_gthrd_c)/(${Variables:m_GTHDH_km} + ${Variables:m_GTHDH_conc} * m_dhdascb_c * m_gthrd_c)
+R289: m_mal__L_c + m_nad_c -> m_h_c + m_nadh_c + m_oaa_c | (${Variables:m_MDH_kcat} * ${Variables:m_MDH_conc} * m_mal__L_c * m_nad_c)/(${Variables:m_MDH_km} + ${Variables:m_MDH_conc} * m_mal__L_c * m_nad_c)
+R290: m_5oxpro_c + m_atp_c + m_h2o_c -> m_adp_c + m_glu__L_c + m_h_c + m_pi_c | (${Variables:m_OPAH_kcat} * ${Variables:m_OPAH_conc} * m_5oxpro_c * m_atp_c * m_h2o_c)/(${Variables:m_OPAH_km} + ${Variables:m_OPAH_conc} * m_5oxpro_c * m_atp_c * m_h2o_c)
+R291: m_gthox_c + m_h_c + m_nadph_c -> m_gthrd_c + m_nadp_c | (${Variables:m_GTHOr_kcat} * ${Variables:m_GTHOr_conc} * m_gthox_c * m_h_c * m_nadph_c)/(${Variables:m_GTHOr_km} + ${Variables:m_GTHOr_conc} * m_gthox_c * m_h_c * m_nadph_c)
+R292: m_atp_c + m_gthox_c + m_h2o_c -> m_adp_c + m_gthox_e + m_h_c + m_pi_c | (${Variables:m_GTHOXti2_kcat} * ${Variables:m_GTHOXti2_conc} * m_atp_c * m_gthox_c * m_h2o_c)/(${Variables:m_GTHOXti2_km} + ${Variables:m_GTHOXti2_conc} * m_atp_c * m_gthox_c * m_h2o_c)
+R293: m_gthrd_c + m_h2o2_c -> m_gthox_c + m_h2o_c | (${Variables:m_GTHPi_kcat} * ${Variables:m_GTHPi_conc} * m_gthrd_c * m_h2o2_c)/(${Variables:m_GTHPi_km} + ${Variables:m_GTHPi_conc} * m_gthrd_c * m_h2o2_c)
+R294: m_5mdru1p_c -> m_dkmpp_c + m_h2o_c | (${Variables:m_MDRPD_kcat} * ${Variables:m_MDRPD_conc} * m_5mdru1p_c)/(${Variables:m_MDRPD_km} + ${Variables:m_MDRPD_conc} * m_5mdru1p_c)
+R295: m_mal__L_c + m_nadp_c -> m_co2_c + m_nadph_c + m_pyr_c | (${Variables:m_ME2_kcat} * ${Variables:m_ME2_conc} * m_mal__L_c * m_nadp_c)/(${Variables:m_ME2_km} + ${Variables:m_ME2_conc} * m_mal__L_c * m_nadp_c)
+R296: m_h_c + m_orn_c -> m_co2_c + m_ptrc_c | (${Variables:m_ORNDC_kcat} * ${Variables:m_ORNDC_conc} * m_h_c * m_orn_c)/(${Variables:m_ORNDC_km} + ${Variables:m_ORNDC_conc} * m_h_c * m_orn_c)
+R297: m_atp_c + m_h2o_c + m_mepi_c -> m_adp_c + m_h_c + m_mepi_e + m_pi_c | (${Variables:m_MEPIVESSte_kcat} * ${Variables:m_MEPIVESSte_conc} * m_atp_c * m_h2o_c * m_mepi_c)/(${Variables:m_MEPIVESSte_km} + ${Variables:m_MEPIVESSte_conc} * m_atp_c * m_h2o_c * m_mepi_c)
+R298: m_atp_c + m_h2o_c + m_met__L_c -> m_amet_c + m_pi_c + m_ppi_c | (${Variables:m_METAT_kcat} * ${Variables:m_METAT_conc} * m_atp_c * m_h2o_c * m_met__L_c)/(${Variables:m_METAT_km} + ${Variables:m_METAT_conc} * m_atp_c * m_h2o_c * m_met__L_c)
+R299: m_h_e + m_orot_e -> m_h_c + m_orot_c | (${Variables:m_OROATP_kcat} * ${Variables:m_OROATP_conc} * m_h_e * m_orot_e)/(${Variables:m_OROATP_km} + ${Variables:m_OROATP_conc} * m_h_e * m_orot_e)
+R300: m_met__L_e -> m_met__L_c | (${Variables:m_METtec_kcat} * ${Variables:m_METtec_conc} * m_met__L_e)/(${Variables:m_METtec_km} + ${Variables:m_METtec_conc} * m_met__L_e)
+R301: m_orot5p_c + m_ppi_c -> m_orot_c + m_prpp_c | (${Variables:m_ORPT_kcat} * ${Variables:m_ORPT_conc} * m_orot5p_c * m_ppi_c)/(${Variables:m_ORPT_km} + ${Variables:m_ORPT_conc} * m_orot5p_c * m_ppi_c)
+R302: m_dhap_c -> m_mthgxl_c + m_pi_c | (${Variables:m_MGSA_kcat} * ${Variables:m_MGSA_conc} * m_dhap_c)/(${Variables:m_MGSA_km} + ${Variables:m_MGSA_conc} * m_dhap_c)
+R303: m_o2_c + m_pdx5p_c -> m_h2o2_c + m_pydx5p_c | (${Variables:m_PDX5POi_kcat} * ${Variables:m_PDX5POi_conc} * m_o2_c * m_pdx5p_c)/(${Variables:m_PDX5POi_km} + ${Variables:m_PDX5POi_conc} * m_o2_c * m_pdx5p_c)
+R304: m_h2o_c + m_pdx5p_c -> m_pi_c + m_pydxn_c | (${Variables:m_PDXPP_kcat} * ${Variables:m_PDXPP_conc} * m_h2o_c * m_pdx5p_c)/(${Variables:m_PDXPP_km} + ${Variables:m_PDXPP_conc} * m_h2o_c * m_pdx5p_c)
+R305: m_h2o_c + m_mi1345p_c -> m_mi134p_c + m_pi_c | (${Variables:m_MI1345PP_kcat} * ${Variables:m_MI1345PP_conc} * m_h2o_c * m_mi1345p_c)/(${Variables:m_MI1345PP_km} + ${Variables:m_MI1345PP_conc} * m_h2o_c * m_mi1345p_c)
+R306: m_atp_c + m_mi145p_c -> m_adp_c + m_h_c + m_mi1345p_c | (${Variables:m_MI145PK_kcat} * ${Variables:m_MI145PK_conc} * m_atp_c * m_mi145p_c)/(${Variables:m_MI145PK_km} + ${Variables:m_MI145PK_conc} * m_atp_c * m_mi145p_c)
+R307: m_h2o_c + m_mi145p_c -> m_mi14p_c + m_pi_c | (${Variables:m_MI145PP_kcat} * ${Variables:m_MI145PP_conc} * m_h2o_c * m_mi145p_c)/(${Variables:m_MI145PP_km} + ${Variables:m_MI145PP_conc} * m_h2o_c * m_mi145p_c)
+R308: m_h2o_c + m_mi1p__D_c -> m_inost_c + m_pi_c | (${Variables:m_MI1PP_kcat} * ${Variables:m_MI1PP_conc} * m_h2o_c * m_mi1p__D_c)/(${Variables:m_MI1PP_km} + ${Variables:m_MI1PP_conc} * m_h2o_c * m_mi1p__D_c)
+R309: m_atp_c + m_pail4p_hs_16_0_18_2_c -> m_adp_c + m_h_c + m_pail45p_hs_16_0_18_2_c | (${Variables:m_PI4P5K_16_0_18_4_kcat} * ${Variables:m_PI4P5K_16_0_18_4_conc} * m_atp_c * m_pail4p_hs_16_0_18_2_c)/(${Variables:m_PI4P5K_16_0_18_4_km} + ${Variables:m_PI4P5K_16_0_18_4_conc} * m_atp_c * m_pail4p_hs_16_0_18_2_c)
+R310: m_atp_c + m_pail4p_hs_18_1_18_1_c -> m_adp_c + m_h_c + m_pail45p_hs_18_1_18_1_c | (${Variables:m_PI4P5K_18_1_18_3_kcat} * ${Variables:m_PI4P5K_18_1_18_3_conc} * m_atp_c * m_pail4p_hs_18_1_18_1_c)/(${Variables:m_PI4P5K_18_1_18_3_km} + ${Variables:m_PI4P5K_18_1_18_3_conc} * m_atp_c * m_pail4p_hs_18_1_18_1_c)
+R311: m_atp_c + m_pail4p_hs_18_1_18_2_c -> m_adp_c + m_h_c + m_pail45p_hs_18_1_18_2_c | (${Variables:m_PI4P5K_18_1_18_4_kcat} * ${Variables:m_PI4P5K_18_1_18_4_conc} * m_atp_c * m_pail4p_hs_18_1_18_2_c)/(${Variables:m_PI4P5K_18_1_18_4_km} + ${Variables:m_PI4P5K_18_1_18_4_conc} * m_atp_c * m_pail4p_hs_18_1_18_2_c)
+R312: m_ctp_c + m_ethamp_c + m_h_c -> m_cdpea_c + m_ppi_c | (${Variables:m_PETHCT_kcat} * ${Variables:m_PETHCT_conc} * m_ctp_c * m_ethamp_c * m_h_c)/(${Variables:m_PETHCT_km} + ${Variables:m_PETHCT_conc} * m_ctp_c * m_ethamp_c * m_h_c)
+R313: m_atp_c + m_pail4p_hs_18_2_16_0_c -> m_adp_c + m_h_c + m_pail45p_hs_18_2_16_0_c | (${Variables:m_PI4P5K_18_2_16_0_kcat} * ${Variables:m_PI4P5K_18_2_16_0_conc} * m_atp_c * m_pail4p_hs_18_2_16_0_c)/(${Variables:m_PI4P5K_18_2_16_0_km} + ${Variables:m_PI4P5K_18_2_16_0_conc} * m_atp_c * m_pail4p_hs_18_2_16_0_c)
+R314: m_g6p_c -> m_mi1p__D_c | (${Variables:m_MI1PS_kcat} * ${Variables:m_MI1PS_conc} * m_g6p_c)/(${Variables:m_MI1PS_km} + ${Variables:m_MI1PS_conc} * m_g6p_c)
+R315: m_5mta_c + m_pi_c -> m_5mdr1p_c + m_ade_c | (${Variables:m_MTAP_kcat} * ${Variables:m_MTAP_conc} * m_5mta_c * m_pi_c)/(${Variables:m_MTAP_km} + ${Variables:m_MTAP_conc} * m_5mta_c * m_pi_c)
+R316: m_atp_c + m_pail4p_hs_18_2_18_1_c -> m_adp_c + m_h_c + m_pail45p_hs_18_2_18_1_c | (${Variables:m_PI4P5K_18_2_18_1_kcat} * ${Variables:m_PI4P5K_18_2_18_1_conc} * m_atp_c * m_pail4p_hs_18_2_18_1_c)/(${Variables:m_PI4P5K_18_2_18_1_km} + ${Variables:m_PI4P5K_18_2_18_1_conc} * m_atp_c * m_pail4p_hs_18_2_18_1_c)
+R317: m_5mdr1p_c -> m_5mdru1p_c | (${Variables:m_MTRI_kcat} * ${Variables:m_MTRI_conc} * m_5mdr1p_c)/(${Variables:m_MTRI_km} + ${Variables:m_MTRI_conc} * m_5mdr1p_c)
+R318: m_atp_c + m_f6p_c -> m_adp_c + m_fdp_c + m_h_c | (${Variables:m_PFK_kcat} * ${Variables:m_PFK_conc} * m_atp_c * m_f6p_c)/(${Variables:m_PFK_km} + ${Variables:m_PFK_conc} * m_atp_c * m_f6p_c)
+R319: m_nac_e -> m_nac_c | (${Variables:m_NACt_kcat} * ${Variables:m_NACt_conc} * m_nac_e)/(${Variables:m_NACt_km} + ${Variables:m_NACt_conc} * m_nac_e)
+R320: m_atp_c + m_nad_c -> m_adp_c + m_h_c + m_nadp_c | (${Variables:m_NADK_kcat} * ${Variables:m_NADK_conc} * m_atp_c * m_nad_c)/(${Variables:m_NADK_km} + ${Variables:m_NADK_conc} * m_atp_c * m_nad_c)
+R321: m_h2o_c + m_pail4p_hs_16_0_16_0_c -> m_dag_hs_16_0_16_0_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_16_0_16_0_kcat} * ${Variables:m_PI4PLC_16_0_16_0_conc} * m_h2o_c * m_pail4p_hs_16_0_16_0_c)/(${Variables:m_PI4PLC_16_0_16_0_km} + ${Variables:m_PI4PLC_16_0_16_0_conc} * m_h2o_c * m_pail4p_hs_16_0_16_0_c)
+R322: m_h2o_c + m_pail4p_hs_16_0_18_1_c -> m_dag_hs_16_0_18_1_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_16_0_18_1_kcat} * ${Variables:m_PI4PLC_16_0_18_1_conc} * m_h2o_c * m_pail4p_hs_16_0_18_1_c)/(${Variables:m_PI4PLC_16_0_18_1_km} + ${Variables:m_PI4PLC_16_0_18_1_conc} * m_h2o_c * m_pail4p_hs_16_0_18_1_c)
+R323: m_h2o_c + m_pail4p_hs_16_0_18_2_c -> m_dag_hs_16_0_18_2_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_16_0_18_2_kcat} * ${Variables:m_PI4PLC_16_0_18_2_conc} * m_h2o_c * m_pail4p_hs_16_0_18_2_c)/(${Variables:m_PI4PLC_16_0_18_2_km} + ${Variables:m_PI4PLC_16_0_18_2_conc} * m_h2o_c * m_pail4p_hs_16_0_18_2_c)
+R324: m_h2o_c + m_pail4p_hs_18_1_18_1_c -> m_dag_hs_18_1_18_1_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_18_1_18_1_kcat} * ${Variables:m_PI4PLC_18_1_18_1_conc} * m_h2o_c * m_pail4p_hs_18_1_18_1_c)/(${Variables:m_PI4PLC_18_1_18_1_km} + ${Variables:m_PI4PLC_18_1_18_1_conc} * m_h2o_c * m_pail4p_hs_18_1_18_1_c)
+R325: m_h2o_c + m_pail4p_hs_18_1_18_2_c -> m_dag_hs_18_1_18_2_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_18_1_18_2_kcat} * ${Variables:m_PI4PLC_18_1_18_2_conc} * m_h2o_c * m_pail4p_hs_18_1_18_2_c)/(${Variables:m_PI4PLC_18_1_18_2_km} + ${Variables:m_PI4PLC_18_1_18_2_conc} * m_h2o_c * m_pail4p_hs_18_1_18_2_c)
+R326: m_h2o_c + m_pail4p_hs_18_2_16_0_c -> m_dag_hs_18_2_16_0_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_18_2_16_0_kcat} * ${Variables:m_PI4PLC_18_2_16_0_conc} * m_h2o_c * m_pail4p_hs_18_2_16_0_c)/(${Variables:m_PI4PLC_18_2_16_0_km} + ${Variables:m_PI4PLC_18_2_16_0_conc} * m_h2o_c * m_pail4p_hs_18_2_16_0_c)
+R327: m_h2o_c + m_pail4p_hs_18_2_18_1_c -> m_dag_hs_18_2_18_1_c + m_h_c + m_mi14p_c | (${Variables:m_PI4PLC_18_2_18_1_kcat} * ${Variables:m_PI4PLC_18_2_18_1_conc} * m_h2o_c * m_pail4p_hs_18_2_18_1_c)/(${Variables:m_PI4PLC_18_2_18_1_km} + ${Variables:m_PI4PLC_18_2_18_1_conc} * m_h2o_c * m_pail4p_hs_18_2_18_1_c)
+R328: m_h2o_c + m_pail4p_hs_16_0_16_0_c -> m_pail_hs_16_0_16_0_c + m_pi_c | (${Variables:m_PI4PP_16_0_16_0_kcat} * ${Variables:m_PI4PP_16_0_16_0_conc} * m_h2o_c * m_pail4p_hs_16_0_16_0_c)/(${Variables:m_PI4PP_16_0_16_0_km} + ${Variables:m_PI4PP_16_0_16_0_conc} * m_h2o_c * m_pail4p_hs_16_0_16_0_c)
+R329: m_h2o_c + m_nadp_c -> m_adprbp_c + m_h_c + m_ncam_c | (${Variables:m_NADPN_kcat} * ${Variables:m_NADPN_conc} * m_h2o_c * m_nadp_c)/(${Variables:m_NADPN_km} + ${Variables:m_NADPN_conc} * m_h2o_c * m_nadp_c)
+R330: m_atp_c + m_f6p_c -> m_adp_c + m_f26bp_c + m_h_c | (${Variables:m_PFK26_kcat} * ${Variables:m_PFK26_conc} * m_atp_c * m_f6p_c)/(${Variables:m_PFK26_km} + ${Variables:m_PFK26_conc} * m_atp_c * m_f6p_c)
+R331: m_h2o_c + m_pail4p_hs_16_0_18_1_c -> m_pail_hs_16_0_18_1_c + m_pi_c | (${Variables:m_PI4PP_16_0_18_1_kcat} * ${Variables:m_PI4PP_16_0_18_1_conc} * m_h2o_c * m_pail4p_hs_16_0_18_1_c)/(${Variables:m_PI4PP_16_0_18_1_km} + ${Variables:m_PI4PP_16_0_18_1_conc} * m_h2o_c * m_pail4p_hs_16_0_18_1_c)
+R332: m_h2o_c + m_pail4p_hs_16_0_18_2_c -> m_pail_hs_16_0_18_2_c + m_pi_c | (${Variables:m_PI4PP_16_0_18_2_kcat} * ${Variables:m_PI4PP_16_0_18_2_conc} * m_h2o_c * m_pail4p_hs_16_0_18_2_c)/(${Variables:m_PI4PP_16_0_18_2_km} + ${Variables:m_PI4PP_16_0_18_2_conc} * m_h2o_c * m_pail4p_hs_16_0_18_2_c)
+R333: m_atp_c + m_dnad_c + m_gln__L_c + m_h2o_c -> m_amp_c + m_glu__L_c + m_h_c + m_nad_c + m_ppi_c | (${Variables:m_NADS2_kcat} * ${Variables:m_NADS2_conc} * m_atp_c * m_dnad_c * m_gln__L_c * m_h2o_c)/(${Variables:m_NADS2_km} + ${Variables:m_NADS2_conc} * m_atp_c * m_dnad_c * m_gln__L_c * m_h2o_c)
+R334: m_h2o_c + m_pail4p_hs_18_1_18_1_c -> m_pail_hs_18_1_18_1_c + m_pi_c | (${Variables:m_PI4PP_18_1_18_1_kcat} * ${Variables:m_PI4PP_18_1_18_1_conc} * m_h2o_c * m_pail4p_hs_18_1_18_1_c)/(${Variables:m_PI4PP_18_1_18_1_km} + ${Variables:m_PI4PP_18_1_18_1_conc} * m_h2o_c * m_pail4p_hs_18_1_18_1_c)
+R335: m_g6p_c -> m_f6p_c | (${Variables:m_PGI_kcat} * ${Variables:m_PGI_conc} * m_g6p_c)/(${Variables:m_PGI_km} + ${Variables:m_PGI_conc} * m_g6p_c)
+R336: m_h2o_c + m_pail4p_hs_18_1_18_2_c -> m_pail_hs_18_1_18_2_c + m_pi_c | (${Variables:m_PI4PP_18_1_18_2_kcat} * ${Variables:m_PI4PP_18_1_18_2_conc} * m_h2o_c * m_pail4p_hs_18_1_18_2_c)/(${Variables:m_PI4PP_18_1_18_2_km} + ${Variables:m_PI4PP_18_1_18_2_conc} * m_h2o_c * m_pail4p_hs_18_1_18_2_c)
+R337: m_h2o_c + m_pail4p_hs_18_2_16_0_c -> m_pail_hs_18_2_16_0_c + m_pi_c | (${Variables:m_PI4PP_18_2_16_0_kcat} * ${Variables:m_PI4PP_18_2_16_0_conc} * m_h2o_c * m_pail4p_hs_18_2_16_0_c)/(${Variables:m_PI4PP_18_2_16_0_km} + ${Variables:m_PI4PP_18_2_16_0_conc} * m_h2o_c * m_pail4p_hs_18_2_16_0_c)
+R338: m_na1_e -> m_na1_c | (${Variables:m_NAt_kcat} * ${Variables:m_NAt_conc} * m_na1_e)/(${Variables:m_NAt_km} + ${Variables:m_NAt_conc} * m_na1_e)
+R339: m_ncam_e -> m_ncam_c | (${Variables:m_NCAMUP_kcat} * ${Variables:m_NCAMUP_conc} * m_ncam_e)/(${Variables:m_NCAMUP_km} + ${Variables:m_NCAMUP_conc} * m_ncam_e)
+R340: m_h2o_c + m_pail4p_hs_18_2_18_1_c -> m_pail_hs_18_2_18_1_c + m_pi_c | (${Variables:m_PI4PP_18_2_18_1_kcat} * ${Variables:m_PI4PP_18_2_18_1_conc} * m_h2o_c * m_pail4p_hs_18_2_18_1_c)/(${Variables:m_PI4PP_18_2_18_1_km} + ${Variables:m_PI4PP_18_2_18_1_conc} * m_h2o_c * m_pail4p_hs_18_2_18_1_c)
+R341: m_3pg_c + m_atp_c -> m_13dpg_c + m_adp_c | (${Variables:m_PGK_kcat} * ${Variables:m_PGK_conc} * m_3pg_c * m_atp_c)/(${Variables:m_PGK_km} + ${Variables:m_PGK_conc} * m_3pg_c * m_atp_c)
+R342: m_atp_c + m_pail_hs_16_0_16_0_c -> m_adp_c + m_h_c + m_pail4p_hs_16_0_16_0_c | (${Variables:m_PIK4_16_0_16_0_kcat} * ${Variables:m_PIK4_16_0_16_0_conc} * m_atp_c * m_pail_hs_16_0_16_0_c)/(${Variables:m_PIK4_16_0_16_0_km} + ${Variables:m_PIK4_16_0_16_0_conc} * m_atp_c * m_pail_hs_16_0_16_0_c)
+R343: m_atp_c + m_pail_hs_16_0_18_1_c -> m_adp_c + m_h_c + m_pail4p_hs_16_0_18_1_c | (${Variables:m_PIK4_16_0_18_1_kcat} * ${Variables:m_PIK4_16_0_18_1_conc} * m_atp_c * m_pail_hs_16_0_18_1_c)/(${Variables:m_PIK4_16_0_18_1_km} + ${Variables:m_PIK4_16_0_18_1_conc} * m_atp_c * m_pail_hs_16_0_18_1_c)
+R344: m_atp_c + m_pail_hs_16_0_18_2_c -> m_adp_c + m_h_c + m_pail4p_hs_16_0_18_2_c | (${Variables:m_PIK4_16_0_18_2_kcat} * ${Variables:m_PIK4_16_0_18_2_conc} * m_atp_c * m_pail_hs_16_0_18_2_c)/(${Variables:m_PIK4_16_0_18_2_km} + ${Variables:m_PIK4_16_0_18_2_conc} * m_atp_c * m_pail_hs_16_0_18_2_c)
+R345: m_guln__L_c + m_nad_c -> m_3dhguln_c + m_h_c + m_nadh_c | (${Variables:m_GULN3D_kcat} * ${Variables:m_GULN3D_conc} * m_guln__L_c * m_nad_c)/(${Variables:m_GULN3D_km} + ${Variables:m_GULN3D_conc} * m_guln__L_c * m_nad_c)
+R346: m_6pgl_c + m_h2o_c -> m_6pgc_c + m_h_c | (${Variables:m_PGL_kcat} * ${Variables:m_PGL_conc} * m_6pgl_c * m_h2o_c)/(${Variables:m_PGL_km} + ${Variables:m_PGL_conc} * m_6pgl_c * m_h2o_c)
+R347: m_atp_c + m_pail_hs_18_1_18_1_c -> m_adp_c + m_h_c + m_pail4p_hs_18_1_18_1_c | (${Variables:m_PIK4_18_1_18_1_kcat} * ${Variables:m_PIK4_18_1_18_1_conc} * m_atp_c * m_pail_hs_18_1_18_1_c)/(${Variables:m_PIK4_18_1_18_1_km} + ${Variables:m_PIK4_18_1_18_1_conc} * m_atp_c * m_pail_hs_18_1_18_1_c)
+R348: m_atp_c + m_pail_hs_18_1_18_2_c -> m_adp_c + m_h_c + m_pail4p_hs_18_1_18_2_c | (${Variables:m_PIK4_18_1_18_2_kcat} * ${Variables:m_PIK4_18_1_18_2_conc} * m_atp_c * m_pail_hs_18_1_18_2_c)/(${Variables:m_PIK4_18_1_18_2_km} + ${Variables:m_PIK4_18_1_18_2_conc} * m_atp_c * m_pail_hs_18_1_18_2_c)
+R349: m_atp_c + m_pail_hs_18_2_16_0_c -> m_adp_c + m_h_c + m_pail4p_hs_18_2_16_0_c | (${Variables:m_PIK4_18_2_16_0_kcat} * ${Variables:m_PIK4_18_2_16_0_conc} * m_atp_c * m_pail_hs_18_2_16_0_c)/(${Variables:m_PIK4_18_2_16_0_km} + ${Variables:m_PIK4_18_2_16_0_conc} * m_atp_c * m_pail_hs_18_2_16_0_c)
+R350: m_atp_c + m_pail_hs_18_2_18_1_c -> m_adp_c + m_h_c + m_pail4p_hs_18_2_18_1_c | (${Variables:m_PIK4_18_2_18_1_kcat} * ${Variables:m_PIK4_18_2_18_1_conc} * m_atp_c * m_pail_hs_18_2_18_1_c)/(${Variables:m_PIK4_18_2_18_1_km} + ${Variables:m_PIK4_18_2_18_1_conc} * m_atp_c * m_pail_hs_18_2_18_1_c)
+R351: m_h2o_c + m_pail_hs_16_0_16_0_c -> m_dag_hs_16_0_16_0_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_16_0_16_0_kcat} * ${Variables:m_PIPLC_16_0_16_0_conc} * m_h2o_c * m_pail_hs_16_0_16_0_c)/(${Variables:m_PIPLC_16_0_16_0_km} + ${Variables:m_PIPLC_16_0_16_0_conc} * m_h2o_c * m_pail_hs_16_0_16_0_c)
+R352: m_h2o_c + m_pa_hs_18_1_18_1_c -> m_dag_hs_18_1_18_1_c + m_pi_c | (${Variables:m_PPAP_18_1_18_1_kcat} * ${Variables:m_PPAP_18_1_18_1_conc} * m_h2o_c * m_pa_hs_18_1_18_1_c)/(${Variables:m_PPAP_18_1_18_1_km} + ${Variables:m_PPAP_18_1_18_1_conc} * m_h2o_c * m_pa_hs_18_1_18_1_c)
+R353: m_h2o_c + m_pa_hs_18_1_18_2_c -> m_dag_hs_18_1_18_2_c + m_pi_c | (${Variables:m_PPAP_18_1_18_2_kcat} * ${Variables:m_PPAP_18_1_18_2_conc} * m_h2o_c * m_pa_hs_18_1_18_2_c)/(${Variables:m_PPAP_18_1_18_2_km} + ${Variables:m_PPAP_18_1_18_2_conc} * m_h2o_c * m_pa_hs_18_1_18_2_c)
+R354: m_h2o_c + m_pa_hs_18_2_16_0_c -> m_dag_hs_18_2_16_0_c + m_pi_c | (${Variables:m_PPAP_18_2_16_0_kcat} * ${Variables:m_PPAP_18_2_16_0_conc} * m_h2o_c * m_pa_hs_18_2_16_0_c)/(${Variables:m_PPAP_18_2_16_0_km} + ${Variables:m_PPAP_18_2_16_0_conc} * m_h2o_c * m_pa_hs_18_2_16_0_c)
+R355: m_h2o_c + m_pail_hs_16_0_18_1_c -> m_dag_hs_16_0_18_1_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_16_0_18_1_kcat} * ${Variables:m_PIPLC_16_0_18_1_conc} * m_h2o_c * m_pail_hs_16_0_18_1_c)/(${Variables:m_PIPLC_16_0_18_1_km} + ${Variables:m_PIPLC_16_0_18_1_conc} * m_h2o_c * m_pail_hs_16_0_18_1_c)
+R356: m_2pg_c -> m_3pg_c | (${Variables:m_PGM_kcat} * ${Variables:m_PGM_conc} * m_2pg_c)/(${Variables:m_PGM_km} + ${Variables:m_PGM_conc} * m_2pg_c)
+R357: m_h2o_c + m_pail_hs_16_0_18_2_c -> m_dag_hs_16_0_18_2_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_16_0_18_2_kcat} * ${Variables:m_PIPLC_16_0_18_2_conc} * m_h2o_c * m_pail_hs_16_0_18_2_c)/(${Variables:m_PIPLC_16_0_18_2_km} + ${Variables:m_PIPLC_16_0_18_2_conc} * m_h2o_c * m_pail_hs_16_0_18_2_c)
+R358: m_h2o_c + m_pail_hs_18_1_18_1_c -> m_dag_hs_18_1_18_1_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_18_1_18_1_kcat} * ${Variables:m_PIPLC_18_1_18_1_conc} * m_h2o_c * m_pail_hs_18_1_18_1_c)/(${Variables:m_PIPLC_18_1_18_1_km} + ${Variables:m_PIPLC_18_1_18_1_conc} * m_h2o_c * m_pail_hs_18_1_18_1_c)
+R359: m_h2o_c + m_pa_hs_18_2_18_1_c -> m_dag_hs_18_2_18_1_c + m_pi_c | (${Variables:m_PPAP_18_2_18_1_kcat} * ${Variables:m_PPAP_18_2_18_1_conc} * m_h2o_c * m_pa_hs_18_2_18_1_c)/(${Variables:m_PPAP_18_2_18_1_km} + ${Variables:m_PPAP_18_2_18_1_conc} * m_h2o_c * m_pa_hs_18_2_18_1_c)
+R360: m_h2o_c + m_pail_hs_18_1_18_2_c -> m_dag_hs_18_1_18_2_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_18_1_18_2_kcat} * ${Variables:m_PIPLC_18_1_18_2_conc} * m_h2o_c * m_pail_hs_18_1_18_2_c)/(${Variables:m_PIPLC_18_1_18_2_km} + ${Variables:m_PIPLC_18_1_18_2_conc} * m_h2o_c * m_pail_hs_18_1_18_2_c)
+R361: m_akg_c + m_phe__L_c -> m_glu__L_c + m_phpyr_c | (${Variables:m_PHETA1_kcat} * ${Variables:m_PHETA1_conc} * m_akg_c * m_phe__L_c)/(${Variables:m_PHETA1_km} + ${Variables:m_PHETA1_conc} * m_akg_c * m_phe__L_c)
+R362: m_h2o_c + m_pail_hs_18_2_16_0_c -> m_dag_hs_18_2_16_0_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_18_2_16_0_kcat} * ${Variables:m_PIPLC_18_2_16_0_conc} * m_h2o_c * m_pail_hs_18_2_16_0_c)/(${Variables:m_PIPLC_18_2_16_0_km} + ${Variables:m_PIPLC_18_2_16_0_conc} * m_h2o_c * m_pail_hs_18_2_16_0_c)
+R363: m_h2o_c + m_pail_hs_18_2_18_1_c -> m_dag_hs_18_2_18_1_c + m_h_c + m_mi1p__D_c | (${Variables:m_PIPLC_18_2_18_1_kcat} * ${Variables:m_PIPLC_18_2_18_1_conc} * m_h2o_c * m_pail_hs_18_2_18_1_c)/(${Variables:m_PIPLC_18_2_18_1_km} + ${Variables:m_PIPLC_18_2_18_1_conc} * m_h2o_c * m_pail_hs_18_2_18_1_c)
+R364: m_5aop_c -> m_h2o_c + m_h_c + m_ppbng_c | (${Variables:m_PPBNGS_kcat} * ${Variables:m_PPBNGS_conc} * m_5aop_c)/(${Variables:m_PPBNGS_km} + ${Variables:m_PPBNGS_conc} * m_5aop_c)
+R365: m_r1p_c -> m_r5p_c | (${Variables:m_PPM_kcat} * ${Variables:m_PPM_conc} * m_r1p_c)/(${Variables:m_PPM_km} + ${Variables:m_PPM_conc} * m_r1p_c)
+R366: m_o2_c + m_pppg9_c -> m_h2o_c + m_ppp9_c | (${Variables:m_PPPGO_kcat} * ${Variables:m_PPPGO_conc} * m_o2_c * m_pppg9_c)/(${Variables:m_PPPGO_km} + ${Variables:m_PPPGO_conc} * m_o2_c * m_pppg9_c)
+R367: m_phe__L_e -> m_phe__L_c | (${Variables:m_PHEtec_kcat} * ${Variables:m_PHEtec_conc} * m_phe__L_e)/(${Variables:m_PHEtec_km} + ${Variables:m_PHEtec_conc} * m_phe__L_e)
+R368: m_atp_c + m_r5p_c -> m_amp_c + m_h_c + m_prpp_c | (${Variables:m_PRPPS_kcat} * ${Variables:m_PRPPS_conc} * m_atp_c * m_r5p_c)/(${Variables:m_PRPPS_km} + ${Variables:m_PRPPS_conc} * m_atp_c * m_r5p_c)
+R369: m_pi_c -> m_pi_e | (${Variables:m_PIt_kcat} * ${Variables:m_PIt_conc} * m_pi_c)/(${Variables:m_PIt_km} + ${Variables:m_PIt_conc} * m_pi_c)
+R370: m_h2o_c + m_pail45p_hs_16_0_16_0_c -> m_pail4p_hs_16_0_16_0_c + m_pi_c | (${Variables:m_PI45P5P_16_0_16_0_kcat} * ${Variables:m_PI45P5P_16_0_16_0_conc} * m_h2o_c * m_pail45p_hs_16_0_16_0_c)/(${Variables:m_PI45P5P_16_0_16_0_km} + ${Variables:m_PI45P5P_16_0_16_0_conc} * m_h2o_c * m_pail45p_hs_16_0_16_0_c)
+R371: m_h2o_c + m_pchol_hs_16_0_16_0_c -> m_h_c + m_hdca_c + m_lpchol_hs_16_0_c | (${Variables:m_PLA2_2_16_0_16_0_kcat} * ${Variables:m_PLA2_2_16_0_16_0_conc} * m_h2o_c * m_pchol_hs_16_0_16_0_c)/(${Variables:m_PLA2_2_16_0_16_0_km} + ${Variables:m_PLA2_2_16_0_16_0_conc} * m_h2o_c * m_pchol_hs_16_0_16_0_c)
+R372: m_h2o_c + m_pchol_hs_16_0_18_1_c -> m_h_c + m_lpchol_hs_16_0_c + m_ocdcea_c | (${Variables:m_PLA2_2_16_0_18_1_kcat} * ${Variables:m_PLA2_2_16_0_18_1_conc} * m_h2o_c * m_pchol_hs_16_0_18_1_c)/(${Variables:m_PLA2_2_16_0_18_1_km} + ${Variables:m_PLA2_2_16_0_18_1_conc} * m_h2o_c * m_pchol_hs_16_0_18_1_c)
+R373: m_ptrc_c -> m_ptrc_e | (${Variables:m_PTRCtex2_kcat} * ${Variables:m_PTRCtex2_conc} * m_ptrc_c)/(${Variables:m_PTRCtex2_km} + ${Variables:m_PTRCtex2_conc} * m_ptrc_c)
+R374: m_h2o_c + m_pail45p_hs_16_0_18_1_c -> m_pail4p_hs_16_0_18_1_c + m_pi_c | (${Variables:m_PI45P5P_16_0_18_1_kcat} * ${Variables:m_PI45P5P_16_0_18_1_conc} * m_h2o_c * m_pail45p_hs_16_0_18_1_c)/(${Variables:m_PI45P5P_16_0_18_1_km} + ${Variables:m_PI45P5P_16_0_18_1_conc} * m_h2o_c * m_pail45p_hs_16_0_18_1_c)
+R375: m_h2o_c + m_pchol_hs_16_0_18_2_c -> m_h_c + m_lnlc_c + m_lpchol_hs_16_0_c | (${Variables:m_PLA2_2_16_0_18_2_kcat} * ${Variables:m_PLA2_2_16_0_18_2_conc} * m_h2o_c * m_pchol_hs_16_0_18_2_c)/(${Variables:m_PLA2_2_16_0_18_2_km} + ${Variables:m_PLA2_2_16_0_18_2_conc} * m_h2o_c * m_pchol_hs_16_0_18_2_c)
+R376: m_h2o_c + m_pchol_hs_18_1_18_1_c -> m_h_c + m_lpchol_hs_18_1_c + m_ocdcea_c | (${Variables:m_PLA2_2_18_1_18_1_kcat} * ${Variables:m_PLA2_2_18_1_18_1_conc} * m_h2o_c * m_pchol_hs_18_1_18_1_c)/(${Variables:m_PLA2_2_18_1_18_1_km} + ${Variables:m_PLA2_2_18_1_18_1_conc} * m_h2o_c * m_pchol_hs_18_1_18_1_c)
+R377: m_h2o_c + m_pchol_hs_18_1_18_2_c -> m_h_c + m_lnlc_c + m_lpchol_hs_18_1_c | (${Variables:m_PLA2_2_18_1_18_2_kcat} * ${Variables:m_PLA2_2_18_1_18_2_conc} * m_h2o_c * m_pchol_hs_18_1_18_2_c)/(${Variables:m_PLA2_2_18_1_18_2_km} + ${Variables:m_PLA2_2_18_1_18_2_conc} * m_h2o_c * m_pchol_hs_18_1_18_2_c)
+R378: m_adn_c + m_pi_c -> m_ade_c + m_r1p_c | (${Variables:m_PUNP1_kcat} * ${Variables:m_PUNP1_conc} * m_adn_c * m_pi_c)/(${Variables:m_PUNP1_km} + ${Variables:m_PUNP1_conc} * m_adn_c * m_pi_c)
+R379: m_gsn_c + m_pi_c -> m_gua_c + m_r1p_c | (${Variables:m_PUNP3_kcat} * ${Variables:m_PUNP3_conc} * m_gsn_c * m_pi_c)/(${Variables:m_PUNP3_km} + ${Variables:m_PUNP3_conc} * m_gsn_c * m_pi_c)
+R380: m_ins_c + m_pi_c -> m_hxan_c + m_r1p_c | (${Variables:m_PUNP5_kcat} * ${Variables:m_PUNP5_conc} * m_ins_c * m_pi_c)/(${Variables:m_PUNP5_km} + ${Variables:m_PUNP5_conc} * m_ins_c * m_pi_c)
+R381: m_h2o_c + m_pchol_hs_18_2_16_0_c -> m_h_c + m_hdca_c + m_lpchol_hs_18_2_c | (${Variables:m_PLA2_2_18_2_16_0_kcat} * ${Variables:m_PLA2_2_18_2_16_0_conc} * m_h2o_c * m_pchol_hs_18_2_16_0_c)/(${Variables:m_PLA2_2_18_2_16_0_km} + ${Variables:m_PLA2_2_18_2_16_0_conc} * m_h2o_c * m_pchol_hs_18_2_16_0_c)
+R382: m_h2o_c + m_pchol_hs_18_2_18_1_c -> m_h_c + m_lpchol_hs_18_2_c + m_ocdcea_c | (${Variables:m_PLA2_2_18_2_18_1_kcat} * ${Variables:m_PLA2_2_18_2_18_1_conc} * m_h2o_c * m_pchol_hs_18_2_18_1_c)/(${Variables:m_PLA2_2_18_2_18_1_km} + ${Variables:m_PLA2_2_18_2_18_1_conc} * m_h2o_c * m_pchol_hs_18_2_18_1_c)
+R383: m_h2o_c + m_o2_c + m_pyam5p_c -> m_h2o2_c + m_nh4_c + m_pydx5p_c | (${Variables:m_PYAM5PO_kcat} * ${Variables:m_PYAM5PO_conc} * m_h2o_c * m_o2_c * m_pyam5p_c)/(${Variables:m_PYAM5PO_km} + ${Variables:m_PYAM5PO_conc} * m_h2o_c * m_o2_c * m_pyam5p_c)
+R384: m_h2o_c + m_pail45p_hs_16_0_18_2_c -> m_pail4p_hs_16_0_18_2_c + m_pi_c | (${Variables:m_PI45P5P_16_0_18_2_kcat} * ${Variables:m_PI45P5P_16_0_18_2_conc} * m_h2o_c * m_pail45p_hs_16_0_18_2_c)/(${Variables:m_PI45P5P_16_0_18_2_km} + ${Variables:m_PI45P5P_16_0_18_2_conc} * m_h2o_c * m_pail45p_hs_16_0_18_2_c)
+R385: m_atp_c + m_pydam_c -> m_adp_c + m_h_c + m_pyam5p_c | (${Variables:m_PYDAMK_kcat} * ${Variables:m_PYDAMK_conc} * m_atp_c * m_pydam_c)/(${Variables:m_PYDAMK_km} + ${Variables:m_PYDAMK_conc} * m_atp_c * m_pydam_c)
+R386: m_pi_c + m_rnam_c -> m_h_c + m_ncam_c + m_r1p_c | (${Variables:m_PNP_kcat} * ${Variables:m_PNP_conc} * m_pi_c * m_rnam_c)/(${Variables:m_PNP_km} + ${Variables:m_PNP_conc} * m_pi_c * m_rnam_c)
+R387: m_h2o_c + m_pail45p_hs_18_1_18_1_c -> m_pail4p_hs_18_1_18_1_c + m_pi_c | (${Variables:m_PI45P5P_18_1_18_1_kcat} * ${Variables:m_PI45P5P_18_1_18_1_conc} * m_h2o_c * m_pail45p_hs_18_1_18_1_c)/(${Variables:m_PI45P5P_18_1_18_1_km} + ${Variables:m_PI45P5P_18_1_18_1_conc} * m_h2o_c * m_pail45p_hs_18_1_18_1_c)
+R388: m_pydam_e -> m_pydam_c | (${Variables:m_PYDAMtr_kcat} * ${Variables:m_PYDAMtr_conc} * m_pydam_e)/(${Variables:m_PYDAMtr_km} + ${Variables:m_PYDAMtr_conc} * m_pydam_e)
+R389: m_h2o_c + m_pail45p_hs_18_1_18_2_c -> m_pail4p_hs_18_1_18_2_c + m_pi_c | (${Variables:m_PI45P5P_18_1_18_2_kcat} * ${Variables:m_PI45P5P_18_1_18_2_conc} * m_h2o_c * m_pail45p_hs_18_1_18_2_c)/(${Variables:m_PI45P5P_18_1_18_2_km} + ${Variables:m_PI45P5P_18_1_18_2_conc} * m_h2o_c * m_pail45p_hs_18_1_18_2_c)
+R390: m_h2o_c + m_o2_c + m_pydx_c -> m_4pyrdx_c + m_h2o2_c | (${Variables:m_PYDXDH_kcat} * ${Variables:m_PYDXDH_conc} * m_h2o_c * m_o2_c * m_pydx_c)/(${Variables:m_PYDXDH_km} + ${Variables:m_PYDXDH_conc} * m_h2o_c * m_o2_c * m_pydx_c)
+R391: m_atp_c + m_pydx_c -> m_adp_c + m_h_c + m_pydx5p_c | (${Variables:m_PYDXK_kcat} * ${Variables:m_PYDXK_conc} * m_atp_c * m_pydx_c)/(${Variables:m_PYDXK_km} + ${Variables:m_PYDXK_conc} * m_atp_c * m_pydx_c)
+R392: m_h2o_c + m_ppi_c -> m_h_c + m_pi_c | (${Variables:m_PPA_kcat} * ${Variables:m_PPA_conc} * m_h2o_c * m_ppi_c)/(${Variables:m_PPA_km} + ${Variables:m_PPA_conc} * m_h2o_c * m_ppi_c)
+R393: m_h2o_c + m_pail45p_hs_18_2_16_0_c -> m_pail4p_hs_18_2_16_0_c + m_pi_c | (${Variables:m_PI45P5P_18_2_16_0_kcat} * ${Variables:m_PI45P5P_18_2_16_0_conc} * m_h2o_c * m_pail45p_hs_18_2_16_0_c)/(${Variables:m_PI45P5P_18_2_16_0_km} + ${Variables:m_PI45P5P_18_2_16_0_conc} * m_h2o_c * m_pail45p_hs_18_2_16_0_c)
+R394: m_h2o_c + m_pa_hs_16_0_16_0_c -> m_dag_hs_16_0_16_0_c + m_pi_c | (${Variables:m_PPAP_16_0_16_0_kcat} * ${Variables:m_PPAP_16_0_16_0_conc} * m_h2o_c * m_pa_hs_16_0_16_0_c)/(${Variables:m_PPAP_16_0_16_0_km} + ${Variables:m_PPAP_16_0_16_0_conc} * m_h2o_c * m_pa_hs_16_0_16_0_c)
+R395: m_atp_c + m_pydxn_c -> m_adp_c + m_h_c + m_pdx5p_c | (${Variables:m_PYDXNK_kcat} * ${Variables:m_PYDXNK_conc} * m_atp_c * m_pydxn_c)/(${Variables:m_PYDXNK_km} + ${Variables:m_PYDXNK_conc} * m_atp_c * m_pydxn_c)
+R396: m_h2o_c + m_pa_hs_16_0_18_1_c -> m_dag_hs_16_0_18_1_c + m_pi_c | (${Variables:m_PPAP_16_0_18_1_kcat} * ${Variables:m_PPAP_16_0_18_1_conc} * m_h2o_c * m_pa_hs_16_0_18_1_c)/(${Variables:m_PPAP_16_0_18_1_km} + ${Variables:m_PPAP_16_0_18_1_conc} * m_h2o_c * m_pa_hs_16_0_18_1_c)
+R397: m_h2o_c + m_pail45p_hs_18_2_18_1_c -> m_pail4p_hs_18_2_18_1_c + m_pi_c | (${Variables:m_PI45P5P_18_2_18_1_kcat} * ${Variables:m_PI45P5P_18_2_18_1_conc} * m_h2o_c * m_pail45p_hs_18_2_18_1_c)/(${Variables:m_PI45P5P_18_2_18_1_km} + ${Variables:m_PI45P5P_18_2_18_1_conc} * m_h2o_c * m_pail45p_hs_18_2_18_1_c)
+R398: m_h2o_c + m_pa_hs_16_0_18_2_c -> m_dag_hs_16_0_18_2_c + m_pi_c | (${Variables:m_PPAP_16_0_18_2_kcat} * ${Variables:m_PPAP_16_0_18_2_conc} * m_h2o_c * m_pa_hs_16_0_18_2_c)/(${Variables:m_PPAP_16_0_18_2_km} + ${Variables:m_PPAP_16_0_18_2_conc} * m_h2o_c * m_pa_hs_16_0_18_2_c)
+R399: m_pydxn_e -> m_pydxn_c | (${Variables:m_PYDXNtr_kcat} * ${Variables:m_PYDXNtr_conc} * m_pydxn_e)/(${Variables:m_PYDXNtr_km} + ${Variables:m_PYDXNtr_conc} * m_pydxn_e)
+R400: m_h2o_c + m_pydx5p_c -> m_pi_c + m_pydx_c | (${Variables:m_PYDXPP_kcat} * ${Variables:m_PYDXPP_conc} * m_h2o_c * m_pydx5p_c)/(${Variables:m_PYDXPP_km} + ${Variables:m_PYDXPP_conc} * m_h2o_c * m_pydx5p_c)
+R401: m_pydx_e -> m_pydx_c | (${Variables:m_PYDXtr_kcat} * ${Variables:m_PYDXtr_conc} * m_pydx_e)/(${Variables:m_PYDXtr_km} + ${Variables:m_PYDXtr_conc} * m_pydx_e)
+R402: m_adp_c + m_h_c + m_pep_c -> m_atp_c + m_pyr_c | (${Variables:m_PYK_kcat} * ${Variables:m_PYK_conc} * m_adp_c * m_h_c * m_pep_c)/(${Variables:m_PYK_km} + ${Variables:m_PYK_conc} * m_adp_c * m_h_c * m_pep_c)
+R403: m_cdpea_c + m_dag_hs_18_1_18_2_c -> m_cmp_c + m_h_c + m_pe_hs_18_1_18_2_c | (${Variables:m_CEPTE_18_1_18_2_kcat} * ${Variables:m_CEPTE_18_1_18_2_conc} * m_cdpea_c * m_dag_hs_18_1_18_2_c)/(${Variables:m_CEPTE_18_1_18_2_km} + ${Variables:m_CEPTE_18_1_18_2_conc} * m_cdpea_c * m_dag_hs_18_1_18_2_c)
+R404: m_h2o_c + m_pail45p_hs_16_0_16_0_c -> m_dag_hs_16_0_16_0_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_16_0_16_0_kcat} * ${Variables:m_PI45PLC_16_0_16_0_conc} * m_h2o_c * m_pail45p_hs_16_0_16_0_c)/(${Variables:m_PI45PLC_16_0_16_0_km} + ${Variables:m_PI45PLC_16_0_16_0_conc} * m_h2o_c * m_pail45p_hs_16_0_16_0_c)
+R405: m_cdpea_c + m_dag_hs_18_2_16_0_c -> m_cmp_c + m_h_c + m_pe_hs_18_2_16_0_c | (${Variables:m_CEPTE_18_2_16_0_kcat} * ${Variables:m_CEPTE_18_2_16_0_conc} * m_cdpea_c * m_dag_hs_18_2_16_0_c)/(${Variables:m_CEPTE_18_2_16_0_km} + ${Variables:m_CEPTE_18_2_16_0_conc} * m_cdpea_c * m_dag_hs_18_2_16_0_c)
+R406: m_h_e + m_pyr_e -> m_h_c + m_pyr_c | (${Variables:m_PYRt2_kcat} * ${Variables:m_PYRt2_conc} * m_h_e * m_pyr_e)/(${Variables:m_PYRt2_km} + ${Variables:m_PYRt2_conc} * m_h_e * m_pyr_e)
+R407: m_cdpea_c + m_dag_hs_18_2_18_1_c -> m_cmp_c + m_h_c + m_pe_hs_18_2_18_1_c | (${Variables:m_CEPTE_18_2_18_1_kcat} * ${Variables:m_CEPTE_18_2_18_1_conc} * m_cdpea_c * m_dag_hs_18_2_18_1_c)/(${Variables:m_CEPTE_18_2_18_1_km} + ${Variables:m_CEPTE_18_2_18_1_conc} * m_cdpea_c * m_dag_hs_18_2_18_1_c)
+R408: m_atp_c + m_ribflv_c -> m_adp_c + m_fmn_c + m_h_c | (${Variables:m_RBFK_kcat} * ${Variables:m_RBFK_conc} * m_atp_c * m_ribflv_c)/(${Variables:m_RBFK_km} + ${Variables:m_RBFK_conc} * m_atp_c * m_ribflv_c)
+R409: m_h2o_c + m_pail45p_hs_16_0_18_1_c -> m_dag_hs_16_0_18_1_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_16_0_18_1_kcat} * ${Variables:m_PI45PLC_16_0_18_1_conc} * m_h2o_c * m_pail45p_hs_16_0_18_1_c)/(${Variables:m_PI45PLC_16_0_18_1_km} + ${Variables:m_PI45PLC_16_0_18_1_conc} * m_h2o_c * m_pail45p_hs_16_0_18_1_c)
+R410: m_cdpchol_c + m_dag_hs_16_0_16_0_c -> m_cmp_c + m_h_c + m_pchol_hs_16_0_16_0_c | (${Variables:m_CEPTC_16_0_16_0_kcat} * ${Variables:m_CEPTC_16_0_16_0_conc} * m_cdpchol_c * m_dag_hs_16_0_16_0_c)/(${Variables:m_CEPTC_16_0_16_0_km} + ${Variables:m_CEPTC_16_0_16_0_conc} * m_cdpchol_c * m_dag_hs_16_0_16_0_c)
+R411: m_cdpchol_c + m_dag_hs_16_0_18_1_c -> m_cmp_c + m_h_c + m_pchol_hs_16_0_18_1_c | (${Variables:m_CEPTC_16_0_18_1_kcat} * ${Variables:m_CEPTC_16_0_18_1_conc} * m_cdpchol_c * m_dag_hs_16_0_18_1_c)/(${Variables:m_CEPTC_16_0_18_1_km} + ${Variables:m_CEPTC_16_0_18_1_conc} * m_cdpchol_c * m_dag_hs_16_0_18_1_c)
+R412: m_cdpchol_c + m_dag_hs_16_0_18_2_c -> m_cmp_c + m_h_c + m_pchol_hs_16_0_18_2_c | (${Variables:m_CEPTC_16_0_18_2_kcat} * ${Variables:m_CEPTC_16_0_18_2_conc} * m_cdpchol_c * m_dag_hs_16_0_18_2_c)/(${Variables:m_CEPTC_16_0_18_2_km} + ${Variables:m_CEPTC_16_0_18_2_conc} * m_cdpchol_c * m_dag_hs_16_0_18_2_c)
+R413: m_cdpchol_c + m_dag_hs_18_1_18_1_c -> m_cmp_c + m_h_c + m_pchol_hs_18_1_18_1_c | (${Variables:m_CEPTC_18_1_18_1_kcat} * ${Variables:m_CEPTC_18_1_18_1_conc} * m_cdpchol_c * m_dag_hs_18_1_18_1_c)/(${Variables:m_CEPTC_18_1_18_1_km} + ${Variables:m_CEPTC_18_1_18_1_conc} * m_cdpchol_c * m_dag_hs_18_1_18_1_c)
+R414: m_atp_c + m_etha_c -> m_adp_c + m_ethamp_c + m_h_c | (${Variables:m_ETHAK_kcat} * ${Variables:m_ETHAK_conc} * m_atp_c * m_etha_c)/(${Variables:m_ETHAK_km} + ${Variables:m_ETHAK_conc} * m_atp_c * m_etha_c)
+R415: m_atp_c + m_h2o_c + m_ribflv_e -> m_adp_c + m_h_c + m_pi_c + m_ribflv_c | (${Variables:m_RIBFLVt3_kcat} * ${Variables:m_RIBFLVt3_conc} * m_atp_c * m_h2o_c * m_ribflv_e)/(${Variables:m_RIBFLVt3_km} + ${Variables:m_RIBFLVt3_conc} * m_atp_c * m_h2o_c * m_ribflv_e)
+R416: m_atp_c + m_rnam_c -> m_adp_c + m_h_c + m_nmn_c | (${Variables:m_RNMK_kcat} * ${Variables:m_RNMK_conc} * m_atp_c * m_rnam_c)/(${Variables:m_RNMK_km} + ${Variables:m_RNMK_conc} * m_atp_c * m_rnam_c)
+R417: m_ru5p__D_c -> m_xu5p__D_c | (${Variables:m_RPE_kcat} * ${Variables:m_RPE_conc} * m_ru5p__D_c)/(${Variables:m_RPE_km} + ${Variables:m_RPE_conc} * m_ru5p__D_c)
+R418: m_h2o_c + m_lpchol_hs_16_0_c -> m_g3pc_c + m_h_c + m_hdca_c | (${Variables:m_LPASE_16_0_kcat} * ${Variables:m_LPASE_16_0_conc} * m_h2o_c * m_lpchol_hs_16_0_c)/(${Variables:m_LPASE_16_0_km} + ${Variables:m_LPASE_16_0_conc} * m_h2o_c * m_lpchol_hs_16_0_c)
+R419: m_h2o_c + m_lpchol_hs_18_1_c -> m_g3pc_c + m_h_c + m_ocdcea_c | (${Variables:m_LPASE_18_1_kcat} * ${Variables:m_LPASE_18_1_conc} * m_h2o_c * m_lpchol_hs_18_1_c)/(${Variables:m_LPASE_18_1_km} + ${Variables:m_LPASE_18_1_conc} * m_h2o_c * m_lpchol_hs_18_1_c)
+R420: m_r5p_c -> m_ru5p__D_c | (${Variables:m_RPI_kcat} * ${Variables:m_RPI_conc} * m_r5p_c)/(${Variables:m_RPI_km} + ${Variables:m_RPI_conc} * m_r5p_c)
+R421: m_h2o_c + m_pail45p_hs_16_0_18_2_c -> m_dag_hs_16_0_18_2_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_16_0_18_2_kcat} * ${Variables:m_PI45PLC_16_0_18_2_conc} * m_h2o_c * m_pail45p_hs_16_0_18_2_c)/(${Variables:m_PI45PLC_16_0_18_2_km} + ${Variables:m_PI45PLC_16_0_18_2_conc} * m_h2o_c * m_pail45p_hs_16_0_18_2_c)
+R422: m_h2o_c + m_lpchol_hs_18_2_c -> m_g3pc_c + m_h_c + m_lnlc_c | (${Variables:m_LPASE_18_2_kcat} * ${Variables:m_LPASE_18_2_conc} * m_h2o_c * m_lpchol_hs_18_2_c)/(${Variables:m_LPASE_18_2_km} + ${Variables:m_LPASE_18_2_conc} * m_h2o_c * m_lpchol_hs_18_2_c)
+R423: m_amet_c + m_nrpphr_c -> m_ahcys_c + m_h_c + m_normete__L_c | (${Variables:m_SALMCOM_kcat} * ${Variables:m_SALMCOM_conc} * m_amet_c * m_nrpphr_c)/(${Variables:m_SALMCOM_km} + ${Variables:m_SALMCOM_conc} * m_amet_c * m_nrpphr_c)
+R424: m_camp_c + m_h2o_c -> m_amp_c + m_h_c | (${Variables:m_PDE1_kcat} * ${Variables:m_PDE1_conc} * m_camp_c * m_h2o_c)/(${Variables:m_PDE1_km} + ${Variables:m_PDE1_conc} * m_camp_c * m_h2o_c)
+R425: m_h2o_c + m_pail45p_hs_18_1_18_1_c -> m_dag_hs_18_1_18_1_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_18_1_18_1_kcat} * ${Variables:m_PI45PLC_18_1_18_1_conc} * m_h2o_c * m_pail45p_hs_18_1_18_1_c)/(${Variables:m_PI45PLC_18_1_18_1_km} + ${Variables:m_PI45PLC_18_1_18_1_conc} * m_h2o_c * m_pail45p_hs_18_1_18_1_c)
+R426: m_man1p_c -> m_man6p_c | (${Variables:m_PMANM_kcat} * ${Variables:m_PMANM_conc} * m_man1p_c)/(${Variables:m_PMANM_km} + ${Variables:m_PMANM_conc} * m_man1p_c)
+R427: m_adrnl_c + m_amet_c -> m_ahcys_c + m_h_c + m_mepi_c | (${Variables:m_SALMCOM2_kcat} * ${Variables:m_SALMCOM2_conc} * m_adrnl_c * m_amet_c)/(${Variables:m_SALMCOM2_km} + ${Variables:m_SALMCOM2_conc} * m_adrnl_c * m_amet_c)
+R428: m_h2o_c + m_pail45p_hs_18_1_18_2_c -> m_dag_hs_18_1_18_2_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_18_1_18_2_kcat} * ${Variables:m_PI45PLC_18_1_18_2_conc} * m_h2o_c * m_pail45p_hs_18_1_18_2_c)/(${Variables:m_PI45PLC_18_1_18_2_km} + ${Variables:m_PI45PLC_18_1_18_2_conc} * m_h2o_c * m_pail45p_hs_18_1_18_2_c)
+R429: m_nad_c + m_sbt__D_c -> m_fru_c + m_h_c + m_nadh_c | (${Variables:m_SBTD_D2_kcat} * ${Variables:m_SBTD_D2_conc} * m_nad_c * m_sbt__D_c)/(${Variables:m_SBTD_D2_km} + ${Variables:m_SBTD_D2_conc} * m_nad_c * m_sbt__D_c)
+R430: m_glc__D_c + m_h_c + m_nadph_c -> m_nadp_c + m_sbt__D_c | (${Variables:m_SBTR_kcat} * ${Variables:m_SBTR_conc} * m_glc__D_c * m_h_c * m_nadph_c)/(${Variables:m_SBTR_km} + ${Variables:m_SBTR_conc} * m_glc__D_c * m_h_c * m_nadph_c)
+R431: m_h2o_c + m_pail45p_hs_18_2_16_0_c -> m_dag_hs_18_2_16_0_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_18_2_16_0_kcat} * ${Variables:m_PI45PLC_18_2_16_0_conc} * m_h2o_c * m_pail45p_hs_18_2_16_0_c)/(${Variables:m_PI45PLC_18_2_16_0_km} + ${Variables:m_PI45PLC_18_2_16_0_conc} * m_h2o_c * m_pail45p_hs_18_2_16_0_c)
+R432: m_spmd_c -> m_spmd_e | (${Variables:m_SPMDtex2_kcat} * ${Variables:m_SPMDtex2_conc} * m_spmd_c)/(${Variables:m_SPMDtex2_km} + ${Variables:m_SPMDtex2_conc} * m_spmd_c)
+R433: m_atp_c + m_h2o_c + m_ribflv_c -> m_adp_c + m_h_c + m_pi_c + m_ribflv_e | (${Variables:m_RIBFLVt3o_kcat} * ${Variables:m_RIBFLVt3o_conc} * m_atp_c * m_h2o_c * m_ribflv_c)/(${Variables:m_RIBFLVt3o_km} + ${Variables:m_RIBFLVt3o_conc} * m_atp_c * m_h2o_c * m_ribflv_c)
+R434: m_h2o_c + m_pail45p_hs_18_2_18_1_c -> m_dag_hs_18_2_18_1_c + m_h_c + m_mi145p_c | (${Variables:m_PI45PLC_18_2_18_1_kcat} * ${Variables:m_PI45PLC_18_2_18_1_conc} * m_h2o_c * m_pail45p_hs_18_2_18_1_c)/(${Variables:m_PI45PLC_18_2_18_1_km} + ${Variables:m_PI45PLC_18_2_18_1_conc} * m_h2o_c * m_pail45p_hs_18_2_18_1_c)
+R435: m_ametam_c + m_ptrc_c -> m_5mta_c + m_h_c + m_spmd_c | (${Variables:m_SPMS_kcat} * ${Variables:m_SPMS_conc} * m_ametam_c * m_ptrc_c)/(${Variables:m_SPMS_km} + ${Variables:m_SPMS_conc} * m_ametam_c * m_ptrc_c)
+R436: m_atp_c + m_pail4p_hs_16_0_16_0_c -> m_adp_c + m_h_c + m_pail45p_hs_16_0_16_0_c | (${Variables:m_PI4P5K_16_0_16_1_kcat} * ${Variables:m_PI4P5K_16_0_16_1_conc} * m_atp_c * m_pail4p_hs_16_0_16_0_c)/(${Variables:m_PI4P5K_16_0_16_1_km} + ${Variables:m_PI4P5K_16_0_16_1_conc} * m_atp_c * m_pail4p_hs_16_0_16_0_c)
+R437: m_ametam_c + m_spmd_c -> m_5mta_c + m_h_c + m_sprm_c | (${Variables:m_SPRMS_kcat} * ${Variables:m_SPRMS_conc} * m_ametam_c * m_spmd_c)/(${Variables:m_SPRMS_km} + ${Variables:m_SPRMS_conc} * m_ametam_c * m_spmd_c)
+R438: m_atp_c + m_pail4p_hs_16_0_18_1_c -> m_adp_c + m_h_c + m_pail45p_hs_16_0_18_1_c | (${Variables:m_PI4P5K_16_0_18_3_kcat} * ${Variables:m_PI4P5K_16_0_18_3_conc} * m_atp_c * m_pail4p_hs_16_0_18_1_c)/(${Variables:m_PI4P5K_16_0_18_3_km} + ${Variables:m_PI4P5K_16_0_18_3_conc} * m_atp_c * m_pail4p_hs_16_0_18_1_c)
+R439: m_h_c + m_sprm_e -> m_h_e + m_sprm_c | (${Variables:m_SPRMt2i_kcat} * ${Variables:m_SPRMt2i_conc} * m_h_c * m_sprm_e)/(${Variables:m_SPRMt2i_km} + ${Variables:m_SPRMt2i_conc} * m_h_c * m_sprm_e)
+R440: m_g3p_c + m_s7p_c -> m_e4p_c + m_f6p_c | (${Variables:m_TALA_kcat} * ${Variables:m_TALA_conc} * m_g3p_c * m_s7p_c)/(${Variables:m_TALA_km} + ${Variables:m_TALA_conc} * m_g3p_c * m_s7p_c)
+R441: m_g1p_c -> m_g6p_c | (${Variables:m_PGMT_kcat} * ${Variables:m_PGMT_conc} * m_g1p_c)/(${Variables:m_PGMT_km} + ${Variables:m_PGMT_conc} * m_g1p_c)
+R442: m_h2o_c + m_thmpp_c -> m_h_c + m_pi_c + m_thmmp_c | (${Variables:m_TDP_kcat} * ${Variables:m_TDP_conc} * m_h2o_c * m_thmpp_c)/(${Variables:m_TDP_km} + ${Variables:m_TDP_conc} * m_h2o_c * m_thmpp_c)
+R443: m_thmmp_e -> m_thmmp_c | (${Variables:m_THMMPtrbc_kcat} * ${Variables:m_THMMPtrbc_conc} * m_thmmp_e)/(${Variables:m_THMMPtrbc_km} + ${Variables:m_THMMPtrbc_conc} * m_thmmp_e)
+R444: m_h2o_c + m_thmtp_c -> m_h_c + m_pi_c + m_thmpp_c | (${Variables:m_THMTP_kcat} * ${Variables:m_THMTP_conc} * m_h2o_c * m_thmtp_c)/(${Variables:m_THMTP_km} + ${Variables:m_THMTP_conc} * m_h2o_c * m_thmtp_c)
+R445: m_thm_e -> m_thm_c | (${Variables:m_THMtrbc_kcat} * ${Variables:m_THMtrbc_conc} * m_thm_e)/(${Variables:m_THMtrbc_km} + ${Variables:m_THMtrbc_conc} * m_thm_e)
+R446: m_r5p_c + m_xu5p__D_c -> m_g3p_c + m_s7p_c | (${Variables:m_TKT1_kcat} * ${Variables:m_TKT1_conc} * m_r5p_c * m_xu5p__D_c)/(${Variables:m_TKT1_km} + ${Variables:m_TKT1_conc} * m_r5p_c * m_xu5p__D_c)
+R447: m_e4p_c + m_xu5p__D_c -> m_f6p_c + m_g3p_c | (${Variables:m_TKT2_kcat} * ${Variables:m_TKT2_conc} * m_e4p_c * m_xu5p__D_c)/(${Variables:m_TKT2_km} + ${Variables:m_TKT2_conc} * m_e4p_c * m_xu5p__D_c)
+R448: m_atp_c + m_thm_c -> m_amp_c + m_h_c + m_thmpp_c | (${Variables:m_TMDPK_kcat} * ${Variables:m_TMDPK_conc} * m_atp_c * m_thm_c)/(${Variables:m_TMDPK_km} + ${Variables:m_TMDPK_conc} * m_atp_c * m_thm_c)
+R449: m_atp_c + m_thmpp_c -> m_adp_c + m_thmtp_c | (${Variables:m_TMDPPK_kcat} * ${Variables:m_TMDPPK_conc} * m_atp_c * m_thmpp_c)/(${Variables:m_TMDPPK_km} + ${Variables:m_TMDPPK_conc} * m_atp_c * m_thmpp_c)
+R450: m_dhap_c -> m_g3p_c | (${Variables:m_TPI_kcat} * ${Variables:m_TPI_conc} * m_dhap_c)/(${Variables:m_TPI_km} + ${Variables:m_TPI_conc} * m_dhap_c)
+R451: m_udpg_c -> m_udpgal_c | (${Variables:m_UDPG4E_kcat} * ${Variables:m_UDPG4E_conc} * m_udpg_c)/(${Variables:m_UDPG4E_km} + ${Variables:m_UDPG4E_conc} * m_udpg_c)
+R452: m_h2o_c + m_nad_c + m_udpg_c -> m_h_c + m_nadh_c + m_udpglcur_c | (${Variables:m_UDPGD_kcat} * ${Variables:m_UDPGD_conc} * m_h2o_c * m_nad_c * m_udpg_c)/(${Variables:m_UDPGD_km} + ${Variables:m_UDPGD_conc} * m_h2o_c * m_nad_c * m_udpg_c)
+R453: m_h2o_c + m_udpglcur_c -> m_glcur_c + m_h_c + m_udp_c | (${Variables:m_UDPGNP_kcat} * ${Variables:m_UDPGNP_conc} * m_h2o_c * m_udpglcur_c)/(${Variables:m_UDPGNP_km} + ${Variables:m_UDPGNP_conc} * m_h2o_c * m_udpglcur_c)
+R454: m_gal1p_c + m_udpg_c -> m_g1p_c + m_udpgal_c | (${Variables:m_UGLT_kcat} * ${Variables:m_UGLT_conc} * m_gal1p_c * m_udpg_c)/(${Variables:m_UGLT_km} + ${Variables:m_UGLT_conc} * m_gal1p_c * m_udpg_c)
+R455: m_atp_c + m_ump_c -> m_adp_c + m_udp_c | (${Variables:m_UMPK_kcat} * ${Variables:m_UMPK_conc} * m_atp_c * m_ump_c)/(${Variables:m_UMPK_km} + ${Variables:m_UMPK_conc} * m_atp_c * m_ump_c)
+R456: m_hmbil_c -> m_h2o_c + m_uppg3_c | (${Variables:m_UPP3S_kcat} * ${Variables:m_UPP3S_conc} * m_hmbil_c)/(${Variables:m_UPP3S_km} + ${Variables:m_UPP3S_conc} * m_hmbil_c)
+R457: m_h_c + m_uppg3_c -> m_co2_c + m_cpppg3_c | (${Variables:m_UPPDC1_kcat} * ${Variables:m_UPPDC1_conc} * m_h_c * m_uppg3_c)/(${Variables:m_UPPDC1_km} + ${Variables:m_UPPDC1_conc} * m_h_c * m_uppg3_c)
+R458: m_urea_e -> m_urea_c | (${Variables:m_UREAt_kcat} * ${Variables:m_UREAt_conc} * m_urea_e)/(${Variables:m_UREAt_km} + ${Variables:m_UREAt_conc} * m_urea_e)
+R459: m_uri_e -> m_uri_c | (${Variables:m_URIt_kcat} * ${Variables:m_URIt_conc} * m_uri_e)/(${Variables:m_URIt_km} + ${Variables:m_URIt_conc} * m_uri_e)
+R460: m_atp_c + m_xylu__D_c -> m_adp_c + m_h_c + m_xu5p__D_c | (${Variables:m_XYLK_kcat} * ${Variables:m_XYLK_conc} * m_atp_c * m_xylu__D_c)/(${Variables:m_XYLK_km} + ${Variables:m_XYLK_conc} * m_atp_c * m_xylu__D_c)
+R461: m_nad_c + m_xylt_c -> m_h_c + m_nadh_c + m_xylu__D_c | (${Variables:m_XYLTD_D_kcat} * ${Variables:m_XYLTD_D_conc} * m_nad_c * m_xylt_c)/(${Variables:m_XYLTD_D_km} + ${Variables:m_XYLTD_D_conc} * m_nad_c * m_xylt_c)
+R462: m_h_c + m_nadph_c + m_xylu__L_c -> m_nadp_c + m_xylt_c | (${Variables:m_XYLUR_kcat} * ${Variables:m_XYLUR_conc} * m_h_c * m_nadph_c * m_xylu__L_c)/(${Variables:m_XYLUR_km} + ${Variables:m_XYLUR_conc} * m_h_c * m_nadph_c * m_xylu__L_c)
+R463: m_dhmtp_c + m_o2_c -> m_2kmb_c + m_for_c + m_h_c | (${Variables:m_ARD_kcat} * ${Variables:m_ARD_conc} * m_dhmtp_c * m_o2_c)/(${Variables:m_ARD_km} + ${Variables:m_ARD_conc} * m_dhmtp_c * m_o2_c)
+R464: m_cdpchol_c + m_dag_hs_18_1_18_2_c -> m_cmp_c + m_h_c + m_pchol_hs_18_1_18_2_c | (${Variables:m_CEPTC_18_1_18_2_kcat} * ${Variables:m_CEPTC_18_1_18_2_conc} * m_cdpchol_c * m_dag_hs_18_1_18_2_c)/(${Variables:m_CEPTC_18_1_18_2_km} + ${Variables:m_CEPTC_18_1_18_2_conc} * m_cdpchol_c * m_dag_hs_18_1_18_2_c)
+R465: m_cdpchol_c + m_dag_hs_18_2_16_0_c -> m_cmp_c + m_h_c + m_pchol_hs_18_2_16_0_c | (${Variables:m_CEPTC_18_2_16_0_kcat} * ${Variables:m_CEPTC_18_2_16_0_conc} * m_cdpchol_c * m_dag_hs_18_2_16_0_c)/(${Variables:m_CEPTC_18_2_16_0_km} + ${Variables:m_CEPTC_18_2_16_0_conc} * m_cdpchol_c * m_dag_hs_18_2_16_0_c)
+R466: m_cdpchol_c + m_dag_hs_18_2_18_1_c -> m_cmp_c + m_h_c + m_pchol_hs_18_2_18_1_c | (${Variables:m_CEPTC_18_2_18_1_kcat} * ${Variables:m_CEPTC_18_2_18_1_conc} * m_cdpchol_c * m_dag_hs_18_2_18_1_c)/(${Variables:m_CEPTC_18_2_18_1_km} + ${Variables:m_CEPTC_18_2_18_1_conc} * m_cdpchol_c * m_dag_hs_18_2_18_1_c)
+R467: m_cdpea_c + m_dag_hs_16_0_18_1_c -> m_cmp_c + m_h_c + m_pe_hs_16_0_18_1_c | (${Variables:m_CEPTE_16_0_18_1_kcat} * ${Variables:m_CEPTE_16_0_18_1_conc} * m_cdpea_c * m_dag_hs_16_0_18_1_c)/(${Variables:m_CEPTE_16_0_18_1_km} + ${Variables:m_CEPTE_16_0_18_1_conc} * m_cdpea_c * m_dag_hs_16_0_18_1_c)
+R468: m_cdpea_c + m_dag_hs_16_0_18_2_c -> m_cmp_c + m_h_c + m_pe_hs_16_0_18_2_c | (${Variables:m_CEPTE_16_0_18_2_kcat} * ${Variables:m_CEPTE_16_0_18_2_conc} * m_cdpea_c * m_dag_hs_16_0_18_2_c)/(${Variables:m_CEPTE_16_0_18_2_km} + ${Variables:m_CEPTE_16_0_18_2_conc} * m_cdpea_c * m_dag_hs_16_0_18_2_c)
+R469: m_cdpea_c + m_dag_hs_18_1_18_1_c -> m_cmp_c + m_h_c + m_pe_hs_18_1_18_1_c | (${Variables:m_CEPTE_18_1_18_1_kcat} * ${Variables:m_CEPTE_18_1_18_1_conc} * m_cdpea_c * m_dag_hs_18_1_18_1_c)/(${Variables:m_CEPTE_18_1_18_1_km} + ${Variables:m_CEPTE_18_1_18_1_conc} * m_cdpea_c * m_dag_hs_18_1_18_1_c)
