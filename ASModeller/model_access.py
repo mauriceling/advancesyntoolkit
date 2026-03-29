@@ -198,7 +198,8 @@ def process_reactions_1(spec):
             reactions[ID] = {'sources': sources,
                              'destinations': destinations,
                              'rateEq': rateEq}
-        except:
+        except Exception as e:
+            print(f"Exception Type: {type(e).__name__}, Message: {e}")
             print("Error in %s" % str(ID))
             print("    sources: %s" % str(sources))
             print("    destinations: %s" % str(destinations))
